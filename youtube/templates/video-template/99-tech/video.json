@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "pipelineVersion": 2,
+  "videoId": "",
+  "weekFolder": "",
+  "topicSlug": "",
+  "title": "",
+  "topic": "",
+  "language": "de",
+  "visualStyleId": "UNSET",
+  "targetDurationSeconds": null,
+  "plannedImageCount": null,
+  "endHoldSeconds": 1.3,
+  "createdAt": "",
+  "updatedAt": ""
+}

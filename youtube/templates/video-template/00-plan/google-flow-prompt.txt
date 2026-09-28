@@ -1,0 +1,54 @@
+STYLE_ID: {{STYLE_ID}}
+VIDEO: {{VIDEO_TITLE}}
+
+ACTIVE VISUAL POLICY
+{{VISUAL_POLICY_JSON}}
+
+AUFGABE
+Erstelle den vollständigen Bildplan und die finalen Bildprompts für dieses Video. Nutze ausschließlich die oben eingebettete Visual Policy.
+
+COVER
+- Bild 01 ist Cover UND erste Videoszene.
+- Erzeuge Bild 01 zunächst in genau drei Varianten, wähle den stärksten Gewinner und speichere nur diesen als `Bild 01.png`.
+- Kein separates Thumbnail und kein Bild 00.
+
+BILDDICHTE
+- Keine feste Bildzahl erzwingen. NN kommt aus der inhaltlichen Planung.
+- 1 Bild = 1 klarer visueller Zweck.
+- Neue Kernidee, Handlung, Ursache/Folge, Perspektive, Beispiel oder starke emotionale Wendung → neues Bild prüfen.
+- Ziel meist 4–7 Sekunden pro Bild; über 8,5 Sekunden kritisch prüfen; über 10,5 Sekunden sinnvoll splitten.
+- Keine Füllbilder.
+
+PRO BILD
+- Audio Anchor: exakter Wortlaut aus dem Voice-over
+- Visual Purpose: eine klare Funktion
+- Topic Anchor: konkretes inhaltliches Element
+- Visual Form: beste Darstellung dieser Idee
+- Motion Hint: push-in | pull-out | pan-left | pan-right | drift-up | drift-down | focus-left | focus-right | still
+- Planned Hold: Sekunden
+- Prompt: vollständiger Bildprompt
+
+SICHTBARER TEXT
+Nur wenn nötig. Bei deutschem Video ausschließlich korrektes Deutsch. Keine Pseudo-Schrift.
+
+BILDPLAN
+
+Bild 01 · [PLANZEIT]
+Audio Anchor: [EXAKTER STARTANKER]
+Visual Purpose: [ZWECK]
+Topic Anchor: [KONKRETES ELEMENT]
+Visual Form: [DARSTELLUNGSFORM]
+Motion Hint: [MOTION]
+Planned Hold: [SEKUNDEN]
+Prompt: [VOLLSTÄNDIGER PROMPT]
+
+Bild 02 · [PLANZEIT]
+Audio Anchor: [EXAKTER STARTANKER]
+Visual Purpose: [ZWECK]
+Topic Anchor: [KONKRETES ELEMENT]
+Visual Form: [DARSTELLUNGSFORM]
+Motion Hint: [MOTION]
+Planned Hold: [SEKUNDEN]
+Prompt: [VOLLSTÄNDIGER PROMPT]
+
+[WEITER BIS BILD NN]

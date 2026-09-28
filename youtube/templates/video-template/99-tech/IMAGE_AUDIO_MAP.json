@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "images": [
+    {
+      "imageNumber": 1,
+      "imageFile": "Bild 01.png",
+      "startAnchor": "[EXAKTER STARTANKER AUS DEM SKRIPT]",
+      "visualPurpose": "",
+      "topicAnchor": "",
+      "visualForm": "",
+      "motionHint": "push-in",
+      "plannedHoldSeconds": null,
+      "actualStartSeconds": null,
+      "actualEndSeconds": null,
+      "alignmentConfidence": null
+    }
+  ]
+}
