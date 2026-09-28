@@ -1,0 +1,16 @@
+node_modules/
+.remotion/
+public/__render/
+*.log
+.DS_Store
+.env
+
+**/99-tech/YOUTUBE_AUDIO_OPTIMIZED.wav
+**/99-tech/whisper/
+**/99-tech/FINAL_TIMELINE.json
+**/99-tech/RENDER_PROPS.json
+**/99-tech/AUDIO_REPORT.json
+**/99-tech/ALIGNMENT_REPORT.json
+**/99-tech/EXPORT_REPORT.json
+**/04-export/*.mp4
+**/04-export/THUMBNAIL.png

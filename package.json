@@ -1,0 +1,30 @@
+{
+  "name": "verueckte-stickman-video-pipeline",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Stickman YouTube production pipeline with audio alignment, motion planning and render QC.",
+  "scripts": {
+    "create:video": "node src/cli/create-project.js",
+    "topic:video": "node src/cli/check-topic.js",
+    "validate:phase1": "node src/cli/validate-phase1.js",
+    "validate:assets": "node src/cli/validate-assets.js",
+    "optimize:audio": "node src/cli/optimize-audio.js",
+    "align:audio": "node src/cli/auto-align.js",
+    "build:timeline": "node src/cli/build-timeline.js",
+    "validate:timeline": "node src/cli/validate-timeline.js",
+    "render:video": "node src/cli/render.js",
+    "finalize:video": "node src/cli/finalize.js",
+    "phase3": "node src/cli/phase3.js",
+    "studio": "remotion studio src/youtube-renderer/index.jsx",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.506",
+    "@remotion/media": "4.0.506",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.506"
+  },
+  "engines": {"node": ">=22"}
+}

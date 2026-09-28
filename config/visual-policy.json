@@ -1,0 +1,17 @@
+{
+  "visualPolicyVersion": 2,
+  "status": "READY",
+  "styleId": "expressive-cinematic-stickman-v1",
+  "description": "Ausdrucksstarke Stickman-Bildwelt, die je nach Thema hell, neutral, düster oder bedrohlich werden darf, ohne den Grundstil zu verlieren.",
+  "rules": [
+    "Stickman-Figuren bleiben visuell konsistent: klare Linien, einfache Körperformen, ausdrucksstarke Augen/Mund und gut lesbare Körperhaltung.",
+    "Jede Szene braucht einen klaren visuellen Fokus und eine konkrete Handlung oder Metapher; keine generischen Füllbilder.",
+    "Licht, Hintergrund und Stimmung dürfen stark zwischen hell, neutral, düster, unheimlich oder chaotisch wechseln, wenn der Inhalt es verlangt.",
+    "Figuren dürfen freundlich, verwirrt, wütend, manipulativ, bedrohlich, erschöpft oder absurd wirken; nicht jede Figur muss sympathisch aussehen.",
+    "Kompositionen sollen filmisch und dynamisch wirken: Perspektive, Tiefenstaffelung, Größenkontraste und gezielte negative Fläche statt flacher Clipart-Anordnung.",
+    "Hintergründe bleiben verständlich und thematisch konkret, aber visuell reduziert genug, damit die Stickman-Handlung sofort lesbar bleibt.",
+    "Sichtbarer Text nur wenn er inhaltlich wirklich nötig ist; dann kurz, korrektes Deutsch und mit starkem Kontrast.",
+    "Jede Szene muss für 16:9 und leichte Kamera-Bewegung genügend Rand und Motivreserve besitzen."
+  ],
+  "forbidden": ["Wasserzeichen oder Logos fremder Anbieter", "Pseudo-Schrift und unlesbare Buchstaben", "überladene Texttafeln", "fotorealistische Menschen als Hauptmotiv", "kindergartenhafte Clipart-Optik", "ständig identische Frontansicht und Pose", "zufällige Dekoration ohne Bezug zum gesprochenen Inhalt"]
+}
