@@ -1,10 +1,28 @@
 # Verückte Stickman — Video-Pipeline V2
 
-Schlanke Produktionspipeline für faceless YouTube-Videos mit einer festen grotesk-surrealen Stickman-Bildwelt für einen deutschen Unterhaltungskanal.
+Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und **individueller Content-Planung pro Video**.
 
-## Feste Kanal-DNA
+## Zwei feste Systeme
 
-Die visuelle Identität ist verbindlich in `config/visual-policy.json` hinterlegt.
+### 1. Content-DNA
+
+Verbindlich in `config/content-policy.json` und ausführlich in `youtube/CONTENT_SYSTEM.md`.
+
+Die Kanal-DNA bleibt gleich, aber pro Video werden neu entwickelt:
+
+- Zuschauer-Versprechen und Blickwinkel
+- Hook-Typ und Hook-Text
+- Erzählmodus und Story-Beats
+- Retention / Eskalation / Payoff
+- finaler Titel
+- Cover-Konzept
+- Zusammenspiel von Titel und Cover
+
+**Keine starre Einheits-Schablone:** Ein Mafia-Hierarchie-Video darf anders erzählt werden als eine bizarre historische Geschichte, ein Psychologie-Thema oder ein kosmisch-surrealer Stoff.
+
+### 2. Visuelle DNA
+
+Verbindlich in `config/visual-policy.json`.
 
 Kernstil:
 
@@ -16,11 +34,12 @@ Kernstil:
 - klare schwarze Konturen, reduzierte Hintergründe und gezielte Akzentfarben
 - keine süße Kinder-Clipart, keine sterile Corporate-Optik und keine fotorealistischen Menschen als Hauptstil
 
-### Sprache
+## Sprache
 
 Der Kanal ist vollständig deutschsprachig.
 
 - Sprechtext: Deutsch
+- Content-Plan: Deutsch
 - Bildplan: Deutsch
 - Bildprompts: Deutsch
 - sichtbare Schrift im Bild: ausschließlich korrektes Deutsch
@@ -33,7 +52,11 @@ Der Kanal ist vollständig deutschsprachig.
 ```text
 Thema
 → Projekt anlegen
-→ Skript + Bildplan
+→ individueller CONTENT_PLAN
+→ Recherche
+→ Hook + Skript
+→ finaler Titel + Cover-Konzept
+→ Bildplan
 → Bilder + Voice-over
 → Asset-QC
 → Audio-Optimierung
@@ -44,7 +67,23 @@ Thema
 → Post-Render-QC
 ```
 
-## Wichtig
+## Phase-1-Gate
+
+`validate:phase1` prüft nicht mehr nur Skript und Bildmapping, sondern auch:
+
+- individuelles Zuschauer-Versprechen
+- konkreten Blickwinkel
+- gültigen Hook-Typ und Hook am Skriptanfang
+- passenden Erzählmodus
+- mindestens drei ausgearbeitete Story-Beats
+- Payoff
+- finalen Titel
+- Cover mit 1–3 Hauptmotiven
+- maximal kurzen optionalen Cover-Text
+- dass Titel und Cover sich ergänzen statt identisch zu sein
+- injizierte Content- und Visual-Policy
+
+## Weitere Produktionsregeln
 
 - Bild 01 ist Cover und erste Videoszene.
 - Die Bildzahl ist inhaltsgetrieben, nicht fest.
@@ -66,10 +105,10 @@ Thema
 
 ```bash
 npm install
-npm run create:video -- --topic "THEMA" --title "TITEL" --week "2026-KW40" --slug "mein-video"
+npm run create:video -- --topic "THEMA" --title "ARBEITSTITEL" --week "2026-KW40" --slug "mein-video"
 ```
 
-Danach `youtube/<week>/<slug>/` ausfüllen und Phase 1 prüfen:
+Danach zuerst `00-plan/CONTENT_PLAN.json` ausarbeiten, anschließend Skript und Bildplan erstellen.
 
 ```bash
 npm run validate:phase1 -- --dir "youtube/<week>/<slug>"

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "contentPolicyVersion": 1,
+  "language": "de",
+  "topic": "",
+  "workingTitle": "",
+  "viewerPromise": "",
+  "coreQuestion": "",
+  "angle": "",
+  "individualityReason": "",
+  "hook": {
+    "type": "",
+    "text": "",
+    "reason": ""
+  },
+  "narrativeMode": "",
+  "beats": [],
+  "retention": {
+    "openLoops": [],
+    "escalationPoints": [],
+    "patternInterrupts": []
+  },
+  "payoff": "",
+  "titleCoverSystem": {
+    "finalTitle": "",
+    "titlePromise": "",
+    "coverConcept": {
+      "visualConflict": "",
+      "mainSubjects": [],
+      "visibleText": "",
+      "emotion": "",
+      "whyClickable": ""
+    },
+    "complementarity": ""
+  },
+  "ending": {
+    "type": "",
+    "finalLine": ""
+  },
+  "notes": []
+}

@@ -1,5 +1,9 @@
 STIL-ID: {{STYLE_ID}}
 VIDEO: {{VIDEO_TITLE}}
+CONTENT-PLAN: `00-plan/CONTENT_PLAN.json`
+
+AKTIVE CONTENT-POLICY
+{{CONTENT_POLICY_JSON}}
 
 AKTIVE BILDWELT
 {{VISUAL_POLICY_JSON}}
@@ -11,19 +15,27 @@ WICHTIGE SPRACHREGEL
 - Keine englischen Wörter, Labels, Warnhinweise oder Überschriften verwenden, außer ein offizieller Eigenname kann sinnvollerweise nicht übersetzt werden.
 - Keine Pseudo-Schrift oder Fantasiebuchstaben.
 
+VOR DER BILDPLANUNG
+- `00-plan/CONTENT_PLAN.json` vollständig berücksichtigen.
+- Hook, Erzählmodus, Story-Beats, Payoff, finalen Titel und Cover-Konzept nicht neu erfinden, sondern visuell unterstützen.
+- Die feste Kanal-DNA bleibt erhalten, aber die konkrete Bildfolge wird individuell aus diesem Video entwickelt.
+
 AUFGABE
-Erstelle den vollständigen Bildplan und die finalen Bildprompts für dieses Video. Nutze ausschließlich die oben eingebettete Bildwelt. Die Bilder sollen zur grotesk-surrealen, dunklen und unterhaltsamen Stickman-DNA passen, aber immer zuerst den gesprochenen Inhalt verständlich visualisieren.
+Erstelle den vollständigen Bildplan und die finalen Bildprompts für dieses Video. Nutze die eingebettete Content-Policy und Bildwelt. Die Bilder sollen zur grotesk-surrealen, dunklen und unterhaltsamen Stickman-DNA passen, aber immer zuerst den gesprochenen Inhalt und die individuelle Story dieses Videos verständlich visualisieren.
 
 COVER
 - Bild 01 ist Cover UND erste Videoszene.
+- Das Cover-Konzept aus `CONTENT_PLAN.json` ist verbindlicher Ausgangspunkt.
 - Erzeuge Bild 01 zunächst in genau drei Varianten, wähle den stärksten Gewinner und speichere nur diesen als `Bild 01.png`.
 - Kein separates Thumbnail und kein Bild 00.
 - Bild 01 braucht wenige große Elemente, einen sofort verständlichen Konflikt oder eine starke visuelle Frage und darf nicht mit Informationen überladen sein.
+- Titel und Cover müssen sich ergänzen. Keine unnötige Wiederholung des Titels als Cover-Text.
 
 BILDDICHTE
 - Keine feste Bildzahl erzwingen. NN kommt aus der inhaltlichen Planung.
 - 1 Bild = 1 klarer visueller Zweck.
 - Neue Kernidee, Handlung, Ursache/Folge, Perspektive, Beispiel, Hierarchiestufe, Transformation oder starke emotionale Wendung → neues Bild prüfen.
+- Story-Beats und Retention-Punkte aus dem Content-Plan bei der Bilddichte berücksichtigen.
 - Ziel meist 4–7 Sekunden pro Bild; über 8,5 Sekunden kritisch prüfen; über 10,5 Sekunden sinnvoll splitten.
 - Keine Füllbilder.
 - Lieber zwei klare Bilder als ein überladenes Bild mit zu vielen Informationen.
@@ -72,6 +84,7 @@ Bildprompt: [VOLLSTÄNDIGER DEUTSCHER PROMPT]
 [WEITER BIS BILD NN]
 
 ABSCHLUSSCHECK
+- Content-Plan berücksichtigt: Hook, Story-Beats, Payoff, Titel und Cover-Konzept
 - alle Bildprompts vollständig auf Deutsch
 - sichtbarer Text ausschließlich korrektes Deutsch
 - jedes Bild hat genau eine klare visuelle Hauptidee
@@ -79,4 +92,5 @@ ABSCHLUSSCHECK
 - grotesk, surreal oder düster nur so stark wie es zum Inhalt passt
 - keine überladenen Bilder
 - Bild 01 funktioniert als Cover und erste Szene
+- Titel und Cover ergänzen sich statt sich zu wiederholen
 - alle Bilder 16:9 und mit Bewegungsreserve komponiert
