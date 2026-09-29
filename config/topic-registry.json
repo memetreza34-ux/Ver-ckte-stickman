@@ -1,4 +1,14 @@
 {
   "version": 2,
-  "entries": []
+  "entries": [
+    {
+      "id": "2026-KW40_londoner-bierflut-1814",
+      "title": "Die tödliche Bierflut von London",
+      "aliases": [
+        "Die Londoner Bierflut von 1814"
+      ],
+      "status": "reserved",
+      "createdAt": "2026-09-29T12:40:00+02:00"
+    }
+  ]
 }
