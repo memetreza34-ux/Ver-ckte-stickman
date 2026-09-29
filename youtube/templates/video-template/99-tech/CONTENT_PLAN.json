@@ -1,10 +1,21 @@
 {
-  "schemaVersion": 4,
-  "contentPolicyVersion": 4,
+  "schemaVersion": 5,
+  "contentPolicyVersion": 5,
   "language": "de",
   "topic": "",
   "workingTitle": "",
   "topicFit": {"score": null, "verdict": "", "pillars": [], "reason": ""},
+  "topicQuality": {
+    "score": null,
+    "verdict": "",
+    "curiosity": null,
+    "immersion": null,
+    "visualPotential": null,
+    "escalationPotential": null,
+    "informationPotential": null,
+    "reason": "",
+    "whyNotBoring": ""
+  },
   "formatMode": "",
   "viewerRole": "",
   "experiencePremise": "",
