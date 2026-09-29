@@ -1,48 +1,57 @@
 # Workflow
 
-## Phase 1 — Inhalt individuell planen
+## Phase 0 — Thema
+
+1. `npm run topic:video -- --topic "THEMA"`
+2. Duplikate werden blockiert.
+3. Offensichtlich fremde Themen werden als `BLOCKED_CHANNEL_FIT` blockiert.
+4. `REVIEW_CHANNEL_FIT` ist nur eine Vorwarnung; im Content-Plan muss der Kanalfit später mindestens 7/10 erreichen.
+
+## Phase 1 — Inhalt planen und belegen
 
 1. Projekt anlegen.
-2. `00-plan/CONTENT_PLAN.json` **vor dem Skript** individuell ausarbeiten:
+2. `00-plan/CONTENT_PLAN.json` individuell ausarbeiten:
+   - Kanalfit + Kanalpfeiler
    - Zuschauer-Versprechen
    - Kernfrage und Blickwinkel
-   - Hook-Typ + exakter Hook-Text
+   - Hook-Typ + exakter Hook
    - Erzählmodus
    - Story-Beats
    - Retention-/Eskalationspunkte
    - Payoff
+   - Ending
    - finaler Titel
    - Cover-Konzept
-   - Zusammenspiel Titel ↔ Cover
-3. Recherche durchführen und Unsicherheiten sauber behandeln.
-4. Voice-over-Skript auf Basis des Content-Plans schreiben. Der geplante Hook steht wörtlich am Anfang des Skripts.
+3. `00-plan/RESEARCH.json` ausarbeiten:
+   - Status `READY`
+   - mindestens 2 belastbare Quellen
+   - mindestens 2 zentrale Claims
+   - Confidence: `gesichert`, `wahrscheinlich` oder `umstritten`
+   - Unsicherheiten und Dinge, die nicht behauptet werden dürfen, dokumentieren
+4. Voice-over-Skript schreiben. Der geplante Hook ist der erste gesprochene Inhalt; die geplante finale Zeile steht am Ende.
 5. `plannedImageCount` und `targetDurationSeconds` in `99-tech/video.json` setzen.
-6. `IMAGE_AUDIO_MAP.json` vollständig mit exakten Startankern aus dem Skript füllen.
-7. Den Bildplan im injizierten Google-Flow-Prompt ausarbeiten. Der Prompt enthält die Content-Policy und Visual-Policy.
+6. `IMAGE_AUDIO_MAP.json` lückenlos ausfüllen.
+7. Den Bildplan in `00-plan/google-flow-prompt.txt` vollständig ausarbeiten und alle Platzhalter entfernen.
 8. `npm run validate:phase1 -- --dir "..."`.
 
-### Wichtig
+Bei erfolgreicher Phase 1 wird automatisch `00-plan/FLOW_MASTER_PROMPT.txt` erzeugt. Dieser Masterprompt enthält Content-Plan, Recherche, Voice-over, Content-Policy und Visual-Policy vollständig eingebettet und kann direkt an Google Flow übergeben werden.
 
-Es gibt **keine starre Skript-Schablone**. Die Kanal-DNA bleibt fest, aber Hook, Story-Architektur, Titel und Cover werden pro Video aus dem Thema entwickelt. Die maschinenlesbaren Regeln stehen in `config/content-policy.json`; die ausführliche Erklärung in `youtube/CONTENT_SYSTEM.md`.
+## Phase 2 — Assets
 
-## Phase 2
-
-- Finale Bilder: `03-assets/images/Bild 01.png` bis `Bild NN.png`.
+- `Bild 01.png` bis `Bild NN.png` in `03-assets/images/`.
 - `Bild 01` ist Cover und erste Videoszene.
 - Genau eine finale Voice-over-Datei in `02-audio/`.
 - `npm run validate:assets -- --dir "..."`.
 
-## Phase 3
+## Phase 3 — Produktion
 
 ```bash
 npm run phase3 -- --dir "..."
 ```
 
-Die Pipeline optimiert eine Kopie des Audios, richtet die Bildanker mit Whisper aus, baut eine frame-genaue Timeline, wendet Motion-Presets/Overrides an, rendert mit Remotion und prüft das Ergebnis per FFprobe.
+Die Pipeline optimiert eine Kopie des Audios, richtet Bildanker mit Whisper aus, baut eine frame-genaue Timeline, wendet Motion-Presets/Overrides an, rendert mit Remotion und prüft den Export per FFprobe.
 
 ### Motion Overrides
-
-In `99-tech/RENDER_PLAN.json`:
 
 ```json
 {"motionOverrides": [{"imageNumber": 3, "type": "focus-left", "strength": 1.2, "focusX": 35, "focusY": 50}]}

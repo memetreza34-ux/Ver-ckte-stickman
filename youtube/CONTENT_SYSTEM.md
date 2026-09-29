@@ -1,103 +1,49 @@
 # Content-System — Verückte Stickman
 
-Dieses Dokument beschreibt die verbindliche inhaltliche Produktionslogik. Die vollständigen maschinenlesbaren Regeln stehen in `config/content-policy.json`.
-
 ## Grundsatz
 
-Die **Kanal-DNA bleibt gleich**, aber jedes Video wird inhaltlich neu entwickelt. Es gibt keine starre Hook-, Skript- oder Cover-Schablone, die blind auf jedes Thema gelegt wird.
+Die Kanal-DNA bleibt gleich, aber jedes Video wird inhaltlich neu entwickelt. Hook, Story, Titel, Cover und Bildfolge werden nicht blind aus einer Schablone kopiert.
 
-Für jedes Video werden individuell festgelegt:
+## 1. Kanalfit
 
-- Zuschauer-Versprechen
-- konkreter Blickwinkel
-- Hook-Typ und Hook-Text
-- Erzählmodus
-- Story-Beats und Eskalation
-- Retention-Punkte
-- Payoff / Auflösung
-- finaler Titel
-- Cover-Konzept
-- Zusammenspiel von Titel und Cover
+Vor dem Skript wird bewertet, ob das Thema zur Kanal-DNA passt. `CONTENT_PLAN.topicFit` braucht:
 
-## 1. Vor dem Skript
+- mindestens 7/10
+- `verdict: "APPROVED"`
+- mindestens einen passenden Kanalpfeiler
+- eine konkrete Begründung
 
-Zuerst beantworten:
+Die breite Nische umfasst bizarre, dunkle, absurde, psychologische, kriminelle, historische, extreme, mysteriöse oder surreal starke Unterhaltungsthemen.
 
-1. Was ist an diesem Thema wirklich sehenswert?
-2. Was ist daran verrückt, absurd, überraschend, düster oder ungewöhnlich?
-3. Welche konkrete Frage oder Neugier soll der Zuschauer bis zum Ende verfolgen?
-4. Welche Information ist der Payoff?
-5. Welche Erzählform passt genau zu diesem Thema?
+## 2. Recherche
 
-Das Ergebnis wird in `00-plan/CONTENT_PLAN.json` festgehalten.
+`RESEARCH.json` ist Pflicht. Zentrale Tatsachenbehauptungen werden mit Quellen verknüpft. Unsicheres wird als `wahrscheinlich` oder `umstritten` markiert. Quellen werden niemals erfunden.
 
-## 2. Hook
+## 3. Hook
 
-Der Hook startet sofort. Keine Begrüßung und kein generisches Kanal-Intro.
+Der Hook ist der erste gesprochene Inhalt. Keine Begrüßung und kein generisches Intro. Der Hook muss zum konkreten Thema passen und später eingelöst werden.
 
-Mögliche Hook-Arten sind zum Beispiel:
+## 4. Story und Retention
 
-- Schock-Behauptung
-- bizarre Frage
-- Mini-Szene
-- Kontrast
-- versteckte Wahrheit
-- Eskalations-Vorschau
-- Konsequenz-Hook
-- unmöglich klingender Fakt
-
-Es wird **nicht automatisch immer derselbe Hook-Typ** gewählt.
-
-## 3. Skript und Dramaturgie
-
-Das Skript ist keine lose Faktenliste. Jeder Abschnitt hat eine Funktion.
-
-Je nach Thema kann die Geschichte z. B. als Eskalationsleiter, Mysterium, chronologischer Absturz, Rangreise, Figurenreise, Hierarchie-Erklärung, Ursache-Wirkung-Kette oder Rabbit-Hole aufgebaut werden.
-
-Typischer Spannungsverlauf kann sein:
-
-```text
-Hook
-→ notwendiger Kontext
-→ erste interessante Entwicklung
-→ neue Ebene / Konsequenz
-→ Wendepunkt oder stärkere Eskalation
-→ stärkster / absurdester Teil
-→ Payoff und Einordnung
-```
-
-Das ist **kein Pflichtschema**. Wenn ein Thema anders besser funktioniert, wird die Struktur angepasst.
-
-## 4. Retention
-
-Retention entsteht aus Inhalt, nicht aus künstlichem Dauer-Schnitt.
-
-- neue Information statt Wiederholung
-- offene Frage später beantworten
-- Perspektivwechsel, neue Figur oder neue Stufe nur wenn sinnvoll
-- stärkste Information nicht komplett am Anfang verbrauchen
-- ruhige Momente sind erlaubt, wenn sie etwas vorbereiten oder erklären
+Mindestens drei individuelle Story-Beats. Retention entsteht aus neuen Informationen, offenen Fragen, Eskalationen, Perspektivwechseln oder bewusst gesetzten Pattern Interrupts. Mindestens zwei konkrete Retention-Signale werden vorab geplant.
 
 ## 5. Titel + Cover
 
-Titel und Cover werden als **gemeinsames System** geplant.
+Titel und Cover ergänzen sich. Bild 01 ist Cover und erste Szene. Cover meist mit 1–3 großen Motiven, klarer Emotion und wenigen oder keinen deutschen Wörtern.
 
-Der Titel transportiert das Versprechen oder die Neugier. Das Cover zeigt den stärksten visuellen Konflikt, die Transformation, Hierarchie, absurde Situation oder Reaktion.
+## 6. Ending
 
-Sie sollen sich **ergänzen**, nicht dieselbe Aussage doppelt wiederholen.
+Das Ende löst das Zuschauer-Versprechen ein. Ending-Typ und finale Zeile werden im Content-Plan festgelegt und müssen im Skript auftauchen.
 
-### Cover-Regeln
+## 7. Übergabe an Google Flow
 
-- `Bild 01` = Cover + erste Videoszene
-- meist 1–3 große Motive
-- sofort verständlicher Fokus
-- starke Emotion oder visueller Konflikt
-- einfacher, kontrastreicher Hintergrund
-- sichtbarer Text optional und nur auf Deutsch
-- wenn Text: wenige große Wörter
-- keine Informationsüberladung
-- visuell zugespitzt, aber inhaltlich ehrlich
+Der externe Bildgenerator darf keine lokalen Repo-Dateien voraussetzen. Deshalb wird nach fertiger Phase 1 `FLOW_MASTER_PROMPT.txt` erzeugt. Er enthält:
 
-## 6. Verbindung zur Bildwelt
+- Content-Policy
+- Visual-Policy
+- ausgefüllten Content-Plan
+- Recherche
+- finalen Voice-over-Text
+- vollständigen Bildplan
 
-Erst wenn Hook, Story, Titel und Cover-Konzept feststehen, wird der Bildplan erstellt. Die visuelle DNA aus `config/visual-policy.json` bleibt fest; ihre konkrete Anwendung wird an das jeweilige Video angepasst.
+Dieser Masterprompt ist die einzige Übergabedatei an Flow.

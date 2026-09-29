@@ -1,117 +1,86 @@
-# Verückte Stickman — Video-Pipeline V2
+# Verückte Stickman — Video-Pipeline V2.1
 
-Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und **individueller Content-Planung pro Video**.
+Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und individueller Content-Planung pro Video.
 
-## Zwei feste Systeme
+## Feste Systeme
 
-### 1. Content-DNA
+- `config/visual-policy.json`: verbindliche Bildwelt und Sprachregeln.
+- `config/content-policy.json`: Kanalfit, Recherche, Hook, Story, Retention, Titel/Cover und Ending.
+- `config/topic-registry.json`: Duplikat- und Produktionsstatus.
 
-Verbindlich in `config/content-policy.json` und ausführlich in `youtube/CONTENT_SYSTEM.md`.
+## Kanalfit
 
-Die Kanal-DNA bleibt gleich, aber pro Video werden neu entwickelt:
+Neue Themen werden zuerst auf Duplikate und groben Kanalfit geprüft. Offensichtlich fremde Themen werden blockiert. Unklare Themen dürfen zur Planung weiter, müssen im `CONTENT_PLAN.json` aber mindestens **7/10 Kanalfit** erreichen und mit einem passenden Kanalpfeiler begründet werden.
 
-- Zuschauer-Versprechen und Blickwinkel
-- Hook-Typ und Hook-Text
-- Erzählmodus und Story-Beats
-- Retention / Eskalation / Payoff
-- finaler Titel
-- Cover-Konzept
-- Zusammenspiel von Titel und Cover
-
-**Keine starre Einheits-Schablone:** Ein Mafia-Hierarchie-Video darf anders erzählt werden als eine bizarre historische Geschichte, ein Psychologie-Thema oder ein kosmisch-surrealer Stoff.
-
-### 2. Visuelle DNA
-
-Verbindlich in `config/visual-policy.json`.
-
-Kernstil:
-
-- grotesk-surrealer Dark-Comic-Stickman-Infotainment-Stil
-- bizarre, dunkle, absurde und unterhaltsame Bildsprache
-- einfache Stickman-Grundkörper mit stark überzeichneten Gesichtern
-- Humor durch Übertreibung, Hierarchien, Verwandlungen, Größenkontraste und unerwartete Reaktionen
-- je nach Thema hell, neutral, düster, psychologisch, bedrohlich, chaotisch oder kosmisch
-- klare schwarze Konturen, reduzierte Hintergründe und gezielte Akzentfarben
-- keine süße Kinder-Clipart, keine sterile Corporate-Optik und keine fotorealistischen Menschen als Hauptstil
-
-## Sprache
-
-Der Kanal ist vollständig deutschsprachig.
-
-- Sprechtext: Deutsch
-- Content-Plan: Deutsch
-- Bildplan: Deutsch
-- Bildprompts: Deutsch
-- sichtbare Schrift im Bild: ausschließlich korrektes Deutsch
-- keine englischen Labels oder Überschriften, außer unvermeidbaren offiziellen Eigennamen
-- keine Pseudo-Schrift
-- Beispiele: `STUFE 1` statt `LEVEL 1`, `WARNUNG` statt `WARNING`
-
-## Ablauf
+## Produktionsablauf
 
 ```text
 Thema
+→ Themen-/Kanalfit-Check
 → Projekt anlegen
-→ individueller CONTENT_PLAN
-→ Recherche
+→ CONTENT_PLAN
+→ RESEARCH
 → Hook + Skript
-→ finaler Titel + Cover-Konzept
+→ Titel + Cover
 → Bildplan
+→ FLOW_MASTER_PROMPT kompilieren
 → Bilder + Voice-over
 → Asset-QC
 → Audio-Optimierung
 → Whisper-Alignment
 → frame-genaue Timeline
-→ Motion-Plan
+→ Motion
 → Remotion-Render
 → Post-Render-QC
 ```
 
-## Phase-1-Gate
+## Phase 1
 
-`validate:phase1` prüft nicht mehr nur Skript und Bildmapping, sondern auch:
+Vor der Freigabe müssen vollständig sein:
 
-- individuelles Zuschauer-Versprechen
-- konkreten Blickwinkel
-- gültigen Hook-Typ und Hook am Skriptanfang
-- passenden Erzählmodus
-- mindestens drei ausgearbeitete Story-Beats
-- Payoff
-- finalen Titel
-- Cover mit 1–3 Hauptmotiven
-- maximal kurzen optionalen Cover-Text
-- dass Titel und Cover sich ergänzen statt identisch zu sein
-- injizierte Content- und Visual-Policy
+- Kanalfit
+- Zuschauer-Versprechen, Kernfrage und Blickwinkel
+- Hook als erster gesprochener Inhalt
+- mindestens 3 Story-Beats
+- konkrete Retention-Punkte
+- Payoff und Ending
+- finaler Titel + Cover-Konzept
+- `RESEARCH.json` mit mindestens 2 Quellen und 2 belegten Claims
+- lückenloser Bildplan ohne Platzhalter
+- ausgefüllte deutsche Bildprompts
+- `IMAGE_AUDIO_MAP.json`
 
-## Weitere Produktionsregeln
+`validate:phase1` erzeugt bei Erfolg automatisch `00-plan/FLOW_MASTER_PROMPT.txt`. Diese Datei enthält die vollständige Content-Policy, Visual-Policy, den ausgefüllten Content-Plan, die Recherche und das finale Voice-over. Google Flow muss dadurch keine lokale Repo-Datei kennen.
 
-- Bild 01 ist Cover und erste Videoszene.
-- Die Bildzahl ist inhaltsgetrieben, nicht fest.
-- Pro Bild möglichst eine klare visuelle Hauptidee; lieber sinnvoll teilen als überladen.
-- Die Bildwelt darf grotesk, surreal oder düster werden, aber nur wenn es zum Inhalt passt.
-- Kosmische/Horror-Elemente sind eine optionale Verstärkung, kein Zwang für jede Szene.
-- Das Nutzer-Voice-over bleibt unverändert; intern wird eine optimierte Kopie erzeugt.
-- Bildwechsel werden über echte Wortzeiten aus Whisper ausgerichtet.
-- Motion-Overrides aus `99-tech/RENDER_PLAN.json` werden wirklich ausgewertet.
-- Finales Video wird nach dem Render mit FFprobe geprüft.
+## Bildwelt
 
-## Voraussetzungen
-
-- Node.js >= 22
-- FFmpeg + FFprobe
-- Whisper CLI (`whisper`)
+- grotesk-surrealer Dark-Comic-Stickman-Infotainment-Stil
+- vollständig deutscher Kanal
+- Bildprompts auf Deutsch
+- sichtbare Schrift ausschließlich korrektes Deutsch
+- Bild 01 = Cover + erste Videoszene
+- meist 1–3 große Cover-Motive
+- keine sterile Corporate-Optik, keine süße Kinder-Clipart
+- kosmische/Horror-Elemente nur wenn inhaltlich passend
 
 ## Start
 
 ```bash
 npm install
+npm run topic:video -- --topic "THEMA"
 npm run create:video -- --topic "THEMA" --title "ARBEITSTITEL" --week "2026-KW40" --slug "mein-video"
 ```
 
-Danach zuerst `00-plan/CONTENT_PLAN.json` ausarbeiten, anschließend Skript und Bildplan erstellen.
+Dann `00-plan/CONTENT_PLAN.json`, `00-plan/RESEARCH.json`, Skript, Bildplan und Mapping ausarbeiten.
 
 ```bash
 npm run validate:phase1 -- --dir "youtube/<week>/<slug>"
+```
+
+Optional den Masterprompt separat neu bauen:
+
+```bash
+npm run compile:flow -- --dir "youtube/<week>/<slug>"
 ```
 
 Nach Bildern und Voice-over:
@@ -121,8 +90,8 @@ npm run validate:assets -- --dir "youtube/<week>/<slug>"
 npm run phase3 -- --dir "youtube/<week>/<slug>"
 ```
 
-Nur vorbereiten, ohne Render:
+## Technische Voraussetzungen
 
-```bash
-npm run phase3 -- --dir "youtube/<week>/<slug>" --prepare-only
-```
+- Node.js >= 22
+- FFmpeg + FFprobe
+- Whisper CLI (`whisper`)
