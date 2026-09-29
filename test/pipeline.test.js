@@ -12,28 +12,28 @@ test('Visual Policy ist produktionsbereit und fordert deutsche Cover-Überschrif
   assert.equal(v.status,'READY');assert.equal(v.languagePolicy?.promptLanguage,'de');assert.equal(v.thumbnailDNA?.headlineRequired,true);assert.ok(v.rules.length>=10);
 });
 
-test('Content Policy V5 erzwingt immersive, klickstarke Themen',async()=>{
+test('Content Policy V6 erlaubt real, hybrid und frei-surreal',async()=>{
   const c=JSON.parse(await readFile('config/content-policy.json','utf8'));
-  assert.equal(c.contentPolicyVersion,5);assert.equal(c.experiencePolicy.required,true);assert.equal(c.topicQualityPolicy.required,true);assert.ok(c.topicQualityPolicy.minimumScore>=8);assert.ok(c.topicQualityPolicy.minimumDimensionScore>=7);assert.ok(c.researchPolicy.minimumClaims>=4);assert.equal(c.titleCoverPolicy.coverHeadlineRequired,true);
+  assert.equal(c.contentPolicyVersion,6);assert.deepEqual(c.contentModePolicy.allowedModes,['real','hybrid','frei-surreal']);assert.equal(c.topicQualityPolicy.required,true);assert.ok(c.topicQualityPolicy.minimumScore>=8);assert.ok(c.entertainmentDensityPolicy.minimumBeats>=5);assert.ok(c.researchPolicy.optionalModes.includes('frei-surreal'));assert.equal(c.titleCoverPolicy.coverHeadlineRequired,true);
 });
 
-test('Pipeline V3 fordert höhere adaptive Bilddichte',async()=>{
+test('Pipeline V3 fordert hohe adaptive Bilddichte',async()=>{
   const p=JSON.parse(await readFile('config/pipeline.json','utf8'));
-  assert.equal(p.pipelineVersion,3);assert.ok(p.imagePolicy.targetAverageHoldSeconds[1]<=4.2);assert.ok(p.imagePolicy.preferSplitAboveSeconds<=6.2);assert.ok(p.imagePolicy.hardMaximumSeconds<=8);assert.deepEqual(p.imagePolicy.targetImagesPer100Seconds,[26,34]);assert.equal(p.imagePolicy.multipleImagesPerSentenceAllowed,true);
+  assert.equal(p.pipelineVersion,3);assert.ok(p.imagePolicy.targetAverageHoldSeconds[1]<=4.2);assert.ok(p.imagePolicy.preferSplitAboveSeconds<=6.2);assert.ok(p.imagePolicy.hardMaximumSeconds<=8);assert.equal(p.imagePolicy.multipleImagesPerSentenceAllowed,true);
 });
 
 test('Projektpfade benutzen Bildprompts und Bilder statt Plan und Assets',()=>{
   const p=projectPaths('/tmp/beispiel');assert.match(p.prompt,/00-bildprompts[\\/]99-alle-bildprompts\.txt$/);assert.match(p.imagesDir,/03-bilder$/);assert.match(p.contentPlan,/99-tech[\\/]CONTENT_PLAN\.json$/);assert.doesNotMatch(p.prompt,/00-plan/);assert.doesNotMatch(p.imagesDir,/assets/i);
 });
 
-test('Kanalfit blockiert Fremdcontent und erkennt passende Rollen-Themen',async()=>{
-  const bad=await evaluateChannelFit('iPhone Unboxing und Smartphone Review');assert.equal(bad.decision,'BLOCKED_CHANNEL_FIT');const good=await evaluateChannelFit('Dein Leben als CIA Agent');assert.equal(good.decision,'APPROVED_CHANNEL_FIT');
+test('Kanalfit blockiert Fremdcontent und erkennt verrückte Themen',async()=>{
+  const bad=await evaluateChannelFit('iPhone Unboxing und Smartphone Review');assert.equal(bad.decision,'BLOCKED_CHANNEL_FIT');const good=await evaluateChannelFit('Du landest in einem Gefängnis mit endlosen Stockwerken');assert.equal(good.decision,'APPROVED_CHANNEL_FIT');
 });
 
-test('Themenqualitaet bevorzugt verrueckte Erlebnis-Themen und stoppt Lexikon-Framing',async()=>{
-  const strong=await evaluateTopicQuality('Ein Tag als Spion im Kalten Krieg');assert.equal(strong.decision,'APPROVED_TOPIC_QUALITY');assert.ok(strong.score>=8);
+test('Themenqualität bevorzugt starke Story-Premissen und stoppt Lexikon-Framing',async()=>{
+  const strong=await evaluateTopicQuality('Du wachst auf einer Raumstation auf und jede Stunde erscheint eine neue tödliche Regel');assert.equal(strong.decision,'APPROVED_TOPIC_QUALITY');assert.ok(strong.score>=8);
   const boring=await evaluateTopicQuality('Die Geschichte der CIA');assert.equal(boring.decision,'REVIEW_TOPIC_QUALITY');assert.ok(boring.score<8);
-  const mafia=await evaluateTopicQuality('Du trittst der Mafia bei');assert.equal(mafia.decision,'APPROVED_TOPIC_QUALITY');
+  const spy=await evaluateTopicQuality('Ein Tag als Spion, der merkt, dass seine Wohnung ihn abhört');assert.equal(spy.decision,'APPROVED_TOPIC_QUALITY');
 });
 
 test('Textnormalisierung funktioniert',()=>{assert.equal(normalizeText('Über Größe!'),'uber grosse');assert.equal(editSimilarity('psychologische manipulation','psychologische manipulation'),1);});
@@ -43,9 +43,9 @@ test('Flow-Vorlage ist schlank, deutsch und enthält keine internen Datenblöcke
   const p=await readFile('youtube/templates/video-template/00-bildprompts/99-alle-bildprompts.txt','utf8');assert.match(p,/VERBINDLICHE BILDWELT/i);assert.match(p,/ÜBERSCHRIFT:/i);assert.match(p,/BILDPROMPT:/i);assert.doesNotMatch(p,/CONTENT_POLICY_JSON|RESEARCH_JSON|VOICE_SCRIPT|STYLE-LOCK/);
 });
 
-test('Content-Plan V5 enthält Themenqualitaet, Erlebnis- und Informationsplanung',async()=>{
+test('Content-Plan V6 enthält Story-Modus, Wahrheitsgrenze und Unterhaltungsbeats',async()=>{
   const c=JSON.parse(await readFile('youtube/templates/video-template/99-tech/CONTENT_PLAN.json','utf8'));const r=JSON.parse(await readFile('youtube/templates/video-template/99-tech/RESEARCH.json','utf8'));
-  assert.equal(c.contentPolicyVersion,5);assert.equal(c.schemaVersion,5);assert.ok(Object.hasOwn(c,'topicQuality'));assert.ok(Object.hasOwn(c.topicQuality,'whyNotBoring'));assert.ok(Object.hasOwn(c,'formatMode'));assert.ok(Object.hasOwn(c,'viewerRole'));assert.ok(Array.isArray(c.informationBeats));assert.equal(r.status,'DRAFT');
+  assert.equal(c.contentPolicyVersion,6);assert.equal(c.schemaVersion,6);assert.ok(Object.hasOwn(c,'contentMode'));assert.ok(Object.hasOwn(c,'truthBoundary'));assert.ok(Object.hasOwn(c.topicQuality,'weirdness'));assert.ok(Array.isArray(c.entertainmentBeats));assert.equal(r.status,'DRAFT');
 });
 
 test('Flow-Check akzeptiert fertige Einzeldatei',async()=>{
