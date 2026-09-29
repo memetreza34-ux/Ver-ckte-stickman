@@ -5,6 +5,7 @@ public/__render/
 .DS_Store
 .env
 
+**/00-plan/FLOW_MASTER_PROMPT.txt
 **/99-tech/YOUTUBE_AUDIO_OPTIMIZED.wav
 **/99-tech/whisper/
 **/99-tech/FINAL_TIMELINE.json

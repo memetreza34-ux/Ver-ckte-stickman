@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "DRAFT",
+  "topic": "",
+  "summary": "",
+  "sources": [
+    {"id": "Q1", "title": "", "publisher": "", "url": "", "accessedAt": ""},
+    {"id": "Q2", "title": "", "publisher": "", "url": "", "accessedAt": ""}
+  ],
+  "claims": [
+    {"id": "C1", "statement": "", "confidence": "gesichert", "sourceIds": ["Q1"], "notes": ""},
+    {"id": "C2", "statement": "", "confidence": "gesichert", "sourceIds": ["Q2"], "notes": ""}
+  ],
+  "uncertainties": [],
+  "doNotClaim": []
+}

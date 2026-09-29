@@ -1,41 +1,30 @@
 {
-  "schemaVersion": 1,
-  "contentPolicyVersion": 1,
+  "schemaVersion": 2,
+  "contentPolicyVersion": 2,
   "language": "de",
   "topic": "",
   "workingTitle": "",
+  "topicFit": {
+    "score": null,
+    "verdict": "",
+    "pillars": [],
+    "reason": ""
+  },
   "viewerPromise": "",
   "coreQuestion": "",
   "angle": "",
   "individualityReason": "",
-  "hook": {
-    "type": "",
-    "text": "",
-    "reason": ""
-  },
+  "hook": {"type": "", "text": "", "reason": ""},
   "narrativeMode": "",
   "beats": [],
-  "retention": {
-    "openLoops": [],
-    "escalationPoints": [],
-    "patternInterrupts": []
-  },
+  "retention": {"openLoops": [], "escalationPoints": [], "patternInterrupts": []},
   "payoff": "",
   "titleCoverSystem": {
     "finalTitle": "",
     "titlePromise": "",
-    "coverConcept": {
-      "visualConflict": "",
-      "mainSubjects": [],
-      "visibleText": "",
-      "emotion": "",
-      "whyClickable": ""
-    },
+    "coverConcept": {"visualConflict": "", "mainSubjects": [], "visibleText": "", "emotion": "", "whyClickable": ""},
     "complementarity": ""
   },
-  "ending": {
-    "type": "",
-    "finalLine": ""
-  },
+  "ending": {"type": "", "finalLine": ""},
   "notes": []
 }
