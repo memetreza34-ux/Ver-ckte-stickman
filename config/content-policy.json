@@ -1,8 +1,8 @@
 {
-  "contentPolicyVersion": 2,
+  "contentPolicyVersion": 3,
   "status": "READY",
   "language": "de",
-  "principle": "Die Kanal-DNA bleibt fest, aber Hook, Erzählweise, Dramaturgie, Titel, Cover und Bildfolge werden für jedes Video neu aus dem konkreten Thema entwickelt. Keine starre Einheitsformel.",
+  "principle": "Die Kanal-DNA bleibt fest, aber Hook, Erzählweise, Dramaturgie, Titel, Cover und Bildfolge werden für jedes Video individuell entwickelt.",
   "nicheFitPolicy": {
     "minimumPlanScore": 7,
     "approvedPillars": [
@@ -18,16 +18,15 @@
     ],
     "positiveSignals": ["mafia", "sekte", "kult", "manipulation", "psychologie", "verbrechen", "kriminal", "drogen", "geschichte", "histor", "absurd", "bizarr", "seltsam", "myster", "verschwunden", "verbot", "hierarchie", "experiment", "skandal", "betrug", "katastrophe", "geheim", "gefängnis", "wahnsinn", "paradox", "ungeklärt", "extrem"],
     "obviousOutOfScopeSignals": ["rezept", "kochvideo", "let's play", "lets play", "unboxing", "handy review", "smartphone review", "produktvergleich", "shopping haul", "live ticker", "fußball highlights", "fussball highlights", "mathe hausaufgabe", "schulaufgabe lösen", "schulaufgabe loesen"],
-    "rule": "Offensichtlich fremde Themen werden früh blockiert. Unklare Themen dürfen zur Planung weiter, müssen aber im CONTENT_PLAN mit mindestens 7/10 Kanalfit begründet werden."
+    "rule": "Offensichtlich fremde Themen werden früh blockiert. Unklare Themen müssen im CONTENT_PLAN mit mindestens 7/10 Kanalfit begründet werden."
   },
   "individualityPolicy": {
     "required": true,
     "rules": [
-      "Vor dem Skript wird zuerst geklärt, was an genau diesem Thema verrückt, überraschend, düster, absurd oder besonders erzählenswert ist.",
+      "Vor dem Skript wird geklärt, was an genau diesem Thema überraschend, absurd, düster oder besonders erzählenswert ist.",
       "Jedes Video bekommt ein eigenes Zuschauer-Versprechen und einen eigenen Blickwinkel.",
       "Hook-Typ und Erzählmodus werden nach dem Thema ausgewählt und nicht mechanisch wiederholt.",
-      "Keine Textbausteine aus früheren Videos kopieren, wenn sie nicht inhaltlich zwingend passen.",
-      "Humor, Dunkelheit und Groteske werden dosiert und dienen dem Inhalt statt als Selbstzweck."
+      "Humor, Dunkelheit und Groteske dienen dem Inhalt statt als Selbstzweck."
     ]
   },
   "researchPolicy": {
@@ -39,17 +38,16 @@
       "Zentrale Tatsachenbehauptungen werden vor dem Skript in RESEARCH.json dokumentiert.",
       "Jede zentrale Behauptung verweist auf mindestens eine Quelle.",
       "Umstrittene oder unsichere Informationen werden im Skript nicht als sichere Tatsachen formuliert.",
-      "Keine Quelle erfinden. Wenn etwas nicht belegbar ist, wird es entfernt oder ausdrücklich als unsicher gekennzeichnet."
+      "Keine Quelle erfinden."
     ]
   },
   "hookPolicy": {
     "goal": "In den ersten Sekunden eine konkrete Neugierlücke öffnen und sofort zeigen, warum das Thema sehenswert ist.",
     "allowedTypes": ["Schock-Behauptung", "bizarre Frage", "Mini-Szene", "Kontrast", "versteckte Wahrheit", "Eskalations-Vorschau", "Konsequenz-Hook", "unmöglich klingender Fakt"],
     "rules": [
-      "Der Hook beginnt direkt als erster gesprochener Inhalt. Keine Begrüßung und kein Kanal-Intro davor.",
+      "Der Hook beginnt direkt als erster gesprochener Inhalt.",
       "Der Hook verspricht nur etwas, das das Video später wirklich einlöst.",
       "Der Hook soll konkret zum Thema passen und nicht austauschbar sein.",
-      "Ein bis zwei starke Sätze sind meist besser als ein langer Vorspann.",
       "Nicht jeden Hook als Frage formulieren."
     ],
     "forbiddenOpenings": ["Hallo und willkommen", "Willkommen zu einem neuen Video", "In diesem Video schauen wir uns an", "Heute reden wir über", "Wusstest du schon"]
@@ -57,41 +55,58 @@
   "storyPolicy": {
     "narrativeModes": ["Eskalationsleiter", "Mysterium und Enthüllung", "chronologischer Absturz", "Rang- oder Stufenreise", "Ursache und Wirkung", "Figurenreise", "System oder Hierarchie erklärt", "Rabbit-Hole-Abstieg", "Vergleich und Kontrast", "Fallstudie mit Wendepunkt"],
     "rules": [
-      "Nicht einfach Fakten aneinanderreihen. Jeder Abschnitt muss eine Funktion für die Geschichte haben.",
-      "Kontext nur so weit geben, wie er zum Verstehen der nächsten interessanten Entwicklung nötig ist.",
-      "Die stärksten Informationen nicht alle am Anfang verbrauchen; die Geschichte braucht Steigerung, Wendepunkte oder neue Ebenen.",
-      "Neue Kernidee, neue Figur, neue Stufe, neue Konsequenz oder neuer Schauplatz kann einen neuen Story-Beat auslösen.",
-      "Keine künstliche Eskalation erfinden, wenn die Fakten sie nicht hergeben."
+      "Nicht einfach Fakten aneinanderreihen.",
+      "Kontext nur so weit geben, wie er zum Verständnis nötig ist.",
+      "Die Geschichte braucht Entwicklung, neue Ebenen oder Wendepunkte.",
+      "Keine künstliche Eskalation erfinden."
     ]
   },
   "retentionPolicy": {
     "minimumPlannedSignals": 2,
     "rules": [
       "Regelmäßig neue Information, Perspektive, Frage, Figur, Stufe oder Konsequenz liefern.",
-      "Offene Fragen dürfen gesetzt werden, müssen aber später beantwortet werden.",
-      "Wiederholungen entfernen, sofern sie nicht bewusst zur Pointe oder Verständlichkeit dienen.",
-      "Visuelle Wechsel folgen inhaltlichen Wechseln; nicht künstlich alle paar Sekunden ohne Grund schneiden.",
-      "Ein ruhiger Abschnitt ist erlaubt, wenn er Spannung vorbereitet oder eine wichtige Information verständlich macht."
+      "Offene Fragen später beantworten.",
+      "Wiederholungen entfernen.",
+      "Visuelle Wechsel folgen inhaltlichen Wechseln."
     ]
   },
   "scriptPolicy": {
     "language": "de",
-    "tone": "Direkt, verständlich, unterhaltsam, leicht bissig oder schwarzhumorig wenn passend, aber nicht künstlich jugendlich und nicht dauernd auf Pointe geschrieben.",
+    "tone": "Direkt, verständlich, unterhaltsam und je nach Thema leicht bissig oder schwarzhumorig, aber nicht künstlich jugendlich.",
     "rules": [
       "Natürliches gesprochenes Deutsch statt steifer Schriftsprache.",
-      "Kurze und mittlere Sätze mischen; Satzlänge dem Inhalt anpassen.",
-      "Keine unnötigen Füllsätze, Meta-Kommentare oder Wiederholungen.",
-      "Komplexe Begriffe kurz erklären, ohne den Erzählfluss abzuwürgen.",
-      "Unsichere oder umstrittene Fakten nicht als sichere Tatsachen formulieren."
+      "Keine unnötigen Füllsätze oder Wiederholungen.",
+      "Komplexe Begriffe kurz erklären.",
+      "Unsichere Fakten nicht als sichere Tatsachen formulieren."
     ]
   },
   "titleCoverPolicy": {
-    "principle": "Titel und Cover bilden gemeinsam einen Klickgrund. Sie ergänzen sich und erzählen nicht exakt dieselbe Information doppelt.",
-    "titleRules": ["Titel muss das konkrete Versprechen oder die stärkste Neugier des Videos transportieren.", "Kein irreführender Clickbait, der im Video nicht eingelöst wird.", "Keine generischen Titel, die auf viele andere Themen passen würden.", "Titel wird nach Recherche und Story-Winkel finalisiert, nicht blind vor dem Skript festgeschrieben."],
-    "coverRules": ["Bild 01 ist Cover und erste Videoszene.", "Meist ein bis drei große Hauptmotive.", "Ein klarer visueller Konflikt, eine Transformation, Hierarchie, absurde Situation oder starke Reaktion.", "Hintergrund einfach und kontrastreich halten.", "Cover-Text ist optional. Wenn vorhanden, höchstens wenige große deutsche Wörter.", "Cover-Text soll den Titel ergänzen und ihn nicht einfach wiederholen.", "Das Cover darf visuell zugespitzter sein als normale Szenen, muss aber inhaltlich ehrlich bleiben."]
+    "principle": "Titel und Cover bilden gemeinsam einen Klickgrund und ergänzen sich.",
+    "coverHeadlineRequired": true,
+    "coverHeadlineMinWords": 1,
+    "coverHeadlineMaxWords": 4,
+    "titleRules": [
+      "Titel transportiert das konkrete Versprechen oder die stärkste Neugier.",
+      "Kein irreführender Clickbait.",
+      "Titel wird nach Recherche und Story-Winkel finalisiert."
+    ],
+    "coverRules": [
+      "Bild 01 ist Cover und erste Videoszene.",
+      "Das Cover hat immer eine kurze, gut lesbare deutsche Überschrift mit 1 bis 4 Wörtern.",
+      "Die Überschrift wird im Bildprompt wortgenau festgelegt und erscheint genau einmal.",
+      "Meist ein bis drei große Hauptmotive.",
+      "Ein sofort verständlicher visueller Konflikt, eine Transformation, Hierarchie, absurde Situation oder starke Reaktion.",
+      "Hintergrund einfach und kontrastreich halten.",
+      "Die Überschrift ergänzt den Titel und wiederholt ihn nicht einfach vollständig.",
+      "Das Cover darf visuell zugespitzter sein, muss aber inhaltlich ehrlich bleiben."
+    ]
   },
   "endingPolicy": {
     "required": true,
-    "rules": ["Das Ende löst das zentrale Zuschauer-Versprechen ein.", "Wenn passend, mit einer letzten Konsequenz, Pointe, überraschenden Einordnung oder einem starken Schlussbild enden.", "Kein unnötig langer Standard-Abspann im Voice-over."]
+    "rules": [
+      "Das Ende löst das zentrale Zuschauer-Versprechen ein.",
+      "Wenn passend mit letzter Konsequenz, Pointe, Einordnung oder starkem Schlussbild enden.",
+      "Kein unnötig langer Standard-Abspann im Voice-over."
+    ]
   }
 }

@@ -1,15 +1,10 @@
 {
-  "schemaVersion": 2,
-  "contentPolicyVersion": 2,
+  "schemaVersion": 3,
+  "contentPolicyVersion": 3,
   "language": "de",
   "topic": "",
   "workingTitle": "",
-  "topicFit": {
-    "score": null,
-    "verdict": "",
-    "pillars": [],
-    "reason": ""
-  },
+  "topicFit": {"score": null, "verdict": "", "pillars": [], "reason": ""},
   "viewerPromise": "",
   "coreQuestion": "",
   "angle": "",

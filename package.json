@@ -1,9 +1,9 @@
 {
   "name": "verueckte-stickman-video-pipeline",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "type": "module",
-  "description": "Stickman YouTube production pipeline with content planning, research, audio alignment, motion planning and render QC.",
+  "description": "German Stickman YouTube pipeline with content planning, research, clean Google Flow image prompts, audio alignment, motion and render QC.",
   "scripts": {
     "create:video": "node src/cli/create-project.js",
     "topic:video": "node src/cli/check-topic.js",

@@ -1,0 +1,27 @@
+# ALLE BILDPROMPTS — {{VIDEO_TITLE}}
+
+Style-ID: {{STYLE_ID}}
+Format: 16:9 · deutsche Stickman-Comicwelt · [BILDANZAHL EINTRAGEN] Bildmomente
+
+Flow-Regel: immer genau 1 Bild erzeugen, vollständig abwarten und prüfen, korrekt als `Bild NN.png` benennen und in `03-bilder/` ablegen; erst danach das nächste Bild erzeugen. Keine Queue und keine Parallelgenerierung.
+
+## VERBINDLICHER STYLE-LOCK FÜR JEDES BILD
+
+Das gesamte Bild wird vollständig als einheitliche handgezeichnet wirkende 2D-Comic-Illustration erzeugt. Einfache Stickman-Grundkörper mit dünnen Gliedmaßen, runden oder ovalen Köpfen, klaren Silhouetten und stark überzeichneter, zur Szene passender Mimik. Deutliche schwarze Konturen, große lesbare Formen, kontrolliert raue Linien, sparsame grafische Schatten und reduzierte Hintergründe. Das Motiv muss innerhalb einer Sekunde verständlich sein.
+
+Niemals: Fotorealismus, realistische Menschen, realistische historische Gravur, Foto-Hintergrund, Mixed Media, 3D/Pixar, Corporate-Illustration, Kinder-Clipart, Wasserzeichen, zufällige Logos, Pseudo-Schrift oder unnötige grafische Gewalt. Nicht jede Szene künstlich dunkel machen; Licht und Farben folgen dem Inhalt.
+
+Jeder Einzelprompt muss selbstständig funktionieren und Motiv, Handlung, Komposition, Gesichtsausdruck/Körpersprache, Umgebung, Licht/Farbe und relevante Requisiten konkret nennen. Alle Prompts vollständig auf Deutsch. Sichtbare Schrift ausschließlich korrektes Deutsch.
+
+---
+
+## Bild 01 — COVER
+ÜBERSCHRIFT: "[KURZE DEUTSCHE ÜBERSCHRIFT, 1 BIS 4 WÖRTER]"
+PROMPT:
+[VOLLSTÄNDIGER DEUTSCHER COVER-PROMPT. DIE OBIGE ÜBERSCHRIFT MUSS WORTGENAU EINMAL GROSS UND KONTRASTREICH IM OBEREN BILDBEREICH ERSCHEINEN. 1 BIS 3 GROSSE HAUPTMOTIVE, KEINE ÜBERLADUNG, 16:9.]
+
+## Bild 02
+PROMPT:
+[VOLLSTÄNDIGER DEUTSCHER EINZELPROMPT. KONKRETE SZENE STATT ABSTRAKTER PLANUNG. KEINE ZUFÄLLIGE SCHRIFT. 16:9.]
+
+[WEITERE BILDER LÜCKENLOS BIS BILD NN]

@@ -1,30 +1,12 @@
 {
-  "visualPolicyVersion": 3,
+  "visualPolicyVersion": 4,
   "status": "READY",
   "styleId": "dark-grotesque-surreal-stickman-de-v1",
-  "description": "Feste deutsche Kanal-DNA: grotesk-surreale Stickman-Comic-Bildwelt für bizarre, dunkle, absurde und unterhaltsame Infotainment-Videos. Die Bilder dürfen lustig, unangenehm, düster, psychologisch, chaotisch oder kosmisch wirken, bleiben aber immer klar lesbar und thematisch passend.",
+  "description": "Feste deutsche Kanal-DNA: klar lesbare, handgezeichnet wirkende 2D-Stickman-Comicwelt für bizarre, dunkle, absurde und unterhaltsame Infotainment-Videos.",
   "channelDNA": {
-    "coreStyle": "Grotesk-surrealer Dark-Comic-Stickman-Infotainment-Stil",
-    "tone": [
-      "bizarre",
-      "dunkel-humorig",
-      "leicht verstörend",
-      "absurd",
-      "neugierig machend",
-      "provokant ohne sinnlosen Schock"
-    ],
-    "topicRange": [
-      "bizarre Fakten",
-      "absurde Geschichte",
-      "dunkle Psychologie",
-      "Manipulation",
-      "Mafia und Hierarchien",
-      "Sekten und extreme Gruppen",
-      "Drogen und ihre Folgen",
-      "Tabu- und Verbotsthemen",
-      "seltsame Schicksale",
-      "kosmische und surreale Themen"
-    ]
+    "coreStyle": "Grotesk-surrealer 2D-Comic-Stickman-Infotainment-Stil",
+    "tone": ["bizarr", "dunkel-humorig", "leicht verstörend wenn passend", "absurd", "neugierig machend"],
+    "topicRange": ["bizarre Fakten", "absurde Geschichte", "dunkle Psychologie", "Manipulation", "Mafia und Hierarchien", "Sekten", "Drogen und Folgen", "Tabuthemen", "seltsame Schicksale", "surreale Themen"]
   },
   "languagePolicy": {
     "channelLanguage": "de",
@@ -33,64 +15,65 @@
     "allVisibleTextMustBeGerman": true,
     "englishVisibleTextForbidden": true,
     "pseudoTextForbidden": true,
-    "rule": "Alle Bildprompts werden auf Deutsch geschrieben. Jede im Bild sichtbare Beschriftung, Überschrift, Stufenangabe, Warnung oder sonstige Schrift muss korrektes Deutsch sein. Englische Begriffe nur dann verwenden, wenn ein unvermeidbarer offizieller Eigenname exakt so lautet."
+    "rule": "Alle Bildprompts werden vollständig auf Deutsch geschrieben. Jede sichtbare Schrift ist korrektes Deutsch."
   },
   "characterDNA": {
-    "base": "Einfache Stickman-Grundkörper mit runden oder ovalen Köpfen, klaren Gliedmaßen und sehr gut lesbarer Silhouette.",
-    "faces": "Gesichter dürfen stark überzeichnet sein: große oder leere Augen, Augenringe, schiefes Grinsen, genervter Blick, Angst, Wut, Arroganz, Verwirrung oder groteske Verzerrung.",
-    "roles": [
-      "normaler Host-Stickman",
-      "groteske Themenfigur",
-      "Boss- oder Rangfigur",
-      "Opfer- oder Außenseiterfigur",
-      "symbolische oder surreal veränderte Figur"
-    ],
-    "consistency": "Der Stickman-Grundstil bleibt über alle Videos wiedererkennbar, während Kleidung, Gesicht, Zustand und Umgebung dem konkreten Thema angepasst werden."
+    "base": "Einfache Stickman-Grundkörper mit dünnen Gliedmaßen und runden oder ovalen Köpfen; klare Silhouette und leicht wiedererkennbare Figuren.",
+    "faces": "Stark überzeichnete, comicartige Mimik: große oder leere Augen, Augenringe, schiefes Grinsen, Angst, Wut, Arroganz, Verwirrung oder groteske Verzerrung – immer passend zur Szene.",
+    "consistency": "Grundkörper, Liniencharakter und Gesichtslogik bleiben wiedererkennbar; Kleidung, Zustand und Umgebung passen sich dem Thema an."
+  },
+  "renderDNA": {
+    "medium": "vollständig illustrierte 2D-Comiczeichnung",
+    "linework": "deutliche schwarze Konturen, leicht handgezeichnet, kontrolliert rau statt schmutzig oder chaotisch",
+    "shapes": "einfache große Formen mit guter Lesbarkeit",
+    "shading": "sparsame grafische Schatten und kontrollierte Textur",
+    "depth": "klare Vordergrund-Mittelgrund-Hintergrund-Staffelung, wenn die Szene davon profitiert",
+    "rule": "Kein Fotorealismus, keine realistischen Menschen, kein 3D/Pixar, kein Mixed-Media-Look, keine realistische historische Gravur."
   },
   "colorDNA": {
     "base": ["Schwarz", "Weiß", "Grau"],
-    "accents": ["Rot", "Giftgrün", "Violett", "Gelb", "Cyan", "dunkles Blau"],
-    "darkTopics": "Schwarz, Grau, Rot und schmutzige gedämpfte Töne bevorzugen.",
-    "cosmicTopics": "Violett, Cyan, Dunkelblau und Schwarz mit kontrolliertem Leuchten verwenden.",
-    "rule": "Nicht jede Szene muss dunkel sein. Farbe und Licht folgen der Aussage, aber der grotesk-komische Grundcharakter bleibt erhalten."
+    "accents": ["Rot", "Giftgrün", "Violett", "Gelb", "Cyan", "dunkles Blau", "Braun", "Ocker"],
+    "rule": "Farbe und Licht folgen der Szene. Nicht jede Szene künstlich abdunkeln; Alltag und Erklärung dürfen heller sein, Gefahr und Tragik kontrolliert dunkler."
   },
   "rules": [
-    "Jede Szene zeigt genau eine klare visuelle Hauptidee, Handlung, Hierarchie, Transformation, Metapher oder Reaktion. Keine generischen Füllbilder.",
-    "Stickman-Figuren bleiben einfach und sofort lesbar, dürfen aber groteske, hässliche, böse, erschöpfte, manipulative, verrückte oder absurde Gesichtszüge besitzen.",
-    "Dicke bis mitteldicke schwarze Konturen, leicht handgezeichneter Comic-Charakter und kontrolliert rohe Linien statt steriler Corporate-Illustration.",
-    "Humor entsteht vor allem durch Übertreibung, Größenunterschiede, absurde Situationen, unerwartete Reaktionen und visuelle Kontraste.",
-    "Düstere oder verstörende Themen dürfen unheimlich und unangenehm wirken, aber nicht allein durch sinnlose grafische Gewalt Aufmerksamkeit erzwingen.",
-    "Kosmische oder surreale Elemente wie schwebende Augen, verzerrte Räume, Spiralen, Schatten, Portale, Nebel oder unmögliche Größenverhältnisse werden nur eingesetzt, wenn sie die Aussage wirklich verstärken.",
-    "Kompositionen sollen dynamisch und YouTube-tauglich sein: klares Hauptmotiv, starke Silhouette, kontrollierte negative Fläche, Tiefenstaffelung und gut lesbare Größenkontraste.",
-    "Hintergründe bleiben thematisch konkret, aber visuell reduziert. Das Hauptmotiv muss innerhalb einer Sekunde erfassbar sein.",
-    "Für Hierarchien, Stufen oder Entwicklungen darf dieselbe Figur in mehreren klar unterscheidbaren Zuständen gezeigt werden, zum Beispiel von harmlos zu extrem.",
-    "Sichtbarer Text wird sparsam verwendet. Wenn Text nötig ist, ausschließlich korrektes Deutsch mit wenigen großen Wörtern und starkem Kontrast.",
-    "Beispiele für Übersetzungsregeln: LEVEL wird zu STUFE, WARNING wird zu WARNUNG, BOSS darf nur als im Deutschen üblicher Begriff vorkommen, sonst deutsche Formulierung bevorzugen.",
-    "Jeder Bildprompt selbst wird vollständig auf Deutsch formuliert. Keine englischen Prompt-Bausteine, Stilwörter oder Regieanweisungen.",
-    "Jede Szene wird für 16:9 komponiert und lässt genügend Motivreserve für leichte Kamera-Bewegungen wie Zoom oder seitliche Fahrt.",
-    "Bild 01 muss gleichzeitig als erste Videoszene und als starkes Cover funktionieren: wenige große Elemente, klarer Konflikt oder starke Frage, hoher Wiedererkennungswert, keine Informationsüberladung."
+    "Jede Szene hat genau eine klare visuelle Hauptidee statt Informationsüberladung.",
+    "Jeder Einzelprompt ist selbstständig verständlich und nennt Motiv, Handlung, Komposition, Ausdruck, Umgebung, Licht/Farbe und Stil.",
+    "Stickman-Figuren bleiben einfach und sofort lesbar, dürfen aber stark überzeichnete Gesichtsausdrücke besitzen.",
+    "Dicke bis mitteldicke schwarze Konturen und einfache 2D-Formen prägen jedes Bild.",
+    "Historische oder reale Umgebungen werden vereinfacht illustriert und nicht fotorealistisch rekonstruiert.",
+    "Humor entsteht durch Übertreibung, absurde Situationen, Größenunterschiede und Reaktionen.",
+    "Düstere Elemente nur so stark einsetzen, wie die Aussage es verlangt.",
+    "Kosmische, surreale oder Horror-Elemente nur bei inhaltlichem Grund verwenden.",
+    "Hintergründe unterstützen das Motiv, bleiben aber visuell reduziert.",
+    "Keine zufälligen Dekorationen oder fremden Symbole ohne Bezug zum gesprochenen Inhalt.",
+    "Sichtbaren Text nur bewusst einsetzen; jede Schrift ausschließlich korrektes Deutsch.",
+    "Bild 01 enthält immer eine kurze deutsche Cover-Überschrift mit 1 bis 4 Wörtern, genau einmal und mit starkem Kontrast.",
+    "Alle Bilder sind 16:9 und lassen Motivreserve für dezente Kamera-Bewegungen.",
+    "Keine Pseudo-Schrift, Wasserzeichen, Logos fremder Anbieter oder zufällige Beschriftungen."
   ],
   "thumbnailDNA": {
+    "headlineRequired": true,
+    "headlineWords": [1, 4],
     "mainSubjects": "Meist 1 bis 3 große Hauptfiguren oder Objekte.",
-    "expression": "Ein klarer extremer Gesichtsausdruck oder eine sofort verständliche visuelle Reaktion.",
+    "expression": "Ein klarer extremer Gesichtsausdruck oder eine sofort verständliche Reaktion.",
     "background": "Einfach, kontrastreich und nicht überladen.",
-    "text": "Wenn überhaupt, wenige große deutsche Wörter. Kein langer Erklärungstext.",
-    "goal": "Das Motiv soll auch klein sofort verständlich, seltsam und neugierig machend wirken."
+    "text": "Immer eine kurze deutsche Überschrift mit 1 bis 4 Wörtern; groß, kontrastreich, mit sicherem Rand und genau einmal.",
+    "goal": "Das Cover soll auch klein sofort verständlich und neugierig machend sein."
   },
   "forbidden": [
-    "Englische sichtbare Wörter oder englische Bildbeschriftungen, außer unvermeidbaren offiziellen Eigennamen",
-    "Englisch formulierte Bildprompts",
-    "Pseudo-Schrift, Fantasiebuchstaben oder unlesbare Beschriftungen",
-    "Wasserzeichen oder Logos fremder Anbieter",
-    "fotorealistische Menschen als Hauptmotiv",
-    "süße Kinder-Cartoon- oder Kindergarten-Clipart-Optik",
-    "sterile Corporate-Illustrationsoptik",
-    "Pixar- oder Hochglanz-3D-Look als Grundstil",
+    "englische Bildprompts",
+    "englische sichtbare Wörter außer unvermeidbaren Eigennamen",
+    "Pseudo-Schrift oder Fantasiebuchstaben",
+    "fotorealistische Menschen oder Umgebungen als Grundstil",
+    "realistische historische Gravur- oder Gemäldeoptik",
+    "3D-, Pixar- oder Hochglanz-Render",
+    "Mixed Media oder Foto-plus-Cartoon",
+    "süße Kinder-Clipart",
+    "sterile Corporate-Illustration",
     "ständig identische Frontansicht und Pose",
-    "überladene Hintergründe ohne klaren Fokus",
-    "zu viele kleine Informationen in einem einzigen Bild",
-    "zufällige Dekoration ohne Bezug zum gesprochenen Inhalt",
-    "unnötige grafische Gewalt nur als Schockmittel",
-    "kosmische Effekte in jeder Szene ohne inhaltlichen Grund"
+    "überladene Hintergründe",
+    "zu viele Informationen in einem Bild",
+    "unnötige grafische Gewalt",
+    "permanent dunkle Horrorbeleuchtung ohne inhaltlichen Grund"
   ]
 }
