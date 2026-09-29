@@ -5,24 +5,19 @@
       "id": "2026-KW40_londoner-bierflut-1814",
       "title": "Die tödliche Bierflut von London",
       "aliases": ["Die Londoner Bierflut von 1814"],
-      "status": "reserved",
-      "createdAt": "2026-09-29T12:40:00+02:00"
+      "status": "baseline-test",
+      "createdAt": "2026-09-29T12:40:00+02:00",
+      "notes": "V2.x Lernvideo: zu dokumentarisch und zu geringe Bilddichte; nicht als aktueller Kanalstandard verwenden."
     },
     {
       "id": "2026-KW40_ein-tag-als-cia-spion-berlin-1955",
       "title": "Ein Tag als CIA-Spion in Berlin 1955",
       "aliases": ["Ein Tag als Spion im Kalten Krieg – Berlin 1955", "Ein Tag als Spion im Kalten Krieg"],
-      "status": "reserved",
+      "status": "baseline-test",
       "createdAt": "2026-09-29T18:09:00+02:00",
-      "channelFitAtCreation": {
-        "decision": "APPROVED_CHANNEL_FIT",
-        "score": 10,
-        "reason": "Starke immersive Spionagerolle mit historischem Geheimprojekt und belegbaren Fakten."
-      },
-      "topicQualityAtCreation": {
-        "decision": "APPROVED_TOPIC_QUALITY",
-        "score": 9.0
-      }
+      "channelFitAtCreation": {"decision":"APPROVED_CHANNEL_FIT","score":10,"reason":"Starke Spionageidee, aber noch zu stark dokumentarisch umgesetzt."},
+      "topicQualityAtCreation": {"decision":"APPROVED_TOPIC_QUALITY","score":9},
+      "notes": "V5 Lernvideo: Voice-over enthielt unnötigen Fiktions-/Produktionshinweis und zu viel Dokumentationslogik. Ab Content Policy V6 gilt Story-first mit real/hybrid/frei-surreal."
     }
   ]
 }
