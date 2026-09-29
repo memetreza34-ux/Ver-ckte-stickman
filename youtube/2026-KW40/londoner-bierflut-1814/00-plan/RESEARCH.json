@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "topic": "Die Londoner Bierflut von 1814",
+  "summary": "Am 17. Oktober 1814 brach in der Horse Shoe Brewery in St. Giles, London, ein großer Porter-Bottich. Die freigesetzte Flüssigkeit und eine Kettenreaktion beschädigten die Brauerei und überfluteten die dicht bewohnte Umgebung. Acht Menschen starben. Eine Jury wertete die Todesfälle als zufällig beziehungsweise als unvermeidbares Unglück; die Brauerei musste den betroffenen Familien keinen Schadenersatz zahlen. Spätere Erzählungen über Menschenmengen, die das Bier von der Straße tranken, sind in zeitgenössischen Berichten nicht gut belegt.",
+  "sources": [
+    {"id":"Q1","title":"The London Beer Flood","publisher":"HISTORY / A&E Television Networks","url":"https://www.history.com/articles/london-beer-flood","accessedAt":"2026-09-29"},
+    {"id":"Q2","title":"This 1814 Beer Flood Killed Eight People","publisher":"Smithsonian Magazine","url":"https://www.smithsonianmag.com/smart-news/1814-beer-flood-killed-eight-people-180964256/","accessedAt":"2026-09-29"},
+    {"id":"Q3","title":"The London Beer Flood of 1814","publisher":"Historic UK","url":"https://www.historic-uk.com/HistoryUK/HistoryofBritain/The-London-Beer-Flood-of-1814/","accessedAt":"2026-09-29"}
+  ],
+  "claims": [
+    {"id":"C1","statement":"Die Katastrophe ereignete sich am 17. Oktober 1814 bei der Horse Shoe Brewery im Londoner Viertel St. Giles.","confidence":"gesichert","sourceIds":["Q1","Q2","Q3"],"notes":""},
+    {"id":"C2","statement":"Ein großer Porter-Bottich versagte; die freigesetzte Flüssigkeit und weitere beschädigte Behälter erzeugten eine zerstörerische Flut in der Umgebung.","confidence":"gesichert","sourceIds":["Q1","Q2","Q3"],"notes":"Die Sekundärquellen unterscheiden sich bei einzelnen Mengenangaben; das Skript nennt deshalb keine exakte Literzahl."},
+    {"id":"C3","statement":"Acht Menschen starben bei der Londoner Bierflut.","confidence":"gesichert","sourceIds":["Q1","Q2","Q3"],"notes":""},
+    {"id":"C4","statement":"Eine Jury behandelte die Todesfälle als zufällig beziehungsweise als unvermeidbares Unglück; die Brauerei musste den Familien keinen Schadenersatz zahlen.","confidence":"gesichert","sourceIds":["Q1","Q2"],"notes":""},
+    {"id":"C5","statement":"Die Brauerei erhielt eine steuerliche Entlastung beziehungsweise Rückerstattung für bereits versteuertes, verlorenes Bier.","confidence":"gesichert","sourceIds":["Q1","Q3"],"notes":""},
+    {"id":"C6","statement":"Geschichten über große Menschenmengen, die nach der Katastrophe Bier von der Straße tranken, sind in zeitgenössischen Berichten schlecht belegt.","confidence":"wahrscheinlich","sourceIds":["Q2"],"notes":"Smithsonian verweist auf den Bierhistoriker Martyn Cornell, der solche späteren Erzählungen als nicht durch zeitgenössische Berichte gestützt einordnet."}
+  ],
+  "uncertainties": [
+    "Sekundärquellen nennen unterschiedliche exakte Mengen des ausgelaufenen Biers; deshalb wird im Skript keine konkrete Gallonen- oder Literzahl behauptet.",
+    "Spätere Geschichten über massenhaftes Trinken des ausgelaufenen Biers widersprechen der Einordnung, dass zeitgenössische Berichte dies nicht erwähnen."
+  ],
+  "doNotClaim": [
+    "Nicht behaupten, ganz London sei überflutet worden; betroffen war ein Bereich rund um die Brauerei in St. Giles.",
+    "Keine exakte Biermenge nennen, solange die abweichenden historischen Angaben nicht auf Primärquellen aufgelöst sind.",
+    "Nicht als Tatsache darstellen, dass Hunderte Menschen das Bier von der Straße tranken."
+  ]
+}
