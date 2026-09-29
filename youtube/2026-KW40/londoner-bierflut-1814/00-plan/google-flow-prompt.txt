@@ -1,0 +1,254 @@
+STIL-ID: dark-grotesque-surreal-stickman-de-v1
+VIDEO: Die Londoner Bierflut von 1814
+
+AKTIVE CONTENT-POLICY
+{
+  "contentPolicyVersion": 2,
+  "status": "READY",
+  "language": "de",
+  "Grundsatz": "Hook, Story, Titel, Cover und Bildfolge werden individuell aus dem konkreten Thema entwickelt."
+}
+
+AKTIVE BILDWELT
+{
+  "visualPolicyVersion": 3,
+  "status": "READY",
+  "styleId": "dark-grotesque-surreal-stickman-de-v1",
+  "description": "Grotesk-surrealer Dark-Comic-Stickman-Infotainment-Stil für einen deutschen Unterhaltungskanal.",
+  "Regeln": [
+    "einfache sofort lesbare Stickman-Grundkörper mit stark überzeichneten Gesichtern",
+    "dicke bis mitteldicke schwarze Konturen und kontrolliert roher Comic-Charakter",
+    "düstere, absurde oder groteske Stimmung nur passend zum Inhalt",
+    "reduzierte thematische Hintergründe und eine klare Hauptidee pro Bild",
+    "keine süße Kinder-Clipart, keine sterile Corporate-Optik, keine fotorealistischen Menschen",
+    "sichtbare Schrift nur wenn nötig und dann ausschließlich korrektes Deutsch",
+    "16:9 mit Motivreserve für leichte Kamerabewegung"
+  ]
+}
+
+AUSGEFÜLLTER CONTENT-PLAN
+Kanalfit: 10/10, APPROVED.
+Kanalpfeiler: verstörende, bizarre oder extreme Geschichte; bizarre oder absurde Fakten.
+Zuschauer-Versprechen: Der Zuschauer erfährt in knapp zwei Minuten, wie eine reale Bierflut 1814 ein Londoner Viertel traf, warum acht Menschen starben und weshalb die Brauerei am Ende kaum haftete.
+Kernfrage: Wie konnte aus einem beschädigten Bierbottich eine tödliche Katastrophe werden – und warum trug am Ende praktisch niemand die Verantwortung?
+Erzählmodus: chronologischer Absturz.
+Hook-Typ: unmöglich klingender Fakt.
+Hook: 1814 wurde ein Londoner Viertel von einer Flutwelle aus Bier getroffen – und acht Menschen starben.
+Payoff: Die scheinbar lächerliche Idee einer Bierflut entpuppt sich als reale Industriekatastrophe mit acht Toten; besonders überraschend ist, dass die Brauerei danach keinen Schadenersatz zahlen musste und sogar steuerlich entlastet wurde.
+Finaler Titel: Die tödliche Bierflut von London.
+Cover-Konzept: Eine gewaltige dunkelbraune Bierwelle bricht aus einer historischen Brauerei auf zwei erschrockene Stickman-Figuren zu; im Hintergrund ist der riesige geborstene Holzbottich sichtbar. Kein Cover-Text.
+Ending: Am Ende bleibt eine Katastrophe, die absurd klingt, aber real war: eine Bierflut mit acht Toten mitten in London.
+
+RECHERCHE-GRUNDLAGE
+Am 17. Oktober 1814 brach in der Horse Shoe Brewery in St. Giles, London, ein großer Porter-Bottich. Die freigesetzte Flüssigkeit und eine Kettenreaktion beschädigten die Brauerei und überfluteten die dicht bewohnte Umgebung. Acht Menschen starben. Eine Jury wertete die Todesfälle als zufällig beziehungsweise als unvermeidbares Unglück; die Brauerei musste den betroffenen Familien keinen Schadenersatz zahlen. Spätere Erzählungen über Menschenmengen, die das Bier von der Straße tranken, sind in zeitgenössischen Berichten nicht gut belegt.
+Quellen: HISTORY / A&E Television Networks, Smithsonian Magazine, Historic UK.
+Unsicherheit: Sekundärquellen nennen unterschiedliche exakte Mengen des ausgelaufenen Biers; deshalb keine konkrete Gallonen- oder Literzahl visualisieren oder ergänzen.
+Nicht behaupten, ganz London sei überflutet worden. Nicht als Tatsache darstellen, dass Hunderte Menschen das Bier von der Straße tranken.
+
+FINALER VOICE-OVER-TEXT
+1814 wurde ein Londoner Viertel von einer Flutwelle aus Bier getroffen – und acht Menschen starben.
+Das klingt wie eine erfundene Kneipengeschichte, aber die Katastrophe begann in der Horse Shoe Brewery im Viertel St. Giles.
+Dort stand ein riesiger Holzbottich voller Porter, zusammengehalten von schweren Eisenreifen.
+Am 17. Oktober bemerkte ein Angestellter, dass einer dieser Eisenreifen abgesprungen war.
+Solche Schäden waren offenbar nicht völlig ungewöhnlich, deshalb wurde die Reparatur nicht sofort als Notfall behandelt.
+Wenig später zerbarst der Bottich mit gewaltiger Kraft.
+Die Wucht beschädigte weitere Behälter und eine riesige Menge dunkles Bier schoss durch die Brauereimauer.
+Direkt neben der Brauerei lagen enge, dicht bewohnte Straßen und Kellerwohnungen.
+Für die Menschen dort war die braune Flut kein lustiger Anblick, sondern eine plötzlich hereinbrechende Wand aus Flüssigkeit und Trümmern.
+Mauern stürzten ein, Häuser wurden überflutet und Bewohner versuchten sich auf Möbel oder höher gelegene Stellen zu retten.
+Besonders tragisch war, dass mehrere Opfer Frauen und Kinder waren, die sich in den umliegenden Häusern befanden.
+Insgesamt starben acht Menschen bei der Katastrophe.
+Noch absurder wurde die Geschichte zwei Tage später, als eine Jury untersuchte, wer verantwortlich war.
+Ihr Urteil: Die Todesfälle seien zufällig und durch ein unvermeidbares Unglück entstanden – damals wurde das als „Act of God“ bezeichnet.
+Die Brauerei musste deshalb den betroffenen Familien keinen Schadenersatz zahlen.
+Sie erhielt sogar eine steuerliche Entlastung für das verlorene Bier, was dem Unternehmen finanziell half.
+Und noch ein Mythos hält sich bis heute: Geschichten über Massen, die das Bier gierig von der Straße tranken, sind historisch schlecht belegt.
+Am Ende bleibt eine Katastrophe, die absurd klingt, aber real war: eine Bierflut mit acht Toten mitten in London.
+
+WICHTIGE SPRACHREGEL
+- Dieser Kanal ist deutschsprachig.
+- Jeder Bildprompt wird vollständig auf Deutsch ausgeführt.
+- Jede sichtbare Schrift im generierten Bild muss korrektes Deutsch sein.
+- Keine englischen Labels oder Fantasieschrift, außer unvermeidbaren offiziellen Eigennamen.
+
+VERBINDLICHE AUSFÜHRUNG
+- Content-Plan, Recherche und Voice-over sind die einzige inhaltliche Grundlage.
+- Keine neue Tatsachenbehauptung ergänzen.
+- Der folgende Bildplan ist verbindlich.
+- Bildanzahl, Reihenfolge, Audio-Anker, visuellen Zweck, Themen-Anker, Darstellungsform und Bildprompt nicht eigenständig verändern.
+- Bild 01 ist Cover UND erste Videoszene. Erzeuge davon zuerst genau drei Varianten, wähle die stärkste und speichere nur den Gewinner als `Bild 01.png`.
+- Bilder 02 bis 18 jeweils einmal sauber erzeugen; bei technischem Fehler dasselbe inhaltliche Ziel erneut erzeugen statt die Story umzuschreiben.
+- Alle Bilder 16:9.
+
+BILDPLAN
+
+Bild 01 · ca. 0,0s
+Audio-Anker: 1814 wurde ein Londoner Viertel
+Visueller Zweck: Hook und Cover: die absurde, tödliche Bierflut sofort visualisieren
+Themen-Anker: Bierflut 1814 und acht Tote
+Darstellungsform: Coverartige Katastrophenszene mit Größenkontrast
+Bewegungs-Hinweis: push-in
+Geplante Dauer: 5,9
+Bildprompt: Eine grotesk-surreale Stickman-Illustration im düsteren historischen Comic-Infotainment-Stil. Eine gewaltige dunkelbraune Bierwelle bricht aus einer beschädigten Londoner Brauerei des Jahres 1814 und rast direkt auf zwei erschrockene Stickman-Figuren zu; im Hintergrund ist ein riesiger geborstener Holzbottich zu erkennen. Sehr klare Silhouetten, dicke schwarze Konturen, schmutzige Braun-, Grau- und Rottöne, starker Größenkontrast, einfacher dramatischer Hintergrund, keine sichtbare Schrift, 16:9, starke Cover-Lesbarkeit.
+
+Bild 02 · ca. 5,9s
+Audio-Anker: Das klingt wie eine erfundene Kneipengeschichte
+Visueller Zweck: Den Gegensatz zwischen erfundener Kneipengeschichte und realem historischen Ereignis setzen
+Themen-Anker: Horse Shoe Brewery und St. Giles
+Darstellungsform: Historische Establishing-Szene mit skeptischer Hauptfigur
+Bewegungs-Hinweis: pan-right
+Geplante Dauer: 7,0
+Bildprompt: Eine grotesk-surreale Stickman-Szene im London des Jahres 1814. Vor einer großen historischen Brauerei steht ein skeptischer Stickman, der die absurde Situation kaum glauben kann, während hinter ihm dunkle Bierfässer und enge Straßen von St. Giles sichtbar sind. Düster-humoriger Kontrast zwischen Kneipengeschichte und realer Katastrophe, klare schwarze Konturen, reduzierte historische Architektur, braune und graue Akzente, keine sichtbare Schrift, 16:9.
+
+Bild 03 · ca. 12,9s
+Audio-Anker: Dort stand ein riesiger Holzbottich
+Visueller Zweck: Die enorme Größe und technische Abhängigkeit des Porter-Bottichs zeigen
+Themen-Anker: riesiger Porter-Bottich mit Eisenreifen
+Darstellungsform: Größenvergleich und technische Objektillustration
+Bewegungs-Hinweis: push-in
+Geplante Dauer: 4,1
+Bildprompt: Eine historische Stickman-Illustration mit einem gigantischen hölzernen Porter-Bottich als Hauptmotiv. Der Bottich ragt bedrohlich über einen winzigen Arbeiter-Stickman hinaus und wird von mehreren schweren Eisenreifen zusammengehalten. Grotesk übertriebener Größenunterschied, dunkle Brauerei, warme braune Holztöne, schwarze Konturen, einfacher Hintergrund, technisch verständliche Darstellung, keine sichtbare Schrift, 16:9.
+
+Bild 04 · ca. 17,0s
+Audio-Anker: Am 17. Oktober bemerkte ein Angestellter
+Visueller Zweck: Den konkreten ersten Warnhinweis sichtbar machen
+Themen-Anker: abgesprungener Eisenreifen
+Darstellungsform: Detailhandlung mit entdecktem Defekt
+Bewegungs-Hinweis: focus-left
+Geplante Dauer: 4,4
+Bildprompt: Eine klare groteske Stickman-Szene: Ein Brauerei-Arbeiter bemerkt erschrocken einen schweren Eisenreifen, der von einem riesigen Holzbottich abgesprungen ist und schief am Boden liegt. Der Arbeiter zeigt mit weit aufgerissenen Augen darauf. Historische Brauerei 1814, starke schwarze Konturen, reduzierte Kulisse, Braun-, Grau- und Rotakzente, keine sichtbare Schrift, 16:9.
+
+Bild 05 · ca. 21,4s
+Audio-Anker: Solche Schäden waren offenbar nicht völlig ungewöhnlich
+Visueller Zweck: Erklären, warum der Schaden nicht sofort als akuter Notfall behandelt wurde
+Themen-Anker: nicht sofort als Notfall behandelte Reparatur
+Darstellungsform: Kontrastszene zwischen Sorge und Gleichgültigkeit
+Bewegungs-Hinweis: pull-out
+Geplante Dauer: 5,9
+Bildprompt: Eine düster-komische Stickman-Illustration in einer historischen Brauerei. Ein besorgter Arbeiter zeigt auf den beschädigten Bottich, während eine zweite Figur den Schaden mit einer lässigen, gleichgültigen Geste herunterspielt. Der riesige Bottich wirkt im Hintergrund zunehmend bedrohlich. Übertriebene Körpersprache, klare schwarze Konturen, reduzierte braun-graue Farbwelt, keine sichtbare Schrift, 16:9.
+
+Bild 06 · ca. 27,3s
+Audio-Anker: Wenig später zerbarst der Bottich
+Visueller Zweck: Den Moment des Bottichversagens als erste große Eskalation zeigen
+Themen-Anker: zerberstender Bottich
+Darstellungsform: explosiver Moment der mechanischen Zerstörung
+Bewegungs-Hinweis: push-in
+Geplante Dauer: 3,0
+Bildprompt: Eine dramatische groteske Stickman-Illustration exakt im Moment des Versagens: Der riesige Holzbottich zerbirst explosionsartig, Holzplanken und Eisenreifen fliegen auseinander, ein Arbeiter-Stickman reißt schockiert die Arme hoch. Keine grafische Gewalt, Fokus auf Kraft und Chaos, starke schwarze Konturen, dunkle Brauerei, braune Flüssigkeit und rote Akzente, 16:9.
+
+Bild 07 · ca. 30,3s
+Audio-Anker: Die Wucht beschädigte weitere Behälter
+Visueller Zweck: Die Kettenreaktion und den Durchbruch der Brauereimauer erklären
+Themen-Anker: Kettenreaktion und Brauereimauer
+Darstellungsform: dynamische Ursache-Wirkung-Kettenreaktion
+Bewegungs-Hinweis: pan-right
+Geplante Dauer: 5,6
+Bildprompt: Eine dynamische Stickman-Szene mit einer Kettenreaktion in der Brauerei. Der geborstene Hauptbottich schleudert eine massive dunkle Bierflut gegen weitere Fässer und durch eine aufbrechende Ziegelmauer nach draußen. Kleine Stickman-Arbeiter weichen panisch zurück. Groteske Übertreibung, klare Bewegung, schwarze Konturen, Braun-, Grau- und Rotpalette, keine sichtbare Schrift, 16:9.
+
+Bild 08 · ca. 35,9s
+Audio-Anker: Direkt neben der Brauerei lagen enge
+Visueller Zweck: Die Verwundbarkeit der dicht bewohnten Nachbarschaft etablieren
+Themen-Anker: enge Straßen und Kellerwohnungen
+Darstellungsform: historische Umgebungsansicht
+Bewegungs-Hinweis: drift-up
+Geplante Dauer: 4,1
+Bildprompt: Eine düstere historische Stickman-Ansicht der engen Straßen von St. Giles direkt neben der Brauerei. Schmale Häuser, Kellerfenster auf Straßenniveau und dicht gedrängte einfache Wohnungen dominieren die Szene; mehrere kleine Stickman-Bewohner gehen ihrem Alltag nach, ohne die kommende Gefahr zu sehen. Reduzierte aber konkrete Umgebung, graubraune Töne, klare Konturen, 16:9.
+
+Bild 09 · ca. 40,0s
+Audio-Anker: Für die Menschen dort war die braune Flut
+Visueller Zweck: Die Flut als echte Bedrohung statt als komische Biergeschichte zeigen
+Themen-Anker: braune Flutwand mit Trümmern
+Darstellungsform: bedrohliche Perspektivszene mit heranrollender Flut
+Bewegungs-Hinweis: push-in
+Geplante Dauer: 7,4
+Bildprompt: Eine grotesk-bedrohliche Stickman-Szene: Eine hohe dunkelbraune Flutwand aus Bier und Trümmern biegt in eine enge Straße ein, während mehrere Stickman-Bewohner erst im letzten Moment erschrocken reagieren. Kein lustiger Party-Look, sondern echte Gefahr trotz absurdem Ausgangspunkt. Starke Perspektive, dicke schwarze Konturen, dunkle Braun- und Grautöne, keine sichtbare Schrift, 16:9.
+
+Bild 10 · ca. 47,4s
+Audio-Anker: Mauern stürzten ein
+Visueller Zweck: Die unmittelbare Zerstörung und Fluchtversuche visualisieren
+Themen-Anker: Einstürze, Überflutung und Rettungsversuche
+Darstellungsform: Rettungs- und Zerstörungsszene
+Bewegungs-Hinweis: pan-left
+Geplante Dauer: 6,7
+Bildprompt: Eine dramatische Stickman-Illustration während der Überflutung. Wasserähnliche braune Biermassen dringen in einfache Häuser ein, eine Wand kippt, und mehrere Bewohner klettern auf Tische und erhöhte Möbel, um sich zu retten. Klar lesbare Handlung, keine grafische Verletzungsdarstellung, grotesk-düsterer Comic-Stil, starke Konturen, reduzierte historische Kulisse, 16:9.
+
+Bild 11 · ca. 54,1s
+Audio-Anker: Besonders tragisch war
+Visueller Zweck: Die menschliche Tragik respektvoll hervorheben
+Themen-Anker: Frauen und Kinder unter den Opfern
+Darstellungsform: ernste Opferperspektive ohne Gewalt
+Bewegungs-Hinweis: focus-right
+Geplante Dauer: 6,3
+Bildprompt: Eine respektvolle, düstere Stickman-Szene über die menschlichen Folgen. Im Vordergrund stehen eine erschrockene Mutterfigur und ein Kind als einfache Stickman-Silhouetten vor einer überfluteten Kellerwohnung, während im Hintergrund Trümmer und die braune Flut sichtbar sind. Keine grafische Gewalt, ernste Stimmung, schwarze Konturen, gedämpfte Grau-, Braun- und Rotakzente, 16:9.
+
+Bild 12 · ca. 60,4s
+Audio-Anker: Insgesamt starben acht Menschen
+Visueller Zweck: Die Zahl der Todesopfer ruhig und eindeutig verankern
+Themen-Anker: acht Todesopfer
+Darstellungsform: symbolische Opferdarstellung
+Bewegungs-Hinweis: still
+Geplante Dauer: 2,6
+Bildprompt: Eine symbolische groteske Stickman-Illustration für acht Todesopfer: Acht schlichte dunkle Stickman-Silhouetten stehen in einer ruhigen Reihe vor einem blassen, zerstörten Londoner Straßenhintergrund; die Szene wirkt still und ernst, nicht sensationsheischend. Klare schwarze Formen, gedämpfte graubraune Farbwelt, sehr wenig Hintergrunddetail, keine sichtbare Schrift, 16:9.
+
+Bild 13 · ca. 63,0s
+Audio-Anker: Noch absurder wurde die Geschichte zwei Tage später
+Visueller Zweck: Den Perspektivwechsel von Katastrophe zu juristischer Untersuchung markieren
+Themen-Anker: Jury zwei Tage nach der Katastrophe
+Darstellungsform: Gerichtssaal als Perspektivwechsel
+Bewegungs-Hinweis: pull-out
+Geplante Dauer: 5,6
+Bildprompt: Eine visuell überraschende Perspektivverschiebung in einen Gerichtssaal von 1814. Mehrere ernste Jury-Stickman sitzen erhöht hinter einem Tisch, während ein kleiner Vertreter der Brauerei und betroffene Bewohner unten warten. Leicht groteske Proportionen, dunkles Holz, schwarze Konturen, reduzierte historische Details, Spannung statt Action, keine sichtbare Schrift, 16:9.
+
+Bild 14 · ca. 68,6s
+Audio-Anker: Ihr Urteil:
+Visueller Zweck: Das überraschende Jury-Urteil visualisieren
+Themen-Anker: Urteil als unvermeidbares Unglück
+Darstellungsform: Urteilsszene mit Reaktionskontrast
+Bewegungs-Hinweis: focus-left
+Geplante Dauer: 7,8
+Bildprompt: Eine satirisch-düstere Stickman-Gerichtsszene. Die Jury hebt gemeinsam die Hände zu einem Urteil, während eine verwirrte betroffene Stickman-Familie fassungslos reagiert und der Brauereivertreter erleichtert wirkt. Über ihnen nur ein abstrakter Lichtstrahl als Symbol für das damalige Urteil eines unvermeidbaren Unglücks, keine religiöse Figur, keine sichtbare Schrift, klare schwarze Konturen, 16:9.
+
+Bild 15 · ca. 76,4s
+Audio-Anker: Die Brauerei musste deshalb
+Visueller Zweck: Die fehlende Entschädigung für Betroffene verständlich machen
+Themen-Anker: kein Schadenersatz
+Darstellungsform: Kontrastbild zwischen Betroffenen und Brauerei
+Bewegungs-Hinweis: pan-right
+Geplante Dauer: 3,7
+Bildprompt: Eine grotesk-bittere Stickman-Illustration: Eine betroffene Familie steht mit leeren Händen vor den Trümmern ihres Hauses, während ein gut gekleideter Brauereivertreter auf der anderen Seite unberührt weggeht. Starker visueller Kontrast zwischen Verlust und fehlender Haftung, düstere Grau-, Braun- und Rotpalette, klare schwarze Konturen, keine sichtbare Schrift, 16:9.
+
+Bild 16 · ca. 80,1s
+Audio-Anker: Sie erhielt sogar eine steuerliche Entlastung
+Visueller Zweck: Die steuerliche Entlastung der Brauerei als bitteren Kontrast zeigen
+Themen-Anker: steuerliche Entlastung
+Darstellungsform: symbolische Finanzszene
+Bewegungs-Hinweis: focus-right
+Geplante Dauer: 5,6
+Bildprompt: Eine schwarzhumorige Stickman-Szene zum finanziellen Nachspiel. Ein erleichterter Brauereibesitzer hält einen großen offiziellen Steuerbeleg ohne lesbare Schrift in der Hand, während hinter ihm zerbrochene Fässer liegen und Münzen symbolisch zurück in eine Geldkiste wandern. Grotesk, aber sachlich verständlich, schwarze Konturen, gedämpfte Farben, keine lesbaren Wörter, 16:9.
+
+Bild 17 · ca. 85,7s
+Audio-Anker: Und noch ein Mythos hält sich bis heute
+Visueller Zweck: Den späteren Trink-Mythos als schlecht belegte Erzählung einordnen
+Themen-Anker: schlecht belegter Trink-Mythos
+Darstellungsform: geteilte Mythos-vs.-Beleg-Szene
+Bewegungs-Hinweis: pan-left
+Geplante Dauer: 8,5
+Bildprompt: Eine grotesk-surreale Mythos-Szene mit klarer Zweiteilung. Links sieht man eine übertriebene, verschwommene Fantasievorstellung von gierigen Stickman-Menschen mit Bechern an einer Bierpfütze; rechts steht ein skeptischer Forscher-Stickman vor alten Zeitungsblättern und schüttelt den Kopf. Die linke Seite wirkt bewusst wie ein Gerücht, die rechte nüchtern. Keine lesbare Schrift, 16:9.
+
+Bild 18 · ca. 94,2s
+Audio-Anker: Am Ende bleibt eine Katastrophe
+Visueller Zweck: Den realen, tödlichen Kern der absurd klingenden Geschichte als Schlussbild verdichten
+Themen-Anker: reale Katastrophe mit acht Toten
+Darstellungsform: melancholisches Schlussbild
+Bewegungs-Hinweis: pull-out
+Geplante Dauer: 7,0
+Bildprompt: Eine starke ruhige Schlussillustration im grotesk-düsteren Stickman-Stil. Eine leere Londoner Straße nach der Katastrophe, zerbrochene Fässer und Trümmer liegen im Vordergrund, während acht kleine dunkle Stickman-Silhouetten als Erinnerung im Hintergrund stehen. Die braune Flut ist abgeklungen. Melancholisch, absurd und real zugleich, klare schwarze Konturen, gedämpfte Farben, keine sichtbare Schrift, 16:9.
+
+ABSCHLUSSCHECK
+- genau 18 finale Bilder: Bild 01.png bis Bild 18.png
+- Bild 01 funktioniert als Cover und erste Szene
+- alle Bildprompts vollständig auf Deutsch
+- sichtbarer Text ausschließlich korrektes Deutsch
+- keine Pseudo-Schrift
+- keine zusätzlichen Fakten
+- Stickman-DNA durchgehend konsistent
