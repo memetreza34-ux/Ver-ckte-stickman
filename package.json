@@ -1,14 +1,14 @@
 {
   "name": "verueckte-stickman-video-pipeline",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
   "type": "module",
-  "description": "German Stickman YouTube pipeline with content planning, research, clean Google Flow image prompts, audio alignment, motion and render QC.",
+  "description": "Immersive German Stickman facts-entertainment pipeline with research, dense visual planning, audio alignment, motion and render QC.",
   "scripts": {
     "create:video": "node src/cli/create-project.js",
     "topic:video": "node src/cli/check-topic.js",
     "compile:flow": "node src/cli/compile-flow-prompt.js",
-    "validate:phase1": "node src/cli/validate-phase1.js",
+    "validate:phase1": "node src/cli/validate-phase1-v4.js",
     "validate:assets": "node src/cli/validate-assets.js",
     "optimize:audio": "node src/cli/optimize-audio.js",
     "align:audio": "node src/cli/auto-align.js",

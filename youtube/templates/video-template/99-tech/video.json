@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "pipelineVersion": 2,
+  "schemaVersion": 3,
+  "pipelineVersion": 3,
   "contentPolicyVersion": null,
   "videoId": "",
   "weekFolder": "",
