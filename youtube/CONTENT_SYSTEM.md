@@ -2,114 +2,110 @@
 
 ## 1. Kernformat
 
-Der Kanal ist **immersives Fakten-Entertainment**. Der Zuschauer soll nicht nur hören, was passiert, sondern eine ungewöhnliche Welt möglichst von innen erleben:
+Der Kanal ist **verrücktes Story- und Infotainment**.
 
-```text
-Du kommst hinein
-→ du lernst die Regeln
-→ dein Status verändert sich
-→ neue Aufgaben/Risiken entstehen
-→ du steigst auf, scheiterst oder erreichst einen Endpunkt
-```
+Unterhaltung steht vor Dokumentation. Ein Video darf:
 
-Nicht jedes Video muss „Dein Leben als ...“ heißen. Die Erlebnis-Perspektive ist wichtiger als eine feste Titelformel.
+- real sein
+- reale Fakten mit erfundener Story mischen
+- komplett erfunden, surreal, kosmisch oder absurd sein
 
-## 2. Themenqualität vor Nischenpassung
+Die feste Klammer ist nicht „alles muss wahr sein“, sondern:
 
-Ein Thema wird **nicht** produziert, nur weil es irgendwie zur Nische passt. Vor jedem Projekt gibt es zwei Gates:
+> starke Idee → sofortiger Hook → verrückte Entwicklung → visuell abwechslungsreiche Eskalation → Payoff/Twist
 
-1. **Kanalfit** — gehört es grundsätzlich zum Kanal?
-2. **Themenqualität** — ist es stark genug für ein Video?
+## 2. Drei Content-Modi
 
-Die Themenqualität muss mindestens **8/10** erreichen. Bewertet werden:
+### `real`
+Reale Geschichte, echte Abläufe oder echte Tatsachen. Recherche ist Pflicht.
 
-- Neugier / Verrücktheitsfaktor
-- Immersion / klare Rolle oder Situation
-- visuelles Potenzial
-- Eskalations- oder Entwicklungspotenzial
-- Potenzial für konkrete belegte Informationen
+### `hybrid`
+Reale Welt oder Institution + frei erfundene Handlung. Nur reale Tatsachenbehauptungen werden belegt. Intern wird in `truthBoundary` getrennt, was real und was erfunden ist.
 
-Jede Einzeldimension soll mindestens **7/10** erreichen.
+### `frei-surreal`
+Komplett freie Geschichte. Kosmisch, grotesk, absurd, albtraumhaft oder schwarzhumorig. Keine Recherchepflicht, solange keine realen Behauptungen als Fakten verkauft werden.
 
-### Bevorzugte Themen
+Diese Einordnung ist **intern**. Das Voice-over soll nicht mit Sätzen wie „unsere Hauptfigur ist erfunden“ die Story kaputtmachen.
 
-Stark sind zum Beispiel:
+## 3. Themenqualität
 
-- „Ein Tag als Spion im Kalten Krieg“
-- „Du trittst einer Mafia bei“
-- „Dein erster Tag im Hochsicherheitsgefängnis“
-- „So wäre dein Alltag als Gladiator“
-- „Ein Tag als mittelalterlicher Henker“
-- „Du wirst Leibwächter eines Diktators“
-- „Vom Rekruten bis an die Spitze einer gefährlichen Hierarchie“
-- „Du gerätst mitten in eine bizarre historische Katastrophe“
+Ein Thema muss mindestens 8/10 erreichen bei:
 
-### Zu langweilig ohne neuen Winkel
+- Neugier
+- Verrücktheit
+- visuellem Potenzial
+- Eskalationspotenzial
+- Unterhaltungspotenzial
 
-Diese Formulierungen werden nicht direkt produziert:
+Langweilig:
 
 - „Die Geschichte der CIA“
-- „Wie funktioniert die Mafia?“
-- „Fakten über Gladiatoren“
-- „Alles über Sekten“
-- „Die Geschichte des Gefängnisses“
+- „Fakten über Gefängnisse“
+- „Wie funktioniert eine Sekte?“
 
-Sie müssen zuerst als konkrete Erlebnisreise, Rolle, Hierarchie, Gefahr, Regelbruch oder extreme Situation neu gerahmt werden.
+Stärker:
 
-## 3. Geeignete Formate
+- „Ein Spion merkt, dass seine Wohnung ihn abhört“
+- „Du wachst in einer Stadt auf, in der Schlaf verboten ist“
+- „Jede Stunde erscheint auf der Raumstation eine neue Regel“
+- „Du landest in einem Gefängnis mit endlosen Stockwerken“
+- „Eine Stadt verkauft Erinnerungen wie Lebensmittel“
 
-Bevorzugt:
+## 4. Story statt Erklärung
 
-- Lebensreise in Du-Perspektive
-- Rollenreise
-- Aufstieg durch eine Hierarchie
-- ein Tag in einem System
-- Ereignis von innen
-- Abstieg / Rabbit Hole
-- Fallstudie mit erlebbarer Hauptfigur
+Keine Pflicht für eine feste Hauptfigur oder ein bestimmtes Format.
 
-Eine reine Lexikon-Zusammenfassung ist kein Standardformat.
+Mögliche Formen:
 
-## 4. Recherche und Informationsbeats
+- Du-Perspektive
+- normale erzählte Geschichte
+- mehrere Figuren
+- groteske Fallstudie
+- Rang-/Stufenreise
+- Rabbit Hole
+- kosmische Eskalation
+- schwarze Comedy
+- Was-wäre-wenn
+- absurde Welt mit eigenen Regeln
 
-`99-tech/RESEARCH.json` ist Pflicht. Zentrale Informationen werden belegt. Konkrete Details sind wertvoller als allgemeine Sätze: Anforderungen, Zahlen, Zeitspannen, Ränge, Aufgaben, Regeln, Orte, Konsequenzen und Risiken.
+Jede Szene bringt möglichst etwas Neues: Handlung, Regel, Gefahr, visuellen Gag, Transformation, Enthüllung oder Konsequenz.
 
-Im `CONTENT_PLAN.json` werden `informationBeats` geplant. Ziel: ungefähr alle 15–25 Sekunden ein neuer konkreter Informationswert. Die Du-Perspektive ist Erzähltechnik, kein Freibrief zum Erfinden.
+## 5. Unterhaltungsdichte
 
-## 5. Hook
+`entertainmentBeats` sind Pflicht.
 
-Der Hook ist der erste gesprochene Inhalt. Bei Rollen-Videos darf er direkt hineinziehen:
+Ziel: ungefähr alle 8–16 Sekunden ein neuer starker Impuls:
 
-> „Du bestehst die Auswahl – und ab jetzt darf fast niemand wissen, was du beruflich machst.“
+- Twist
+- neue Regel
+- neue Gefahr
+- visueller Gag
+- Statuswechsel
+- Enthüllung
+- absurde Konsequenz
+- starker echter Fakt
+- Perspektivwechsel
 
-Keine Begrüßung und kein „Heute reden wir über ...“.
+Nicht mehrere Sätze lang nur Hintergrund erklären.
 
-## 6. Story
+## 6. Bilddichte
 
-Eine Rollenreise kann beispielsweise so funktionieren:
+Kein „ein Satz = ein Bild“.
 
-```text
-Einstieg / Auswahl
-→ Ausbildung / erste Regeln
-→ erster echter Alltag
-→ neue Stufe oder Verantwortung
-→ Risiko / Preis
-→ möglicher Aufstieg
-→ realistischer Endpunkt
-```
+Richtwert für 100 Sekunden: meistens etwa 28–38 Bildmomente. Hook, Action, Transformationen und Twists dichter; ruhige Momente dürfen bewusst länger stehen.
 
-Das ist kein starres Schema. Thema und Recherche entscheiden.
+Ein Satz darf mehrere Bilder bekommen, wenn sich Handlung, Ort, Objekt, Stimmung oder Aussage verändert.
 
-## 7. Bilddichte
+## 7. Titel + Cover
 
-Kein „ein Satz = ein Bild“. Bildwechsel entstehen durch echte visuelle Gedankenwechsel: neuer Ort, neue Handlung, neues Objekt, neuer Rang, starke Zahl, Regel, Enthüllung, Konsequenz oder Perspektivwechsel.
+Titel und Cover verkaufen die verrückteste klare Idee des Videos.
 
-Richtwert für ca. 100 Sekunden: meist **26–34 Bilder**. Hooks und Action dichter, ruhige Momente länger.
+Bild 01 bleibt Cover + erste Szene. Cover immer mit kurzer deutscher Überschrift von 1–4 Wörtern.
 
-## 8. Titel + Cover
+## 8. Wahrheit ohne Doku-Zwang
 
-Titel und Cover verkaufen die Erlebnisfrage. Bild 01 ist Cover und erste Szene. Immer 1–4 deutsche Wörter als große Überschrift.
+Bei realen Aussagen gilt weiterhin: nichts erfinden und als Fakt verkaufen.
 
-## 9. Bildwelt
+Bei frei erfundenen Geschichten gilt: nicht künstlich Quellen oder historische Erklärungen hineinpressen. Eine offensichtlich surreale Prämisse darf einfach erzählt werden.
 
-Die grotesk-surreal-dunkle Stickman-DNA bleibt fest. Sie visualisiert die Erlebnisreise, ersetzt aber weder Recherche noch Dramaturgie.
+Produktionshinweise, Wahrheitsgrenzen und Quellen gehören intern in `99-tech/`, nicht automatisch ins Voice-over.
