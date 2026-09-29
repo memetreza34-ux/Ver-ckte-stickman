@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 5,
+  "contentPolicyVersion": 5,
+  "language": "de",
+  "topic": "Ein Tag als Spion im Kalten Krieg – Berlin 1955",
+  "workingTitle": "Ein Tag als CIA-Spion in Berlin 1955",
+  "topicFit": {
+    "score": 10,
+    "verdict": "APPROVED",
+    "pillars": [
+      "Leben und Alltag in ungewöhnlichen, geheimen oder extremen Rollen",
+      "Geheimdienste, Spionage, Militär- und Sicherheitswelten auf öffentlich belegbarer Ebene",
+      "extreme Systeme, Überlebenssituationen und ungewöhnliche Schicksale"
+    ],
+    "reason": "Das Thema setzt den Zuschauer direkt in eine reale Geheimdienstwelt des Kalten Krieges, bietet eine klare Rolle, ein historisch belegtes Hochrisiko-System, starke visuelle Kontraste und mehrere überraschende Fakten."
+  },
+  "topicQuality": {
+    "score": 9.0,
+    "verdict": "APPROVED",
+    "curiosity": 9,
+    "immersion": 10,
+    "visualPotential": 9,
+    "escalationPotential": 8,
+    "informationPotential": 9,
+    "reason": "Spionage in Berlin 1955 verbindet unmittelbare Rollenfantasie mit einem realen geheimen Tunnel, Doppelagenten, riesigen Zahlen und einem starken Wendepunkt.",
+    "whyNotBoring": "Das Video wechselt zwischen geteiltem Berlin, Quellenarbeit, Tunnelbau, riesigen Datenmengen und der Enthüllung, dass der KGB längst Bescheid wusste. Die Hauptfigur durchläuft dabei einen klaren Arbeitstag statt eine Faktenliste."
+  },
+  "formatMode": "Ein Tag im System",
+  "viewerRole": "junger CIA-Falloffizier im West-Berlin des Jahres 1955",
+  "experiencePremise": "Der Zuschauer erlebt einen illustrativen Arbeitstag eines CIA-Falloffiziers in Berlin 1955. Die Tagesreise ist erzählerisch zusammengesetzt, alle verwendeten Aufgaben, Orte, Größenordnungen und Wendepunkte basieren jedoch auf dokumentierten historischen Vorgängen rund um Hugh Montgomery und Operation GOLD.",
+  "viewerPromise": "Der Zuschauer erlebt in ungefähr zwei Minuten, wie sich Geheimdienstarbeit im Berlin der 1950er anfühlen konnte und erfährt dabei die realen Dimensionen von Operation GOLD, Montgomerys Rolle und den absurden KGB-Wendepunkt.",
+  "coreQuestion": "Wie sah Geheimdienstarbeit im offenen Berlin der 1950er wirklich aus – und wie konnte eine gigantische Tunneloperation laufen, obwohl der KGB längst davon wusste?",
+  "angle": "Kein allgemeiner CIA-Überblick, sondern ein erlebbarer Tag aus Sicht eines jungen Falloffiziers, dessen Routinearbeit Schritt für Schritt in das spektakuläre Geheimprojekt Operation GOLD führt.",
+  "individualityReason": "Das Thema wird nicht als Agentenklischee erzählt. Gerade der Kontrast zwischen unspektakulärer Informationsarbeit, absurden technischen Dimensionen und dem Doppelagenten-Wendepunkt macht dieses Video eigenständig.",
+  "hook": {
+    "type": "Rollen-Einstieg",
+    "text": "Du bist 1955 CIA-Offizier in West-Berlin.",
+    "reason": "Der Zuschauer befindet sich im ersten Satz sofort in Rolle, Zeit und Ort; bereits im zweiten Satz folgt das Geheimprojekt als Neugierlücke."
+  },
+  "narrativeMode": "Ein Tag im System",
+  "beats": [
+    {"purpose": "Sofort in die Rolle ziehen", "content": "West-Berlin 1955, junger CIA-Offizier und das geheime Projekt direkt unter der Stadt."},
+    {"purpose": "Arbeitsrealität statt Filmklischee zeigen", "content": "Berlin als offenes Spionagefeld, Montgomery als reales Beispiel und Informationsarbeit statt Pistolenfantasie."},
+    {"purpose": "Operation GOLD öffnen", "content": "Sowjetische Festnetzkommunikation, CIA/MI6 und der Bau des Tunnels mit realen Dimensionen."},
+    {"purpose": "Menschliche Geheimdienstarbeit zeigen", "content": "Montgomery sucht Quellen mit Wissen über das ostdeutsche Leitungsnetz und übernimmt später Tonbänder aus der laufenden Operation."},
+    {"purpose": "Informationsmenge eskalieren", "content": "50.000 Tonbandrollen, Hunderttausende Gespräche und 1.750 Berichte machen die Größe der Operation sichtbar."},
+    {"purpose": "Großen Wendepunkt liefern", "content": "Der KGB kennt die Operation über George Blake schon während der Planung und lässt sie dennoch weiterlaufen."},
+    {"purpose": "Payoff und Schlussparadox", "content": "Öffentliche Entdeckung 1956, Propagandaeffekt verfehlt und die absurde Wahrheit: Der Gegner wusste längst Bescheid."}
+  ],
+  "informationBeats": [
+    {"claimIds": ["C1", "C2"], "value": "Berlin war vor dem Mauerbau ein besonders offenes und intensives Spionagefeld; Hugh Montgomery verbrachte seine ersten sechs CIA-Jahre dort."},
+    {"claimIds": ["C3"], "value": "Sowjetische Militärkommunikation lief stark über Festnetz und Berlin war ein zentraler Knotenpunkt."},
+    {"claimIds": ["C4"], "value": "Operation GOLD: rund 450 Meter Tunnel, 3.100 Tonnen entfernte Erde und rund 125 Tonnen Stahl."},
+    {"claimIds": ["C5"], "value": "Montgomery baute ein Quellennetz mit Wissen über das ostdeutsche Leitungsnetz auf und übernahm später Tonbänder für die Auswertung."},
+    {"claimIds": ["C6"], "value": "Nahezu ein Jahr Sammlung erzeugte etwa 50.000 Tonbandrollen und 1.750 Geheimdienstberichte."},
+    {"claimIds": ["C7", "C8"], "value": "George Blake informierte den KGB früh; die Sowjets ließen die Operation weiterlaufen und entdeckten den Tunnel öffentlich erst 1956."}
+  ],
+  "retention": {
+    "openLoops": [
+      "Was ist das Geheimprojekt, das direkt unter den Füßen des Agenten läuft?",
+      "Wie kann ein 450-Meter-Tunnel in einer überwachten Stadt verborgen bleiben?",
+      "Warum stoppt der KGB die Operation nicht sofort, obwohl er davon weiß?"
+    ],
+    "escalationPoints": [
+      "Von normaler Quellenarbeit zu einem riesigen Tunnelprojekt.",
+      "Von einzelnen Informationen zu 50.000 Tonbandrollen und 1.750 Berichten.",
+      "Vom vermeintlich geheimen Erfolg zur Enthüllung des KGB-Wissens."
+    ],
+    "patternInterrupts": [
+      "Filmklischee Pistole wird visuell gegen Schreibtisch- und Netzwerkarbeit ausgespielt.",
+      "Große Zahlen werden als übertriebene Größenvergleiche statt als trockene Infografik gezeigt.",
+      "Vor der KGB-Enthüllung abrupter Farb- und Perspektivwechsel."
+    ]
+  },
+  "payoff": "Der Zuschauer versteht, dass reale Spionagearbeit in Berlin zugleich banal, technisch gigantisch und politisch absurd sein konnte: Operation GOLD lieferte echte Informationen, obwohl der KGB das Projekt von Anfang an kannte.",
+  "titleCoverSystem": {
+    "finalTitle": "Ein Tag als CIA-Spion in Berlin 1955",
+    "titlePromise": "Ein unmittelbar erlebbarer CIA-Arbeitstag im Spionagezentrum Berlin 1955 mit einem realen Geheimprojekt und einem starken Doppelagenten-Wendepunkt.",
+    "coverConcept": {
+      "visualConflict": "Der Hauptagent steht zwischen Ost und West, während direkt unter ihm ein geheimer Tunnel verläuft und auf der Gegenseite bereits eine wissende sowjetische Silhouette lauert.",
+      "mainSubjects": ["wiederkehrender CIA-Stickman", "geheimer Tunnel unter Berlin", "wissende sowjetische Silhouette"],
+      "visibleText": "SPION IN BERLIN",
+      "emotion": "Paranoia, Neugier und das Gefühl, beobachtet zu werden",
+      "whyClickable": "Die Kombination aus Agent, geteiltem Berlin und sichtbarem Tunnel erklärt die verrückte Grundidee sofort; die Gegenseite deutet an, dass das Geheimnis möglicherweise gar nicht geheim ist."
+    },
+    "complementarity": "Der Titel verspricht einen Tag als CIA-Spion in Berlin 1955; das Cover zeigt die konkrete Geheimwelt und die Überwachung, ohne den KGB-Twist vollständig zu verraten."
+  },
+  "ending": {
+    "type": "Paradox-Payoff",
+    "finalLine": "Dein Tag endet mit einer absurden Wahrheit: Du arbeitest an einem der geheimsten Projekte Berlins – während dein Gegner längst weiß, dass es existiert."
+  },
+  "notes": [
+    "Testvideo 02 nach Bierflut-Baseline.",
+    "Hauptfigur ist bewusst eine illustrative Composite-Figur; keine erfundene Biografie als historische Tatsache darstellen.",
+    "Ziel: etwa 118 Sekunden, 34 Bilder, deutlich höhere Bilddichte als Testvideo 01."
+  ]
+}
