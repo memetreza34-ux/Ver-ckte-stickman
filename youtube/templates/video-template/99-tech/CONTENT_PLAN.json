@@ -1,18 +1,24 @@
 {
-  "schemaVersion": 5,
-  "contentPolicyVersion": 5,
+  "schemaVersion": 6,
+  "contentPolicyVersion": 6,
   "language": "de",
   "topic": "",
   "workingTitle": "",
+  "contentMode": "",
+  "truthBoundary": {
+    "realElements": [],
+    "inventedElements": [],
+    "notes": ""
+  },
   "topicFit": {"score": null, "verdict": "", "pillars": [], "reason": ""},
   "topicQuality": {
     "score": null,
     "verdict": "",
     "curiosity": null,
-    "immersion": null,
+    "weirdness": null,
     "visualPotential": null,
     "escalationPotential": null,
-    "informationPotential": null,
+    "entertainmentPotential": null,
     "reason": "",
     "whyNotBoring": ""
   },
@@ -26,6 +32,7 @@
   "hook": {"type": "", "text": "", "reason": ""},
   "narrativeMode": "",
   "beats": [],
+  "entertainmentBeats": [],
   "informationBeats": [],
   "retention": {"openLoops": [], "escalationPoints": [], "patternInterrupts": []},
   "payoff": "",
