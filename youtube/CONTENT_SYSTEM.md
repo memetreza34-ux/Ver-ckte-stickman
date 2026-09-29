@@ -2,9 +2,7 @@
 
 ## 1. Kernformat
 
-Der Kanal ist **immersives Fakten-Entertainment**.
-
-Der Zuschauer soll nicht nur hören, *was* passiert, sondern möglichst erleben:
+Der Kanal ist **immersives Fakten-Entertainment**. Der Zuschauer soll nicht nur hören, was passiert, sondern eine ungewöhnliche Welt möglichst von innen erleben:
 
 ```text
 Du kommst hinein
@@ -14,11 +12,51 @@ Du kommst hinein
 → du steigst auf, scheiterst oder erreichst einen Endpunkt
 ```
 
-Das kann eine echte Rolle, ein System, eine Hierarchie, ein Milieu oder ein historisches Ereignis sein.
+Nicht jedes Video muss „Dein Leben als ...“ heißen. Die Erlebnis-Perspektive ist wichtiger als eine feste Titelformel.
 
-Nicht jedes Video muss wörtlich „Dein Leben als ...“ heißen. Die Perspektive darf variieren, solange die Geschichte erlebbar bleibt.
+## 2. Themenqualität vor Nischenpassung
 
-## 2. Geeignete Formate
+Ein Thema wird **nicht** produziert, nur weil es irgendwie zur Nische passt. Vor jedem Projekt gibt es zwei Gates:
+
+1. **Kanalfit** — gehört es grundsätzlich zum Kanal?
+2. **Themenqualität** — ist es stark genug für ein Video?
+
+Die Themenqualität muss mindestens **8/10** erreichen. Bewertet werden:
+
+- Neugier / Verrücktheitsfaktor
+- Immersion / klare Rolle oder Situation
+- visuelles Potenzial
+- Eskalations- oder Entwicklungspotenzial
+- Potenzial für konkrete belegte Informationen
+
+Jede Einzeldimension soll mindestens **7/10** erreichen.
+
+### Bevorzugte Themen
+
+Stark sind zum Beispiel:
+
+- „Ein Tag als Spion im Kalten Krieg“
+- „Du trittst einer Mafia bei“
+- „Dein erster Tag im Hochsicherheitsgefängnis“
+- „So wäre dein Alltag als Gladiator“
+- „Ein Tag als mittelalterlicher Henker“
+- „Du wirst Leibwächter eines Diktators“
+- „Vom Rekruten bis an die Spitze einer gefährlichen Hierarchie“
+- „Du gerätst mitten in eine bizarre historische Katastrophe“
+
+### Zu langweilig ohne neuen Winkel
+
+Diese Formulierungen werden nicht direkt produziert:
+
+- „Die Geschichte der CIA“
+- „Wie funktioniert die Mafia?“
+- „Fakten über Gladiatoren“
+- „Alles über Sekten“
+- „Die Geschichte des Gefängnisses“
+
+Sie müssen zuerst als konkrete Erlebnisreise, Rolle, Hierarchie, Gefahr, Regelbruch oder extreme Situation neu gerahmt werden.
+
+## 3. Geeignete Formate
 
 Bevorzugt:
 
@@ -32,29 +70,23 @@ Bevorzugt:
 
 Eine reine Lexikon-Zusammenfassung ist kein Standardformat.
 
-## 3. Recherche und Informationsbeats
+## 4. Recherche und Informationsbeats
 
-`99-tech/RESEARCH.json` ist Pflicht.
+`99-tech/RESEARCH.json` ist Pflicht. Zentrale Informationen werden belegt. Konkrete Details sind wertvoller als allgemeine Sätze: Anforderungen, Zahlen, Zeitspannen, Ränge, Aufgaben, Regeln, Orte, Konsequenzen und Risiken.
 
-Zentrale Informationen werden belegt. Konkrete Details sind wertvoller als allgemeine Sätze: Anforderungen, Zahlen, Zeitspannen, Ränge, Aufgaben, Regeln, Orte, Konsequenzen und Risiken.
+Im `CONTENT_PLAN.json` werden `informationBeats` geplant. Ziel: ungefähr alle 15–25 Sekunden ein neuer konkreter Informationswert. Die Du-Perspektive ist Erzähltechnik, kein Freibrief zum Erfinden.
 
-Im `CONTENT_PLAN.json` werden `informationBeats` geplant. Ziel: ungefähr alle 15–25 Sekunden ein neuer konkreter Informationswert.
+## 5. Hook
 
-Die Du-Perspektive ist Erzähltechnik, kein Freibrief zum Erfinden. Illustrative Beispielhandlungen müssen mit gesicherten Fakten kompatibel bleiben.
+Der Hook ist der erste gesprochene Inhalt. Bei Rollen-Videos darf er direkt hineinziehen:
 
-## 4. Hook
+> „Du bestehst die Auswahl – und ab jetzt darf fast niemand wissen, was du beruflich machst.“
 
-Der Hook ist der erste gesprochene Inhalt.
+Keine Begrüßung und kein „Heute reden wir über ...“.
 
-Bei Rollen-Videos darf er direkt hineinziehen:
+## 6. Story
 
-> „Du bist 24, bestehst die Auswahl – und ab jetzt darf fast niemand wissen, was du beruflich machst.“
-
-Nicht generisch begrüßen und nicht mit „Heute reden wir über ...“ beginnen.
-
-## 5. Story
-
-Gute Reihenfolge bei einer Rollenreise kann sein:
+Eine Rollenreise kann beispielsweise so funktionieren:
 
 ```text
 Einstieg / Auswahl
@@ -68,37 +100,16 @@ Einstieg / Auswahl
 
 Das ist kein starres Schema. Thema und Recherche entscheiden.
 
-## 6. Bilddichte
+## 7. Bilddichte
 
-Kein „ein Satz = ein Bild“.
+Kein „ein Satz = ein Bild“. Bildwechsel entstehen durch echte visuelle Gedankenwechsel: neuer Ort, neue Handlung, neues Objekt, neuer Rang, starke Zahl, Regel, Enthüllung, Konsequenz oder Perspektivwechsel.
 
-Bildwechsel entstehen durch echte visuelle Gedankenwechsel:
+Richtwert für ca. 100 Sekunden: meist **26–34 Bilder**. Hooks und Action dichter, ruhige Momente länger.
 
-- neuer Ort
-- neue Handlung
-- neues Objekt
-- neuer Rang / Status
-- starke Zahl oder Regel
-- Enthüllung
-- Konsequenz
-- Perspektivwechsel
+## 8. Titel + Cover
 
-Richtwert für ca. 100 Sekunden: meist 26–34 Bilder. Hooks und Action dichter, ruhige Momente länger.
+Titel und Cover verkaufen die Erlebnisfrage. Bild 01 ist Cover und erste Szene. Immer 1–4 deutsche Wörter als große Überschrift.
 
-## 7. Titel + Cover
+## 9. Bildwelt
 
-Titel und Cover verkaufen die **Erlebnisfrage**.
-
-Beispiele für Strukturen, nicht als Pflichtformeln:
-
-- „So wäre dein Leben als …“
-- „Du trittst … bei – was dann passiert“
-- „Vom Rekruten zum …“
-- „So überlebst du als …“
-- „Ein Tag im …“
-
-Bild 01 ist Cover und erste Szene. Immer 1–4 deutsche Wörter als große Überschrift.
-
-## 8. Bildwelt
-
-Die bestehende grotesk-surreal-dunkle Stickman-DNA bleibt unverändert. Sie visualisiert die neue Erzählform, ersetzt aber keine Fakten oder Dramaturgie.
+Die grotesk-surreal-dunkle Stickman-DNA bleibt fest. Sie visualisiert die Erlebnisreise, ersetzt aber weder Recherche noch Dramaturgie.
