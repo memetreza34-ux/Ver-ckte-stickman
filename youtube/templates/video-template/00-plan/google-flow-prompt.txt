@@ -1,54 +1,82 @@
-STYLE_ID: {{STYLE_ID}}
+STIL-ID: {{STYLE_ID}}
 VIDEO: {{VIDEO_TITLE}}
 
-ACTIVE VISUAL POLICY
+AKTIVE BILDWELT
 {{VISUAL_POLICY_JSON}}
 
+WICHTIGE SPRACHREGEL
+- Dieser Kanal ist deutschsprachig.
+- Der komplette Bildplan und jeder einzelne Bildprompt werden vollständig auf Deutsch geschrieben.
+- Jede sichtbare Schrift im generierten Bild muss korrektes Deutsch sein.
+- Keine englischen Wörter, Labels, Warnhinweise oder Überschriften verwenden, außer ein offizieller Eigenname kann sinnvollerweise nicht übersetzt werden.
+- Keine Pseudo-Schrift oder Fantasiebuchstaben.
+
 AUFGABE
-Erstelle den vollständigen Bildplan und die finalen Bildprompts für dieses Video. Nutze ausschließlich die oben eingebettete Visual Policy.
+Erstelle den vollständigen Bildplan und die finalen Bildprompts für dieses Video. Nutze ausschließlich die oben eingebettete Bildwelt. Die Bilder sollen zur grotesk-surrealen, dunklen und unterhaltsamen Stickman-DNA passen, aber immer zuerst den gesprochenen Inhalt verständlich visualisieren.
 
 COVER
 - Bild 01 ist Cover UND erste Videoszene.
 - Erzeuge Bild 01 zunächst in genau drei Varianten, wähle den stärksten Gewinner und speichere nur diesen als `Bild 01.png`.
 - Kein separates Thumbnail und kein Bild 00.
+- Bild 01 braucht wenige große Elemente, einen sofort verständlichen Konflikt oder eine starke visuelle Frage und darf nicht mit Informationen überladen sein.
 
 BILDDICHTE
 - Keine feste Bildzahl erzwingen. NN kommt aus der inhaltlichen Planung.
 - 1 Bild = 1 klarer visueller Zweck.
-- Neue Kernidee, Handlung, Ursache/Folge, Perspektive, Beispiel oder starke emotionale Wendung → neues Bild prüfen.
+- Neue Kernidee, Handlung, Ursache/Folge, Perspektive, Beispiel, Hierarchiestufe, Transformation oder starke emotionale Wendung → neues Bild prüfen.
 - Ziel meist 4–7 Sekunden pro Bild; über 8,5 Sekunden kritisch prüfen; über 10,5 Sekunden sinnvoll splitten.
 - Keine Füllbilder.
+- Lieber zwei klare Bilder als ein überladenes Bild mit zu vielen Informationen.
 
 PRO BILD
-- Audio Anchor: exakter Wortlaut aus dem Voice-over
-- Visual Purpose: eine klare Funktion
-- Topic Anchor: konkretes inhaltliches Element
-- Visual Form: beste Darstellung dieser Idee
-- Motion Hint: push-in | pull-out | pan-left | pan-right | drift-up | drift-down | focus-left | focus-right | still
-- Planned Hold: Sekunden
-- Prompt: vollständiger Bildprompt
+- Audio-Anker: exakter Wortlaut aus dem Voice-over
+- Visueller Zweck: eine klare Funktion
+- Themen-Anker: konkretes inhaltliches Element
+- Darstellungsform: beste Darstellung dieser Idee
+- Bewegungs-Hinweis: push-in | pull-out | pan-left | pan-right | drift-up | drift-down | focus-left | focus-right | still
+- Geplante Dauer: Sekunden
+- Bildprompt: vollständiger deutscher Bildprompt
+
+BILDSPRACHE
+- Grotesk-surrealer Dark-Comic-Stickman-Infotainment-Stil.
+- Einfache, gut lesbare Stickman-Grundkörper mit stark überzeichneten Gesichtern und klarer Körpersprache.
+- Je nach Thema darf die Stimmung lustig, absurd, bedrohlich, psychologisch, düster, chaotisch oder kosmisch sein.
+- Schwarze klare Konturen, reduzierte aber kräftige Akzentfarben und ein thematisch passender, nicht überladener Hintergrund.
+- Keine sterile Corporate-Optik, keine süße Kinder-Clipart, keine fotorealistischen Menschen als Hauptmotiv.
+- Kosmische oder Horror-Elemente nur dann einsetzen, wenn sie die Aussage wirklich unterstützen.
+- Keine unnötige grafische Gewalt nur für Schockwirkung.
 
 SICHTBARER TEXT
-Nur wenn nötig. Bei deutschem Video ausschließlich korrektes Deutsch. Keine Pseudo-Schrift.
+Nur wenn er für das Verständnis oder das Cover wirklich nötig ist. Dann wenige große Wörter, ausschließlich korrektes Deutsch und mit starkem Kontrast. Beispiele: `STUFE 1` statt `LEVEL 1`, `WARNUNG` statt `WARNING`. Keine langen Texttafeln.
 
 BILDPLAN
 
 Bild 01 · [PLANZEIT]
-Audio Anchor: [EXAKTER STARTANKER]
-Visual Purpose: [ZWECK]
-Topic Anchor: [KONKRETES ELEMENT]
-Visual Form: [DARSTELLUNGSFORM]
-Motion Hint: [MOTION]
-Planned Hold: [SEKUNDEN]
-Prompt: [VOLLSTÄNDIGER PROMPT]
+Audio-Anker: [EXAKTER STARTANKER]
+Visueller Zweck: [ZWECK]
+Themen-Anker: [KONKRETES ELEMENT]
+Darstellungsform: [DARSTELLUNGSFORM]
+Bewegungs-Hinweis: [BEWEGUNG]
+Geplante Dauer: [SEKUNDEN]
+Bildprompt: [VOLLSTÄNDIGER DEUTSCHER PROMPT]
 
 Bild 02 · [PLANZEIT]
-Audio Anchor: [EXAKTER STARTANKER]
-Visual Purpose: [ZWECK]
-Topic Anchor: [KONKRETES ELEMENT]
-Visual Form: [DARSTELLUNGSFORM]
-Motion Hint: [MOTION]
-Planned Hold: [SEKUNDEN]
-Prompt: [VOLLSTÄNDIGER PROMPT]
+Audio-Anker: [EXAKTER STARTANKER]
+Visueller Zweck: [ZWECK]
+Themen-Anker: [KONKRETES ELEMENT]
+Darstellungsform: [DARSTELLUNGSFORM]
+Bewegungs-Hinweis: [BEWEGUNG]
+Geplante Dauer: [SEKUNDEN]
+Bildprompt: [VOLLSTÄNDIGER DEUTSCHER PROMPT]
 
 [WEITER BIS BILD NN]
+
+ABSCHLUSSCHECK
+- alle Bildprompts vollständig auf Deutsch
+- sichtbarer Text ausschließlich korrektes Deutsch
+- jedes Bild hat genau eine klare visuelle Hauptidee
+- Stickman-DNA durchgehend erkennbar
+- grotesk, surreal oder düster nur so stark wie es zum Inhalt passt
+- keine überladenen Bilder
+- Bild 01 funktioniert als Cover und erste Szene
+- alle Bilder 16:9 und mit Bewegungsreserve komponiert
