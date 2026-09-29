@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "motionOverrides": [
+    {"imageNumber": 1, "type": "push-in", "strength": 1.15, "focusX": 50, "focusY": 48},
+    {"imageNumber": 14, "type": "push-in", "strength": 1.08, "focusX": 52, "focusY": 50},
+    {"imageNumber": 23, "type": "pull-out", "strength": 1.08, "focusX": 50, "focusY": 50},
+    {"imageNumber": 27, "type": "focus-right", "strength": 1.12, "focusX": 68, "focusY": 46},
+    {"imageNumber": 34, "type": "pull-out", "strength": 0.95, "focusX": 50, "focusY": 50}
+  ]
+}
