@@ -1,22 +1,44 @@
-# Verückte Stickman — Video-Pipeline V2.3
+# Verückte Stickman — Video-Pipeline V2.4
 
-Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und **immersivem Fakten-Entertainment**.
+Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und **verrücktem Story-/Infotainment**.
 
 ## Kanalrichtung
 
-Der Standard ist nicht mehr „historischer Bericht + ein Bild pro Satz“.
+**Unterhaltung zuerst.** Videos dürfen real, hybrid oder komplett erfunden/surreal sein.
 
-Der Zuschauer soll eine ungewöhnliche Welt **von innen erleben**:
+Geeignet sind zum Beispiel:
 
-- ein Leben / Alltag in einer geheimen oder extremen Rolle
-- Eintritt und Aufstieg in einer Hierarchie
-- ein Tag in einem gefährlichen System
-- ein historisches Ereignis aus einer konkreten Innenperspektive
-- Rabbit-Hole-, Aufstiegs-, Abstiegs- oder Überlebensreisen
+- ein Spion, der merkt, dass seine Wohnung ihn abhört
+- eine Stadt, in der Schlaf verboten ist
+- ein Gefängnis mit endlosen Stockwerken
+- eine Raumstation, auf der jede Stunde eine neue Regel erscheint
+- Mafia-, Sekten-, Unterwelt- und Hierarchiegeschichten
+- groteske historische oder moderne Was-wäre-wenn-Szenarien
+- kosmische, absurde und dunkle Comedy-Geschichten
 
-Beispiele für die Richtung: Geheimdienst-Agent, Mafia-Neuling, Gladiator, Gefangener, Kult-Mitglied, historische Rolle oder eine Person mitten in einer absurden Katastrophe. Nicht jedes Video muss dieselbe „Dein Leben als ...“-Titelformel benutzen.
+Nicht jedes Video braucht eine feste Hauptfigur, eine reale Person oder eine dokumentarische Struktur.
 
-**Wichtig:** Die Erlebnis-Perspektive ist nur die Erzählform. Reale Fakten, Zahlen, Anforderungen, Ränge, Abläufe und Konsequenzen müssen weiterhin recherchiert und belegt sein.
+## Content-Modi
+
+`99-tech/CONTENT_PLAN.json` legt `contentMode` fest:
+
+- `real` → reale Tatsachen, Recherche Pflicht
+- `hybrid` → reale Elemente + erfundene Story; nur echte Tatsachenbehauptungen werden belegt
+- `frei-surreal` → freie Story; keine Recherchepflicht, solange keine realen Behauptungen als Fakten verkauft werden
+
+Interne Hinweise wie Wahrheitsgrenzen oder Quellen gehören **nicht automatisch ins Voice-over**. Sätze wie „unsere Hauptfigur ist erfunden“ sind im Sprechertext unerwünscht.
+
+## Themen-Gate
+
+Ein Thema muss nicht nur zur Nische passen, sondern mindestens 8/10 Themenqualität erreichen:
+
+- Neugier
+- Verrücktheit
+- visuelles Potenzial
+- Eskalationspotenzial
+- Unterhaltungspotenzial
+
+Generische Lexikon-Themen werden neu gerahmt oder blockiert.
 
 ## Projektstruktur
 
@@ -26,58 +48,48 @@ Beispiele für die Richtung: Geheimdienst-Agent, Mafia-Neuling, Gladiator, Gefan
 02-audio/           → genau eine finale Voice-over-Datei
 03-bilder/          → Bild 01.png bis Bild NN.png
 04-export/          → finales Video + Thumbnail
-99-tech/            → interne Planung, Recherche, Mapping und Renderdaten
+99-tech/            → interne Planung, Wahrheitsebene, Recherche, Mapping und Renderdaten
 ```
 
-Für Google Flow wird ausschließlich verwendet:
+Für Google Flow wird nur diese Datei verwendet:
 
 ```text
 00-bildprompts/99-alle-bildprompts.txt
 ```
 
-## Bilddichte
+## Story- und Retention-Regeln
 
-Die Bildanzahl ist adaptiv. Kein künstlicher Schnitt nur um „mehr Bilder“ zu haben.
-
-Richtwerte:
-
-- normale Erklärung: meist 2,8–4,2 s pro Bild
-- Hook, Action, Rangwechsel, Enthüllung: oft 1,8–3,0 s
-- bewusster ruhiger Moment: etwa 4,2–5,5 s
-- ab ca. 5,2 s aktiv prüfen, ob ein echter zusätzlicher Bildmoment nötig ist
-- über 6,2 s ist ein Split stark bevorzugt
-- 8,0 s ist technisches Hard-Maximum
-- bei ca. 100 s Video meist ungefähr 26–34 Bilder
-
-Ein längerer gesprochener Satz darf zwei oder drei Bilder bekommen, wenn sich Handlung, Ort, Objekt, Status oder Kernaussage sichtbar ändert. Kurze zusammengehörige Sätze dürfen ein Bild teilen.
-
-## Fakten statt Fülltext
-
-`99-tech/RESEARCH.json` ist Pflicht. Zentrale Aussagen werden belegt. Wenn vorhanden, werden offizielle, wissenschaftliche oder institutionelle Quellen bevorzugt.
-
-Im Skript sollen regelmäßig konkrete Informationswerte vorkommen, z. B.:
-
-- echte Anforderungen
-- Zahlen und Zeitspannen
-- Ränge und Aufgaben
-- Regeln und Verbote
-- reale Orte
-- Konsequenzen und Risiken
-
-Diese Fakten werden in die Reise eingebaut und nicht als trockener Infoblock vorgelesen.
+- Story vor Erklärung
+- Hook ist der erste gesprochene Inhalt
+- keine Meta-Erklärung über erfundene Figuren
+- mindestens 5 geplante `entertainmentBeats`
+- ungefähr alle 8–16 Sekunden ein neuer Twist, Gag, Statuswechsel, eine Regel, Gefahr, Enthüllung oder Konsequenz
+- keine trockenen Faktenketten
+- ein Satz darf mehrere Bilder bekommen
+- ungefähr 28–38 Bildmomente pro 100 Sekunden als Richtwert
 
 ## Cover
 
-`Bild 01` ist Cover und erste Videoszene. Jedes Cover hat eine kurze deutsche Überschrift mit 1–4 Wörtern. Sie erscheint genau einmal, groß, kontrastreich und ergänzt den Videotitel.
+`Bild 01` ist Cover + erste Videoszene. Das Cover besitzt immer eine kurze deutsche Überschrift mit 1–4 Wörtern und 1–3 großen Hauptmotiven.
 
 ## Ablauf
 
 ```text
-Thema → Kanalfit → Erlebnis-Perspektive → Recherche
-→ Hook + Reise/Dramaturgie → Titel/Cover
-→ Informationsbeats + Bild↔Audio-Struktur
-→ Bildprompts → Bilder + Audio
-→ Whisper → Timeline → Motion → Remotion → QC
+Thema
+→ Kanalfit + Themenqualität
+→ Content-Modus wählen
+→ Story planen
+→ falls nötig Recherche/Wahrheitsgrenze
+→ Hook + Skript
+→ Entertainment-Beats
+→ Titel + Cover
+→ Bildfolge + Bildprompts
+→ Bilder + Voice-over
+→ Asset-QC
+→ Whisper-Alignment
+→ Timeline + Motion
+→ Remotion
+→ finales QC
 ```
 
 ## Start
