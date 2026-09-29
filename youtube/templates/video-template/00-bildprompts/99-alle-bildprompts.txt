@@ -12,6 +12,8 @@ Niemals: Fotorealismus, realistische Menschen, realistische historische Gravur, 
 
 Jeder Einzelprompt muss selbstständig funktionieren und Motiv, Handlung, Komposition, Gesichtsausdruck/Körpersprache, Umgebung, Licht/Farbe und relevante Requisiten konkret nennen. Alle Bildprompts vollständig auf Deutsch. Sichtbare Schrift ausschließlich korrektes Deutsch.
 
+Kurzer informativer Text ist auch in späteren Bildern erlaubt, wenn er einen echten belegten Informationswert hat, zum Beispiel eine Jahreszahl, einen Rang, eine kurze Regel, eine Anforderung, einen Ortsnamen oder eine konkrete Zahl. Keine Untertitel und keine Wiederholung ganzer Voice-over-Sätze. Normale Bilder höchstens mit wenigen kurzen Textelementen; bei komplexeren Informationen lieber einen zusätzlichen Bildmoment planen statt eine Textwand zu bauen.
+
 ---
 
 ## Bild 01 — COVER
@@ -21,6 +23,6 @@ BILDPROMPT:
 
 ## Bild 02
 BILDPROMPT:
-[VOLLSTÄNDIGER DEUTSCHER EINZELBILDPROMPT. KONKRETE SZENE STATT ABSTRAKTER PLANUNG. KEINE ZUFÄLLIGE SCHRIFT. 16:9.]
+[VOLLSTÄNDIGER DEUTSCHER EINZELBILDPROMPT. KONKRETE SZENE STATT ABSTRAKTER PLANUNG. WENN EIN BELEGTER FAKT ALS TEXT SICHTBAR HELFEN SOLL, IHN KURZ UND WORTGENAU FESTLEGEN. SONST KEINE ZUFÄLLIGE SCHRIFT. 16:9.]
 
 [WEITERE BILDER LÜCKENLOS BIS BILD NN]

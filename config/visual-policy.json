@@ -1,12 +1,12 @@
 {
-  "visualPolicyVersion": 4,
+  "visualPolicyVersion": 5,
   "status": "READY",
   "styleId": "dark-grotesque-surreal-stickman-de-v1",
-  "description": "Feste deutsche Kanal-DNA: klar lesbare, handgezeichnet wirkende 2D-Stickman-Comicwelt für bizarre, dunkle, absurde und unterhaltsame Infotainment-Videos.",
+  "description": "Feste deutsche Kanal-DNA: klar lesbare, handgezeichnet wirkende 2D-Stickman-Comicwelt für immersives Fakten-Entertainment über bizarre, dunkle, geheime und extreme Lebenswelten.",
   "channelDNA": {
     "coreStyle": "Grotesk-surrealer 2D-Comic-Stickman-Infotainment-Stil",
     "tone": ["bizarr", "dunkel-humorig", "leicht verstörend wenn passend", "absurd", "neugierig machend"],
-    "topicRange": ["bizarre Fakten", "absurde Geschichte", "dunkle Psychologie", "Manipulation", "Mafia und Hierarchien", "Sekten", "Drogen und Folgen", "Tabuthemen", "seltsame Schicksale", "surreale Themen"]
+    "topicRange": ["ungewöhnliche Rollen und Lebenswelten", "Geheimdienste und Spionage auf öffentlich belegbarer Ebene", "Mafia und Hierarchien", "Sekten", "historische Rollen", "Kriminalität", "dunkle Psychologie", "bizarre Geschichte", "extreme Systeme", "Tabuthemen", "seltsame Schicksale"]
   },
   "languagePolicy": {
     "channelLanguage": "de",
@@ -16,6 +16,21 @@
     "englishVisibleTextForbidden": true,
     "pseudoTextForbidden": true,
     "rule": "Alle Bildprompts werden vollständig auf Deutsch geschrieben. Jede sichtbare Schrift ist korrektes Deutsch."
+  },
+  "informationTextPolicy": {
+    "allowedOutsideCover": true,
+    "purpose": "Kurzer sichtbarer Text darf echte, belegte Informationen schneller verständlich machen.",
+    "preferredUses": ["Datum", "Jahreszahl", "Rang oder Stufe", "kurze Regel", "kurze Anforderung", "konkrete Zahl", "Ortsname", "kurze Gegenüberstellung"],
+    "maxWordsPerTextElement": 6,
+    "maxTextElementsPerNormalImage": 2,
+    "rules": [
+      "Text außerhalb des Covers nur einsetzen, wenn er einen echten Informationswert liefert.",
+      "Keine Untertitel oder Wiederholung des gesprochenen Voice-overs.",
+      "Zahlen, Daten, Ränge oder Regeln müssen mit RESEARCH.json vereinbar und belegt sein.",
+      "Lieber eine klare Zahl oder ein kurzes Label als einen ganzen erklärenden Absatz.",
+      "Text wird als Teil der Bildkomposition geplant und darf das Hauptmotiv nicht verdrängen.",
+      "Bei komplexen Informationen lieber ein zusätzliches Bild erzeugen statt ein Bild mit Text zu überladen."
+    ]
   },
   "characterDNA": {
     "base": "Einfache Stickman-Grundkörper mit dünnen Gliedmaßen und runden oder ovalen Köpfen; klare Silhouette und leicht wiedererkennbare Figuren.",
@@ -46,7 +61,8 @@
     "Kosmische, surreale oder Horror-Elemente nur bei inhaltlichem Grund verwenden.",
     "Hintergründe unterstützen das Motiv, bleiben aber visuell reduziert.",
     "Keine zufälligen Dekorationen oder fremden Symbole ohne Bezug zum gesprochenen Inhalt.",
-    "Sichtbaren Text nur bewusst einsetzen; jede Schrift ausschließlich korrektes Deutsch.",
+    "Kurzer informativer Text ist auch nach Bild 01 erlaubt, wenn er belegte Fakten, Daten, Zahlen, Ränge oder Regeln sichtbar macht.",
+    "Normalbilder maximal mit wenigen kurzen deutschen Textelementen versehen; niemals Textwände.",
     "Bild 01 enthält immer eine kurze deutsche Cover-Überschrift mit 1 bis 4 Wörtern, genau einmal und mit starkem Kontrast.",
     "Alle Bilder sind 16:9 und lassen Motivreserve für dezente Kamera-Bewegungen.",
     "Keine Pseudo-Schrift, Wasserzeichen, Logos fremder Anbieter oder zufällige Beschriftungen."
@@ -72,7 +88,7 @@
     "sterile Corporate-Illustration",
     "ständig identische Frontansicht und Pose",
     "überladene Hintergründe",
-    "zu viele Informationen in einem Bild",
+    "zu viele Informationen oder zu viel Text in einem Bild",
     "unnötige grafische Gewalt",
     "permanent dunkle Horrorbeleuchtung ohne inhaltlichen Grund"
   ]
