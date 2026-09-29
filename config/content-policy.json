@@ -1,51 +1,107 @@
 {
-  "contentPolicyVersion": 3,
+  "contentPolicyVersion": 4,
   "status": "READY",
   "language": "de",
-  "principle": "Die Kanal-DNA bleibt fest, aber Hook, Erzählweise, Dramaturgie, Titel, Cover und Bildfolge werden für jedes Video individuell entwickelt.",
+  "principle": "Der Kanal erzählt reale, bizarre, dunkle oder extreme Welten bevorzugt als erlebbare Reise von innen. Hook, Perspektive, Dramaturgie, Titel, Cover und Bildfolge werden für jedes Video individuell entwickelt.",
+  "channelDirection": {
+    "core": "Immersives Fakten-Entertainment: Der Zuschauer erlebt eine Rolle, ein System, eine Hierarchie, ein Milieu oder ein außergewöhnliches Ereignis Schritt für Schritt von innen.",
+    "preferredExamples": [
+      "Dein Leben als Geheimdienst-Agent",
+      "Du trittst einer Mafia bei",
+      "So wäre dein Alltag als Gladiator",
+      "Vom Rekruten bis an die Spitze einer gefährlichen Hierarchie",
+      "Du steckst mitten in einer bizarren historischen Katastrophe"
+    ],
+    "rules": [
+      "Nicht jedes Video muss wörtlich 'Dein Leben als ...' heißen; das immersive Prinzip ist wichtiger als dieselbe Titelformel.",
+      "Wenn ein Thema eine klare Rolle oder Perspektive erlaubt, wird der Zuschauer möglichst früh in diese Rolle gesetzt.",
+      "Reale Fakten bleiben Fakten; die Du-Perspektive darf keine erfundenen Erlebnisse als historische Tatsachen ausgeben.",
+      "Reine Lexikon-Zusammenfassungen und distanzierte Faktenlisten sind nicht der Standard des Kanals."
+    ]
+  },
   "nicheFitPolicy": {
     "minimumPlanScore": 7,
     "approvedPillars": [
-      "bizarre oder absurde Fakten",
-      "dunkle Psychologie und Manipulation",
-      "Mafia, Sekten, extreme Gruppen und Hierarchien",
-      "Kriminalität, Betrug, Skandale und ungewöhnliche Fälle",
-      "verstörende, bizarre oder extreme Geschichte",
-      "Drogen, Abhängigkeit und extreme Folgen",
-      "Tabu-, Verbots- und Grenzthemen",
-      "seltsame Schicksale, Mysterien und ungewöhnliche Menschen",
-      "kosmische, surreale oder schwer vorstellbare Themen mit starkem Unterhaltungswert"
+      "Leben und Alltag in ungewöhnlichen, geheimen oder extremen Rollen",
+      "Geheimdienste, Spionage, Militär- und Sicherheitswelten auf öffentlich belegbarer Ebene",
+      "Mafia, Sekten, extreme Gruppen und gefährliche Hierarchien",
+      "historische Rollen, Berufe, Klassen und Lebenswelten",
+      "Kriminalität, Betrug, Gefängnis und organisierte Unterwelten",
+      "dunkle Psychologie, Manipulation, Macht und Gruppendynamik",
+      "bizarre historische Ereignisse aus einer menschlichen Innenperspektive",
+      "extreme Systeme, Überlebenssituationen und ungewöhnliche Schicksale",
+      "Tabu-, Verbots-, Mysterien- und Grenzthemen mit starkem Erlebniswert"
     ],
-    "positiveSignals": ["mafia", "sekte", "kult", "manipulation", "psychologie", "verbrechen", "kriminal", "drogen", "geschichte", "histor", "absurd", "bizarr", "seltsam", "myster", "verschwunden", "verbot", "hierarchie", "experiment", "skandal", "betrug", "katastrophe", "geheim", "gefängnis", "wahnsinn", "paradox", "ungeklärt", "extrem"],
-    "obviousOutOfScopeSignals": ["rezept", "kochvideo", "let's play", "lets play", "unboxing", "handy review", "smartphone review", "produktvergleich", "shopping haul", "live ticker", "fußball highlights", "fussball highlights", "mathe hausaufgabe", "schulaufgabe lösen", "schulaufgabe loesen"],
-    "rule": "Offensichtlich fremde Themen werden früh blockiert. Unklare Themen müssen im CONTENT_PLAN mit mindestens 7/10 Kanalfit begründet werden."
+    "positiveSignals": [
+      "cia", "agent", "geheimdienst", "spion", "spionage", "fbi", "soldat", "spezialeinheit", "mafia", "mafioso", "sekte", "kult", "kartell",
+      "gefängnis", "gefangener", "gladiator", "samurai", "pirat", "ritter", "assassine", "diktator", "könig", "kaiser", "hierarchie", "rang",
+      "rekrut", "ausbildung", "alltag", "leben als", "dein leben", "überleben", "unterwelt", "geheim", "verbrechen", "kriminal", "manipulation",
+      "psychologie", "histor", "geschichte", "katastrophe", "bizarr", "absurd", "extrem", "myster", "verbot"
+    ],
+    "obviousOutOfScopeSignals": [
+      "rezept", "kochvideo", "let's play", "lets play", "unboxing", "handy review", "smartphone review", "produktvergleich", "shopping haul",
+      "live ticker", "fußball highlights", "fussball highlights", "mathe hausaufgabe", "schulaufgabe lösen", "schulaufgabe loesen"
+    ],
+    "rule": "Bevorzugt werden Themen, bei denen der Zuschauer eine konkrete Rolle, Entwicklung, Hierarchie oder außergewöhnliche Situation von innen erleben kann. Offensichtlich fremde Themen werden blockiert."
+  },
+  "experiencePolicy": {
+    "required": true,
+    "allowedFormats": [
+      "Lebensreise in Du-Perspektive",
+      "Rollenreise",
+      "Aufstieg durch eine Hierarchie",
+      "Ein Tag im System",
+      "Ereignis von innen",
+      "Abstieg oder Rabbit Hole",
+      "Fallstudie mit erlebbarer Hauptfigur"
+    ],
+    "rules": [
+      "Das Video braucht eine klare Erlebnis-Perspektive statt nur ein Sachthema.",
+      "Die Reise beginnt möglichst nah an einem Einstiegspunkt: Bewerbung, Rekrutierung, Geburt, Eintritt, erster Tag, erste Regel, erster Fehler oder Auslöser.",
+      "Danach folgen echte Veränderungen: neue Stufe, neue Pflicht, neues Risiko, neue Information, neue Konsequenz oder neuer Status.",
+      "Der Zuschauer soll regelmäßig wissen: Wo bin ich jetzt, was hat sich geändert und was steht als Nächstes auf dem Spiel?",
+      "Keine frei erfundenen persönlichen Details, wenn sie nicht als illustrative Beispielhandlung erkennbar sind."
+    ]
   },
   "individualityPolicy": {
     "required": true,
     "rules": [
       "Vor dem Skript wird geklärt, was an genau diesem Thema überraschend, absurd, düster oder besonders erzählenswert ist.",
       "Jedes Video bekommt ein eigenes Zuschauer-Versprechen und einen eigenen Blickwinkel.",
-      "Hook-Typ und Erzählmodus werden nach dem Thema ausgewählt und nicht mechanisch wiederholt.",
+      "Hook-Typ, Perspektive und Erzählmodus werden nach dem Thema ausgewählt und nicht mechanisch wiederholt.",
       "Humor, Dunkelheit und Groteske dienen dem Inhalt statt als Selbstzweck."
     ]
   },
   "researchPolicy": {
     "required": true,
     "minimumSources": 2,
-    "minimumClaims": 2,
+    "minimumClaims": 4,
     "allowedConfidence": ["gesichert", "wahrscheinlich", "umstritten"],
     "rules": [
       "Zentrale Tatsachenbehauptungen werden vor dem Skript in RESEARCH.json dokumentiert.",
       "Jede zentrale Behauptung verweist auf mindestens eine Quelle.",
+      "Wenn verfügbar, mindestens eine Primär-, offizielle, wissenschaftliche oder institutionelle Quelle bevorzugen.",
+      "Konkrete Daten, Zahlen, Anforderungen, Abläufe, Ränge und Konsequenzen werden nur verwendet, wenn sie belastbar belegt sind.",
       "Umstrittene oder unsichere Informationen werden im Skript nicht als sichere Tatsachen formuliert.",
       "Keine Quelle erfinden."
     ]
   },
+  "informationDensityPolicy": {
+    "minimumInformationBeats": 3,
+    "targetSecondsPerInformationBeat": 20,
+    "rules": [
+      "Spätestens ungefähr alle 15 bis 25 Sekunden soll ein neuer konkreter, belegter Informationswert hinzukommen.",
+      "Bevorzuge konkrete Details wie echte Anforderungen, Zahlen, Zeitspannen, Ränge, Regeln, Orte, Aufgaben oder Konsequenzen statt allgemeiner Formulierungen.",
+      "Informationen werden in die Handlung eingebaut und nicht als trockener Infoblock vorgelesen.",
+      "Ein Informationsbeat verweist auf mindestens einen belegten Claim aus RESEARCH.json."
+    ]
+  },
   "hookPolicy": {
-    "goal": "In den ersten Sekunden eine konkrete Neugierlücke öffnen und sofort zeigen, warum das Thema sehenswert ist.",
-    "allowedTypes": ["Schock-Behauptung", "bizarre Frage", "Mini-Szene", "Kontrast", "versteckte Wahrheit", "Eskalations-Vorschau", "Konsequenz-Hook", "unmöglich klingender Fakt"],
+    "goal": "In den ersten Sekunden den Zuschauer direkt in eine konkrete Rolle, Gefahr, Entscheidung oder überraschende Konsequenz ziehen.",
+    "allowedTypes": ["Rollen-Einstieg", "Schock-Behauptung", "bizarre Frage", "Mini-Szene", "Kontrast", "versteckte Wahrheit", "Eskalations-Vorschau", "Konsequenz-Hook", "unmöglich klingender Fakt"],
     "rules": [
       "Der Hook beginnt direkt als erster gesprochener Inhalt.",
+      "Bei Rollen- und Lebensreise-Videos darf der Hook den Zuschauer direkt mit 'Du ...' in die Situation setzen.",
       "Der Hook verspricht nur etwas, das das Video später wirklich einlöst.",
       "Der Hook soll konkret zum Thema passen und nicht austauschbar sein.",
       "Nicht jeden Hook als Frage formulieren."
@@ -53,40 +109,65 @@
     "forbiddenOpenings": ["Hallo und willkommen", "Willkommen zu einem neuen Video", "In diesem Video schauen wir uns an", "Heute reden wir über", "Wusstest du schon"]
   },
   "storyPolicy": {
-    "narrativeModes": ["Eskalationsleiter", "Mysterium und Enthüllung", "chronologischer Absturz", "Rang- oder Stufenreise", "Ursache und Wirkung", "Figurenreise", "System oder Hierarchie erklärt", "Rabbit-Hole-Abstieg", "Vergleich und Kontrast", "Fallstudie mit Wendepunkt"],
+    "narrativeModes": [
+      "Lebensreise in Du-Perspektive", "Rollenreise", "Aufstieg durch eine Hierarchie", "Ein Tag im System", "Ereignis von innen", "Eskalationsleiter",
+      "Mysterium und Enthüllung", "chronologischer Absturz", "Rang- oder Stufenreise", "Ursache und Wirkung", "Figurenreise", "System oder Hierarchie erklärt",
+      "Rabbit-Hole-Abstieg", "Vergleich und Kontrast", "Fallstudie mit Wendepunkt"
+    ],
     "rules": [
       "Nicht einfach Fakten aneinanderreihen.",
       "Kontext nur so weit geben, wie er zum Verständnis nötig ist.",
-      "Die Geschichte braucht Entwicklung, neue Ebenen oder Wendepunkte.",
+      "Die Geschichte braucht Entwicklung, neue Ebenen, Stufen, Entscheidungen oder Wendepunkte.",
+      "Bei einer Lebens-/Rollenreise wird möglichst klar gezeigt, wie man hineinkommt, was man erlebt, wie man aufsteigt oder scheitert und welche Konsequenzen entstehen.",
       "Keine künstliche Eskalation erfinden."
     ]
   },
   "retentionPolicy": {
-    "minimumPlannedSignals": 2,
+    "minimumPlannedSignals": 3,
     "rules": [
-      "Regelmäßig neue Information, Perspektive, Frage, Figur, Stufe oder Konsequenz liefern.",
+      "Regelmäßig neue Information, Perspektive, Aufgabe, Ort, Figur, Stufe oder Konsequenz liefern.",
       "Offene Fragen später beantworten.",
       "Wiederholungen entfernen.",
-      "Visuelle Wechsel folgen inhaltlichen Wechseln."
+      "Visuelle Wechsel folgen echten Gedanken- oder Erlebniswechseln.",
+      "Längere Erklärungspassagen werden durch konkrete Mini-Szenen, Größenvergleiche, Detailbilder oder Perspektivwechsel aufgebrochen."
+    ]
+  },
+  "visualDensityPolicy": {
+    "adaptive": true,
+    "targetAverageImageSeconds": [2.8, 4.2],
+    "highIntensityImageSeconds": [1.8, 3.0],
+    "normalImageSeconds": [2.8, 4.2],
+    "breathingImageSeconds": [4.2, 5.5],
+    "targetImagesPer100Seconds": [26, 34],
+    "rules": [
+      "Nicht mehr automatisch ein Bild pro vollständigem Satz.",
+      "Ein längerer Satz darf zwei oder drei Bildmomente bekommen, wenn sich Ort, Handlung, Objekt, Status oder Kernaussage sichtbar ändert.",
+      "Kurze zusammengehörige Aussagen dürfen ein Bild teilen.",
+      "Action, Hook, Rangwechsel, Enthüllungen und starke Fakten dürfen dichter geschnitten werden.",
+      "Ruhige emotionale oder atmosphärische Momente dürfen bewusst länger stehen.",
+      "Ein Bild darf nicht nur wegen Zoom oder Pan unnötig lange gehalten werden."
     ]
   },
   "scriptPolicy": {
     "language": "de",
-    "tone": "Direkt, verständlich, unterhaltsam und je nach Thema leicht bissig oder schwarzhumorig, aber nicht künstlich jugendlich.",
+    "tone": "Direkt, bildhaft, verständlich und unterhaltsam; eher erlebte Geschichte als trockene Dokumentation. Je nach Thema leicht bissig oder schwarzhumorig, aber nicht künstlich jugendlich.",
     "rules": [
       "Natürliches gesprochenes Deutsch statt steifer Schriftsprache.",
       "Keine unnötigen Füllsätze oder Wiederholungen.",
+      "Konkrete Verben und Situationen bevorzugen: eintreten, warten, prüfen, scheitern, aufsteigen, fliehen, entscheiden.",
       "Komplexe Begriffe kurz erklären.",
-      "Unsichere Fakten nicht als sichere Tatsachen formulieren."
+      "Unsichere Fakten nicht als sichere Tatsachen formulieren.",
+      "Nicht mehrere Sätze hintereinander nur mit abstrakten Zusammenfassungen füllen."
     ]
   },
   "titleCoverPolicy": {
-    "principle": "Titel und Cover bilden gemeinsam einen Klickgrund und ergänzen sich.",
+    "principle": "Titel und Cover bilden gemeinsam einen Klickgrund und verkaufen eine konkrete Erlebnisfrage oder Transformation.",
     "coverHeadlineRequired": true,
     "coverHeadlineMinWords": 1,
     "coverHeadlineMaxWords": 4,
     "titleRules": [
-      "Titel transportiert das konkrete Versprechen oder die stärkste Neugier.",
+      "Titel transportiert das konkrete Versprechen, die Rolle oder die stärkste Neugier.",
+      "Nicht jedes Video braucht dieselbe 'Dein Leben als ...'-Formel.",
       "Kein irreführender Clickbait.",
       "Titel wird nach Recherche und Story-Winkel finalisiert."
     ],
@@ -95,6 +176,7 @@
       "Das Cover hat immer eine kurze, gut lesbare deutsche Überschrift mit 1 bis 4 Wörtern.",
       "Die Überschrift wird im Bildprompt wortgenau festgelegt und erscheint genau einmal.",
       "Meist ein bis drei große Hauptmotive.",
+      "Bei Rollen-Videos bevorzugt: Hauptfigur + klares Statussymbol/Gegenspieler/Gefahr.",
       "Ein sofort verständlicher visueller Konflikt, eine Transformation, Hierarchie, absurde Situation oder starke Reaktion.",
       "Hintergrund einfach und kontrastreich halten.",
       "Die Überschrift ergänzt den Titel und wiederholt ihn nicht einfach vollständig.",
@@ -105,7 +187,8 @@
     "required": true,
     "rules": [
       "Das Ende löst das zentrale Zuschauer-Versprechen ein.",
-      "Wenn passend mit letzter Konsequenz, Pointe, Einordnung oder starkem Schlussbild enden.",
+      "Bei Lebens-/Rollenreisen endet die Reise mit einer realistischen Konsequenz, einem möglichen Endpunkt, einem Statuswechsel oder einer Einordnung.",
+      "Wenn passend mit letzter Konsequenz, Pointe oder starkem Schlussbild enden.",
       "Kein unnötig langer Standard-Abspann im Voice-over."
     ]
   }

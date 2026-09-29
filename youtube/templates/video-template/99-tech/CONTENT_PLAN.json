@@ -1,10 +1,13 @@
 {
-  "schemaVersion": 3,
-  "contentPolicyVersion": 3,
+  "schemaVersion": 4,
+  "contentPolicyVersion": 4,
   "language": "de",
   "topic": "",
   "workingTitle": "",
   "topicFit": {"score": null, "verdict": "", "pillars": [], "reason": ""},
+  "formatMode": "",
+  "viewerRole": "",
+  "experiencePremise": "",
   "viewerPromise": "",
   "coreQuestion": "",
   "angle": "",
@@ -12,6 +15,7 @@
   "hook": {"type": "", "text": "", "reason": ""},
   "narrativeMode": "",
   "beats": [],
+  "informationBeats": [],
   "retention": {"openLoops": [], "escalationPoints": [], "patternInterrupts": []},
   "payoff": "",
   "titleCoverSystem": {

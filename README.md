@@ -1,11 +1,27 @@
-# Verückte Stickman — Video-Pipeline V2.2
+# Verückte Stickman — Video-Pipeline V2.3
 
-Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und individueller Planung pro Video.
+Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit fester grotesk-surrealer Stickman-Bildwelt und **immersivem Fakten-Entertainment**.
 
-## Klare Projektstruktur
+## Kanalrichtung
+
+Der Standard ist nicht mehr „historischer Bericht + ein Bild pro Satz“.
+
+Der Zuschauer soll eine ungewöhnliche Welt **von innen erleben**:
+
+- ein Leben / Alltag in einer geheimen oder extremen Rolle
+- Eintritt und Aufstieg in einer Hierarchie
+- ein Tag in einem gefährlichen System
+- ein historisches Ereignis aus einer konkreten Innenperspektive
+- Rabbit-Hole-, Aufstiegs-, Abstiegs- oder Überlebensreisen
+
+Beispiele für die Richtung: Geheimdienst-Agent, Mafia-Neuling, Gladiator, Gefangener, Kult-Mitglied, historische Rolle oder eine Person mitten in einer absurden Katastrophe. Nicht jedes Video muss dieselbe „Dein Leben als ...“-Titelformel benutzen.
+
+**Wichtig:** Die Erlebnis-Perspektive ist nur die Erzählform. Reale Fakten, Zahlen, Anforderungen, Ränge, Abläufe und Konsequenzen müssen weiterhin recherchiert und belegt sein.
+
+## Projektstruktur
 
 ```text
-00-bildprompts/     → nur die fertigen Google-Flow-Bildprompts
+00-bildprompts/     → fertige Google-Flow-Bildprompts
 01-script/          → finales Voice-over-Skript
 02-audio/           → genau eine finale Voice-over-Datei
 03-bilder/          → Bild 01.png bis Bild NN.png
@@ -13,32 +29,55 @@ Produktionspipeline für einen deutschen faceless YouTube-Unterhaltungskanal mit
 99-tech/            → interne Planung, Recherche, Mapping und Renderdaten
 ```
 
-Die einzige Datei, die für Google Flow gedacht ist, lautet:
+Für Google Flow wird ausschließlich verwendet:
 
 ```text
 00-bildprompts/99-alle-bildprompts.txt
 ```
 
-Sie enthält **keine** Content-Policy, Recherche, JSON-Dumps oder das Voice-over. Flow bekommt nur einen kurzen verbindlichen Style-Lock und danach pro Bild einen selbstständigen, konkreten deutschen Prompt.
+## Bilddichte
 
-## Cover-Regel
+Die Bildanzahl ist adaptiv. Kein künstlicher Schnitt nur um „mehr Bilder“ zu haben.
 
-`Bild 01` ist Cover und erste Videoszene. Jedes Cover hat immer eine kurze deutsche Überschrift mit 1–4 Wörtern. Die Überschrift wird im Coverprompt wortgenau festgelegt, erscheint genau einmal, ist groß und kontrastreich und ergänzt den Videotitel.
+Richtwerte:
 
-## Bildprompt-Regel
+- normale Erklärung: meist 2,8–4,2 s pro Bild
+- Hook, Action, Rangwechsel, Enthüllung: oft 1,8–3,0 s
+- bewusster ruhiger Moment: etwa 4,2–5,5 s
+- ab ca. 5,2 s aktiv prüfen, ob ein echter zusätzlicher Bildmoment nötig ist
+- über 6,2 s ist ein Split stark bevorzugt
+- 8,0 s ist technisches Hard-Maximum
+- bei ca. 100 s Video meist ungefähr 26–34 Bilder
 
-Jeder Einzelprompt nennt konkret Motiv, Handlung, Komposition, Mimik/Körpersprache, Umgebung, Licht/Farbe und relevante Requisiten. Keine abstrakten Planungsanweisungen im finalen Flow-Prompt. Alle Prompts sind Deutsch, alle Bilder 16:9.
+Ein längerer gesprochener Satz darf zwei oder drei Bilder bekommen, wenn sich Handlung, Ort, Objekt, Status oder Kernaussage sichtbar ändert. Kurze zusammengehörige Sätze dürfen ein Bild teilen.
 
-## Interne Phase 1
+## Fakten statt Fülltext
 
-`99-tech/CONTENT_PLAN.json` enthält Kanalfit, Hook, Story, Retention, Titel/Cover und Ending. `99-tech/RESEARCH.json` enthält Quellen, Claims und Unsicherheiten. `99-tech/IMAGE_AUDIO_MAP.json` enthält die feste Bild↔Audio-Reihenfolge.
+`99-tech/RESEARCH.json` ist Pflicht. Zentrale Aussagen werden belegt. Wenn vorhanden, werden offizielle, wissenschaftliche oder institutionelle Quellen bevorzugt.
 
-Ablauf:
+Im Skript sollen regelmäßig konkrete Informationswerte vorkommen, z. B.:
+
+- echte Anforderungen
+- Zahlen und Zeitspannen
+- Ränge und Aufgaben
+- Regeln und Verbote
+- reale Orte
+- Konsequenzen und Risiken
+
+Diese Fakten werden in die Reise eingebaut und nicht als trockener Infoblock vorgelesen.
+
+## Cover
+
+`Bild 01` ist Cover und erste Videoszene. Jedes Cover hat eine kurze deutsche Überschrift mit 1–4 Wörtern. Sie erscheint genau einmal, groß, kontrastreich und ergänzt den Videotitel.
+
+## Ablauf
 
 ```text
-Thema → Kanalfit → Recherche → Hook/Skript → Titel/Cover
-→ Bild↔Audio-Struktur → 00-bildprompts/99-alle-bildprompts.txt
-→ Bilder + Audio → Whisper → Timeline → Motion → Remotion → QC
+Thema → Kanalfit → Erlebnis-Perspektive → Recherche
+→ Hook + Reise/Dramaturgie → Titel/Cover
+→ Informationsbeats + Bild↔Audio-Struktur
+→ Bildprompts → Bilder + Audio
+→ Whisper → Timeline → Motion → Remotion → QC
 ```
 
 ## Start
@@ -49,8 +88,6 @@ npm run topic:video -- --topic "THEMA"
 npm run create:video -- --topic "THEMA" --title "ARBEITSTITEL" --week "2026-KW40" --slug "mein-video"
 npm run validate:phase1 -- --dir "youtube/<week>/<slug>"
 ```
-
-`npm run compile:flow -- --dir "..."` prüft nur noch, ob die eine Flow-Bildpromptdatei sauber und frei von internen Planungsdaten/Platzhaltern ist. Es erzeugt keine zweite Promptdatei mehr.
 
 Nach Bildern und Voice-over:
 
