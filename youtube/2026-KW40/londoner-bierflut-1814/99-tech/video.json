@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "pipelineVersion": 2,
-  "contentPolicyVersion": 2,
+  "contentPolicyVersion": 3,
   "videoId": "2026-KW40_londoner-bierflut-1814",
   "weekFolder": "2026-KW40",
   "topicSlug": "londoner-bierflut-1814",
@@ -13,5 +13,5 @@
   "plannedImageCount": 18,
   "endHoldSeconds": 1.3,
   "createdAt": "2026-09-29T12:40:00+02:00",
-  "updatedAt": "2026-09-29T12:40:00+02:00"
+  "updatedAt": "2026-09-29T14:33:00+02:00"
 }

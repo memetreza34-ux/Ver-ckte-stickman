@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 3,
+  "contentPolicyVersion": 3,
+  "language": "de",
+  "topic": "Die Londoner Bierflut von 1814",
+  "workingTitle": "Die Londoner Bierflut von 1814",
+  "topicFit": {"score":10,"verdict":"APPROVED","pillars":["verstörende, bizarre oder extreme Geschichte","bizarre oder absurde Fakten"],"reason":"Die reale Katastrophe verbindet einen absurd klingenden Ausgangspunkt mit tödlichen Folgen, klarer Eskalation, starkem historischen Kontrast und sehr visuellen Szenen."},
+  "viewerPromise": "Der Zuschauer erfährt in knapp zwei Minuten, wie eine reale Bierflut 1814 ein Londoner Viertel traf, warum acht Menschen starben und weshalb die Brauerei am Ende kaum haftete.",
+  "coreQuestion": "Wie konnte aus einem beschädigten Bierbottich eine tödliche Katastrophe werden – und warum trug am Ende praktisch niemand die Verantwortung?",
+  "angle": "Chronologischer Absturz: erst klingt die Geschichte absurd, dann wird sie zunehmend tragisch und endet mit dem juristisch ebenso absurden Nachspiel.",
+  "individualityReason": "Der Reiz entsteht aus dem Kontrast zwischen dem fast komischen Begriff Bierflut und den realen Folgen; deshalb wird die Geschichte bewusst von absurd zu düster erzählt.",
+  "hook": {"type":"unmöglich klingender Fakt","text":"1814 wurde ein Londoner Viertel von einer Flutwelle aus Bier getroffen – und acht Menschen starben.","reason":"Der Satz klingt fast erfunden, nennt aber sofort Jahr, bizarre Ursache und tödliche Konsequenz."},
+  "narrativeMode": "chronologischer Absturz",
+  "beats": [
+    {"purpose":"Absurd-realen Einstieg setzen","content":"Die Bierflut und acht Todesopfer werden sofort genannt."},
+    {"purpose":"Ursache verständlich machen","content":"Brauerei, riesiger Porter-Bottich und abgesprungener Eisenreifen werden eingeführt."},
+    {"purpose":"Katastrophe eskalieren","content":"Der Bottich zerbirst, weitere Behälter werden beschädigt und Bier durchbricht die Mauer."},
+    {"purpose":"Menschliche Folgen zeigen","content":"Dicht bewohnte Kellerwohnungen, Einstürze, Fluchtversuche sowie Frauen und Kinder als Opfer."},
+    {"purpose":"Juristischen Wendepunkt liefern","content":"Die Jury behandelt die Todesfälle als unvermeidbares Unglück; die Brauerei zahlt keinen Schadenersatz."},
+    {"purpose":"Mythos korrigieren und Payoff setzen","content":"Spätere Trinkgeschichten werden als schlecht belegt eingeordnet; Schluss mit dem Kontrast zwischen absurdem Klang und realen acht Toten."}
+  ],
+  "retention": {
+    "openLoops":["Nach dem Hook offenlassen, wie ein einzelner Bottich eine Straßenkatastrophe auslösen konnte.","Vor dem Jury-Abschnitt offenlassen, ob die Brauerei für die acht Toten haftete."],
+    "escalationPoints":["Vom abgesprungenen Eisenreifen zum zerberstenden Bottich und zur Flutwelle.","Von der physikalischen Katastrophe zum überraschenden juristischen Nachspiel."],
+    "patternInterrupts":["Nach der Opferpassage Perspektivwechsel in den Gerichtssaal.","Vor dem Ende bewusster Mythos-Check statt weiterer Eskalation."]
+  },
+  "payoff": "Die scheinbar lächerliche Idee einer Bierflut entpuppt sich als reale Industriekatastrophe mit acht Toten; besonders überraschend ist, dass die Brauerei danach keinen Schadenersatz zahlen musste und steuerlich entlastet wurde.",
+  "titleCoverSystem": {
+    "finalTitle":"Die tödliche Bierflut von London",
+    "titlePromise":"Der Titel verspricht eine reale, tödliche und zugleich vollkommen bizarre historische Katastrophe.",
+    "coverConcept": {
+      "visualConflict":"Ein gewaltiger dunkelbrauner Bierstrom bricht aus einer historischen Brauerei auf zwei erschrockene Stickman-Figuren zu; im Hintergrund der geborstene Holzbottich.",
+      "mainSubjects":["riesige Bierwelle","zwei erschrockene Stickman-Figuren","geborstener Brauereibottich"],
+      "visibleText":"BIERFLUT ÜBER LONDON",
+      "emotion":"Schock, Unglaube und absurde Bedrohung",
+      "whyClickable":"Die riesige Bierwelle wirkt zunächst absurd, wird durch panische Figuren und den zerstörten Bottich aber sofort als gefährliche Katastrophe lesbar."
+    },
+    "complementarity":"Der Titel verrät die tödliche historische Katastrophe; die kurze Cover-Überschrift BIERFLUT ÜBER LONDON benennt das bizarre Bildereignis, ohne den vollständigen Titel zu wiederholen."
+  },
+  "ending":{"type":"Kontrast-Payoff","finalLine":"Am Ende bleibt eine Katastrophe, die absurd klingt, aber real war: eine Bierflut mit acht Toten mitten in London."},
+  "notes":["Testvideo 01 der Pipeline. Ziel ungefähr 100 bis 110 Sekunden vor End-Hold."]
+}

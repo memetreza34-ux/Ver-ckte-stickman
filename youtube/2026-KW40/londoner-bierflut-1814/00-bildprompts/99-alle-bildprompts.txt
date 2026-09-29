@@ -1,0 +1,86 @@
+# ALLE BILDPROMPTS — Die Londoner Bierflut von 1814
+
+Format: 16:9 · grotesk-surreale deutsche Stickman-Comicwelt · 18 Bildmomente
+
+Google-Flow-Regel: immer genau ein Bild erzeugen, vollständig abwarten und prüfen, exakt als `Bild NN.png` benennen und in `03-bilder/` ablegen; erst danach das nächste Bild erzeugen. Keine parallele Bildgenerierung.
+
+## VERBINDLICHE BILDWELT FÜR JEDES BILD
+
+Das gesamte Bild ist eine einheitliche handgezeichnet wirkende 2D-Comic-Illustration. Die Figuren sind klar erkennbare Stickman-Figuren mit dünnen Gliedmaßen, runden oder ovalen Köpfen, einfachen Silhouetten und stark überzeichneter, zur Situation passender Mimik. Deutliche schwarze Konturen, große lesbare Formen, kontrolliert raue Linien, sparsame grafische Schatten und reduzierte Hintergründe. Historische Orte und Gegenstände werden vereinfacht illustriert, nicht realistisch rekonstruiert.
+
+Niemals Fotorealismus, realistische Menschen, realistische historische Gravur, Foto-Hintergrund, gemischte Foto-Comic-Optik, 3D/Pixar, sterile Firmenillustration, Kinder-Clipart, Wasserzeichen, zufällige Logos oder Pseudo-Schrift. Nicht jede Szene künstlich dunkel machen: neutrale Erklärungsszenen dürfen heller und ockerfarben sein, Gefahr und Tragik kontrolliert dunkler. Sichtbare Schrift ausschließlich korrektes Deutsch.
+
+---
+
+## Bild 01 — COVER
+ÜBERSCHRIFT: "BIERFLUT ÜBER LONDON"
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Illustration als starkes YouTube-Cover. Eine riesige dunkelbraune Bierwelle bricht diagonal aus einer vereinfachten Londoner Brauerei von 1814 nach vorne und droht zwei erschrockene Stickman-Figuren zu überrollen. Im Hintergrund ist ein gewaltiger geborstener Holzbottich mit gerissenen Eisenreifen klar erkennbar. Die Figuren haben übertriebene panische Gesichter und rennen in unterschiedliche Richtungen; keine Verletzungen oder grafische Gewalt. Große schwarze Konturen, einfache Formen, kräftiges Braun, Ocker und rote Warnakzente, hoher Kontrast, reduzierter historischer Straßenhintergrund. Integriere exakt die deutsche Überschrift „BIERFLUT ÜBER LONDON“ genau einmal groß im oberen Bildbereich, fett, kontrastreich und mit sicherem Rand. Keine weitere lesbare Schrift, kein Fotorealismus, kein 3D.
+
+## Bild 02
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Szene, die den Übergang von einer absurd klingenden Kneipengeschichte zur historischen Realität zeigt. Im Vordergrund sitzt eine skeptisch grinsende Stickman-Figur mit einem Bierkrug und wirkt, als halte sie die Geschichte zunächst für erfunden. Hinter ihr öffnet sich die Szene in eine vereinfachte Londoner Straße von 1814 mit der großen Brauerei als eindeutigem Zielpunkt. Die Stimmung beginnt leicht komisch, wirkt im Hintergrund aber bereits ernst und historisch. Klare schwarze Konturen, flache Ocker-, Braun- und Grautöne, stark lesbare Silhouetten, leicht handgezeichnete Linien und nur wenige Requisiten. Keine sichtbare Schrift, keine Sprechblasen, kein Fotorealismus, keine realistischen Menschen, kein 3D oder gemischte Bildstile.
+
+## Bild 03
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 vollständig illustrierte 2D-Comic-Szene im Inneren einer historischen Brauerei. Ein gigantischer hölzerner Porter-Bottich dominiert fast das gesamte Bild und ragt weit über eine kleine Stickman-Arbeiterfigur hinaus, damit der Größenunterschied sofort verständlich wird. Mehrere schwere dunkle Eisenreifen umspannen den Bottich; Rohre und wenige weitere Brauereigegenstände bleiben vereinfacht im Hintergrund. Die Arbeiterfigur blickt mit hochgezogenen Augenbrauen nach oben und wirkt winzig neben dem Behälter. Nutze warme Holzbraun-, Ocker- und Grautöne, dicke schwarze Konturen, einfache große Formen und sparsame grafische Schatten. Keine sichtbare Schrift, keine Fototexturen, keine realistische Gravur, keine 3D-Optik.
+
+## Bild 04
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Nahszene an demselben riesigen Holzbottich. Eine Stickman-Arbeiterfigur steht seitlich am Behälter und entdeckt, dass ein massiver Eisenreifen abgesprungen ist und schräg am Boden liegt. Die Figur beugt sich überrascht vor, zeigt mit einer Hand auf die freie Stelle am Bottich und hat einen deutlich alarmierten Gesichtsausdruck. Der beschädigte Bereich muss das klare Hauptmotiv sein; Hintergrund nur mit wenigen vereinfachten Fässern und Brauereistrukturen. Saubere dicke schwarze Konturen, kontrolliert raue Handzeichnung, warme Brauntöne und ein kleiner roter Akzent am Problemort. Keine sichtbare Schrift, keine Pfeile, kein Fotorealismus, keine realistischen Menschen, kein 3D.
+
+## Bild 05
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Szene in der Brauerei kurz nach der Entdeckung des Defekts. Links steht die besorgte Stickman-Arbeiterfigur beim abgesprungenen Eisenreifen und gestikuliert warnend; rechts reagiert eine zweite Stickman-Figur deutlich gelassener, mit Schulterzucken und gelangweiltem Gesicht, während sie eine Reparaturnotiz oder ein Werkzeug nur beiläufig hält. Der riesige Bottich steht bedrohlich im Hintergrund, bleibt aber äußerlich noch intakt. Die Komposition soll den Kontrast zwischen Warnsignal und Routine klar erzählen, ohne Texttafeln oder Infografik. Helle Ocker- und Brauntöne mit dezenten roten Spannungsakzenten, dicke schwarze Konturen, einfache 2D-Formen. Keine lesbare Schrift, kein Fotorealismus, keine 3D-Optik.
+
+## Bild 06
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 dynamische 2D-Comic-Szene im Moment, in dem der riesige Holzbottich zerbirst. Holzplanken reißen auseinander, Eisenreifen springen ab und eine massive dunkelbraune Biermenge drückt mit Wucht nach außen. Eine kleine Stickman-Arbeiterfigur weicht im Vordergrund erschrocken zurück, mit weit geöffneten Augen und hochgerissenen Armen. Zeige Kraft und Bewegung durch gebogene Flüssigkeitsformen, Splitter und klare Bewegungsrichtungen, aber ohne Verletzungen oder Blut. Starker Größenkontrast, dicke schwarze Konturen, dunkles Braun, Ocker, Grau und wenige rote Akzente. Vollständig illustrierte 2D-Comicwelt, keine sichtbare Schrift, kein Fotorealismus, keine realistische historische Darstellung, kein 3D.
+
+## Bild 07
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Szene einer klaren Kettenreaktion innerhalb der Brauerei. Der zerborstene Hauptbottich auf der linken Seite schleudert eine mächtige Biermasse gegen weitere Behälter; ein zweiter Behälter kippt oder reißt, während die Flüssigkeit anschließend durch eine brechende Außenmauer nach rechts in die Straße drängt. Die Ursache-Wirkung-Kette soll in einer einzigen räumlichen Szene verständlich sein, nicht als mehrere Infografik-Kästen. Kleine Stickman-Arbeiter fliehen aus dem Weg und verstärken den Größenmaßstab. Dicke schwarze Konturen, große Formen, kontrollierte braune Flüssigkeit, graue Mauerstücke und Ockertöne. Keine lesbare Schrift, kein Fotorealismus, keine 3D-Optik.
+
+## Bild 08
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Übersicht einer engen Londoner Wohngegend direkt neben der Brauerei im Jahr 1814. Zeige schmale Straßen, dicht aneinanderstehende einfache Häuser und sichtbar tiefer liegende Kellerwohnungen, in denen mehrere kleine Stickman-Figuren ihrem Alltag nachgehen. Die hohe Brauereimauer liegt bedrohlich nahe am Wohngebiet, sodass die räumliche Verwundbarkeit sofort verständlich wird. Die Szene ist noch vor dem Eintreffen der Flut und deshalb eher neutral beleuchtet, mit Ocker, Grau, Braun und gedämpftem Blau. Deutliche schwarze Konturen, vereinfachte historische Architektur, klare Tiefenstaffelung. Keine sichtbare Schrift, kein Fotorealismus, keine realistischen Menschen, keine Gravur- oder 3D-Optik.
+
+## Bild 09
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 bedrohliche 2D-Comic-Szene aus niedriger Straßenperspektive. Eine breite dunkelbraune Bierwand mit einigen Holz- und Mauertrümmern schiebt sich durch die enge historische Straße direkt auf erschrockene Stickman-Bewohner zu. Eine Figur im Vordergrund dreht sich panisch um, eine andere zieht jemanden aus dem Weg; übertriebene Gesichter machen Angst und Überraschung klar, ohne grafische Verletzungen. Die Flüssigkeitswand ist das dominante Motiv und soll nicht wie ein lustiges Getränk, sondern wie eine echte Flut wirken. Dunklere Braun-, Grau- und Rotakzente, starke schwarze Konturen, vereinfachte Häuser und dramatische, aber noch comicartige Beleuchtung. Keine sichtbare Schrift, kein Fotorealismus oder 3D.
+
+## Bild 10
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Szene der unmittelbaren Zerstörung in einer engen Londoner Straße. Ein Teil einer Mauer ist eingestürzt, braunes Bier steht hoch zwischen vereinfachten Häusern, und mehrere Stickman-Bewohner versuchen sich auf einen Tisch, eine Treppe oder andere erhöhte Stellen zu retten. Eine Figur hilft einer anderen nach oben, während im Hintergrund Möbel und leichte Trümmer treiben. Die Szene soll hektisch und gefährlich wirken, aber ohne Blut, Körperverletzungen oder sensationsheischende Details. Dicke schwarze Konturen, klare große Formen, dunkles Braun und Grau mit Ockerlicht, räumliche Tiefe und gut lesbare Bewegungen. Keine sichtbare Schrift, kein Fotorealismus, keine realistischen Menschen oder 3D-Optik.
+
+## Bild 11
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 ernste, respektvolle 2D-Comic-Szene, die die menschliche Tragik der Katastrophe zeigt, ohne Tod grafisch darzustellen. In einer beschädigten Kellerwohnung stehen oder sitzen mehrere vereinfachte Stickman-Familienfiguren dicht beieinander; eine erwachsene Figur schützt eine kleinere Kinderfigur, während braunes Wasser und Trümmer in den Raum eindringen. Die Gesichter wirken erschrocken und hilflos, nicht grotesk-komisch. Die Beleuchtung ist gedämpft, aber Motive bleiben gut lesbar. Nutze dicke schwarze Konturen, Braun-, Grau- und Ockertöne sowie sparsame rote Akzente. Keine Leichen, kein Blut, keine sichtbare Schrift, kein Fotorealismus, keine realistischen Menschen, kein 3D.
+
+## Bild 12
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 ruhige symbolische 2D-Comic-Illustration für die acht Todesopfer. Zeige exakt acht einfache dunkle Stickman-Silhouetten in einer klaren Reihe oder leicht gestaffelten Gruppe vor einem reduzierten Hintergrund aus zerstörter historischer Straße und zurückgehendem braunem Wasser. Die Figuren sind neutral und würdevoll dargestellt, ohne Verletzungen; eine einzelne helle Lichtfläche hebt die Gruppe vom Hintergrund ab. Das Bild soll nach der hektischen Katastrophe bewusst still wirken. Deutliche schwarze Konturen, gedämpfte Grau-, Braun- und Ockertöne, keine dekorativen Elemente. Keine sichtbare Schrift, keine Zahlen, kein Fotorealismus, keine realistischen Menschen oder 3D-Optik.
+
+## Bild 13
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Szene mit deutlichem Perspektivwechsel in einen Londoner Untersuchungs- oder Gerichtssaal von 1814. Mehrere ernst blickende Stickman-Jurymitglieder sitzen oder stehen hinter einem langen Holztisch; davor befinden sich vereinfachte Unterlagen zur Katastrophe und eine einzelne wartende Stickman-Figur. Die Szene soll geordnet, trocken und fast absurd bürokratisch wirken als Kontrast zur vorherigen Flut. Historischer Raum stark vereinfacht, warme Holz- und Ockertöne, schwarze Konturen, klare symmetrische Komposition und leicht überzeichnete ernste Gesichter. Keine lesbare Schrift auf Papieren, keine Pseudo-Schrift, kein Fotorealismus, keine realistischen Menschen oder 3D-Optik.
+
+## Bild 14
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Gerichtsszene im Moment des überraschenden Urteils. Die Jury auf der linken Seite bleibt sachlich und ungerührt; auf der rechten Seite reagieren betroffene Stickman-Figuren mit fassungslosem, enttäuschtem Gesichtsausdruck. In der Mitte liegt ein einzelnes geschlossenes Dokument oder ein Richterhammer als Symbol für das abgeschlossene Urteil, aber ohne lesbare Schrift. Die visuelle Aussage muss klar sein: Nach einer Katastrophe mit acht Toten folgt keine erkennbare Schuldzuweisung. Nutze dicke schwarze Konturen, gedeckte Ocker-, Braun- und Grautöne, wenige rote Akzente und eine saubere 2D-Komposition. Kein Fotorealismus, keine historischen Porträts, kein 3D, keine zusätzlichen Texte.
+
+## Bild 15
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Kontrastszene zum fehlenden Schadenersatz. Im Vordergrund steht eine betroffene Stickman-Familie vor einem beschädigten einfachen Haus und hält eine leere offene Hand oder einen leeren Geldbeutel; weiter hinten bleibt das große Brauereigebäude geschlossen und stabil stehen. Die Gesichter der Familie wirken enttäuscht und erschöpft, nicht karikaturistisch fröhlich. Zeige den sozialen Kontrast über Abstand, Größenunterschied und Besitz statt über Text oder Diagramme. Klare schwarze Konturen, reduzierte historische Architektur, Braun-, Grau- und Ockertöne, sparsame Schatten. Keine sichtbare Schrift, kein Geldscheintext, kein Fotorealismus, keine realistischen Menschen und kein 3D.
+
+## Bild 16
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 leicht bitter-ironische 2D-Comic-Szene zur steuerlichen Entlastung der Brauerei. Eine Brauerei-Stickman-Figur steht vor dem vereinfachten Brauereigebäude und erhält von einer amtlich wirkenden Stickman-Figur einen kleinen Beutel mit Münzen beziehungsweise eine symbolische Rückerstattung; im Hintergrund sind noch beschädigte Fässer zu sehen. Die Brauereifigur wirkt erleichtert, während die Amtsperson neutral bleibt. Die Szene soll den finanziellen Kontrast verständlich machen, ohne moderne Büroelemente oder Infografik. Dicke schwarze Konturen, Ocker, Braun, Grau und ein grüner Akzent bei den Münzen. Keine lesbare Schrift, kein Fotorealismus, kein 3D.
+
+## Bild 17
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 2D-Comic-Szene, die einen später entstandenen Mythos kritisch darstellt. Links erzählt eine übertrieben begeisterte Stickman-Figur mit Bierkrug gestikulierend eine offensichtlich ausgeschmückte Geschichte; hinter ihr erscheinen mehrere schemenhafte Figuren wie eine übertriebene Vorstellung, die vom Boden trinken. Rechts prüft eine nüchterne Stickman-Historikerfigur wenige alte Dokumente und blickt skeptisch auf die Erzählung. Die erfundene Vorstellung darf leicht verblassen oder sich auflösen, damit klar wird, dass sie schlecht belegt ist. Einheitliche 2D-Welt, schwarze Konturen, Ocker und Braun, keine Texttafeln, keine lesbare Schrift, kein Fotorealismus oder 3D.
+
+## Bild 18
+BILDPROMPT:
+Erzeuge eine horizontale 16:9 ruhige abschließende 2D-Comic-Szene derselben Londoner Straße nach der Katastrophe. Das braune Wasser ist weitgehend verschwunden; beschädigte Mauern, zerbrochene Holzteile und im Hintergrund die Brauerei erinnern an das Ereignis. Im Vordergrund stehen wenige still gewordene Stickman-Figuren und blicken auf die Schäden, während acht kleine schlichte Erinnerungssymbole oder acht zurückhaltende dunkle Silhouetten die Opfer andeuten, ohne den Bildraum zu überladen. Gedämpftes warmes Abendlicht, Braun-, Grau- und Ockertöne, klare schwarze Konturen und melancholische Ruhe. Keine sichtbare Schrift, kein Fotorealismus, keine realistischen Menschen, kein 3D.
