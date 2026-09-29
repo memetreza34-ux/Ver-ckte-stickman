@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "topic": "Ein Tag als Spion im Kalten Krieg – Berlin 1955",
+  "summary": "Das Video nutzt eine erfundene Composite-Hauptfigur, um einen dokumentierten CIA-Arbeitstag im West-Berlin der 1950er erlebbar zu machen. Die sachlichen Kernelemente stammen aus freigegebenen CIA-Historien zu Hugh Montgomery, der Berliner Nachrichtendienstlage und Operation GOLD. Berlin war vor dem Mauerbau ein besonders offenes Operationsfeld. Montgomery trat 1953 in die CIA ein, verbrachte seine ersten sechs CIA-Jahre in Berlin, half beim Aufbau eines Quellennetzes mit Wissen über das ostdeutsche Fernmeldenetz und übernahm später Tonbänder aus der Tunneloperation. Operation GOLD zapfte sowjetische und ostdeutsche Kommunikationsleitungen an. Der Tunnel war rund 1.476 Fuß beziehungsweise ungefähr 450 Meter lang; etwa 3.100 Tonnen Erde wurden entfernt und 125 Tonnen Stahl verbaut. Die KGB-Seite wusste durch George Blake schon während der Planung von der Operation, ließ sie aber weiterlaufen, um ihre Quelle zu schützen.",
+  "sources": [
+    {"id": "Q1", "title": "The History-Maker: Remembering Ambassador Montgomery", "publisher": "Central Intelligence Agency", "url": "https://www.cia.gov/stories/story/the-history-maker-remembering-ambassador-montgomery", "accessedAt": "2026-09-29"},
+    {"id": "Q2", "title": "The Berlin Tunnel", "publisher": "Central Intelligence Agency Museum", "url": "https://www.cia.gov/legacy/museum/exhibit/the-berlin-tunnel/", "accessedAt": "2026-09-29"},
+    {"id": "Q3", "title": "Berlin Tunnel: America's Ear Behind the Iron Curtain", "publisher": "Central Intelligence Agency", "url": "https://www.cia.gov/stories/story/berlin-tunnel-americas-ear-behind-the-iron-curtain/", "accessedAt": "2026-09-29"},
+    {"id": "Q4", "title": "On the Front Lines of the Cold War: Documents on the Intelligence War in Berlin, 1946 to 1961", "publisher": "Central Intelligence Agency, Center for the Study of Intelligence", "url": "https://www.cia.gov/resources/csi/books-monographs/on-the-front-lines-of-the-cold-war-documents-on-the-intelligence-war-in-berlin-1946-to-1961/", "accessedAt": "2026-09-29"},
+    {"id": "Q5", "title": "The Secret War for Germany: CIA’s Covert Role in Cold War Berlin", "publisher": "National Security Archive, George Washington University", "url": "https://nsarchive.gwu.edu/briefing-book/openness-russia-and-eastern-europe-intelligence/2022-05-11/secret-war-germany-cias", "accessedAt": "2026-09-29"}
+  ],
+  "claims": [
+    {"id": "C1", "statement": "Vor dem Bau der Berliner Mauer war Berlin ein besonders offenes und intensives Operationsfeld für Geheimdienste; die Sektorengrenzen innerhalb der Stadt waren deutlich leichter passierbar als später.", "confidence": "gesichert", "sourceIds": ["Q4"], "notes": "Die CIA-Historie beschreibt Berlin vor 1961 als besonders günstiges Operationsgebiet mit vergleichsweise leichtem Zugang über die Sektorengrenzen."},
+    {"id": "C2", "statement": "Hugh Montgomery trat im Januar 1953 in die CIA ein und verbrachte seine ersten sechs Jahre als CIA-Offizier in Berlin.", "confidence": "gesichert", "sourceIds": ["Q1"], "notes": ""},
+    {"id": "C3", "statement": "In den 1950er Jahren lief ein großer Teil sowjetischer Militärkommunikation über Festnetzleitungen; Berlin war ein wichtiger Knotenpunkt zwischen Moskau, Warschau und Bukarest.", "confidence": "gesichert", "sourceIds": ["Q1", "Q2", "Q3"], "notes": ""},
+    {"id": "C4", "statement": "Operation GOLD umfasste einen etwa 1.476 Fuß langen Tunnel, also rund 450 Meter; beim Bau wurden ungefähr 3.100 Tonnen Erde entfernt und etwa 125 Tonnen Stahl verbaut.", "confidence": "gesichert", "sourceIds": ["Q2", "Q3"], "notes": "Rund 450 Meter ist die gerundete Umrechnung von 1.476 Fuß."},
+    {"id": "C5", "statement": "Montgomery wurde beauftragt, Quellen mit Kenntnissen über das ostdeutsche Festnetz zu finden; laut CIA reichte dieses Quellennetz bis in das Ministerium für Post- und Fernmeldewesen. Später übernahm er Tonbänder aus der Tunneloperation und ließ sie zur Auswertung nach Washington schicken.", "confidence": "gesichert", "sourceIds": ["Q1"], "notes": ""},
+    {"id": "C6", "statement": "Die Tunnelabhörung lief fast ein Jahr und erzeugte etwa 50.000 Tonbandrollen, Hunderttausende transkribierte Gespräche und 1.750 Geheimdienstberichte.", "confidence": "gesichert", "sourceIds": ["Q1", "Q2"], "notes": "Q1 nennt ungefähr 450.000 Gespräche; Q2 nennt 443.000 vollständig transkribierte Gespräche. Das Skript verwendet bewusst die robuste Formulierung 'Hunderttausende'."},
+    {"id": "C7", "statement": "George Blake, ein KGB-Maulwurf im britischen MI6, informierte die Sowjets bereits während der Planungsphase über die Tunneloperation; die KGB-Seite ließ die Operation weiterlaufen, um Blake nicht zu gefährden.", "confidence": "gesichert", "sourceIds": ["Q2", "Q3"], "notes": ""},
+    {"id": "C8", "statement": "Der Tunnel wurde im April 1956 öffentlich entdeckt. Die sowjetische Seite hoffte auf einen Propagandaerfolg, doch Berichterstattung hob vielfach die Kühnheit und technische Leistung der Operation hervor. Spätere Studien kamen zu dem Schluss, dass die gesammelten Informationen echt waren und nicht gezielt mit Falschinformationen gefüttert wurden.", "confidence": "gesichert", "sourceIds": ["Q2", "Q3"], "notes": ""}
+  ],
+  "uncertainties": [
+    "Die erzählte Tagesstruktur ist eine illustrative Composite-Erzählung und kein dokumentierter Stundenplan Hugh Montgomerys.",
+    "Einzelne CIA-Seiten runden die Zahl der transkribierten Gespräche unterschiedlich; deshalb nennt das Skript nur 'Hunderttausende'.",
+    "Das Video zeigt keine operativen Schritt-für-Schritt-Techniken und rekonstruiert keine geheimen Methoden jenseits historisch veröffentlichter, hochrangiger Fakten."
+  ],
+  "doNotClaim": [
+    "Nicht behaupten, der dargestellte Tagesablauf habe exakt so an einem einzelnen Datum stattgefunden.",
+    "Nicht behaupten, Hugh Montgomery sei die erfundene Hauptfigur; er dient nur als reales historisches Vergleichsbeispiel.",
+    "Keine konkreten Anleitungen zur Agentenrekrutierung, Überwachung, Tarnung, Kontaktaufnahme oder technischen Abhörinstallation geben.",
+    "Nicht sagen, der KGB habe den genauen Tunnelstandort von Anfang an gekannt; die CIA-Quellen sagen, dass die Sowjets vom Projekt wussten, nicht zwingend vom präzisen Ort."
+  ]
+}
