@@ -2,45 +2,43 @@
 
 ## Phase 0 — Thema
 
-1. `npm run topic:video -- --topic "THEMA"`
-2. Duplikate werden blockiert.
-3. Offensichtlich fremde Themen werden als `BLOCKED_CHANNEL_FIT` blockiert.
-4. `REVIEW_CHANNEL_FIT` ist nur eine Vorwarnung; im Content-Plan muss der Kanalfit später mindestens 7/10 erreichen.
+Thema auf Duplikat und Kanalfit prüfen. Offensichtlicher Fremdcontent wird blockiert; unklare Themen brauchen später mindestens 7/10 Kanalfit im Content-Plan.
 
-## Phase 1 — Inhalt planen und belegen
+## Phase 1 — intern planen, extern sauber ausgeben
 
 1. Projekt anlegen.
-2. `00-plan/CONTENT_PLAN.json` individuell ausarbeiten:
-   - Kanalfit + Kanalpfeiler
-   - Zuschauer-Versprechen
-   - Kernfrage und Blickwinkel
-   - Hook-Typ + exakter Hook
-   - Erzählmodus
-   - Story-Beats
-   - Retention-/Eskalationspunkte
-   - Payoff
-   - Ending
-   - finaler Titel
-   - Cover-Konzept
-3. `00-plan/RESEARCH.json` ausarbeiten:
-   - Status `READY`
-   - mindestens 2 belastbare Quellen
-   - mindestens 2 zentrale Claims
-   - Confidence: `gesichert`, `wahrscheinlich` oder `umstritten`
-   - Unsicherheiten und Dinge, die nicht behauptet werden dürfen, dokumentieren
-4. Voice-over-Skript schreiben. Der geplante Hook ist der erste gesprochene Inhalt; die geplante finale Zeile steht am Ende.
-5. `plannedImageCount` und `targetDurationSeconds` in `99-tech/video.json` setzen.
-6. `IMAGE_AUDIO_MAP.json` lückenlos ausfüllen.
-7. Den Bildplan in `00-plan/google-flow-prompt.txt` vollständig ausarbeiten und alle Platzhalter entfernen.
+2. `99-tech/CONTENT_PLAN.json` ausarbeiten: Kanalfit, Zuschauer-Versprechen, Hook, Erzählmodus, Story-Beats, Retention, Payoff, Ending, Titel und Cover.
+3. `99-tech/RESEARCH.json` mit mindestens zwei belastbaren Quellen und zwei belegten Claims auf `READY` setzen.
+4. `01-script/voice-script.txt` schreiben; Hook steht am Anfang, geplante Schlusszeile am Ende.
+5. `99-tech/video.json` mit Zielzeit und Bildanzahl füllen.
+6. `99-tech/IMAGE_AUDIO_MAP.json` lückenlos ausfüllen.
+7. `00-bildprompts/99-alle-bildprompts.txt` ausarbeiten.
 8. `npm run validate:phase1 -- --dir "..."`.
 
-Bei erfolgreicher Phase 1 wird automatisch `00-plan/FLOW_MASTER_PROMPT.txt` erzeugt. Dieser Masterprompt enthält Content-Plan, Recherche, Voice-over, Content-Policy und Visual-Policy vollständig eingebettet und kann direkt an Google Flow übergeben werden.
+### Google Flow
 
-## Phase 2 — Assets
+Flow erhält **nur** `00-bildprompts/99-alle-bildprompts.txt`.
 
-- `Bild 01.png` bis `Bild NN.png` in `03-assets/images/`.
-- `Bild 01` ist Cover und erste Videoszene.
-- Genau eine finale Voice-over-Datei in `02-audio/`.
+Die Datei besteht aus:
+
+```text
+kurzer globaler Style-Lock
+→ Bild 01 — COVER + Pflichtüberschrift
+→ Bild 02 — eigenständiger Prompt
+→ Bild 03 — eigenständiger Prompt
+→ ... bis Bild NN
+```
+
+Keine Policy-JSONs, keine Recherche, kein Voice-over-Dump. Immer genau ein Bild seriell erzeugen, prüfen, als `Bild NN.png` in `03-bilder/` ablegen und erst dann das nächste Bild erzeugen.
+
+## Cover
+
+Bild 01 hat immer eine deutsche Überschrift mit 1–4 Wörtern. Exakter Wortlaut steht in `CONTENT_PLAN.coverConcept.visibleText` und im Coverblock unter `ÜBERSCHRIFT:`. Titel und Überschrift ergänzen sich.
+
+## Phase 2 — Bilder + Audio
+
+- `Bild 01.png` bis `Bild NN.png` direkt in `03-bilder/`.
+- genau eine finale Voice-over-Datei in `02-audio/`.
 - `npm run validate:assets -- --dir "..."`.
 
 ## Phase 3 — Produktion
@@ -49,12 +47,4 @@ Bei erfolgreicher Phase 1 wird automatisch `00-plan/FLOW_MASTER_PROMPT.txt` erze
 npm run phase3 -- --dir "..."
 ```
 
-Die Pipeline optimiert eine Kopie des Audios, richtet Bildanker mit Whisper aus, baut eine frame-genaue Timeline, wendet Motion-Presets/Overrides an, rendert mit Remotion und prüft den Export per FFprobe.
-
-### Motion Overrides
-
-```json
-{"motionOverrides": [{"imageNumber": 3, "type": "focus-left", "strength": 1.2, "focusX": 35, "focusY": 50}]}
-```
-
-Erlaubt: `push-in`, `pull-out`, `pan-left`, `pan-right`, `drift-up`, `drift-down`, `focus-left`, `focus-right`, `still`.
+Die Pipeline optimiert das Audio, richtet Bildanker mit Whisper aus, baut die frame-genaue Timeline, wendet Motion an, rendert mit Remotion und prüft den Export per FFprobe.

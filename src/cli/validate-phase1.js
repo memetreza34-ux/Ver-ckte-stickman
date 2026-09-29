@@ -6,6 +6,7 @@ import { compileFlowPrompt } from './compile-flow-prompt.js';
 
 function filled(value,min=3){return typeof value==='string'&&value.trim().length>=min&&!value.trim().startsWith('[');}
 function meaningful(value){if(typeof value==='string')return filled(value,4);if(value&&typeof value==='object')return Object.values(value).some((v)=>filled(v,4));return false;}
+function imageBlocks(prompt){return prompt.split(/\n(?=## Bild \d{2,3}\b)/i).filter((x)=>/^## Bild \d{2,3}\b/i.test(x.trim()));}
 
 export async function validatePhase1(projectDirectory){
   const p=projectPaths(projectDirectory),errors=[];
@@ -32,58 +33,48 @@ export async function validatePhase1(projectDirectory){
   for(const [key,label,min] of [['viewerPromise','Zuschauer-Versprechen',12],['coreQuestion','Kernfrage',8],['angle','individueller Blickwinkel',8],['individualityReason','Begründung der Individualität',12],['payoff','Payoff',8]])if(!filled(contentPlan[key],min))errors.push(`CONTENT_PLAN: ${label} fehlt oder ist zu knapp.`);
   const hook=contentPlan.hook??{};
   if(!contentPolicy.hookPolicy?.allowedTypes?.includes(hook.type))errors.push('CONTENT_PLAN: Hook-Typ ist nicht gültig.');
-  if(!filled(hook.text,12))errors.push('CONTENT_PLAN: Hook-Text fehlt oder ist zu knapp.');
-  if(!filled(hook.reason,8))errors.push('CONTENT_PLAN: Hook-Begründung fehlt.');
+  if(!filled(hook.text,12)||!filled(hook.reason,8))errors.push('CONTENT_PLAN: Hook oder Hook-Begründung fehlt.');
   if(!contentPolicy.storyPolicy?.narrativeModes?.includes(contentPlan.narrativeMode))errors.push('CONTENT_PLAN: Erzählmodus ist nicht gültig.');
-  const beats=Array.isArray(contentPlan.beats)?contentPlan.beats:[];
-  if(beats.length<3)errors.push('CONTENT_PLAN: mindestens 3 individuelle Story-Beats erforderlich.');
+  const beats=Array.isArray(contentPlan.beats)?contentPlan.beats:[];if(beats.length<3)errors.push('CONTENT_PLAN: mindestens 3 individuelle Story-Beats erforderlich.');
   for(let i=0;i<beats.length;i+=1)if(!filled(beats[i]?.purpose,4)||!filled(beats[i]?.content,6))errors.push(`CONTENT_PLAN: Story-Beat ${i+1} braucht purpose und content.`);
   const retention=contentPlan.retention??{},retentionSignals=[...(retention.openLoops??[]),...(retention.escalationPoints??[]),...(retention.patternInterrupts??[])].filter(meaningful);
-  if(retentionSignals.length<Number(contentPolicy.retentionPolicy?.minimumPlannedSignals??2))errors.push('CONTENT_PLAN: Retention-Plan ist zu leer; mindestens zwei konkrete Signale/Punkte planen.');
+  if(retentionSignals.length<Number(contentPolicy.retentionPolicy?.minimumPlannedSignals??2))errors.push('CONTENT_PLAN: mindestens zwei konkrete Retention-Punkte planen.');
   const ending=contentPlan.ending??{};if(!filled(ending.type,3)||!filled(ending.finalLine,8))errors.push('CONTENT_PLAN: Ending-Typ und finale Zeile müssen geplant sein.');
-  const tc=contentPlan.titleCoverSystem??{},cover=tc.coverConcept??{};
-  if(!filled(tc.finalTitle,6))errors.push('CONTENT_PLAN: finaler Titel fehlt.');
-  if(!filled(tc.titlePromise,8))errors.push('CONTENT_PLAN: titlePromise fehlt.');
-  if(!filled(cover.visualConflict,8))errors.push('CONTENT_PLAN: Cover braucht einen klaren visuellen Konflikt / Kernmoment.');
-  const subjects=Array.isArray(cover.mainSubjects)?cover.mainSubjects.filter((x)=>filled(x,2)):[];
-  if(subjects.length<1||subjects.length>3)errors.push('CONTENT_PLAN: Cover braucht 1 bis 3 große Hauptmotive.');
-  if(cover.visibleText&&tokens(cover.visibleText).length>4)errors.push('CONTENT_PLAN: Cover-Text soll höchstens 4 Wörter haben.');
-  if(cover.visibleText&&normalizeText(cover.visibleText)===normalizeText(tc.finalTitle))errors.push('CONTENT_PLAN: Cover-Text darf den Titel nicht einfach wiederholen.');
-  if(!filled(cover.emotion,3)||!filled(cover.whyClickable,8))errors.push('CONTENT_PLAN: Cover-Emotion oder Klickgrund fehlt.');
-  if(!filled(tc.complementarity,12))errors.push('CONTENT_PLAN: Zusammenspiel von Titel und Cover muss begründet werden.');
+
+  const tc=contentPlan.titleCoverSystem??{},cover=tc.coverConcept??{},coverText=String(cover.visibleText??'').trim();
+  if(!filled(tc.finalTitle,6)||!filled(tc.titlePromise,8))errors.push('CONTENT_PLAN: finaler Titel oder titlePromise fehlt.');
+  if(!filled(cover.visualConflict,8))errors.push('CONTENT_PLAN: Cover braucht einen klaren visuellen Konflikt.');
+  const subjects=Array.isArray(cover.mainSubjects)?cover.mainSubjects.filter((x)=>filled(x,2)):[];if(subjects.length<1||subjects.length>3)errors.push('CONTENT_PLAN: Cover braucht 1 bis 3 große Hauptmotive.');
+  const minHeadline=Number(contentPolicy.titleCoverPolicy?.coverHeadlineMinWords??1),maxHeadline=Number(contentPolicy.titleCoverPolicy?.coverHeadlineMaxWords??4),headlineWords=tokens(coverText).length;
+  if(contentPolicy.titleCoverPolicy?.coverHeadlineRequired&&(!coverText||headlineWords<minHeadline||headlineWords>maxHeadline))errors.push(`CONTENT_PLAN: Cover braucht immer eine deutsche Überschrift mit ${minHeadline} bis ${maxHeadline} Wörtern.`);
+  if(coverText&&normalizeText(coverText)===normalizeText(tc.finalTitle))errors.push('CONTENT_PLAN: Cover-Überschrift darf den Videotitel nicht einfach vollständig wiederholen.');
+  if(!filled(cover.emotion,3)||!filled(cover.whyClickable,8)||!filled(tc.complementarity,12))errors.push('CONTENT_PLAN: Cover-Emotion, Klickgrund oder Titel-Cover-Zusammenspiel fehlt.');
 
   const rp=contentPolicy.researchPolicy??{},sources=Array.isArray(research.sources)?research.sources:[],claims=Array.isArray(research.claims)?research.claims:[];
   if(research.status!=='READY')errors.push('RESEARCH.status muss READY sein.');
   if(normalizeText(research.topic)!==normalizeText(meta.topic))errors.push('RESEARCH.topic entspricht nicht dem Video-Thema.');
   if(!filled(research.summary,20))errors.push('RESEARCH.summary fehlt oder ist zu knapp.');
-  const validSources=sources.filter((s)=>filled(s?.id,2)&&filled(s?.title,4)&&(filled(s?.url,6)||filled(s?.publisher,3)));
-  if(validSources.length<Number(rp.minimumSources??2))errors.push(`RESEARCH: mindestens ${rp.minimumSources??2} belastbare Quellen erforderlich.`);
-  const sourceIds=new Set(validSources.map((s)=>s.id));let validClaims=0;
-  for(const claim of claims){const refs=Array.isArray(claim?.sourceIds)?claim.sourceIds:[];if(filled(claim?.statement,12)&&rp.allowedConfidence?.includes(claim?.confidence)&&refs.length&&refs.every((id)=>sourceIds.has(id)))validClaims+=1;else errors.push(`RESEARCH: Claim ${claim?.id??'?'} ist unvollständig oder verweist auf unbekannte Quellen.`);}
-  if(validClaims<Number(rp.minimumClaims??2))errors.push(`RESEARCH: mindestens ${rp.minimumClaims??2} belegte Claims erforderlich.`);
+  const validSources=sources.filter((s)=>filled(s?.id,2)&&filled(s?.title,4)&&(filled(s?.url,6)||filled(s?.publisher,3)));if(validSources.length<Number(rp.minimumSources??2))errors.push(`RESEARCH: mindestens ${rp.minimumSources??2} belastbare Quellen erforderlich.`);
+  const sourceIds=new Set(validSources.map((s)=>s.id));let validClaims=0;for(const claim of claims){const refs=Array.isArray(claim?.sourceIds)?claim.sourceIds:[];if(filled(claim?.statement,12)&&rp.allowedConfidence?.includes(claim?.confidence)&&refs.length&&refs.every((id)=>sourceIds.has(id)))validClaims+=1;else errors.push(`RESEARCH: Claim ${claim?.id??'?'} ist unvollständig oder verweist auf unbekannte Quellen.`);}if(validClaims<Number(rp.minimumClaims??2))errors.push(`RESEARCH: mindestens ${rp.minimumClaims??2} belegte Claims erforderlich.`);
 
-  const cleanScript=script.trim();
-  if(tokens(cleanScript).length<20||/VOICE-OVER-SKRIPT HIER EINFÜGEN/i.test(cleanScript))errors.push('Voice-over-Skript fehlt oder ist zu kurz.');
-  if(filled(hook.text)&&!cleanScript.startsWith(hook.text.trim()))errors.push('Der geplante Hook muss der erste gesprochene Inhalt des Skripts sein.');
+  const cleanScript=script.trim();if(tokens(cleanScript).length<20||/VOICE-OVER-SKRIPT HIER EINFÜGEN/i.test(cleanScript))errors.push('Voice-over-Skript fehlt oder ist zu kurz.');
+  if(filled(hook.text)&&!cleanScript.startsWith(hook.text.trim()))errors.push('Der geplante Hook muss der erste gesprochene Inhalt sein.');
   if(/^(hallo( und)? willkommen|willkommen zu einem neuen video|in diesem video schauen wir uns an|heute reden wir über|wusstest du schon)/i.test(cleanScript))errors.push('Skript beginnt mit einer verbotenen generischen Hook-Formel.');
   if(filled(ending.finalLine)&&!cleanScript.slice(-800).includes(ending.finalLine.trim()))errors.push('Die geplante finale Zeile muss am Ende des Skripts vorkommen.');
 
-  if(!prompt.includes(`STIL-ID: ${visual.styleId}`)||!prompt.includes(`"styleId": "${visual.styleId}"`))errors.push('Visual Policy wurde nicht vollständig in den Bildprompt injiziert.');
-  if(!prompt.includes(`"contentPolicyVersion": ${contentPolicy.contentPolicyVersion}`))errors.push('Content Policy wurde nicht vollständig in den Bildprompt injiziert.');
-  const planPlaceholders=['[PLANZEIT]','[EXAKTER STARTANKER]','[ZWECK]','[KONKRETES ELEMENT]','[DARSTELLUNGSFORM]','[BEWEGUNG]','[SEKUNDEN]','[VOLLSTÄNDIGER DEUTSCHER PROMPT]','[WEITER BIS BILD NN]'];
-  for(const marker of planPlaceholders)if(prompt.includes(marker))errors.push(`Bildplan enthält noch Platzhalter: ${marker}`);
-  const promptLines=[...prompt.matchAll(/^Bildprompt:\s*(.+)$/gmi)].map((m)=>m[1].trim()).filter(Boolean);
-  if(Number.isInteger(meta.plannedImageCount)&&promptLines.length!==meta.plannedImageCount)errors.push(`Bildplan enthält ${promptLines.length} ausgefüllte Bildprompts, erwartet ${meta.plannedImageCount}.`);
-  promptLines.forEach((line,i)=>{if(line.length<80)errors.push(`Bild ${i+1}: Bildprompt ist zu knapp.`);});
+  if(/\{\{[^}]+\}\}/.test(prompt)||/\[[A-ZÄÖÜ0-9 _,-]{3,}\]/.test(prompt))errors.push('00-bildprompts/99-alle-bildprompts.txt enthält noch Platzhalter.');
+  if(!/VERBINDLICHER STYLE-LOCK/i.test(prompt))errors.push('Bildprompt-Datei: verbindlicher Style-Lock fehlt.');
+  if(/CONTENT_POLICY_JSON|VISUAL_POLICY_JSON|CONTENT_PLAN_JSON|RESEARCH_JSON|VOICE_SCRIPT|AKTIVE CONTENT-POLICY|AUSGEFÜLLTER CONTENT-PLAN|RECHERCHE-GRUNDLAGE|FINALER VOICE-OVER-TEXT/i.test(prompt))errors.push('Bildprompt-Datei enthält interne Planungsdaten; Google Flow soll nur Style-Lock und finale Einzelprompts erhalten.');
+  const blocks=imageBlocks(prompt);if(Number.isInteger(meta.plannedImageCount)&&blocks.length!==meta.plannedImageCount)errors.push(`Bildprompt-Datei enthält ${blocks.length} Bilder, erwartet ${meta.plannedImageCount}.`);
+  blocks.forEach((block,i)=>{const n=i+1,head=block.match(/^## Bild (\d{2,3})\b/i),body=block.match(/\nPROMPT:\s*\n([\s\S]+)$/i)?.[1]?.trim()??'';if(Number(head?.[1])!==n)errors.push(`Bildprompt ${n}: Nummerierung ist nicht lückenlos.`);if(body.length<250)errors.push(`Bild ${n}: Einzelprompt ist zu knapp (${body.length} Zeichen).`);if(!/16:9/.test(body))errors.push(`Bild ${n}: 16:9 fehlt im Einzelprompt.`);});
+  const first=blocks[0]??'',headlineMatch=first.match(/ÜBERSCHRIFT:\s*"([^"]+)"/i);if(!headlineMatch)errors.push('Bild 01: Pflichtzeile ÜBERSCHRIFT fehlt.');else if(normalizeText(headlineMatch[1])!==normalizeText(coverText))errors.push('Bild 01: Überschrift entspricht nicht CONTENT_PLAN.coverConcept.visibleText.');if(coverText&&!first.includes(coverText))errors.push('Bild 01: Cover-Überschrift muss wortgenau im Coverblock stehen.');
 
-  const images=Array.isArray(mapping.images)?mapping.images:[];
-  if(Number.isInteger(meta.plannedImageCount)&&images.length!==meta.plannedImageCount)errors.push(`Mapping enthält ${images.length} Bilder, erwartet ${meta.plannedImageCount}.`);
-  let last=-1;
-  for(let i=0;i<images.length;i+=1){const image=images[i],n=i+1,expected=`Bild ${String(n).padStart(2,'0')}.png`;if(Number(image.imageNumber)!==n||image.imageFile!==expected)errors.push(`Bild ${n}: Nummer/Dateiname nicht lückenlos.`);for(const key of['startAnchor','visualPurpose','topicAnchor','visualForm'])if(!filled(image[key],3))errors.push(`Bild ${n}: ${key} fehlt.`);if(!Number.isFinite(Number(image.plannedHoldSeconds))||Number(image.plannedHoldSeconds)<=0)errors.push(`Bild ${n}: plannedHoldSeconds fehlt.`);if(filled(image.startAnchor)){const at=cleanScript.indexOf(image.startAnchor);if(at<0)errors.push(`Bild ${n}: Startanker kommt nicht exakt im Skript vor.`);else if(at<=last)errors.push(`Bild ${n}: Startanker ist nicht monoton.`);else last=at;}if(!prompt.includes(`Bild ${String(n).padStart(2,'0')}`))errors.push(`Bild ${String(n).padStart(2,'0')} fehlt im Bildplan.`);}
+  const images=Array.isArray(mapping.images)?mapping.images:[];if(Number.isInteger(meta.plannedImageCount)&&images.length!==meta.plannedImageCount)errors.push(`Mapping enthält ${images.length} Bilder, erwartet ${meta.plannedImageCount}.`);let last=-1;
+  for(let i=0;i<images.length;i+=1){const image=images[i],n=i+1,expected=`Bild ${String(n).padStart(2,'0')}.png`;if(Number(image.imageNumber)!==n||image.imageFile!==expected)errors.push(`Bild ${n}: Nummer/Dateiname nicht lückenlos.`);for(const key of['startAnchor','visualPurpose','topicAnchor','visualForm'])if(!filled(image[key],3))errors.push(`Bild ${n}: ${key} fehlt.`);if(!Number.isFinite(Number(image.plannedHoldSeconds))||Number(image.plannedHoldSeconds)<=0)errors.push(`Bild ${n}: plannedHoldSeconds fehlt.`);if(filled(image.startAnchor)){const at=cleanScript.indexOf(image.startAnchor);if(at<0)errors.push(`Bild ${n}: Startanker kommt nicht exakt im Skript vor.`);else if(at<=last)errors.push(`Bild ${n}: Startanker ist nicht monoton.`);else last=at;}}
 
-  if(!errors.length){await compileFlowPrompt(projectDirectory);const master=await readFile(p.flowMasterPrompt,'utf8');if(/\{\{[A-Z0-9_]+\}\}/.test(master))errors.push('FLOW_MASTER_PROMPT enthält noch Platzhalter.');if(!master.includes(hook.text)||!master.includes(research.summary)||!master.includes(cleanScript.slice(0,Math.min(200,cleanScript.length))))errors.push('FLOW_MASTER_PROMPT enthält Content-Plan, Recherche oder Skript nicht vollständig.');}
+  if(!errors.length)await compileFlowPrompt(projectDirectory);
   return{passed:errors.length===0,errors};
 }
 
-async function main(){const dir=arg('--dir');if(!dir)throw new Error('Nutzung: npm run validate:phase1 -- --dir "youtube/..."');const r=await validatePhase1(dir);if(!r.passed){r.errors.forEach((e)=>console.error(`- ${e}`));throw new Error(`${r.errors.length} Phase-1-Regel(n) verletzt.`);}console.log('Phase 1: BESTANDEN — Kanalfit, Recherche, Hook, Story, Retention, Ending, Titel/Cover und Bildplan sind konsistent.');}
+async function main(){const dir=arg('--dir');if(!dir)throw new Error('Nutzung: npm run validate:phase1 -- --dir "youtube/..."');const r=await validatePhase1(dir);if(!r.passed){r.errors.forEach((e)=>console.error(`- ${e}`));throw new Error(`${r.errors.length} Phase-1-Regel(n) verletzt.`);}console.log('Phase 1: BESTANDEN — Inhalt, Recherche, Cover-Überschrift, Bildprompts und Audio-Mapping sind konsistent.');}
 if(isMain(import.meta.url))main().catch((e)=>{console.error(`Phase 1: FEHLER — ${e.message}`);process.exitCode=1;});

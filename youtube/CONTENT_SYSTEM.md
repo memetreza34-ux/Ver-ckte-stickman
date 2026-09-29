@@ -2,48 +2,30 @@
 
 ## Grundsatz
 
-Die Kanal-DNA bleibt gleich, aber jedes Video wird inhaltlich neu entwickelt. Hook, Story, Titel, Cover und Bildfolge werden nicht blind aus einer Schablone kopiert.
+Die Kanal-DNA bleibt gleich, aber jedes Video wird individuell entwickelt. Hook, Story, Titel, Cover und Bildfolge werden nicht blind aus einer Schablone kopiert.
 
-## 1. Kanalfit
+## Kanalfit und Recherche
 
-Vor dem Skript wird bewertet, ob das Thema zur Kanal-DNA passt. `CONTENT_PLAN.topicFit` braucht:
+`99-tech/CONTENT_PLAN.json` benötigt mindestens 7/10 Kanalfit und einen konkreten Kanalpfeiler. `99-tech/RESEARCH.json` ist Pflicht; zentrale Tatsachenbehauptungen werden mit echten Quellen verknüpft und Unsicherheiten sauber markiert.
 
-- mindestens 7/10
-- `verdict: "APPROVED"`
-- mindestens einen passenden Kanalpfeiler
-- eine konkrete Begründung
+## Hook, Story und Retention
 
-Die breite Nische umfasst bizarre, dunkle, absurde, psychologische, kriminelle, historische, extreme, mysteriöse oder surreal starke Unterhaltungsthemen.
+Der Hook ist der erste gesprochene Inhalt. Mindestens drei individuelle Story-Beats und mindestens zwei konkrete Retention-Punkte. Die Erzählform wird passend zum Thema gewählt.
 
-## 2. Recherche
+## Titel + Cover
 
-`RESEARCH.json` ist Pflicht. Zentrale Tatsachenbehauptungen werden mit Quellen verknüpft. Unsicheres wird als `wahrscheinlich` oder `umstritten` markiert. Quellen werden niemals erfunden.
+Titel und Cover bilden gemeinsam den Klickgrund. `Bild 01` ist Cover und erste Szene. Das Cover hat immer 1–3 große Motive und **immer eine deutsche Überschrift mit 1–4 Wörtern**. Diese Überschrift ergänzt den Titel, statt ihn vollständig zu wiederholen.
 
-## 3. Hook
+## Google-Flow-Ausgabe
 
-Der Hook ist der erste gesprochene Inhalt. Keine Begrüßung und kein generisches Intro. Der Hook muss zum konkreten Thema passen und später eingelöst werden.
+Interne Planung bleibt intern. Flow bekommt weder Recherche noch Content-Policy noch Voice-over als Datenblock. Die einzige Übergabedatei ist:
 
-## 4. Story und Retention
+```text
+00-bildprompts/99-alle-bildprompts.txt
+```
 
-Mindestens drei individuelle Story-Beats. Retention entsteht aus neuen Informationen, offenen Fragen, Eskalationen, Perspektivwechseln oder bewusst gesetzten Pattern Interrupts. Mindestens zwei konkrete Retention-Signale werden vorab geplant.
+Wie bei den bewährten Erklär-Reel-Prompts enthält sie zuerst einen globalen Style-Lock. Danach folgt pro Bild ein eigenständiger Prompt, der die konkrete Szene vollständig beschreibt. Dadurch muss das Bildmodell nicht aus Metadaten selbst erraten, was es zeichnen soll.
 
-## 5. Titel + Cover
+## Ending
 
-Titel und Cover ergänzen sich. Bild 01 ist Cover und erste Szene. Cover meist mit 1–3 großen Motiven, klarer Emotion und wenigen oder keinen deutschen Wörtern.
-
-## 6. Ending
-
-Das Ende löst das Zuschauer-Versprechen ein. Ending-Typ und finale Zeile werden im Content-Plan festgelegt und müssen im Skript auftauchen.
-
-## 7. Übergabe an Google Flow
-
-Der externe Bildgenerator darf keine lokalen Repo-Dateien voraussetzen. Deshalb wird nach fertiger Phase 1 `FLOW_MASTER_PROMPT.txt` erzeugt. Er enthält:
-
-- Content-Policy
-- Visual-Policy
-- ausgefüllten Content-Plan
-- Recherche
-- finalen Voice-over-Text
-- vollständigen Bildplan
-
-Dieser Masterprompt ist die einzige Übergabedatei an Flow.
+Das Ende löst das Zuschauer-Versprechen ein. Ending-Typ und finale Zeile stehen im internen Content-Plan und müssen im Skript umgesetzt sein.
