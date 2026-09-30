@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 3,
+  "pipelineVersion": 4,
   "projectSchemaVersion": 3,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -18,6 +18,16 @@
     "hardMaximumSeconds": 8.0,
     "minimumUsefulHoldSeconds": 1.6,
     "multipleImagesPerSentenceAllowed": true
+  },
+  "flowProductionPolicy": {
+    "batchSize": 5,
+    "lastBatchMayBeSmaller": true,
+    "generateWholeBatchBeforeNext": true,
+    "individualDownloadForbidden": true,
+    "manualRenameForbidden": true,
+    "downloadAllOnceAfterGeneration": true,
+    "automaticImportRequired": true,
+    "batchFolderName": "5er-batches"
   },
   "assetPolicy": {"minimumWidth": 1280, "minimumHeight": 720, "targetAspectRatio": 1.7777778, "aspectRatioTolerance": 0.04, "minimumImageBytes": 20000, "duplicateImagesForbidden": true},
   "audioPolicy": {"playbackRate": 1.08, "silenceThresholdDb": -36, "minimumLongPauseSeconds": 0.35, "retainedPauseSeconds": 0.12, "loudnessTargetLufs": -16, "truePeakDbtp": -1.5, "loudnessRangeLra": 11, "outputSampleRateHz": 48000, "userOriginalMustRemainUntouched": true},

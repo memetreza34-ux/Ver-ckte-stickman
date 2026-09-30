@@ -5,6 +5,9 @@ public/__render/
 .DS_Store
 .env
 
+**/00-bildprompts/5er-batches/
+**/99-tech/FLOW_IMPORT_REPORT.json
+**/99-tech/.flow-import-temp/
 **/99-tech/YOUTUBE_AUDIO_OPTIMIZED.wav
 **/99-tech/whisper/
 **/99-tech/FINAL_TIMELINE.json

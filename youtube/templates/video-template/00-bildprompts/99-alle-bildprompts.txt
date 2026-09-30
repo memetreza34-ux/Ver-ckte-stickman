@@ -2,17 +2,17 @@
 
 Format: 16:9 · deutsche Stickman-Comicwelt · [BILDANZAHL EINTRAGEN] Bildmomente
 
-Google-Flow-Regel: immer genau 1 Bild erzeugen, vollständig abwarten und prüfen, korrekt als `Bild NN.png` benennen und in `03-bilder/` ablegen; erst danach das nächste Bild erzeugen. Keine parallele Bildgenerierung.
+Google-Flow-Regel: Die fertige Masterdatei wird vor der Generierung mit `npm run compile:flow -- --dir "youtube/..."` automatisch in verbindliche 5er-Blöcke geteilt. In Flow immer einen kompletten 5er-Block erzeugen und prüfen, bevor der nächste Block beginnt. Währenddessen nichts einzeln herunterladen und nichts manuell umbenennen. Erst wenn alle Bilder fertig sind, alle einmal gesammelt herunterladen und anschließend mit `npm run import:flow-images -- --dir "youtube/..." --source "DOWNLOAD-ORDNER"` automatisch importieren.
 
 ## VERBINDLICHE BILDWELT FÜR JEDES BILD
 
 Das gesamte Bild wird vollständig als einheitliche handgezeichnet wirkende 2D-Comic-Illustration erzeugt. Einfache Stickman-Grundkörper mit dünnen Gliedmaßen, runden oder ovalen Köpfen, klaren Silhouetten und stark überzeichneter, zur Szene passender Mimik. Deutliche schwarze Konturen, große lesbare Formen, kontrolliert raue Linien, sparsame grafische Schatten und reduzierte Hintergründe. Das Motiv muss innerhalb einer Sekunde verständlich sein.
 
-Niemals: Fotorealismus, realistische Menschen, Foto-Hintergrund, gemischte Foto-Comic-Optik, 3D/Pixar, sterile Firmenillustration, Kinder-Clipart, Wasserzeichen, zufällige Logos, Pseudo-Schrift oder unnötige grafische Gewalt. Nicht jede Szene künstlich dunkel machen; Licht und Farben folgen der Story.
+Niemals: Fotorealismus, realistische Menschen, realistische historische Gravur, Foto-Hintergrund, gemischte Foto-Comic-Optik, 3D/Pixar, sterile Firmenillustration, Kinder-Clipart, Wasserzeichen, zufällige Logos, Pseudo-Schrift oder unnötige grafische Gewalt. Nicht jede Szene künstlich dunkel machen; Licht und Farben folgen dem Inhalt.
 
 Jeder Einzelprompt muss selbstständig funktionieren und Motiv, Handlung, Komposition, Gesichtsausdruck/Körpersprache, Umgebung, Licht/Farbe und relevante Requisiten konkret nennen. Alle Bildprompts vollständig auf Deutsch. Sichtbare Schrift ausschließlich korrektes Deutsch.
 
-Kurzer Text ist auch in späteren Bildern erlaubt, wenn er wirklich zur Szene gehört. In frei-surrealen Storys dürfen zum Beispiel Countdowns, Warnhinweise, Story-Regeln, Ränge oder fiktive Zahlen sichtbar sein. Bei realen Videos müssen echte Daten/Zahlen mit der Recherche übereinstimmen. Keine Untertitel und keine Wiederholung ganzer Voice-over-Sätze. Normale Bilder höchstens mit wenigen kurzen Textelementen; bei komplexeren Informationen lieber einen zusätzlichen Bildmoment planen.
+Kurzer Text ist auch in späteren Bildern erlaubt, wenn er die Szene klarer macht. Bei realen Fakten muss er zur Recherche passen; bei frei-surrealen Geschichten darf er als erfundene Storyregel, Countdown, Warnung, Rang, Uhrzeit oder Zahl Teil der erfundenen Welt sein. Keine Untertitel und keine Wiederholung ganzer Voice-over-Sätze. Normale Bilder höchstens mit wenigen kurzen Textelementen; bei komplexeren Informationen lieber einen zusätzlichen Bildmoment planen statt eine Textwand zu bauen.
 
 ---
 
@@ -23,6 +23,6 @@ BILDPROMPT:
 
 ## Bild 02
 BILDPROMPT:
-[VOLLSTÄNDIGER DEUTSCHER EINZELBILDPROMPT. KONKRETE SZENE STATT ABSTRAKTER PLANUNG. WENN KURZER STORYTEXT ODER EIN REALER FAKT SICHTBAR HELFEN SOLL, IHN WORTGENAU FESTLEGEN. SONST KEINE ZUFÄLLIGE SCHRIFT. 16:9.]
+[VOLLSTÄNDIGER DEUTSCHER EINZELBILDPROMPT. KONKRETE SZENE STATT ABSTRAKTER PLANUNG. SICHTBAREN TEXT NUR WENN ER GEPLANT IST; SONST KEINE ZUFÄLLIGE SCHRIFT. 16:9.]
 
 [WEITERE BILDER LÜCKENLOS BIS BILD NN]
