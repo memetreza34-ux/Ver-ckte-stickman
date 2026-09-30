@@ -1,42 +1,62 @@
-# Content-System — Verückte Stickman
+# Content-System — Verückte Stickman V8
 
 ## 1. Kanalprinzip
 
-Der Kanal ist **verrücktes Story- und Infotainment**. Unterhaltung steht vor Dokumentation.
+Der Kanal ist **verrücktes Story-Entertainment**. Unterhaltung steht vor Dokumentation, aber der Einstieg muss sofort verständlich sein.
 
-Ein Video darf real, hybrid oder komplett erfunden sein. Reale Recherche ist **kein Standard-Zwang**. Wenn eine Story frei erfunden ist, darf sie lügen, übertreiben, kosmisch, absurd oder albtraumhaft werden. Entscheidend ist, dass sie innerhalb ihrer eigenen Welt verständlich bleibt.
+Ein Video darf real, hybrid oder komplett erfunden sein. Recherche ist **kein Standard-Zwang**. Der bevorzugte Modus ist `frei-surreal`.
 
 Die feste Klammer lautet:
 
 ```text
 starke Prämisse
-→ sofortiger Hook
-→ klares Ziel oder Problem
+→ klarer Hook
+→ unmittelbares Ziel
+→ Problem
 → kausale Eskalation
 → Midpoint-Turn
 → stärkste Eskalation
 → Payoff / Callback
 ```
 
-## 2. Was die beiden Tests gezeigt haben
+## 2. Was die Tests gezeigt haben
 
 ### Bierflut-Test
 Zu dokumentarisch, zu wenige visuelle Wechsel, zu lange statische Motive.
 
 ### Spion-Test
-Bilddichte besser, aber das Skript kippt nach einem guten Hook wieder in ein Referat: Produktionshinweis, historische Erklärung, reale Beispiele, Zahlenblöcke. Dadurch schaut man einer Präsentation zu statt einer Geschichte.
+Bilddichte besser, aber das Skript kippt nach dem Hook wieder in ein Referat.
 
-Diese Fehler gelten künftig als Warnsignal:
+### Spiegel-Test
+Bildwelt und Bildmenge deutlich besser. Das Hauptproblem war der **Einstieg**: Cover zu lange sichtbar und zu viele Informationen gleichzeitig, bevor die Zehn-Minuten-Regel wirklich klar war.
 
-- „Unsere Hauptfigur ist erfunden ...“
-- „Ein reales Beispiel ist ...“
-- mehrere Sätze Kontext, bevor wieder etwas passiert
-- Zahlen und Jahreszahlen als Selbstzweck
-- eine Figur, die nur herumsteht, während der Sprecher erklärt
-- mehrere weiße Infografik-Szenen hintereinander
-- Ende als Zusammenfassung statt Payoff
+Daraus folgt V8:
 
-## 3. Drei Content-Modi
+> Ein Hook darf geheimnisvoll sein, aber niemals so kryptisch, dass der Zuschauer erst später versteht, was die Grundregel überhaupt ist.
+
+## 3. Intro-DNA
+
+In den ersten ungefähr 10 Sekunden müssen vier Fragen beantwortet werden:
+
+```text
+WO BIN ICH?
+→ WAS IST DIE SELTSAME REGEL?
+→ WARUM IST DAS WICHTIG?
+→ WAS MUSS JETZT PASSIEREN?
+```
+
+Regeln:
+
+- Situation sofort klar machen.
+- Regel/Anomalie in einfacher Sprache erklären oder eindeutig zeigen.
+- Gefahr oder Ziel spätestens im dritten Satz.
+- Nach dem Hook sofort Klarheit statt Hintergrundwissen.
+- Mindestens 4 Bildmomente in den ersten 10 Sekunden.
+- Cover nur kurz zeigen; Ziel maximal ca. 2,2 Sekunden.
+- Kein Intro-Bild länger als ca. 3,2 Sekunden.
+- Lange erste Sätze in mehrere visuelle Momente zerlegen.
+
+## 4. Drei Content-Modi
 
 ### `frei-surreal` — bevorzugter Standard
 Komplett freie Story. Keine Recherchepflicht. Orte, Regeln, Organisationen, Zahlen und Ereignisse dürfen erfunden werden.
@@ -47,26 +67,8 @@ Reale Kulisse oder Institution plus erfundene Story. Nur reale Behauptungen brau
 ### `real`
 Wenn das Video bewusst reale Tatsachen erklären will, wird recherchiert.
 
-Die Wahl ist intern. Das Voice-over sagt nicht: „Diese Geschichte ist erfunden.“
+## 5. Script-DNA
 
-## 4. Script-DNA
-
-### Hook
-Der **erste Satz ist bereits Story**. Keine Einleitung davor.
-
-Schwach:
-> „Heute schauen wir uns an, wie Spione arbeiten.“
-
-Stark:
-> „Um 03:17 Uhr klingelt dein Telefon – und am anderen Ende hörst du deine eigene Stimme.“
-
-### Ziel
-Spätestens in den ersten drei Sätzen muss klar sein, was die Figur oder der Fokus will.
-
-### Problem
-Das Ziel darf nicht einfach funktionieren. Sofort kommt ein Hindernis, eine Regel, ein Gegner oder eine unmögliche Konsequenz.
-
-### Kausalität
 Nicht:
 
 ```text
@@ -85,64 +87,46 @@ DESHALB bleibt nur Z.
 DOCH Z macht alles schlimmer.
 ```
 
-Die Story soll sich wie eine Kette anfühlen.
-
 ### Midpoint-Turn
-Zwischen ungefähr 40 und 65 Prozent muss sich die Geschichte verändern: Wahrheit kippt, Regel ändert sich, Freund wird Gegner, Ziel war falsch, Welt ist größer als gedacht.
+Zwischen ungefähr 40 und 65 Prozent verändert sich Wahrheit, Regel, Ziel oder Risiko.
 
 ### Setup / Payoff
-Ein scheinbar kleines Detail früh setzen und später wichtig machen.
-
-Beispiel:
-
-```text
-Anfang: Der Aufzug hat keinen Knopf für Stockwerk 13.
-Ende: Du merkst, dass du die ganze Zeit auf Stockwerk 13 warst.
-```
+Ein frühes Detail bekommt später eine neue Bedeutung.
 
 ### Ende
-Kein Fazit wie „Das war also ...“. Das Ende zahlt etwas aus, dreht die Story noch einmal oder greift den Anfang auf.
+Kein Fazit. Das Ende zahlt etwas aus, dreht die Story oder greift den Anfang wieder auf.
 
-## 5. Unterhaltungsdichte
+## 6. Unterhaltungsdichte
 
-Für 1–2 Minuten gilt als Ziel:
+Für 1–2 Minuten:
 
 - mindestens 6 Story-Beats
 - mindestens 6 Unterhaltungsbeats
-- ungefähr alle 6–14 Sekunden eine Veränderung
+- ungefähr alle 6–14 Sekunden eine relevante Veränderung
 
 Mögliche Impulse:
 
 - neue Regel
 - Twist
-- neue Gefahr
+- Gefahr
 - visueller Gag
 - Transformation
-- unerwartete Figur
 - falsche Sicherheit
 - Statuswechsel
 - Perspektivwechsel
 - absurde Konsequenz
 
-Nach spätestens zwei erklärenden Sätzen muss wieder etwas **passieren**.
-
-## 6. Sprache
+## 7. Sprache
 
 - natürliches gesprochenes Deutsch
 - kurze und mittlere Sätze mischen
 - konkrete Verben
-- wenig abstrakte Zusammenfassungen
-- keine Quellen- oder Produktionssprache im Voice-over
+- keine Produktions- oder Quellenhinweise im Voice-over
+- keine Referatssprache
 - nicht jeden Witz erklären
-- starke kurze Sätze als Punch nutzen
+- kurze Punch-Sätze gezielt einsetzen
 
-Beispiel:
-
-> „Die Tür geht auf. Dahinter ist kein Raum. Dahinter ist derselbe Flur – nur zehn Jahre älter.“
-
-## 7. Themen
-
-Ein starkes Thema klingt bereits wie eine Story.
+## 8. Themen
 
 Schwach:
 - Die Geschichte der CIA
@@ -155,44 +139,56 @@ Stark:
 - Du wachst in einer Stadt auf, in der Schlaf illegal ist
 - Dein Schatten steigt in der Mafia höher auf als du
 - Jeder Spiegel zeigt dir, was zehn Minuten später passiert
-- Der schlechteste Geheimdienst der Welt muss plötzlich die Welt retten
-- Eine Raumstation erfindet jede Stunde eine neue Regel
 
-## 8. Bildplanung
+## 9. Bildplanung
 
-Richtwert: **30–40 Bildmomente pro 100 Sekunden**.
+Richtwert: **30–42 Bildmomente pro 100 Sekunden**.
 
-Nicht nur Kamerazoom als Abwechslung. Bewusst wechseln zwischen:
+Nicht pauschal immer mehr Bilder. Zusätzliche Bilder besonders an:
 
-- Nahaufnahme
-- Totale
-- Detail
-- POV
-- Größenvergleich
+- Hook
+- schwieriger Erklärung
+- Action
+- Twist
+- Regelwechsel
 - Transformation
-- surrealem Symbolbild
-- Reaktionsbild
-- Umgebung
+- starker Reaktion
 
-Nicht zu viele weiße Infografik-Bilder hintereinander. Kurzer deutscher Text ist erlaubt, wenn er einen visuellen Gag, eine Regel oder eine wichtige Storyinformation klarer macht.
+Bewusst wechseln zwischen Nahaufnahme, Totale, Detail, POV, Größenvergleich, Transformation, surrealem Wechsel und Reaktionsbild.
 
-## 9. Cover
+## 10. Cover
 
 `Bild 01` ist Cover + erste Szene.
 
 - 1–3 Hauptmotive
 - deutsche Überschrift mit 1–4 Wörtern
-- eine unmögliche Situation, starke Reaktion, Gefahr oder Transformation
+- starke Gefahr, Reaktion oder unmögliche Situation
 - Titel und Cover ergänzen sich
+- im fertigen Video nur kurz halten
 
-## 10. Qualitätsfrage vor Produktion
+## 11. YouTube-Upload
 
-Vor dem Render muss man das Skript ohne Bilder lesen können und denken:
+Vor dem Render werden in `CONTENT_PLAN.json` geplant:
 
-> „Ich will wissen, was als Nächstes passiert.“
+```text
+youtubeUpload.title
+youtubeUpload.description
+```
 
-Wenn der Text stattdessen klingt wie:
+Nach dem Finalisieren liegt in `04-export/` automatisch:
 
-> „Interessant, jetzt habe ich etwas gelernt.“
+```text
+YOUTUBE_UPLOAD.txt
+```
 
-aber nicht wie eine Story, wird er vor der Bildproduktion neu geschrieben.
+mit finalem Titel und fertiger Beschreibung.
+
+## 12. Qualitätsfrage vor Produktion
+
+Vor der Bildproduktion müssen zwei Fragen mit **Ja** beantwortet werden:
+
+> „Verstehe ich nach 10 Sekunden die Grundsituation?“
+
+> „Will ich wissen, was als Nächstes passiert?“
+
+Wenn nur eine davon Nein ist, wird das Skript zuerst neu geschrieben.
