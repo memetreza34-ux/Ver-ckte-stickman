@@ -1,194 +1,165 @@
-# Content-System — Verückte Stickman V8
+# Content-System — Verückte Stickman V9
 
-## 1. Kanalprinzip
+## 1. Grundregel
 
-Der Kanal ist **verrücktes Story-Entertainment**. Unterhaltung steht vor Dokumentation, aber der Einstieg muss sofort verständlich sein.
+**Nicht jedes Video ist eine große Story.** Erst wird das stärkste Skriptformat für das Thema gewählt, dann wird geschrieben.
 
-Ein Video darf real, hybrid oder komplett erfunden sein. Recherche ist **kein Standard-Zwang**. Der bevorzugte Modus ist `frei-surreal`.
+Es gibt drei Formate:
 
-Die feste Klammer lautet:
+1. `mini-stories` — mehrere verrückte Fälle, Regeln, Orte oder Kategorien
+2. `progression` — klare Stufen, Ränge, Level oder Entwicklung
+3. `story` — eine zusammenhängende Handlung mit Ziel, Problem und Eskalation
+
+Die feste Kanal-DNA bleibt: grotesk-surreal, deutsch, visuell stark, unterhaltsam und klar.
+
+## 2. Format A — Mini-Stories
+
+Geeignet für:
+- mehrere absurde Regeln
+- mehrere Fälle
+- Rankings und Sammlungen
+- verschiedene Orte, Systeme oder Kategorien
+
+Jeder Abschnitt folgt ungefähr:
 
 ```text
-starke Prämisse
-→ klarer Hook
-→ unmittelbares Ziel
+KLARE BEHAUPTUNG / KATEGORIE
+→ kurze Erklärung
+→ konkretes Beispiel oder sichtbare Situation
+→ absurde / überraschende Besonderheit
+→ Konsequenz oder Pointe
+→ nächster Punkt
+```
+
+Wichtig:
+- nicht jede Einheit braucht einen Twist
+- kein künstliches Aufblasen schwacher Punkte
+- stärkere / seltsamere Punkte eher später
+- der erste starke Punkt startet sofort
+
+## 3. Format B — Progression
+
+Geeignet für:
+- vom Anfänger zum Boss
+- Ränge / Hierarchien
+- Level / Stufen
+- Evolution / Transformation
+
+Jede Stufe beantwortet:
+
+```text
+WAS IST DIE STUFE?
+→ was ändert sich gegenüber vorher?
+→ neue Fähigkeit / Regel / Risiko / Status
+→ konkrete Konsequenz
+→ warum ist die nächste Stufe extremer?
+```
+
+Die Progression braucht eine eindeutige Achse, z. B. Macht, Gefahr, Seltsamkeit, Größe, Verantwortung oder Preis.
+
+## 4. Format C — Story
+
+Nur wenn das Thema wirklich eine zusammenhängende Handlung trägt.
+
+```text
+HOOK
+→ Ziel
 → Problem
-→ kausale Eskalation
+→ DESHALB Handlung
+→ ABER Konsequenz
 → Midpoint-Turn
 → stärkste Eskalation
-→ Payoff / Callback
+→ Setup/Payoff
+→ Callback / Ende
 ```
 
-## 2. Was die Tests gezeigt haben
+Hier bleiben echte Kausalität, Midpoint und Setup/Payoff Pflicht.
 
-### Bierflut-Test
-Zu dokumentarisch, zu wenige visuelle Wechsel, zu lange statische Motive.
+## 5. Einstieg
 
-### Spion-Test
-Bilddichte besser, aber das Skript kippt nach dem Hook wieder in ein Referat.
+Die ersten ~10 Sekunden müssen das jeweilige Format sofort verständlich machen.
 
-### Spiegel-Test
-Bildwelt und Bildmenge deutlich besser. Das Hauptproblem war der **Einstieg**: Cover zu lange sichtbar und zu viele Informationen gleichzeitig, bevor die Zehn-Minuten-Regel wirklich klar war.
+### Mini-Stories
+Thema/Versprechen klar → erster starker Punkt sofort.
 
-Daraus folgt V8:
+### Progression
+Startzustand + Achse klar → Stufe 1 sofort.
 
-> Ein Hook darf geheimnisvoll sein, aber niemals so kryptisch, dass der Zuschauer erst später versteht, was die Grundregel überhaupt ist.
+### Story
+Situation + ungewöhnliche Regel + Problem klar.
 
-## 3. Intro-DNA
+Für alle:
+- kein Begrüßungsblock
+- Cover nur kurz
+- mindestens 4 Bildmomente in den ersten ~10 Sekunden
+- Titel-/Cover-Versprechen sofort bestätigen
 
-In den ersten ungefähr 10 Sekunden müssen vier Fragen beantwortet werden:
+## 6. Sprache
 
-```text
-WO BIN ICH?
-→ WAS IST DIE SELTSAME REGEL?
-→ WARUM IST DAS WICHTIG?
-→ WAS MUSS JETZT PASSIEREN?
-```
+Voice-over klingt gesprochen, nicht geschrieben.
 
-Regeln:
+Vermeiden:
+- „Jetzt wird es interessant.“
+- „Schlechte Idee.“
+- „Zu spät.“
+- künstliche Cliffhanger ohne Inhalt
+- Referatssprache
+- Quellen-/Produktionssprache
+- jeder Satz als dramatische Punchline
 
-- Situation sofort klar machen.
-- Regel/Anomalie in einfacher Sprache erklären oder eindeutig zeigen.
-- Gefahr oder Ziel spätestens im dritten Satz.
-- Nach dem Hook sofort Klarheit statt Hintergrundwissen.
-- Mindestens 4 Bildmomente in den ersten 10 Sekunden.
-- Cover nur kurz zeigen; Ziel maximal ca. 2,2 Sekunden.
-- Kein Intro-Bild länger als ca. 3,2 Sekunden.
-- Lange erste Sätze in mehrere visuelle Momente zerlegen.
-
-## 4. Drei Content-Modi
-
-### `frei-surreal` — bevorzugter Standard
-Komplett freie Story. Keine Recherchepflicht. Orte, Regeln, Organisationen, Zahlen und Ereignisse dürfen erfunden werden.
-
-### `hybrid`
-Reale Kulisse oder Institution plus erfundene Story. Nur reale Behauptungen brauchen intern Belege.
-
-### `real`
-Wenn das Video bewusst reale Tatsachen erklären will, wird recherchiert.
-
-## 5. Script-DNA
-
-Nicht:
-
-```text
-Das passiert.
-Dann passiert das.
-Dann passiert noch etwas.
-```
-
-Sondern:
-
-```text
-Das passiert.
-DESHALB musst du X tun.
-ABER dadurch entsteht Y.
-DESHALB bleibt nur Z.
-DOCH Z macht alles schlimmer.
-```
-
-### Midpoint-Turn
-Zwischen ungefähr 40 und 65 Prozent verändert sich Wahrheit, Regel, Ziel oder Risiko.
-
-### Setup / Payoff
-Ein frühes Detail bekommt später eine neue Bedeutung.
-
-### Ende
-Kein Fazit. Das Ende zahlt etwas aus, dreht die Story oder greift den Anfang wieder auf.
-
-## 6. Unterhaltungsdichte
-
-Für 1–2 Minuten:
-
-- mindestens 6 Story-Beats
-- mindestens 6 Unterhaltungsbeats
-- ungefähr alle 6–14 Sekunden eine relevante Veränderung
-
-Mögliche Impulse:
-
-- neue Regel
-- Twist
-- Gefahr
-- visueller Gag
-- Transformation
-- falsche Sicherheit
-- Statuswechsel
-- Perspektivwechsel
-- absurde Konsequenz
-
-## 7. Sprache
-
-- natürliches gesprochenes Deutsch
-- kurze und mittlere Sätze mischen
+Besser:
+- klare Hauptsätze
 - konkrete Verben
-- keine Produktions- oder Quellenhinweise im Voice-over
-- keine Referatssprache
-- nicht jeden Witz erklären
-- kurze Punch-Sätze gezielt einsetzen
+- kurze + mittlere Satzlängen mischen
+- eine Idee pro Absatz
+- Humor und Spannung aus Inhalt und Konsequenz entstehen lassen
 
-## 8. Themen
+## 7. Qualitätsfrage
 
-Schwach:
-- Die Geschichte der CIA
-- Fakten über Gefängnisse
-- Wie funktionieren Sekten?
+Vor Bildproduktion prüfen:
 
-Stark:
-- Ein Spion bekommt Befehle von seiner eigenen Stimme aus der Zukunft
-- Ein Gefängnis bekommt jede Nacht ein neues Stockwerk
-- Du wachst in einer Stadt auf, in der Schlaf illegal ist
-- Dein Schatten steigt in der Mafia höher auf als du
-- Jeder Spiegel zeigt dir, was zehn Minuten später passiert
+### Mini-Stories
+Will ich den **nächsten Punkt** hören?
 
-## 9. Bildplanung
+### Progression
+Will ich wissen, **wie extrem die nächste Stufe wird**?
 
-Richtwert: **30–42 Bildmomente pro 100 Sekunden**.
+### Story
+Will ich wissen, **was als Nächstes passiert**?
 
-Nicht pauschal immer mehr Bilder. Zusätzliche Bilder besonders an:
+Wenn die Antwort nicht klar Ja ist, wird das Skript überarbeitet.
 
-- Hook
-- schwieriger Erklärung
-- Action
-- Twist
+## 8. Bilder
+
+Richtwert weiter ca. 30–42 Bildmomente pro 100 Sekunden, aber adaptiv.
+
+Ein neues Bild ist sinnvoll bei:
+- neuer Information
+- neuem Fall
+- neuer Stufe
+- Handlung
+- Konsequenz
+- Ortswechsel
+- visueller Pointe
 - Regelwechsel
 - Transformation
-- starker Reaktion
 
-Bewusst wechseln zwischen Nahaufnahme, Totale, Detail, POV, Größenvergleich, Transformation, surrealem Wechsel und Reaktionsbild.
+Kein ein-Satz-ein-Bild-Zwang und keine künstlich langen Holds nur für Zoom/Pan.
 
-## 10. Cover
+## 9. Cover + Export
 
-`Bild 01` ist Cover + erste Szene.
-
-- 1–3 Hauptmotive
-- deutsche Überschrift mit 1–4 Wörtern
-- starke Gefahr, Reaktion oder unmögliche Situation
+- Bild 01 = Cover + erste Szene
+- deutsche Überschrift 1–4 Wörter
 - Titel und Cover ergänzen sich
-- im fertigen Video nur kurz halten
+- Export enthält `FINAL_VIDEO.mp4`, `THUMBNAIL.png` und `YOUTUBE_UPLOAD.txt`
 
-## 11. YouTube-Upload
+## 10. Lange Videos
 
-Vor dem Render werden in `CONTENT_PLAN.json` geplant:
+Für 8–10 Minuten wird nicht einfach eine 2-Minuten-Story verlängert.
 
-```text
-youtubeUpload.title
-youtubeUpload.description
-```
+Bevorzugt:
+- 8–12 starke Mini-Stories, **oder**
+- eine klar steigende Progression mit vielen echten Stufen, **oder**
+- eine Story nur dann, wenn die Prämisse 10 Minuten echte Entwicklung trägt.
 
-Nach dem Finalisieren liegt in `04-export/` automatisch:
-
-```text
-YOUTUBE_UPLOAD.txt
-```
-
-mit finalem Titel und fertiger Beschreibung.
-
-## 12. Qualitätsfrage vor Produktion
-
-Vor der Bildproduktion müssen zwei Fragen mit **Ja** beantwortet werden:
-
-> „Verstehe ich nach 10 Sekunden die Grundsituation?“
-
-> „Will ich wissen, was als Nächstes passiert?“
-
-Wenn nur eine davon Nein ist, wird das Skript zuerst neu geschrieben.
+Die Formatwahl bleibt der wichtigste erste Schritt.
