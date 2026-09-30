@@ -1,78 +1,58 @@
-# Workflow
+# Workflow V8
 
 ## Phase 0 — Story-Idee
 
 1. `npm run topic:video -- --topic "THEMA"`
 2. Duplikate und klar fremde Themen werden blockiert.
 3. Generische Themen wie „Die Geschichte von ...“ oder „Fakten über ...“ werden zurückgewiesen.
-4. Bevorzugt wird eine Prämisse, die schon als Einzeiler eine Geschichte öffnet: unmögliche Situation, absurde Regel, Gefahr, Twist oder starke Konsequenz.
+4. Ziel ist eine Prämisse, die schon als Einzeiler eine Geschichte öffnet: unmögliche Situation, absurde Regel, Gefahr, Twist oder starke Konsequenz.
 
-## Phase 1 — Story Engine
+## Phase 1 — Story + klarer Einstieg
 
 1. Projekt anlegen.
-2. In `99-tech/CONTENT_PLAN.json` den `contentMode` wählen. Standard ist `frei-surreal`.
-3. Hook und Story Engine ausarbeiten.
-4. In `storyEngine` festlegen: Fokus, Ziel, Problem, Auslöser, mindestens 4 kausale Wendungen, Midpoint-Turn, finale Eskalation, Setup/Payoff und Ending-Callback.
-5. Mindestens 6 Story-Beats und 6 `entertainmentBeats` planen.
-6. `scriptQuality` bewerten. Unter 8/10 wird vor der Bildproduktion neu geschrieben.
-7. Nur bei `real` bzw. bei echten Behauptungen im `hybrid`-Modus recherchieren.
-8. Voice-over schreiben. Der erste Satz ist bereits Story. Kein Disclaimer, kein Produktionskommentar, kein Referat.
-9. Bilder nicht nach Sätzen, sondern nach sichtbaren Veränderungen planen.
-10. `00-bildprompts/99-alle-bildprompts.txt` fertig schreiben.
+2. `contentMode` ist standardmäßig `frei-surreal`.
+3. Hook, Story Engine, Payoff und Cover planen.
+4. `introPlan` ausfüllen:
+   - Situation
+   - ungewöhnliche Regel/Anomalie
+   - Gefahr oder unmittelbares Ziel
+   - Klarheitssatz
+   - mindestens 4 Bildmomente in den ersten ~10 Sekunden
+5. `storyEngine` mit Ziel, Problem, mindestens 4 kausalen Wendungen, Midpoint-Turn, finaler Eskalation, Setup/Payoff und Ending-Callback ausarbeiten.
+6. Mindestens 6 Story-Beats und 6 `entertainmentBeats`.
+7. `scriptQuality` muss mindestens 8/10 erreichen; `introClarity` ist eine eigene Pflichtdimension.
+8. Voice-over schreiben: sofort verständlich, natürlich gesprochen, keine Referatssprache.
+9. Bilder nach sichtbaren Veränderungen planen. Hook, Twist, Action und schwierige Erklärstellen bekommen bei Bedarf zusätzliche Bildmomente.
+10. `youtubeUpload.title` und `youtubeUpload.description` fertig schreiben.
 11. `npm run validate:phase1 -- --dir "youtube/..."`.
-12. Danach `npm run compile:flow -- --dir "youtube/..."` ausführen. Dadurch entstehen automatisch die verbindlichen 5er-Dateien unter `00-bildprompts/5er-batches/`.
 
-## Script-Regeln
+## Intro-Regeln
+
+In den ersten ungefähr 10 Sekunden muss der Zuschauer verstehen:
 
 ```text
-HOOK
-→ ZIEL
-→ ABER Problem
-→ DESHALB Handlung
-→ ABER neue Konsequenz
-→ Midpoint-Turn
-→ stärkste Eskalation
-→ Setup wird bezahlt
-→ Callback / Twist
+WO BIN ICH?
+→ WAS IST DIE SELTSAME REGEL?
+→ WARUM IST DAS JETZT WICHTIG?
+→ WAS MUSS ALS NÄCHSTES PASSIEREN?
 ```
 
-- Nicht „und dann, und dann, und dann“.
-- Nach spätestens zwei erklärenden Sätzen passiert wieder etwas.
-- Der Zuschauer soll ständig wissen wollen, was als Nächstes passiert.
-- Frei-surreal darf eigene Regeln, Orte, Organisationen, Zahlen und Ereignisse erfinden.
-- Keine erfundenen konkreten Behauptungen über reale Personen als reale Fakten ausgeben.
+- Cover/Bild 01 nur kurz zeigen; Ziel maximal ca. 2,2 Sekunden.
+- Mindestens 4 Bildstarts in den ersten 10 Sekunden.
+- Kein Intro-Bild länger als ca. 3,2 Sekunden.
+- Ein komplizierter Satz darf mehrere Bilder bekommen.
+- Ein mysteriöser Hook darf offen sein, aber nicht verwirrend.
 
-## Phase 2 — Google Flow: immer in 5er-Blöcken
+## Phase 2 — Google Flow in 5er-Blöcken
 
-**Verbindlicher Standard:** Bilder niemals einzeln als Produktionsworkflow abarbeiten.
-
-1. `00-bildprompts/5er-batches/01-bilder-01-05.txt` in Flow abarbeiten.
-2. Innerhalb des Blocks alle fünf Bilder erzeugen, prüfen und erst dann mit dem nächsten Block weitermachen.
-3. Danach `02-bilder-06-10.txt`, `03-bilder-11-15.txt` usw.
-4. Der letzte Block darf weniger als fünf Bilder enthalten, wenn die Gesamtzahl nicht durch fünf teilbar ist.
-5. Während der Generierung **keine Bilder einzeln herunterladen** und **keine Dateien manuell umbenennen**.
-6. Erst wenn sämtliche Blöcke fertig sind, alle Bilder **einmal gesammelt herunterladen**.
-7. Den Sammeldownload automatisch importieren:
-
-```bash
-npm run import:flow-images -- --dir "youtube/..." --source "/PFAD/ZUM/DOWNLOAD-ORDNER"
-```
-
-Der Import verlangt exakt die geplante Bildanzahl, erkennt eine sichere Reihenfolge, wandelt JPG/WEBP bei Bedarf nach PNG um und legt die Dateien lückenlos als `Bild 01.png` bis `Bild NN.png` in `03-bilder/` ab. Wenn die Reihenfolge nicht sicher erkannt werden kann, bricht der Import ab, statt Bilder still falsch zuzuordnen. Manuelles Umbenennen ist kein Produktionsschritt mehr.
-
-Danach:
-
-```bash
-npm run validate:assets -- --dir "youtube/..."
-```
-
-Weitere Bildregeln:
-- `Bild 01` ist Cover + erste Videoszene.
-- Cover: deutsche Überschrift mit 1–4 Wörtern.
-- Richtwert: etwa 30–40 Bildmomente pro 100 Sekunden.
-- Keine Serie aus statischen weißen Infografiken.
-- Perspektiven bewusst wechseln: Nahaufnahme, POV, Detail, Totale, Transformation, Größenvergleich, surrealer Wechsel.
-- Genau eine finale Voice-over-Datei in `02-audio/`.
+1. `npm run compile:flow -- --dir "youtube/..."`
+2. Unter `00-bildprompts/5er-batches/` entstehen `01-bilder-01-05.txt`, `02-bilder-06-10.txt` usw.
+3. Immer einen vollständigen 5er-Block erzeugen; letzter Block darf kleiner sein.
+4. Nicht einzeln herunterladen oder manuell umbenennen.
+5. Erst wenn alle Bilder fertig sind, einmal gesammelt herunterladen.
+6. Danach: `npm run import:flow-images -- --dir "youtube/..." --source "/PFAD/ZUM/DOWNLOAD-ORDNER"`
+7. Der Import ordnet automatisch `Bild 01.png` bis `Bild NN.png` zu.
+8. Genau eine finale Voice-over-Datei in `02-audio/`.
 
 ## Phase 3 — Produktion
 
@@ -80,4 +60,22 @@ Weitere Bildregeln:
 npm run phase3 -- --dir "youtube/..."
 ```
 
-Whisper richtet die Bildanker am Audio aus. Danach: frame-genaue Timeline, Motion, Remotion-Render und finales QC.
+Die Pipeline optimiert Audio, richtet Bildanker mit Whisper aus, baut die Timeline, prüft die Intro-Dichte, rendert mit Remotion und führt finales QC durch.
+
+## Export
+
+`04-export/` enthält am Ende:
+
+```text
+FINAL_VIDEO.mp4
+THUMBNAIL.png
+YOUTUBE_UPLOAD.txt
+```
+
+`YOUTUBE_UPLOAD.txt` enthält genau den finalen YouTube-Titel und die fertige Beschreibung.
+
+## Bilddichte
+
+Richtwert: etwa 30–42 Bildmomente pro 100 Sekunden.
+
+Nicht mechanisch mehr Bilder erzeugen. Zusätzliche Bilder besonders bei Hook, schwieriger Erklärung, Action, Twist, Regelwechsel, Transformation und überraschender Reaktion. Ruhige Momente dürfen länger stehen, wenn das dramaturgisch gewollt ist.
