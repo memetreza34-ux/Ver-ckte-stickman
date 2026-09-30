@@ -1,0 +1,189 @@
+# ALLE BILDPROMPTS — Du kannst 10 Minuten in die Zukunft sehen – aber nur im Spiegel
+
+Format: 16:9 · deutsche grotesk-surrealistische Stickman-Comicwelt · 44 Bildmomente
+
+Google-Flow-Regel: immer genau 1 Bild erzeugen, abwarten, prüfen, als `Bild NN.png` benennen und in `03-bilder/` ablegen; erst danach das nächste Bild erzeugen.
+
+## VERBINDLICHE BILDWELT FÜR JEDES BILD
+
+Protagonist immer identisch: weißer ovaler Stickman-Kopf, schwarze Punktaugen, kurze schwarze Haarsträhne, petrolfarbener Hoodie, schwarze Hose. Die gesichtslose Gestalt ist hoch, sehr schlank, vollständig schwarz und hat einen leeren ovalen Kopf ohne Augen oder Mund.
+Stimmung: Mystery-Comedy mit steigender Paranoia. Anfang heller, später kaltes Cyan, Violett und Schwarz. Jede Szene zeigt Handlung, Entdeckung oder Konsequenz. Sichtbare Schrift nur wenn im Prompt genannt und dann korrekt auf Deutsch.
+
+---
+
+## Bild 01 — COVER
+ÜBERSCHRIFT: "SCHAU NICHT REIN"
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist steht groß im Vordergrund vor einem Badezimmerspiegel. Überschrift „SCHAU NICHT REIN“ exakt einmal groß und kontrastreich oben; keine weitere Schrift. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 02 — Gesichtslose Gestalt
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Nahaufnahme des Spiegelbilds: hinter dem zukünftigen Protagonisten steht eine hohe, gesichtslose schwarze Stickman-Gestalt mit völlig leerem ovalem Kopf. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 03 — Umdrehen
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Dynamische Halbtotalen-Szene: der Protagonist wirbelt vom Spiegel weg und schaut hektisch in das reale Badezimmer. Der Raum ist leer. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 04 — Tür ist zu
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Blick aus dem Badezimmer in den Flur: die echte Wohnungstür ist fest geschlossen und verriegelt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 05 — Spiegel testen
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist kneift misstrauisch die Augen zusammen und zeigt entschlossen auf den Spiegel, als würde er ihn testen wollen. Auf dem Waschbecken liegen nur wenige klare Requisiten. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 06 — Handy auf Waschbecken
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Nahaufnahme: der Protagonist legt sein schwarzes Smartphone bewusst auf den weißen Waschbeckenrand. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 07 — Handy in Zukunft kaputt
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Im Spiegel liegt dasselbe Smartphone sichtbar zerbrochen auf dem Badezimmerboden, während es in der realen Gegenwart noch unversehrt auf dem Waschbecken liegt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 08 — Handy einsperren
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist stopft das Smartphone entschlossen in eine Wand-Schublade und schiebt sie mit beiden Händen fest zu. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 09 — Schublade bricht
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Die Schubladenhalterung reißt plötzlich aus der Wand. Die Schublade kippt schräg nach unten, Schrauben und kleine Staubpartikel fliegen. Der Protagonist reißt erschrocken die Arme hoch. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 10 — Handy zerspringt
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Das Smartphone fällt aus der gekippten Schublade und zerspringt auf dem Boden. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 11 — Jetzt wird es interessant
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist steht wieder vor dem Spiegel, diesmal mit neugierigem, fast begeistert-verrücktem Grinsen statt Angst. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 12 — Kaffee-Zukunft
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Küche: im realen Bild hält der Protagonist eine volle Kaffeetasse. Im Küchenspiegel sieht man zehn Minuten Zukunft, in der Kaffee über seinen petrolfarbenen Hoodie läuft. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 13 — Ausweichen
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Dynamische Szene: eine Tasse kippt, Kaffee fliegt in einem Bogen, aber der Protagonist springt übertrieben seitlich weg. Der Kaffee trifft nur den Boden. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 14 — Kurzes Grinsen
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Nahaufnahme des Protagonisten mit selbstzufriedenem schiefem Grinsen und hochgezogener Augenbraue. Hinter ihm steht die Mikrowelle unscheinbar im Hintergrund. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 15 — Gestalt in Mikrowelle
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der schwarze ausgeschaltete Bildschirm der Mikrowelle spiegelt den Protagonisten. Direkt hinter seinem Spiegelbild steht die gesichtslose Gestalt, deutlich näher als zuvor. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 16 — Spiegel abdecken
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist wirft hektisch ein großes Handtuch über den Badezimmerspiegel. Das Tuch hängt schief, seine Hände sind noch in Bewegung, die Mimik ist angespannt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 17 — Gestalt im Fenster
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Im dunkleren Fenster der Wohnung erscheint die gesichtslose Gestalt als klare Spiegelung, obwohl der reale Raum dahinter leer ist. Der Protagonist zieht erschrocken den Vorhang heran. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 18 — Gestalt im Löffel
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Makroartige Comic-Nahaufnahme eines glänzenden Metalllöffels in der Hand des Protagonisten. In der stark gekrümmten Löffelspiegelung steht winzig, aber eindeutig die gesichtslose Gestalt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 19 — Alles Spiegelnde einsammeln
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist stopft hektisch Handy, Besteck, kleine Glasobjekte und glänzende Küchenteile in eine große matte Kiste. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 20 — Regel verändert sich
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist steht zwischen mehreren reflektierenden Flächen und erkennt erschrocken, dass die Zeitregel nicht mehr stimmt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 21 — Acht Minuten
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Badezimmerspiegel mit klarer deutscher/nummerischer Story-Anzeige „8 MINUTEN“ klein und sauber im Spiegelbereich. Die gesichtslose Gestalt ist sichtbar näher. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 22 — Fünf Minuten
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Fensterspiegelung derselben Wohnung: kurze klare Anzeige „5 MINUTEN“, die Gestalt noch näher und größer. Der Protagonist zieht sich vom Fenster zurück. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 23 — Zwei Minuten
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Extrem enge Nahaufnahme des Metalllöffels. In der verzerrten Spiegelung steht „2 MINUTEN“ und die gesichtslose Gestalt füllt fast die gesamte Löffelfläche. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 24 — Zeit wird kleiner
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Surreale Komposition: der Protagonist in der Mitte, um ihn herum drei schwebend wirkende reflektierende Flächen mit der Gestalt in immer näheren Positionen. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 25 — Hammer gegen Spiegel
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist holt mit einem einfachen Hammer aus und schlägt entschlossen gegen den großen Badezimmerspiegel. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 26 — Zwanzig Scherben
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der zerbrochene Spiegel hängt und liegt in vielen großen Comic-Scherben. Jede Scherbe reflektiert einen anderen Ausschnitt der gesichtslosen Gestalt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 27 — Überall dieselbe Gestalt
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Naher Blick auf mehrere Spiegel-Scherben am Boden: in jeder einzelnen steht dieselbe gesichtslose Figur in leicht anderem Winkel. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 28 — Flucht ins Treppenhaus
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist rennt mit weit ausholenden Stickman-Beinen aus der Wohnung ins Treppenhaus. Hinter ihm bleiben Spiegel-Scherben und abgedeckte Flächen zurück. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 29 — Aufzug öffnet sich
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Im Treppenhaus gleiten die Aufzugtüren auf. Der Protagonist stoppt abrupt davor. Innen ist alles aus poliertem Metall, kalt beleuchtet und viel zu spiegelnd. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 30 — Aufzug voller Kopien
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Blick in den Aufzug: die polierten Wände erzeugen dutzende gestaffelte Spiegelkopien der gesichtslosen Gestalt. Der Protagonist steht klein vor der Tür und macht sofort einen Schritt zurück. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 31 — Treppe statt Aufzug
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist springt zwei Stufen auf einmal die Treppe hinunter, während die offenen Aufzugtüren mit den vielen Spiegelkopien oben zurückbleiben. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 32 — Pfützen-Spiegel
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Unten im Hausflur tritt der Protagonist mitten in eine kleine Pfütze. In der Wasserreflexion trägt die gesichtslose Gestalt bereits fast seine Gesichtszüge. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 33 — Sicherer Kellerraum
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Karger Kellerraum aus mattem Beton, ohne Fenster, Spiegel oder glänzende Metallflächen. Der Protagonist lehnt erschöpft an der Wand und glaubt erstmals sicher zu sein. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 34 — Schwarzer Umschlag
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Auf dem grauen Kellerboden liegt ein einzelner schwarzer Umschlag. Der Protagonist kniet daneben und öffnet ihn vorsichtig. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 35 — Zu spät
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Nahaufnahme des Protagonisten, der langsam nach oben blickt. Seine Augen werden groß, weil er etwas über der Tür bemerkt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 36 — Notleuchte mit Glas
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Über der Kellertür hängt eine kleine Notleuchte mit glatter Glasabdeckung. Der Protagonist steht darunter. In der Glasfläche ist eine winzige, aber klare Spiegelung sichtbar. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 37 — Eigenes Spiegelbild
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Nahaufnahme der Glasabdeckung: darin sieht der Protagonist sich selbst sehr deutlich. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 38 — Falsche Seite
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Surreale klare Trennung: aus Sicht des Kellers steht die gesichtslose Gestalt draußen vor der Glasfläche, während der echte Protagonist sichtbar hinter dem Glas in einer spiegelartigen dunklen Welt steckt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 39 — Im Spiegel gefangen
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist befindet sich vollständig in einer verzerrten Spiegelwelt aus dunklem Beton und schwebenden Reflexionsflächen. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 40 — Doppelgänger übernimmt
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Außerhalb der Spiegelwelt steht die gesichtslose Gestalt nun im echten Keller. Sie trägt exakt den petrolfarbenen Hoodie des Protagonisten und hält seinen Hammer. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 41 — Handy vibriert
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Zurück beim gefangenen Protagonisten: in seiner Tasche vibriert sichtbar das schwarze Smartphone, dargestellt durch klare Comic-Vibrationslinien. Er schaut erschrocken nach unten. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 42 — Schwarzer Bildschirm spiegelt
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Der Protagonist zieht das ausgeschaltete Smartphone hervor. Die schwarze Displayfläche funktioniert wie ein kleiner Spiegel. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 43 — Hand stimmt nicht überein
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Auf dem schwarzen Display hebt die gesichtslose Gestalt langsam eine Hand, während der reale/gefangene Protagonist beide Hände unten lässt. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
+
+## Bild 44 — Finaler Callback
+BILDPROMPT:
+Gleicher Protagonist: weißer ovaler Stickman-Kopf, schwarze Punktaugen, schwarze Haarsträhne, petrolfarbener Hoodie. Finale breite Szene: die Wohnungstür aus dem Hook öffnet sich erneut. Eine neue Stickman-Person steht vor dem Badezimmerspiegel, während tief im Spiegel der bisherige Protagonist gefangen sichtbar ist. Handgezeichneter 2D-Stickman-Comic, schwarze Konturen, klare Formen, starke Mimik, reduzierte Umgebung; kein Fotorealismus, 3D/Pixar oder Pseudo-Schrift. 16:9.
