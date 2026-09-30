@@ -1,111 +1,198 @@
 # Content-System — Verückte Stickman
 
-## 1. Kernformat
+## 1. Kanalprinzip
 
-Der Kanal ist **verrücktes Story- und Infotainment**.
+Der Kanal ist **verrücktes Story- und Infotainment**. Unterhaltung steht vor Dokumentation.
 
-Unterhaltung steht vor Dokumentation. Ein Video darf:
+Ein Video darf real, hybrid oder komplett erfunden sein. Reale Recherche ist **kein Standard-Zwang**. Wenn eine Story frei erfunden ist, darf sie lügen, übertreiben, kosmisch, absurd oder albtraumhaft werden. Entscheidend ist, dass sie innerhalb ihrer eigenen Welt verständlich bleibt.
 
-- real sein
-- reale Fakten mit erfundener Story mischen
-- komplett erfunden, surreal, kosmisch oder absurd sein
+Die feste Klammer lautet:
 
-Die feste Klammer ist nicht „alles muss wahr sein“, sondern:
+```text
+starke Prämisse
+→ sofortiger Hook
+→ klares Ziel oder Problem
+→ kausale Eskalation
+→ Midpoint-Turn
+→ stärkste Eskalation
+→ Payoff / Callback
+```
 
-> starke Idee → sofortiger Hook → verrückte Entwicklung → visuell abwechslungsreiche Eskalation → Payoff/Twist
+## 2. Was die beiden Tests gezeigt haben
 
-## 2. Drei Content-Modi
+### Bierflut-Test
+Zu dokumentarisch, zu wenige visuelle Wechsel, zu lange statische Motive.
 
-### `real`
-Reale Geschichte, echte Abläufe oder echte Tatsachen. Recherche ist Pflicht.
+### Spion-Test
+Bilddichte besser, aber das Skript kippt nach einem guten Hook wieder in ein Referat: Produktionshinweis, historische Erklärung, reale Beispiele, Zahlenblöcke. Dadurch schaut man einer Präsentation zu statt einer Geschichte.
+
+Diese Fehler gelten künftig als Warnsignal:
+
+- „Unsere Hauptfigur ist erfunden ...“
+- „Ein reales Beispiel ist ...“
+- mehrere Sätze Kontext, bevor wieder etwas passiert
+- Zahlen und Jahreszahlen als Selbstzweck
+- eine Figur, die nur herumsteht, während der Sprecher erklärt
+- mehrere weiße Infografik-Szenen hintereinander
+- Ende als Zusammenfassung statt Payoff
+
+## 3. Drei Content-Modi
+
+### `frei-surreal` — bevorzugter Standard
+Komplett freie Story. Keine Recherchepflicht. Orte, Regeln, Organisationen, Zahlen und Ereignisse dürfen erfunden werden.
 
 ### `hybrid`
-Reale Welt oder Institution + frei erfundene Handlung. Nur reale Tatsachenbehauptungen werden belegt. Intern wird in `truthBoundary` getrennt, was real und was erfunden ist.
+Reale Kulisse oder Institution plus erfundene Story. Nur reale Behauptungen brauchen intern Belege.
 
-### `frei-surreal`
-Komplett freie Geschichte. Kosmisch, grotesk, absurd, albtraumhaft oder schwarzhumorig. Keine Recherchepflicht, solange keine realen Behauptungen als Fakten verkauft werden.
+### `real`
+Wenn das Video bewusst reale Tatsachen erklären will, wird recherchiert.
 
-Diese Einordnung ist **intern**. Das Voice-over soll nicht mit Sätzen wie „unsere Hauptfigur ist erfunden“ die Story kaputtmachen.
+Die Wahl ist intern. Das Voice-over sagt nicht: „Diese Geschichte ist erfunden.“
 
-## 3. Themenqualität
+## 4. Script-DNA
 
-Ein Thema muss mindestens 8/10 erreichen bei:
+### Hook
+Der **erste Satz ist bereits Story**. Keine Einleitung davor.
 
-- Neugier
-- Verrücktheit
-- visuellem Potenzial
-- Eskalationspotenzial
-- Unterhaltungspotenzial
+Schwach:
+> „Heute schauen wir uns an, wie Spione arbeiten.“
 
-Langweilig:
+Stark:
+> „Um 03:17 Uhr klingelt dein Telefon – und am anderen Ende hörst du deine eigene Stimme.“
 
-- „Die Geschichte der CIA“
-- „Fakten über Gefängnisse“
-- „Wie funktioniert eine Sekte?“
+### Ziel
+Spätestens in den ersten drei Sätzen muss klar sein, was die Figur oder der Fokus will.
 
-Stärker:
+### Problem
+Das Ziel darf nicht einfach funktionieren. Sofort kommt ein Hindernis, eine Regel, ein Gegner oder eine unmögliche Konsequenz.
 
-- „Ein Spion merkt, dass seine Wohnung ihn abhört“
-- „Du wachst in einer Stadt auf, in der Schlaf verboten ist“
-- „Jede Stunde erscheint auf der Raumstation eine neue Regel“
-- „Du landest in einem Gefängnis mit endlosen Stockwerken“
-- „Eine Stadt verkauft Erinnerungen wie Lebensmittel“
+### Kausalität
+Nicht:
 
-## 4. Story statt Erklärung
+```text
+Das passiert.
+Dann passiert das.
+Dann passiert noch etwas.
+```
 
-Keine Pflicht für eine feste Hauptfigur oder ein bestimmtes Format.
+Sondern:
 
-Mögliche Formen:
+```text
+Das passiert.
+DESHALB musst du X tun.
+ABER dadurch entsteht Y.
+DESHALB bleibt nur Z.
+DOCH Z macht alles schlimmer.
+```
 
-- Du-Perspektive
-- normale erzählte Geschichte
-- mehrere Figuren
-- groteske Fallstudie
-- Rang-/Stufenreise
-- Rabbit Hole
-- kosmische Eskalation
-- schwarze Comedy
-- Was-wäre-wenn
-- absurde Welt mit eigenen Regeln
+Die Story soll sich wie eine Kette anfühlen.
 
-Jede Szene bringt möglichst etwas Neues: Handlung, Regel, Gefahr, visuellen Gag, Transformation, Enthüllung oder Konsequenz.
+### Midpoint-Turn
+Zwischen ungefähr 40 und 65 Prozent muss sich die Geschichte verändern: Wahrheit kippt, Regel ändert sich, Freund wird Gegner, Ziel war falsch, Welt ist größer als gedacht.
+
+### Setup / Payoff
+Ein scheinbar kleines Detail früh setzen und später wichtig machen.
+
+Beispiel:
+
+```text
+Anfang: Der Aufzug hat keinen Knopf für Stockwerk 13.
+Ende: Du merkst, dass du die ganze Zeit auf Stockwerk 13 warst.
+```
+
+### Ende
+Kein Fazit wie „Das war also ...“. Das Ende zahlt etwas aus, dreht die Story noch einmal oder greift den Anfang auf.
 
 ## 5. Unterhaltungsdichte
 
-`entertainmentBeats` sind Pflicht.
+Für 1–2 Minuten gilt als Ziel:
 
-Ziel: ungefähr alle 8–16 Sekunden ein neuer starker Impuls:
+- mindestens 6 Story-Beats
+- mindestens 6 Unterhaltungsbeats
+- ungefähr alle 6–14 Sekunden eine Veränderung
 
-- Twist
+Mögliche Impulse:
+
 - neue Regel
+- Twist
 - neue Gefahr
 - visueller Gag
+- Transformation
+- unerwartete Figur
+- falsche Sicherheit
 - Statuswechsel
-- Enthüllung
-- absurde Konsequenz
-- starker echter Fakt
 - Perspektivwechsel
+- absurde Konsequenz
 
-Nicht mehrere Sätze lang nur Hintergrund erklären.
+Nach spätestens zwei erklärenden Sätzen muss wieder etwas **passieren**.
 
-## 6. Bilddichte
+## 6. Sprache
 
-Kein „ein Satz = ein Bild“.
+- natürliches gesprochenes Deutsch
+- kurze und mittlere Sätze mischen
+- konkrete Verben
+- wenig abstrakte Zusammenfassungen
+- keine Quellen- oder Produktionssprache im Voice-over
+- nicht jeden Witz erklären
+- starke kurze Sätze als Punch nutzen
 
-Richtwert für 100 Sekunden: meistens etwa 28–38 Bildmomente. Hook, Action, Transformationen und Twists dichter; ruhige Momente dürfen bewusst länger stehen.
+Beispiel:
 
-Ein Satz darf mehrere Bilder bekommen, wenn sich Handlung, Ort, Objekt, Stimmung oder Aussage verändert.
+> „Die Tür geht auf. Dahinter ist kein Raum. Dahinter ist derselbe Flur – nur zehn Jahre älter.“
 
-## 7. Titel + Cover
+## 7. Themen
 
-Titel und Cover verkaufen die verrückteste klare Idee des Videos.
+Ein starkes Thema klingt bereits wie eine Story.
 
-Bild 01 bleibt Cover + erste Szene. Cover immer mit kurzer deutscher Überschrift von 1–4 Wörtern.
+Schwach:
+- Die Geschichte der CIA
+- Fakten über Gefängnisse
+- Wie funktionieren Sekten?
 
-## 8. Wahrheit ohne Doku-Zwang
+Stark:
+- Ein Spion bekommt Befehle von seiner eigenen Stimme aus der Zukunft
+- Ein Gefängnis bekommt jede Nacht ein neues Stockwerk
+- Du wachst in einer Stadt auf, in der Schlaf illegal ist
+- Dein Schatten steigt in der Mafia höher auf als du
+- Jeder Spiegel zeigt dir, was zehn Minuten später passiert
+- Der schlechteste Geheimdienst der Welt muss plötzlich die Welt retten
+- Eine Raumstation erfindet jede Stunde eine neue Regel
 
-Bei realen Aussagen gilt weiterhin: nichts erfinden und als Fakt verkaufen.
+## 8. Bildplanung
 
-Bei frei erfundenen Geschichten gilt: nicht künstlich Quellen oder historische Erklärungen hineinpressen. Eine offensichtlich surreale Prämisse darf einfach erzählt werden.
+Richtwert: **30–40 Bildmomente pro 100 Sekunden**.
 
-Produktionshinweise, Wahrheitsgrenzen und Quellen gehören intern in `99-tech/`, nicht automatisch ins Voice-over.
+Nicht nur Kamerazoom als Abwechslung. Bewusst wechseln zwischen:
+
+- Nahaufnahme
+- Totale
+- Detail
+- POV
+- Größenvergleich
+- Transformation
+- surrealem Symbolbild
+- Reaktionsbild
+- Umgebung
+
+Nicht zu viele weiße Infografik-Bilder hintereinander. Kurzer deutscher Text ist erlaubt, wenn er einen visuellen Gag, eine Regel oder eine wichtige Storyinformation klarer macht.
+
+## 9. Cover
+
+`Bild 01` ist Cover + erste Szene.
+
+- 1–3 Hauptmotive
+- deutsche Überschrift mit 1–4 Wörtern
+- eine unmögliche Situation, starke Reaktion, Gefahr oder Transformation
+- Titel und Cover ergänzen sich
+
+## 10. Qualitätsfrage vor Produktion
+
+Vor dem Render muss man das Skript ohne Bilder lesen können und denken:
+
+> „Ich will wissen, was als Nächstes passiert.“
+
+Wenn der Text stattdessen klingt wie:
+
+> „Interessant, jetzt habe ich etwas gelernt.“
+
+aber nicht wie eine Story, wird er vor der Bildproduktion neu geschrieben.
