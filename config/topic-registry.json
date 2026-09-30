@@ -15,19 +15,19 @@
       "aliases": ["Ein Tag als Spion im Kalten Krieg – Berlin 1955", "Ein Tag als Spion im Kalten Krieg"],
       "status": "baseline-test",
       "createdAt": "2026-09-29T18:09:00+02:00",
-      "channelFitAtCreation": {"decision":"APPROVED_CHANNEL_FIT","score":10,"reason":"Starke Spionageidee, aber noch zu stark dokumentarisch umgesetzt."},
-      "topicQualityAtCreation": {"decision":"APPROVED_TOPIC_QUALITY","score":9},
-      "notes": "V5 Lernvideo: Voice-over enthielt unnötigen Fiktions-/Produktionshinweis und zu viel Dokumentationslogik. Ab Content Policy V6 gilt Story-first mit real/hybrid/frei-surreal."
+      "channelFitAtCreation": {"decision": "APPROVED_CHANNEL_FIT", "score": 10, "reason": "Starke Spionageidee, aber noch zu stark dokumentarisch umgesetzt."},
+      "topicQualityAtCreation": {"decision": "APPROVED_TOPIC_QUALITY", "score": 9},
+      "notes": "V5 Lernvideo: zu viel Dokumentationslogik. Nicht als aktueller Skriptstandard verwenden."
     },
     {
       "id": "2026-KW40_spiegel-zeigt-10-minuten-zukunft",
       "title": "Du kannst 10 Minuten in die Zukunft sehen – aber nur im Spiegel",
       "aliases": ["Jeder Spiegel zeigt dir, was zehn Minuten später passiert", "Spiegel zeigen 10 Minuten Zukunft"],
-      "status": "phase1-ready",
+      "status": "baseline-test",
       "createdAt": "2026-09-30T15:04:00+02:00",
-      "channelFitAtCreation": {"decision":"APPROVED_CHANNEL_FIT","score":10,"reason":"Frei-surreale Mystery-Story mit klarer Spiegelregel und starker visueller Eskalation."},
-      "topicQualityAtCreation": {"decision":"APPROVED_TOPIC_QUALITY","score":9.6},
-      "notes": "Test 3 für Content Policy V7: vollständig frei erfunden, Story-first, keine Recherchepflicht, 44 Bildmomente."
+      "channelFitAtCreation": {"decision": "APPROVED_CHANNEL_FIT", "score": 10, "reason": "Frei-surreale Mystery-Story mit klarer Spiegelregel und starker visueller Eskalation."},
+      "topicQualityAtCreation": {"decision": "APPROVED_TOPIC_QUALITY", "score": 9.6},
+      "notes": "V7 Lernvideo: Bildwelt und Bildmenge gut, aber Einstieg zu unklar und Cover im fertigen Render zu lange sichtbar. Ab V8 gelten Intro-Clarity-Gate, dichter Hook-Schnitt und YouTube-Uploaddatei."
     }
   ]
 }
