@@ -1,32 +1,19 @@
 {
-  "schemaVersion": 7,
-  "contentPolicyVersion": 7,
+  "schemaVersion": 8,
+  "contentPolicyVersion": 8,
   "language": "de",
   "topic": "",
   "workingTitle": "",
-  "contentMode": "",
-  "truthBoundary": {
-    "realElements": [],
-    "inventedElements": [],
-    "notes": ""
-  },
+  "contentMode": "frei-surreal",
+  "truthBoundary": {"realElements": [], "inventedElements": [], "notes": ""},
   "topicFit": {"score": null, "verdict": "", "pillars": [], "reason": ""},
-  "topicQuality": {
-    "score": null,
-    "verdict": "",
-    "curiosity": null,
-    "weirdness": null,
-    "visualPotential": null,
-    "escalationPotential": null,
-    "entertainmentPotential": null,
-    "reason": "",
-    "whyNotBoring": ""
-  },
+  "topicQuality": {"score": null, "verdict": "", "curiosity": null, "weirdness": null, "visualPotential": null, "escalationPotential": null, "entertainmentPotential": null, "reason": "", "whyNotBoring": ""},
   "viewerPromise": "",
   "coreQuestion": "",
   "angle": "",
   "individualityReason": "",
   "hook": {"type": "", "text": "", "reason": ""},
+  "introPlan": {"situation": "", "ruleOrAnomaly": "", "stakesOrGoal": "", "clarityLine": "", "first10SecondsVisualCount": null},
   "narrativeMode": "",
   "storyEngine": {
     "protagonistOrFocus": "",
@@ -42,17 +29,7 @@
   },
   "beats": [],
   "entertainmentBeats": [],
-  "scriptQuality": {
-    "score": null,
-    "verdict": "",
-    "hookStrength": null,
-    "causality": null,
-    "escalation": null,
-    "surprise": null,
-    "payoff": null,
-    "voiceNaturalness": null,
-    "reason": ""
-  },
+  "scriptQuality": {"score": null, "verdict": "", "introClarity": null, "hookStrength": null, "causality": null, "escalation": null, "surprise": null, "payoff": null, "voiceNaturalness": null, "reason": ""},
   "retention": {"openLoops": [], "escalationPoints": [], "patternInterrupts": []},
   "payoff": "",
   "titleCoverSystem": {
@@ -61,6 +38,7 @@
     "coverConcept": {"visualConflict": "", "mainSubjects": [], "visibleText": "", "emotion": "", "whyClickable": ""},
     "complementarity": ""
   },
+  "youtubeUpload": {"title": "", "description": ""},
   "ending": {"type": "", "finalLine": ""},
   "notes": []
 }
