@@ -1,12 +1,12 @@
 {
-  "visualPolicyVersion": 5,
+  "visualPolicyVersion": 6,
   "status": "READY",
   "styleId": "dark-grotesque-surreal-stickman-de-v1",
-  "description": "Feste deutsche Kanal-DNA: klar lesbare, handgezeichnet wirkende 2D-Stickman-Comicwelt für immersives Fakten-Entertainment über bizarre, dunkle, geheime und extreme Lebenswelten.",
+  "description": "Feste deutsche Kanal-DNA für grotesk-surrealistische 2D-Stickman-Storys: bizarre, dunkle, komische, kosmische und frei erfundene Welten mit klarer visueller Lesbarkeit.",
   "channelDNA": {
-    "coreStyle": "Grotesk-surrealer 2D-Comic-Stickman-Infotainment-Stil",
-    "tone": ["bizarr", "dunkel-humorig", "leicht verstörend wenn passend", "absurd", "neugierig machend"],
-    "topicRange": ["ungewöhnliche Rollen und Lebenswelten", "Geheimdienste und Spionage auf öffentlich belegbarer Ebene", "Mafia und Hierarchien", "Sekten", "historische Rollen", "Kriminalität", "dunkle Psychologie", "bizarre Geschichte", "extreme Systeme", "Tabuthemen", "seltsame Schicksale"]
+    "coreStyle": "Grotesk-surrealer 2D-Comic-Stickman-Entertainment-Stil",
+    "tone": ["bizarr", "dunkel-humorig", "surreal", "leicht verstörend wenn passend", "absurd", "neugierig machend"],
+    "topicRange": ["frei erfundene Storywelten", "Mystery und Paranoia", "Spiegel, Schatten, Zeit und Parallelwelten", "absurde Systeme und Regeln", "Geheimdienste und Unterwelten", "Mafia und Hierarchien", "kosmische Eskalationen", "dunkle Comedy", "bizarre historische oder moderne Kulissen"]
   },
   "languagePolicy": {
     "channelLanguage": "de",
@@ -19,50 +19,59 @@
   },
   "informationTextPolicy": {
     "allowedOutsideCover": true,
-    "purpose": "Kurzer sichtbarer Text darf echte, belegte Informationen schneller verständlich machen.",
-    "preferredUses": ["Datum", "Jahreszahl", "Rang oder Stufe", "kurze Regel", "kurze Anforderung", "konkrete Zahl", "Ortsname", "kurze Gegenüberstellung"],
     "maxWordsPerTextElement": 6,
     "maxTextElementsPerNormalImage": 2,
+    "preferredUses": ["Countdown", "kurze Story-Regel", "Warnhinweis", "Rang oder Stufe", "Ortsname", "Jahreszahl", "konkrete Zahl", "kurzes Label"],
     "rules": [
-      "Text außerhalb des Covers nur einsetzen, wenn er einen echten Informationswert liefert.",
-      "Keine Untertitel oder Wiederholung des gesprochenen Voice-overs.",
-      "Zahlen, Daten, Ränge oder Regeln müssen mit RESEARCH.json vereinbar und belegt sein.",
-      "Lieber eine klare Zahl oder ein kurzes Label als einen ganzen erklärenden Absatz.",
-      "Text wird als Teil der Bildkomposition geplant und darf das Hauptmotiv nicht verdrängen.",
-      "Bei komplexen Informationen lieber ein zusätzliches Bild erzeugen statt ein Bild mit Text zu überladen."
+      "In frei-surrealen Storys darf kurzer sichtbarer Text Teil der erfundenen Welt sein, zum Beispiel Countdown, Warnung, Regel, Rang oder fiktive Zahl.",
+      "Bei realen Tatsachenbehauptungen müssen sichtbare Daten, Zahlen und Fakten mit der Recherche vereinbar sein.",
+      "Keine Untertitel und keine Wiederholung ganzer Voice-over-Sätze.",
+      "Keine Textwände; normale Bilder höchstens mit wenigen kurzen Textelementen.",
+      "Text wird als Teil der Bildkomposition geplant und verdrängt niemals das Hauptmotiv.",
+      "Bei komplexeren Informationen lieber einen zusätzlichen Bildmoment erzeugen."
     ]
   },
   "characterDNA": {
     "base": "Einfache Stickman-Grundkörper mit dünnen Gliedmaßen und runden oder ovalen Köpfen; klare Silhouette und leicht wiedererkennbare Figuren.",
-    "faces": "Stark überzeichnete, comicartige Mimik: große oder leere Augen, Augenringe, schiefes Grinsen, Angst, Wut, Arroganz, Verwirrung oder groteske Verzerrung – immer passend zur Szene.",
-    "consistency": "Grundkörper, Liniencharakter und Gesichtslogik bleiben wiedererkennbar; Kleidung, Zustand und Umgebung passen sich dem Thema an."
+    "faces": "Stark überzeichnete comicartige Mimik: große oder leere Augen, Augenringe, schiefes Grinsen, Angst, Wut, Arroganz, Verwirrung oder groteske Verzerrung – passend zur Szene.",
+    "consistency": "Wiederkehrende Figuren behalten Kopf, Kleidung, zentrale Farbakzente und Silhouette über das Video hinweg."
   },
   "renderDNA": {
     "medium": "vollständig illustrierte 2D-Comiczeichnung",
-    "linework": "deutliche schwarze Konturen, leicht handgezeichnet, kontrolliert rau statt schmutzig oder chaotisch",
+    "linework": "deutliche schwarze Konturen, leicht handgezeichnet, kontrolliert rau",
     "shapes": "einfache große Formen mit guter Lesbarkeit",
     "shading": "sparsame grafische Schatten und kontrollierte Textur",
-    "depth": "klare Vordergrund-Mittelgrund-Hintergrund-Staffelung, wenn die Szene davon profitiert",
-    "rule": "Kein Fotorealismus, keine realistischen Menschen, kein 3D/Pixar, kein Mixed-Media-Look, keine realistische historische Gravur."
+    "depth": "klare Vordergrund-Mittelgrund-Hintergrund-Staffelung, wenn sinnvoll",
+    "rule": "Kein Fotorealismus, keine realistischen Menschen, kein 3D/Pixar und kein Mixed-Media-Look."
   },
   "colorDNA": {
     "base": ["Schwarz", "Weiß", "Grau"],
     "accents": ["Rot", "Giftgrün", "Violett", "Gelb", "Cyan", "dunkles Blau", "Braun", "Ocker"],
-    "rule": "Farbe und Licht folgen der Szene. Nicht jede Szene künstlich abdunkeln; Alltag und Erklärung dürfen heller sein, Gefahr und Tragik kontrolliert dunkler."
+    "rule": "Farbe und Licht folgen der Story. Ruhige Szenen dürfen heller sein; Gefahr, Mystery und kosmische Eskalation dürfen gezielt dunkler und farbiger werden."
+  },
+  "storyVisualPolicy": {
+    "principle": "Bilder erzählen Handlung statt nur Text zu illustrieren.",
+    "rules": [
+      "Handlungen, Reaktionen, Konsequenzen und räumliche Veränderungen bevorzugen.",
+      "Keine endlosen Frontansichten derselben Figur.",
+      "Nahaufnahme, Halbtotal, Totale, Objekt-Detail, POV-artige Sicht und extreme Größenverhältnisse bewusst abwechseln.",
+      "Ein Satz darf mehrere Bilder bekommen, wenn sich Handlung, Ort, Regel oder Erkenntnis ändert.",
+      "Surreale Elemente müssen innerhalb eines Bildes trotzdem sofort verständlich komponiert sein."
+    ]
   },
   "rules": [
-    "Jede Szene hat genau eine klare visuelle Hauptidee statt Informationsüberladung.",
-    "Jeder Einzelprompt ist selbstständig verständlich und nennt Motiv, Handlung, Komposition, Ausdruck, Umgebung, Licht/Farbe und Stil.",
-    "Stickman-Figuren bleiben einfach und sofort lesbar, dürfen aber stark überzeichnete Gesichtsausdrücke besitzen.",
+    "Jede Szene hat genau eine klare visuelle Hauptidee.",
+    "Jeder Einzelprompt nennt Motiv, Handlung, Komposition, Ausdruck, Umgebung, Licht/Farbe und Stil.",
+    "Stickman-Figuren bleiben einfach und sofort lesbar, dürfen aber extrem ausdrucksstark sein.",
     "Dicke bis mitteldicke schwarze Konturen und einfache 2D-Formen prägen jedes Bild.",
-    "Historische oder reale Umgebungen werden vereinfacht illustriert und nicht fotorealistisch rekonstruiert.",
-    "Humor entsteht durch Übertreibung, absurde Situationen, Größenunterschiede und Reaktionen.",
-    "Düstere Elemente nur so stark einsetzen, wie die Aussage es verlangt.",
-    "Kosmische, surreale oder Horror-Elemente nur bei inhaltlichem Grund verwenden.",
-    "Hintergründe unterstützen das Motiv, bleiben aber visuell reduziert.",
-    "Keine zufälligen Dekorationen oder fremden Symbole ohne Bezug zum gesprochenen Inhalt.",
-    "Kurzer informativer Text ist auch nach Bild 01 erlaubt, wenn er belegte Fakten, Daten, Zahlen, Ränge oder Regeln sichtbar macht.",
-    "Normalbilder maximal mit wenigen kurzen deutschen Textelementen versehen; niemals Textwände.",
+    "Humor entsteht durch Übertreibung, absurde Konsequenzen, Größenunterschiede und Reaktionen.",
+    "Frei erfundene Welten dürfen eigene Regeln, Warnhinweise, Countdowns, Symbole und Zahlen besitzen.",
+    "Reale Fakten werden nicht erfunden, wenn das Video sie ausdrücklich als real behauptet.",
+    "Düstere Elemente nur so stark einsetzen, wie die Story es verlangt.",
+    "Kosmische, surreale und Horror-Elemente dürfen zentral sein, wenn sie Teil der Story sind.",
+    "Hintergründe unterstützen die Handlung und bleiben visuell reduziert.",
+    "Keine zufälligen Dekorationen oder fremden Symbole ohne Storybezug.",
+    "Normalbilder höchstens mit wenigen kurzen deutschen Textelementen; niemals Textwände.",
     "Bild 01 enthält immer eine kurze deutsche Cover-Überschrift mit 1 bis 4 Wörtern, genau einmal und mit starkem Kontrast.",
     "Alle Bilder sind 16:9 und lassen Motivreserve für dezente Kamera-Bewegungen.",
     "Keine Pseudo-Schrift, Wasserzeichen, Logos fremder Anbieter oder zufällige Beschriftungen."
@@ -81,7 +90,6 @@
     "englische sichtbare Wörter außer unvermeidbaren Eigennamen",
     "Pseudo-Schrift oder Fantasiebuchstaben",
     "fotorealistische Menschen oder Umgebungen als Grundstil",
-    "realistische historische Gravur- oder Gemäldeoptik",
     "3D-, Pixar- oder Hochglanz-Render",
     "Mixed Media oder Foto-plus-Cartoon",
     "süße Kinder-Clipart",
@@ -90,6 +98,6 @@
     "überladene Hintergründe",
     "zu viele Informationen oder zu viel Text in einem Bild",
     "unnötige grafische Gewalt",
-    "permanent dunkle Horrorbeleuchtung ohne inhaltlichen Grund"
+    "permanent dunkle Horrorbeleuchtung ohne Storygrund"
   ]
 }
