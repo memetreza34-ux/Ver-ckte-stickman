@@ -21,11 +21,12 @@ async function main(){
   await mkdir(path.dirname(destination),{recursive:true});await copyDirectory(path.resolve('youtube/templates/video-template'),destination);
   const now=new Date().toISOString(),techDir=path.join(destination,'99-tech'),metaPath=path.join(techDir,'video.json'),meta=await readJson(metaPath);
   Object.assign(meta,{videoId:`${week}_${slug}`,weekFolder:week,topicSlug:slug,title,topic,visualStyleId:visual.styleId,contentPolicyVersion:contentPolicy.contentPolicyVersion,createdAt:now,updatedAt:now});await writeJson(metaPath,meta);
-  const contentPlanPath=path.join(techDir,'CONTENT_PLAN.json'),contentPlan=await readJson(contentPlanPath);Object.assign(contentPlan,{contentPolicyVersion:contentPolicy.contentPolicyVersion,language:'de',topic,workingTitle:title});await writeJson(contentPlanPath,contentPlan);
+  const contentPlanPath=path.join(techDir,'CONTENT_PLAN.json'),contentPlan=await readJson(contentPlanPath),defaultMode=contentPolicy.contentModePolicy?.preferredDefault??'frei-surreal';
+  Object.assign(contentPlan,{contentPolicyVersion:contentPolicy.contentPolicyVersion,language:'de',topic,workingTitle:title,contentMode:defaultMode});await writeJson(contentPlanPath,contentPlan);
   const researchPath=path.join(techDir,'RESEARCH.json'),research=await readJson(researchPath);Object.assign(research,{topic});await writeJson(researchPath,research);
   const promptPath=path.join(destination,'00-bildprompts','99-alle-bildprompts.txt');const prompt=(await readFile(promptPath,'utf8')).replaceAll('{{VIDEO_TITLE}}',title).replaceAll('{{STYLE_ID}}',visual.styleId);await writeFile(promptPath,prompt,'utf8');
   const registryPath=path.resolve('config/topic-registry.json'),registry=await readJson(registryPath,{version:2,entries:[]});registry.entries.push({id:meta.videoId,title,aliases:[topic],status:'reserved',channelFitAtCreation:topicCheck.channelFit,topicQualityAtCreation:topicCheck.topicQuality,createdAt:now});await writeJson(registryPath,registry);
   console.log(`Projekt erstellt: ${path.relative(process.cwd(),destination)}`);if(topicCheck.decision==='REVIEW_CHANNEL_FIT')console.log('Hinweis: Kanalfit aus dem Thema allein nicht eindeutig; CONTENT_PLAN.topicFit muss mindestens 7/10 begründen.');
-  console.log(`Themenqualität: ${topicCheck.topicQuality.score}/10`);console.log('Nächster Schritt: Themenqualität im CONTENT_PLAN bestätigen, dann Recherche, Skript und Bildprompts.');
+  console.log(`Themenqualität: ${topicCheck.topicQuality.score}/10`);console.log(`Content-Modus: ${defaultMode}`);console.log('Nächster Schritt: Story Engine, Hook, kausale Wendungen, Payoff und Skript ausarbeiten. Recherche nur, wenn reale Tatsachen behauptet werden. Danach Bildfolge und Bildprompts bauen.');
 }
 if(isMain(import.meta.url))main().catch((e)=>{console.error(`Projekt-Erstellung: FEHLER — ${e.message}`);process.exitCode=1;});
