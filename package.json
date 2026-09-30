@@ -1,15 +1,15 @@
 {
   "name": "verueckte-stickman-video-pipeline",
-  "version": "2.4.0",
+  "version": "2.6.0",
   "private": true,
   "type": "module",
-  "description": "German surreal Stickman story-entertainment pipeline with 5-image Flow batches, automatic image import, audio alignment, motion and render QC.",
+  "description": "German surreal Stickman story-entertainment pipeline with clear hooks, adaptive visuals, Flow batches, audio alignment, render QC and YouTube upload metadata.",
   "scripts": {
     "create:video": "node src/cli/create-project.js",
     "topic:video": "node src/cli/check-topic.js",
     "compile:flow": "node src/cli/compile-flow-prompt.js",
     "import:flow-images": "node src/cli/import-flow-images.js",
-    "validate:phase1": "node src/cli/validate-phase1-v4.js",
+    "validate:phase1": "node src/cli/validate-phase1-v8.js",
     "validate:assets": "node src/cli/validate-assets.js",
     "optimize:audio": "node src/cli/optimize-audio.js",
     "align:audio": "node src/cli/auto-align.js",
