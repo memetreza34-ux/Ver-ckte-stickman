@@ -1,62 +1,62 @@
 {
-  "contentPolicyVersion": 6,
+  "contentPolicyVersion": 7,
   "status": "READY",
   "language": "de",
-  "principle": "Unterhaltung zuerst. Der Kanal darf reale, hybride oder komplett erfundene bizarre Geschichten erzählen. Entscheidend sind Neugier, visuelle Stärke, Eskalation, Überraschung und Wiedererkennungswert – nicht, ob jedes Video eine Doku ist.",
+  "principle": "Story zuerst. Der Kanal darf komplett erfundene, surreale, kosmische, absurde oder hybride Geschichten erzählen. Recherche ist kein Standard-Zwang. Entscheidend ist, dass der Zuschauer nach jedem Beat wissen will, was als Nächstes passiert.",
   "channelDirection": {
-    "core": "Verrücktes Story- und Infotainment in einer grotesk-surrealen Stickman-Welt.",
+    "core": "Verrücktes Story-Entertainment in einer grotesk-surrealen Stickman-Welt, optional mit echten Fakten als Gewürz statt als Pflicht.",
     "preferredExamples": [
-      "Ein Tag als Spion, der merkt, dass seine Wohnung ihn abhört",
-      "Du wachst in einer Stadt auf, in der niemand schlafen darf",
-      "Der dümmste Geheimdienst der Welt bekommt einen echten Auftrag",
-      "Du arbeitest auf einer Raumstation, auf der jeden Tag eine neue Regel erscheint",
-      "Ein Mafioso steigt so weit auf, dass selbst sein Schatten Angst vor ihm hat",
-      "Was passiert, wenn ein Königreich nur aus Betrügern besteht",
-      "Du landest in einem Gefängnis, dessen Stockwerke immer gefährlicher werden",
-      "Eine Stadt verkauft Erinnerungen wie Lebensmittel"
+      "Ein Spion bekommt Befehle von seiner eigenen Stimme aus der Zukunft",
+      "Du wachst in einer Stadt auf, in der Schlaf verboten ist",
+      "Ein Gefängnis bekommt jede Nacht ein neues Stockwerk",
+      "Der schlechteste Geheimdienst der Welt muss plötzlich die Welt retten",
+      "Dein Schatten steigt in der Mafia höher auf als du",
+      "Jeder Spiegel zeigt dir, was zehn Minuten später passiert",
+      "Eine Raumstation erfindet jede Stunde eine neue Regel",
+      "Der Mond kommt jede Nacht ein Stück näher"
     ],
     "rules": [
-      "Nicht jedes Video braucht eine reale historische Grundlage.",
-      "Nicht jedes Video braucht eine feste wiederkehrende Hauptfigur.",
-      "Die Geschichte darf komplett erfunden, surreal, kosmisch, absurd oder schwarzhumorig sein.",
-      "Der Zuschauer soll nicht mit Produktionshinweisen wie 'diese Figur ist erfunden' aus der Geschichte gerissen werden.",
-      "Wenn reale Tatsachen behauptet werden, müssen sie korrekt behandelt werden; reine Erfindung braucht dagegen keine Recherchepflicht.",
-      "Die Story darf bewusst überdrehen, solange sie innerhalb ihrer eigenen Logik verständlich bleibt."
+      "Frei erfundene Geschichten sind ausdrücklich erwünscht.",
+      "Nicht jedes Video braucht Recherche, reale Personen, reale Orte oder historische Fakten.",
+      "Eine starke erfundene Prämisse ist besser als ein mittelmäßiges echtes Thema.",
+      "Die Story darf lügen, übertreiben und eigene Regeln, Orte, Organisationen, Zahlen und Konsequenzen erfinden, solange dies Teil der fiktionalen Storywelt ist.",
+      "Keine Produktionshinweise oder Erklärungen wie 'diese Figur ist erfunden' im Voice-over.",
+      "Wenn konkrete reale Personen oder reale Tatsachen als echte Fakten behauptet werden, dürfen diese nicht frei erfunden werden."
     ]
   },
   "contentModePolicy": {
     "required": true,
-    "allowedModes": ["real", "hybrid", "frei-surreal"],
+    "preferredDefault": "frei-surreal",
+    "allowedModes": ["frei-surreal", "hybrid", "real"],
     "rules": {
-      "real": "Das Video behauptet reale Tatsachen oder reale historische Abläufe. Recherche und Quellen sind Pflicht.",
-      "hybrid": "Das Video nutzt reale Elemente, baut aber eine erfundene oder überzeichnete Geschichte darum. Nur die real behaupteten Elemente brauchen Belege.",
-      "frei-surreal": "Das Video ist offensichtlich erfunden, absurd, kosmisch oder surreal. Keine Recherchepflicht, solange keine realen Tatsachen als wahr verkauft werden."
+      "frei-surreal": "Bevorzugter Standard: freie Unterhaltung. Keine Recherchepflicht. Die Story darf ihre eigenen Regeln, Zahlen, Institutionen und Ereignisse erfinden.",
+      "hybrid": "Reale Kulisse oder reale Institution plus erfundene Story. Nur konkrete reale Tatsachenbehauptungen werden intern belegt.",
+      "real": "Bewusst reales Video. Reale Tatsachen werden recherchiert und belegt."
     }
   },
   "truthBoundaryPolicy": {
     "rules": [
-      "Keine erfundenen Zitate, Verbrechen, Handlungen oder Biografie-Details realer Personen als Tatsachen ausgeben.",
-      "Bei erfundenen Geschichten mit realen Institutionen keine frei erfundenen Behauptungen über konkrete reale Personen als Fakten formulieren.",
-      "Offensichtlich unmögliche oder surreale Prämissen dürfen ohne Erklärsatz erzählt werden.",
-      "Keine Voice-over-Sätze wie 'unsere Hauptfigur ist erfunden' oder 'dies ist nur eine fiktive Geschichte', wenn die Erzählform bereits klar als Unterhaltung funktioniert.",
-      "Interne Wahrheitsgrenzen gehören in CONTENT_PLAN, nicht zwangsläufig in das gesprochene Skript."
+      "In frei-surrealen Geschichten sind erfundene Behauptungen über die erfundene Welt erlaubt.",
+      "Keine erfundenen Zitate, Straftaten oder Biografie-Details über konkrete reale Personen als Tatsachen ausgeben.",
+      "Hybrid-Videos trennen intern reale und erfundene Elemente, ohne diese Trennung automatisch im Voice-over zu erklären.",
+      "Offensichtlich surreale Prämissen brauchen keinen Disclaimer im Sprechertext."
     ]
   },
   "nicheFitPolicy": {
     "minimumPlanScore": 7,
     "approvedPillars": [
-      "bizarre Rollen und Lebenswelten",
+      "verrückte Rollen und Lebenswelten",
       "absurde Geheimdienste, Unterwelten und Hierarchien",
       "kosmische und surreale Situationen",
       "dunkle Comedy und groteske Eskalation",
-      "verrückte Was-wäre-wenn-Szenarien",
+      "unmögliche Was-wäre-wenn-Szenarien",
       "seltsame Städte, Systeme, Regeln und Gesellschaften",
-      "Mafia, Sekten, Gefängnisse, Macht und Manipulation",
-      "historische oder moderne Welten mit ungewöhnlichem Twist",
-      "Mystery, Paranoia, Albtraumlogik und absurde Konsequenzen"
+      "Mafia, Sekten, Gefängnisse, Macht und Manipulation als Storywelt",
+      "Mystery, Paranoia, Zeit, Spiegel, Schatten, Träume und Parallelwelten",
+      "absurde historische oder moderne Kulissen mit starkem Twist"
     ],
     "positiveSignals": [
-      "spion", "geheimdienst", "cia", "mafia", "sekte", "kartell", "gefängnis", "gladiator", "henker", "pirat", "unterwelt", "geheim", "verbot", "bizarr", "absurd", "verrückt", "verrueckt", "extrem", "myster", "kosmisch", "alien", "raumstation", "parallelwelt", "albtraum", "wahnsinn", "fluch", "regel", "hierarchie", "du wachst", "du landest", "ein tag als"
+      "spion", "geheimdienst", "mafia", "sekte", "gefängnis", "unterwelt", "hierarchie", "geheim", "verbot", "bizarr", "absurd", "verrückt", "verrueckt", "kosmisch", "alien", "raumstation", "parallelwelt", "albtraum", "fluch", "regel", "schatten", "spiegel", "zeitschleife", "zeitreise", "stimme", "monster", "dimension", "mond", "planet", "traum", "du wachst", "du landest", "jede stunde", "jede nacht"
     ],
     "obviousOutOfScopeSignals": [
       "rezept", "kochvideo", "let's play", "lets play", "unboxing", "handy review", "smartphone review", "produktvergleich", "shopping haul", "live ticker", "fußball highlights", "fussball highlights", "mathe hausaufgabe", "schulaufgabe lösen", "schulaufgabe loesen"
@@ -69,60 +69,75 @@
     "dimensions": ["curiosity", "weirdness", "visualPotential", "escalationPotential", "entertainmentPotential"],
     "genericFramingSignals": ["die geschichte von", "geschichte der", "fakten über", "fakten ueber", "alles über", "alles ueber", "was ist", "wie funktioniert", "ein überblick", "ein ueberblick", "erklärt", "erklaert", "biografie von"],
     "reframePatterns": [
-      "Ein Tag als ...",
       "Du wachst auf und ...",
       "Du landest in ...",
       "Was passiert, wenn ...",
-      "Vom ... bis zum ...",
-      "Diese Stadt hat nur eine Regel ...",
       "Jede Stunde wird ... schlimmer",
+      "Jede Nacht erscheint ...",
       "Du darfst hier niemals ...",
       "Der letzte Mensch, der ...",
-      "Eine Welt, in der ..."
+      "Eine Welt, in der ...",
+      "Dein Schatten ...",
+      "Jeder Spiegel ..."
     ],
     "rules": [
-      "Ein Thema wird nicht produziert, nur weil es zur Nische passt.",
-      "Das Thema muss schon als Einzeiler Neugier auslösen.",
-      "Mindestens drei deutlich unterschiedliche visuelle Momente müssen ohne Mühe vorstellbar sein.",
-      "Es braucht natürliche Eskalation, Überraschung, Konsequenz oder einen starken Twist.",
-      "Ein Thema darf komplett erfunden sein, wenn es unterhaltsamer ist als eine mittelmäßige Faktenidee.",
-      "Langweilige Standardthemen werden neu gerahmt oder verworfen."
+      "Das Thema muss schon als Einzeiler wie eine Geschichte klingen, nicht wie ein Schulreferat.",
+      "Es braucht eine klare Anomalie, Regel, Gefahr, Frage oder absurde Konsequenz.",
+      "Mindestens drei deutlich unterschiedliche starke Bilder müssen spontan vorstellbar sein.",
+      "Das Thema braucht natürliche Eskalation und mindestens einen möglichen Twist.",
+      "Frei erfundene Themen sind ausdrücklich erlaubt und oft zu bevorzugen.",
+      "Langweilige Fakten- oder Biografie-Themen werden neu gerahmt oder verworfen."
+    ]
+  },
+  "storyEnginePolicy": {
+    "required": true,
+    "minimumStoryBeats": 6,
+    "minimumCausalTurns": 4,
+    "requiredFields": ["immediateGoal", "centralProblem", "midpointTurn", "finalEscalation", "endingCallback"],
+    "rules": [
+      "Der erste Satz ist bereits die Geschichte: Anomalie, Gefahr, Regel oder unmögliche Situation.",
+      "Spätestens innerhalb der ersten drei Sätze ist ein unmittelbares Ziel oder Bedürfnis klar.",
+      "Direkt danach entsteht ein Problem, Hindernis, Preis oder Gegner.",
+      "Beats werden kausal verbunden: deshalb, aber, dadurch, also, doch – nicht bloß 'und dann'.",
+      "Nach höchstens zwei erklärenden Sätzen muss wieder Handlung, Konsequenz, Entdeckung oder Veränderung folgen.",
+      "Zwischen etwa 40 und 65 Prozent kommt ein Midpoint-Turn, der Ziel, Regel, Wahrheit oder Risiko verändert.",
+      "Die stärkste Eskalation liegt im letzten Drittel, nicht am Anfang.",
+      "Mindestens ein frühes Detail wird später als Setup/Payoff wieder wichtig.",
+      "Das Ende greift den Anfang, eine Regel oder ein frühes Detail als Callback auf."
     ]
   },
   "storyPolicy": {
-    "narrativeModes": [
-      "Lebensreise in Du-Perspektive",
-      "Rollenreise",
-      "Aufstieg durch eine Hierarchie",
-      "Ein Tag im System",
-      "Ereignis von innen",
-      "Eskalationsleiter",
-      "Mysterium und Enthüllung",
-      "Rabbit-Hole-Abstieg",
-      "Kosmische Eskalation",
-      "Albtraumlogik",
-      "Absurd-logische Welt",
-      "Was-wäre-wenn-Reise",
-      "Schwarze Comedy-Geschichte",
-      "Fallstudie mit Wendepunkt"
-    ],
+    "narrativeModes": ["Eskalationsleiter", "Mysterium und Enthüllung", "Rabbit-Hole-Abstieg", "Kosmische Eskalation", "Albtraumlogik", "Absurd-logische Welt", "Was-wäre-wenn-Reise", "Schwarze Comedy-Geschichte", "Rollenreise", "Aufstieg durch eine Hierarchie", "Ereignis von innen", "Fallstudie mit Wendepunkt"],
     "rules": [
-      "Geschichte vor Erklärung.",
-      "Keine trockenen Faktenlisten als Standard.",
-      "Jede Szene soll entweder Handlung, Überraschung, neue Regel, neue Gefahr, visuellen Gag oder Konsequenz bringen.",
-      "Die interne Logik der erfundenen Welt muss verständlich bleiben, auch wenn sie absurd ist.",
-      "Nicht unnötig erklären, dass etwas erfunden ist; die Story soll sich selbst tragen."
+      "Story vor Erklärung.",
+      "Keine trockenen Faktenketten als Motor des Videos.",
+      "Jeder Beat verändert Situation, Ziel, Risiko, Wissen oder Status.",
+      "Die interne Logik einer absurden Welt bleibt klar genug, dass der Zuschauer Ursache und Wirkung versteht.",
+      "Nicht jeden Twist erklären; Bilder und Konsequenzen dürfen selbst erzählen."
+    ]
+  },
+  "scriptQualityPolicy": {
+    "required": true,
+    "minimumScore": 8,
+    "minimumDimensionScore": 7,
+    "dimensions": ["hookStrength", "causality", "escalation", "surprise", "payoff", "voiceNaturalness"],
+    "rules": [
+      "Das Skript muss auch ohne Bilder die Frage auslösen: Was passiert als Nächstes?",
+      "Ein guter Hook allein reicht nicht; die nächsten Sätze müssen den Zug weiterfahren lassen.",
+      "Causalität ist wichtiger als zusätzliche Hintergrundinformation.",
+      "Das Skript braucht mindestens eine echte Wendung und einen spürbaren End-Payoff.",
+      "Gesprochenes Deutsch darf knapp, frech und rhythmisch sein; keine Referatssprache."
     ]
   },
   "entertainmentDensityPolicy": {
-    "minimumBeats": 5,
-    "targetSecondsPerBeat": 12,
-    "beatTypes": ["Twist", "neue Regel", "neue Gefahr", "visueller Gag", "Statuswechsel", "Enthüllung", "absurde Konsequenz", "starker Fakt", "Perspektivwechsel"],
+    "minimumBeats": 6,
+    "targetSecondsPerBeat": 10,
+    "beatTypes": ["Twist", "neue Regel", "neue Gefahr", "visueller Gag", "Statuswechsel", "Enthüllung", "Transformation", "absurde Konsequenz", "falsche Sicherheit", "Perspektivwechsel", "Callback"],
     "rules": [
-      "Spätestens ungefähr alle 8 bis 16 Sekunden soll ein neuer Unterhaltungsimpuls kommen.",
-      "Nicht mehrere Sätze hintereinander nur erklären.",
-      "Starke visuelle Ideen dürfen wichtiger sein als zusätzliche Hintergrundinformation.",
-      "Ein absurdes Detail darf bewusst später eskalieren und zum Payoff werden."
+      "Ungefähr alle 6 bis 14 Sekunden verändert sich etwas Relevantes.",
+      "Nach spätestens zwei erklärenden Sätzen muss wieder etwas passieren.",
+      "Starke visuelle Ideen dürfen die Story aktiv vorantreiben.",
+      "Ein frühes absurdes Detail darf später größer zurückkehren."
     ]
   },
   "researchPolicy": {
@@ -134,77 +149,79 @@
     "minimumClaimsHybrid": 1,
     "allowedConfidence": ["gesichert", "wahrscheinlich", "umstritten"],
     "rules": [
-      "Nur reale Tatsachenbehauptungen brauchen Belege.",
-      "Frei erfundene Storybeats werden nicht künstlich mit Quellen versehen.",
-      "Hybrid-Videos dokumentieren intern, welche Bestandteile real und welche erfunden sind.",
+      "Recherche ist kein Standard-Schritt für frei-surreal.",
+      "Nur konkrete reale Tatsachenbehauptungen müssen belegt werden.",
+      "Fiktive Storydetails werden nicht künstlich mit Quellen versehen.",
       "Keine Quelle erfinden."
     ]
   },
   "hookPolicy": {
-    "goal": "Der erste Satz wirft den Zuschauer sofort in eine seltsame Situation, Regel, Gefahr oder absurde Konsequenz.",
-    "allowedTypes": ["Rollen-Einstieg", "absurde Regel", "Schock-Behauptung", "bizarre Frage", "Mini-Szene", "Kontrast", "versteckte Wahrheit", "Eskalations-Vorschau", "Konsequenz-Hook", "kosmischer Hook"],
-    "forbiddenOpenings": ["Hallo und willkommen", "Willkommen zu einem neuen Video", "In diesem Video schauen wir uns an", "Heute reden wir über", "Wusstest du schon", "Unsere Hauptfigur ist erfunden", "Diese Geschichte ist erfunden"]
+    "goal": "Der erste Satz erzeugt sofort eine offene Schleife und setzt die Geschichte in Bewegung.",
+    "allowedTypes": ["unmögliche Situation", "absurde Regel", "direkte Gefahr", "Mini-Szene", "bizarre Frage", "Konsequenz-Hook", "kosmischer Hook", "falsche Sicherheit", "sofortiger Twist"],
+    "forbiddenOpenings": ["Hallo und willkommen", "Willkommen zu einem neuen Video", "In diesem Video schauen wir uns an", "Heute reden wir über", "Wusstest du schon", "Unsere Hauptfigur ist erfunden", "Diese Geschichte ist erfunden", "Ein reales Beispiel ist"]
   },
   "retentionPolicy": {
     "minimumPlannedSignals": 4,
     "rules": [
+      "Offene Fragen werden gesetzt und später bezahlt.",
       "Regelmäßig neue Gefahr, Regel, Ort, Figur, Transformation, Enthüllung oder absurde Konsequenz liefern.",
-      "Offene Fragen später beantworten.",
-      "Wiederholungen entfernen.",
-      "Visuelle Wechsel folgen echten Gedanken- oder Handlungssprüngen.",
-      "Das Video darf bewusst unvorhersehbar werden, solange der Zuschauer die Grundsituation versteht."
+      "Falsche Sicherheit darf kurz Entspannung geben, bevor die nächste Eskalation kommt.",
+      "Wiederholungen und reine Zusammenfassungen entfernen."
     ]
   },
   "visualDensityPolicy": {
     "adaptive": true,
-    "targetAverageImageSeconds": [2.6, 4.0],
-    "highIntensityImageSeconds": [1.5, 2.8],
-    "normalImageSeconds": [2.6, 4.0],
-    "breathingImageSeconds": [4.0, 5.2],
-    "targetImagesPer100Seconds": [28, 38],
+    "targetAverageImageSeconds": [2.4, 3.8],
+    "highIntensityImageSeconds": [1.4, 2.6],
+    "normalImageSeconds": [2.4, 3.8],
+    "breathingImageSeconds": [3.8, 5.0],
+    "targetImagesPer100Seconds": [30, 40],
     "rules": [
       "Kein ein-Satz-ein-Bild-Zwang.",
       "Ein Satz darf mehrere Bildmomente haben.",
-      "Bei Twist, Transformation, Action, kosmischem Wechsel oder visuellem Gag dichter schneiden.",
-      "Ruhige Momente dürfen länger stehen, wenn sie bewusst Spannung erzeugen.",
+      "Bei Twist, Action, Transformation oder kosmischem Wechsel dichter schneiden.",
+      "Nicht mehrere weiße Infografik-/Erklärbilder hintereinander.",
+      "Figuren sollen häufiger handeln oder reagieren statt nur frontal herumzustehen.",
+      "POV, Nahaufnahme, Detail, Totale, Größenvergleich, Transformation und surrealer Wechsel bewusst mischen.",
       "Kein Bild nur wegen Zoom oder Pan unnötig halten."
     ]
   },
   "scriptPolicy": {
     "language": "de",
-    "tone": "Direkt, bildhaft, frech, düster-komisch und überraschend. Storytelling statt Produktionskommentar.",
+    "tone": "Direkt, bildhaft, frech, düster-komisch und überraschend. Kurze Punches, natürliche Übergänge und Storytelling statt Referat.",
     "rules": [
       "Natürliches gesprochenes Deutsch.",
-      "Keine Meta-Sätze über Produktionsentscheidungen, erfundene Figuren oder Quellen im Voice-over.",
-      "Konkrete Bilder, Handlungen und Konsequenzen statt abstrakter Zusammenfassungen.",
-      "Die Geschichte darf wild, kosmisch oder grotesk werden.",
-      "Keine unnötigen Füllsätze oder Wiederholungen."
+      "Keine Meta-Sätze über Produktionsentscheidungen, Fiktion oder Quellen im Voice-over.",
+      "Keine langen historischen oder sachlichen Einordnungen, wenn sie die Handlung stoppen.",
+      "Konkrete Verben, Entscheidungen, Reaktionen und Konsequenzen statt abstrakter Zusammenfassungen.",
+      "Kurze und mittlere Sätze mischen; einzelne sehr kurze Sätze als Punch einsetzen.",
+      "Keine unnötigen Füllsätze, Wiederholungen oder Fazit-Sätze."
     ]
   },
   "titleCoverPolicy": {
-    "principle": "Titel und Cover verkaufen die verrückteste klare Idee des Videos.",
+    "principle": "Titel und Cover verkaufen die verrückteste klare Storyidee.",
     "coverHeadlineRequired": true,
     "coverHeadlineMinWords": 1,
     "coverHeadlineMaxWords": 4,
     "titleRules": [
-      "Titel soll eher wie eine Geschichte oder unmögliche Situation klingen als wie ein Lexikon-Eintrag.",
-      "Nicht jedes Video braucht dieselbe 'Dein Leben als'-Formel.",
-      "Bei frei-surrealen Videos darf der Titel bewusst extrem sein, solange er die Story ehrlich beschreibt."
+      "Titel klingt nach Situation, Problem oder unmöglicher Regel – nicht nach Lexikon-Kapitel.",
+      "Nicht jedes Video braucht 'Dein Leben als'.",
+      "Extrem ist erlaubt, wenn es die tatsächliche Story des Videos beschreibt."
     ],
     "coverRules": [
       "Bild 01 ist Cover und erste Videoszene.",
       "Kurze deutsche Überschrift mit 1 bis 4 Wörtern.",
       "Ein bis drei große Motive.",
-      "Starke Mimik, Transformation, Gefahr, absurde Größenverhältnisse oder unmögliche Situation bevorzugen.",
-      "Cover und Titel ergänzen sich statt denselben Satz zweimal zu zeigen."
+      "Starke Mimik, Gefahr, Transformation, absurde Größenverhältnisse oder unmögliche Situation bevorzugen.",
+      "Cover und Titel ergänzen sich."
     ]
   },
   "endingPolicy": {
     "required": true,
     "rules": [
-      "Das Ende braucht einen Payoff, Twist, Rückbezug oder eine letzte absurde Konsequenz.",
-      "Kein Standard-Abspann im Voice-over.",
-      "Bei surrealen Stories darf das Ende größer und verrückter sein als der Anfang."
+      "Das Ende bezahlt den wichtigsten Setup-Punkt oder dreht ihn noch einmal.",
+      "Kein Standard-Fazit und kein unnötiger Abspann im Voice-over.",
+      "Der letzte Satz soll als Punch, Twist oder Callback funktionieren."
     ]
   }
 }

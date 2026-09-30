@@ -21,34 +21,20 @@ export async function evaluateChannelFit(candidate,root=process.cwd()){
   const out=(niche.obviousOutOfScopeSignals??[]).filter((signal)=>text.includes(normalizeText(signal)));
   if(out.length)return{decision:'BLOCKED_CHANNEL_FIT',score:2,positiveSignals:positive,outOfScopeSignals:out,reason:'Thema wirkt offensichtlich außerhalb der Kanal-DNA.'};
   if(positive.length)return{decision:'APPROVED_CHANNEL_FIT',score:8,positiveSignals:positive,outOfScopeSignals:[],reason:'Thema enthält klare Signale der verrückten Kanal-DNA.'};
-  return{decision:'REVIEW_CHANNEL_FIT',score:6,positiveSignals:[],outOfScopeSignals:[],reason:'Kanalfit ist aus dem Titel allein nicht sicher; CONTENT_PLAN muss ihn begründen.'};
+  return{decision:'REVIEW_CHANNEL_FIT',score:6,positiveSignals:[],outOfScopeSignals:[],reason:'Kanalfit ist aus dem Einzeiler allein nicht sicher; CONTENT_PLAN muss ihn begründen.'};
 }
 
 export async function evaluateTopicQuality(candidate,root=process.cwd()){
   const policy=await readJson(path.join(root,'config','content-policy.json'));
   const q=policy.topicQualityPolicy??{},text=normalizeText(candidate);
   const generic=(q.genericFramingSignals??[]).filter((s)=>text.includes(normalizeText(s)));
-  const patterns=(q.reframePatterns??[]).map(normalizeText);
-  const experienceWords=['du ','dein ','ein tag','du wachst','du landest','du wirst','du darfst','was passiert','jede stunde','eine welt','diese stadt','vom ','bis zum'];
-  const weirdWords=['absurd','verruckt','verrueckt','kosmisch','alien','albtraum','fluch','geheim','spion','mafia','gefangnis','gefängnis','sekte','raumstation','parallelwelt','wahnsinn','todlich','tödlich','verbot','schatten','erinnerung','monster','dimension'];
-  const escalationWords=['immer schlimmer','jede stunde','bis zum','aufstieg','regel','fehler','uberleben','überleben','letzte','endlos','stufe','stockwerk','verwandelt','eskaliert','verschwindet'];
-  const experience=experienceWords.filter((s)=>text.includes(normalizeText(s)));
-  const weird=weirdWords.filter((s)=>text.includes(normalizeText(s)));
-  const escalation=escalationWords.filter((s)=>text.includes(normalizeText(s)));
-  let score=6;
-  if(experience.length)score+=1.5;
-  if(weird.length)score+=1.5;
-  if(weird.length>=2)score+=0.5;
-  if(escalation.length)score+=1;
-  if(generic.length)score-=2;
-  score=Math.max(1,Math.min(10,Number(score.toFixed(1))));
+  const premiseWords=['du ','dein ','wenn ','jede ','jeder ','niemals','stadt','welt','tag als','wachst','landest','letzte','erster','nur eine regel','was passiert'];
+  const weirdWords=['absurd','verruckt','verrueckt','kosmisch','alien','albtraum','fluch','geheim','spion','mafia','gefangnis','gefängnis','sekte','raumstation','parallelwelt','zeitschleife','zeitreise','wahnsinn','todlich','verbot','schatten','spiegel','erinnerung','monster','dimension','mond','planet','unsichtbar','stimme','traum'];
+  const escalationWords=['immer schlimmer','jede stunde','jede nacht','bis zum','regel','fehler','uberleben','letzte','endlos','stufe','stockwerk','verwandelt','eskaliert','verschwindet','naher','näher','grosser','größer'];
+  const premise=premiseWords.filter((s)=>text.includes(normalizeText(s))),weird=weirdWords.filter((s)=>text.includes(normalizeText(s))),escalation=escalationWords.filter((s)=>text.includes(normalizeText(s)));
+  let score=5.5;if(premise.length)score+=1.5;if(weird.length)score+=1.5;if(weird.length>=2)score+=0.5;if(escalation.length)score+=1;if(generic.length)score-=2;score=Math.max(1,Math.min(10,Number(score.toFixed(1))));
   const minimum=Number(q.minimumScore??8),approved=score>=minimum;
-  return{
-    decision:approved?'APPROVED_TOPIC_QUALITY':'REVIEW_TOPIC_QUALITY',score,
-    experienceSignals:experience,weirdSignals:weird,escalationSignals:escalation,genericSignals:generic,
-    reason:approved?'Thema hat genug Neugier, Verrücktheit und Story-Potenzial.':'Thema ist noch zu generisch oder zu wenig überraschend. Mehr Situation, Regel, Twist, Gefahr, kosmische Idee oder absurde Konsequenz hineinbringen.',
-    reframePatterns:q.reframePatterns??patterns
-  };
+  return{decision:approved?'APPROVED_TOPIC_QUALITY':'REVIEW_TOPIC_QUALITY',score,premiseSignals:premise,weirdSignals:weird,escalationSignals:escalation,genericSignals:generic,reason:approved?'Thema hat genug Neugier, Verrücktheit und Story-Potenzial.':'Thema klingt noch wie ein Thema statt wie eine Geschichte. Mehr unmögliche Situation, Regel, Twist, Gefahr oder absurde Konsequenz hineinbringen.',reframePatterns:q.reframePatterns??[]};
 }
 
 export async function evaluateTopic(candidate,root=process.cwd()){
@@ -63,12 +49,5 @@ export async function evaluateTopic(candidate,root=process.cwd()){
   return{decision:channelFit.decision==='APPROVED_CHANNEL_FIT'?'APPROVED_NEW':'REVIEW_CHANNEL_FIT',candidate,best,channelFit,topicQuality};
 }
 
-async function main(){
-  const topic=arg('--topic')??process.argv.slice(2).find((x)=>!x.startsWith('--'));const result=await evaluateTopic(topic);
-  console.log(`THEMA: ${result.decision}`);if(result.best)console.log(`Ähnlichster Treffer: ${result.best.matched} (${result.best.score.toFixed(2)})`);
-  console.log(`KANALFIT: ${result.channelFit.score}/10 — ${result.channelFit.reason}`);
-  console.log(`THEMENQUALITÄT: ${result.topicQuality.score}/10 — ${result.topicQuality.reason}`);
-  if(result.decision==='REVIEW_TOPIC_QUALITY')console.log(`Besser rahmen, z. B.: ${result.topicQuality.reframePatterns.slice(0,5).join(' | ')}`);
-  if(['BLOCKED_DUPLICATE','REVIEW_SIMILAR','BLOCKED_CHANNEL_FIT','REVIEW_TOPIC_QUALITY'].includes(result.decision))process.exitCode=1;
-}
+async function main(){const topic=arg('--topic')??process.argv.slice(2).find((x)=>!x.startsWith('--'));const result=await evaluateTopic(topic);console.log(`THEMA: ${result.decision}`);if(result.best)console.log(`Ähnlichster Treffer: ${result.best.matched} (${result.best.score.toFixed(2)})`);console.log(`KANALFIT: ${result.channelFit.score}/10 — ${result.channelFit.reason}`);console.log(`THEMENQUALITÄT: ${result.topicQuality.score}/10 — ${result.topicQuality.reason}`);if(result.decision==='REVIEW_TOPIC_QUALITY')console.log(`Besser rahmen, z. B.: ${result.topicQuality.reframePatterns.slice(0,5).join(' | ')}`);if(['BLOCKED_DUPLICATE','REVIEW_SIMILAR','BLOCKED_CHANNEL_FIT','REVIEW_TOPIC_QUALITY'].includes(result.decision))process.exitCode=1;}
 if(isMain(import.meta.url))main().catch((e)=>{console.error(`Themencheck: FEHLER — ${e.message}`);process.exitCode=1;});
