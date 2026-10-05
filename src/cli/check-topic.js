@@ -29,11 +29,11 @@ export async function evaluateTopicQuality(candidate,root=process.cwd()){
   const policy=await readJson(path.join(root,'config','content-policy.json'));
   const q=policy.topicQualityPolicy??{},text=normalizeText(candidate);
   const genericSignals=['die geschichte von','geschichte der','fakten uber','fakten ueber','alles uber','alles ueber','was ist','wie funktioniert','ein uberblick','ein ueberblick','biografie von'];
-  const roleSignals=['ein tag als','dein leben als','du bist','dein erster tag','cia','fbi','swat','agent','geheimdienst','undercover','spezialeinheit','polizei','soldat','sniper','scharfschutze','scharfschütze','rekrut','killer','auftragskiller'];
+  const roleSignals=['ein tag als','dein leben als','du bist','dein erster tag','ein tag im leben','dein tag als'];
   const listSignals=['arten','falle','fälle','orte','lander','länder','dinge','jede art','jeder typ','top ','ranking'];
   const progressionSignals=['stufe','stufen','rang','range','ränge','level','vom ','bis zum','hierarchie','aufstieg','rekrut','boss'];
   const storySignals=['mission','einsatz','undercover','flucht','verfolgung','zielperson','geisel','operation','auftrag'];
-  const strongWorldSignals=['cia','fbi','swat','geheimdienst','mafia','kartell','spezialeinheit','polizei','soldat','sniper','scharfschutze','scharfschütze','auftragskiller','undercover'];
+  const strongWorldSignals=['cia','fbi','swat','agent','geheimdienst','mafia','kartell','spezialeinheit','polizei','soldat','sniper','scharfschutze','scharfschütze','auftragskiller','undercover'];
 
   const generic=genericSignals.filter((s)=>text.includes(normalizeText(s)));
   const role=roleSignals.filter((s)=>text.includes(normalizeText(s)));
@@ -46,15 +46,17 @@ export async function evaluateTopicQuality(candidate,root=process.cwd()){
   if(role.length)score+=1.9;
   if(world.length)score+=1.2;
   if(progression.length)score+=1.2;
+  if(progression.length>=2)score+=0.5;
   if(list.length)score+=0.8;
   if(story.length)score+=0.8;
   if(role.length&&world.length)score+=0.6;
+  if(progression.length&&world.length)score+=0.5;
   if(generic.length&&!role.length&&!progression.length)score-=1.8;
   else if(generic.length)score-=0.4;
   score=Math.max(1,Math.min(10,Number(score.toFixed(1))));
 
   const formatScores={
-    'mini-stories':role.length*2+list.length+world.length,
+    'mini-stories':role.length*3+list.length+world.length,
     progression:progression.length*2+world.length,
     story:story.length*2+role.length+world.length
   };
