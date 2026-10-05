@@ -2,6 +2,7 @@
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, isMain, projectPaths, readJson } from '../lib/pipeline.js';
+import { materializeScenePlan } from '../lib/materialize-scene-plan.js';
 
 function imageBlocks(prompt){
   return prompt.split(/\n(?=## Bild \d{2,3}\b)/i).filter((x)=>/^## Bild \d{2,3}\b/i.test(x.trim()));
@@ -12,6 +13,7 @@ function imageNumber(block){
 }
 
 export async function compileFlowPrompt(projectDirectory){
+  await materializeScenePlan(projectDirectory);
   const p=projectPaths(projectDirectory),prompt=await readFile(p.prompt,'utf8');
   if(/\{\{[^}]+\}\}/.test(prompt)||/\[[A-ZÄÖÜ0-9 _-]{3,}\]/.test(prompt))throw new Error('Bildprompt-Datei enthält noch Platzhalter.');
   if(!/VERBINDLICHE BILDWELT/i.test(prompt))throw new Error('Verbindliche Bildwelt fehlt.');
