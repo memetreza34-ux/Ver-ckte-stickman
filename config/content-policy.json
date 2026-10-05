@@ -2,80 +2,84 @@
   "contentPolicyVersion": 9,
   "status": "READY",
   "language": "de",
-  "principle": "Zuerst das stärkste Format für das Thema wählen, dann schreiben. Nicht jedes Video ist eine große Geschichte. Klarheit, Neugier, visuelle Abwechslung und natürliche Sprache stehen vor künstlichen Retention-Tricks.",
+  "principle": "Zuerst das stärkste Format für das Thema wählen, dann schreiben. Der bevorzugte Kanalstil sind konkrete Rollen-, Lebenswelt- und Organisationsvideos wie 'Ein Tag als ...', 'Dein Leben als ...' oder echte Progressionen. Surreale Regelwelten bleiben möglich, sind aber nicht mehr der Standard.",
   "channelDirection": {
-    "core": "Verrücktes deutsches Stickman-Entertainment: Listen aus Mini-Geschichten, Progressionen/Stufen oder zusammenhängende Storys. Real, hybrid oder frei erfunden sind erlaubt.",
+    "core": "Deutsches Stickman-Entertainment über Rollen, Geheimdienste, Polizei-/Spezialeinheiten, Unterwelten, gefährliche Berufe, Hierarchien und außergewöhnliche Lebenswelten; erzählt als Ein-Tag-Erlebnis, Mini-Stories, Progression oder zusammenhängende Story.",
+    "preferredTopicArchetypes": [
+      "Ein Tag als CIA-Agent",
+      "Ein Tag als FBI-Agent",
+      "Ein Tag als SWAT-Mitglied",
+      "Ein Tag als Geheimdienstoffizier",
+      "Dein Leben als Undercover-Agent",
+      "Dein Leben auf jeder Stufe einer Mafia",
+      "Vom Rekruten bis zum Boss",
+      "Würdest du einen Tag in dieser extremen Rolle überleben?"
+    ],
+    "preferredSignals": ["ein tag als", "dein leben als", "dein leben auf jeder stufe", "cia", "fbi", "swat", "agent", "geheimdienst", "undercover", "spezialeinheit", "mafia", "kartell", "polizei", "soldat", "sniper", "scharfschütze", "rekrut", "boss", "rang", "stufe"],
+    "deprioritizedByDefault": [
+      "rein zufällige surreale Regelwelten ohne klare Rolle oder Lebenswelt",
+      "abstrakte Was-wäre-wenn-Themen ohne konkreten Zuschauerstandpunkt",
+      "Listen, deren einzelne Punkte keine starke Szene ergeben"
+    ],
     "rules": [
-      "Unterhaltung zuerst, aber verständlich.",
-      "Ein starkes Thema darf komplett erfunden sein.",
-      "Keine Pflicht, jedes Thema in Protagonist, Midpoint und großes Finale zu pressen.",
-      "Keine Produktions-, Quellen- oder Fiktionshinweise im Voice-over.",
-      "Reale konkrete Tatsachenbehauptungen werden nicht frei erfunden."
+      "Bevorzuge konkrete Rollen und Lebenswelten, in die der Zuschauer gedanklich hineingesetzt wird.",
+      "Ein-Tag-Videos brauchen einen klaren Tagesablauf mit Aufgaben, Risiken, Entscheidungen und sichtbaren Situationen statt trockener Berufserklärung.",
+      "Progressionsvideos brauchen echte Stufen mit klar wachsender Macht, Gefahr, Verantwortung oder Status.",
+      "Surreale Themen nur wählen, wenn sie deutlich stärker sind als verfügbare Rollen-/Lebenswelt-Themen.",
+      "Bei realen Organisationen werden konkrete Tatsachen intern recherchiert; dramatische Verbindungsszenen dürfen als Hybrid erzählt werden, ohne falsche reale Vorwürfe zu erfinden.",
+      "Keine Produktions-, Quellen- oder Fiktionshinweise im Voice-over."
     ]
   },
   "contentModePolicy": {
     "required": true,
     "preferredDefault": "frei-surreal",
+    "realInstitutionDefault": "hybrid",
+    "realInstitutionSignals": ["cia", "fbi", "swat", "polizei", "bundeswehr", "militär", "militaer", "geheimdienst", "interpol", "europol"],
     "allowedModes": ["frei-surreal", "hybrid", "real"]
   },
   "scriptFormatPolicy": {
     "required": true,
     "allowedFormats": ["mini-stories", "progression", "story"],
-    "selectionRule": "Das Thema bestimmt das Format. Das Format wird vor dem Skript begründet und darf nicht nachträglich aus Gewohnheit auf 'story' gesetzt werden.",
+    "selectionRule": "Das Thema bestimmt das Format. Ein-Tag-/Dein-Leben-Formate dürfen als mini-stories mit chronologischem Tagesablauf oder als story mit echter Kausalität gebaut werden; keine künstliche Filmhandlung erzwingen.",
     "formats": {
       "mini-stories": {
-        "bestFor": ["mehrere absurde Regeln", "mehrere Fälle", "mehrere Orte", "Kategorien", "Rankings ohne echte Stufenreise", "Sammlungen verrückter Beispiele"],
+        "bestFor": ["Ein Tag als Rolle mit mehreren Stationen", "mehrere Aufgaben einer Rolle", "mehrere Fälle", "Kategorien", "Sammlungen starker Szenen"],
         "minimumSections": 4,
-        "sectionDNA": ["klare Behauptung oder Kategorie", "kurze Erklärung", "konkretes Beispiel oder sichtbare Situation", "absurde oder überraschende Besonderheit", "Konsequenz oder Pointe", "zügiger Übergang"],
+        "sectionDNA": ["klare Station oder Aufgabe", "konkrete Situation", "was die Rolle tun muss", "Risiko oder Besonderheit", "sichtbare Konsequenz", "zügiger Übergang"],
         "rules": [
-          "Jeder Abschnitt funktioniert als kleine eigenständige Geschichte oder interessante Einheit.",
+          "Bei Ein-Tag-Videos folgt die Reihenfolge möglichst einem verständlichen Tagesablauf: Start/Briefing → erste Aufgabe → Hauptteil → schwierigste Situation → Rückkehr/Schluss.",
+          "Jeder Abschnitt liefert eine neue Tätigkeit, Umgebung, Gefahr oder Entscheidung.",
           "Nicht jede Einheit braucht einen Twist.",
-          "Der nächste Punkt beginnt, sobald der aktuelle seinen interessantesten Wert geliefert hat.",
-          "Ein schwacher Punkt wird gestrichen statt künstlich verlängert.",
-          "Die Reihenfolge steigert idealerweise Seltsamkeit, Konsequenz oder visuelle Stärke."
+          "Ein schwacher Abschnitt wird gestrichen statt künstlich verlängert."
         ]
       },
       "progression": {
-        "bestFor": ["Ränge", "Stufen", "Evolution", "vom Anfänger zum Boss", "Level", "immer extremere Zustände"],
+        "bestFor": ["Ränge", "Stufen", "vom Rekruten zum Boss", "Hierarchien", "immer extremere Zustände"],
         "minimumStages": 4,
-        "stageDNA": ["Stufe klar benennen", "was sich gegenüber vorher ändert", "neue Fähigkeit, Regel, Risiko oder Status", "konkrete sichtbare Konsequenz", "warum die nächste Stufe interessanter oder gefährlicher wird"],
-        "rules": [
-          "Jede Stufe muss spürbar anders sein als die vorige.",
-          "Die Progression braucht eine klare Achse: Macht, Gefahr, Seltsamkeit, Verantwortung, Größe oder Preis.",
-          "Keine Schein-Stufen, die nur denselben Inhalt neu formulieren.",
-          "Die stärksten Stufen liegen nicht alle am Anfang."
-        ]
+        "stageDNA": ["Stufe benennen", "was sich ändert", "neue Macht, Regel, Risiko oder Verantwortung", "konkrete sichtbare Konsequenz", "warum die nächste Stufe größer wird"],
+        "rules": ["Jede Stufe muss spürbar anders sein.", "Die Progression braucht eine klare Achse.", "Keine Schein-Stufen.", "Die stärksten Stufen liegen nicht alle am Anfang."]
       },
       "story": {
-        "bestFor": ["eine unmögliche Prämisse", "Mystery", "eine Figur in einer absurden Welt", "Flucht", "Zeit/Spiegel/Parallelwelt", "eine zusammenhängende Eskalation"],
+        "bestFor": ["eine Rolle mit echter Mission", "Undercover-Einsatz", "Flucht", "Mystery", "eine zusammenhängende Eskalation"],
         "minimumStoryBeats": 6,
         "minimumCausalTurns": 4,
         "requiredFields": ["immediateGoal", "centralProblem", "midpointTurn", "finalEscalation", "endingCallback"],
-        "rules": [
-          "Ziel und Problem werden früh klar.",
-          "Beats folgen Ursache und Wirkung: deshalb, aber, dadurch, also, doch.",
-          "Der Midpoint verändert Regel, Wahrheit, Ziel oder Risiko.",
-          "Ein frühes Detail wird später als Setup/Payoff wichtig.",
-          "Das Ende greift Anfang, Regel oder frühes Detail wieder auf."
-        ]
+        "rules": ["Ziel und Problem werden früh klar.", "Beats folgen Ursache und Wirkung.", "Der Midpoint verändert Regel, Wahrheit, Ziel oder Risiko.", "Ein frühes Detail wird später bezahlt.", "Das Ende greift Anfang oder frühes Detail wieder auf."]
       }
     }
   },
   "nicheFitPolicy": {
     "minimumPlanScore": 7,
-    "approvedPillars": ["verrückte Regeln und Systeme", "dunkle oder absurde Lebenswelten", "Mafia, Geheimdienste, Hierarchien und Gefängnisse", "Mystery, Zeit, Spiegel, Schatten und Parallelwelten", "kosmische oder surreale Situationen", "bizarre Sammlungen, Rankings und Progressionen", "schwarze Comedy und groteske Konsequenzen"]
+    "approvedPillars": ["Geheimdienste und Agenten", "FBI, CIA, SWAT und Spezialeinheiten", "gefährliche Berufe und Rollen", "Mafia, Unterwelt und Hierarchien", "Ränge und Progressionen", "extreme historische oder moderne Lebenswelten", "Mystery und außergewöhnliche Missionen"],
+    "positiveSignals": ["ein tag als", "dein leben als", "cia", "fbi", "swat", "agent", "geheimdienst", "undercover", "spezialeinheit", "mafia", "kartell", "polizei", "soldat", "sniper", "scharfschütze", "rekrut", "boss", "rang", "stufe", "level"],
+    "obviousOutOfScopeSignals": ["rezept", "kochvideo", "let's play", "lets play", "unboxing", "handy review", "smartphone review", "produktvergleich", "shopping haul", "live ticker", "fußball highlights", "fussball highlights", "mathe hausaufgabe"]
   },
   "topicQualityPolicy": {
     "required": true,
     "minimumScore": 8,
     "minimumDimensionScore": 7,
     "dimensions": ["curiosity", "weirdness", "visualPotential", "escalationPotential", "entertainmentPotential"],
-    "rules": [
-      "Das Thema braucht ein klares Versprechen, das in einem Satz verständlich ist.",
-      "Mindestens drei deutlich unterschiedliche starke Bilder müssen spontan vorstellbar sein.",
-      "Eine Liste braucht mehrere wirklich verschiedene interessante Punkte; eine Progression echte Stufen; eine Story echte Kausalität.",
-      "Langweilige Schulreferats-Themen werden neu gerahmt oder verworfen."
-    ]
+    "rules": ["Das Thema braucht ein klares Versprechen in einem Satz.", "Mindestens drei deutlich unterschiedliche starke Szenen müssen vorstellbar sein.", "Ein-Tag-Themen brauchen mindestens vier unterschiedliche Stationen/Aufgaben.", "Eine Progression braucht echte Stufen.", "Eine Story braucht echte Kausalität.", "Schulreferats-Framing wird verworfen."]
   },
   "introPolicy": {
     "required": true,
@@ -84,14 +88,13 @@
     "maximumCoverHoldSeconds": 2.2,
     "maximumAnyHoldSecondsInWindow": 3.2,
     "rules": {
-      "mini-stories": ["Thema/Versprechen sofort klar machen.", "Ersten starken Punkt sofort beginnen; keine lange Übersicht.", "Spätestens nach wenigen Sätzen ist der erste Mini-Payoff da."],
-      "progression": ["Startzustand und Achse der Progression sofort klar machen.", "Stufe 1 schnell zeigen.", "Schon früh andeuten, wie extrem die oberen Stufen werden."],
-      "story": ["Situation, ungewöhnliche Regel und unmittelbares Problem schnell verständlich machen.", "Mystery darf offen bleiben, Grundsituation nicht.", "Cover nur als kurzer Teaser."
-      ]
+      "mini-stories": ["Rolle und Situation sofort klar machen.", "Bei Ein-Tag-Videos direkt in Briefing, Einsatz oder erste Aufgabe springen.", "Kein langer Berufs-Steckbrief vor der ersten Szene."],
+      "progression": ["Startstufe und Progressionsachse sofort klar machen.", "Stufe 1 schnell zeigen.", "Früh andeuten, wie extrem die oberen Stufen werden."],
+      "story": ["Situation, Rolle und unmittelbares Problem schnell verständlich machen.", "Mystery darf offen bleiben, Grundsituation nicht.", "Cover nur als kurzer Teaser."]
     }
   },
   "hookPolicy": {
-    "goal": "Der Einstieg bestätigt Titel/Cover und startet sofort den eigentlichen Inhalt.",
+    "goal": "Der Einstieg bestätigt Titel/Cover und setzt den Zuschauer sofort in die Rolle oder Situation.",
     "allowedTypes": ["direkter-erster-punkt", "starke-behauptung", "kontrast", "ranking-versprechen", "unmögliche-situation", "absurde-regel", "direkte-gefahr", "mini-szene", "bizarre-frage", "falsche-sicherheit", "sofortiger-twist"],
     "forbiddenOpenings": ["Hallo und willkommen", "Willkommen zu einem neuen Video", "In diesem Video schauen wir uns an", "Heute reden wir über", "Wusstest du schon", "Unsere Hauptfigur ist erfunden", "Diese Geschichte ist erfunden", "Ein reales Beispiel ist"]
   },
@@ -100,39 +103,19 @@
     "minimumScore": 8,
     "minimumDimensionScore": 7,
     "dimensions": ["introClarity", "formatFit", "clarity", "curiosity", "entertainment", "voiceNaturalness", "payoff"],
-    "rules": [
-      "Das Skript muss laut vorgelesen natürlich klingen.",
-      "Eine Idee pro Absatz oder klarer Gedankeneinheit.",
-      "Kurze Punch-Sätze sind Akzent, nicht Standardsatzbau.",
-      "Keine künstlichen Spannungsmarker wie 'Jetzt wird es interessant' oder 'Schlechte Idee' als Ersatz für echten Inhalt.",
-      "Nicht jede Minute braucht einen Twist; neue interessante Information oder sichtbare Konsequenz reicht.",
-      "Wenn ein Satz nur erklärt, was der Zuschauer bereits verstanden hat, wird er gestrichen.",
-      "Transitions sollen Inhalt verbinden, nicht Spannung vortäuschen."
-    ]
+    "rules": ["Das Skript muss laut vorgelesen natürlich klingen.", "Eine Idee pro Absatz oder klarer Gedankeneinheit.", "Kurze Punch-Sätze sind Akzent, nicht Standardsatzbau.", "Keine künstlichen Spannungsmarker als Ersatz für Inhalt.", "Neue Aufgabe, Information, Entscheidung oder Konsequenz trägt die Retention.", "Wenn ein Satz nur Bekanntes wiederholt, wird er gestrichen."]
   },
   "formatQualityPolicy": {
-    "mini-stories": {
-      "requiredSectionFields": ["label", "coreIdea", "concreteMoment", "weirdDetail", "consequence"],
-      "minimumSections": 4
-    },
-    "progression": {
-      "requiredStageFields": ["label", "change", "consequence", "visualIdea"],
-      "minimumStages": 4
-    },
-    "story": {
-      "minimumCausalTurns": 4,
-      "minimumStoryBeats": 6
-    }
+    "mini-stories": {"requiredSectionFields": ["label", "coreIdea", "concreteMoment", "weirdDetail", "consequence"], "minimumSections": 4},
+    "progression": {"requiredStageFields": ["label", "change", "consequence", "visualIdea"], "minimumStages": 4},
+    "story": {"minimumCausalTurns": 4, "minimumStoryBeats": 6}
   },
   "entertainmentDensityPolicy": {
     "minimumBeats": 6,
     "targetSecondsPerBeat": 10,
-    "beatTypes": ["neue Information", "neuer Fall", "neue Stufe", "absurde Besonderheit", "Konsequenz", "visueller Gag", "Statuswechsel", "Enthüllung", "Transformation", "falsche Sicherheit", "Callback"]
+    "beatTypes": ["neue Aufgabe", "neuer Ort", "neue Information", "neue Stufe", "Risiko", "Entscheidung", "Konsequenz", "visueller Gag", "Statuswechsel", "Enthüllung", "Callback"]
   },
-  "retentionPolicy": {
-    "minimumPlannedSignals": 4,
-    "rules": ["Retention entsteht primär durch interessante Inhalte und klare Progression.", "Open Loops nur setzen, wenn sie später wirklich bezahlt werden.", "Wiederholungen und künstliche Cliffhanger entfernen."]
-  },
+  "retentionPolicy": {"minimumPlannedSignals": 4, "rules": ["Retention entsteht primär durch interessante Tätigkeiten, Risiken und Progression.", "Open Loops nur setzen, wenn sie bezahlt werden.", "Wiederholungen und künstliche Cliffhanger entfernen."]},
   "researchPolicy": {
     "requiredModes": ["real", "hybrid"],
     "optionalModes": ["frei-surreal"],
@@ -149,25 +132,16 @@
     "normalImageSeconds": [2.4, 3.6],
     "breathingImageSeconds": [3.6, 5.0],
     "targetImagesPer100Seconds": [30, 42],
-    "rules": ["Zusätzliche Bilder dort, wo sich Information, Handlung, Stufe, Ort, Konsequenz oder visuelle Idee ändert.", "Kein ein-Satz-ein-Bild-Zwang.", "Nicht nur Zoom/Pan als Abwechslung verwenden."]
+    "rules": ["Zusätzliche Bilder dort, wo sich Aufgabe, Information, Ort, Status, Konsequenz oder visuelle Idee ändert.", "Kein ein-Satz-ein-Bild-Zwang.", "Nicht nur Zoom/Pan als Abwechslung verwenden."]
   },
-  "titleCoverPolicy": {
-    "principle": "Titel und Cover verkaufen das klare stärkste Versprechen des gewählten Formats.",
-    "coverHeadlineRequired": true,
-    "coverHeadlineMinWords": 1,
-    "coverHeadlineMaxWords": 4
-  },
+  "titleCoverPolicy": {"principle": "Titel und Cover verkaufen die konkrete Rolle, Gefahr oder Progression.", "coverHeadlineRequired": true, "coverHeadlineMinWords": 1, "coverHeadlineMaxWords": 4},
   "youtubeUploadPolicy": {
     "required": true,
-    "exportFile": "04-export/YOUTUBE_UPLOAD.txt",
-    "descriptionMinimumCharacters": 80
+    "exportFile": "04-export/YOUTUBE_CAPTION.txt",
+    "timedTranscriptFile": "04-export/UNTERTITEL_SCRIPT.txt",
+    "timedTranscriptBlockSeconds": 10,
+    "descriptionMinimumCharacters": 80,
+    "rules": ["Titel und Beschreibung stehen gemeinsam in genau einer Caption-Datei.", "Das komplette tatsächlich gesprochene Skript wird aus Whisper-Wortzeiten in 10-Sekunden-Blöcke exportiert.", "Untertitelzeiten werden niemals geschätzt."]
   },
-  "endingPolicy": {
-    "required": true,
-    "rules": {
-      "mini-stories": "Mit dem stärksten, überraschendsten oder rundesten letzten Punkt enden; kein unnötiges Fazit.",
-      "progression": "Höchste Stufe oder Konsequenz auszahlen; nicht wieder bei Null erklären.",
-      "story": "Payoff, Twist oder Callback aus der aufgebauten Geschichte liefern."
-    }
-  }
+  "endingPolicy": {"required": true, "rules": {"mini-stories": "Mit der stärksten Station oder einer runden Rückkehr aus dem Tag enden.", "progression": "Höchste Stufe oder Konsequenz auszahlen.", "story": "Payoff, Twist oder Callback liefern."}}
 }
