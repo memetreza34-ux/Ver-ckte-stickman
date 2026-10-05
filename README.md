@@ -1,25 +1,36 @@
-# Verückte Stickman — Video-Pipeline V2.7
+# Verückte Stickman — Video-Pipeline V2.8
 
-Pipeline für einen deutschen faceless YouTube-Kanal mit grotesk-surrealer Stickman-Bildwelt und **formatbewusstem Entertainment-Scripting**.
+Pipeline für einen deutschen faceless YouTube-Kanal mit grotesk-surrealer Stickman-Bildwelt und **rollenbasiertem Entertainment-Scripting**.
 
-## Neue Kernregel
+## Bevorzugte Themenrichtung
 
-**Erst Skriptformat wählen, dann schreiben.**
+Standard sind konkrete Rollen, Lebenswelten und Hierarchien, zum Beispiel:
 
-Es gibt drei Formate:
+- `Ein Tag als CIA-Agent`
+- `Ein Tag als FBI-Agent`
+- `Ein Tag als SWAT-Mitglied`
+- `Dein Leben als Undercover-Agent`
+- `Vom Rekruten bis zum Boss`
+- `Dein Leben auf jeder Stufe einer Mafia`
 
-- `mini-stories` → mehrere verrückte Fälle, Regeln, Kategorien oder Orte
-- `progression` → Stufen, Ränge, Level, Aufstieg, Evolution
-- `story` → eine zusammenhängende Handlung mit Ziel, Problem und Payoff
+Surreale Regelwelten bleiben möglich, sind aber **nicht mehr die bevorzugte Standardrichtung**.
 
-Nicht jedes Video wird in eine große Story gezwängt.
+Bei realen Institutionen wie CIA, FBI oder SWAT startet ein neues Projekt automatisch im Modus `hybrid`: reale Tatsachen werden recherchiert, dramatische Verbindungsszenen dürfen erfunden sein.
 
-Details: `youtube/CONTENT_SYSTEM.md`.
+## Skriptformate
+
+**Erst Format wählen, dann schreiben.**
+
+- `mini-stories` → ideal für einen Tagesablauf mit mehreren Stationen/Aufgaben oder mehrere starke Fälle
+- `progression` → Stufen, Ränge, Level, Aufstieg, Hierarchien
+- `story` → eine zusammenhängende Mission/Handlung mit Ziel, Problem und Payoff
+
+Ein `Ein Tag als ...`-Video muss nicht künstlich wie ein Film geschrieben werden. Es kann chronologisch als starke Mini-Stories funktionieren: Briefing → erste Aufgabe → Hauptteil → schwierigste Situation → Rückkehr/Schluss.
 
 ## Content-Modi
 
 - `frei-surreal` → freie Unterhaltung, keine Recherchepflicht
-- `hybrid` → reale Kulisse + Erfindung; nur reale Behauptungen intern belegen
+- `hybrid` → reale Institution/Kulisse + dramatisierte Story; reale Behauptungen intern belegen
 - `real` → reale Tatsachen; Recherche Pflicht
 
 ## Projektstruktur
@@ -29,46 +40,65 @@ Details: `youtube/CONTENT_SYSTEM.md`.
 01-script/          → finales Voice-over-Skript
 02-audio/           → finale Voice-over-Datei
 03-bilder/          → Bild 01.png bis Bild NN.png
-04-export/          → Video + Thumbnail + YouTube-Uploadtext
-99-tech/            → interne Formatplanung, Mapping und Renderdaten
+04-export/          → fertige Upload-Dateien
+99-tech/            → interne Formatplanung, Mapping, Alignment und Renderdaten
 ```
+
+## Export — verbindlicher Standard
+
+Nach erfolgreicher Phase 3 liegen im Export mindestens:
+
+```text
+04-export/
+├── FINAL_VIDEO.mp4
+├── THUMBNAIL.png
+├── YOUTUBE_CAPTION.txt
+└── UNTERTITEL_SCRIPT.txt
+```
+
+`YOUTUBE_CAPTION.txt` enthält **YouTube-Titel + Beschreibung in einer Datei**.
+
+`UNTERTITEL_SCRIPT.txt` enthält das **komplette tatsächlich gesprochene Voice-over mit echten Zeitdaten** in 10-Sekunden-Blöcken:
+
+```text
+[00:00 - 00:10]
+...
+
+[00:10 - 00:20]
+...
+```
+
+Die Zeiten stammen aus Whisper-Wortzeiten des finalen optimierten Audios und werden nicht geschätzt.
 
 ## Produktionslogik
 
 1. Thema prüfen
 2. Projekt erstellen
-3. `scriptFormat` wählen und begründen
-4. passendes `formatPlan` ausfüllen
-5. Hook + Intro + Voice-over schreiben
-6. Titel/Cover + YouTube-Beschreibung planen
-7. Bildprompts erzeugen
-8. Flow in 5er-Batches
-9. Bilder gesammelt importieren
-10. Audio → Alignment → Timeline → Render → QC
+3. Rolle/Lebenswelt bzw. Progression konkret planen
+4. `scriptFormat` wählen und begründen
+5. Einleitung, Hauptteil und Schluss ausarbeiten
+6. finales Voice-over schreiben
+7. Titel/Cover + YouTube-Beschreibung planen
+8. Bildprompts erzeugen
+9. Flow immer in 5er-Batches
+10. Bilder gesammelt importieren
+11. Audio → Whisper-Alignment → Timeline → Render → Export-QC
 
 ## Bilddichte
 
-Richtwert: etwa **30–42 Bildmomente pro 100 Sekunden**, adaptiv. Mehr Bilder besonders bei neuer Information, neuer Stufe, neuem Fall, Action, Konsequenz, Regelwechsel oder Transformation.
+Richtwert: etwa **30–42 Bildmomente pro 100 Sekunden**, adaptiv. Zusätzliche Bilder besonders bei neuer Aufgabe, neuem Ort, neuer Information, Risiko, Entscheidung, Konsequenz oder Statuswechsel.
 
 ## Cover
 
-`Bild 01` ist Cover + erste Szene. Immer kurze deutsche Überschrift mit 1–4 Wörtern. Im Intro nur kurz halten.
-
-## Export
-
-```text
-04-export/FINAL_VIDEO.mp4
-04-export/THUMBNAIL.png
-04-export/YOUTUBE_UPLOAD.txt
-```
+`Bild 01` ist Cover + erste Szene. Kurze deutsche Überschrift mit 1–4 Wörtern. Im Intro nur kurz halten.
 
 ## Start
 
 ```bash
 npm install
-npm run topic:video -- --topic "THEMA"
-npm run create:video -- --topic "THEMA" --title "ARBEITSTITEL" --week "2026-KW40" --slug "mein-video"
-# CONTENT_PLAN: scriptFormat + passendes formatPlan ausfüllen
+npm run topic:video -- --topic "Ein Tag als FBI-Agent"
+npm run create:video -- --topic "Ein Tag als FBI-Agent" --title "Ein Tag als FBI-Agent" --week "2026-KW41" --slug "ein-tag-als-fbi-agent"
+# CONTENT_PLAN ausarbeiten
 npm run validate:phase1 -- --dir "youtube/<week>/<slug>"
 npm run compile:flow -- --dir "youtube/<week>/<slug>"
 ```
