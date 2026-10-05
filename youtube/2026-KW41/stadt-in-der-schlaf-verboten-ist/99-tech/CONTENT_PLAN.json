@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 9,
+  "contentPolicyVersion": 9,
+  "language": "de",
+  "topic": "7 absurde Regeln in einer Stadt, in der Schlaf verboten ist",
+  "workingTitle": "7 Regeln einer Stadt, in der Schlaf verboten ist",
+  "contentMode": "frei-surreal",
+  "truthBoundary": {
+    "realElements": [],
+    "inventedElements": [
+      "die schlaflose Stadt",
+      "alle sieben Regeln",
+      "Wachschutz, Rückkehrer, graue Busse und Identitätsregistrierung",
+      "alle Figuren, Orte, Zahlen und Ereignisse der Storywelt"
+    ],
+    "notes": "Vollständig frei erfundene Unterhaltung; keine Recherchepflicht und keine realen Tatsachenbehauptungen."
+  },
+  "topicFit": {
+    "score": 10,
+    "verdict": "APPROVED",
+    "pillars": [
+      "verrückte Regeln und Systeme",
+      "dunkle absurde Lebenswelt",
+      "schwarze Comedy und groteske Konsequenzen"
+    ],
+    "reason": "Das Thema passt direkt zur Kanal-DNA und liefert sieben klar unterschiedliche, visuell starke Mini-Geschichten."
+  },
+  "topicQuality": {
+    "score": 9.6,
+    "verdict": "APPROVED",
+    "curiosity": 10,
+    "weirdness": 10,
+    "visualPotential": 10,
+    "escalationPotential": 9,
+    "entertainmentPotential": 9,
+    "reason": "Das Versprechen ist sofort verständlich und jede Regel öffnet eine neue visuelle Situation mit steigender Konsequenz.",
+    "whyNotBoring": "Lichtzwang, Bettverbot, Gähn-Strafen, Rückkehrer, Spiegel, leere Straßen und Identitätsregeln wechseln Ort, Mechanik und Ton sichtbar."
+  },
+  "viewerPromise": "Sieben immer absurdere Regeln zeigen, wie eine Stadt Schlaf nach Mitternacht verhindert und warum sie davor solche Angst hat.",
+  "coreQuestion": "Warum verbietet diese Stadt Schlaf so extrem?",
+  "angle": "Eine erfundene Stadt wird nicht erklärt wie ein Lexikon, sondern über sieben konkrete Regeln mit sichtbaren Konsequenzen erlebt.",
+  "individualityReason": "Jede Regel ist eine eigenständige Mini-Geschichte, gleichzeitig legen alle sieben Stück für Stück denselben verborgenen Zweck der Stadt frei.",
+  "scriptFormat": {
+    "type": "mini-stories",
+    "reason": "Das Thema besteht aus sieben klar trennbaren Regeln mit jeweils eigener Situation, Besonderheit und Konsequenz.",
+    "whyThisFormat": "Mini-Stories liefern für sechs bis sieben Minuten mehr Abwechslung und Klarheit als eine künstlich verlängerte Einzelhandlung."
+  },
+  "hook": {
+    "type": "absurde-regel",
+    "text": "In dieser Stadt ist Schlaf nach Mitternacht verboten.",
+    "reason": "Titelversprechen und verrückte Grundregel sind im ersten Satz vollständig verständlich."
+  },
+  "introPlan": {
+    "openingMove": "Die Schlafregel wird im ersten Satz ohne Vorgeschichte genannt.",
+    "formatPromise": "Direkt danach wird klar, dass sieben Regeln folgen und jede extremer wird.",
+    "firstPayoff": "Schon in den ersten Sekunden gehen um Mitternacht sämtliche Lichter der Stadt an.",
+    "clarityLine": "Wer trotzdem einschläft, wacht manchmal als jemand anderes auf.",
+    "first10SecondsVisualCount": 5
+  },
+  "formatPlan": {
+    "miniStories": {
+      "orderingLogic": "Von zunächst komisch-kontrollierend zu zunehmend unheimlich: Licht, Bett, Gähnen, Schlafende, Spiegel, leere Straßen, Identität.",
+      "sections": [
+        {
+          "label": "Regel 1 – Lichtzwang",
+          "coreIdea": "Nach Mitternacht muss jeder Raum hell und sichtbar bleiben.",
+          "concreteMoment": "Ein Wachmann schlägt mit einer riesigen Glocke ans Fenster eines stillen Zimmers.",
+          "weirdDetail": "Drei rote Punkte führen dazu, dass sogar die Vorhänge entfernt werden.",
+          "consequence": "Die Stadt opfert Privatsphäre, um Menschen wach zu halten."
+        },
+        {
+          "label": "Regel 2 – Schlafwerkzeuge",
+          "coreIdea": "Betten, Decken und Kissen werden nachts wie verbotene Werkzeuge behandelt.",
+          "concreteMoment": "Hotelbetten klappen um 23:45 senkrecht an die Wand.",
+          "weirdDetail": "Öffentliche Parkbänke wurden durch Stehpulte ersetzt.",
+          "consequence": "Wer zweimal erwischt wird, verliert sein Schlafzimmer."
+        },
+        {
+          "label": "Regel 3 – Gähnen kostet",
+          "coreIdea": "Müdigkeit wird sichtbar bestraft und markiert.",
+          "concreteMoment": "Beim dritten Gähnen bekommt man ein gelbes Armband.",
+          "weirdDetail": "Mini-Nachtkaffees und Kameras gegen langsames Blinzeln entstehen als eigener Alltag.",
+          "consequence": "Verdächtige landen im grellen Wachraum."
+        },
+        {
+          "label": "Regel 4 – Nicht wecken",
+          "coreIdea": "Eingeschlafene dürfen unter keinen Umständen geweckt werden.",
+          "concreteMoment": "Nach acht Minuten wacht jemand selbst auf, erinnert sich aber an ein anderes Leben.",
+          "weirdDetail": "Die Stadt nennt solche Menschen Rückkehrer und prüft ihre Identität.",
+          "consequence": "Wer falsch antwortet, verschwindet in einem grauen Bus."
+        },
+        {
+          "label": "Regel 5 – Spiegel abdecken",
+          "coreIdea": "Reflexionen verhalten sich nachts manchmal unabhängig vom Original.",
+          "concreteMoment": "Das Spiegelbild schließt zuerst die Augen und lächelt später allein.",
+          "weirdDetail": "Selbst Löffel und Schaufenster werden abgedeckt oder unbrauchbar gemacht.",
+          "consequence": "Die Stadt bezahlt zerbrochene Spiegel ohne Fragen."
+        },
+        {
+          "label": "Regel 6 – 05:55",
+          "coreIdea": "Für sechs Minuten müssen sämtliche normalen Bewohner von der Straße verschwinden.",
+          "concreteMoment": "Nur graue Busse fahren durch die völlig leere Stadt.",
+          "weirdDetail": "Nach 06:01 haben manche Wohnungen plötzlich neue Namensschilder.",
+          "consequence": "Die Regel deutet an, dass Identitäten nachts ausgetauscht werden."
+        },
+        {
+          "label": "Regel 7 – Sag deinen Namen nicht",
+          "coreIdea": "Wer sich nicht ans Einschlafen erinnert, darf seine Identität nicht vorschnell bestätigen.",
+          "concreteMoment": "Ein maskierter Prüfer fragt nicht wer du bist, sondern wer du gestern warst.",
+          "weirdDetail": "Ein ausgesprochener Name wird offiziell registriert, auch wenn er zur falschen Person gehört.",
+          "consequence": "Die sechs früheren Regeln ergeben plötzlich einen gemeinsamen Sinn."
+        }
+      ]
+    },
+    "progression": {
+      "axis": "",
+      "startState": "",
+      "endState": "",
+      "stages": []
+    },
+    "story": {
+      "protagonistOrFocus": "",
+      "immediateGoal": "",
+      "centralProblem": "",
+      "worldRules": [],
+      "incitingIncident": "",
+      "causalTurns": [],
+      "midpointTurn": "",
+      "finalEscalation": "",
+      "setupPayoff": {
+        "setup": "",
+        "payoff": ""
+      },
+      "endingCallback": "",
+      "beats": []
+    }
+  },
+  "entertainmentBeats": [
+    {"type": "neue Information", "beat": "Punkt zwölf wird die ganze Stadt grell beleuchtet."},
+    {"type": "visueller Gag", "beat": "Wachmann weckt ein Haus mit einer riesigen Glocke."},
+    {"type": "absurde Besonderheit", "beat": "Betten klappen nachts an die Wand und Kissen brauchen Tagesstempel."},
+    {"type": "Konsequenz", "beat": "Beim dritten Gähnen gibt es ein gelbes Armband."},
+    {"type": "Enthüllung", "beat": "Schlafende wachen mit fremden Erinnerungen als Rückkehrer auf."},
+    {"type": "Transformation", "beat": "Spiegelbilder schließen die Augen und lächeln unabhängig."},
+    {"type": "neuer Fall", "beat": "Um 05:55 ist die Stadt leer und nur graue Busse fahren."},
+    {"type": "Statuswechsel", "beat": "Nach sechs tragen manche Wohnungen neue Namensschilder."},
+    {"type": "Enthüllung", "beat": "Der Name wird registriert, selbst wenn er zur falschen Person gehört."},
+    {"type": "Callback", "beat": "Der letzte Spiegelmoment beweist, dass die Gefahr noch nicht vorbei ist."}
+  ],
+  "scriptQuality": {
+    "score": 9.4,
+    "verdict": "APPROVED",
+    "introClarity": 10,
+    "formatFit": 10,
+    "clarity": 9,
+    "curiosity": 10,
+    "entertainment": 9,
+    "voiceNaturalness": 9,
+    "payoff": 9,
+    "reason": "Das Skript startet unmittelbar mit dem Versprechen, nutzt sieben klar getrennte Mini-Geschichten, steigert die Konsequenzen und verbindet sie erst am Ende zu einer gemeinsamen Erklärung."
+  },
+  "retention": {
+    "openLoops": [
+      "Warum darf niemand Schlafende wecken?",
+      "Was passiert mit den grauen Bussen um 05:55?",
+      "Warum ist der eigene Name am Ende gefährlich?"
+    ],
+    "escalationPoints": [
+      "rote Punkte entfernen Privatsphäre",
+      "Rückkehrer besitzen fremde Erinnerungen",
+      "Spiegelbilder handeln selbstständig",
+      "Namensschilder wechseln nach 06:01"
+    ],
+    "patternInterrupts": [
+      "riesige Glocke als visueller Gag",
+      "absurde Mini-Kaffeetassen",
+      "völlig leere Stadt vor Sonnenaufgang"
+    ]
+  },
+  "payoff": "Die letzte Regel erklärt, dass die Stadt nicht primär Müdigkeit bekämpft, sondern verhindern will, dass eine andere Identität nach dem Schlaf den Körper und Namen übernimmt.",
+  "titleCoverSystem": {
+    "finalTitle": "7 Regeln einer Stadt, in der Schlaf verboten ist",
+    "titlePromise": "Sieben immer absurdere Regeln einer Stadt, die Menschen um jeden Preis wach halten will.",
+    "coverConcept": {
+      "visualConflict": "Erschöpfter Stickman will schlafen, während eine grell beleuchtete Stadt und ein rotes Warnsignal ihn überwachen.",
+      "mainSubjects": [
+        "erschöpfter Beobachter",
+        "00:00-Uhr",
+        "rote Warnleuchte"
+      ],
+      "visibleText": "SCHLAF VERBOTEN",
+      "emotion": "Erschöpfung, Druck und morbide Neugier",
+      "whyClickable": "Die simple verbotene Alltagshandlung und die übertriebene nächtliche Kontrolle sind sofort verständlich."
+    },
+    "complementarity": "Der Titel erklärt das Sieben-Regeln-Format; das Cover verkauft mit zwei Wörtern den zentralen Konflikt."
+  },
+  "youtubeUpload": {
+    "title": "7 Regeln einer Stadt, in der Schlaf verboten ist",
+    "description": "Nach Mitternacht darf in dieser Stadt niemand schlafen. Sieben immer absurdere Regeln bestimmen Licht, Betten, Gähnen, Spiegel und sogar deinen eigenen Namen. Je weiter die Nacht geht, desto klarer wird, dass die Stadt nicht einfach nur Angst vor Müdigkeit hat."
+  },
+  "ending": {
+    "type": "letzter Mini-Payoff mit Callback",
+    "finalLine": "Obwohl du es nicht tust."
+  },
+  "notes": [
+    "Erstes längeres Produktionsvideo nach Abschluss der Testphase.",
+    "Ziel: etwa 6:20 Minuten und 115 Bildmomente.",
+    "Format bewusst mini-stories statt künstlich verlängerter Einzelhandlung.",
+    "Bildproduktion weiterhin in 5er-Blöcken; Sammeldownload erst nach allen Bildern."
+  ]
+}
