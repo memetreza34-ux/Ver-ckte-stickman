@@ -28,6 +28,16 @@
       "channelFitAtCreation": {"decision": "APPROVED_CHANNEL_FIT", "score": 10, "reason": "Frei-surreale Mystery-Story mit klarer Spiegelregel und starker visueller Eskalation."},
       "topicQualityAtCreation": {"decision": "APPROVED_TOPIC_QUALITY", "score": 9.6},
       "notes": "V7 Lernvideo: Bildwelt und Bildmenge gut, aber Einstieg zu unklar und Cover im fertigen Render zu lange sichtbar. Ab V8 gelten Intro-Clarity-Gate, dichter Hook-Schnitt und YouTube-Uploaddatei."
+    },
+    {
+      "id": "2026-KW41_stadt-in-der-schlaf-verboten-ist",
+      "title": "7 Regeln einer Stadt, in der Schlaf verboten ist",
+      "aliases": ["7 absurde Regeln in einer Stadt, in der Schlaf verboten ist", "Schlaf ist nach Mitternacht verboten"],
+      "status": "phase1-ready",
+      "createdAt": "2026-10-05T05:22:00+02:00",
+      "channelFitAtCreation": {"decision": "APPROVED_CHANNEL_FIT", "score": 10, "reason": "V9-Mini-Stories mit sieben klar unterschiedlichen absurden Regeln und starkem visuellen Potenzial."},
+      "topicQualityAtCreation": {"decision": "APPROVED_TOPIC_QUALITY", "score": 9.6},
+      "notes": "Erstes 6–7-Minuten-Produktionsvideo nach der Testphase. Ziel 380 Sekunden, 115 Bildmomente, Mini-Stories-Format, Longform-Szenenplan materialisiert Bildprompts und Mapping automatisch."
     }
   ]
 }
