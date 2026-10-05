@@ -1,0 +1,468 @@
+# ALLE BILDPROMPTS — 7 Regeln einer Stadt, in der Schlaf verboten ist
+
+Google-Flow-Regel: Immer genau 5 Bilder pro Durchgang erzeugen. Erst wenn alle Bilder fertig sind, gesammelt herunterladen.
+
+## VERBINDLICHE BILDWELT
+16:9, handgezeichneter 2D-Dark-Grotesque-Stickman-Comic. Wiederkehrender Beobachter: weißer ovaler Kopf, Punktaugen, kurze schwarze Haare, dunkelgrüne Jacke, schwarze Hose, violette Augenringe. Kantige graue Stadt; Nachtlicht grell weiß mit Rot/Gelb, vor Morgen Cyan/Violett. Klare schwarze Konturen, große lesbare Formen, reduzierte Hintergründe. Keine Fotos, kein 3D/Pixar, keine Pseudo-Schrift, keine Wasserzeichen. Jede Szene zeigt eine klare Handlung statt einer Textkarte.
+
+---
+## Bild 01 — COVER
+ÜBERSCHRIFT: "SCHLAF VERBOTEN"
+BILDPROMPT:
+16:9. Erschöpfter Beobachter groß im Vordergrund, grell beleuchtete Nachtstadt dahinter, Uhr 00:00, rote Warnleuchte, ein müder Stickman kippt fast im Stehen um. Überschrift „SCHLAF VERBOTEN“ genau einmal groß und kontrastreich. Feste Bildwelt wie oben, klare Silhouetten, keine weitere Schrift.
+
+## Bild 02
+BILDPROMPT:
+16:9. Halbtotale. „Nicht empfohlen, nicht ungesund: wirklich verboten.“ Als klare Handlung zeigen: müder Bewohner wird von einer roten Verbotsmarkierung gestoppt. Feste Bildwelt wie oben, überzeichnete Reaktion, keine Textkarte.
+
+## Bild 03
+BILDPROMPT:
+16:9. POV. „Um Punkt zwölf gehen überall die Lichter an.“ Ganze Straße springt gleichzeitig in grelles weißes Licht, Bewohner erschrecken. Feste Bildwelt wie oben, klare Handlung, keine Untertitel.
+
+## Bild 04
+BILDPROMPT:
+16:9. Weite Totale. „Wer trotzdem einschläft, wacht manchmal als jemand anderes auf.“ Schlafender Stickman im Vordergrund, dahinter dieselbe Figur mit veränderter Haltung und fremdem Blick. Feste Bildwelt wie oben.
+
+## Bild 05
+BILDPROMPT:
+16:9. Detail. „Darum gibt es sieben Regeln, und jede wird schlimmer.“ Sieben stilisierte Warnsymbole als reale Objekte entlang einer dunklen Straße, Beobachter davor. Keine Textkarte.
+
+## Bild 06
+BILDPROMPT:
+16:9. Leichte Untersicht. „Regel eins: Nach Mitternacht muss jedes Zimmer hell bleiben.“ Wohnblock mit sämtlichen Fenstern grell beleuchtet, ein dunkles Fenster fällt bedrohlich auf.
+
+## Bild 07
+BILDPROMPT:
+16:9. Seitenansicht. „Straßenlaternen schalten auf grelles weißes Licht.“ Reihe kantiger Laternen leuchtet gleichzeitig auf, Schatten verschwinden abrupt.
+
+## Bild 08
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Auch Wohnungen dürfen keine dunklen Ecken haben.“ Überbeleuchtetes kleines Zimmer ohne Schatten, müder Bewohner kneift die Augen zusammen.
+
+## Bild 09
+BILDPROMPT:
+16:9. Nahaufnahme. „Sensoren prüfen, ob hinter Fenstern noch Bewegung ist.“ Kleiner Bewegungssensor vor Fensterscheibe, dahinter nervös herumgehender Stickman.
+
+## Bild 10
+BILDPROMPT:
+16:9. Halbtotale. „Bleibt ein Raum fünf Minuten still, kommt der Wachmann.“ Stillstehender Bewohner im Zimmer, draußen nähert sich eine große Wachmann-Silhouette.
+
+## Bild 11
+BILDPROMPT:
+16:9. POV. „Er trägt keinen Schlagstock, sondern eine riesige Glocke.“ Wachmann hält absurd große Metallglocke direkt vor die Kamera.
+
+## Bild 12
+BILDPROMPT:
+16:9. Weite Totale. „Die hält er direkt an dein Fenster.“ Wachmann auf schmalem Außengang mit Glocke am Fenster, Bewohner weicht erschrocken zurück.
+
+## Bild 13
+BILDPROMPT:
+16:9. Detail. „Ein einziger Schlag reicht meistens für das ganze Haus.“ Glocke schlägt, starke grafische Schallwellen laufen durch den gesamten Wohnblock.
+
+## Bild 14
+BILDPROMPT:
+16:9. Leichte Untersicht. „Wer danach noch schläft, bekommt einen roten Punkt.“ Wachmann klebt einen großen roten Punkt an eine Wohnungstür.
+
+## Bild 15
+BILDPROMPT:
+16:9. Seitenansicht. „Der klebt außen an der Wohnungstür.“ Naher Blick auf graue Tür mit einem einzigen grellroten Punkt und nervösem Bewohner daneben.
+
+## Bild 16
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Zwei Punkte bedeuten tägliche Kontrollen bis zum Morgen.“ Zwei rote Punkte an Tür, zwei Wachmänner stehen streng davor.
+
+## Bild 17
+BILDPROMPT:
+16:9. Nahaufnahme. „Drei Punkte bedeuten, dass deine Vorhänge entfernt werden.“ Hände eines Beamten reißen Vorhang von der Stange, Fenster wird komplett offen sichtbar.
+
+## Bild 18
+BILDPROMPT:
+16:9. Halbtotale. „Privatsphäre ist hier weniger wichtig als offene Augen.“ Helles Zimmer komplett einsehbar, Bewohner sitzt erschöpft mitten darin.
+
+## Bild 19
+BILDPROMPT:
+16:9. POV. „Die Stadt nennt das nicht Überwachung, sondern Wachschutz.“ Überdimensioniertes Wachsymbol über mehreren Fenstern, Beobachter blickt skeptisch darauf.
+
+## Bild 20
+BILDPROMPT:
+16:9. Weite Totale. „Und Regel zwei macht selbst dein Bett verdächtig.“ Bett steht allein im hellen Raum und wird von rotem Suchlicht erfasst.
+
+## Bild 21
+BILDPROMPT:
+16:9. Detail. „Regel zwei: Betten sind nachts offiziell Schlafwerkzeuge.“ Bett mit amtlicher Sperrmarkierung, daneben irritierter Bewohner.
+
+## Bild 22
+BILDPROMPT:
+16:9. Leichte Untersicht. „Um 23:45 klappen Hotelbetten senkrecht an die Wand.“ Mehrere Hotelbetten klappen gleichzeitig hoch, Gäste springen erschrocken auf.
+
+## Bild 23
+BILDPROMPT:
+16:9. Seitenansicht. „In Wohnungen verschwinden Decken in versiegelten Schränken.“ Decken werden in schweren Metallschrank geschoben und versiegelt.
+
+## Bild 24
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Kissen dürfen nur mit Tagesstempel benutzt werden.“ Kissen liegt unter großer Prüfmarke, müder Bewohner hält es vorsichtig.
+
+## Bild 25
+BILDPROMPT:
+16:9. Nahaufnahme. „Wer nachts eines trägt, muss seinen Grund erklären.“ Beamter zeigt auf Kissen unter dem Arm eines nervösen Bewohners.
+
+## Bild 26
+BILDPROMPT:
+16:9. Halbtotale. „Die häufigste Ausrede lautet angeblich Rückenschmerzen.“ Bewohner hält sich übertrieben den Rücken, Beamter bleibt unbeeindruckt.
+
+## Bild 27
+BILDPROMPT:
+16:9. POV. „Deshalb kontrollieren Beamte inzwischen sogar Sofakissen.“ Behandschuhte Hände untersuchen Sofakissen wie Beweismaterial.
+
+## Bild 28
+BILDPROMPT:
+16:9. Weite Totale. „Viele Bewohner schlafen tagsüber in langen Schichten vor.“ Tagsüber schlafen Reihen von Bewohnern in hellen Zimmern gleichzeitig.
+
+## Bild 29
+BILDPROMPT:
+16:9. Detail. „Nachts sitzen sie dafür in Cafés und Waschsalons.“ Übermüdete Bewohner sitzen nachts zwischen Kaffee und Waschmaschinen.
+
+## Bild 30
+BILDPROMPT:
+16:9. Leichte Untersicht. „Die Stadt hat sogar öffentliche Stehpulte statt Parkbänke.“ Straße voller hoher Stehpulte, keine einzige Bank.
+
+## Bild 31
+BILDPROMPT:
+16:9. Seitenansicht. „Dort lehnt man, aber man legt sich nicht hin.“ Erschöpfter Bewohner hängt am Stehpult, Füße bleiben auf dem Boden.
+
+## Bild 32
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Einige bauen heimlich Matratzen aus Pappkartons.“ Bewohner baut im Hinterhof heimlich eine Kartonmatratze.
+
+## Bild 33
+BILDPROMPT:
+16:9. Nahaufnahme. „Die werden bei Kontrollen sofort auseinandergetreten.“ Schwarzer Stiefel zerdrückt Kartonmatratze, Bewohner schaut entsetzt.
+
+## Bild 34
+BILDPROMPT:
+16:9. Halbtotale. „Erwischt man dich zweimal, wird dein Schlafzimmer versiegelt.“ Schlafzimmertür mit schweren Metallstreben versiegelt.
+
+## Bild 35
+BILDPROMPT:
+16:9. POV. „Dann bleibt nur Regel drei, um wach auszusehen.“ Beobachter blickt in Spiegel und zwingt seine müden Augen weit auf.
+
+## Bild 36
+BILDPROMPT:
+16:9. Weite Totale. „Regel drei: Gähnen kostet Geld.“ Öffentliche Kontrollstelle beobachtet gähnende Menschen in einer Schlange.
+
+## Bild 37
+BILDPROMPT:
+16:9. Detail. „Das erste Gähnen kostet nur fünf Euro.“ Kleine Münzen wechseln direkt nach einem Gähnen den Besitzer.
+
+## Bild 38
+BILDPROMPT:
+16:9. Leichte Untersicht. „Beim zweiten werden daraus zwanzig.“ Größerer Geldstapel wird verlangt, Bewohner erschrickt.
+
+## Bild 39
+BILDPROMPT:
+16:9. Seitenansicht. „Beim dritten bekommst du ein gelbes Armband.“ Beamter schließt leuchtend gelbes Armband ums Handgelenk.
+
+## Bild 40
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Darauf steht nur: erhöhte Einschlafgefahr.“ Gelbes Armband groß im Bild, Warnsymbol klar, keine zusätzliche Textwand.
+
+## Bild 41
+BILDPROMPT:
+16:9. Nahaufnahme. „Ab dann darf dich jeder Wachmann kontrollieren.“ Wachmann greift sofort nach dem markierten Handgelenk.
+
+## Bild 42
+BILDPROMPT:
+16:9. Halbtotale. „Cafés verkaufen deshalb winzige, extrem starke Nachtkaffees.“ Barista reicht winzige dunkle Tasse an lange Reihe müder Gäste.
+
+## Bild 43
+BILDPROMPT:
+16:9. POV. „Sie kommen in Tassen kaum größer als ein Fingerhut.“ Winzige Tasse zwischen zwei Fingern, schwarzer Kaffee dampft bedrohlich.
+
+## Bild 44
+BILDPROMPT:
+16:9. Weite Totale. „Um drei Uhr morgens bilden sich davor lange Schlangen.“ Endlose Schlange vor grell beleuchtetem Nachtcafé.
+
+## Bild 45
+BILDPROMPT:
+16:9. Detail. „Manche kleben sich sogar den Mund mit Tape zu.“ Müder Bewohner klebt Tape über Mund, Augen halb geschlossen.
+
+## Bild 46
+BILDPROMPT:
+16:9. Leichte Untersicht. „Das funktioniert, bis die Augen von allein zufallen.“ Kopf kippt nach vorne, Augenlider schließen sich trotz Tape.
+
+## Bild 47
+BILDPROMPT:
+16:9. Seitenansicht. „Denn Kameras erkennen inzwischen auch langsames Blinzeln.“ Überwachungskamera verfolgt Augenbewegung eines Bewohners.
+
+## Bild 48
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Wer zu lange blinzelt, landet im Wachraum.“ Zwei Beamte führen müden Bewohner in grellen Raum.
+
+## Bild 49
+BILDPROMPT:
+16:9. Nahaufnahme. „Dort läuft Musik, Licht und kalte Luft gleichzeitig.“ Lautsprecher, grelle Lampe und Lüfter richten sich gleichzeitig auf Bewohner.
+
+## Bild 50
+BILDPROMPT:
+16:9. Halbtotale. „Doch selbst das hilft nicht bei Regel vier.“ Bewohner bleibt trotz Wachraum kurz vor dem Einschlafen.
+
+## Bild 51
+BILDPROMPT:
+16:9. POV. „Regel vier: Wenn jemand einschläft, weck ihn niemals.“ Schlafende Person am Boden, ausgestreckte Hand stoppt jeden, der sie berühren will.
+
+## Bild 52
+BILDPROMPT:
+16:9. Weite Totale. „Das klingt komplett falsch, ist aber die wichtigste Warnung.“ Kleine Gruppe steht ratlos um Schlafenden, alle halten Abstand.
+
+## Bild 53
+BILDPROMPT:
+16:9. Detail. „Nach ungefähr acht Minuten wacht die Person selbst wieder auf.“ Uhrzeiger bei acht Minuten, Augen der Person öffnen sich.
+
+## Bild 54
+BILDPROMPT:
+16:9. Leichte Untersicht. „Nur stimmt danach manchmal etwas nicht.“ Erwachte Figur sitzt aufrecht, Gesichtsausdruck fremd und unpassend ruhig.
+
+## Bild 55
+BILDPROMPT:
+16:9. Seitenansicht. „Ein Bäcker kennt plötzlich jedes Detail einer Herzoperation.“ Bäcker zeichnet präzise Herzskizze neben Broten.
+
+## Bild 56
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Eine Lehrerin spricht eine Sprache, die niemand erkennt.“ Lehrerin gestikuliert vor verwirrten Zuhörern, fremde Lautsymbole nur abstrakt visualisieren.
+
+## Bild 57
+BILDPROMPT:
+16:9. Nahaufnahme. „Ein Kind behauptet, seit vierzig Jahren verheiratet zu sein.“ Kind zeigt ernst auf alten Ehering, Erwachsene wirken fassungslos.
+
+## Bild 58
+BILDPROMPT:
+16:9. Halbtotale. „Und manche wissen ihren eigenen Namen nicht mehr.“ Erwachsener zeigt ratlos auf sich selbst, Namensschild bleibt leer.
+
+## Bild 59
+BILDPROMPT:
+16:9. POV. „Die Stadt nennt diese Menschen Rückkehrer.“ Mehrere veränderte Bewohner stehen getrennt hinter grauer Linie.
+
+## Bild 60
+BILDPROMPT:
+16:9. Weite Totale. „Man darf sie nicht berühren und nichts vorsagen.“ Familien stehen hinter Absperrung, Rückkehrer allein davor.
+
+## Bild 61
+BILDPROMPT:
+16:9. Detail. „Vor allem darf man ihnen keine Familienfotos zeigen.“ Hand zieht Familienfoto schnell aus Sichtfeld eines Rückkehrers.
+
+## Bild 62
+BILDPROMPT:
+16:9. Leichte Untersicht. „Sie sollen selbst beweisen, wer sie sind.“ Rückkehrer steht vor mehreren einfachen Identitätsobjekten und muss wählen.
+
+## Bild 63
+BILDPROMPT:
+16:9. Seitenansicht. „Wer falsch antwortet, wird in einen grauen Bus gesetzt.“ Graue Bustür öffnet sich, Beamte führen eine Person hinein.
+
+## Bild 64
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Niemand weiß genau, wohin dieser Bus fährt.“ Grauer Bus verschwindet allein in dunkler gerader Straße.
+
+## Bild 65
+BILDPROMPT:
+16:9. Nahaufnahme. „Aber Regel fünf erklärt, warum Spiegel nachts verschwinden.“ Schwarzes Tuch wird langsam über Spiegel gezogen.
+
+## Bild 66
+BILDPROMPT:
+16:9. Halbtotale. „Regel fünf: Nach Mitternacht werden alle Spiegel abgedeckt.“ Badezimmer mit vollständig verhülltem Spiegel, Bewohner davor.
+
+## Bild 67
+BILDPROMPT:
+16:9. POV. „Geschäfte ziehen schwarze Rollos über jede Glasfläche.“ Ladenfronten werden gleichzeitig mit schwarzen Rollos geschlossen.
+
+## Bild 68
+BILDPROMPT:
+16:9. Weite Totale. „In Badezimmern hängen schwere Tücher vor dem Spiegel.“ Reihe identischer Badezimmer mit schweren dunklen Tüchern.
+
+## Bild 69
+BILDPROMPT:
+16:9. Detail. „Sogar glänzende Löffel werden in Schubladen gesperrt.“ Mehrere glänzende Löffel verschwinden in abgeschlossener Schublade.
+
+## Bild 70
+BILDPROMPT:
+16:9. Leichte Untersicht. „Der Grund ist nicht, dass Spiegel müde machen.“ Beobachter zieht Tuch leicht an und schaut misstrauisch darunter.
+
+## Bild 71
+BILDPROMPT:
+16:9. Seitenansicht. „Manchmal schließt dein Spiegelbild die Augen vor dir.“ Beobachter hat offene Augen, Spiegelbild dahinter hat sie geschlossen.
+
+## Bild 72
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Du selbst bist dabei noch völlig wach.“ Beobachter und Spiegelbild frontal gegenüber, nur das Spiegelbild wirkt schläfrig.
+
+## Bild 73
+BILDPROMPT:
+16:9. Nahaufnahme. „Ein paar Sekunden später lächelt es vielleicht sogar.“ Spiegelbild beginnt allein unheimlich zu lächeln.
+
+## Bild 74
+BILDPROMPT:
+16:9. Halbtotale. „Auch wenn du überhaupt nicht lächelst.“ Beobachter ernst im Vordergrund, lächelndes Spiegelbild hinter ihm.
+
+## Bild 75
+BILDPROMPT:
+16:9. POV. „Wer das sieht, soll den Raum sofort verlassen.“ Tür wird hastig aufgerissen, Spiegel bleibt im Hintergrund.
+
+## Bild 76
+BILDPROMPT:
+16:9. Weite Totale. „Er darf sich auf keinen Fall noch einmal umdrehen.“ Figur rennt durch Flur, Spiegelraum bleibt offen hinter ihr.
+
+## Bild 77
+BILDPROMPT:
+16:9. Detail. „Die Stadt behauptet, Reflexionen seien nur Fehlanzeigen.“ Amtliches Symbol auf abgedecktem Spiegel, Bewohner blickt skeptisch.
+
+## Bild 78
+BILDPROMPT:
+16:9. Leichte Untersicht. „Trotzdem bezahlt sie jeden zerbrochenen Spiegel ohne Fragen.“ Beamter reicht Geld, während zerbrochene Spiegelstücke in Kiste liegen.
+
+## Bild 79
+BILDPROMPT:
+16:9. Seitenansicht. „Nach vier Uhr werden selbst Schaufenster mit Farbe besprüht.“ Arbeiter sprüht matte Farbe über spiegelndes Schaufenster.
+
+## Bild 80
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Und kurz vor sechs wird die ganze Stadt plötzlich leer.“ Große Straße wird innerhalb weniger Schritte menschenleer.
+
+## Bild 81
+BILDPROMPT:
+16:9. Nahaufnahme. „Regel sechs: Um 05:55 darf niemand draußen sein.“ Große Uhr zeigt 05:55, letzter Bewohner läuft hastig ins Gebäude.
+
+## Bild 82
+BILDPROMPT:
+16:9. Halbtotale. „Fünf Minuten vorher ertönt eine langsame Sirene.“ Sirenenmast über Straße, Bewohner reagieren sofort.
+
+## Bild 83
+BILDPROMPT:
+16:9. POV. „Busse halten an, Cafés verriegeln ihre Türen.“ Bustür schließt, Café-Riegel rastet gleichzeitig ein.
+
+## Bild 84
+BILDPROMPT:
+16:9. Weite Totale. „Selbst Wachmänner verschwinden aus den Straßen.“ Mehrere Wachmänner gehen gleichzeitig in Seitentüren.
+
+## Bild 85
+BILDPROMPT:
+16:9. Detail. „Von 05:55 bis 06:01 bleibt alles leer.“ Leere Kreuzung mit Uhr und stillstehenden Ampeln.
+
+## Bild 86
+BILDPROMPT:
+16:9. Leichte Untersicht. „Nur die grauen Busse fahren dann noch.“ Grauer Bus fährt allein zwischen hohen leeren Häusern.
+
+## Bild 87
+BILDPROMPT:
+16:9. Seitenansicht. „Sie sammeln Menschen mit roten Punkten und gelben Armbändern ein.“ Markierte Personen steigen schweigend in grauen Bus.
+
+## Bild 88
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Manchmal steigen auch Rückkehrer freiwillig dazu.“ Rückkehrer gehen selbstständig in offene Bustür.
+
+## Bild 89
+BILDPROMPT:
+16:9. Nahaufnahme. „Die Fenster der Busse sind komplett schwarz.“ Schwarze reflektionslose Busfenster füllen das Bild.
+
+## Bild 90
+BILDPROMPT:
+16:9. Halbtotale. „An Kreuzungen warten sie niemals an roten Ampeln.“ Grauer Bus fährt durch rote Ampel in menschenleerer Kreuzung.
+
+## Bild 91
+BILDPROMPT:
+16:9. POV. „Wer aus dem Fenster schaut, sieht nur ihre Rücklichter.“ Blick aus dunklem Fenster auf zwei rote Rücklichter in der Ferne.
+
+## Bild 92
+BILDPROMPT:
+16:9. Weite Totale. „Nach sechs öffnen alle Türen gleichzeitig wieder.“ Türen entlang ganzer Straße öffnen sich synchron.
+
+## Bild 93
+BILDPROMPT:
+16:9. Detail. „Die Straßen sehen aus, als wäre nichts passiert.“ Saubere normale Straße bei kaltem Morgenlicht, keine Busse mehr.
+
+## Bild 94
+BILDPROMPT:
+16:9. Leichte Untersicht. „Nur manche Wohnungen haben plötzlich neue Namensschilder.“ Frisches Namensschild wird an alte Tür geschraubt.
+
+## Bild 95
+BILDPROMPT:
+16:9. Seitenansicht. „Und deshalb gibt es noch eine letzte Regel.“ Beobachter steht vor roter Lampe und einer letzten verschlossenen Tür.
+
+## Bild 96
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Regel sieben: Wenn du dich nicht ans Einschlafen erinnerst, schweig.“ Verwirrter Bewohner hält sich den Mund zu und blickt auf unbekannte Wohnung.
+
+## Bild 97
+BILDPROMPT:
+16:9. Nahaufnahme. „Vor allem sag niemandem deinen Namen.“ Finger vor Mund, dahinter prüfender Wachmann.
+
+## Bild 98
+BILDPROMPT:
+16:9. Halbtotale. „Nicht dem Wachmann, nicht deinem Nachbarn, niemandem.“ Bewohner steht zwischen Wachmann und Nachbar und schweigt.
+
+## Bild 99
+BILDPROMPT:
+16:9. POV. „Zuerst sollst du drei einfache Dinge prüfen.“ Drei alltägliche Prüfobjekte liegen auf Tisch: Türcodefeld, Stift, altes Foto.
+
+## Bild 100
+BILDPROMPT:
+16:9. Weite Totale. „Kennst du den Code deiner Wohnungstür?“ Bewohner steht ratlos vor Zahlentastatur seiner eigenen Tür.
+
+## Bild 101
+BILDPROMPT:
+16:9. Detail. „Weißt du, welche Hand du zum Schreiben benutzt?“ Zwei Hände über Stift, Bewohner zögert sichtbar.
+
+## Bild 102
+BILDPROMPT:
+16:9. Leichte Untersicht. „Und erkennst du dich auf einem alten Foto sofort?“ Altes Foto in Hand, Gesicht des Betrachters wirkt unsicher.
+
+## Bild 103
+BILDPROMPT:
+16:9. Seitenansicht. „Wenn eine Antwort fehlt, geh nicht nach Hause.“ Bewohner stoppt direkt vor eigener Haustür und dreht wieder um.
+
+## Bild 104
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Stell dich stattdessen unter die nächste rote Lampe.“ Einsame Figur steht exakt unter grellroter Straßenlampe.
+
+## Bild 105
+BILDPROMPT:
+16:9. Nahaufnahme. „Dort holt dich ein Prüfer mit schwarzer Maske ab.“ Schwarze Maske taucht aus Dunkelheit unter rotem Licht auf.
+
+## Bild 106
+BILDPROMPT:
+16:9. Halbtotale. „Er fragt nicht, wer du bist.“ Maskierter Prüfer sitzt ruhig gegenüber der Figur, Akte bleibt geschlossen.
+
+## Bild 107
+BILDPROMPT:
+16:9. POV. „Er fragt nur, wer du gestern warst.“ Prüfer deutet auf altes Foto und auf die Figur zugleich.
+
+## Bild 108
+BILDPROMPT:
+16:9. Weite Totale. „Denn ein ausgesprochener Name wird in dieser Stadt registriert.“ Großer Registriersaal mit einzelnen Namenskarten und stillen Beamten.
+
+## Bild 109
+BILDPROMPT:
+16:9. Detail. „Sagst du den falschen, gehört er danach trotzdem dir.“ Falsches Namensschild wird endgültig auf eine Akte geklemmt.
+
+## Bild 110
+BILDPROMPT:
+16:9. Leichte Untersicht. „Genau davor schützen die anderen sechs Regeln.“ Sechs frühere Warnmotive kreisen um eine einzelne Figur und bilden Schutzring.
+
+## Bild 111
+BILDPROMPT:
+16:9. Seitenansicht. „Die Stadt verbietet Schlaf also nicht wegen Müdigkeit.“ Beobachter blickt auf ganze Stadt, Wachsysteme im Hintergrund.
+
+## Bild 112
+BILDPROMPT:
+16:9. Symmetrische Ansicht. „Sie versucht zu verhindern, dass jemand anderes in dir aufwacht.“ Eine Figur steht frontal, dahinter zweite leicht versetzte Silhouette im selben Körper.
+
+## Bild 113
+BILDPROMPT:
+16:9. Nahaufnahme. „Vielleicht funktionieren die sieben Regeln sogar.“ Erschöpfter Beobachter atmet kurz erleichtert auf.
+
+## Bild 114
+BILDPROMPT:
+16:9. Halbtotale. „Nur erklärt das nicht, warum dein Spiegel gerade lächelt.“ Beobachter steht regungslos vor Spiegel; Spiegelbild lächelt allein.
+
+## Bild 115
+BILDPROMPT:
+16:9. POV. „Obwohl du es nicht tust.“ Extrem naher Blick auf Spiegel: reales Gesicht neutral, Spiegelbild mit breitem unheimlichem Lächeln. Dunkles Ende, keine Schrift.
