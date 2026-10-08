@@ -8,8 +8,8 @@ Deutscher eigenständiger 2D-Dark-Grotesque-Stickman-Comic: schwarze, deutlich h
 16:9, klare Formen, starke Gesichter und räumliche Szenen statt Textkarten. Kein Fotorealismus, kein 3D/Pixar, kein Wasserzeichen, keine Pseudoschrift, sichtbare Schrift nur korrektes Deutsch.
 
 
-## 5ER-PRODUKTIONSBLOCK
-Erzeuge ausschließlich Bild 06 bis Bild 10. Erst nach allen Blöcken gesammelt herunterladen.
+## VERBINDLICHER 5ER-PRODUKTIONSBLOCK
+Erzeuge ausschließlich Bilder 06 bis 10. Erst nach Abschluss aller Blöcke einmal gesammelt herunterladen.
 
 ## Bild 06
 BILDPROMPT:

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "batchSize": 5,
-  "totalImages": 131,
+  "totalImages": 120,
   "batches": [
     {
       "batch": 1,
@@ -170,27 +170,6 @@
       "to": 120,
       "count": 5,
       "file": "24-bilder-116-120.txt"
-    },
-    {
-      "batch": 25,
-      "from": 121,
-      "to": 125,
-      "count": 5,
-      "file": "25-bilder-121-125.txt"
-    },
-    {
-      "batch": 26,
-      "from": 126,
-      "to": 130,
-      "count": 5,
-      "file": "26-bilder-126-130.txt"
-    },
-    {
-      "batch": 27,
-      "from": 131,
-      "to": 131,
-      "count": 1,
-      "file": "27-bilder-131-131.txt"
     }
   ]
 }

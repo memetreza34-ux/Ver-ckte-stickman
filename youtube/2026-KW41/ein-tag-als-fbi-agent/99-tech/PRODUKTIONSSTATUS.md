@@ -1,7 +1,7 @@
-# Phase 1 erstellt
+# Phase 1 bereit
 
-1319 Wörter, 131 individuelle Bildmomente, 27 Flow-Batches zu je maximal fünf Bildern. Geschätzte Laufzeit 454s. Nach Erzeugung des finalen Voice-overs bitte die tatsächliche Dauer messen und erforderlichenfalls Text ergänzen, statt Standbilder zu strecken.
+1206 Wörter, geplante Ziel-Laufzeit 400 Sekunden (6:40), 120 individuelle Bildmomente und 24 5er-Batches im Repo. Das reale finale Voice-over kann leicht abweichen und muss vor dem Render gemessen werden.
 
-Alle Masterprompts und Batches liegen bereits im Repo. Es gibt bewusst keine SCENE_PLAN.json, da der alte Materialisierer sonst die individuellen Prompts überschreibt.
+Kein SCENE_PLAN.json: der alte Materialisierer darf die individuellen Bilder nicht durch generische Prompts ersetzen.
 
-Noch nicht fertig: Bilddateien, Voice-over, Video, Thumbnail, zeitgenaues UNTERTITEL_SCRIPT.txt. Diese entstehen erst nach der Produktion und Whisper-Alignment.
+Zur Fertigstellung fehlen noch generierte Bilder und Sprecher-Audio. MP4/Thumbnail und echtes 10-Sekunden-Transkript erst nach Audio-Alignment und Render.
