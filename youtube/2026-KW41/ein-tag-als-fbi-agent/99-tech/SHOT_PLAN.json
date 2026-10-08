@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "scenes": [
+    {
+      "image": 1,
+      "section": "intro",
+      "speech": "Du bist FBI-Agent.",
+      "visual": "Agent mit dunkelblauer Jacke nimmt Telefon ab"
+    },
+    {
+      "image": 2,
+      "section": "intro",
+      "speech": "Es ist kurz nach sieben, als dein Diensthandy klingelt.",
+      "visual": "vibrierendes Telefon neben Kaffee und Uhr"
+    },
+    {
+      "image": 3,
+      "section": "intro",
+      "speech": "Eine ältere Frau berichtet, dass ihre gesamten Ersparnisse verschwunden sind.",
+      "visual": "betroffene Frau am Küchentisch mit Bankunterlagen"
+    },
+    {
+      "image": 4,
+      "section": "intro",
+      "speech": "Sie hatte einer Hilfsorganisation Geld für bedürftige Familien gespendet.",
+      "visual": "Spendenprospekt mit gezeichnetem Teller Suppe"
+    },
+    {
+      "image": 5,
+      "section": "intro",
+      "speech": "Doch an der angegebenen Adresse scheint gar kein Büro zu existieren.",
+      "visual": "leerer Laden mit verschlossenem Rollladen"
+    },
+    {
+      "image": 6,
+      "section": "intro",
+      "speech": "Und am Nachmittag soll dieselbe Organisation schon wieder Spenden sammeln.",
+      "visual": "Kalender mit rotem Kreis neben neuem Spendenflyer"
+    },
+    {
+      "image": 7,
+      "section": "intro",
+      "speech": "Du weißt noch nicht, wer dahintersteckt, aber die Uhr läuft.",
+      "visual": "Agent vor riesiger Wanduhr und Aktenmappe"
+    },
+    {
+      "image": 8,
+      "section": "intro",
+      "speech": "Bevor du jemanden beschuldigst, brauchst du zuerst belastbare Beweise.",
+      "visual": "Agent hält leere Beweismappe vor dunkler Verdachtssilhouette"
+    },
+    {
+      "image": 9,
+      "section": "briefing",
+      "speech": "Im FBI-Büro warten keine Explosionen, sondern ein voller Schreibtisch.",
+      "visual": "breites Büro, acht Aktenstapel, unspektakulärer Alltag"
+    },
+    {
+      "image": 10,
+      "section": "briefing",
+      "speech": "Deine Partnerin reicht dir eine Mappe mit weiteren Beschwerden.",
+      "visual": "Partnerin braunes Haar, oranger Schal, schiebt Mappe hin"
+    },
+    {
+      "image": 11,
+      "section": "briefing",
+      "speech": "Die angebliche Stiftung verspricht Mahlzeiten für Familien mit wenig Geld.",
+      "visual": "Spendenbrief mit schlichtem Suppen-Symbol"
+    },
+    {
+      "image": 12,
+      "section": "briefing",
+      "speech": "Manche Opfer spendeten zwanzig Dollar, andere ihren ganzen Monatslohn.",
+      "visual": "Reihe kleiner und großer Geldbelege"
+    },
+    {
+      "image": 13,
+      "section": "briefing",
+      "speech": "Die Beschwerden stammen aus mehreren Bundesstaaten, nicht nur einer Stadt.",
+      "visual": "USA-Karte mit rot markierten Städten"
+    },
+    {
+      "image": 14,
+      "section": "briefing",
+      "speech": "Damit könnte mehr dahinterstecken als ein einzelnes Missverständnis.",
+      "visual": "einzelne Fäden verbinden mehrere Umschläge"
+    },
+    {
+      "image": 15,
+      "section": "briefing",
+      "speech": "Ein Analyst zeigt auf dem Bildschirm, welche Hinweise schon bekannt sind.",
+      "visual": "Analyst mit Brille und violettem Pullover vor Monitor"
+    },
+    {
+      "image": 16,
+      "section": "briefing",
+      "speech": "Dein Vorgesetzter will aber keine wilde Theorie hören, sondern Fakten.",
+      "visual": "Chef deutet auf Spalten VERMUTUNG und BEWEIS"
+    },
+    {
+      "image": 17,
+      "section": "briefing",
+      "speech": "Die Adresse ist bekannt, die betroffenen Menschen ebenso, aber kein Täter.",
+      "visual": "Beweistafel mit Lücke in der Mitte"
+    },
+    {
+      "image": 18,
+      "section": "briefing",
+      "speech": "Ein Kollege will sofort den Gebäudebesitzer verdächtigen, doch du stoppst ihn.",
+      "visual": "Agent hält eifrigen Kollegen von großem Hausfoto zurück"
+    },
+    {
+      "image": 19,
+      "section": "briefing",
+      "speech": "Denn dieselbe Adresse kann von vielen völlig unterschiedlichen Personen genutzt werden.",
+      "visual": "Briefkasten und verschiedene anonyme Silhouetten"
+    },
+    {
+      "image": 20,
+      "section": "briefing",
+      "speech": "Ihr teilt die Aufgaben auf, bevor das erste Team loszieht.",
+      "visual": "Team verteilt farbige Akten am Tisch"
+    },
+    {
+      "image": 21,
+      "section": "briefing",
+      "speech": "Deine Partnerin kümmert sich um Gespräche, andere prüfen Dokumente.",
+      "visual": "zweigeteiltes Bild Gesprächsraum und Aktenbüro"
+    },
+    {
+      "image": 22,
+      "section": "briefing",
+      "speech": "Du selbst sollst herausfinden, welche Hinweise wirklich zusammengehören.",
+      "visual": "Agent verbindet rote Punkte auf Beweistafel"
+    },
+    {
+      "image": 23,
+      "section": "briefing",
+      "speech": "Dein Kaffee ist dabei schon wieder kalt geworden.",
+      "visual": "Kaffeebecher zwischen Computertastatur und Ordnern"
+    },
+    {
+      "image": 24,
+      "section": "zeugen",
+      "speech": "Um neun sitzt die Geschädigte dir direkt gegenüber.",
+      "visual": "kleine Besprechung, Frau in ockerfarbener Jacke"
+    },
+    {
+      "image": 25,
+      "section": "zeugen",
+      "speech": "Ihre Hände zittern ein wenig, als sie den Spendenbrief auspackt.",
+      "visual": "Nahaufnahme zitternde Hände mit zerknittertem Umschlag"
+    },
+    {
+      "image": 26,
+      "section": "zeugen",
+      "speech": "Du fragst, wie sie die Organisation ursprünglich gefunden hat.",
+      "visual": "Agent hört zu, Partnerin notiert leise"
+    },
+    {
+      "image": 27,
+      "section": "zeugen",
+      "speech": "Sie hatte eine freundliche Anzeige zwischen normalen Nachrichten gesehen.",
+      "visual": "Smartphone mit dezenter Spendengrafik"
+    },
+    {
+      "image": 28,
+      "section": "zeugen",
+      "speech": "Später meldete sich ein Mitarbeiter und sprach erstaunlich persönlich mit ihr.",
+      "visual": "Silhouette aus Telefonhörer wirkt freundlich"
+    },
+    {
+      "image": 29,
+      "section": "zeugen",
+      "speech": "Der Mann kannte ihren Namen, ihren Wohnort und sogar ihre Sorgen.",
+      "visual": "Frau schaut überrascht aufs Telefon"
+    },
+    {
+      "image": 30,
+      "section": "zeugen",
+      "speech": "Das wirkte vertrauenswürdig, obwohl sie ihn nie persönlich getroffen hatte.",
+      "visual": "Frau vor Telefon, Schatten entfernt sich"
+    },
+    {
+      "image": 31,
+      "section": "zeugen",
+      "speech": "Nach der Überweisung bekam sie eine Quittung und eine nette Dankeskarte.",
+      "visual": "Beleg und freundliche Karte auf Küchenplatte"
+    },
+    {
+      "image": 32,
+      "section": "zeugen",
+      "speech": "Drei Wochen später erreichte sie plötzlich niemanden mehr.",
+      "visual": "Handy mit nicht erreichbarem Anruf"
+    },
+    {
+      "image": 33,
+      "section": "zeugen",
+      "speech": "Du lässt sie in Ruhe erzählen, auch wenn der Zeitdruck steigt.",
+      "visual": "Agent blickt auf Uhr, hält Hände beruhigend offen"
+    },
+    {
+      "image": 34,
+      "section": "zeugen",
+      "speech": "Kurz vor dem Ende erwähnt sie noch einen zweiten Brief.",
+      "visual": "Frau zieht anderen Umschlag aus Handtasche"
+    },
+    {
+      "image": 35,
+      "section": "zeugen",
+      "speech": "Den hatte sie für gewöhnliche Werbung gehalten und beinahe weggeworfen.",
+      "visual": "Papierkorb voller Werbeflyer, einzelner Umschlag"
+    },
+    {
+      "image": 36,
+      "section": "zeugen",
+      "speech": "Die Absenderadressen unterscheiden sich, aber deine Partnerin bemerkt etwas anderes.",
+      "visual": "zwei Schreiben nebeneinander unter Lampe"
+    },
+    {
+      "image": 37,
+      "section": "zeugen",
+      "speech": "In beiden Briefen wurde derselbe Ortsname auf dieselbe Weise falsch geschrieben.",
+      "visual": "zwei Papierausschnitte mit identisch rotem Rechtschreibkreis"
+    },
+    {
+      "image": 38,
+      "section": "zeugen",
+      "speech": "Das ist natürlich kein Geständnis und auch kein Beweis für Betrug.",
+      "visual": "Agent hält Stempel mit Fragezeichen zurück"
+    },
+    {
+      "image": 39,
+      "section": "zeugen",
+      "speech": "Aber plötzlich lassen sich diese beiden Schreiben sinnvoll miteinander vergleichen.",
+      "visual": "zwei Umschläge mit roter verbindender Linie"
+    },
+    {
+      "image": 40,
+      "section": "zeugen",
+      "speech": "Die Frau geht nach Hause, und ihr habt wenigstens einen Ansatz.",
+      "visual": "Zeugin geht, Partnerin hält beide Briefe"
+    },
+    {
+      "image": 41,
+      "section": "spuren",
+      "speech": "Jetzt beginnt der Teil, der im Actionfilm höchstens zehn Sekunden dauert.",
+      "visual": "Aktenberge gegenüber kleinem Kinoposter"
+    },
+    {
+      "image": 42,
+      "section": "spuren",
+      "speech": "Du sitzt am Computer und vergleichst eingegangene Meldungen.",
+      "visual": "Agent vergleicht Dokumentenfenster am Bildschirm"
+    },
+    {
+      "image": 43,
+      "section": "spuren",
+      "speech": "Deine Partnerin telefoniert mit Kollegen aus einer anderen Stadt.",
+      "visual": "Partnerin am Telefon, zwei Stadtpunkte verbunden"
+    },
+    {
+      "image": 44,
+      "section": "spuren",
+      "speech": "Ein Analyst ordnet Daten und verdächtige Kontobewegungen in einer Übersicht.",
+      "visual": "Daten-Zeitleiste mit Pfeilen und Quittungen"
+    },
+    {
+      "image": 45,
+      "section": "spuren",
+      "speech": "Dabei passt längst nicht alles zu eurer ersten Vermutung.",
+      "visual": "mehrere widersprechende farbige Linien"
+    },
+    {
+      "image": 46,
+      "section": "spuren",
+      "speech": "Einer der Briefe trägt eine Adresse, die euch bereits aufgefallen war.",
+      "visual": "vergrößerter Umschlag und Briefkasten-Symbol"
+    },
+    {
+      "image": 47,
+      "section": "spuren",
+      "speech": "Das Gebäude gehört laut Unterlagen allerdings einer ganz anderen Firma.",
+      "visual": "normales Gewerbehaus mit zwei Schildern"
+    },
+    {
+      "image": 48,
+      "section": "spuren",
+      "speech": "Du rennst deshalb nicht hin und trittst einfach die Tür ein.",
+      "visual": "Agent hält Comic-Actionhelden vor Tür zurück"
+    },
+    {
+      "image": 49,
+      "section": "spuren",
+      "speech": "Stattdessen klärt ihr zunächst, wer dort arbeitet und welche Räume genutzt werden.",
+      "visual": "Gebäudeplan und Telefonverzeichnis"
+    },
+    {
+      "image": 50,
+      "section": "spuren",
+      "speech": "Der Hausmeister kennt die Hilfsorganisation nicht einmal vom Namen.",
+      "visual": "verwirrter Hausmeister vor Empfang"
+    },
+    {
+      "image": 51,
+      "section": "spuren",
+      "speech": "Er erinnert sich aber an regelmäßig abgeholte Stapel von Briefen.",
+      "visual": "Paketwagen vor Reihe Briefkästen"
+    },
+    {
+      "image": 52,
+      "section": "spuren",
+      "speech": "Diese Aussage passt zu den Sendungen, beweist aber noch keine Täterschaft.",
+      "visual": "Briefstapel und offene Silhouette mit Fragezeichen"
+    },
+    {
+      "image": 53,
+      "section": "spuren",
+      "speech": "Ihr dokumentiert die Information und gebt sie an die zuständigen Kollegen weiter.",
+      "visual": "Agent übergibt Mappe an Fachteam"
+    },
+    {
+      "image": 54,
+      "section": "spuren",
+      "speech": "Genau dann klingelt dein Handy zum zweiten Mal an diesem Tag.",
+      "visual": "leuchtendes Telefon vor großem Uhrzeiger"
+    },
+    {
+      "image": 55,
+      "section": "spuren",
+      "speech": "Die Frau hat gerade wieder einen Anruf von der Organisation erhalten.",
+      "visual": "Geschädigte telefoniert verstört am Küchentisch"
+    },
+    {
+      "image": 56,
+      "section": "spuren",
+      "speech": "Der angebliche Mitarbeiter bittet um eine weitere Überweisung für einen Notfall.",
+      "visual": "drohende Schattenhand über Geldbörse"
+    },
+    {
+      "image": 57,
+      "section": "spuren",
+      "speech": "Ihr wisst jetzt, dass die angebliche Spendenaktion offenbar noch nicht abgeschlossen ist.",
+      "visual": "neues Spendenplakat neben Fallakte"
+    },
+    {
+      "image": 58,
+      "section": "spuren",
+      "speech": "Damit wird aus einer alten Beschwerde plötzlich ein dringender aktueller Hinweis.",
+      "visual": "roter Kalenderkreis und Agent schaut auf Partnerin"
+    },
+    {
+      "image": 59,
+      "section": "plan",
+      "speech": "Dein erster Impuls wäre, dem Anrufer sofort hinterherzufahren.",
+      "visual": "Agent greift hektisch nach Jacke"
+    },
+    {
+      "image": 60,
+      "section": "plan",
+      "speech": "Doch niemand weiß bislang sicher, wer dieser Mann überhaupt ist.",
+      "visual": "Reihe anonymer Gesichtssilhouetten"
+    },
+    {
+      "image": 61,
+      "section": "plan",
+      "speech": "Aus einer Telefonnummer lässt sich nicht einfach jede Antwort herauslesen.",
+      "visual": "Telefonkabel verzweigt sich in Fragezeichen"
+    },
+    {
+      "image": 62,
+      "section": "plan",
+      "speech": "Und ein unschuldiger Mensch soll nicht öffentlich als Betrüger dastehen.",
+      "visual": "verdutzter Paketbote mit falsch gesetztem Verdachtskreis"
+    },
+    {
+      "image": 63,
+      "section": "plan",
+      "speech": "Eine Kollegin findet den Ort der angekündigten Veranstaltung im Internet.",
+      "visual": "Bildschirm mit schlichter Saalansicht und Kalender"
+    },
+    {
+      "image": 64,
+      "section": "plan",
+      "speech": "Es ist ein normaler gemieteter Raum, kein geheimes Hauptquartier.",
+      "visual": "einfacher Eventsaal mit Kunststoffstühlen"
+    },
+    {
+      "image": 65,
+      "section": "plan",
+      "speech": "Dein Team berät, welche Beobachtungen dort wirklich relevant wären.",
+      "visual": "ernstes Teamgespräch um Tisch"
+    },
+    {
+      "image": 66,
+      "section": "plan",
+      "speech": "Eine erfahrene Ermittlerin stellt dir eine ziemlich unangenehme Frage.",
+      "visual": "ältere Kollegin blickt Agent kritisch an"
+    },
+    {
+      "image": 67,
+      "section": "plan",
+      "speech": "Würdest du einen Menschen an seiner Jacke oder nur an seiner Tasche erkennen?",
+      "visual": "drei ähnliche Figuren mit Taschen"
+    },
+    {
+      "image": 68,
+      "section": "plan",
+      "speech": "Du musst zugeben, dass du dafür bisher keinen guten Grund hättest.",
+      "visual": "Agent betrachtet leere Begründungszeile"
+    },
+    {
+      "image": 69,
+      "section": "plan",
+      "speech": "Also plant ihr kein Heldensolo, sondern eine abgestimmte Überprüfung.",
+      "visual": "Agent zerknüllt Actionhelden-Skizze, Team bleibt"
+    },
+    {
+      "image": 70,
+      "section": "plan",
+      "speech": "Die Kollegen legen fest, wer welche Aufgabe übernimmt und was dokumentiert wird.",
+      "visual": "Team zeigt auf neutrale Aufgabenübersicht"
+    },
+    {
+      "image": 71,
+      "section": "plan",
+      "speech": "Am frühen Nachmittag fahrt ihr los und landet erst einmal im Stau.",
+      "visual": "Dienstwagen in langer Autoschlange"
+    },
+    {
+      "image": 72,
+      "section": "plan",
+      "speech": "Die spannendste Waffe auf dieser Fahrt ist das Geduldsspiel an der Ampel.",
+      "visual": "Agent starrt genervt auf rote Ampel"
+    },
+    {
+      "image": 73,
+      "section": "saal",
+      "speech": "Von außen sieht das Gebäude aus wie jeder andere Veranstaltungssaal.",
+      "visual": "grau-ockerfarbenes Gebäude bei Tageslicht"
+    },
+    {
+      "image": 74,
+      "section": "saal",
+      "speech": "Drinnen stehen Plastikpflanzen, Kaffeekannen und ein Tisch voller Spendenbroschüren.",
+      "visual": "Saal mit Pflanzen und Flyern"
+    },
+    {
+      "image": 75,
+      "section": "saal",
+      "speech": "Besucher kommen, weil sie offenbar etwas Gutes tun möchten.",
+      "visual": "Menschen sprechen freundlich am Spendenaussteller"
+    },
+    {
+      "image": 76,
+      "section": "saal",
+      "speech": "Du beobachtest zunächst die sichtbaren Abläufe und machst dir Notizen.",
+      "visual": "Agent am Rand des Saals mit Notizblock"
+    },
+    {
+      "image": 77,
+      "section": "saal",
+      "speech": "Deine Partnerin bemerkt einen Mann, der zwei schwere Kartons hinausträgt.",
+      "visual": "Kartonträger im Seitengang"
+    },
+    {
+      "image": 78,
+      "section": "saal",
+      "speech": "Ein jüngerer Kollege glaubt sofort, den gesuchten Organisator gefunden zu haben.",
+      "visual": "junger Ermittler zeigt auf Kartonträger"
+    },
+    {
+      "image": 79,
+      "section": "saal",
+      "speech": "Der Mann arbeitet aber lediglich für den Aufbaudienst und zeigt einen Lieferschein.",
+      "visual": "Lieferant zeigt Zettel neben Transportwagen"
+    },
+    {
+      "image": 80,
+      "section": "saal",
+      "speech": "Noch einmal wäre fast jemand ohne vernünftigen Grund verdächtigt worden.",
+      "visual": "Agent steckt voreilige Verdachtsnotiz weg"
+    },
+    {
+      "image": 81,
+      "section": "saal",
+      "speech": "Kurz danach kommt eine Frau mit einer knallroten Aktentasche herein.",
+      "visual": "Frau mit roter Aktentasche unter Deckenlicht"
+    },
+    {
+      "image": 82,
+      "section": "saal",
+      "speech": "Sie verteilt keine Flyer, sondern sammelt Unterlagen von mehreren Tischen.",
+      "visual": "Frau sortiert Akten neben Prospektständer"
+    },
+    {
+      "image": 83,
+      "section": "saal",
+      "speech": "Auf einem Briefbogen entdeckt ihr das Symbol der angeblichen Stiftung.",
+      "visual": "Symbol auf Blatt und altem Beleg nebeneinander"
+    },
+    {
+      "image": 84,
+      "section": "saal",
+      "speech": "Deine Partnerin vergleicht den Briefkopf mit den Unterlagen vom Morgen.",
+      "visual": "Partnerin hält Schreiben gegen Tabletanzeige"
+    },
+    {
+      "image": 85,
+      "section": "saal",
+      "speech": "Die Ähnlichkeit ist eindeutig, aber eine Straftat noch lange nicht bewiesen.",
+      "visual": "zwei ähnliche Umschläge, daneben Fragezeichen"
+    },
+    {
+      "image": 86,
+      "section": "saal",
+      "speech": "Du notierst deshalb genau, was du gesehen hast, nicht was du vermutest.",
+      "visual": "Agent schreibt sachlichen Notizzettel"
+    },
+    {
+      "image": 87,
+      "section": "saal",
+      "speech": "Die Frau geht schließlich mit ihren Unterlagen durch den normalen Ausgang.",
+      "visual": "rote Mappe verschwindet durch Foyertür"
+    },
+    {
+      "image": 88,
+      "section": "saal",
+      "speech": "Dein Team hat jetzt einen überprüfbaren Hinweis, keinen fertigen Fall.",
+      "visual": "Beweiswand mit neuem roten Pin"
+    },
+    {
+      "image": 89,
+      "section": "saal",
+      "speech": "Für die nächsten Schritte zählt, ob weitere Dokumente diese Verbindung bestätigen.",
+      "visual": "neue Papiere werden über frühe Umschläge gelegt"
+    },
+    {
+      "image": 90,
+      "section": "recht",
+      "speech": "Zurück im Wagen fühlst du dich kurz wie ein Filmheld.",
+      "visual": "Agent mit komischer Film-Pokal-Gedankenblase"
+    },
+    {
+      "image": 91,
+      "section": "recht",
+      "speech": "Dann fragt deine Partnerin, welche konkreten Beweise ihr eigentlich mitbringt.",
+      "visual": "Partnerin zeigt nüchtern auf Notizzettel"
+    },
+    {
+      "image": 92,
+      "section": "recht",
+      "speech": "Eine rote Tasche ist auffällig, aber noch kein Grund für eine Anklage.",
+      "visual": "rote Tasche neben großem Fragezeichen"
+    },
+    {
+      "image": 93,
+      "section": "recht",
+      "speech": "Im Büro arbeiten Kollegen weiter an den vorhandenen Geschäftsunterlagen.",
+      "visual": "Analysten prüfen Register und Dokumente"
+    },
+    {
+      "image": 94,
+      "section": "recht",
+      "speech": "Manche Einträge passen zum Bild, andere widersprechen der ersten Vermutung.",
+      "visual": "rot-blaue widersprüchliche Pfeile auf Falltafel"
+    },
+    {
+      "image": 95,
+      "section": "recht",
+      "speech": "Die Geldwege sind außerdem komplizierter als deine ursprüngliche Skizze.",
+      "visual": "Geldpfeile verzweigen sich auf Blatt"
+    },
+    {
+      "image": 96,
+      "section": "recht",
+      "speech": "An dieser Stelle hilft keine magische Computertaste, die sofort alles enthüllt.",
+      "visual": "Fantasy-Tastatur-Blitz wird durchgestrichen"
+    },
+    {
+      "image": 97,
+      "section": "recht",
+      "speech": "Wichtiger ist die Frage, welche Informationen rechtmäßig beschafft werden können.",
+      "visual": "Juristin mit Gesetzesordner am Tisch"
+    },
+    {
+      "image": 98,
+      "section": "recht",
+      "speech": "FBI-Ermittler arbeiten dabei auch mit den zuständigen Bundesstaatsanwälten zusammen.",
+      "visual": "Agent und Partnerin beraten mit Juristin"
+    },
+    {
+      "image": 99,
+      "section": "recht",
+      "speech": "Für bestimmte Durchsuchungen kann ein richterlicher Beschluss erforderlich sein.",
+      "visual": "Richterhammer neben versiegelter Mappe"
+    },
+    {
+      "image": 100,
+      "section": "recht",
+      "speech": "Eine Genehmigung erscheint nicht schneller, nur weil du ungeduldig wirst.",
+      "visual": "Agent vor Wanduhr, formale Prüfung"
+    },
+    {
+      "image": 101,
+      "section": "recht",
+      "speech": "Du überprüfst also noch einmal die Zusammenhänge zwischen Aussagen und Papieren.",
+      "visual": "Agent verbindet Dokumente mit farbigen Fäden"
+    },
+    {
+      "image": 102,
+      "section": "recht",
+      "speech": "Der Nachmittag geht vorbei, ohne dass irgendwer spektakulär vom Dach springt.",
+      "visual": "ruhiger Büroflur, Action-Schatten als leere Fantasie"
+    },
+    {
+      "image": 103,
+      "section": "recht",
+      "speech": "Trotzdem rückt ihr der Antwort Schritt für Schritt näher.",
+      "visual": "drei Puzzleteile ergeben fast vollständiges Bild"
+    },
+    {
+      "image": 104,
+      "section": "einsatz",
+      "speech": "Später meldet dein Team, dass die rechtlichen Voraussetzungen für weitere Schritte geklärt sind.",
+      "visual": "Telefon im Abendbüro, Team schaut auf"
+    },
+    {
+      "image": 105,
+      "section": "einsatz",
+      "speech": "Du fährst mit Kollegen zu einem unauffälligen Gewerberaum.",
+      "visual": "Ermittler vor schlichtem Gebäude in Abendlicht"
+    },
+    {
+      "image": 106,
+      "section": "einsatz",
+      "speech": "Dort könnten Unterlagen zur angeblichen Stiftung aufbewahrt werden.",
+      "visual": "Lagerraum hinter Glas mit Aktenkartons"
+    },
+    {
+      "image": 107,
+      "section": "einsatz",
+      "speech": "Die zuständigen Kräfte koordinieren den Ablauf, während du deine Aufgabe abwartest.",
+      "visual": "geordnete Teamgruppe vor Eingang"
+    },
+    {
+      "image": 108,
+      "section": "einsatz",
+      "speech": "Ein Teil dokumentiert, wie Räume und Gegenstände vorgefunden wurden.",
+      "visual": "Ermittler fotografiert Schreibtisch"
+    },
+    {
+      "image": 109,
+      "section": "einsatz",
+      "speech": "Andere Mitarbeiter kümmern sich um die rechtmäßige Sicherung relevanter Unterlagen.",
+      "visual": "behandschuhte Hände an geordnetem Aktenkarton"
+    },
+    {
+      "image": 110,
+      "section": "einsatz",
+      "speech": "Das sieht nicht nach einer spektakulären Verfolgungsjagd aus, sondern nach Arbeit.",
+      "visual": "Team schreibt Notizen im Büro"
+    },
+    {
+      "image": 111,
+      "section": "einsatz",
+      "speech": "Dann fällt deiner Partnerin ein bekannter Spendenbrief zwischen Geschäftsunterlagen auf.",
+      "visual": "Partnerin zieht Brief aus Karton"
+    },
+    {
+      "image": 112,
+      "section": "einsatz",
+      "speech": "Er hat denselben Aufbau wie die Quittung aus dem Zeugengespräch.",
+      "visual": "zwei Schreiben nebeneinander"
+    },
+    {
+      "image": 113,
+      "section": "einsatz",
+      "speech": "Und tatsächlich taucht auch der seltsame Schreibfehler erneut auf.",
+      "visual": "identisch rot umkreiste Buchstabenstelle"
+    },
+    {
+      "image": 114,
+      "section": "einsatz",
+      "speech": "Der kleine Fund beweist noch nicht, wer strafrechtlich verantwortlich ist.",
+      "visual": "Waage und offene Fallakte"
+    },
+    {
+      "image": 115,
+      "section": "einsatz",
+      "speech": "Aber er verbindet zwei Teile der Ermittlungen auf eine überprüfbare Weise.",
+      "visual": "rote Verbindungslinie zwischen Dokumenten und Karte"
+    },
+    {
+      "image": 116,
+      "section": "einsatz",
+      "speech": "Du erinnerst dich daran, wie die Frau ihren zweiten Brief fast weggeworfen hätte.",
+      "visual": "kurze Rückblende Frau mit Umschlag vor Papierkorb"
+    },
+    {
+      "image": 117,
+      "section": "einsatz",
+      "speech": "Ein unscheinbares Stück Papier kann am Ende mehr helfen als große Behauptungen.",
+      "visual": "winziger Brief neben großen nutzlosen Ausrufezeichen"
+    },
+    {
+      "image": 118,
+      "section": "einsatz",
+      "speech": "Das Team protokolliert seine Erkenntnisse und bearbeitet den Fall weiter.",
+      "visual": "mehrere Ermittler an sachlichem Berichtstisch"
+    },
+    {
+      "image": 119,
+      "section": "einsatz",
+      "speech": "Ob eine Anklage folgt, ist keine Entscheidung, die du allein triffst.",
+      "visual": "Gerichtsgebäude-Silhouette und Teamakten"
+    },
+    {
+      "image": 120,
+      "section": "ende",
+      "speech": "Es ist dunkel, als du endlich in dein Büro zurückkehrst.",
+      "visual": "Agent betritt leeres Nachtbüro"
+    },
+    {
+      "image": 121,
+      "section": "ende",
+      "speech": "Der Kaffee vom Morgen steht noch immer unangetastet neben deiner Tastatur.",
+      "visual": "kalter Kaffeebecher in Nahaufnahme"
+    },
+    {
+      "image": 122,
+      "section": "ende",
+      "speech": "Du schreibst einen Bericht, statt eine triumphale Rede zu halten.",
+      "visual": "Agent tippt am Rechner, leere Pokal-Gedankenblase"
+    },
+    {
+      "image": 123,
+      "section": "ende",
+      "speech": "Die Geschädigte bekommt eine Rückmeldung, aber keine erfundene Erfolgsgarantie.",
+      "visual": "ältere Frau am Telefon in warmer Küche"
+    },
+    {
+      "image": 124,
+      "section": "ende",
+      "speech": "Nicht jeder verlorene Dollar ist noch am selben Abend zurück.",
+      "visual": "Frau blickt auf leere Geldbörse"
+    },
+    {
+      "image": 125,
+      "section": "ende",
+      "speech": "Und nicht jeder Verdacht führt automatisch zu einer Festnahme.",
+      "visual": "unveränderte offene Akte vor Gerichtssymbol"
+    },
+    {
+      "image": 126,
+      "section": "ende",
+      "speech": "Aber aus verstreuten Hinweisen ist inzwischen eine nachvollziehbare Spur geworden.",
+      "visual": "Falltafel jetzt mit verbundenen Belegen"
+    },
+    {
+      "image": 127,
+      "section": "ende",
+      "speech": "Das funktioniert, weil Kollegen zuhören, prüfen und zusammenarbeiten.",
+      "visual": "Teamrunde vor Beweiswand"
+    },
+    {
+      "image": 128,
+      "section": "ende",
+      "speech": "Du machst das Licht aus und willst gerade nach Hause gehen.",
+      "visual": "Agent vor Lichtschalter mit Jacke"
+    },
+    {
+      "image": 129,
+      "section": "ende",
+      "speech": "Auf dem Parkplatz vibriert dein Diensthandy schon wieder.",
+      "visual": "Telefon leuchtet nachts in Tasche"
+    },
+    {
+      "image": 130,
+      "section": "ende",
+      "speech": "Du blickst auf den Bildschirm und musst unwillkürlich lachen.",
+      "visual": "müder Agent grinst über Telefon"
+    },
+    {
+      "image": 131,
+      "section": "ende",
+      "speech": "Denn ein Tag beim FBI endet selten so pünktlich, wie du ihn planst.",
+      "visual": "weite Nachtansicht FBI-Büro, Agent hält Telefon"
+    }
+  ]
+}

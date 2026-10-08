@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 9,
+  "contentPolicyVersion": 9,
+  "language": "de",
+  "topic": "Ein Tag als FBI-Agent",
+  "workingTitle": "Ein Tag als FBI-Agent – Vom ersten Hinweis bis zum Einsatz",
+  "contentMode": "hybrid",
+  "truthBoundary": {
+    "realElements": [
+      "FBI-Agenten führen Bundesermittlungen durch",
+      "Befragung, Dokumentation, Teamarbeit und Beweise gehören zum Beruf",
+      "Bestimmte Maßnahmen erfordern rechtliche Genehmigungen",
+      "Zusammenarbeit mit Staatsanwaltschaft"
+    ],
+    "inventedElements": [
+      "fiktive Spendenorganisation und geschädigte Frau",
+      "alle Personen und Gespräche",
+      "Brief mit Schreibfehler",
+      "Tagesablauf und Einsatzorte"
+    ],
+    "notes": "Plausibles fiktives Fallbeispiel; kein tatsächlicher FBI-Fall."
+  },
+  "topicFit": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "pillars": [
+      "FBI, CIA, SWAT und Spezialeinheiten",
+      "Geheimdienste und Agenten"
+    ],
+    "reason": "Konkreter FBI-Rollentag mit abwechslungsreichem Tagesablauf."
+  },
+  "topicQuality": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "curiosity": 9,
+    "weirdness": 8,
+    "visualPotential": 10,
+    "escalationPotential": 9,
+    "entertainmentPotential": 9,
+    "reason": "Klarer Einstieg und wiederkehrender Hinweis in abwechslungsreicher Rollenwelt.",
+    "whyNotBoring": "Alle Abschnitte zeigen neue Aufgaben und Orte, kein trockenes Organisationsreferat."
+  },
+  "viewerPromise": "Ein fiktiver, aber an echten FBI-Aufgaben orientierter Tag vom ersten Hinweis über Ermittlungsarbeit bis zur Rückkehr.",
+  "coreQuestion": "Wie fühlt sich ein konkreter Tag als FBI-Ermittler tatsächlich an?",
+  "angle": "Zweite Person, konkrete Tätigkeiten statt Lebenslauf oder Statistik.",
+  "individualityReason": "Der zweimal entdeckte Schreibfehler verbindet Zeugengespräch, Spuren und spätere Beweissicherung.",
+  "scriptFormat": {
+    "type": "mini-stories",
+    "reason": "Ein Arbeitstag ist sinnvoll in eigenständige Stationen aufgeteilt.",
+    "whyThisFormat": "Klares chronologisches Berufsrollen-Erlebnis ohne unnötigen Großthriller."
+  },
+  "hook": {
+    "type": "mini-szene",
+    "text": "Du bist FBI-Agent.",
+    "reason": "Rolle wird sofort in der ersten Sekunde etabliert."
+  },
+  "introPlan": {
+    "openingMove": "Sofort FBI-Rolle, Telefon und Geschädigte.",
+    "formatPromise": "Ein kompletter Ermittler-Tag mit aufeinander aufbauenden Stationen.",
+    "firstPayoff": "Erste Hürde: Verdacht reicht noch nicht zum Beschuldigen.",
+    "clarityLine": "Spendenorganisation wirkt verdächtig, heute erneute Sammelaktion.",
+    "first10SecondsVisualCount": 5
+  },
+  "formatPlan": {
+    "miniStories": {
+      "orderingLogic": "Chronologisch von Anruf und Briefing über Zeugin, Unterlagen und Vor-Ort-Szene zu rechtlicher Prüfung, Einsatz und Feierabend.",
+      "sections": [
+        {
+          "label": "Station 1: briefing",
+          "coreIdea": "Aufgabenverteilung und Grenzen bloßen Verdachts",
+          "concreteMoment": "Deine Partnerin reicht dir eine Mappe mit weiteren Beschwerden.",
+          "weirdDetail": "Dein Vorgesetzter will aber keine wilde Theorie hören, sondern Fakten.",
+          "consequence": "Dein Kaffee ist dabei schon wieder kalt geworden."
+        },
+        {
+          "label": "Station 2: zeugen",
+          "coreIdea": "Opferinterview und kleiner Hinweis",
+          "concreteMoment": "Ihre Hände zittern ein wenig, als sie den Spendenbrief auspackt.",
+          "weirdDetail": "Drei Wochen später erreichte sie plötzlich niemanden mehr.",
+          "consequence": "Die Frau geht nach Hause, und ihr habt wenigstens einen Ansatz."
+        },
+        {
+          "label": "Station 3: spuren",
+          "coreIdea": "Ermittlungsrecherche und zweiter Anruf",
+          "concreteMoment": "Du sitzt am Computer und vergleichst eingegangene Meldungen.",
+          "weirdDetail": "Der Hausmeister kennt die Hilfsorganisation nicht einmal vom Namen.",
+          "consequence": "Damit wird aus einer alten Beschwerde plötzlich ein dringender aktueller Hinweis."
+        },
+        {
+          "label": "Station 4: plan",
+          "coreIdea": "Rechtfertigung von Entscheidungen und Teamkoordination",
+          "concreteMoment": "Doch niemand weiß bislang sicher, wer dieser Mann überhaupt ist.",
+          "weirdDetail": "Eine erfahrene Ermittlerin stellt dir eine ziemlich unangenehme Frage.",
+          "consequence": "Die spannendste Waffe auf dieser Fahrt ist das Geduldsspiel an der Ampel."
+        },
+        {
+          "label": "Station 5: saal",
+          "coreIdea": "Öffentliche Beobachtung und Fehlverdacht",
+          "concreteMoment": "Drinnen stehen Plastikpflanzen, Kaffeekannen und ein Tisch voller Spendenbroschüren.",
+          "weirdDetail": "Kurz danach kommt eine Frau mit einer knallroten Aktentasche herein.",
+          "consequence": "Für die nächsten Schritte zählt, ob weitere Dokumente diese Verbindung bestätigen."
+        },
+        {
+          "label": "Station 6: recht",
+          "coreIdea": "Belege, Zuständigkeiten und richterliche Genehmigung",
+          "concreteMoment": "Dann fragt deine Partnerin, welche konkreten Beweise ihr eigentlich mitbringt.",
+          "weirdDetail": "Wichtiger ist die Frage, welche Informationen rechtmäßig beschafft werden können.",
+          "consequence": "Trotzdem rückt ihr der Antwort Schritt für Schritt näher."
+        },
+        {
+          "label": "Station 7: einsatz",
+          "coreIdea": "Gemeinsamer Einsatz mit Dokumentenfund",
+          "concreteMoment": "Du fährst mit Kollegen zu einem unauffälligen Gewerberaum.",
+          "weirdDetail": "Er hat denselben Aufbau wie die Quittung aus dem Zeugengespräch.",
+          "consequence": "Ob eine Anklage folgt, ist keine Entscheidung, die du allein triffst."
+        }
+      ]
+    },
+    "progression": {
+      "axis": "",
+      "startState": "",
+      "endState": "",
+      "stages": []
+    },
+    "story": {
+      "protagonistOrFocus": "",
+      "immediateGoal": "",
+      "centralProblem": "",
+      "worldRules": [],
+      "incitingIncident": "",
+      "causalTurns": [],
+      "midpointTurn": "",
+      "finalEscalation": "",
+      "setupPayoff": {
+        "setup": "",
+        "payoff": ""
+      },
+      "endingCallback": "",
+      "beats": []
+    }
+  },
+  "entertainmentBeats": [
+    "Anruf 7 Uhr",
+    "Abgleich mehrerer Beschwerden",
+    "zweiter Brief der Zeugin",
+    "identischer Druckfehler",
+    "zweiter Telefonanruf",
+    "Aufbaudienst als falscher Verdacht",
+    "rote Aktentasche",
+    "Juristische Grenze",
+    "Brief taucht erneut auf",
+    "Kaffee-Callback am Ende"
+  ],
+  "scriptQuality": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "introClarity": 9,
+    "formatFit": 10,
+    "clarity": 9,
+    "curiosity": 9,
+    "entertainment": 9,
+    "voiceNaturalness": 9,
+    "payoff": 8,
+    "reason": "Natürlicher Erzählfluss, echte Aufgabenwechsel, dramaturgisch vorbereiteter Beleg."
+  },
+  "retention": {
+    "openLoops": [
+      "Wer steckt hinter den Spendenbriefen?",
+      "Wozu gehört der Schreibfehler?",
+      "Kann das Team die Verbindung belegen?"
+    ],
+    "escalationPoints": [
+      "zweiter Anruf",
+      "Nachmittagsveranstaltung",
+      "rote Mappe",
+      "Fund im Geschäftsraum"
+    ],
+    "patternInterrupts": [
+      "Actionklischee vs. Alltag",
+      "zweiter Umschlag",
+      "falscher Aufbaudienstverdacht",
+      "Kaffeebecher"
+    ]
+  },
+  "payoff": "Der frühe Schreibfehler kehrt bei Dokumentenfunden wieder.",
+  "titleCoverSystem": {
+    "finalTitle": "Ein Tag als FBI-Agent – Vom ersten Hinweis bis zum Einsatz",
+    "titlePromise": "Tageserlebnis eines FBI-Agenten.",
+    "coverConcept": {
+      "visualConflict": "FBI-Agent hält Spendenbrief vor großer Uhr, rote Aktentasche im Hintergrund.",
+      "mainSubjects": [
+        "Agent mit Spendenbrief",
+        "rote Aktentasche",
+        "Wanduhr"
+      ],
+      "visibleText": "DEIN FBI-TAG",
+      "emotion": "Neugier und Dringlichkeit",
+      "whyClickable": "Klares Rollenversprechen und konkreter Fall."
+    },
+    "complementarity": "Titel beschreibt den Tag, Cover zeigt die zentrale Frage."
+  },
+  "youtubeUpload": {
+    "title": "Ein Tag als FBI-Agent – Vom ersten Hinweis bis zum Einsatz",
+    "description": "Ein Tag als FBI-Agent: Ein Anruf führt zu einer möglichen Spendenbetrugsermittlung. Du erlebst Zeugenbefragung, Spurensuche, Teamarbeit und rechtliche Entscheidungen – vom ersten Hinweis bis zum Einsatz. Der konkrete Fall und alle Figuren sind fiktiv; der berufliche Rahmen orientiert sich an offiziellen FBI-Informationen."
+  },
+  "ending": {
+    "type": "Tagesabschluss mit Callback",
+    "finalLine": "Denn ein Tag beim FBI endet selten so pünktlich, wie du ihn planst."
+  },
+  "notes": [
+    "Fiktiver Fall, echte Grundlagen im RESEARCH.json.",
+    "Genaue Dauer nach finalem Sprecher-Audio prüfen."
+  ]
+}

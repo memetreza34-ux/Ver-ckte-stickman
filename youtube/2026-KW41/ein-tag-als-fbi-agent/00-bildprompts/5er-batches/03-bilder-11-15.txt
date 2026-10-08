@@ -1,0 +1,32 @@
+# ALLE BILDPROMPTS — Ein Tag als FBI-Agent – Vom ersten Hinweis bis zum Einsatz
+
+Google-Flow-Regel: Immer nur 5 Bilder pro Durchgang erzeugen. Nichts einzeln herunterladen oder umbenennen. Nach Fertigstellung aller Bilder einmal gesammelt herunterladen, dann automatisch importieren.
+
+## VERBINDLICHE BILDWELT
+Deutscher eigenständiger 2D-Dark-Grotesque-Stickman-Comic: schwarze, deutlich handgezeichnete Umrisse, viel Weiß-Grau, marineblaue und rote Akzente, dynamische Bildkomposition. Hauptfigur FBI-Agent mit weißem ovalem Kopf, kurzen schwarzen Haaren, dunkelblauer Jacke, weinroter Krawatte und hochgezogener linker Augenbraue. Partnerin mit kurzen braunen Haaren, orangefarbenem Schal und grauer Jacke. Analyst mit rundlicher Brille und violettem Pullover. Geschädigte ältere Frau mit silbergrauem Dutt und ockerfarbener Strickjacke. Feste Charaktergestaltung über alle Bilder, ausdrucksstarke Gesichter, keine echten Menschenportraits und keine fremden Logos.
+
+16:9, klare Formen, starke Gesichter und räumliche Szenen statt Textkarten. Kein Fotorealismus, kein 3D/Pixar, kein Wasserzeichen, keine Pseudoschrift, sichtbare Schrift nur korrektes Deutsch.
+
+
+## 5ER-PRODUKTIONSBLOCK
+Erzeuge ausschließlich Bild 11 bis Bild 15. Erst nach allen Blöcken gesammelt herunterladen.
+
+## Bild 11
+BILDPROMPT:
+16:9. POV. Hauptmotiv mit sichtbarer Handlung: Spendenbrief mit schlichtem Suppen-Symbol. Figuren aus der verbindlichen, einheitlichen Stickman-Bildwelt. Aufgabenverteilung und Grenzen bloßen Verdachts; zur Situation passendes Licht in Grau, Marineblau, Cyan, Ocker und Rot. Eindeutiger Vordergrund und reduzierter Hintergrund, kräftige schwarze Umrisse, erwachsene überzeichnete Mimik. Zeige genau diesen eigenständigen Moment, keine Plakatwand und keine statische Personenreihe. Kein Text aus dem Sprechertext, keine Untertitel, keine Pseudoschrift, keine realistischen Menschen, kein 3D/Pixar oder Wasserzeichen.
+
+## Bild 12
+BILDPROMPT:
+16:9. weite Totale. Hauptmotiv mit sichtbarer Handlung: Reihe kleiner und großer Geldbelege. Figuren aus der verbindlichen, einheitlichen Stickman-Bildwelt. Aufgabenverteilung und Grenzen bloßen Verdachts; zur Situation passendes Licht in Grau, Marineblau, Cyan, Ocker und Rot. Eindeutiger Vordergrund und reduzierter Hintergrund, kräftige schwarze Umrisse, erwachsene überzeichnete Mimik. Zeige genau diesen eigenständigen Moment, keine Plakatwand und keine statische Personenreihe. Kein Text aus dem Sprechertext, keine Untertitel, keine Pseudoschrift, keine realistischen Menschen, kein 3D/Pixar oder Wasserzeichen.
+
+## Bild 13
+BILDPROMPT:
+16:9. Objekt-Detail. Hauptmotiv mit sichtbarer Handlung: USA-Karte mit rot markierten Städten. Figuren aus der verbindlichen, einheitlichen Stickman-Bildwelt. Aufgabenverteilung und Grenzen bloßen Verdachts; zur Situation passendes Licht in Grau, Marineblau, Cyan, Ocker und Rot. Eindeutiger Vordergrund und reduzierter Hintergrund, kräftige schwarze Umrisse, erwachsene überzeichnete Mimik. Zeige genau diesen eigenständigen Moment, keine Plakatwand und keine statische Personenreihe. Kein Text aus dem Sprechertext, keine Untertitel, keine Pseudoschrift, keine realistischen Menschen, kein 3D/Pixar oder Wasserzeichen.
+
+## Bild 14
+BILDPROMPT:
+16:9. leichte Untersicht. Hauptmotiv mit sichtbarer Handlung: einzelne Fäden verbinden mehrere Umschläge. Figuren aus der verbindlichen, einheitlichen Stickman-Bildwelt. Aufgabenverteilung und Grenzen bloßen Verdachts; zur Situation passendes Licht in Grau, Marineblau, Cyan, Ocker und Rot. Eindeutiger Vordergrund und reduzierter Hintergrund, kräftige schwarze Umrisse, erwachsene überzeichnete Mimik. Zeige genau diesen eigenständigen Moment, keine Plakatwand und keine statische Personenreihe. Kein Text aus dem Sprechertext, keine Untertitel, keine Pseudoschrift, keine realistischen Menschen, kein 3D/Pixar oder Wasserzeichen.
+
+## Bild 15
+BILDPROMPT:
+16:9. Über-Schulter-Perspektive. Hauptmotiv mit sichtbarer Handlung: Analyst mit Brille und violettem Pullover vor Monitor. Figuren aus der verbindlichen, einheitlichen Stickman-Bildwelt. Aufgabenverteilung und Grenzen bloßen Verdachts; zur Situation passendes Licht in Grau, Marineblau, Cyan, Ocker und Rot. Eindeutiger Vordergrund und reduzierter Hintergrund, kräftige schwarze Umrisse, erwachsene überzeichnete Mimik. Zeige genau diesen eigenständigen Moment, keine Plakatwand und keine statische Personenreihe. Kein Text aus dem Sprechertext, keine Untertitel, keine Pseudoschrift, keine realistischen Menschen, kein 3D/Pixar oder Wasserzeichen.

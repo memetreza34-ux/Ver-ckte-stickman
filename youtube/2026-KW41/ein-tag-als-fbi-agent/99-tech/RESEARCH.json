@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "topic": "Ein Tag als FBI-Agent",
+  "summary": "Das FBI bestätigt Interviews, Beweissicherung, Team- und Büroarbeit, Rechtsgrundlagen und Zusammenarbeit mit Staatsanwälten. Der konkrete erzählte Fall ist erfunden.",
+  "sources": [
+    {
+      "id": "Q1",
+      "title": "What tasks do FBI agents typically perform?",
+      "publisher": "FBI",
+      "url": "https://www.fbi.gov/about/faqs/what-does-an-fbi-agent-do-on-a-typical-day",
+      "accessedAt": "2026-10-08"
+    },
+    {
+      "id": "Q2",
+      "title": "A Brief Description of the Federal Criminal Justice Process",
+      "publisher": "FBI",
+      "url": "https://www.fbi.gov/how-we-can-help-you/victim-services/a-brief-description-of-the-federal-criminal-justice-process",
+      "accessedAt": "2026-10-08"
+    },
+    {
+      "id": "Q3",
+      "title": "What does the FBI do with information and evidence gathered during an investigation?",
+      "publisher": "FBI",
+      "url": "https://www.fbi.gov/about/faqs/what-does-the-fbi-do-with-information-and-evidence-gathered-during-an-investigation",
+      "accessedAt": "2026-10-08"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "FBI-Agenten führen Interviews durch, sammeln Beweise, arbeiten mit Teams und erledigen Dokumentation.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1"
+      ],
+      "notes": "Kein typischer festgelegter Tag."
+    },
+    {
+      "id": "C2",
+      "statement": "Für Bundesstrafverfahren können Unterlagen und Zeugenaussagen gesichert werden.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q2"
+      ],
+      "notes": "Fiktive Fallwelt."
+    },
+    {
+      "id": "C3",
+      "statement": "Bestimmte Durchsuchungen verlangen richterliche Genehmigung und Zusammenarbeit mit Staatsanwälten.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q2"
+      ],
+      "notes": "Keine Pauschalbehauptung für jede Maßnahme."
+    },
+    {
+      "id": "C4",
+      "statement": "Ermittlungsbeweise werden zuständigen Staatsanwälten oder dem Justizministerium zur Entscheidung vorgelegt.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q3"
+      ],
+      "notes": "Ermittler entscheiden nicht allein über Anklage."
+    }
+  ],
+  "uncertainties": [
+    "Handlung zeitlich verdichtet und fiktiv.",
+    "Kein Agententag ist genau wie dieser."
+  ],
+  "doNotClaim": [
+    "Die Organisation oder Fallfiguren seien real.",
+    "Der Agent entscheidet allein über strafrechtliche Schuld.",
+    "Es gebe eine für alle FBI-Agenten identische Tagesroutine."
+  ]
+}
