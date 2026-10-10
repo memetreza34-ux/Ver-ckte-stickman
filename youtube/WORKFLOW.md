@@ -9,6 +9,15 @@
 
 Bei realen Institutionen startet das Projekt im Modus `hybrid`: reale Tatsachen intern belegen, dramatische Verbindungsszenen dürfen erfunden sein.
 
+## Phase 0A — Schauplatz und deutsche Lebenswelt
+
+- Standard: Deutschland. Bei Thema ohne ausdrückliches Ausland deutsche Orte, Währung, Alltagsdetails und passende deutsche Rollen bevorzugen
+- Behörde und Zuständigkeit vor Skriptbeginn prüfen (z. B. BKA, LKA, Kripo, SEK, Zoll, Bundespolizei)
+- Deutsche Gesetze und Dienstregeln nur bei überprüfbaren Angaben als Tatsachen erzählen
+- Deutsche Alltagsklischees dosiert als Situationshumor einsetzen
+- Bei FBI/CIA den Schauplatz USA beibehalten; keine amerikanische Behörde in eine falsche deutsche Kulisse versetzen
+- In Phase 1 die gewählte Institution und die Grenze zwischen Tatsachen/Fiktion dokumentieren
+
 ## Phase 1 — Skriptformat wählen
 
 Vor dem Schreiben wird in `99-tech/CONTENT_PLAN.json` `scriptFormat.type` gesetzt:

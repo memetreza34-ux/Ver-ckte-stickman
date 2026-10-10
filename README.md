@@ -2,6 +2,16 @@
 
 Pipeline für einen deutschen faceless YouTube-Kanal mit grotesk-surrealer Stickman-Bildwelt und **rollenbasiertem Entertainment-Scripting**.
 
+## Deutschland als bevorzugte Videowelt
+
+Der Kanal ist **deutschsprachig und standardmäßig in Deutschland angesiedelt**. Für neue Rollen-Videos bevorzugen wir deutsche Schauplätze, real passende Behörden und bekannte Alltagssituationen.
+
+Beispiele: `Ein Tag beim BKA`, `Dein erster Tag beim SEK`, `Ein Tag bei der Kriminalpolizei`, `Ein Tag als Zollfahnder`, `Dein Leben als verdeckter Ermittler in Deutschland`.
+
+Humor durch kleine Alltagsklischees (Papierkram, Behördengänge, Stau, Dienstpläne) ist erlaubt, aber nur situationsbezogen. Deutsche Zuständigkeiten, Vorschriften und Gesetze müssen überprüft werden. **FBI/CIA sind keine deutschen Behörden**: Bei diesen ausdrücklich internationalen Themen bleibt der Schauplatz korrekt in den USA.
+
+Verbindliche Regeln: `config/content-policy.json → localizationPolicy`.
+
 ## Bevorzugte Themenrichtung
 
 Standard sind konkrete Rollen, Lebenswelten und Hierarchien, zum Beispiel:

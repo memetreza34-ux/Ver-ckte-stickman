@@ -28,12 +28,12 @@ export async function evaluateChannelFit(candidate,root=process.cwd()){
 export async function evaluateTopicQuality(candidate,root=process.cwd()){
   const policy=await readJson(path.join(root,'config','content-policy.json'));
   const q=policy.topicQualityPolicy??{},text=normalizeText(candidate);
-  const genericSignals=['die geschichte von','geschichte der','fakten uber','fakten ueber','alles uber','alles ueber','was ist','wie funktioniert','ein uberblick','ein ueberblick','biografie von'];
-  const roleSignals=['ein tag als','dein leben als','du bist','dein erster tag','ein tag im leben','dein tag als'];
+  const genericSignals=['die geschichte von','geschichte der','geschichte des','fakten uber','fakten ueber','alles uber','alles ueber','was ist','wie funktioniert','ein uberblick','ein ueberblick','biografie von'];
+  const roleSignals=['ein tag beim','ein tag bei der','ein tag als','dein leben als','du bist','dein erster tag','ein tag im leben','dein tag als'];
   const listSignals=['arten','falle','fälle','orte','lander','länder','dinge','jede art','jeder typ','top ','ranking'];
   const progressionSignals=['stufe','stufen','rang','range','ränge','level','vom ','bis zum','hierarchie','aufstieg','rekrut','boss'];
   const storySignals=['mission','einsatz','undercover','flucht','verfolgung','zielperson','geisel','operation','auftrag'];
-  const strongWorldSignals=['cia','fbi','swat','agent','geheimdienst','mafia','kartell','spezialeinheit','polizei','soldat','sniper','scharfschutze','scharfschütze','auftragskiller','undercover'];
+  const strongWorldSignals=['bka','lka','sek','kripo','kriminalpolizei','bundespolizei','zoll','zollfahnder','kommissar','cia','fbi','swat','agent','geheimdienst','mafia','kartell','spezialeinheit','polizei','soldat','sniper','scharfschutze','scharfschütze','auftragskiller','undercover'];
 
   const generic=genericSignals.filter((s)=>text.includes(normalizeText(s)));
   const role=roleSignals.filter((s)=>text.includes(normalizeText(s)));
@@ -66,7 +66,7 @@ export async function evaluateTopicQuality(candidate,root=process.cwd()){
     decision:approved?'APPROVED_TOPIC_QUALITY':'REVIEW_TOPIC_QUALITY',score,
     roleSignals:role,listSignals:list,progressionSignals:progression,storySignals:story,worldSignals:world,genericSignals:generic,suggestedFormats,
     reason:approved?'Thema besitzt eine klare Rolle/Lebenswelt oder starke Progression mit gutem visuellen Potenzial.':'Thema ist noch zu allgemein. Bevorzuge eine konkrete Rolle, einen Tag, einen Einsatz oder eine echte Hierarchie.',
-    reframePatterns:['Ein Tag als FBI-Agent','Ein Tag als CIA-Agent','Dein Leben als Undercover-Agent','Vom Rekruten bis zum Boss','Dein Leben auf jeder Stufe von ...']
+    reframePatterns:['Ein Tag beim BKA','Dein erster Tag beim SEK','Ein Tag bei der Kriminalpolizei','Ein Tag als FBI-Agent','Ein Tag als CIA-Agent','Dein Leben als Undercover-Agent','Vom Rekruten bis zum Boss','Dein Leben auf jeder Stufe von ...']
   };
 }
 
