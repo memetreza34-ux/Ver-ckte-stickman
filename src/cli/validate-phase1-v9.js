@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, isMain, normalizeText, projectPaths, readJson } from '../lib/pipeline.js';
 import { materializeScenePlan } from '../lib/materialize-scene-plan.js';
+import { validateYouTubeDescription } from '../lib/youtube-description.js';
 import { validatePhase1 as validateBasePhase1 } from './validate-phase1.js';
 
 function filled(value,min=3){return typeof value==='string'&&value.trim().length>=min&&!value.trim().startsWith('[');}
@@ -26,8 +27,9 @@ export async function validatePhase1V9(projectDirectory){
   const upload=plan.youtubeUpload??{},finalTitle=String(plan.titleCoverSystem?.finalTitle??'').trim();
   if(!filled(upload.title,6))errors.push('CONTENT_PLAN.youtubeUpload.title fehlt.');
   if(upload.title&&finalTitle&&normalizeText(upload.title)!==normalizeText(finalTitle))errors.push('CONTENT_PLAN.youtubeUpload.title muss dem finalen YouTube-Titel entsprechen.');
-  const minDescription=Number(policy.youtubeUploadPolicy?.descriptionMinimumCharacters??80);
-  if(!filled(upload.description,minDescription))errors.push(`CONTENT_PLAN.youtubeUpload.description braucht mindestens ${minDescription} Zeichen.`);
+  const descPolicy=policy.youtubeUploadPolicy??{};
+  const descCheck=validateYouTubeDescription(upload.description,{minimumBodyCharacters:Number(descPolicy.descriptionMinimumBodyCharacters??450),minimumParagraphs:Number(descPolicy.descriptionMinimumParagraphs??2),requiredHashtags:Number(descPolicy.hashtagCount??5)});
+  for(const problem of descCheck.errors)errors.push(`CONTENT_PLAN.youtubeUpload.description: ${problem}`);
 
   const duration=Number(meta.targetDurationSeconds),imageCount=Number(meta.plannedImageCount),imagePolicy=pipeline.imagePolicy??{};
   const per100=Array.isArray(imagePolicy.targetImagesPer100Seconds)?imagePolicy.targetImagesPer100Seconds:[30,42];

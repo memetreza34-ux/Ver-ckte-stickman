@@ -123,6 +123,8 @@ UNTERTITEL_SCRIPT.txt
 
 `YOUTUBE_CAPTION.txt` enthält Titel + Beschreibung gemeinsam.
 
+Für jedes neue Video: mindestens 450 Zeichen eigentliche Beschreibung in mindestens zwei Absätzen, mit konkretem Inhalt statt Floskeln. Danach genau **5 unterschiedliche, thematisch passende Hashtags** in einer separaten letzten Zeile. Phase-1-QC und Finalizer kontrollieren Länge und Anzahl.
+
 `UNTERTITEL_SCRIPT.txt` enthält das komplette gesprochene Skript in 10-Sekunden-Blöcken, zum Beispiel:
 
 ```text

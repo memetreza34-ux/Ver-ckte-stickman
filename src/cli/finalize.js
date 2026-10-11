@@ -2,6 +2,7 @@
 import { copyFile, mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, exists, fileSize, isMain, parseFps, probeMedia, projectPaths, readJson, sha256, writeJson } from '../lib/pipeline.js';
+import { validateYouTubeDescription } from '../lib/youtube-description.js';
 
 function flattenTranscriptWords(json){
   const out=[];
@@ -50,11 +51,12 @@ function buildTimedTranscript(words,audioDuration,blockSeconds=10){
 
 export async function finalize(projectDirectory){
   const p=projectPaths(projectDirectory);
-  const [meta,timeline,pipeline,contentPlan]=await Promise.all([
+  const [meta,timeline,pipeline,contentPlan,contentPolicy]=await Promise.all([
     readJson(p.meta),
     readJson(p.timeline),
     readJson(path.resolve('config/pipeline.json')),
-    readJson(p.contentPlan)
+    readJson(p.contentPlan),
+    readJson(path.resolve('config/content-policy.json'))
   ]);
 
   const video=path.join(p.exportDir,'FINAL_VIDEO.mp4');
@@ -74,9 +76,11 @@ export async function finalize(projectDirectory){
 
   const upload=contentPlan.youtubeUpload??{};
   const finalTitle=String(upload.title||contentPlan.titleCoverSystem?.finalTitle||meta.title||'').trim();
-  const description=String(upload.description||contentPlan.viewerPromise||'').trim();
+  const description=String(upload.description??'').trim();
   if(finalTitle.length<6)throw new Error('YouTube-Titel fehlt in CONTENT_PLAN.youtubeUpload.title.');
-  if(description.length<40)throw new Error('YouTube-Beschreibung fehlt oder ist zu kurz in CONTENT_PLAN.youtubeUpload.description.');
+  const descPolicy=contentPolicy.youtubeUploadPolicy??{};
+  const descCheck=validateYouTubeDescription(description,{minimumBodyCharacters:Number(descPolicy.descriptionMinimumBodyCharacters??450),minimumParagraphs:Number(descPolicy.descriptionMinimumParagraphs??2),requiredHashtags:Number(descPolicy.hashtagCount??5)});
+  if(!descCheck.passed)throw new Error(descCheck.errors.join(' | '));
   await writeFile(captionFile,`YOUTUBE-TITEL:\n${finalTitle}\n\nYOUTUBE-BESCHREIBUNG:\n${description}\n`,'utf8');
   await rm(legacyUploadFile,{force:true});
 

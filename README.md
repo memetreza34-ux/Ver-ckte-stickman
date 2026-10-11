@@ -68,6 +68,8 @@ Nach erfolgreicher Phase 3 liegen im Export mindestens:
 
 `YOUTUBE_CAPTION.txt` enthält **YouTube-Titel + Beschreibung in einer Datei**.
 
+Die Videobeschreibung wird ausführlicher geschrieben: **mindestens 450 Zeichen in mindestens zwei sinnvollen Absätzen**, dazu **exakt fünf unterschiedliche, videorelevante Hashtags als letzte eigene Zeile**. Keine pauschalen Copy-Paste-Beschreibungen, keine unnötige Streckung. Beide Vorgaben werden in Phase 1 und beim Finalisieren geprüft.
+
 `UNTERTITEL_SCRIPT.txt` enthält das **komplette tatsächlich gesprochene Voice-over mit echten Zeitdaten** in 10-Sekunden-Blöcken:
 
 ```text

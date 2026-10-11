@@ -6,6 +6,7 @@ import test from 'node:test';
 import { editSimilarity, normalizeText, projectPaths, topicSimilarity } from '../src/lib/pipeline.js';
 import { evaluateChannelFit, evaluateTopicQuality } from '../src/cli/check-topic.js';
 import { compileFlowPrompt } from '../src/cli/compile-flow-prompt.js';
+import { validateYouTubeDescription } from '../src/lib/youtube-description.js';
 
 test('Visual Policy bleibt produktionsbereit',async()=>{const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));assert.equal(v.status,'READY');assert.equal(v.languagePolicy?.promptLanguage,'de');assert.equal(v.thumbnailDNA?.headlineRequired,true);});
 
@@ -35,3 +36,22 @@ test('Flow-Check lehnt Platzhalter ab',async()=>{const root=await mkdtemp(path.j
 
 test('Deutsche Schauplätze und Institutionen sind neuer Standard',async()=>{const p=JSON.parse(await readFile('config/content-policy.json','utf8'));assert.equal(p.localizationPolicy.preferredCountry,'Deutschland');assert.ok(p.channelDirection.preferredTopicArchetypes.includes('Ein Tag beim BKA'));assert.ok(p.localizationPolicy.rules.some(x=>x.includes('FBI')));});
 test('BKA SEK Kripo sind im Themencheck erlaubt',async()=>{for(const topic of ['Ein Tag beim BKA','Dein erster Tag beim SEK','Ein Tag bei der Kriminalpolizei']){const c=await evaluateChannelFit(topic);const q=await evaluateTopicQuality(topic);assert.equal(c.decision,'APPROVED_CHANNEL_FIT');assert.equal(q.decision,'APPROVED_TOPIC_QUALITY');assert.ok(q.suggestedFormats.includes('mini-stories'));}const old=await evaluateTopicQuality('Die Geschichte des BKA');assert.equal(old.decision,'REVIEW_TOPIC_QUALITY');});
+
+test('YouTube-Beschreibung mit exakt fünf Hashtags und zwei Absätzen',()=>{
+  const body=('Ein konkreter und unterhaltsamer Videotext mit passend erklärten Szenen und nachvollziehbarem Thema. '.repeat(4)).trim()+'\n\n'+('Ein weiterer sinnvoller Absatz mit den besonderen Situationen des Videos, ohne künstliche Hashtag-Floskeln. '.repeat(3)).trim();
+  const good=body+'\n\n#FBI #Ermittlung #Stickman #Geschichten #StrichModus';
+  assert.ok(body.length>=450);
+  assert.equal(validateYouTubeDescription(good).passed,true);
+  assert.equal(validateYouTubeDescription(good.replace(' #StrichModus','')).passed,false);
+  assert.equal(validateYouTubeDescription(good+' #Zusatz').passed,false);
+  assert.equal(validateYouTubeDescription(good.replace('#StrichModus','#FBI')).passed,false);
+  assert.equal(validateYouTubeDescription(body.split('\n\n').join(' ')+'\n\n#FBI #Ermittlung #Stickman #Geschichten #StrichModus').passed,false);
+  assert.equal(validateYouTubeDescription('Zu kurz.\n\n#FBI #Ermittlung #Stickman #Geschichten #StrichModus').passed,false);
+  assert.equal(validateYouTubeDescription(body+' #Zusaetzlich\n\n#FBI #Ermittlung #Stickman #Geschichten #StrichModus').passed,false);
+});
+test('Content-Policy schreibt längere Captions und fünf Hashtags vor',async()=>{
+ const p=JSON.parse(await readFile('config/content-policy.json','utf8'));
+ assert.ok(p.youtubeUploadPolicy.descriptionMinimumBodyCharacters>=450);
+ assert.equal(p.youtubeUploadPolicy.hashtagCount,5);
+ assert.equal(p.youtubeUploadPolicy.descriptionMinimumParagraphs,2);
+});

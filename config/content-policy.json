@@ -439,12 +439,20 @@
     "exportFile": "04-export/YOUTUBE_CAPTION.txt",
     "timedTranscriptFile": "04-export/UNTERTITEL_SCRIPT.txt",
     "timedTranscriptBlockSeconds": 10,
-    "descriptionMinimumCharacters": 80,
+    "descriptionMinimumCharacters": 450,
     "rules": [
-      "Titel und Beschreibung stehen gemeinsam in genau einer Caption-Datei.",
+      "YOUTUBE_CAPTION.txt enthält den Videotitel und eine eigenständig formulierte, informative YouTube-Beschreibung in einer einzigen Datei.",
+      "Der reine Beschreibungstext hat mindestens 450 Zeichen und mindestens zwei sinnvolle Absätze; ein prägnanter themenspezifischer Einstieg, etwas Kontext/Highlights und eine passende Abschlusszeile. Keine leeren Floskeln oder künstliche Füllsätze.",
+      "Die Beschreibung endet mit exakt 5 verschiedenen, thematisch zum konkreten Video passenden Hashtags auf einer eigenen letzten Zeile; nicht mehr und nicht weniger, keine zusätzlichen Hashtags im Fließtext.",
+      "Jeder Hashtag ist lesbar und spezifisch; kein generisches Trending-/Hashtag-Spamming. Der Markenhashtag #StrichModus darf einer der fünf sein.",
+      "Die Metadaten werden sowohl vor der Produktion als auch beim finalen Export überprüft.",
       "Das komplette tatsächlich gesprochene Skript wird aus Whisper-Wortzeiten in 10-Sekunden-Blöcke exportiert.",
       "Untertitelzeiten werden niemals geschätzt."
-    ]
+    ],
+    "descriptionMinimumBodyCharacters": 450,
+    "descriptionMinimumParagraphs": 2,
+    "hashtagCount": 5,
+    "hashtagPlacement": "last-line"
   },
   "endingPolicy": {
     "required": true,
