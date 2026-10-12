@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "priority": 1,
+  "description": "Wird vom Post-Video-Review nach jedem erfolgreichen Export aktualisiert. Qualitatives Feedback muss belegt oder ausdrücklich eingegeben sein.",
+  "entries": []
+}

@@ -1,5 +1,9 @@
 # Workflow V9
 
+## Priorität 1 — Lernen vor Geschwindigkeit
+
+Nach dem fertigen Export erstellt der Finalizer einen Review. Erkenntnisse werden in einem globalen Log gespeichert und vor dem nächsten Video als Lernbrief übernommen. Eine menschliche bzw. tatsächliche audiovisuelle Prüfung ergänzt die Messwerte. Details in `CONTINUOUS_IMPROVEMENT.md`.
+
 ## Phase 0 — Thema
 
 1. `npm run topic:video -- --topic "THEMA"`

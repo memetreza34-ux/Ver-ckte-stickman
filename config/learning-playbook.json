@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "priority": 1,
+  "lessons": [
+    {
+      "id": "intro",
+      "source": "Spiegel-Test, Nutzerfeedback",
+      "action": "Thema und Situation schon in den ersten Sekunden klar erklären statt eines verwirrenden Mystery-Einstiegs.",
+      "priority": "high"
+    },
+    {
+      "id": "entertainment",
+      "source": "frühe CIA-/Dokuvideos, Nutzerfeedback",
+      "action": "Nicht wie ein Referat erzählen: echte Handlungen, Perspektiven, Humor und überraschende Szenen zeigen.",
+      "priority": "high"
+    },
+    {
+      "id": "topics",
+      "source": "Schlaf-Stadt-Video, Nutzerfeedback",
+      "action": "Technisch gute Videos brauchen auch ein attraktives Thema; Kanal offen für absurde, lustige und kuriose Ideen, nicht nur Polizei.",
+      "priority": "high"
+    },
+    {
+      "id": "real-duration",
+      "source": "Schlaf-Stadt-/FBI-Videodauer",
+      "action": "Skriptlänge anhand tatsächlicher Audio-Laufzeit kalibrieren; nicht künstlich mit langen Standbildern strecken.",
+      "priority": "high"
+    },
+    {
+      "id": "images",
+      "source": "Flow-Probleme, Nutzerfeedback",
+      "action": "Alle individuellen Bildprompts direkt anlegen; 5er-Blöcke prüfen, fehlende Bilder nacherzeugen, alles gesammelt importieren.",
+      "priority": "high"
+    },
+    {
+      "id": "export",
+      "source": "YouTube-Export-Feedback",
+      "action": "Video, Thumbnail, vollständige Caption, zeitcodiertes Skript und exakt 5 relevante Hashtags exportieren.",
+      "priority": "medium"
+    }
+  ]
+}

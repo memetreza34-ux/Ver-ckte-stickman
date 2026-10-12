@@ -12,6 +12,10 @@ Humor durch kleine Alltagsklischees (Papierkram, Behördengänge, Stau, Dienstpl
 
 Verbindliche Regeln: `config/content-policy.json → localizationPolicy`.
 
+## Oberste Regel: Nach jedem Video besser werden
+
+Nach jedem finalen Video erstellt die Pipeline einen Post-Video-Review mit echten technischen Messwerten. Zusätzlich werden Story, Humor, Bilder, Stimme, Schnitt, Thema und Cover nach tatsächlicher Sichtung überprüft. Alle konkreten Lektionen fließen in das nächste Projekt. Siehe `youtube/CONTINUOUS_IMPROVEMENT.md`.
+
 ## Bevorzugte Themenrichtung
 
 Standard sind konkrete Rollen, Lebenswelten und Hierarchien, zum Beispiel:

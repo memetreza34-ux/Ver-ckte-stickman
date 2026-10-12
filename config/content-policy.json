@@ -1,6 +1,38 @@
 {
   "contentPolicyVersion": 9,
   "status": "READY",
+  "highestPriority": "KONTINUIERLICHE VERBESSERUNG: Nach jedem fertigen Video eigene messbare Ergebnisse und ehrliches Nutzer-/Sichtungsfeedback auswerten. Stärken beibehalten, konkrete Schwächen abstellen, Erkenntnisse für das nächste Video verbindlich übernehmen. Qualität schlägt Videoanzahl und Geschwindigkeit.",
+  "priorityOrder": [
+    "1_continuous_improvement",
+    "2_entertainment_and_story",
+    "3_image_audio_consistency",
+    "4_technical_quality",
+    "5_upload_package",
+    "6_speed"
+  ],
+  "continuousImprovementPolicy": {
+    "priority": 1,
+    "mandatory": true,
+    "status": "READY",
+    "afterEachVideo": [
+      "Nach jedem erfolgreichen finalen Export technischen Review automatisch erstellen.",
+      "Laufzeit, tatsächliches Sprechtempo, Bilddichte, Einleitung, Cover-Hold und zu lange Bilder anhand realer Produktionsdaten messen.",
+      "Qualitative Wirkung (Thema, Humor, Dramaturgie, Stimme, Bild-Text-Passung, Cover) durch tatsächliche Sichtung und Nutzerfeedback prüfen; keine erfundenen Bewertungen.",
+      "Stärken, Schwächen, konkrete Verbesserungsaufträge und deren Quellen je Video dokumentieren.",
+      "Videoübergreifendes Lernlog aktualisieren. Bei wiederkehrenden Problemen Maßnahmen priorisieren.",
+      "Vor dem nächsten Videoprojekt vergangene Erkenntnisse automatisch lesen und in dessen Lernbrief und Content-Plan aufnehmen.",
+      "Produktionsregeln und Skriptsystem bei bestätigten Problemen gezielt überarbeiten und testen, nie blind und ohne Evidenz.",
+      "Zusätzliche Zuschauerkennzahlen nur verwenden, wenn echte YouTube-Analytics vorliegen; keine Klickrate, Watchtime oder Retention erfinden."
+    ],
+    "reports": [
+      "99-tech/POST_VIDEO_REVIEW.json",
+      "99-tech/POST_VIDEO_REVIEW.md"
+    ],
+    "feedbackFile": "99-tech/POST_VIDEO_FEEDBACK.json",
+    "globalLog": "youtube/LEARNING_LOG.json",
+    "starterLearningBrief": "99-tech/LEARNING_BRIEF.md",
+    "reviewCommand": "npm run review:video -- --dir \"youtube/<week>/<slug>\""
+  },
   "language": "de",
   "principle": "Erst starkes Rollen-/Lebenswelt-Thema und das passende Skriptformat wählen. Bevorzugt in Deutschland angesiedelt und für deutschsprachige Zuschauer vertraut; internationale Themen bleiben im korrekten Land.",
   "channelDirection": {
