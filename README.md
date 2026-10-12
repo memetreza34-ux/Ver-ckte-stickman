@@ -16,6 +16,10 @@ Verbindliche Regeln: `config/content-policy.json → localizationPolicy`.
 
 Nach jedem finalen Video erstellt die Pipeline einen Post-Video-Review mit echten technischen Messwerten. Zusätzlich werden Story, Humor, Bilder, Stimme, Schnitt, Thema und Cover nach tatsächlicher Sichtung überprüft. Alle konkreten Lektionen fließen in das nächste Projekt. Siehe `youtube/CONTINUOUS_IMPROVEMENT.md`.
 
+## Breite StrichModus-Themenrichtung
+
+StrichModus unterhält mit verrückten Was-wäre-wenn-Ideen, komischen Situationen, überraschenden Berufen, kuriosem Wissen, fiktionalen Eskalationen und ungewöhnlichen Geschichten. Polizei und Spezialeinheiten sind nur mögliche Themen und **nicht** die feste Nische. Erst Themenklickreiz, Klarheit, Humor und Bildpotenzial prüfen. Ein Beispiel: Du bist unsichtbar, aber deine Kleidung nicht.
+
 ## Bevorzugte Themenrichtung
 
 Standard sind konkrete Rollen, Lebenswelten und Hierarchien, zum Beispiel:

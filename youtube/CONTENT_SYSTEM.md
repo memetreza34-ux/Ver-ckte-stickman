@@ -1,3 +1,5 @@
+# Produktions-Leitlinie: Humor, Originalität und kontinuierliche Verbesserung sind wichtiger als eine feste Themenkategorie.
+
 # Content-System — Verückte Stickman V9
 
 ## 1. Grundregel
@@ -10,7 +12,7 @@ Es gibt drei Formate:
 2. `progression` — klare Stufen, Ränge, Level oder Entwicklung
 3. `story` — eine zusammenhängende Handlung mit Ziel, Problem und Eskalation
 
-Die feste Kanal-DNA bleibt: grotesk-surreal, deutsch, visuell stark, unterhaltsam und klar.
+Die feste Kanal-DNA bleibt: vielseitige, überraschende und lustige Stickman-Unterhaltung mit klarer Geschichte oder Steigerung. Rollen-/Polizei-Videos sind eine Möglichkeit, aber keine vorgeschriebene Nische.
 
 ## 2. Format A — Mini-Stories
 
@@ -151,7 +153,7 @@ Kein ein-Satz-ein-Bild-Zwang und keine künstlich langen Holds nur für Zoom/Pan
 - Bild 01 = Cover + erste Szene
 - deutsche Überschrift 1–4 Wörter
 - Titel und Cover ergänzen sich
-- Export enthält `FINAL_VIDEO.mp4`, `THUMBNAIL.png` und `YOUTUBE_UPLOAD.txt`
+- Export enthält `FINAL_VIDEO.mp4`, `THUMBNAIL.png`, `YOUTUBE_CAPTION.txt` (längere Beschreibung + exakt fünf Hashtags) und `UNTERTITEL_SCRIPT.txt` (echte 10-Sekunden-Abschnitte)
 
 ## 10. Lange Videos
 

@@ -91,3 +91,17 @@ test('Neue Videos erhalten Lernbrief statt Wiederholung bekannter Fehler',async(
  const v=await readFile('src/cli/validate-phase1-v9.js','utf8');
  assert.match(v,/Lernpflicht/);
 });
+
+test('Breite StrichModus-Comedy wird wie gute Rollenideen freigegeben',async()=>{
+ const p=JSON.parse(await readFile('config/content-policy.json','utf8'));
+ assert.match(p.channelDirection.core,/Was-wäre-wenn/);
+ const fit=await evaluateChannelFit('Du bist unsichtbar, aber deine Kleidung nicht');
+ const q=await evaluateTopicQuality('Du bist unsichtbar, aber deine Kleidung nicht');
+ assert.equal(fit.decision,'APPROVED_CHANNEL_FIT');
+ assert.equal(q.decision,'APPROVED_TOPIC_QUALITY');
+ assert.ok(q.suggestedFormats.includes('story'));
+ const fbi=await evaluateTopicQuality('Ein Tag als FBI-Agent');
+ assert.equal(fbi.decision,'APPROVED_TOPIC_QUALITY');
+ const ref=await evaluateTopicQuality('Die Geschichte der CIA');
+ assert.equal(ref.decision,'REVIEW_TOPIC_QUALITY');
+});

@@ -21,8 +21,8 @@ export async function evaluateChannelFit(candidate,root=process.cwd()){
   const outSignals=niche.obviousOutOfScopeSignals??[];
   const positive=positiveSignals.filter((s)=>text.includes(normalizeText(s))),out=outSignals.filter((s)=>text.includes(normalizeText(s)));
   if(out.length)return{decision:'BLOCKED_CHANNEL_FIT',score:2,positiveSignals:positive,outOfScopeSignals:out,reason:'Thema wirkt offensichtlich außerhalb der Kanal-DNA.'};
-  if(positive.length)return{decision:'APPROVED_CHANNEL_FIT',score:9,positiveSignals:positive,outOfScopeSignals:[],reason:'Thema trifft die bevorzugte Rollen-/Lebenswelt-/Progressions-DNA.'};
-  return{decision:'REVIEW_CHANNEL_FIT',score:6,positiveSignals:[],outOfScopeSignals:[],reason:'Kanalfit ist aus dem Einzeiler allein nicht sicher; Rollen-, Lebenswelt- oder Progressionswinkel stärker machen.'};
+  if(positive.length)return{decision:'APPROVED_CHANNEL_FIT',score:9,positiveSignals:positive,outOfScopeSignals:[],reason:'Thema passt zur breiten StrichModus-DNA aus Comedy, außergewöhnlichen Lebenswelten, überraschenden Ideen oder Progression.'};
+  return{decision:'REVIEW_CHANNEL_FIT',score:6,positiveSignals:[],outOfScopeSignals:[],reason:'Kanalfit aus dem Einzeiler noch nicht sicher; klaren visuellen Comedy-, Überraschungs-, Rollen- oder Geschichtenwinkel herausarbeiten.'};
 }
 
 export async function evaluateTopicQuality(candidate,root=process.cwd()){
@@ -33,6 +33,7 @@ export async function evaluateTopicQuality(candidate,root=process.cwd()){
   const listSignals=['arten','falle','fälle','orte','lander','länder','dinge','jede art','jeder typ','top ','ranking'];
   const progressionSignals=['stufe','stufen','rang','range','ränge','level','vom ','bis zum','hierarchie','aufstieg','rekrut','boss'];
   const storySignals=['mission','einsatz','undercover','flucht','verfolgung','zielperson','geisel','operation','auftrag'];
+  const funnyPremiseSignals=['unsichtbar','aber deine kleidung','gedanken lesen','24 stunden','was ware wenn','was waere wenn','was passiert wenn','nicht lugen','nicht lügen','superkraft','absurd','verruckt','verrückt','fluch','chaos','peinlich','schlechtester'];
   const strongWorldSignals=['bka','lka','sek','kripo','kriminalpolizei','bundespolizei','zoll','zollfahnder','kommissar','cia','fbi','swat','agent','geheimdienst','mafia','kartell','spezialeinheit','polizei','soldat','sniper','scharfschutze','scharfschütze','auftragskiller','undercover'];
 
   const generic=genericSignals.filter((s)=>text.includes(normalizeText(s)));
@@ -41,10 +42,13 @@ export async function evaluateTopicQuality(candidate,root=process.cwd()){
   const progression=progressionSignals.filter((s)=>text.includes(normalizeText(s)));
   const story=storySignals.filter((s)=>text.includes(normalizeText(s)));
   const world=strongWorldSignals.filter((s)=>text.includes(normalizeText(s)));
+  const funny=funnyPremiseSignals.filter((s)=>text.includes(normalizeText(s)));
 
   let score=5.3;
   if(role.length)score+=1.9;
   if(world.length)score+=1.2;
+  if(funny.length)score+=1.7;
+  if(funny.length>=2)score+=0.3;
   if(progression.length)score+=1.2;
   if(progression.length>=2)score+=0.5;
   if(list.length)score+=0.8;
@@ -58,15 +62,15 @@ export async function evaluateTopicQuality(candidate,root=process.cwd()){
   const formatScores={
     'mini-stories':role.length*3+list.length+world.length,
     progression:progression.length*2+world.length,
-    story:story.length*2+role.length+world.length
+    story:story.length*2+role.length+world.length+funny.length*3
   };
   const suggestedFormats=Object.entries(formatScores).sort((a,b)=>b[1]-a[1]).filter(([,v])=>v>0).map(([k])=>k);
   const minimum=Number(q.minimumScore??8),approved=score>=minimum;
   return{
     decision:approved?'APPROVED_TOPIC_QUALITY':'REVIEW_TOPIC_QUALITY',score,
-    roleSignals:role,listSignals:list,progressionSignals:progression,storySignals:story,worldSignals:world,genericSignals:generic,suggestedFormats,
-    reason:approved?'Thema besitzt eine klare Rolle/Lebenswelt oder starke Progression mit gutem visuellen Potenzial.':'Thema ist noch zu allgemein. Bevorzuge eine konkrete Rolle, einen Tag, einen Einsatz oder eine echte Hierarchie.',
-    reframePatterns:['Ein Tag beim BKA','Dein erster Tag beim SEK','Ein Tag bei der Kriminalpolizei','Ein Tag als FBI-Agent','Ein Tag als CIA-Agent','Dein Leben als Undercover-Agent','Vom Rekruten bis zum Boss','Dein Leben auf jeder Stufe von ...']
+    roleSignals:role,listSignals:list,progressionSignals:progression,storySignals:story,worldSignals:world,funnySignals:funny,genericSignals:generic,suggestedFormats,
+    reason:approved?'Thema besitzt eine starke konkrete Rolle, visuelle Comedy-Prämisse, Story oder echte Progression.':'Thema ist noch zu allgemein; eine originelle, konkret vorstellbare Situation, Rolle oder Steigerung fehlt.',
+    reframePatterns:['Du bist unsichtbar, aber deine Kleidung nicht','24 Stunden ohne jede Lüge','Jeder hört deine Gedanken','Ein Tag beim BKA','Dein erster Tag beim SEK','Ein Tag bei der Kriminalpolizei','Ein Tag als FBI-Agent','Ein Tag als CIA-Agent','Dein Leben als Undercover-Agent','Vom Rekruten bis zum Boss','Dein Leben auf jeder Stufe von ...']
   };
 }
 
