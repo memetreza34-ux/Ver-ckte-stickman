@@ -80,6 +80,21 @@
       "status": "phase1-ready",
       "createdAt": "2026-10-08T16:55:00+02:00",
       "notes": "Erstes FBI-Rollen-Longform: 1206 Wörter, ca. 6:40 Min., 120 individuelle Flow-Szenen, 24 5er-Batches; fiktiver Fall mit FBI-Quellen. Audio-Laufzeit nach Produktion nachmessen."
+    },
+    {
+      "id": "2026-KW42_unsichtbar-aber-kleidung-sichtbar",
+      "title": "Du bist unsichtbar – aber deine Kleidung nicht!",
+      "aliases": [
+        "24 Stunden unsichtbar",
+        "Unsichtbar aber Kleidung sichtbar"
+      ],
+      "status": "phase1-ready",
+      "createdAt": "2026-10-12T19:45:00+02:00",
+      "topicQualityAtCreation": {
+        "decision": "APPROVED_TOPIC_QUALITY",
+        "score": 9
+      },
+      "notes": "1214 Wörter, 130 Szenen, 402 Sekunden Ziel, Flow-Assets noch zu erzeugen."
     }
   ]
 }
