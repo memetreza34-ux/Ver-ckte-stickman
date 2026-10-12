@@ -1,0 +1,37 @@
+# ALLE BILDPROMPTS — Du bist unsichtbar – aber deine Kleidung nicht!
+
+Google-Flow-Regel: Jeder Durchgang umfasst exakt fünf Bilder (letzter Block eventuell kleiner). Nach jeder Generierung prüfen, ob alle fünf Bilder vorhanden sind und dem Skript sowie der Bildwelt entsprechen. Fehlendes sofort nachgenerieren. Bilder während der Produktion NICHT einzeln herunterladen oder umbenennen; nach allen Batches einmal gesammelt importieren.
+
+## VERBINDLICHE BILDWELT
+VERBINDLICHE BILDWELT: Eigenständiger handgezeichneter deutscher grotesker 2D-Stickman-Comic, markante schwarze rau wirkende Konturen, große weiße ovale Gesichter bei sichtbaren Menschen, ausdrucksstarke überzeichnete Mimik, reduzierte Tiefe. BEN: Vor Mitternacht ist sein Körper KOMPLETT UNSICHTBAR, keine Augen, kein Kopf, keine Hände oder geisterhafte Silhouette. Nur ein körpergefüllter schwarzer Hoodie mit kleinem dunkelrotem Brustpatch, graue Jeans und weiße Sneakers mit roten Seitenstreifen sind sichtbar; die Kleidung wird von Ben getragen. Ab Rückverwandlung: weißer ovaler Stickman-Kopf, kurze braune Haare, große braune Augen, dünne schwarze Stickman-Glieder, gleicher Hoodie/Jeans/Sneaker. MIRA: sichtbare Stickman-Freundin mit roten Locken, gelber Regenjacke, blauer Hose. FRAU KRÜGER: kleine ältere Stickman-Frau mit silbergrauem Dutt, violetter Strickjacke, lila Einkaufstrolley. Alle anderen Menschen sind sichtbare Stickmen. Fiktive deutsche Stadt mit Mietshaus, Eckbäckerei, gelber Straßenbahn, Secondhandladen, Rathausplatz, Seitenstraße. Farbwelt Weiß/Schwarz/Grau, gezielte Rot/Gelb/Cyan/Violett/Ocker-Akzente. Kein Fotorealismus, kein 3D/Pixar, keine billige Kinderclipart.
+
+
+
+## VERBINDLICHER 5ER-PRODUKTIONSBLOCK
+Erzeuge jetzt AUSSCHLIESSLICH Bilder 01 bis 05. Prüfe jedes Bild auf Vollständigkeit, richtige Figuren und konsistenten Stil, dann erst den nächsten Batch. Fehlende Bilder sofort neu erzeugen. Währenddessen nichts einzeln herunterladen oder umbenennen; erst am Ende gesammelt importieren.
+
+## Bild 01 — COVER
+ÜBERSCHRIFT: "UNSICHTBAR. FAST."
+BILDPROMPT:
+16:9, YouTube-Cover und erste Szene: schwebender, körpergefüllter schwarzer Hoodie mit dunkelrotem Brustpatch, graue Jeans und weiße Sneakers mit roten Seitenstreifen vor einem hellen Badezimmerspiegel. Wo der Kopf sein müsste, sieht man nur Hintergrundfliesen, KEIN Kopf, KEINE Geisteraugen oder Haut. Kleine erschrockene Nachbarin seitlich, rotes Alarmhandy als Akzent. Exakt einmal riesige sichere deutsche Überschrift „UNSICHTBAR. FAST.“ in sehr dicken weißen Buchstaben auf dunkelroter Fläche, schwarze Outlines. Groteske erwachsene 2D-Stickman-Illustration, groß lesbar bei Handygröße, kein zweiter Text, kein 3D, keine Fotografie, kein Wasserzeichen.
+
+
+## Bild 02
+BILDPROMPT:
+16:9, Objektdetail, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: Hoodie vor Spiegel. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Morgens um sieben schwebt dein Kapuzenpulli im Badezimmerspiegel.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 03
+BILDPROMPT:
+16:9, leichte Untersicht, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: leerer Kragen und Ärmel. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Dein Gesicht fehlt komplett, und deine Hände übrigens auch.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 04
+BILDPROMPT:
+16:9, weite Totale, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: kopfloser Hoodie prallt. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Trotzdem knallst du mit dem Kopf gegen den Türrahmen.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 05
+BILDPROMPT:
+16:9, Über-Schulter-Perspektive, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: Handy mit BIS MITTERNACHT. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Auf dem Handy steht nur: Bis Mitternacht.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+

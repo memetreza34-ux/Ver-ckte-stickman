@@ -1,0 +1,36 @@
+# ALLE BILDPROMPTS — Du bist unsichtbar – aber deine Kleidung nicht!
+
+Google-Flow-Regel: Jeder Durchgang umfasst exakt fünf Bilder (letzter Block eventuell kleiner). Nach jeder Generierung prüfen, ob alle fünf Bilder vorhanden sind und dem Skript sowie der Bildwelt entsprechen. Fehlendes sofort nachgenerieren. Bilder während der Produktion NICHT einzeln herunterladen oder umbenennen; nach allen Batches einmal gesammelt importieren.
+
+## VERBINDLICHE BILDWELT
+VERBINDLICHE BILDWELT: Eigenständiger handgezeichneter deutscher grotesker 2D-Stickman-Comic, markante schwarze rau wirkende Konturen, große weiße ovale Gesichter bei sichtbaren Menschen, ausdrucksstarke überzeichnete Mimik, reduzierte Tiefe. BEN: Vor Mitternacht ist sein Körper KOMPLETT UNSICHTBAR, keine Augen, kein Kopf, keine Hände oder geisterhafte Silhouette. Nur ein körpergefüllter schwarzer Hoodie mit kleinem dunkelrotem Brustpatch, graue Jeans und weiße Sneakers mit roten Seitenstreifen sind sichtbar; die Kleidung wird von Ben getragen. Ab Rückverwandlung: weißer ovaler Stickman-Kopf, kurze braune Haare, große braune Augen, dünne schwarze Stickman-Glieder, gleicher Hoodie/Jeans/Sneaker. MIRA: sichtbare Stickman-Freundin mit roten Locken, gelber Regenjacke, blauer Hose. FRAU KRÜGER: kleine ältere Stickman-Frau mit silbergrauem Dutt, violetter Strickjacke, lila Einkaufstrolley. Alle anderen Menschen sind sichtbare Stickmen. Fiktive deutsche Stadt mit Mietshaus, Eckbäckerei, gelber Straßenbahn, Secondhandladen, Rathausplatz, Seitenstraße. Farbwelt Weiß/Schwarz/Grau, gezielte Rot/Gelb/Cyan/Violett/Ocker-Akzente. Kein Fotorealismus, kein 3D/Pixar, keine billige Kinderclipart.
+
+
+
+## VERBINDLICHER 5ER-PRODUKTIONSBLOCK
+Erzeuge jetzt AUSSCHLIESSLICH Bilder 11 bis 15. Prüfe jedes Bild auf Vollständigkeit, richtige Figuren und konsistenten Stil, dann erst den nächsten Batch. Fehlende Bilder sofort neu erzeugen. Währenddessen nichts einzeln herunterladen oder umbenennen; erst am Ende gesammelt importieren.
+
+## Bild 11
+BILDPROMPT:
+16:9, Vogelperspektive, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: Hoodie vor Wohnungstür. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Also wagst du dich auf die Straße, wenigstens kurz.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 12
+BILDPROMPT:
+16:9, dynamische Halbtotale, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: Küchenuhr und Haustür. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Dieser Plan hält ungefähr vier Minuten, dann beginnt das Chaos.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 13
+BILDPROMPT:
+16:9, Seitenansicht, am Ort deutsches Badezimmer oder Mietshaus, Farben kühles Morgenblau und Rot. Zeige KONKRET diese Handlung: mehrere Handys zeigen schwebenden Hoodie. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Später wird deine Jacke auf erstaunlich vielen fremden Handys auftauchen.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 14
+BILDPROMPT:
+16:9, Nahaufnahme, am Ort Küche oder Hausflur, Farben warmes Ocker im Treppenhaus. Zeige KONKRET diese Handlung: schwebender Apfel. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Zuerst testest du die Sache mit einem roten Apfel.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
+
+## Bild 15
+BILDPROMPT:
+16:9, Objektdetail, am Ort Küche oder Hausflur, Farben warmes Ocker im Treppenhaus. Zeige KONKRET diese Handlung: Apfel und Tasse. Gesprochener Szenenanker zur präzisen Bedeutung (nicht ins Bild schreiben): Er bleibt sichtbar, genau wie deine Kaffeetasse daneben.. BEN IST KÖRPERLICH UNSICHTBAR: niemals Gesicht, Augen, Haut oder transparenten Körper zeichnen. Nur körpergefüllter schwarzer Hoodie mit rotem Brustpatch, graue Jeans und rotgestreifte weiße Sneakers werden von ihm getragen. Wenn Mira sichtbar ist, rote Locken und gelbe Regenjacke; Frau Krüger mit violetter Strickjacke, silbergrauem Dutt und lila Einkaufstrolley. Ein klarer Blickfang, aktive Geste, überzeichnete lesbare Reaktion sichtbarer Figuren, reduzierte räumliche Tiefe und dicke handgezeichnete schwarze Konturen. Ausschließlich 2D-Groteske-Comedy, kein Textplakat, keine Untertitel, keine Fotos, kein 3D/Pixar, keine Pseudoschrift, kein Wasserzeichen.
+
