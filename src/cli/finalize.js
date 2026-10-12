@@ -3,6 +3,7 @@ import { copyFile, mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, exists, fileSize, isMain, parseFps, probeMedia, projectPaths, readJson, sha256, writeJson } from '../lib/pipeline.js';
 import { validateYouTubeDescription } from '../lib/youtube-description.js';
+import { runPostVideoReview } from './review-video.js';
 
 function flattenTranscriptWords(json){
   const out=[];
@@ -130,6 +131,7 @@ export async function finalize(projectDirectory){
     passed:true
   };
   await writeJson(path.join(p.techDir,'EXPORT_REPORT.json'),report);
+  await runPostVideoReview(projectDirectory);
   console.log('Post-Render-QC: BESTANDEN — Video, Thumbnail, YOUTUBE_CAPTION.txt und UNTERTITEL_SCRIPT.txt sind bereit.');
   return report;
 }

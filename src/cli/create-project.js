@@ -30,7 +30,7 @@ async function main(){
   await copyDirectory(path.resolve('youtube/templates/video-template'),destination);
 
   const now=new Date().toISOString(),techDir=path.join(destination,'99-tech'),metaPath=path.join(techDir,'video.json'),meta=await readJson(metaPath);
-  Object.assign(meta,{videoId:`${week}_${slug}`,weekFolder:week,topicSlug:slug,title,topic,visualStyleId:visual.styleId,contentPolicyVersion:contentPolicy.contentPolicyVersion,createdAt:now,updatedAt:now});
+  Object.assign(meta,{videoId:`${week}_${slug}`,weekFolder:week,topicSlug:slug,title,topic,visualStyleId:visual.styleId,contentPolicyVersion:contentPolicy.contentPolicyVersion,learningPolicyVersion:1,createdAt:now,updatedAt:now});
   await writeJson(metaPath,meta);
 
   const contentPlanPath=path.join(techDir,'CONTENT_PLAN.json'),contentPlan=await readJson(contentPlanPath),defaultMode=chooseContentMode(topic,contentPolicy);
@@ -40,6 +40,19 @@ async function main(){
   const researchPath=path.join(techDir,'RESEARCH.json'),research=await readJson(researchPath);
   Object.assign(research,{topic});
   await writeJson(researchPath,research);
+
+  // Jede neue Produktion übernimmt die bestätigten Lektionen früherer Videos.
+  const playbook=await readJson(path.resolve('config/learning-playbook.json'),{lessons:[]});
+  const learnLog=await readJson(path.resolve('youtube/LEARNING_LOG.json'),{entries:[]});
+  const recent=(learnLog.entries??[]).filter(x=>x.videoId!==meta.videoId).slice(-3);
+  const measured=recent.flatMap(x=>(x.improvements??[]).filter(y=>y.status==='evidence-based'||y.status==='feedback').map(y=>({source:x.videoId,action:y.action}))).slice(-5);
+  const baseline=(playbook.lessons??[]).filter(x=>x.priority==='high').slice(0,5).map(x=>({source:x.source,action:x.action}));
+  const selected=[...measured,...baseline].slice(0,8);
+  contentPlan.learningFromPreviousVideos={policyVersion:1,sourceVideos:recent.map(x=>x.videoId),plannedImprovements:selected,appliedDuringProduction:[],notes:'Verbesserungen beim Schreiben, Bildplanen und Rendern tatsächlich beachten; nicht nur abhaken.'};
+  await writeJson(contentPlanPath,contentPlan);
+  const summary=['# Verbindlicher Lernbrief','','Oberste Priorität: Jede neue Produktion nutzt Erkenntnisse aus vorigen Videos.','',...selected.map((x,i)=>(i+1)+'. ['+x.source+'] '+x.action),'','Vor der Bildproduktion prüfen, welche Schritte tatsächlich umgesetzt wurden.'];
+  await writeFile(path.join(techDir,'LEARNING_BRIEF.md'),summary.join('\n')+'\n','utf8');
+
 
   const promptPath=path.join(destination,'00-bildprompts','99-alle-bildprompts.txt');
   const prompt=(await readFile(promptPath,'utf8')).replaceAll('{{VIDEO_TITLE}}',title).replaceAll('{{STYLE_ID}}',visual.styleId);

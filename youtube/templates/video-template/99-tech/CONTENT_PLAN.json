@@ -5,16 +5,49 @@
   "topic": "",
   "workingTitle": "",
   "contentMode": "frei-surreal",
-  "truthBoundary": {"realElements": [], "inventedElements": [], "notes": ""},
-  "topicFit": {"score": null, "verdict": "", "pillars": [], "reason": ""},
-  "topicQuality": {"score": null, "verdict": "", "curiosity": null, "weirdness": null, "visualPotential": null, "escalationPotential": null, "entertainmentPotential": null, "reason": "", "whyNotBoring": ""},
+  "truthBoundary": {
+    "realElements": [],
+    "inventedElements": [],
+    "notes": ""
+  },
+  "topicFit": {
+    "score": null,
+    "verdict": "",
+    "pillars": [],
+    "reason": ""
+  },
+  "topicQuality": {
+    "score": null,
+    "verdict": "",
+    "curiosity": null,
+    "weirdness": null,
+    "visualPotential": null,
+    "escalationPotential": null,
+    "entertainmentPotential": null,
+    "reason": "",
+    "whyNotBoring": ""
+  },
   "viewerPromise": "",
   "coreQuestion": "",
   "angle": "",
   "individualityReason": "",
-  "scriptFormat": {"type": "", "reason": "", "whyThisFormat": ""},
-  "hook": {"type": "", "text": "", "reason": ""},
-  "introPlan": {"openingMove": "", "formatPromise": "", "firstPayoff": "", "clarityLine": "", "first10SecondsVisualCount": null},
+  "scriptFormat": {
+    "type": "",
+    "reason": "",
+    "whyThisFormat": ""
+  },
+  "hook": {
+    "type": "",
+    "text": "",
+    "reason": ""
+  },
+  "introPlan": {
+    "openingMove": "",
+    "formatPromise": "",
+    "firstPayoff": "",
+    "clarityLine": "",
+    "first10SecondsVisualCount": null
+  },
   "formatPlan": {
     "miniStories": {
       "orderingLogic": "",
@@ -35,22 +68,59 @@
       "causalTurns": [],
       "midpointTurn": "",
       "finalEscalation": "",
-      "setupPayoff": {"setup": "", "payoff": ""},
+      "setupPayoff": {
+        "setup": "",
+        "payoff": ""
+      },
       "endingCallback": "",
       "beats": []
     }
   },
   "entertainmentBeats": [],
-  "scriptQuality": {"score": null, "verdict": "", "introClarity": null, "formatFit": null, "clarity": null, "curiosity": null, "entertainment": null, "voiceNaturalness": null, "payoff": null, "reason": ""},
-  "retention": {"openLoops": [], "escalationPoints": [], "patternInterrupts": []},
+  "scriptQuality": {
+    "score": null,
+    "verdict": "",
+    "introClarity": null,
+    "formatFit": null,
+    "clarity": null,
+    "curiosity": null,
+    "entertainment": null,
+    "voiceNaturalness": null,
+    "payoff": null,
+    "reason": ""
+  },
+  "retention": {
+    "openLoops": [],
+    "escalationPoints": [],
+    "patternInterrupts": []
+  },
   "payoff": "",
   "titleCoverSystem": {
     "finalTitle": "",
     "titlePromise": "",
-    "coverConcept": {"visualConflict": "", "mainSubjects": [], "visibleText": "", "emotion": "", "whyClickable": ""},
+    "coverConcept": {
+      "visualConflict": "",
+      "mainSubjects": [],
+      "visibleText": "",
+      "emotion": "",
+      "whyClickable": ""
+    },
     "complementarity": ""
   },
-  "youtubeUpload": {"title": "", "description": ""},
-  "ending": {"type": "", "finalLine": ""},
-  "notes": []
+  "youtubeUpload": {
+    "title": "",
+    "description": ""
+  },
+  "ending": {
+    "type": "",
+    "finalLine": ""
+  },
+  "notes": [],
+  "learningFromPreviousVideos": {
+    "policyVersion": 1,
+    "sourceVideos": [],
+    "plannedImprovements": [],
+    "appliedDuringProduction": [],
+    "notes": ""
+  }
 }

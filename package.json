@@ -19,7 +19,8 @@
     "finalize:video": "node src/cli/finalize.js",
     "phase3": "node src/cli/phase3.js",
     "studio": "remotion studio src/youtube-renderer/index.jsx",
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "review:video": "node src/cli/review-video.js"
   },
   "dependencies": {
     "@remotion/cli": "4.0.506",
@@ -28,5 +29,7 @@
     "react-dom": "18.3.1",
     "remotion": "4.0.506"
   },
-  "engines": {"node": ">=22"}
+  "engines": {
+    "node": ">=22"
+  }
 }

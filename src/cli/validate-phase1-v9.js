@@ -19,6 +19,14 @@ export async function validatePhase1V9(projectDirectory){
   ]);
   const errors=[];
 
+  // Erst nach Einführung der Lernpflicht erzeugte Projekte müssen alte Lektionen übernehmen.
+  if(Number(meta.learningPolicyVersion)===1){
+    const learning=plan.learningFromPreviousVideos??{};
+    if(!Array.isArray(learning.plannedImprovements)||!learning.plannedImprovements.some(x=>filled(x?.action,20)))
+      errors.push('Lernpflicht: CONTENT_PLAN.learningFromPreviousVideos.plannedImprovements enthält keine konkrete Verbesserung.');
+    const brief=await readFile(path.join(p.techDir,'LEARNING_BRIEF.md'),'utf8').catch(()=>null);
+    if(!brief||brief.trim().length<60)errors.push('Lernpflicht: 99-tech/LEARNING_BRIEF.md fehlt oder ist zu knapp.');
+  }
   const intro=plan.introPlan??{},introPolicy=policy.introPolicy??{};
   for(const [key,label] of [['openingMove','Opening Move'],['formatPromise','Format-Versprechen'],['firstPayoff','erster Payoff'],['clarityLine','Klarheitssatz']])if(!filled(intro[key],8))errors.push(`CONTENT_PLAN.introPlan: ${label} fehlt oder ist zu knapp.`);
   const minVisuals=Number(introPolicy.minimumVisualMoments??4),plannedVisuals=Number(intro.first10SecondsVisualCount);

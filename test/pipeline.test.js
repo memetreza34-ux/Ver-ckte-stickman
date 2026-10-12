@@ -6,6 +6,7 @@ import test from 'node:test';
 import { editSimilarity, normalizeText, projectPaths, topicSimilarity } from '../src/lib/pipeline.js';
 import { evaluateChannelFit, evaluateTopicQuality } from '../src/cli/check-topic.js';
 import { compileFlowPrompt } from '../src/cli/compile-flow-prompt.js';
+import { assessVideo } from '../src/cli/review-video.js';
 import { validateYouTubeDescription } from '../src/lib/youtube-description.js';
 
 test('Visual Policy bleibt produktionsbereit',async()=>{const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));assert.equal(v.status,'READY');assert.equal(v.languagePolicy?.promptLanguage,'de');assert.equal(v.thumbnailDNA?.headlineRequired,true);});
@@ -54,4 +55,39 @@ test('Content-Policy schreibt längere Captions und fünf Hashtags vor',async()=
  assert.ok(p.youtubeUploadPolicy.descriptionMinimumBodyCharacters>=450);
  assert.equal(p.youtubeUploadPolicy.hashtagCount,5);
  assert.equal(p.youtubeUploadPolicy.descriptionMinimumParagraphs,2);
+});
+
+test('Kontinuierliche Verbesserung ist obligatorische Priorität 1',async()=>{
+ const p=JSON.parse(await readFile('config/content-policy.json','utf8'));
+ assert.equal(p.continuousImprovementPolicy.priority,1);
+ assert.equal(p.continuousImprovementPolicy.mandatory,true);
+ assert.equal(p.priorityOrder[0],'1_continuous_improvement');
+ const f=await readFile('src/cli/finalize.js','utf8');
+ assert.match(f,/runPostVideoReview\(projectDirectory\)/);
+});
+test('Review erkennt technische Probleme und übernimmt qualitatives Feedback',()=>{
+ const sample={
+  meta:{videoId:'test-1',title:'Probe',targetDurationSeconds:400},
+  timeline:{fps:30,audioDurationSeconds:294,images:Array.from({length:70},(_,i)=>({imageNumber:i+1,startFrame:i*115,durationSeconds:i===0?3:4.2}))},
+  report:{passed:true,durationSeconds:295},
+  script:Array.from({length:900},()=> 'wort').join(' '),
+  feedback:{observations:[{area:'Skript',observation:'Der Anfang war zu kompliziert.',action:'Die Situation im ersten Satz deutlich machen.'}]},
+  pipeline:{fps:30,imagePolicy:{targetImagesPer100Seconds:[30,42],preferSplitAboveSeconds:5.8},introVisualPolicy:{maximumCoverHoldSeconds:2.2,minimumImageStartsInWindow:4}}
+ };
+ const result=assessVideo(sample);
+ assert.equal(result.metrics.imageCount,70);
+ assert.ok(result.improvements.some(x=>x.id==='duration-calibration'));
+ assert.ok(result.improvements.some(x=>x.id==='visual-density-low'));
+ assert.ok(result.improvements.some(x=>x.id==='cover-duration'));
+ assert.ok(result.improvements.some(x=>x.id==='feedback-1'));
+ assert.equal(result.youtubeAnalytics.status,'not-provided');
+ assert.throws(()=>assessVideo({...sample,report:{passed:false,durationSeconds:295}}));
+});
+test('Neue Videos erhalten Lernbrief statt Wiederholung bekannter Fehler',async()=>{
+ const make=await readFile('src/cli/create-project.js','utf8');
+ assert.match(make,/LEARNING_BRIEF\.md/);
+ assert.match(make,/LEARNING_LOG\.json/);
+ assert.match(make,/learningFromPreviousVideos/);
+ const v=await readFile('src/cli/validate-phase1-v9.js','utf8');
+ assert.match(v,/Lernpflicht/);
 });
