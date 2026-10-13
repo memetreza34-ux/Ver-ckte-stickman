@@ -4,6 +4,7 @@ import { mkdtemp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { hasCompleteAlignment } from '../src/cli/auto-align.js';
+import { buildSrtTranscript } from '../src/cli/finalize.js';
 import { hasMeasuredImageStarts } from '../src/cli/build-timeline.js';
 import { materializeScenePlan } from '../src/lib/materialize-scene-plan.js';
 import { orderImages, importFlowImages } from '../src/cli/import-flow-images.js';
@@ -95,4 +96,20 @@ test('Scene rematerialization preserves matching measured anchors but invalidate
     assert.equal(changed.images[0].actualStartSeconds,0);
     assert.equal(changed.images[1].actualStartSeconds,null);
   }finally{await rm(tmp,{recursive:true,force:true});}
+});
+
+test('SRT export uses genuine word timestamps and creates valid numbered cues',()=>{
+  const words=[
+    {text:'Hallo',start:0,end:0.32},
+    {text:'Welt!',start:0.4,end:0.9},
+    {text:'Und',start:1.1,end:1.32},
+    {text:'noch',start:1.4,end:1.65},
+    {text:'ein',start:1.7,end:1.83},
+    {text:'Test.',start:1.9,end:2.3},
+    {text:'Weiter',start:2.5,end:2.9}
+  ];
+  const subtitle=buildSrtTranscript(words,3.5);
+  assert.match(subtitle,/1\n00:00:00,000 --> 00:00:02,300\nHallo Welt! Und noch ein Test\./);
+  assert.match(subtitle,/2\n00:00:02,500 --> 00:00:02,900\nWeiter/);
+  assert.throws(()=>buildSrtTranscript([],3),/keine nutzbaren Wortzeiten/);
 });
