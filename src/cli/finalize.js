@@ -8,17 +8,17 @@ import { runPostVideoReview } from './review-video.js';
 function flattenTranscriptWords(json){
   const out=[];
   for(const segment of json.segments??[]){
-    if(Array.isArray(segment.words)&&segment.words.length){
-      for(const word of segment.words){
-        const text=String(word.word??'').trim();
-        const start=Number(word.start),end=Number(word.end??word.start);
-        if(text&&Number.isFinite(start))out.push({text,start,end:Number.isFinite(end)?end:start});
-      }
+    if(!Array.isArray(segment.words)||segment.words.length===0){
+      if(String(segment.text??'').trim())throw new Error('Whisper enthält Segment ohne echte Wortzeiten; Untertitel dürfen nicht geschätzt werden.');
       continue;
     }
-    const parts=String(segment.text??'').trim().split(/\s+/).filter(Boolean);
-    const start=Number(segment.start??0),end=Number(segment.end??start),step=parts.length?(end-start)/parts.length:0;
-    parts.forEach((text,index)=>out.push({text,start:start+step*index,end:start+step*(index+1)}));
+    for(const word of segment.words){
+      const text=String(word.word??'').trim();
+      const start=Number(word.start),end=Number(word.end);
+      if(!text)continue;
+      if(!Number.isFinite(start)||!Number.isFinite(end)||end<start)throw new Error('Ungültige Whisper-Wortzeit: '+text);
+      out.push({text,start,end});
+    }
   }
   return out.sort((a,b)=>a.start-b.start);
 }
