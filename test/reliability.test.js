@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { hasCompleteAlignment } from '../src/cli/auto-align.js';
 import { buildSrtTranscript } from '../src/cli/finalize.js';
+import { validateImageReview, createImageReview, applyImageReview } from '../src/cli/review-images.js';
 import { hasMeasuredImageStarts } from '../src/cli/build-timeline.js';
 import { materializeScenePlan } from '../src/lib/materialize-scene-plan.js';
 import { orderImages, importFlowImages } from '../src/cli/import-flow-images.js';
@@ -112,4 +113,38 @@ test('SRT export uses genuine word timestamps and creates valid numbered cues',(
   assert.match(subtitle,/1\n00:00:00,000 --> 00:00:02,300\nHallo Welt! Und noch ein Test\./);
   assert.match(subtitle,/2\n00:00:02,500 --> 00:00:02,900\nWeiter/);
   assert.throws(()=>buildSrtTranscript([],3),/keine nutzbaren Wortzeiten/);
+});
+
+test('Visual review requires current hashes and explicit approvals',()=>{
+  const expected=[{imageNumber:1,sha256:'aaa'},{imageNumber:2,sha256:'bbb'}];
+  const good={images:[{imageNumber:1,sha256:'aaa',status:'approved'},{imageNumber:2,sha256:'bbb',status:'approved'}]};
+  assert.equal(validateImageReview(good,expected).complete,true);
+  const unfinished={images:[good.images[0],{...good.images[1],status:'pending'}]};
+  assert.equal(validateImageReview(unfinished,expected).complete,false);
+  assert.equal(validateImageReview(unfinished,expected).approvedCount,1);
+  assert.equal(validateImageReview(good,[expected[0],{imageNumber:2,sha256:'changed'}]).passed,false);
+});
+
+test('Visual review keeps decisions for unchanged images and invalidates replacement',async()=>{
+  const tmp=await mkdtemp(path.join(os.tmpdir(),'stickman-visual-review-'));
+  try{
+    const dir=path.join(tmp,'movie'),tech=path.join(dir,'99-tech'),images=path.join(dir,'03-bilder');
+    await mkdir(tech,{recursive:true});await mkdir(images,{recursive:true});
+    await writeFile(path.join(tech,'video.json'),JSON.stringify({videoId:'test-visual',plannedImageCount:1}));
+    await writeFile(path.join(tech,'IMAGE_AUDIO_MAP.json'),JSON.stringify({images:[{imageNumber:1,startAnchor:'Hallo',visualPurpose:'Handlung vor der Tür'}]}));
+    await writeFile(path.join(images,'Bild 01.png'),'first version');
+    const first=await createImageReview(dir);
+    assert.equal(first.approvedCount,0);
+    const initial=JSON.parse(await readFile(path.join(tech,'IMAGE_REVIEW.json'),'utf8'));
+    initial.images[0].status='approved';
+    const response=path.join(tmp,'review.json');
+    await writeFile(response,JSON.stringify(initial));
+    assert.equal((await applyImageReview(dir,response)).complete,true);
+    assert.equal((await createImageReview(dir)).approvedCount,1);
+    await writeFile(path.join(images,'Bild 01.png'),'modified version');
+    await assert.rejects(()=>applyImageReview(dir,response),/ersetzt/);
+    assert.equal((await createImageReview(dir)).approvedCount,0);
+    const html=await readFile(path.join(tech,'IMAGE_REVIEW.html'),'utf8');
+    assert.match(html,/Handlung vor der Tür/);
+  }finally{await rm(tmp,{recursive:true,force:true});}
 });
