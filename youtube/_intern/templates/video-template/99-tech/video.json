@@ -13,5 +13,6 @@
   "plannedImageCount": null,
   "endHoldSeconds": 1.3,
   "createdAt": "",
-  "updatedAt": ""
+  "updatedAt": "",
+  "visualPolicyVersion": null
 }

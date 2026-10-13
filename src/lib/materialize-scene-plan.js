@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { exists, projectPaths, readJson, writeJson } from './pipeline.js';
+import { STICKMAN_ANATOMY_RULE } from './stickman-style.js';
 
 const DEFAULT_SHOTS=['Nahaufnahme','Halbtotale','POV','weite Totale','Detail','leichte Untersicht','Seitenansicht','symmetrische Ansicht'];
 const DEFAULT_MOTIONS=['push-in','pan-right','focus-left','pull-out','drift-up','focus-right','pan-left','drift-down'];
@@ -72,10 +73,10 @@ export async function materializeScenePlan(projectDirectory){
   const blocks=scenes.map((scene,i)=>{
     const n=i+1,anchor=String(scene.anchor).trim(),shot=String(scene.shot??shots[i%shots.length]);
     if(n===1){
-      const body=`16:9. ${coverVisual} Überschrift „${coverText}“ exakt einmal groß und kontrastreich, keine weitere Schrift. ${world} Klare schwarze Konturen, starke Silhouetten und reduzierte Umgebung. Kein Fotorealismus, kein 3D/Pixar, keine Pseudo-Schrift, kein Wasserzeichen.`;
+      const body=`16:9. ${STICKMAN_ANATOMY_RULE} ${coverVisual} Überschrift „${coverText}“ exakt einmal groß und kontrastreich, keine weitere Schrift. ${world} Klare schwarze Konturen, starke Silhouetten und reduzierte Umgebung. Kein Fotorealismus, kein 3D/Pixar, keine Pseudo-Schrift, kein Wasserzeichen.`;
       return `## Bild 01 — COVER\nÜBERSCHRIFT: "${coverText}"\nBILDPROMPT:\n${body}`;
     }
-    const body=`16:9. ${world} Zeige konkret diesen Storymoment: „${anchor}“ als ${shot}. Sichtbare Handlung, passende überzeichnete Reaktion und klare räumliche Situation; Akzente in Rot, Gelb, Cyan oder Violett passend zur Szene. Keine Textkarte und keine zusätzliche Schrift außer wenn der Storymoment sie zwingend benötigt; dann nur korrektes Deutsch. Kein Fotorealismus, 3D/Pixar, Pseudo-Schrift oder Wasserzeichen.`;
+    const body=`16:9. ${STICKMAN_ANATOMY_RULE} ${world} Zeige konkret diesen Storymoment: „${anchor}“ als ${shot}. Sichtbare Handlung, passende überzeichnete Reaktion und klare räumliche Situation; Akzente in Rot, Gelb, Cyan oder Violett passend zur Szene. Keine Textkarte und keine zusätzliche Schrift außer wenn der Storymoment sie zwingend benötigt; dann nur korrektes Deutsch. Kein Fotorealismus, 3D/Pixar, Pseudo-Schrift oder Wasserzeichen.`;
     return `## Bild ${String(n).padStart(2,'0')}\nBILDPROMPT:\n${body}`;
   });
   await mkdir(path.dirname(p.prompt),{recursive:true});

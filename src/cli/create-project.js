@@ -30,7 +30,7 @@ async function main(){
   await copyDirectory(path.resolve('youtube/_intern/templates/video-template'),destination);
 
   const now=new Date().toISOString(),techDir=path.join(destination,'99-tech'),metaPath=path.join(techDir,'video.json'),meta=await readJson(metaPath);
-  Object.assign(meta,{videoId:`${week}_${slug}`,weekFolder:week,topicSlug:slug,title,topic,visualStyleId:visual.styleId,contentPolicyVersion:contentPolicy.contentPolicyVersion,learningPolicyVersion:1,createdAt:now,updatedAt:now});
+  Object.assign(meta,{videoId:`${week}_${slug}`,weekFolder:week,topicSlug:slug,title,topic,visualStyleId:visual.styleId,visualPolicyVersion:visual.visualPolicyVersion,contentPolicyVersion:contentPolicy.contentPolicyVersion,learningPolicyVersion:1,createdAt:now,updatedAt:now});
   await writeJson(metaPath,meta);
 
   const contentPlanPath=path.join(techDir,'CONTENT_PLAN.json'),contentPlan=await readJson(contentPlanPath),defaultMode=chooseContentMode(topic,contentPolicy);

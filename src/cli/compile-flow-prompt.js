@@ -3,6 +3,7 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, isMain, projectPaths, readJson } from '../lib/pipeline.js';
 import { materializeScenePlan } from '../lib/materialize-scene-plan.js';
+import { STICKMAN_POLICY_VERSION, auditStickmanPrompts } from '../lib/stickman-style.js';
 
 function imageBlocks(prompt){
   return prompt.split(/\n(?=## Bild \d{2,3}\b)/i).filter((x)=>/^## Bild \d{2,3}\b/i.test(x.trim()));
@@ -23,6 +24,11 @@ export async function compileFlowPrompt(projectDirectory){
   const blocks=imageBlocks(prompt);
   if(!blocks.length)throw new Error('Keine Bildblöcke gefunden.');
   blocks.forEach((block,i)=>{if(imageNumber(block)!==i+1)throw new Error(`Bildblöcke sind nicht lückenlos: erwartet Bild ${String(i+1).padStart(2,'0')}.`);});
+  const meta=await readJson(p.meta,{});
+  if(Number(meta.visualPolicyVersion)>=STICKMAN_POLICY_VERSION){
+    const styleCheck=auditStickmanPrompts(blocks);
+    if(!styleCheck.passed)throw new Error('Stickman-Stilprüfung nicht bestanden: '+styleCheck.errors.slice(0,8).join(' | '));
+  }
 
   const policy=await readJson(path.resolve('config/pipeline.json'));
   const batchSize=Number(policy.flowProductionPolicy?.batchSize??5);
@@ -44,6 +50,7 @@ export async function compileFlowPrompt(projectDirectory){
       '## VERBINDLICHER 5ER-PRODUKTIONSBLOCK',
       `Erzeuge in diesem Durchgang ausschließlich Bild ${String(from).padStart(2,'0')} bis Bild ${String(to).padStart(2,'0')}.`,
       group.length===5?'Dieser Block enthält exakt fünf Bilder. Alle fünf Bilder vollständig erzeugen, bevor der nächste Block begonnen wird.':`Dies ist der letzte Block und enthält ${group.length} Bilder.`,
+      'STILKONTROLLE NACH JEDEM BILD: sichtbare Menschen müssen einfache Kreis-/Oval-Köpfe, Strichrumpf, Stricharme und Strichbeine haben. KEINE voluminösen menschlichen Cartoonkörper. Falsche Bilder sofort neu erzeugen.',
       'Die Ergebnisse während der Produktion NICHT einzeln herunterladen und NICHT manuell umbenennen.',
       'Erst wenn alle Blöcke des Videos fertig sind, alle erzeugten Bilder einmal gesammelt herunterladen.',
       'Danach die Bilder mit `npm run import:flow-images -- --dir "youtube/..." --source "DOWNLOAD-ORDNER"` automatisch nach `Bild NN.png` importieren.',

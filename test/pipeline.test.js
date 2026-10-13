@@ -8,6 +8,7 @@ import { evaluateChannelFit, evaluateTopicQuality } from '../src/cli/check-topic
 import { compileFlowPrompt } from '../src/cli/compile-flow-prompt.js';
 import { assessVideo } from '../src/cli/review-video.js';
 import { validateYouTubeDescription } from '../src/lib/youtube-description.js';
+import { STICKMAN_ANATOMY_RULE, auditStickmanPrompts } from '../src/lib/stickman-style.js';
 
 test('Visual Policy bleibt produktionsbereit',async()=>{const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));assert.equal(v.status,'READY');assert.equal(v.languagePolicy?.promptLanguage,'de');assert.equal(v.thumbnailDNA?.headlineRequired,true);});
 
@@ -122,4 +123,23 @@ test('YouTube-Hauptordner bleibt aufgeräumt und interne Dateien werden verwende
  assert.match(review,/youtube\/_intern\/LEARNING_LOG\.json/);
  const policy=JSON.parse(await readFile('config/content-policy.json','utf8'));
  assert.equal(policy.continuousImprovementPolicy.globalLog,'youtube/_intern/LEARNING_LOG.json');
+});
+
+test('Stickman V7: jeder Einzelprompt braucht klassische Linien-Anatomie',()=>{
+  const ok=['## Bild 01 — COVER\nBILDPROMPT:\n16:9 '+STICKMAN_ANATOMY_RULE+' Startszene.','## Bild 02\nBILDPROMPT:\n16:9 '+STICKMAN_ANATOMY_RULE+' Andere Szene.'];
+  assert.equal(auditStickmanPrompts(ok).passed,true);
+  assert.equal(auditStickmanPrompts([ok[0],'## Bild 02\nBILDPROMPT:\n16:9. Malerische, anatomisch korrekte Comic-Menschen.']).passed,false);
+  assert.equal(auditStickmanPrompts([ok[0].replace('Strichbeine','menschliche Beine')]).passed,false);
+});
+
+test('Visual Policy erzwingt reine Strichmännchen bei allen neuen Projekten',async()=>{
+  const vp=JSON.parse(await readFile('config/visual-policy.json','utf8'));
+  assert.equal(vp.visualPolicyVersion,7);
+  assert.equal(vp.strictStickmanPolicy.mandatoryForNewProjects,true);
+  const create=await readFile('src/cli/create-project.js','utf8');
+  assert.match(create,/visualPolicyVersion:visual.visualPolicyVersion/);
+  const flow=await readFile('src/cli/compile-flow-prompt.js','utf8');
+  assert.match(flow,/auditStickmanPrompts/);
+  const materialize=await readFile('src/lib/materialize-scene-plan.js','utf8');
+  assert.match(materialize,/STICKMAN_ANATOMY_RULE/);
 });

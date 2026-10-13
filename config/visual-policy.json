@@ -1,12 +1,29 @@
 {
-  "visualPolicyVersion": 6,
+  "visualPolicyVersion": 7,
   "status": "READY",
   "styleId": "dark-grotesque-surreal-stickman-de-v1",
-  "description": "Feste deutsche Kanal-DNA für grotesk-surrealistische 2D-Stickman-Storys: bizarre, dunkle, komische, kosmische und frei erfundene Welten mit klarer visueller Lesbarkeit.",
+  "description": "StrichModus: ausschließlich eindeutig erkennbare klassische Strichmännchen, keine voll ausgearbeiteten Comic-Menschen. Farbig-groteske Szenen bleiben erlaubt.",
   "channelDNA": {
     "coreStyle": "Grotesk-surrealer 2D-Comic-Stickman-Entertainment-Stil",
-    "tone": ["bizarr", "dunkel-humorig", "surreal", "leicht verstörend wenn passend", "absurd", "neugierig machend"],
-    "topicRange": ["frei erfundene Storywelten", "Mystery und Paranoia", "Spiegel, Schatten, Zeit und Parallelwelten", "absurde Systeme und Regeln", "Geheimdienste und Unterwelten", "Mafia und Hierarchien", "kosmische Eskalationen", "dunkle Comedy", "bizarre historische oder moderne Kulissen"]
+    "tone": [
+      "bizarr",
+      "dunkel-humorig",
+      "surreal",
+      "leicht verstörend wenn passend",
+      "absurd",
+      "neugierig machend"
+    ],
+    "topicRange": [
+      "frei erfundene Storywelten",
+      "Mystery und Paranoia",
+      "Spiegel, Schatten, Zeit und Parallelwelten",
+      "absurde Systeme und Regeln",
+      "Geheimdienste und Unterwelten",
+      "Mafia und Hierarchien",
+      "kosmische Eskalationen",
+      "dunkle Comedy",
+      "bizarre historische oder moderne Kulissen"
+    ]
   },
   "languagePolicy": {
     "channelLanguage": "de",
@@ -21,7 +38,16 @@
     "allowedOutsideCover": true,
     "maxWordsPerTextElement": 6,
     "maxTextElementsPerNormalImage": 2,
-    "preferredUses": ["Countdown", "kurze Story-Regel", "Warnhinweis", "Rang oder Stufe", "Ortsname", "Jahreszahl", "konkrete Zahl", "kurzes Label"],
+    "preferredUses": [
+      "Countdown",
+      "kurze Story-Regel",
+      "Warnhinweis",
+      "Rang oder Stufe",
+      "Ortsname",
+      "Jahreszahl",
+      "konkrete Zahl",
+      "kurzes Label"
+    ],
     "rules": [
       "In frei-surrealen Storys darf kurzer sichtbarer Text Teil der erfundenen Welt sein, zum Beispiel Countdown, Warnung, Regel, Rang oder fiktive Zahl.",
       "Bei realen Tatsachenbehauptungen müssen sichtbare Daten, Zahlen und Fakten mit der Recherche vereinbar sein.",
@@ -32,9 +58,10 @@
     ]
   },
   "characterDNA": {
-    "base": "Einfache Stickman-Grundkörper mit dünnen Gliedmaßen und runden oder ovalen Köpfen; klare Silhouette und leicht wiedererkennbare Figuren.",
-    "faces": "Stark überzeichnete comicartige Mimik: große oder leere Augen, Augenringe, schiefes Grinsen, Angst, Wut, Arroganz, Verwirrung oder groteske Verzerrung – passend zur Szene.",
-    "consistency": "Wiederkehrende Figuren behalten Kopf, Kleidung, zentrale Farbakzente und Silhouette über das Video hinweg."
+    "base": "STRENG: Jede sichtbare menschliche Figur ist ein klassisches Strichmännchen: runder/ovaler einfacher Kopf; EIN dünner gerader schwarzer Rumpfstrich, zwei einzelne schwarze Stricharme und zwei einzelne schwarze Strichbeine. Keine modellierte Anatomie, kein Körpervolumen. Schmuck und Kleidung nur als kleine flache Symbole auf der Strichfigur.",
+    "faces": "Einfache Punktaugen, wenige expressive Augenbrauenstriche und Strichmund; starke Emotionen über Winkel und Linien, keine menschlichen Portraitgesichter, keine ausgearbeiteten Nasen, Ohren oder Wangen.",
+    "consistency": "In jeder Szene gilt dieselbe Strichmännchen-Geometrie. Kopf, Kleidungssymbole, Linienproportionen, Akzentfarben und Positionen bleiben konstant. Kein Wechsel zu gezeichneten menschlichen Cartoonkörpern.",
+    "invisibleCharacters": "Wenn eine Hauptfigur unsichtbar ist, darf sie sichtbar nur durch FLACHE stark reduzierte Kleidungs-Symbole repräsentiert werden, die einer Strichmännchen-Kontur folgen. Keine körpergefüllten Hoodies/Hosen als menschliche Körpermasse, kein Kopf, Gesicht, Geisterumriss oder sichtbare Haut. Alle sichtbaren Nebenfiguren bleiben klassische Strichmännchen."
   },
   "renderDNA": {
     "medium": "vollständig illustrierte 2D-Comiczeichnung",
@@ -45,8 +72,21 @@
     "rule": "Kein Fotorealismus, keine realistischen Menschen, kein 3D/Pixar und kein Mixed-Media-Look."
   },
   "colorDNA": {
-    "base": ["Schwarz", "Weiß", "Grau"],
-    "accents": ["Rot", "Giftgrün", "Violett", "Gelb", "Cyan", "dunkles Blau", "Braun", "Ocker"],
+    "base": [
+      "Schwarz",
+      "Weiß",
+      "Grau"
+    ],
+    "accents": [
+      "Rot",
+      "Giftgrün",
+      "Violett",
+      "Gelb",
+      "Cyan",
+      "dunkles Blau",
+      "Braun",
+      "Ocker"
+    ],
     "rule": "Farbe und Licht folgen der Story. Ruhige Szenen dürfen heller sein; Gefahr, Mystery und kosmische Eskalation dürfen gezielt dunkler und farbiger werden."
   },
   "storyVisualPolicy": {
@@ -78,7 +118,10 @@
   ],
   "thumbnailDNA": {
     "headlineRequired": true,
-    "headlineWords": [1, 4],
+    "headlineWords": [
+      1,
+      4
+    ],
     "mainSubjects": "Meist 1 bis 3 große Hauptfiguren oder Objekte.",
     "expression": "Ein klarer extremer Gesichtsausdruck oder eine sofort verständliche Reaktion.",
     "background": "Einfach, kontrastreich und nicht überladen.",
@@ -98,6 +141,19 @@
     "überladene Hintergründe",
     "zu viele Informationen oder zu viel Text in einem Bild",
     "unnötige grafische Gewalt",
-    "permanent dunkle Horrorbeleuchtung ohne Storygrund"
-  ]
+    "permanent dunkle Horrorbeleuchtung ohne Storygrund",
+    "voluminöse Cartoon-Menschen mit modellierten Körpern und realistischen Gliedmaßen",
+    "Comic-Porträts mit ausgearbeiteten Nasen, Gesichtsvolumen oder Manga-Proportionen",
+    "fotonahe, anatomisch korrekte Figuren statt klarer Strichmännchen"
+  ],
+  "strictStickmanPolicy": {
+    "version": 7,
+    "mandatoryForNewProjects": true,
+    "checkEveryIndividualPrompt": true,
+    "checkBeforeFlowBatchCreation": true,
+    "anatomyMarker": "STICKMAN-ANATOMIE:",
+    "rule": "STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Einfacher Kreis- oder Ovalkopf, Gesicht nur mit Punktaugen und Strichmund. Der Rumpf ist ein einzelner dünner schwarzer Strich. Stricharme und Strichbeine sind jeweils dünne einzelne schwarze Linien, keine anatomisch modellierten Schultern, Arme, Hände, Oberschenkel oder Körper. Kleidung nur flache kleine Farbsymbole an Strichkörpern, NIEMALS als Körpervolumen. KEINE NORMALEN COMIC-MENSCHEN, KEINE VOLUMINÖSEN MENSCHENKÖRPER, kein Anime, keine realistischen Gesichter, keine halb-realistischen Cartoonfiguren. Auch in einem detailreichen Raum müssen Stricharme und Strichbeine eindeutig als Linien erkennbar bleiben.",
+    "reviewRule": "Jedes tatsächlich in Flow erzeugte Bild visuell prüfen. Kopf-Kreis/Strichrumpf/Stricharme/Strichbeine an allen sichtbaren Figuren kontrollieren. Bei realistischer menschlicher Figur, voluminösem Comic-Menschen oder falschem Hauptfiguren-Look Bild neu generieren. Ein bestandener Text-Check ist KEIN Nachweis für korrekte Bildpixel.",
+    "doNotAlterOldExportedVideos": true
+  }
 }

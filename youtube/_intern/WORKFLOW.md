@@ -1,3 +1,11 @@
+## Bildwelt ab Visual-Policy V7 – verpflichtend
+
+- **StrichModus zeigt nur klassische Strichmännchen.** Ein einfacher Kreis-/Ovalkopf, ein Rumpfstrich, Stricharme, Strichbeine. Kleidung und Requisiten flach, kein voll gezeichneter menschlicher Cartoonkörper.
+- In **jedem** Einzelprompt steht die vollständige STICKMAN-ANATOMIE-Anweisung, nicht nur einmal oben in der Masterdatei.
+- Der Flow-Compiler lehnt bei neu erstellten V7-Projekten fehlende Strichmännchen-Prompts ab.
+- Bei Google Flow nach jedem 5er-Block **jedes tatsächliche Bild anschauen**: erkennbare Strichfigur? keine breiten menschlichen Arme/Beine, kein modelliertes Gesicht? Wenn nicht, falsch und erneut erzeugen. Textprüfung allein kann die Bildqualität nicht sicherstellen.
+- Bei der Unsichtbar-Komödie: Hauptfigur bis Mitternacht ohne Kopf/Haut, vereinfachte flache Kleidung statt voluminöser menschlicher Körper; alle sichtbaren Nebenfiguren reine Strichmännchen.
+
 # Workflow V9
 
 ## Priorität 1 — Lernen vor Geschwindigkeit
