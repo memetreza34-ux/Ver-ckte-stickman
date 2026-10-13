@@ -173,7 +173,7 @@ test('Mafia KW42: Phase 1 ist vollständig und 25 Flow-5er-Blöcke lassen sich a
  assert.deepEqual(images,Array.from({length:125},(_,i)=>i+1));
  for(const batch of manifest.batches){
   const block=await readFile(path.join(project,'00-bildprompts/5er-batches',batch.file),'utf8');
-  assert.equal((block.match(/^## Bild \\d{2,3}\\b/gm)||[]).length,5);
+  assert.equal((block.match(/^## Bild [0-9]{2,3}/gm)||[]).length,5);
   assert.ok(block.includes('STICKMAN-ANATOMIE:'));
  }
 });
