@@ -92,7 +92,7 @@ Die Videobeschreibung wird ausführlicher geschrieben: **mindestens 450 Zeichen 
 ...
 ```
 
-Die Zeiten stammen aus Whisper-Wortzeiten des finalen optimierten Audios und werden nicht geschätzt.
+Die Zeiten stammen aus Whisper-Wortzeiten des finalen optimierten Audios und werden nicht geschätzt. Zusätzlich wird `UNTERTITEL.srt` mit zeitlich passenden YouTube-Untertiteln erstellt.
 
 ## Produktionslogik
 
@@ -131,6 +131,24 @@ Nach Sammeldownload der Bilder:
 
 ```bash
 npm run import:flow-images -- --dir "youtube/<week>/<slug>" --source "/PFAD/ZUM/DOWNLOAD-ORDNER"
+npm run review:images -- --dir "youtube/<week>/<slug>"
 npm run validate:assets -- --dir "youtube/<week>/<slug>"
 npm run phase3 -- --dir "youtube/<week>/<slug>"
 ```
+
+## Sichere Google-Flow-Bildzuordnung und Sichtprüfung
+
+Der automatische Import akzeptiert nur vollständig und lückenlos (01 bis NN) nummerierte Dateien. Bei generischen Google-Flow-Dateinamen vor dem Import ein geprüftes `FLOW-ORDER.json` anlegen:
+
+```json
+{
+  "images": [
+    {"imageNumber": 1, "source": "download-cover.png"},
+    {"imageNumber": 2, "source": "download-szene-zwei.png"}
+  ]
+}
+```
+
+Dann `npm run import:flow-images -- --dir "youtube/<week>/<slug>" --source "/DOWNLOAD" --manifest "/PFAD/FLOW-ORDER.json"`. Das Mapping muss exakt jede erwartete Bilddatei einmal zuordnen; der Import ersetzt finale Bilder erst nach erfolgreicher Vorbereitung. Bei bewusstem Ersatz bestehender Bilder `--force` hinzufügen.
+
+Mit `npm run review:images -- --dir "youtube/<week>/<slug>"` wird `99-tech/IMAGE_REVIEW.html` erzeugt: eine lokale Bildübersicht mit Skriptanker, Szenenidee und Auswahl für jede Szene. Im Browser alle Bilder ansehen und auf Stickman-Anatomie, unerlaubte Bildschrift, wiederkehrende Accessoires und Bild-Skript-Passung prüfen. Den JSON-Prüfbericht herunterladen und mit `npm run review:images -- --dir "youtube/<week>/<slug>" --apply "/PFAD/IMAGE_REVIEW_APPROVED.json"` übernehmen. Geänderte Bilddateien verlieren ihre Freigabe automatisch anhand des SHA-256-Fingerabdrucks. **Die Sichtprüfung ist manuell; die Software behauptet keine automatische visuelle oder semantische KI-Prüfung.**

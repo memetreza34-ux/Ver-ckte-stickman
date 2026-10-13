@@ -17,3 +17,7 @@ public/__render/
 **/99-tech/EXPORT_REPORT.json
 **/04-export/*.mp4
 **/04-export/THUMBNAIL.png
+
+**/99-tech/IMAGE_REVIEW.json
+**/99-tech/IMAGE_REVIEW.html
+**/99-tech/.flow-import-backup/
