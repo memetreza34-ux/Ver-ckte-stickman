@@ -72,6 +72,8 @@ export async function createImageReview(projectDirectory){
 
 export async function applyImageReview(projectDirectory,file){
   const p=projectPaths(projectDirectory);
+  // Recompute hashes at approval time: a picture may have been replaced since the HTML report was created.
+  await createImageReview(projectDirectory);
   const current=await readJson(reviewFile(p));
   const submitted=await readJson(path.resolve(file));
   if(current.videoId!==submitted.videoId)throw new Error('Review stammt von einem anderen Videoprojekt.');
