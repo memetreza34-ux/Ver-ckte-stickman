@@ -6,10 +6,13 @@ export function auditStickmanPrompts(blocks){
   for(let i=0;i<blocks.length;i++){
     const body=String(blocks[i].split(/BILDPROMPT:\s*\n/i)[1]??'');
     const number=String(i+1).padStart(2,'0');
-    if(!body.includes('STICKMAN-ANATOMIE:'))errors.push('Bild '+number+': verbindliche STICKMAN-ANATOMIE fehlt.');
-    for(const token of ['Stricharme','Strichbeine','einzelner dünner schwarzer Strich','KEINE NORMALEN COMIC-MENSCHEN','KEINE VOLUMINÖSEN MENSCHENKÖRPER']){
-      if(!body.includes(token))errors.push('Bild '+number+': Stickman-Vorgabe fehlt: '+token);
-    }
+    // Der vollständige kanonische Regeltext ist erforderlich. Einzelne
+    // Schlüsselwörter reichen nicht aus: sonst bleiben Teil-Prompts unbemerkt.
+    if(!body.includes(STICKMAN_ANATOMY_RULE))
+      errors.push('Bild '+number+': vollständige verbindliche STICKMAN-ANATOMIE fehlt oder wurde verändert.');
+    // Explizit gegenteilige POSITIVE Figurenvorgaben trotz Pflicht-Header ablehnen.
+    if(/(?:zeichne|zeige|gestalte|generiere|stelle)[^.!?]{0,140}(?:als |wie |mit )(?:realistische|anatomisch korrekte|voluminöse|voll ausgearbeitete) (?:menschen|comic-menschen|figuren|menschenkörper)/i.test(body))
+      errors.push('Bild '+number+': gegenteilige Anweisung für anatomische Comic-Menschen erkannt.');
   }
   return {passed:errors.length===0,errors,total:blocks.length};
 }

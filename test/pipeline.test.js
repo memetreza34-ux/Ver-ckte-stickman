@@ -146,6 +146,7 @@ test('Stickman V7: jeder Einzelprompt braucht klassische Linien-Anatomie',()=>{
   assert.equal(auditStickmanPrompts(ok).passed,true);
   assert.equal(auditStickmanPrompts([ok[0],'## Bild 02\nBILDPROMPT:\n16:9. Malerische, anatomisch korrekte Comic-Menschen.']).passed,false);
   assert.equal(auditStickmanPrompts([ok[0].replace('Strichbeine','menschliche Beine')]).passed,false);
+  assert.equal(auditStickmanPrompts([ok[0]+' Zeichne die Nebenfiguren als realistische Menschen.']).passed,false);
 });
 
 test('Visual Policy erzwingt reine Strichmännchen bei allen neuen Projekten',async()=>{
