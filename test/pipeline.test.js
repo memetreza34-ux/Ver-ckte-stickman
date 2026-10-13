@@ -13,7 +13,7 @@ test('Visual Policy bleibt produktionsbereit',async()=>{const v=JSON.parse(await
 
 test('Content Policy V9 priorisiert Rollen und drei Skriptformate',async()=>{const c=JSON.parse(await readFile('config/content-policy.json','utf8'));assert.equal(c.contentPolicyVersion,9);assert.deepEqual(c.scriptFormatPolicy.allowedFormats,['mini-stories','progression','story']);assert.ok(c.channelDirection.preferredTopicArchetypes.includes('Ein Tag als FBI-Agent'));assert.equal(c.contentModePolicy.realInstitutionDefault,'hybrid');assert.equal(c.youtubeUploadPolicy.exportFile,'04-export/YOUTUBE_CAPTION.txt');assert.equal(c.youtubeUploadPolicy.timedTranscriptFile,'04-export/UNTERTITEL_SCRIPT.txt');});
 
-test('Template V9 trennt die drei Formatpläne',async()=>{const c=JSON.parse(await readFile('youtube/templates/video-template/99-tech/CONTENT_PLAN.json','utf8'));assert.equal(c.schemaVersion,9);assert.equal(c.contentPolicyVersion,9);assert.ok(Object.hasOwn(c,'scriptFormat'));assert.ok(Object.hasOwn(c.formatPlan,'miniStories'));assert.ok(Object.hasOwn(c.formatPlan,'progression'));assert.ok(Object.hasOwn(c.formatPlan,'story'));assert.ok(Object.hasOwn(c.scriptQuality,'formatFit'));});
+test('Template V9 trennt die drei Formatpläne',async()=>{const c=JSON.parse(await readFile('youtube/_intern/templates/video-template/99-tech/CONTENT_PLAN.json','utf8'));assert.equal(c.schemaVersion,9);assert.equal(c.contentPolicyVersion,9);assert.ok(Object.hasOwn(c,'scriptFormat'));assert.ok(Object.hasOwn(c.formatPlan,'miniStories'));assert.ok(Object.hasOwn(c.formatPlan,'progression'));assert.ok(Object.hasOwn(c.formatPlan,'story'));assert.ok(Object.hasOwn(c.scriptQuality,'formatFit'));});
 
 test('Package und Phase 3 nutzen V9',async()=>{const p=JSON.parse(await readFile('package.json','utf8'));assert.equal(p.version,'2.8.0');assert.match(p.scripts['validate:phase1'],/validate-phase1-v9\.js$/);const phase3=await readFile('src/cli/phase3.js','utf8');assert.match(phase3,/validate-phase1-v9\.js/);assert.doesNotMatch(phase3,/validate-phase1-v4\.js/);});
 
@@ -104,4 +104,22 @@ test('Breite StrichModus-Comedy wird wie gute Rollenideen freigegeben',async()=>
  assert.equal(fbi.decision,'APPROVED_TOPIC_QUALITY');
  const ref=await evaluateTopicQuality('Die Geschichte der CIA');
  assert.equal(ref.decision,'REVIEW_TOPIC_QUALITY');
+});
+
+test('YouTube-Hauptordner bleibt aufgeräumt und interne Dateien werden verwendet',async()=>{
+ const root=await readdir('youtube');
+ assert.ok(root.includes('_intern'));
+ for(const hidden of ['CONTENT_SYSTEM.md','CONTINUOUS_IMPROVEMENT.md','LEARNING_LOG.json','WORKFLOW.md','templates']){
+   assert.ok(!root.includes(hidden),'Systemdatei darf nicht lose unter youtube liegen: '+hidden);
+ }
+ for(const required of ['CONTENT_SYSTEM.md','CONTINUOUS_IMPROVEMENT.md','LEARNING_LOG.json','WORKFLOW.md','templates/video-template/99-tech/CONTENT_PLAN.json']){
+   assert.ok((await readFile(path.join('youtube/_intern',required),'utf8')).length>0);
+ }
+ const create=await readFile('src/cli/create-project.js','utf8');
+ const review=await readFile('src/cli/review-video.js','utf8');
+ assert.match(create,/youtube\/_intern\/templates\/video-template/);
+ assert.match(create,/youtube\/_intern\/LEARNING_LOG\.json/);
+ assert.match(review,/youtube\/_intern\/LEARNING_LOG\.json/);
+ const policy=JSON.parse(await readFile('config/content-policy.json','utf8'));
+ assert.equal(policy.continuousImprovementPolicy.globalLog,'youtube/_intern/LEARNING_LOG.json');
 });

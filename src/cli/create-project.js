@@ -27,7 +27,7 @@ async function main(){
   const youtubeRoot=path.resolve('youtube'),destination=ensureInside(youtubeRoot,path.join(youtubeRoot,week,slug));
   if(await exists(destination))throw new Error(`Projekt existiert bereits: ${destination}`);
   await mkdir(path.dirname(destination),{recursive:true});
-  await copyDirectory(path.resolve('youtube/templates/video-template'),destination);
+  await copyDirectory(path.resolve('youtube/_intern/templates/video-template'),destination);
 
   const now=new Date().toISOString(),techDir=path.join(destination,'99-tech'),metaPath=path.join(techDir,'video.json'),meta=await readJson(metaPath);
   Object.assign(meta,{videoId:`${week}_${slug}`,weekFolder:week,topicSlug:slug,title,topic,visualStyleId:visual.styleId,contentPolicyVersion:contentPolicy.contentPolicyVersion,learningPolicyVersion:1,createdAt:now,updatedAt:now});
@@ -43,7 +43,7 @@ async function main(){
 
   // Jede neue Produktion übernimmt die bestätigten Lektionen früherer Videos.
   const playbook=await readJson(path.resolve('config/learning-playbook.json'),{lessons:[]});
-  const learnLog=await readJson(path.resolve('youtube/LEARNING_LOG.json'),{entries:[]});
+  const learnLog=await readJson(path.resolve('youtube/_intern/LEARNING_LOG.json'),{entries:[]});
   const recent=(learnLog.entries??[]).filter(x=>x.videoId!==meta.videoId).slice(-3);
   const measured=recent.flatMap(x=>(x.improvements??[]).filter(y=>y.status==='evidence-based'||y.status==='feedback').map(y=>({source:x.videoId,action:y.action}))).slice(-5);
   const baseline=(playbook.lessons??[]).filter(x=>x.priority==='high').slice(0,5).map(x=>({source:x.source,action:x.action}));

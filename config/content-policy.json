@@ -29,7 +29,7 @@
       "99-tech/POST_VIDEO_REVIEW.md"
     ],
     "feedbackFile": "99-tech/POST_VIDEO_FEEDBACK.json",
-    "globalLog": "youtube/LEARNING_LOG.json",
+    "globalLog": "youtube/_intern/LEARNING_LOG.json",
     "starterLearningBrief": "99-tech/LEARNING_BRIEF.md",
     "reviewCommand": "npm run review:video -- --dir \"youtube/<week>/<slug>\""
   },

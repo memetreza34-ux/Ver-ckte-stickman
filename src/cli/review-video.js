@@ -90,7 +90,7 @@ export async function runPostVideoReview(projectDirectory){
     '**Wichtig:** Keine erfundene Zuschauerbindung, CTR oder Qualitätswertung.',''
   ];
   await writeFile(path.join(p.techDir,'POST_VIDEO_REVIEW.md'),lines.join('\n'),'utf8');
-  const logFile=path.resolve('youtube/LEARNING_LOG.json');
+  const logFile=path.resolve('youtube/_intern/LEARNING_LOG.json');
   const log=await readJson(logFile,{schemaVersion:1,priority:1,entries:[]});
   if(!Array.isArray(log.entries))log.entries=[];
   const e={videoId:review.videoId,title:review.title,reviewPath:path.relative(process.cwd(),path.join(p.techDir,'POST_VIDEO_REVIEW.json')).replaceAll('\\','/'),updatedAt:review.createdAt,metrics:review.metrics,improvements:review.improvements,humanReviewStatus:review.humanReview.status};

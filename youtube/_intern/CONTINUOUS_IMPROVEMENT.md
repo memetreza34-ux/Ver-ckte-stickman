@@ -14,7 +14,7 @@ Feedback kann optional in `99-tech/POST_VIDEO_FEEDBACK.json` ergänzt werden. Fo
       ]
     }
 
-Dann `npm run review:video -- --dir "youtube/<week>/<slug>"` erneut ausführen, damit die neuen Erkenntnisse in `youtube/LEARNING_LOG.json` landen. Diese Datei und den Review ins Repository committen.
+Dann `npm run review:video -- --dir "youtube/<week>/<slug>"` erneut ausführen, damit die neuen Erkenntnisse in `youtube/_intern/LEARNING_LOG.json` landen. Diese Datei und den Review ins Repository committen.
 
 Beim Erstellen des nächsten Projekts übernimmt `create:video` den `config/learning-playbook.json` und die jüngsten Review-Erkenntnisse automatisch in `99-tech/LEARNING_BRIEF.md` und `CONTENT_PLAN.learningFromPreviousVideos`.
 

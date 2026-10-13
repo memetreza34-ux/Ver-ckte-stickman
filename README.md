@@ -12,9 +12,13 @@ Humor durch kleine Alltagsklischees (Papierkram, Behördengänge, Stau, Dienstpl
 
 Verbindliche Regeln: `config/content-policy.json → localizationPolicy`.
 
+## Aufgeräumte Videoablage
+
+Im Ordner `youtube/` liegen nur Kalenderwochen mit Videoprojekten sowie `_intern/` für systeminterne Vorlagen, Anleitungen und das Lernprotokoll. Ein Videoprojekt enthält weiterhin `00-bildprompts`, `01-script`, `02-audio`, `03-bilder`, `04-export` und `99-tech`. Technische Projektdateien nicht löschen: die Pipeline benötigt sie.
+
 ## Oberste Regel: Nach jedem Video besser werden
 
-Nach jedem finalen Video erstellt die Pipeline einen Post-Video-Review mit echten technischen Messwerten. Zusätzlich werden Story, Humor, Bilder, Stimme, Schnitt, Thema und Cover nach tatsächlicher Sichtung überprüft. Alle konkreten Lektionen fließen in das nächste Projekt. Siehe `youtube/CONTINUOUS_IMPROVEMENT.md`.
+Nach jedem finalen Video erstellt die Pipeline einen Post-Video-Review mit echten technischen Messwerten. Zusätzlich werden Story, Humor, Bilder, Stimme, Schnitt, Thema und Cover nach tatsächlicher Sichtung überprüft. Alle konkreten Lektionen fließen in das nächste Projekt. Siehe `youtube/_intern/CONTINUOUS_IMPROVEMENT.md`.
 
 ## Breite StrichModus-Themenrichtung
 
