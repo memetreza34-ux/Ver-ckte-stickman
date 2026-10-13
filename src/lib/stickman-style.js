@@ -16,3 +16,25 @@ export function auditStickmanPrompts(blocks){
   }
   return {passed:errors.length===0,errors,total:blocks.length};
 }
+
+export const VISUAL_POLICY_V8=8;
+export function auditLivelyGermanVisuals(blocks){
+ const errors=[];let scenes=0;
+ for(let i=0;i<blocks.length;i++){
+  const block=String(blocks[i]);const body=block.split(/BILDPROMPT:\s*\n/i)[1]??'';
+  const n=i+1;
+  if(!body.includes('LEBENDIGE SZENE:'))errors.push('Bild '+n+': konkreter szenischer Bildmoment fehlt.');
+  const diagram=body.includes('BILDTYP: AUSNAHME-DIAGRAMM');
+  if(!diagram)scenes++;
+  if(n>1&&!body.includes('KEINE BILDSCHRIFT'))errors.push('Bild '+n+': Schriftverbot fehlt.');
+  if(n>1&&/(?:Schreibe|Beschrifte|Schriftzug|Texttafel|Textplakat|Namensschild|lesbare Beschriftung)\s*[:„"\w]/i.test(body))
+    errors.push('Bild '+n+': widersprüchliche Aufforderung zu Bildschrift.');
+  if(n===1&&!block.includes('ÜBERSCHRIFT:'))errors.push('Cover: deutsche Überschrift fehlt.');
+ }
+ if(blocks.length>0&&scenes/blocks.length<0.85)errors.push('Zu viele Diagramme, zu wenig figurenzentrierte Szenen.');
+ for(let start=0;start<blocks.length;start+=5){
+  if(blocks.slice(start,start+5).filter(b=>!b.includes('BILDTYP: AUSNAHME-DIAGRAMM')).length<Math.min(4,blocks.length-start))
+   errors.push('Flow-Batch ab Bild '+(start+1)+': mindestens vier echte Szenen erforderlich.');
+ }
+ return {passed:errors.length===0,errors,characterScenes:scenes,total:blocks.length};
+}

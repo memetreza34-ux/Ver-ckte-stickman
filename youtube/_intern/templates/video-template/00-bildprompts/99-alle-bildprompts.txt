@@ -1,28 +1,20 @@
 # ALLE BILDPROMPTS — {{VIDEO_TITLE}}
 
-Format: 16:9 · deutsche Stickman-Comicwelt · [BILDANZAHL EINTRAGEN] Bildmomente
+Google-Flow-Regel: 5er-Blöcke bilden; nach jedem Block alle fünf Bilder auf vollständige Anzahl, einheitliche unverwechselbare Stickman-Figuren, lebendige Handlung und Schriftfreiheit prüfen. Fehlende oder falsche Bilder erneut erzeugen; erst am Ende gesammelt herunterladen und automatisch importieren.
 
-Google-Flow-Regel: Die fertige Masterdatei wird vor der Generierung mit `npm run compile:flow -- --dir "youtube/..."` automatisch in verbindliche 5er-Blöcke geteilt. In Flow immer einen kompletten 5er-Block erzeugen und prüfen, bevor der nächste Block beginnt. Währenddessen nichts einzeln herunterladen und nichts manuell umbenennen. Erst wenn alle Bilder fertig sind, alle einmal gesammelt herunterladen und anschließend mit `npm run import:flow-images -- --dir "youtube/..." --source "DOWNLOAD-ORDNER"` automatisch importieren.
+## VERBINDLICHE BILDWELT
 
-## VERBINDLICHE BILDWELT FÜR JEDES BILD
+Jeder Bildprompt ist eigenständig auf Deutsch. Klassische Strichmännchen mit rundem Kopf, dünnem Rumpf und Stricharmen/-beinen. Deutlich erkennbare Hauptfiguren: eigene kleine Farbsymbole, markante Mimik, einzigartige Körpersprache. Abwechslungsreiche filmische Schauplätze, kräftige harmonische Farben, Vordergrund/Mittelgrund/Hintergrund. Mindestens 85 % figurengetragene Erzählbilder, höchstens 15 % textfreie Übersicht. Kein unlesbares Infografik-Chaos und keine langweiliger Folien. Das vorhandene Skript wird durch Bilder erlebt, nicht als Text wiedergegeben.
 
-Das gesamte Bild wird vollständig als einheitliche handgezeichnet wirkende 2D-Comic-Illustration erzeugt. STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Einfacher Kreis- oder Ovalkopf, Gesicht nur mit Punktaugen und Strichmund. Der Rumpf ist ein einzelner dünner schwarzer Strich. Stricharme und Strichbeine sind jeweils dünne einzelne schwarze Linien, keine anatomisch modellierten Schultern, Arme, Hände, Oberschenkel oder Körper. Kleidung nur flache kleine Farbsymbole an Strichkörpern, NIEMALS als Körpervolumen. KEINE NORMALEN COMIC-MENSCHEN, KEINE VOLUMINÖSEN MENSCHENKÖRPER, kein Anime, keine realistischen Gesichter, keine halb-realistischen Cartoonfiguren. Auch in einem detailreichen Raum müssen Stricharme und Strichbeine eindeutig als Linien erkennbar bleiben. Einfache Stickman-Grundkörper mit dünnen Gliedmaßen, runden oder ovalen Köpfen, klaren Silhouetten und stark überzeichneter, zur Szene passender Mimik. Deutliche schwarze Konturen, große lesbare Formen, kontrolliert raue Linien, sparsame grafische Schatten und reduzierte Hintergründe. Das Motiv muss innerhalb einer Sekunde verständlich sein.
+Bild 01: 1–4 große deutsche Cover-Wörter. ALLE ANDEREN BILDER 100 % TEXTFREI: weder englische noch deutsche Begriffe, Zahlen, Logos, Sprechblasen oder pseudo-lesbare Schrift. Deutsche Produktionsanweisungen bedeuten niemals sichtbaren Text.
 
-Niemals: Fotorealismus, realistische Menschen, realistische historische Gravur, Foto-Hintergrund, gemischte Foto-Comic-Optik, 3D/Pixar, sterile Firmenillustration, Kinder-Clipart, Wasserzeichen, zufällige Logos, Pseudo-Schrift oder unnötige grafische Gewalt. Nicht jede Szene künstlich dunkel machen; Licht und Farben folgen dem Inhalt.
-
-Jeder Einzelprompt muss mit der verbindlichen Zeile „STICKMAN-ANATOMIE:“ und dem vollständigen einfachen Strichmännchen-Körperbau beginnen (nicht nur im allgemeinen Master-Header). STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Einfacher Kreis- oder Ovalkopf, Gesicht nur mit Punktaugen und Strichmund. Der Rumpf ist ein einzelner dünner schwarzer Strich. Stricharme und Strichbeine sind jeweils dünne einzelne schwarze Linien, keine anatomisch modellierten Schultern, Arme, Hände, Oberschenkel oder Körper. Kleidung nur flache kleine Farbsymbole an Strichkörpern, NIEMALS als Körpervolumen. KEINE NORMALEN COMIC-MENSCHEN, KEINE VOLUMINÖSEN MENSCHENKÖRPER, kein Anime, keine realistischen Gesichter, keine halb-realistischen Cartoonfiguren. Auch in einem detailreichen Raum müssen Stricharme und Strichbeine eindeutig als Linien erkennbar bleiben. Jeder Einzelprompt muss selbstständig funktionieren und Motiv, Handlung, Komposition, Gesichtsausdruck/Körpersprache, Umgebung, Licht/Farbe und relevante Requisiten konkret nennen. Alle Bildprompts vollständig auf Deutsch. Sichtbare Schrift ausschließlich korrektes Deutsch.
-
-Kurzer Text ist auch in späteren Bildern erlaubt, wenn er die Szene klarer macht. Bei realen Fakten muss er zur Recherche passen; bei frei-surrealen Geschichten darf er als erfundene Storyregel, Countdown, Warnung, Rang, Uhrzeit oder Zahl Teil der erfundenen Welt sein. Keine Untertitel und keine Wiederholung ganzer Voice-over-Sätze. Normale Bilder höchstens mit wenigen kurzen Textelementen; bei komplexeren Informationen lieber einen zusätzlichen Bildmoment planen statt eine Textwand zu bauen.
-
----
+Jeder Einzelprompt enthält den vollständigen V7-Anatomietext sowie die Marker „LEBENDIGE SZENE:“ und ab Bild 02 „KEINE BILDSCHRIFT“. Ein Bildmoment zeigt klar die konkrete Handlung statt eine Rollen-Pyramide zu beschriften.
 
 ## Bild 01 — COVER
-ÜBERSCHRIFT: "[KURZE DEUTSCHE ÜBERSCHRIFT, 1 BIS 4 WÖRTER]"
+ÜBERSCHRIFT: "[KURZE DEUTSCHE ÜBERSCHRIFT]"
 BILDPROMPT:
-[VOLLSTÄNDIGER DEUTSCHER COVER-BILDPROMPT. DIE OBIGE ÜBERSCHRIFT MUSS WORTGENAU EINMAL GROSS UND KONTRASTREICH IM OBEREN BILDBEREICH ERSCHEINEN. 1 BIS 3 GROSSE HAUPTMOTIVE, KEINE ÜBERLADUNG, 16:9.]
+[VOLLSTÄNDIGE EIGENSTÄNDIGE DEUTSCHE BESCHREIBUNG DER LEBENDIGEN SZENE INKLUSIVE STICKMAN-ANATOMIE; NUR OBIGE ÜBERSCHRIFT EINMAL ALS TEXT IM BILD]
 
 ## Bild 02
 BILDPROMPT:
-[VOLLSTÄNDIGER DEUTSCHER EINZELBILDPROMPT. KONKRETE SZENE STATT ABSTRAKTER PLANUNG. SICHTBAREN TEXT NUR WENN ER GEPLANT IST; SONST KEINE ZUFÄLLIGE SCHRIFT. 16:9.]
-
-[WEITERE BILDER LÜCKENLOS BIS BILD NN]
+[LEBENDIGE SZENE, STICKMAN-ANATOMIE, SCHRIFTFREIHEIT, EINZIGARTIGE STICKMAN-PERSONEN, INTERAKTION, FARBIGE ORTE, KEINE BILDSCHRIFT]

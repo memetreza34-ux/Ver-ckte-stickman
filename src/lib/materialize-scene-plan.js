@@ -73,10 +73,11 @@ export async function materializeScenePlan(projectDirectory){
   const blocks=scenes.map((scene,i)=>{
     const n=i+1,anchor=String(scene.anchor).trim(),shot=String(scene.shot??shots[i%shots.length]);
     if(n===1){
-      const body=`16:9. ${STICKMAN_ANATOMY_RULE} ${coverVisual} Überschrift „${coverText}“ exakt einmal groß und kontrastreich, keine weitere Schrift. ${world} Klare schwarze Konturen, starke Silhouetten und reduzierte Umgebung. Kein Fotorealismus, kein 3D/Pixar, keine Pseudo-Schrift, kein Wasserzeichen.`;
+      const body=`16:9. LEBENDIGE SZENE: Ein charakterstarker, groß gezeichneter ausdrucksvoller Stickman in klarer Handlung. ${STICKMAN_ANATOMY_RULE} ${coverVisual} Überschrift „${coverText}“ exakt einmal groß und kontrastreich, keine weitere Schrift. ${world} Klare schwarze Konturen, starke Silhouetten und reduzierte Umgebung. Kein Fotorealismus, kein 3D/Pixar, keine Pseudo-Schrift, kein Wasserzeichen.`;
       return `## Bild 01 — COVER\nÜBERSCHRIFT: "${coverText}"\nBILDPROMPT:\n${body}`;
     }
-    const body=`16:9. ${STICKMAN_ANATOMY_RULE} ${world} Zeige konkret diesen Storymoment: „${anchor}“ als ${shot}. Sichtbare Handlung, passende überzeichnete Reaktion und klare räumliche Situation; Akzente in Rot, Gelb, Cyan oder Violett passend zur Szene. Keine Textkarte und keine zusätzliche Schrift außer wenn der Storymoment sie zwingend benötigt; dann nur korrektes Deutsch. Kein Fotorealismus, 3D/Pixar, Pseudo-Schrift oder Wasserzeichen.`;
+    const visual=String(scene.visual??scene.visualDescription??anchor).trim();
+    const body=`16:9. LEBENDIGE SZENE: ${visual}. ${STICKMAN_ANATOMY_RULE} ${world} ${shot}. Kräftige individuelle Stickman-Figuren mit ausdrucksstarken Gesichtern, Gesten, filmischer Komposition und farbiger Umgebung. KEINE BILDSCHRIFT: absolut keine Buchstaben, Zahlen, Sprechblasen, Etiketten, englischen Wörter oder Pseudozeichen sichtbar. Alle Flächen auf Papier, Schildern oder Kleidung ohne Schrift. Kein Fotorealismus, 3D/Pixar oder Wasserzeichen.`;
     return `## Bild ${String(n).padStart(2,'0')}\nBILDPROMPT:\n${body}`;
   });
   await mkdir(path.dirname(p.prompt),{recursive:true});

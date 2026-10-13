@@ -9,7 +9,7 @@ import { validatePhase1V9 } from '../src/cli/validate-phase1-v9.js';
 import { compileFlowPrompt } from '../src/cli/compile-flow-prompt.js';
 import { assessVideo } from '../src/cli/review-video.js';
 import { validateYouTubeDescription } from '../src/lib/youtube-description.js';
-import { STICKMAN_ANATOMY_RULE, auditStickmanPrompts } from '../src/lib/stickman-style.js';
+import { STICKMAN_ANATOMY_RULE, auditStickmanPrompts, auditLivelyGermanVisuals } from '../src/lib/stickman-style.js';
 
 test('Visual Policy bleibt produktionsbereit',async()=>{const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));assert.equal(v.status,'READY');assert.equal(v.languagePolicy?.promptLanguage,'de');assert.equal(v.thumbnailDNA?.headlineRequired,true);});
 
@@ -152,7 +152,7 @@ test('Stickman V7: jeder Einzelprompt braucht klassische Linien-Anatomie',()=>{
 
 test('Visual Policy erzwingt reine Strichmännchen bei allen neuen Projekten',async()=>{
   const vp=JSON.parse(await readFile('config/visual-policy.json','utf8'));
-  assert.equal(vp.visualPolicyVersion,7);
+  assert.equal(vp.visualPolicyVersion,8);
   assert.equal(vp.strictStickmanPolicy.mandatoryForNewProjects,true);
   const create=await readFile('src/cli/create-project.js','utf8');
   assert.match(create,/visualPolicyVersion:visual.visualPolicyVersion/);
@@ -176,4 +176,14 @@ test('Mafia KW42: Phase 1 ist vollständig und 25 Flow-5er-Blöcke lassen sich a
   assert.equal((block.match(/^## Bild [0-9]{2,3}/gm)||[]).length,5);
   assert.ok(block.includes('STICKMAN-ANATOMIE:'));
  }
+});
+
+test('Visual Policy V8 verlangt lebendige textfreie Stickman-Szenen',async()=>{
+ const policy=JSON.parse(await readFile('config/visual-policy.json','utf8'));
+ assert.equal(policy.visualQualityV8.minimumCharacterSceneRatio,0.85);
+ assert.equal(policy.informationTextPolicy.allowedOutsideCover,false);
+ const valid=Array.from({length:10},(_,i)=>'## Bild '+String(i+1).padStart(2,'0')+(i===0?' — COVER\nÜBERSCHRIFT: "WER HAT MACHT?"':'')+'\nBILDPROMPT:\nLEBENDIGE SZENE: Eine Figur handelt. '+STICKMAN_ANATOMY_RULE+' KEINE BILDSCHRIFT.');
+ assert.equal(auditLivelyGermanVisuals(valid).passed,true);
+ assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i===2?x.replace('KEINE BILDSCHRIFT','') : x)).passed,false);
+ assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i>1?x+' BILDTYP: AUSNAHME-DIAGRAMM':x)).passed,false);
 });

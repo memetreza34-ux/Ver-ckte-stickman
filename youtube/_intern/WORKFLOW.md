@@ -1,3 +1,11 @@
+## Bildwelt V8 – verbindlich
+
+StrichModus bedeutet charaktervolle, lebendige Strichmännchen in echten Szenen – keine Präsentation aus Schaubildern. Jeder Haupt-Stickman muss über kleinen Farbakzent, Gesicht, Pose und wiederkehrende Requisite sofort wiedererkennbar sein. Pro 5er-Block mindestens 4 dramatisierte, figurengetragene Alltagsszenen. Weniger als 15 % textfreie Schema-Metaphern über das Gesamtvideo.
+
+Bild 01: nur 1–4 GROSS lesbare deutsche Wörter. Ab Bild 02: KEINE BILDSCHRIFT, keine englischen Begriffe, keine Zahlen, keine Schildertexte, keine Infografik-Beschriftungen, keine Pseudo-Schrift. Rang/Struktur in Szenen durch Größenunterschied, Haltung, Beziehungen und Requisiten vermitteln. Sprecher erläutert die Inhalte.
+
+Es gilt weiter echte Stickman-Anatomie V7. Google Flow muss nach jedem Fünferblock auf Bilderzahl, Fehler, Figuren, Ausdruck, lebendige Situation und Schriftfreiheit visuell geprüft werden. Fehlerhafte/fehlende Bilder neu erzeugen. Nicht einzeln herunterladen, sondern am Ende gesammelt importieren.
+
 ## Bildwelt ab Visual-Policy V7 – verpflichtend
 
 - **StrichModus zeigt nur klassische Strichmännchen.** Ein einfacher Kreis-/Ovalkopf, ein Rumpfstrich, Stricharme, Strichbeine. Kleidung und Requisiten flach, kein voll gezeichneter menschlicher Cartoonkörper.

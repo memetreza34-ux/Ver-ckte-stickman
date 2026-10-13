@@ -3,6 +3,12 @@
   "priority": 1,
   "lessons": [
     {
+      "id": "lively-textfree-german-stickman-v8",
+      "priority": "high",
+      "source": "Nutzerfeedback 2026-10-13: Mafia-Flow zeigte steife Diagramme, viel Text und fremdsprachige Beschriftungen",
+      "action": "StrichModus V8: mindestens 85% lebendige figurenzentrierte Szenen (mindestens 4/5 pro Flow-Batch), eigenständige farbige Stickman-Charaktere, dynamische Aktionen, abwechslungsreiche Filmkulissen. Nur auf dem Cover 1–4 deutsche Wörter; alle weiteren Bilder strikt ohne Texte, Zahlen, Zeichen und englische Beschriftungen. Diagramme selten und textfrei."
+    },
+    {
       "id": "channel-grounded-worlds",
       "source": "Nutzerfeedback 2026-10-13: StrichModus = FBI-Tag, Mafia-Aufbau, antikes Rom, Parlament statt Unsichtbarkeits-Fantasie",
       "priority": "high",

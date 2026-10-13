@@ -3,7 +3,7 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, isMain, projectPaths, readJson } from '../lib/pipeline.js';
 import { materializeScenePlan } from '../lib/materialize-scene-plan.js';
-import { STICKMAN_POLICY_VERSION, auditStickmanPrompts } from '../lib/stickman-style.js';
+import { STICKMAN_POLICY_VERSION, VISUAL_POLICY_V8, auditStickmanPrompts, auditLivelyGermanVisuals } from '../lib/stickman-style.js';
 
 function imageBlocks(prompt){
   return prompt.split(/\n(?=## Bild \d{2,3}\b)/i).filter((x)=>/^## Bild \d{2,3}\b/i.test(x.trim()));
@@ -30,6 +30,11 @@ export async function compileFlowPrompt(projectDirectory){
     if(!styleCheck.passed)throw new Error('Stickman-Stilprüfung nicht bestanden: '+styleCheck.errors.slice(0,8).join(' | '));
   }
 
+  if(Number(meta.visualPolicyVersion)>=VISUAL_POLICY_V8){
+    const v8Check=auditLivelyGermanVisuals(blocks);
+    if(!v8Check.passed)throw new Error('Bildwelt V8 nicht bestanden: '+v8Check.errors.slice(0,8).join(' | '));
+  }
+
   const policy=await readJson(path.resolve('config/pipeline.json'));
   const batchSize=Number(policy.flowProductionPolicy?.batchSize??5);
   if(batchSize!==5)throw new Error('Flow-Batchgröße muss laut Kanalstandard exakt 5 sein.');
@@ -50,7 +55,7 @@ export async function compileFlowPrompt(projectDirectory){
       '## VERBINDLICHER 5ER-PRODUKTIONSBLOCK',
       `Erzeuge in diesem Durchgang ausschließlich Bild ${String(from).padStart(2,'0')} bis Bild ${String(to).padStart(2,'0')}.`,
       group.length===5?'Dieser Block enthält exakt fünf Bilder. Alle fünf Bilder vollständig erzeugen, bevor der nächste Block begonnen wird.':`Dies ist der letzte Block und enthält ${group.length} Bilder.`,
-      'STILKONTROLLE NACH JEDEM BILD: sichtbare Menschen müssen einfache Kreis-/Oval-Köpfe, Strichrumpf, Stricharme und Strichbeine haben. KEINE voluminösen menschlichen Cartoonkörper. Falsche Bilder sofort neu erzeugen.',
+      'STILKONTROLLE: Figuren mit rundem Kopf, Stricharmen/-beinen, großem Ausdruck, dynamischer Pose und einheitlichen Accessoires. Ab Bild 02 keinerlei Schrift im Bild; nur Cover hat deutsche Überschrift. Keine Organigramm-Folien. Falsche Bilder erneut erzeugen.',
       'Die Ergebnisse während der Produktion NICHT einzeln herunterladen und NICHT manuell umbenennen.',
       'Erst wenn alle Blöcke des Videos fertig sind, alle erzeugten Bilder einmal gesammelt herunterladen.',
       'Danach die Bilder mit `npm run import:flow-images -- --dir "youtube/..." --source "DOWNLOAD-ORDNER"` automatisch nach `Bild NN.png` importieren.',
