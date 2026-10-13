@@ -15,11 +15,11 @@ Nach dem fertigen Export erstellt der Finalizer einen Review. Erkenntnisse werde
 ## Phase 0 — Thema
 
 1. `npm run topic:video -- --topic "THEMA"`
-2. Bevorzugt konkrete Rollen-/Lebenswelt-Themen wie `Ein Tag als FBI-Agent`, `Ein Tag als CIA-Agent`, SWAT, Geheimdienst, Undercover oder echte Hierarchien/Progressionen.
-3. Reine surreale Regelwelten sind optional, aber nicht mehr Standard.
-4. Langweilige Referats-Themen werden verworfen oder in eine Rolle, einen Tag, einen Einsatz oder eine Progression umgebaut.
+2. Standard: faszinierende **reale** Rollen/Institutionen/Geschichte/Strukturen; etwa `Ein Tag als FBI-Agent`, `Ein Tag im Bundestag`, `Ein Tag im antiken Rom`, `Die Hierarchie einer Mafia erklärt`.
+3. Typ `Ein Tag ...`: glaubwürdige Tagesstationen und typische Aufgaben. Typ `Struktur erklärt`: belegte Ebenen, Funktionen, Entscheidungswege, echte Unterschiede. Keine automatisch erfundene Mission.
+4. Fantasie, Unsichtbarkeit und Superkraft-Themen nur mit ausdrücklicher Sonderfreigabe; kein Normalfall.
+5. Vor Skripterstellung Land/Zeit, reale Rollen, Quellenlage und Fiktion-gegen-Fakten prüfen. Standardinhalt ist `hybrid` mit Recherchepflicht.
 
-Bei realen Institutionen startet das Projekt im Modus `hybrid`: reale Tatsachen intern belegen, dramatische Verbindungsszenen dürfen erfunden sein.
 
 ## Phase 0A — Schauplatz und deutsche Lebenswelt
 
@@ -41,7 +41,7 @@ Vor dem Schreiben wird in `99-tech/CONTENT_PLAN.json` `scriptFormat.type` gesetz
 Dazu `reason` und `whyThisFormat` ausfüllen.
 
 ### mini-stories
-Ideal für `Ein Tag als ...`, wenn der Tag aus mehreren klaren Stationen besteht.
+Ideal für `Ein Tag als ...`, `Ein Tag im antiken Rom` oder `Ein Tag im Parlament`, wenn der Tag aus mehreren belegbar typischen Stationen besteht.
 
 Beispiel:
 
@@ -52,12 +52,12 @@ Briefing → Ausrüstung → erste Aufgabe → Überwachung → schwieriger Eins
 Pflicht: `formatPlan.miniStories.orderingLogic` + mindestens 4 starke `sections`.
 
 ### progression
-Nutzen für Ränge, Level, Stufen, Aufstieg oder Hierarchien.
+Nutzen für belegte Ränge, reale Hierarchien, Mafia-/Kartell-Aufbau, Verantwortungsebenen und Institutionen.
 
 Pflicht: `axis`, `startState`, `endState` + mindestens 4 echte `stages`.
 
 ### story
-Nur nutzen, wenn das Thema wirklich eine zusammenhängende Mission/Handlung trägt.
+Nur nutzen, wenn es einen belegten Fall oder eine realistische zusammenhängende Handlung gibt. Illustrative Dramatisierung klar von Tatsachen trennen.
 
 Pflicht: Ziel, Problem, Auslöser, mindestens 4 kausale Wendungen, Midpoint, Finale, Setup/Payoff, Callback + mindestens 6 Beats.
 

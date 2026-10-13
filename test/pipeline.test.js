@@ -93,18 +93,34 @@ test('Neue Videos erhalten Lernbrief statt Wiederholung bekannter Fehler',async(
  assert.match(v,/Lernpflicht/);
 });
 
-test('Breite StrichModus-Comedy wird wie gute Rollenideen freigegeben',async()=>{
+test('StrichModus priorisiert reale Berufswelten und echte Strukturen',async()=>{
  const p=JSON.parse(await readFile('config/content-policy.json','utf8'));
- assert.match(p.channelDirection.core,/Was-wäre-wenn/);
- const fit=await evaluateChannelFit('Du bist unsichtbar, aber deine Kleidung nicht');
- const q=await evaluateTopicQuality('Du bist unsichtbar, aber deine Kleidung nicht');
- assert.equal(fit.decision,'APPROVED_CHANNEL_FIT');
- assert.equal(q.decision,'APPROVED_TOPIC_QUALITY');
- assert.ok(q.suggestedFormats.includes('story'));
- const fbi=await evaluateTopicQuality('Ein Tag als FBI-Agent');
- assert.equal(fbi.decision,'APPROVED_TOPIC_QUALITY');
- const ref=await evaluateTopicQuality('Die Geschichte der CIA');
- assert.equal(ref.decision,'REVIEW_TOPIC_QUALITY');
+ assert.match(p.channelDirection.core,/Machtstrukturen/);
+ assert.equal(p.contentModePolicy.preferredDefault,'hybrid');
+ const approved=[
+  ['Ein Tag als FBI-Agent','mini-stories'],
+  ['Ein Tag im Bundestag','mini-stories'],
+  ['Ein Tag im antiken Rom','mini-stories'],
+  ['Die Hierarchie einer Mafia erklärt','progression'],
+  ['Wie ein Kartell aufgebaut ist','progression'],
+  ['Ein Tag beim BKA','mini-stories'],
+  ['Vom Rekruten bis zum Mafia-Boss','progression']
+ ];
+ for(const [name,format] of approved){
+   const fit=await evaluateChannelFit(name);
+   const q=await evaluateTopicQuality(name);
+   assert.equal(fit.decision,'APPROVED_CHANNEL_FIT',name);
+   assert.equal(q.decision,'APPROVED_TOPIC_QUALITY',name);
+   assert.ok(q.suggestedFormats.includes(format),name);
+ }
+ for(const name of ['Du bist unsichtbar, aber deine Kleidung nicht','Du kannst Gedanken lesen','Eine Stadt, in der Schlaf verboten ist']){
+   const fit=await evaluateChannelFit(name);
+   const q=await evaluateTopicQuality(name);
+   assert.equal(fit.decision,'REVIEW_CHANNEL_FIT',name);
+   assert.equal(q.decision,'REVIEW_TOPIC_QUALITY',name);
+ }
+ const generic=await evaluateTopicQuality('Die Geschichte der CIA');
+ assert.equal(generic.decision,'REVIEW_TOPIC_QUALITY');
 });
 
 test('YouTube-Hauptordner bleibt aufgeräumt und interne Dateien werden verwendet',async()=>{

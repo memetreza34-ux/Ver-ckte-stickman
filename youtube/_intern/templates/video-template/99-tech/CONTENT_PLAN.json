@@ -4,7 +4,7 @@
   "language": "de",
   "topic": "",
   "workingTitle": "",
-  "contentMode": "frei-surreal",
+  "contentMode": "hybrid",
   "truthBoundary": {
     "realElements": [],
     "inventedElements": [],
@@ -122,5 +122,14 @@
     "plannedImprovements": [],
     "appliedDuringProduction": [],
     "notes": ""
+  },
+  "channelDirectionCheck": {
+    "realWorldAnchor": "",
+    "viewerInsight": "",
+    "formatReason": "",
+    "factVsDramatization": "",
+    "historicalTimeAndPlace": "",
+    "exceptionApproved": false,
+    "notes": "Reale Rolle/Organisation/Epoche oder klare Struktur benennen. Veranschaulichende Szenen nicht als belegte Einzelereignisse ausgeben."
   }
 }

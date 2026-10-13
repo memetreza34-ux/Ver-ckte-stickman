@@ -88,13 +88,14 @@
         "24 Stunden unsichtbar",
         "Unsichtbar aber Kleidung sichtbar"
       ],
-      "status": "phase1-ready",
+      "status": "out-of-direction-experiment",
       "createdAt": "2026-10-12T19:45:00+02:00",
       "topicQualityAtCreation": {
         "decision": "APPROVED_TOPIC_QUALITY",
         "score": 9
       },
-      "notes": "1214 Wörter, 130 Szenen, 402 Sekunden Ziel, Flow-Assets noch zu erzeugen."
+      "notes": "1214 Wörter, 130 Szenen, 402 Sekunden Ziel, Flow-Assets noch zu erzeugen.",
+      "directionNote": "Bestehendes Video bleibt erhalten. Thema ist kein Leitbild für neue StrichModus-Produktionen. Strichmännchen-Stil bleibt Pflicht."
     }
   ]
 }

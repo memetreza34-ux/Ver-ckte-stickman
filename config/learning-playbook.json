@@ -3,6 +3,12 @@
   "priority": 1,
   "lessons": [
     {
+      "id": "channel-grounded-worlds",
+      "source": "Nutzerfeedback 2026-10-13: StrichModus = FBI-Tag, Mafia-Aufbau, antikes Rom, Parlament statt Unsichtbarkeits-Fantasie",
+      "priority": "high",
+      "action": "Neue Themen standardmäßig in echten ungewöhnlichen Berufs-, Geschichts-, Macht- und Organisationswelten wählen: Ein Tag als/im, Aufbau/Hierarchie/Ränge. Konkreten Tagesablauf oder Struktur erklären, unterhaltsam mit Strichmännchen und etwas Humor. Fantasy-Magie und beliebige absurde Geschichten nur nach expliziter Ausnahme; keine neue Themenrichtung daraus ableiten."
+    },
+    {
       "id": "strict-stickman-anatomy",
       "source": "Nutzerfeedback 2026-10-13: Google Flow erzeugt ausgearbeitete Cartoon-Menschen statt Strichmännchen",
       "action": "Jeden Google-Flow-Prompt mit Kreis-/Ovalkopf, einem dünnen Rumpfstrich, Stricharmen und Strichbeinen sowie Verbot menschlicher Körpervolumen formulieren. Jede generierte Figur visuell prüfen; falsche Bilder neu erzeugen, nicht in den Schnitt übernehmen.",

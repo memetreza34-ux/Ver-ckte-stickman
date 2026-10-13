@@ -1,6 +1,6 @@
-# Verückte Stickman — Video-Pipeline V2.8
+# StrichModus — Video-Pipeline V2.8
 
-Pipeline für einen deutschen faceless YouTube-Kanal mit grotesk-surrealer Stickman-Bildwelt und **rollenbasiertem Entertainment-Scripting**.
+Pipeline für einen deutschsprachigen Faceless-YouTube-Kanal mit klassischen Strichmännchen. Themen: echte spannende Berufe, Kriminalitätsstrukturen, Politik, Geschichte und besondere Lebenswelten – verständlich, unterhaltsam und faktenbewusst erzählt.
 
 ## Deutschland als bevorzugte Videowelt
 
@@ -20,24 +20,22 @@ Im Ordner `youtube/` liegen nur Kalenderwochen mit Videoprojekten sowie `_intern
 
 Nach jedem finalen Video erstellt die Pipeline einen Post-Video-Review mit echten technischen Messwerten. Zusätzlich werden Story, Humor, Bilder, Stimme, Schnitt, Thema und Cover nach tatsächlicher Sichtung überprüft. Alle konkreten Lektionen fließen in das nächste Projekt. Siehe `youtube/_intern/CONTINUOUS_IMPROVEMENT.md`.
 
-## Breite StrichModus-Themenrichtung
+## StrichModus-Kern: Realitätsnahes Infotainment
 
-StrichModus unterhält mit verrückten Was-wäre-wenn-Ideen, komischen Situationen, überraschenden Berufen, kuriosem Wissen, fiktionalen Eskalationen und ungewöhnlichen Geschichten. Polizei und Spezialeinheiten sind nur mögliche Themen und **nicht** die feste Nische. Erst Themenklickreiz, Klarheit, Humor und Bildpotenzial prüfen. Ein Beispiel: Du bist unsichtbar, aber deine Kleidung nicht.
+**Nicht Fantasy-Comedy.** Wir erklären und erleben außergewöhnliche echte Welten: Ein Tag beim FBI, ein Tag im Bundestag, ein Tag im antiken Rom, Aufbau einer Mafia, Alltag eines Legionärs oder wie eine Spezialeinheit arbeitet. Spannende Fakten und echte Abläufe werden durch Stickman-Animation, verständliche Beispiele und situativen Humor unterhaltsam. Die Bilder bleiben Strichmännchen; der Inhalt bleibt nachvollziehbar und wo nötig recherchiert.
+
+Themen werden auf reale Verankerung, klare Aufgaben oder Strukturebenen, überraschende Details, nachvollziehbare Szenen und Klickreiz geprüft. Reine Superkraft- und magische Geschichten sind nur auf ausdrücklichen Sonderwunsch erlaubt.
+
 
 ## Bevorzugte Themenrichtung
 
-Standard sind konkrete Rollen, Lebenswelten und Hierarchien, zum Beispiel:
+- **Ein Tag als/im:** FBI-Agent, Abgeordneter, antikes Rom, römischer Legionär, Gefängniswärter
+- **Struktur/Hierarchie erklärt:** Mafia, Kartell, Spezialeinheit, Regierung, militärische Ränge
+- **Historische Lebenswelten:** antikes Rom, Mittelalter, Wikinger, Ritter
+- **Einblicke in Institutionen:** Aufgaben, Entscheidungen, Macht, Risiken, Alltag
 
-- `Ein Tag als CIA-Agent`
-- `Ein Tag als FBI-Agent`
-- `Ein Tag als SWAT-Mitglied`
-- `Dein Leben als Undercover-Agent`
-- `Vom Rekruten bis zum Boss`
-- `Dein Leben auf jeder Stufe einer Mafia`
+Nicht nur FBI oder Polizei. Die Themen sind vielfältig, aber basieren standardmäßig auf einer **erkennbaren realen Welt**.
 
-Surreale Regelwelten bleiben möglich, sind aber **nicht mehr die bevorzugte Standardrichtung**.
-
-Bei realen Institutionen wie CIA, FBI oder SWAT startet ein neues Projekt automatisch im Modus `hybrid`: reale Tatsachen werden recherchiert, dramatische Verbindungsszenen dürfen erfunden sein.
 
 ## Skriptformate
 
@@ -50,6 +48,8 @@ Bei realen Institutionen wie CIA, FBI oder SWAT startet ein neues Projekt automa
 Ein `Ein Tag als ...`-Video muss nicht künstlich wie ein Film geschrieben werden. Es kann chronologisch als starke Mini-Stories funktionieren: Briefing → erste Aufgabe → Hauptteil → schwierigste Situation → Rückkehr/Schluss.
 
 ## Content-Modi
+
+Standard `hybrid`: echte Fakten belegen, illustrative Szenen als Veranschaulichung behandeln und nicht als dokumentierte Tatsachen ausgeben. Bei reinen Strukturerklärungen bevorzugt `real`.
 
 - `frei-surreal` → freie Unterhaltung, keine Recherchepflicht
 - `hybrid` → reale Institution/Kulisse + dramatisierte Story; reale Behauptungen intern belegen

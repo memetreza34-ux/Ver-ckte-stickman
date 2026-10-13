@@ -1,4 +1,15 @@
-# Produktions-Leitlinie: Humor, Originalität und kontinuierliche Verbesserung sind wichtiger als eine feste Themenkategorie.
+## Themen-Priorität (verbindlich)
+
+1. Ein Tag als FBI-Agent, im Parlament, im antiken Rom oder in einer besonderen realen Rolle.
+2. Strukturen/Hie­rarchien: Mafia, Kartell, Regierung, Militär, Spezialeinheiten.
+3. Einblicke in Geschichte, Berufe und ungewöhnliche echte Organisationen.
+4. Reale anschauliche Fälle, wenn authentisch und gut erzählbar.
+
+**Nicht Standard:** Unsichtbarkeit, Superkräfte, erfundene magische Regeln, Gag-Storys ohne echten Erkenntniswert. Sonderausnahmen benötigen ausdrücklichen redaktionellen Wunsch.
+
+Bei realen Inhalten: Fakten mit Quellen prüfen. Eine beispielhafte fiktive Figur im historischen Alltag darf keine unbewiesenen Tatsachen oder Ereignisse als echt darstellen.
+
+# Produktions-Leitlinie: Realitätsnahes Stickman-Infotainment vor Fantasy und absurden Gags.
 
 # Content-System — Verückte Stickman V9
 
@@ -12,15 +23,15 @@ Es gibt drei Formate:
 2. `progression` — klare Stufen, Ränge, Level oder Entwicklung
 3. `story` — eine zusammenhängende Handlung mit Ziel, Problem und Eskalation
 
-Die feste Kanal-DNA bleibt: vielseitige, überraschende und lustige Stickman-Unterhaltung mit klarer Geschichte oder Steigerung. Rollen-/Polizei-Videos sind eine Möglichkeit, aber keine vorgeschriebene Nische.
+Die feste Kanal-DNA ist **spannendes, realitätsnahes Infotainment** über besondere Rollen, Berufe, echte Organisationen, Macht-/Kriminalitätsstrukturen, Politik und Geschichte. Humor ist unterstützend, nicht das eigentliche Thema. Absurde Superkraft-/Fantasiegeschichten sind keine Standardproduktion.
 
 ## 2. Format A — Mini-Stories
 
 Geeignet für:
-- mehrere absurde Regeln
-- mehrere Fälle
-- Rankings und Sammlungen
-- verschiedene Orte, Systeme oder Kategorien
+- reale Strukturen oder Tagesstationen
+- reale Berufe und mehrere typische Aufgaben
+- anschauliche historische Lebenswelten
+- Aufgaben, Stationen und Besonderheiten einer echten Institution
 
 Jeder Abschnitt folgt ungefähr:
 

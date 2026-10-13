@@ -9,7 +9,7 @@ function chooseContentMode(topic,contentPolicy){
   const text=normalizeText(topic);
   const realSignals=policy.realInstitutionSignals??[];
   if(realSignals.some((signal)=>text.includes(normalizeText(signal))))return policy.realInstitutionDefault??'hybrid';
-  return policy.preferredDefault??'frei-surreal';
+  return policy.preferredDefault??'hybrid';
 }
 
 async function main(){
