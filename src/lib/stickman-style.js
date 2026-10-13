@@ -27,7 +27,7 @@ export function auditLivelyGermanVisuals(blocks){
   const diagram=body.includes('BILDTYP: AUSNAHME-DIAGRAMM');
   if(!diagram)scenes++;
   if(n>1&&!body.includes('KEINE BILDSCHRIFT'))errors.push('Bild '+n+': Schriftverbot fehlt.');
-  if(n>1&&/(?:Schreibe|Beschrifte|Schriftzug|Texttafel|Textplakat|Namensschild|lesbare Beschriftung)\s*[:„"\w]/i.test(body))
+  if(n>1&&/(?:^|[.!?]\s*)(?:Schreibe|Beschrifte|Setze)\s+(?:das Wort|den Text|die Wörter|das Schild|die Überschrift|einen Schriftzug|eine Beschriftung)/im.test(body))
     errors.push('Bild '+n+': widersprüchliche Aufforderung zu Bildschrift.');
   if(n===1&&!block.includes('ÜBERSCHRIFT:'))errors.push('Cover: deutsche Überschrift fehlt.');
  }
