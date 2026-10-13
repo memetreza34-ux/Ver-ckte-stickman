@@ -50,6 +50,47 @@ function buildTimedTranscript(words,audioDuration,blockSeconds=10){
   return `GESAMTES VIDEO-SKRIPT MIT ZEITDATEN\nQuelle: finales Voice-over / Whisper-Wortzeiten\n\n${blocks.join('\n\n')}\n`;
 }
 
+
+function formatSrtTime(seconds){
+  const millis=Math.max(0,Math.round(Number(seconds)*1000));
+  const hh=String(Math.floor(millis/3600000)).padStart(2,'0');
+  const mm=String(Math.floor(millis%3600000/60000)).padStart(2,'0');
+  const ss=String(Math.floor(millis%60000/1000)).padStart(2,'0');
+  const ms=String(millis%1000).padStart(3,'0');
+  return hh+':'+mm+':'+ss+','+ms;
+}
+
+// SRT can be uploaded directly to YouTube. Cues use actual Whisper word times;
+// no timestamps are estimated from the expected script length.
+export function buildSrtTranscript(words,audioDuration){
+  const duration=Number(audioDuration);
+  if(!Number.isFinite(duration)||duration<=0)throw new Error('Ungültige Audiodauer für SRT.');
+  const sorted=(words??[]).filter(w=>String(w.text??'').trim()
+    &&Number.isFinite(w.start)&&Number.isFinite(w.end)
+    &&w.start>=0&&w.start<duration&&w.end>=w.start).sort((a,b)=>a.start-b.start);
+  if(!sorted.length)throw new Error('Whisper hat keine nutzbaren Wortzeiten für SRT geliefert.');
+  const groups=[];
+  let current=[];
+  for(const word of sorted){
+    const last=current.at(-1);
+    if(current.length&&(current.length>=10
+      ||word.start-current[0].start>=4.2
+      ||(current.length>=4&&/[.!?…]$/.test(String(last.text).trim())))){
+      groups.push(current);current=[];
+    }
+    current.push(word);
+  }
+  if(current.length)groups.push(current);
+  const cues=groups.map((group,index)=>{
+    const start=group[0].start;
+    const next=groups[index+1]?.[0].start??duration;
+    const end=Math.min(duration,next,Math.max(group.at(-1).end,start+0.1));
+    if(end<=start)throw new Error('Ungültige oder überlappende Wortzeiten in SRT.');
+    return (index+1)+'\n'+formatSrtTime(start)+' --> '+formatSrtTime(end)+'\n'+joinWords(group);
+  });
+  return cues.join('\n\n')+'\n';
+}
+
 export async function finalize(projectDirectory){
   const p=projectPaths(projectDirectory);
   const [meta,timeline,pipeline,contentPlan,contentPolicy]=await Promise.all([
@@ -65,6 +106,7 @@ export async function finalize(projectDirectory){
   const thumb=path.join(p.exportDir,'THUMBNAIL.png');
   const captionFile=path.join(p.exportDir,'YOUTUBE_CAPTION.txt');
   const transcriptFile=path.join(p.exportDir,'UNTERTITEL_SCRIPT.txt');
+  const srtFile=path.join(p.exportDir,'UNTERTITEL.srt');
   const legacyUploadFile=path.join(p.exportDir,'YOUTUBE_UPLOAD.txt');
   const whisperFile=path.join(p.techDir,'whisper','YOUTUBE_AUDIO_OPTIMIZED.json');
 
@@ -90,6 +132,7 @@ export async function finalize(projectDirectory){
   const audioDuration=Number(timeline.audioDurationSeconds??timeline.durationSeconds);
   if(!Number.isFinite(audioDuration)||audioDuration<=0)throw new Error('Audio-Dauer für Untertitel ist ungültig.');
   await writeFile(transcriptFile,buildTimedTranscript(transcriptWords,audioDuration,10),'utf8');
+  await writeFile(srtFile,buildSrtTranscript(transcriptWords,audioDuration),'utf8');
 
   const info=await probeMedia(video);
   const streams=info.streams??[];
@@ -122,6 +165,7 @@ export async function finalize(projectDirectory){
     thumbnailFile:'04-export/THUMBNAIL.png',
     youtubeCaptionFile:'04-export/YOUTUBE_CAPTION.txt',
     timedTranscriptFile:'04-export/UNTERTITEL_SCRIPT.txt',
+    srtSubtitleFile:'04-export/UNTERTITEL.srt',
     transcriptBlockSeconds:10,
     transcriptSource:'Whisper word timestamps from final optimized voice-over',
     youtubeTitle:finalTitle,
@@ -132,7 +176,7 @@ export async function finalize(projectDirectory){
   };
   await writeJson(path.join(p.techDir,'EXPORT_REPORT.json'),report);
   await runPostVideoReview(projectDirectory);
-  console.log('Post-Render-QC: BESTANDEN — Video, Thumbnail, YOUTUBE_CAPTION.txt und UNTERTITEL_SCRIPT.txt sind bereit.');
+  console.log('Post-Render-QC: BESTANDEN — Video, Thumbnail, YouTube-Caption, Zeittranskript und SRT-Untertitel sind bereit.');
   return report;
 }
 
