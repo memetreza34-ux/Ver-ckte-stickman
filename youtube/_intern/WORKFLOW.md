@@ -1,3 +1,13 @@
+## Keine Texttafeln oder englischen Flow-Bildbeschriftungen
+
+- Das **Bild** erzählt mit Mimik, Gestik, Rollenaccessoires und Handlung; das Voice-over nennt Rangnamen und Fakten.
+- Bild 01: genau eine kurze gut lesbare deutsche Überschrift, wie im CONTENT_PLAN vorgegeben.
+- Ab Bild 02: absolut keine sichtbaren Buchstaben, Zahlen, Zeichen, Rangetiketten, Bildschirmtexte, Sprechblasen oder Pseudo-Schrift. Auch kein englischer oder italienischer Rangname.
+- Alle bildgenerierenden Anweisungen sind auf Deutsch; Fachwörter im Prompt dienen nur zur Einordnung, nicht als Bildtext.
+- Figuren groß und wiedererkennbar; Blickkontakt, Entscheidungen, unterschiedliche Handlungen und wechselnde Kamera statt identischen kleinen Stickmen auf weißen Charts.
+- In jedem 5er-Block mindestens vier lebendige Szenen mit Figuren, höchstens ein textfreies abstrahiertes Schaubild.
+- Generierte Bilder visuell prüfen; falsch beschriftete, textlastige, steife oder nicht-stiltreue Bilder neu erzeugen. Das kann nicht allein durch einen Prompt-Texttest garantiert werden.
+
 ## Bildwelt V8 – verbindlich
 
 StrichModus bedeutet charaktervolle, lebendige Strichmännchen in echten Szenen – keine Präsentation aus Schaubildern. Jeder Haupt-Stickman muss über kleinen Farbakzent, Gesicht, Pose und wiederkehrende Requisite sofort wiedererkennbar sein. Pro 5er-Block mindestens 4 dramatisierte, figurengetragene Alltagsszenen. Weniger als 15 % textfreie Schema-Metaphern über das Gesamtvideo.

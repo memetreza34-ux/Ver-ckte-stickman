@@ -187,3 +187,13 @@ test('Visual Policy V8 verlangt lebendige textfreie Stickman-Szenen',async()=>{
  assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i===2?x.replace('KEINE BILDSCHRIFT','') : x)).passed,false);
  assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i>1?x+' BILDTYP: AUSNAHME-DIAGRAMM':x)).passed,false);
 });
+
+test('Bildwelt V8 hat keine widersprüchlichen Text- und Fantasyregeln',async()=>{
+ const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));
+ assert.equal(v.visualPolicyVersion,8);
+ assert.equal(v.informationTextPolicy.allowedOutsideCover,false);
+ assert.equal(v.languagePolicy.allVisibleTextMustBeGerman,true);
+ assert.ok(v.rules.every(x=>!x.includes('Normalbilder höchstens mit wenigen kurzen deutschen Textelementen')));
+ assert.ok(v.rules.some(x=>x.includes('Bild 02 und alle weiteren')));
+ assert.match(v.storyVisualPolicy.principle,/vier charakterzentrierte/);
+});

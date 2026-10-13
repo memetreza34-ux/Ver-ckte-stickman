@@ -29,7 +29,7 @@
     "allVisibleTextMustBeGerman": true,
     "englishVisibleTextForbidden": true,
     "pseudoTextForbidden": true,
-    "rule": "Alle Produktionsprompts vollständig auf Deutsch. IM BILD: außer auf Bild 01 keinerlei Schrift, Zahlen, Etiketten, Rangnamen, englische Begriffe, lateinische Titel, Schilder, Sprechblasen oder pseudo-lesbare Zeichen. Cover 1–4 Wörter, exakt deutsche Überschrift. Namensbezeichnungen im Prompt sind nie Bildbeschriftungen."
+    "rule": "Alle eigentlichen Bildprompts auf Deutsch verfassen. Außer dem kurzen deutschen Covertext auf Bild 01 überhaupt keine Buchstaben, Zahlen, Logos, Schilder, Untertitel, Sprechblasen, typografischen Diagramme oder Fantasieschrift zeigen. Eigennamen im Prompt sind nur Kontext, keine Aufforderung sie ins Bild zu schreiben."
   },
   "informationTextPolicy": {
     "allowedOutsideCover": false,
@@ -78,7 +78,7 @@
     "rule": "Erzählendes Farbsystem: warmes Honiggelb, Petrol, dunkles Rot, Ocker, Creme und nächtliches Blau; pro Szene 2–3 harmonische Akzente. Abwechslungsreiches Licht statt weißer Diagrammfläche; Umgebung macht Szene lebendig, ohne Figur zu überladen."
   },
   "storyVisualPolicy": {
-    "principle": "Mindestens 85 % echte Szenen mit figurenzentrierter Handlung, maximal 15 % textfreie strukturierende Darstellungen; keine fortlaufenden Organigramme als Video.",
+    "principle": "Pro 5er-Block mindestens vier charakterzentrierte lebendige Spielszenen; maximal eine textfreie Strukturmetapher. Keine PowerPoint-Optik. Sprecher erklärt Fachbegriffe.",
     "rules": [
       "Figuren haben Handlung und Emotion im Vordergrund: Blick, Konflikt, Entscheidung oder Reaktion.",
       "Abwechslungsreiche Orte und Kamera: Straßenecke, Hinterzimmer, Café, Regen, Gericht, Treppe, Tür, Begegnungen.",
@@ -95,16 +95,16 @@
     "Stickman-Figuren bleiben einfach und sofort lesbar, dürfen aber extrem ausdrucksstark sein.",
     "Dicke bis mitteldicke schwarze Konturen und einfache 2D-Formen prägen jedes Bild.",
     "Humor entsteht durch Übertreibung, absurde Konsequenzen, Größenunterschiede und Reaktionen.",
-    "Frei erfundene Welten dürfen eigene Regeln, Warnhinweise, Countdowns, Symbole und Zahlen besitzen.",
     "Reale Fakten werden nicht erfunden, wenn das Video sie ausdrücklich als real behauptet.",
     "Düstere Elemente nur so stark einsetzen, wie die Story es verlangt.",
-    "Kosmische, surreale und Horror-Elemente dürfen zentral sein, wenn sie Teil der Story sind.",
     "Hintergründe unterstützen die Handlung und bleiben visuell reduziert.",
     "Keine zufälligen Dekorationen oder fremden Symbole ohne Storybezug.",
-    "Normalbilder höchstens mit wenigen kurzen deutschen Textelementen; niemals Textwände.",
     "Bild 01 enthält immer eine kurze deutsche Cover-Überschrift mit 1 bis 4 Wörtern, genau einmal und mit starkem Kontrast.",
     "Alle Bilder sind 16:9 und lassen Motivreserve für dezente Kamera-Bewegungen.",
-    "Keine Pseudo-Schrift, Wasserzeichen, Logos fremder Anbieter oder zufällige Beschriftungen."
+    "Keine Pseudo-Schrift, Wasserzeichen, Logos fremder Anbieter oder zufällige Beschriftungen.",
+    "Nur Bild 01 darf eine kurze, ausschließlich deutsche Titelüberschrift enthalten; Bild 02 und alle weiteren Einzelbilder haben keinerlei sichtbare Schrift oder Zahlen.",
+    "Mindestens vier der fünf Bilder je Flow-Block stellen Figuren in Handlung dar, keine beschrifteten Diagramme oder Folien.",
+    "Jede wiederkehrende Person trägt ein klares flaches Erkennungsmerkmal und zeigt eine lesbare Emotion oder aktive Geste; Umgebung und Kamera wechseln sinnvoll."
   ],
   "thumbnailDNA": {
     "headlineRequired": true,
@@ -140,7 +140,10 @@
     "durchgehende Organigramme, Diagramm- und Präsentationsfolien",
     "pseudofaktische Beschriftungssysteme und Mikro-Text auf Bildwänden",
     "kleine identische Strichfiguren ohne Gestik/Charakter",
-    "starre weiße Flächen mit PowerPoint-Anmutung"
+    "starre weiße Flächen mit PowerPoint-Anmutung",
+    "Rangnamen wie BOSS, SOLDIER, ASSOCIATE oder CAPO als sichtbare Bildtexte",
+    "mehrere gleichartige Tabellen, Diagramme oder Texttafeln hintereinander",
+    "englische Sprechblasen oder lateinische Ranglisten auf Zeichnungen"
   ],
   "strictStickmanPolicy": {
     "version": 7,
