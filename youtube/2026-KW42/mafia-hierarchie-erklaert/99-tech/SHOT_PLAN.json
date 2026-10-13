@@ -6,877 +6,1127 @@
     {
       "part": "01_hook",
       "voice": "Bei der Mafia steht oben ein Boss. Aber",
-      "visual": "große Strichmännchen-Machtpyramide mit roter Boss-Silhouette an Spitze",
+      "visual": "Ein selbstbewusster Anführer lehnt mit verschränkten dünnen Stricharmen an einer roten Ledersessel-Lehne; fünf unsichere Figuren schauen aus dem Türrahmen.",
       "extra": false,
-      "imageNumber": 1
+      "imageNumber": 1,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "wer arbeitet eigentlich unter ihm?",
-      "visual": "große Strichmännchen-Machtpyramide mit roter Boss-Silhouette an Spitze – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein neugieriger grün bekappter Strichmann versucht hinter den hohen Sessel zu schauen, während zwei Wächter ihm den Weg versperren.",
       "extra": true,
-      "imageNumber": 2
+      "imageNumber": 2,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Und warum kann jemand ohne offiziellen Rang trotzdem",
-      "visual": "zwei kontrastierende Stickmen, einer mit Rangabzeichen, einer mit Schatten",
+      "visual": "Der grün bekappte Außenseiter flüstert einer wichtigen Figur etwas zu; zwei ranghöhere Figuren im Hintergrund blicken plötzlich zu ihm.",
       "extra": false,
-      "imageNumber": 3
+      "imageNumber": 3,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "gefährlich viel Einfluss haben?",
-      "visual": "zwei kontrastierende Stickmen, einer mit Rangabzeichen, einer mit Schatten – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein unauffälliger Kontaktmann schiebt im Café leise einen leeren Aktenumschlag zum Chef; dessen erstaunte Augenbraue schießt hoch.",
       "extra": true,
-      "imageNumber": 4
+      "imageNumber": 4,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Stell dir eine New Yorker Mafia-Familie vor, nicht",
-      "visual": "vereinfachter gezeichneter Stadtplan New York mit einer markierten Familie",
+      "visual": "Eine regennasse New Yorker Straßenecke; unter leuchtenden Fenstern eines alten Backsteinhauses versammeln sich mehrere eigenwillige Strichmännchen.",
       "extra": false,
-      "imageNumber": 5
+      "imageNumber": 5,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "irgendeine weltweite Superorganisation.",
-      "visual": "vereinfachter gezeichneter Stadtplan New York mit einer markierten Familie – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Die Kamera zieht durch ein beleuchtetes Stadtviertel, während mehrere voneinander unabhängige Gruppen in verschiedenen Häusern sitzen.",
       "extra": true,
-      "imageNumber": 6
+      "imageNumber": 6,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Ganz unten stehen Außenstehende, weiter oben folgen Mitglieder, Anführer und Berater.",
-      "visual": "Pyramide aus sichtbaren Stickmen an verschiedenen Ebenen",
+      "visual": "Im Hinterzimmer warten eine nervöse Kontaktperson, ein Rotkrawattenträger, ein Rot-Schal-Träger und zwei leitende Figuren nacheinander auf Einlass.",
       "extra": false,
-      "imageNumber": 7
+      "imageNumber": 7,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Jede Ebene hat andere Aufgaben, andere Kontakte und vor allem andere Risiken.",
-      "visual": "drei Symbole Aktenmappe, Telefon und Warnzeichen über Pyramide",
+      "visual": "Fünf Strichmännchen übernehmen verschiedene Aufgaben: einer trägt Akten, einer vermittelt, einer streitet, einer telefoniert, einer steht angespannt Wache.",
       "extra": false,
-      "imageNumber": 8
+      "imageNumber": 8,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Wir steigen diese Struktur von unten nach oben durch.",
-      "visual": "Kamera-Perspektive an unterster Stufe der Pyramide",
+      "visual": "Der grün bekappte Außenseiter steigt vorsichtig eine verwinkelte Innentreppe hinauf; oben blickt der Chef aufmerksam von seinem Sessel herunter.",
       "extra": false,
-      "imageNumber": 9
+      "imageNumber": 9,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Dabei geht es um die amerikanische Cosa",
-      "visual": "neutraler Aktenstapel mit FBI-ähnlichem unspezifischem Ermittlungsordner",
+      "visual": "Eine Figur tritt aus einem dunklen New Yorker Durchgang in einen hellen Innenhof mit roten Backsteinfassaden.",
       "extra": false,
-      "imageNumber": 10
+      "imageNumber": 10,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Nostra, deren Hierarchie Behörden dokumentiert haben.",
-      "visual": "neutraler Aktenstapel mit FBI-ähnlichem unspezifischem Ermittlungsordner – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Eine nüchterne Ermittlerin blättert am Schreibtisch durch eine unbeschriftete große Akte; an der Wand hängen wenige leere Beweisfotos.",
       "extra": true,
-      "imageNumber": 11
+      "imageNumber": 11,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "01_hook",
       "voice": "Denn bei anderen Mafiaorganisationen kann der Aufbau ganz anders aussehen.",
-      "visual": "zwei unterschiedliche einfache Organisationsdiagramme nebeneinander",
+      "visual": "Verschiedene Gruppen von Strichmännchen begegnen sich in getrennten Stadtvierteln; jede Gruppe trägt eigene Farbakzente und Gesten.",
       "extra": false,
-      "imageNumber": 12
+      "imageNumber": 12,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Als Erstes musst du verstehen, was das Wort Familie hier überhaupt bedeutet.",
-      "visual": "einzelnes Stickman fragt nach Wort Familie auf Aktenordner",
+      "visual": "Ein junger Strichmann steht ratlos vor einer Gruppe streng blickender Erwachsener im Hinterzimmer; ein Familienfoto hängt schief an der Wand.",
       "extra": false,
-      "imageNumber": 13
+      "imageNumber": 13,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Es geht nicht einfach um Eltern, Kinder und einen gemeinsamen Nachnamen.",
-      "visual": "durchgestrichener Stammbaum hinter Kriminalitätsdiagramm",
+      "visual": "Zwei Strichfiguren bringen einen großen Familienkuchen ins Zimmer, während der Chef irritiert die Arme verschränkt: der Kontrast wirkt leicht komisch.",
       "extra": false,
-      "imageNumber": 14
+      "imageNumber": 14,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Eine Mafia-Familie ist eine kriminelle Organisation mit Führung, Gruppen und verbundenen Personen.",
-      "visual": "verschachtelte Kästen mit Stickman-Gruppen und Anführer",
+      "visual": "Ein Anführer berät sich an einem runden Tisch mit zwei eng zusammenstehenden Gruppen; eine nervöse Person wartet vor der Tür.",
       "extra": false,
-      "imageNumber": 15
+      "imageNumber": 15,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "In New York sind fünf solche Familien besonders bekannt geworden.",
-      "visual": "Stadtkarte zeigt fünf verschiedenfarbige markierte Gruppenkreise",
+      "visual": "Fünf kleine Backsteinhäuser in einer lebendigen New Yorker Straße, aus jedem treten unterschiedliche Stickman-Gruppen mit eigenen Farbakzenten hervor.",
       "extra": false,
-      "imageNumber": 16
+      "imageNumber": 16,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Sie heißen Bonanno, Colombo, Gambino, Genovese und Lucchese.",
-      "visual": "fünf sauber getrennte Namensschilder um New Yorker Stadtplan",
+      "visual": "Fünf voneinander getrennte Gruppen stehen auf verschiedenen Straßenseiten bei wechselndem Licht und bilden keine gemeinsame Führungsreihe.",
       "extra": false,
-      "imageNumber": 17
+      "imageNumber": 17,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Das bedeutet aber nicht, dass alle gemeinsam auf einen einzigen Chef hören.",
-      "visual": "fünf Boss-Stickmen an fünf voneinander getrennten Tischen",
+      "visual": "Zwei mächtige Strichmänner in verschiedenen Fenstern werfen sich misstrauische Blicke zu; keiner nimmt Befehle vom anderen entgegen.",
       "extra": false,
-      "imageNumber": 18
+      "imageNumber": 18,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Jede Familie besitzt ihre eigene Führung und ihre eigenen internen Gruppen.",
-      "visual": "fünf getrennte Organigramme ohne Verbindung an der Spitze",
+      "visual": "Ein Kameraschwenk durch ein volles Hinterzimmer: Chef, Berater und mehrere deutlich getrennte Kleingruppen verhandeln parallel.",
       "extra": false,
-      "imageNumber": 19
+      "imageNumber": 19,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Und innerhalb dieser Gruppen beginnt die erste Stufe unserer Hierarchie.",
-      "visual": "Zoom auf untere Gruppe eines der fünf Organigramme",
+      "visual": "Wir folgen der Kamera durch eine halb offene Hintertür zu einem kleinen runden Tisch, an dem ein nervöser Neuling wartet.",
       "extra": false,
-      "imageNumber": 20
+      "imageNumber": 20,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "02_familie",
       "voice": "Hier begegnen wir jemandem, der dazugehört, ohne offiziell dazuzugehören.",
-      "visual": "einzelner Stickman vor halb geöffneter Tür",
+      "visual": "Ein grün bekappter Kontaktmann steht vor der roten Samt-Kordel eines Clubs; drinnen unterhalten sich offizielle Mitglieder ohne ihn.",
       "extra": false,
-      "imageNumber": 21
+      "imageNumber": 21,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Ganz unten steht der sogenannte Associate, also eine verbundene Person.",
-      "visual": "Stickman außerhalb roten inneren Kreises mit Schild Associate",
+      "visual": "Der grün bekappte junge Kontaktmann balanciert nervös ein Tablett zwischen alten Café-Stühlen; zwei ranghöhere Figuren mustern ihn.",
       "extra": false,
-      "imageNumber": 22
+      "imageNumber": 22,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Er arbeitet mit Mitgliedern einer Mafia-Familie zusammen,",
-      "visual": "Associate hinter Glaswand zu rotem Mitgliederkreis",
+      "visual": "Er beugt sich zu einem ruhigen Rotkrawattenträger an einem Bistrotisch und deutet auf eine unbeschriftete Karte.",
       "extra": false,
-      "imageNumber": 23
+      "imageNumber": 23,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "gehört ihr aber nicht offiziell an.",
-      "visual": "Associate hinter Glaswand zu rotem Mitgliederkreis – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein Türsteher mit rundem Kopf und rotem Schal hält den Kontaktmann sanft, aber bestimmt außerhalb des Hinterzimmers auf.",
       "extra": true,
-      "imageNumber": 24
+      "imageNumber": 24,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Das kann für Außenstehende verwirrend sein, weil er trotzdem Einfluss besitzen kann.",
-      "visual": "unauffälliges Stickman neben großer schattenhafter Figur",
+      "visual": "Der Kontaktmann begrüßt draußen mehrere angesehene Gäste, während hinter ihm ein verwirrter Passant stehen bleibt.",
       "extra": false,
-      "imageNumber": 25
+      "imageNumber": 25,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Wer im Film sofort ein Abzeichen oder einen Rang erwartet, wird enttäuscht.",
-      "visual": "Strichmännchen sucht vergeblich nach glänzendem Rangabzeichen",
+      "visual": "Er betrachtet sein nacktes Hemd im Schaufenster und sucht vergeblich nach einem offiziellen Abzeichen; seine Brauen steigen komisch hoch.",
       "extra": false,
-      "imageNumber": 26
+      "imageNumber": 26,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Hier entscheidet häufig die Beziehung zu einem",
-      "visual": "zwei Stickmen durch einfache Kontaktlinie verbunden",
+      "visual": "Ein scheuer Kontaktmann blickt zu einem Fenster, aus dem der Rotkrawattenträger mit auffälliger Handbewegung winkt.",
       "extra": false,
-      "imageNumber": 27
+      "imageNumber": 27,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "bestehenden Mitglied über die Nähe zur Gruppe.",
-      "visual": "zwei Stickmen durch einfache Kontaktlinie verbunden – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Zwei Strichmänner erkennen sich bei einer Straßenecke wieder und schütteln sich die Hände; der grün Bekappte lächelt erleichtert.",
       "extra": true,
-      "imageNumber": 28
+      "imageNumber": 28,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Associates können an illegalen Geschäften beteiligt sein und für Mitglieder tätig werden.",
-      "visual": "symbolischer Ordner ILLEGAL und Stickman im Hintergrund",
+      "visual": "Der grün Bekappte trägt einen verschlossenen Umschlag durch ein belebtes Café, sichtbar ohne geheimdienstliche Tricks oder kriminelle Details.",
       "extra": false,
-      "imageNumber": 29
+      "imageNumber": 29,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Manche liefern Geld ab, andere knüpfen Kontakte oder spielen nur eine Nebenrolle.",
-      "visual": "stilisierte Münze, Gespräch und Nebenrolle in drei Mini-Szenen",
+      "visual": "Er sitzt am kleinen Tisch, wartet auf ein Nicken und trommelt nervös mit den Fingern; Uhr ohne Ziffern hängt dahinter.",
       "extra": false,
-      "imageNumber": 30
+      "imageNumber": 30,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Eine feste Beförderung nach einer bestimmten Anzahl von Monaten gibt es nicht.",
-      "visual": "Kalender mit durchgestrichenem Beförderungspfeil",
+      "visual": "Vier verschiedene Kontaktpersonen arbeiten sichtbar an gewöhnlichen Tischen, sprechen mit Leuten oder tragen Akten; keine Details zu Straftaten.",
       "extra": false,
-      "imageNumber": 31
+      "imageNumber": 31,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Auch ein Associate, der viel verdient, ist",
-      "visual": "großer Geldstapel neben Person außerhalb Mitgliederkreis",
+      "visual": "Der junge Kontaktmann starrt missmutig auf einen Stapel umgeblätterter Kalenderblätter ohne Zahlen, während niemand zur Tür kommt.",
       "extra": false,
-      "imageNumber": 32
+      "imageNumber": 32,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "dadurch nicht automatisch ein vollwertiges Mitglied.",
-      "visual": "großer Geldstapel neben Person außerhalb Mitgliederkreis – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Eine pralle Geldbörse liegt vor dem grün Bekappten, der sich stolz zurücklehnt; der Rotkrawattenträger reagiert völlig unbeeindruckt.",
       "extra": true,
-      "imageNumber": 33
+      "imageNumber": 33,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Vor allem besitzt er nicht denselben formellen Status innerhalb der Organisation.",
-      "visual": "Statuskreis mit einem Stickman davor, nicht innerhalb",
+      "visual": "Die rote Samtkordel am Hinterzimmer bleibt zu, obwohl der Kontaktmann eine schwere Geldbörse präsentiert.",
       "extra": false,
-      "imageNumber": 34
+      "imageNumber": 34,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Das ist der erste wichtige Unterschied zwischen",
-      "visual": "zwei Balken Nähe und Rang zeigen unterschiedliche Werte",
+      "visual": "Drinnen erhält der Rotkrawattenträger einen Platz am Tisch; der grün Bekappte muss mit enttäuschter Miene draußen bleiben.",
       "extra": false,
-      "imageNumber": 35
+      "imageNumber": 35,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Nähe zur Macht und einem echten Rang.",
-      "visual": "zwei Balken Nähe und Rang zeigen unterschiedliche Werte – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein großer Schatten von zwei wichtigen Gästen fällt auf den grün Bekappten, der selber noch vor dem verschlossenen Tor steht.",
       "extra": true,
-      "imageNumber": 36
+      "imageNumber": 36,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "03_associate",
       "voice": "Und genau an dieser Grenze wird die nächste Stufe entscheidend.",
-      "visual": "rote Tür mit Schild Mitglied und wartendem einfachen Stickman",
+      "visual": "Der Kontaktmann schaut zugleich zu einem offenen Gesprächsfeld und einer verschlossenen Mitgliedertür; zwei Wege gehen sichtbar auseinander.",
       "extra": false,
-      "imageNumber": 37
+      "imageNumber": 37,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Die unterste formelle Mitgliedsstufe heißt Soldier, auf Deutsch oft Soldat.",
-      "visual": "Soldier-Stickman mit einfachem kleinem roten Abzeichen",
+      "visual": "Ein Strichmann mit rotem Krawattenstrich tritt entschlossen aus der dunklen Holztür; zwei Begleiter mustern ihn.",
       "extra": false,
-      "imageNumber": 38
+      "imageNumber": 38,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Mit einem echten militärischen Soldaten hat diese Bezeichnung natürlich nichts zu tun.",
-      "visual": "Vergleich Strichmännchen mit Aktenordner und neutralem Militärhelm durch Trennlinie",
+      "visual": "Ein Soldat mit echtem Militärhelm erscheint kurz in einem Schaufensterbild, daneben winkt der Rotkrawatten-Strichmann verwirrt ab.",
       "extra": false,
-      "imageNumber": 39
+      "imageNumber": 39,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Ein Soldier ist offiziell in eine Mafia-Familie aufgenommen worden.",
-      "visual": "schlichtes Mitgliedsdiagramm, Soldier tritt in inneren Kreis",
+      "visual": "Der junge Rotkrawattenträger sitzt nun offiziell am Hinterzimmertisch; der grün Bekappte blickt draußen durchs Fenster.",
       "extra": false,
-      "imageNumber": 40
+      "imageNumber": 40,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Im amerikanischen Sprachgebrauch heißt so jemand auch Made Man.",
-      "visual": "schlichte Titelkarte MADE MAN neben Stickman ohne Glamour",
+      "visual": "Zwei Crew-Mitglieder begrüßen den Rotkrawattenträger respektvoll mit einem Handschlag vor warm beleuchteter Bar.",
       "extra": false,
-      "imageNumber": 41
+      "imageNumber": 41,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Historisch spielte dabei ein Aufnahme-Ritual und ein Schweigeversprechen eine Rolle.",
-      "visual": "verschlossene Tür und symbolisches Schweigezeichen, keine Rituale",
+      "visual": "Eine ruhige dunkle Hinterzimmer-Szene mit vier Stickmen, die schweigend ein unbeschriftetes Papier betrachten; ernst statt mystisch.",
       "extra": false,
-      "imageNumber": 42
+      "imageNumber": 42,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Dieses Schweigegebot kennt man unter dem Begriff Omertà.",
-      "visual": "einzelnes Wort OMERTÀ auf kleinem zerknittertem Aktenblatt",
+      "visual": "Der Rotkrawattenträger legt einen Finger an den Strichmund, und sein Gegenüber nickt; alle Akten und Wandflächen sind leer.",
       "extra": false,
-      "imageNumber": 43
+      "imageNumber": 43,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Nach außen wirkt das vielleicht wie eine besondere Auszeichnung.",
-      "visual": "scheinbar schimmerndes Abzeichen über ernster Strichfigur",
+      "visual": "Er betrachtet stolz sein winziges rotes Stoffband im Spiegel des Cafés; seine Freunde wirken skeptisch.",
       "extra": false,
-      "imageNumber": 44
+      "imageNumber": 44,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Tatsächlich bindet es die Person enger an eine gewalttätige kriminelle Organisation.",
-      "visual": "Abzeichen wird zur engen schwarzen Kette als Symbol",
+      "visual": "Eine enge dunkle Tür wirft einen langen Schatten auf den Rotkrawattenträger; seine stolze Pose wird unsicher.",
       "extra": false,
-      "imageNumber": 45
+      "imageNumber": 45,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Soldiers gehören zu einer Crew, einer kleineren Gruppe innerhalb der Familie.",
-      "visual": "kleiner Crew-Kreis um vier einfache Stickmen",
+      "visual": "Mehrere Rotkrawattenträger sitzen gemeinsam an einem Tisch, einer erzählt gestikulierend, ein anderer schaut nervös zur Tür.",
       "extra": false,
-      "imageNumber": 46
+      "imageNumber": 46,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Über ihnen steht ein Gruppenleiter, der ihre Aktivitäten beaufsichtigt.",
-      "visual": "Capo über Crew als klare Organisationslinien",
+      "visual": "Der Rot-Schal-Träger steht am Kopf eines schmalen Tisches und unterbricht mit erhobener Hand eine erhitzte Debatte.",
       "extra": false,
-      "imageNumber": 47
+      "imageNumber": 47,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Geld und Einfluss fließen dabei nicht einfach nur von oben nach unten.",
-      "visual": "einfache Geldpfeile von Crew nach oben",
+      "visual": "Ein kleines Bündel Münzen liegt zwischen zwei Figuren, ein mächtiger Schatten aus dem oberen Stock zeigt die Einflussrichtung, ohne Ablaufdetail.",
       "extra": false,
-      "imageNumber": 48
+      "imageNumber": 48,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Auch ein Soldier kann Macht gegenüber Associates",
-      "visual": "Soldier zwischen Associate unten und Capo oben",
+      "visual": "Der Rotkrawattenträger blickt von oben auf den grünen Kontaktmann an der Treppe, während der andere hinauf schaut.",
       "extra": false,
-      "imageNumber": 49
+      "imageNumber": 49,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "haben, bleibt aber einem Capo untergeordnet.",
-      "visual": "Soldier zwischen Associate unten und Capo oben – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein roter Schal taucht in der Tür über beiden auf und erinnert die stolze Figur mit ernster Miene an ihre Grenzen.",
       "extra": true,
-      "imageNumber": 50
+      "imageNumber": 50,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Ein interessanter Gedanke: Mitglied zu sein heißt",
-      "visual": "Soldier vor verschlossener Entscheidungstür",
+      "visual": "Der Rotkrawattenträger hebt ein Glas und will eine Entscheidung verkünden, doch alle anderen blicken an ihm vorbei.",
       "extra": false,
-      "imageNumber": 51
+      "imageNumber": 51,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "noch lange nicht, selbst zu entscheiden.",
-      "visual": "Soldier vor verschlossener Entscheidungstür – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Der Chef im Hintergrund winkt ihn stumm zurück auf seinen Stuhl; sein Arm sinkt und das Lächeln verschwindet.",
       "extra": true,
-      "imageNumber": 52
+      "imageNumber": 52,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "04_soldier",
       "voice": "Damit kommen wir zu der Person, die mehrere dieser Mitglieder führt.",
-      "visual": "Kamera auf etwas höheren Bereich des Organigramms",
+      "visual": "Mit dramatischem Kameraschwenk nähert sich der Rot-Schal-Träger, dessen Crew an einem Holztisch Platz macht.",
       "extra": false,
-      "imageNumber": 53
+      "imageNumber": 53,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Die nächste Stufe heißt Capo, manchmal auch Caporegime oder Captain.",
-      "visual": "Capo-Stickman mit kleinem rotem Schal und Namen CAPO",
+      "visual": "Der Capo mit kurzem roten Schal schiebt im Café energisch einen Stuhl zurück und stellt sich seiner kleinen Gruppe entgegen.",
       "extra": false,
-      "imageNumber": 54
+      "imageNumber": 54,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Ein Capo führt eine Crew aus offiziellen Mitgliedern und verbundenen Personen.",
-      "visual": "kleiner Capo über drei Soldiers und zwei Associates",
+      "visual": "Drei Rotkrawattenträger und ein grün Bekappter versammeln sich vor dem Capo; alle haben deutlich verschiedene Gesichtsausdrücke.",
       "extra": false,
-      "imageNumber": 55
+      "imageNumber": 55,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Er ist so etwas wie ein Gruppenleiter, allerdings in einer kriminellen Organisation.",
-      "visual": "Organigramm-Crew und dunkles Warnsymbol",
+      "visual": "Der Capo betrachtet seine Gruppe aus dem Fenster eines Backsteinhauses, streckt den Arm aus und gibt eine knappe Anweisung.",
       "extra": false,
-      "imageNumber": 56
+      "imageNumber": 56,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Die Leute seiner Crew stehen für verschiedene Geschäfte und Kontakte.",
-      "visual": "mehrere einfache Geschäfts- und Kontaktsymbole neben Crew",
+      "visual": "Eine lebendige Marktszene: verschiedene Crew-Leute treffen Personen an unbeschrifteten Ständen; der Capo beobachtet aus Distanz.",
       "extra": false,
-      "imageNumber": 57
+      "imageNumber": 57,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Laut Ermittlungsakten erhalten Vorgesetzte häufig einen Anteil an illegalen Einnahmen.",
-      "visual": "Pfeile von Geldsymbol unten zum Capo oben",
+      "visual": "Der Capo blickt streng auf einen kleinen Geldbeutel zwischen zwei Aktenmappen und schiebt ihn ohne Lächeln weiter.",
       "extra": false,
-      "imageNumber": 58
+      "imageNumber": 58,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Wichtig ist: Diese Geldströme stehen nicht für ein ordentliches Gehalt.",
-      "visual": "durchgestrichene Lohnabrechnung und dunkles Münzsymbol",
+      "visual": "Ein gezeichneter Lohnzettel ohne Schrift liegt neben einem leeren Kaffebecher; der Capo dreht ihn ärgerlich um.",
       "extra": false,
-      "imageNumber": 59
+      "imageNumber": 59,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Sie hängen mit Erpressung, illegalem Glücksspiel oder anderen Straftaten zusammen.",
-      "visual": "drei neutrale Symbole bedrohte Ladenfront, Würfel und Gerichtsakte",
+      "visual": "Ein besorgter Ladeninhaber blickt aus seinem Geschäft, während vor der Tür zwei bedrohliche Schattengestalten stehen; keine Tatabläufe.",
       "extra": false,
-      "imageNumber": 60
+      "imageNumber": 60,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Für Betroffene kann das existenzbedrohende Folgen haben, auch",
-      "visual": "besorgtes Ladenbesitzer-Stickman vor leerem Geschäft",
+      "visual": "Der Ladeninhaber sitzt mit hängenden dünnen Stricharmen vor einem fast leeren Regal im warmen Licht.",
       "extra": false,
-      "imageNumber": 61
+      "imageNumber": 61,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "wenn man es im Film selten sieht.",
-      "visual": "besorgtes Ladenbesitzer-Stickman vor leerem Geschäft – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein Paar und ein Kind als Strichfiguren schauen traurig auf die verschlossene Ladentür; dezenter Ernst statt Gewaltdarstellung.",
       "extra": true,
-      "imageNumber": 62
+      "imageNumber": 62,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Ein Capo muss seine Gruppe zusammenhalten und berichtet an die Führung.",
-      "visual": "Capo verbindet Crew und oberes Führungstrio durch Linien",
+      "visual": "Der Capo telefoniert hektisch am Fenster; hinter ihm warten Mitglieder ungeduldig, unten fährt ein Wagen vorbei.",
       "extra": false,
-      "imageNumber": 63
+      "imageNumber": 63,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Dabei sammelt sich nicht nur Verantwortung, sondern auch Misstrauen.",
-      "visual": "Capo zwischen zwei argwöhnisch blickenden Stickmen",
+      "visual": "Zwei Personen aus der Crew beäugen einander argwöhnisch, während der Capo beschwichtigend die langen Stricharme ausbreitet.",
       "extra": false,
-      "imageNumber": 64
+      "imageNumber": 64,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Wenn verschiedene Gruppen um Einfluss streiten, sitzt er plötzlich mitten im Konflikt.",
-      "visual": "zwei Crew-Kreise ziehen an gleichem Symbol",
+      "visual": "Im Hof stoßen zwei verschieden gefärbte Gruppen aufeinander; der Capo stellt sich zwischen sie und versucht zu vermitteln.",
       "extra": false,
-      "imageNumber": 65
+      "imageNumber": 65,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Die schöne Vorstellung vom entspannten Mafialeben bekommt spätestens hier deutliche Risse.",
-      "visual": "elegante Sonnenbrille bricht über dunklem Hintergrund",
+      "visual": "Ein vermeintlich glamouröser Sessel im Hinterzimmer zeigt Risse, aus dem Fenster fällt unangenehm kaltes Straßenlicht.",
       "extra": false,
-      "imageNumber": 66
+      "imageNumber": 66,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "05_capo",
       "voice": "Denn oberhalb eines Capos wird Macht nicht mehr nur ausgeübt, sondern verteilt.",
-      "visual": "Organigramm springt von Capo zur Führungsebene",
+      "visual": "An einer verwinkelten Treppe stehen zwei Berater-Figuren und der Rot-Schal-Capo; der Capo schaut fragend hinauf.",
       "extra": false,
-      "imageNumber": 67
+      "imageNumber": 67,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Direkt unter dem Boss kann ein Underboss stehen, also der Stellvertreter.",
-      "visual": "zwei Stickmen in klarer vertikaler Führung, Underboss unter Boss",
+      "visual": "Ein blauer Kragenstrich kennzeichnet den Stellvertreter, der direkt neben dem roten Chef am großen Fenstertisch steht.",
       "extra": false,
-      "imageNumber": 68
+      "imageNumber": 68,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Er gehört zur obersten Leitung einer Familie.",
-      "visual": "Führungsetage mit Boss, Underboss und Consigliere",
+      "visual": "Chef und blauer Stellvertreter gehen nebeneinander durch einen eleganten, aber einfachen Flur mit warmen Wandleuchten.",
       "extra": false,
-      "imageNumber": 69
+      "imageNumber": 69,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Seine Rolle besteht unter anderem darin, die",
-      "visual": "Underboss mit Akten zwischen Capos und Boss",
+      "visual": "Der blau markierte Stellvertreter hilft einem angespannten Chef, mehrere unbeschriftete Akten auf einem Tisch zu sortieren.",
       "extra": false,
-      "imageNumber": 70
+      "imageNumber": 70,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Führung bei ihren Aufgaben zu unterstützen.",
-      "visual": "Underboss mit Akten zwischen Capos und Boss – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Er zeigt mit der Hand auf ein Problem vor dem Fenster, während der Boss mit hochgezogener Braue zuhört.",
       "extra": true,
-      "imageNumber": 71
+      "imageNumber": 71,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Er kann Kontakte zu Capos halten und Entscheidungen der Spitze weitergeben.",
-      "visual": "Informationspfeile von oberen Stickmen zu drei Capos",
+      "visual": "Der Stellvertreter spricht mit zwei Rot-Schal-Capos an einem schmalen Tisch; alle gestikulieren sehr unterschiedlich.",
       "extra": false,
-      "imageNumber": 72
+      "imageNumber": 72,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Aber das ist kein Bürojob mit geregeltem Feierabend und Kaffeepause.",
-      "visual": "ironisches Schreibtischsymbol mit durchgestrichener Feierabenduhr",
+      "visual": "Ein Capo läuft aus der Tür, als der blaue Stellvertreter eine deutliche Handbewegung macht; kein Text im Bild.",
       "extra": false,
-      "imageNumber": 73
+      "imageNumber": 73,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Denn die Entscheidungen betreffen eine Organisation, die von illegalen Geschäften lebt.",
-      "visual": "dunkle Karte mit Kriminalitätswarnsymbol und Akten",
+      "visual": "Ein kalt gewordener Kaffeebecher steht am Ende eines langen Flures, während der Stellvertreter eilig mit flatternden Papierblättern vorbeirennt.",
       "extra": false,
-      "imageNumber": 74
+      "imageNumber": 74,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Der Underboss ist mächtig, aber nicht automatisch der nächste dauerhafte Boss.",
-      "visual": "Thron und fragliches Nachfolgepfeil-Symbol",
+      "visual": "Der Stellvertreter blickt auf angespannt wartende Untergebene; draußen halten Polizeiwagen ohne erkennbare Schrift.",
       "extra": false,
-      "imageNumber": 75
+      "imageNumber": 75,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Führung kann sich durch Konflikte, Ermittlungen oder Festnahmen verändern.",
-      "visual": "Organigramm mit drei roten Verschiebungspfeilen und Handschellensymbol",
+      "visual": "Ein blauer Stellvertreter schaut nervös zu einem roten, leeren Chefsessel; daneben steht eine unbekannte Silhouette hinter Glas.",
       "extra": false,
-      "imageNumber": 76
+      "imageNumber": 76,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Und jetzt wird es interessant, denn neben dem",
-      "visual": "gleichhohe Plätze für Underboss und Consigliere, kein vertikaler Pfeil",
+      "visual": "Zwischen zwei rivalisierenden Crew-Vertretern klappt eine Tür zu; der stellvertretende Chef starrt enttäuscht auf die Auseinandersetzung.",
       "extra": false,
-      "imageNumber": 77
+      "imageNumber": 77,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Stellvertreter sitzt noch eine andere wichtige Figur.",
-      "visual": "gleichhohe Plätze für Underboss und Consigliere, kein vertikaler Pfeil – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Der blaue Stellvertreter dreht sich verblüfft zu einem zweiten Stuhl auf derselben erhöhten Ebene.",
       "extra": true,
-      "imageNumber": 78
+      "imageNumber": 78,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "06_underboss",
       "voice": "Die wird oft mit einer bloß höheren Rangstufe verwechselt.",
-      "visual": "zwei Stühle auf derselben Ebene des Organigramms",
+      "visual": "Auf dem zweiten Stuhl sitzt eine ruhige Figur mit eckiger Brille und kleinem gelbem Notizbuch, die sachlich den Blick erwidert.",
       "extra": false,
-      "imageNumber": 79
+      "imageNumber": 79,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Der Consigliere ist ein Berater der Führung, nicht einfach der Chef des Underbosses.",
-      "visual": "Consigliere-Stickman mit Papierrolle neben Underboss auf gleicher Ebene",
+      "visual": "Ein Brillen-Stickman mit gelbem Notizbuch sitzt auf gleicher Höhe neben dem blauen Stellvertreter, ohne ihm Befehle zu geben.",
       "extra": false,
-      "imageNumber": 80
+      "imageNumber": 80,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Er kann zwischen Mitgliedern vermitteln und dem Boss seine Einschätzung geben.",
-      "visual": "drei Stickmen an einfachem Verhandlungstisch, Consigliere vermittelt",
+      "visual": "Der Brillenträger vermittelt zwischen zwei heftig gestikulierenden Crew-Mitgliedern am Holztisch.",
       "extra": false,
-      "imageNumber": 81
+      "imageNumber": 81,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Für solche Aufgaben zählt Vertrauen mehr als ein besonders auffälliges Auftreten.",
-      "visual": "einfache Strichfigur mit ruhigem Gesicht, großes Vertrauenssymbol",
+      "visual": "Der Berater beugt sich ruhig zum roten Chef, deutet auf sein geschlossenes gelbes Notizbuch; der Chef hört aufmerksam zu.",
       "extra": false,
-      "imageNumber": 82
+      "imageNumber": 82,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "In manchen Darstellungen sieht man ihn als geheimnisvollen Mann hinter einem Vorhang.",
-      "visual": "Cartoon-Vorhang mit großer Silhouette",
+      "visual": "Eine theatrale dunkle Vorhang-Silhouette entpuppt sich beim Aufziehen als gewöhnlicher Brillen-Stickman mit überraschter Miene.",
       "extra": false,
-      "imageNumber": 83
+      "imageNumber": 83,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Die tatsächliche Funktion ist viel nüchterner und hängt von der jeweiligen Familie ab.",
-      "visual": "Berater über Sachakten vor kleiner Führungsetage",
+      "visual": "Der Berater sortiert schlicht unbeschriftete Akten in einem eher gewöhnlichen kleinen Büro statt im luxuriösen Versteck.",
       "extra": false,
-      "imageNumber": 84
+      "imageNumber": 84,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Ein Consigliere kann erfahren sein, respektiert und trotzdem nicht der operative Stellvertreter.",
-      "visual": "nebeneinander: Berater-Sprechblase und Underboss-Akten",
+      "visual": "Stellvertreter und Berater stehen auf gleicher Bodenhöhe; einer hält Unterlagen, der andere lauscht zwischen Streitenden.",
       "extra": false,
-      "imageNumber": 85
+      "imageNumber": 85,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Gerade deshalb ist die Hierarchie keine perfekte",
-      "visual": "Organigramm verzweigt sich an Spitze in zwei Seitenäste",
+      "visual": "Ein junger Neuling versucht eine gerade Leiter zu erklimmen, staunt aber über die sich verzweigende Treppe im Gebäude.",
       "extra": false,
-      "imageNumber": 86
+      "imageNumber": 86,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Leiter mit nur einer Person pro Sprosse.",
-      "visual": "Organigramm verzweigt sich an Spitze in zwei Seitenäste – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Die große Treppe teilt sich in zwei parallele Galerien, auf denen Berater und Stellvertreter getrennte Gruppen ansprechen.",
       "extra": true,
-      "imageNumber": 87
+      "imageNumber": 87,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Underboss und Consigliere gehören beide zur Leitung, erfüllen aber unterschiedliche Aufgaben.",
-      "visual": "zwei unterschiedliche Symbole Koordination und Beratung",
+      "visual": "Der Brillen-Berater löst einen Streit am Tisch, während der blaue Stellvertreter am Nebentisch mehrere Leute einteilt.",
       "extra": false,
-      "imageNumber": 88
+      "imageNumber": 88,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "07_consigliere",
       "voice": "Und ganz oben steht schließlich die Figur, die Mafiafilme besonders lieben.",
-      "visual": "dunkler Raum mit einzelner Boss-Silhouette auf erhöhtem Feld",
+      "visual": "Der rote Chef tritt aus der Tiefe des Raumes durch das Gegenlicht; alle Anwesenden wenden den Kopf.",
       "extra": false,
-      "imageNumber": 89
+      "imageNumber": 89,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Der Boss führt die Mafia-Familie und steht an der Spitze ihrer internen Struktur.",
-      "visual": "Boss-Stickman ganz oben im Mitgliederdiagramm",
+      "visual": "Ein markanter großer Stickman-Chef mit kräftigen Brauen, kleinem rotem Revers und strengem Blick steht hinter einem hohen Holzstuhl.",
       "extra": false,
-      "imageNumber": 90
+      "imageNumber": 90,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Er kann über zentrale Fragen und die Richtung der Organisation bestimmen.",
-      "visual": "Boss blickt über mehrere grobe Richtungspfeile",
+      "visual": "Der Chef beugt sich über einen leeren Holztisch, auf dem nur drei verschiedenfarbige Gegenstände liegen; die Berater reagieren.",
       "extra": false,
-      "imageNumber": 91
+      "imageNumber": 91,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Dabei geht es nicht um einen friedlichen Familienbetrieb mit schlecht gelauntem Geschäftsführer.",
-      "visual": "humorvoller Vergleich Firmenbüro versus Organigramm mit Warnsymbol",
+      "visual": "Ein harmloser Bürochef hält eine riesige Kaffeetasse, daneben blickt die dunklere Führungsperson völlig humorlos und kühl.",
       "extra": false,
-      "imageNumber": 92
+      "imageNumber": 92,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Die Ermittlungsakten beschreiben organisierte Kriminalität, Einschüchterung und Gewalt.",
-      "visual": "Aktenmappe im Vordergrund, betroffenes Opfer-Stickman dahinter",
+      "visual": "Eine besorgte Ladenbesitzerin steht vor einer düsteren Straßenfront; schemenhafte Kriminalitätsgefahr, kein Gewaltakt.",
       "extra": false,
-      "imageNumber": 93
+      "imageNumber": 93,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Ein Teil der illegalen Einnahmen kann über die Hierarchie nach oben gelangen.",
-      "visual": "einfache Pfeile von unterer Crew zum Boss",
+      "visual": "Der Rot-Schal-Capo legt einen geschlossenen Umschlag in die Mitte des Tisches; oben beobachtet der Boss es schweigend.",
       "extra": false,
-      "imageNumber": 94
+      "imageNumber": 94,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Von oben sieht dieses System nach Kontrolle und klaren Regeln aus.",
-      "visual": "saubere Pyramide von weitem mit Boss oben",
+      "visual": "Von einer schmalen Galerie beobachtet der Chef einen unruhigen Innenhof mit mehreren Gesprächsgruppen.",
       "extra": false,
-      "imageNumber": 95
+      "imageNumber": 95,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "In der Realität können Machtkämpfe und Ermittlungen die Spitze erschüttern.",
-      "visual": "Pyramide mit Rissen und gerichtlicher Waage daneben",
+      "visual": "Zwei Führungspersonen werfen sich misstrauische Blicke zu; unten nähern sich neutrale Ermittler durch eine beleuchtete Gasse.",
       "extra": false,
-      "imageNumber": 96
+      "imageNumber": 96,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Wird ein Boss inhaftiert, kann ein Acting Boss vorübergehend Aufgaben übernehmen.",
-      "visual": "Boss hinter Gitterfenster, anderer Stickman mit temporärem Schild",
+      "visual": "Eine abstrahierte Gefängnistür schließt sich hinter einem Chef mit kleinem roten Revers; eine andere Führungsperson wartet in der Ferne.",
       "extra": false,
-      "imageNumber": 97
+      "imageNumber": 97,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "So eine Vertretung bedeutet allerdings nicht, dass die ganze Organisation verschwindet.",
-      "visual": "Diagramm bleibt, Besetzungsfeld oben wechselt",
+      "visual": "Ein leerer Chefsessel steht zwischen wartenden Crew-Mitgliedern, aber die übrigen Gruppen arbeiten weiter.",
       "extra": false,
-      "imageNumber": 98
+      "imageNumber": 98,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Und jetzt kommt die eigentliche Überraschung: Es gibt nicht nur eine einzige Mafia-Familie.",
-      "visual": "Diagramm zoomt heraus und zeigt mehrere separate Familientürme",
+      "visual": "Mehrere rote Chefsessel stehen in ganz verschiedenen New Yorker Hinterzimmern, jeder mit eigener Gruppe.",
       "extra": false,
-      "imageNumber": 99
+      "imageNumber": 99,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Ein Boss ist also nicht automatisch der Herrscher über sämtliche Mafiosi.",
-      "visual": "Boss-Stickman versucht zu groß gewordene Weltkugel zu halten, rotes Nein-Symbol",
+      "visual": "Ein Chef schaut aus einem Fenster; gegenüber sitzt in einem anderen Gebäude eine selbstständige andere Führungsfigur.",
       "extra": false,
-      "imageNumber": 100
+      "imageNumber": 100,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "08_boss",
       "voice": "Das erklärt, warum Geschichten über einen weltweiten Oberboss oft zu simpel sind.",
-      "visual": "stilisierte Weltkarte mit durchgestrichenem Einzelthron",
+      "visual": "Ein riesiger imaginärer Weltthron schrumpft komisch zum gewöhnlichen kleinen Sessel in nur einem einzigen Hinterzimmer.",
       "extra": false,
-      "imageNumber": 101
+      "imageNumber": 101,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "In New York spielten historisch mehrere eigenständige Familien eine wichtige Rolle.",
-      "visual": "New Yorker Stadtkarte mit fünf unterschiedlich markierten Bezirkskreisen",
+      "visual": "Fünf farblich unterschiedliche Stickman-Gruppen bewegen sich parallel auf einem geschäftigen historischen New Yorker Platz.",
       "extra": false,
-      "imageNumber": 102
+      "imageNumber": 102,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Nach den Machtkämpfen der frühen dreißiger Jahre entstand auch eine gemeinsame Kommission.",
-      "visual": "Kalender mit 1930er-Jahre-Markierung und mehrere Tische",
+      "visual": "Ein historisch stilisierter Stadtraum der dreißiger Jahre mit mehreren angespannt wartenden Figuren vor einer schlichten Tür.",
       "extra": false,
-      "imageNumber": 103
+      "imageNumber": 103,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Sie diente dazu, Angelegenheiten zwischen bedeutenden Mafia-Familien abzustimmen.",
-      "visual": "mehrere Boss-Stickmen an rundem Konferenztisch",
+      "visual": "Vertreter verschiedener Gruppen sitzen an einem runden Tisch, und zwei streitende Personen lassen vorsichtig die Arme sinken.",
       "extra": false,
-      "imageNumber": 104
+      "imageNumber": 104,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Das war keine geheime Weltregierung über jede Mafia auf dem Planeten.",
-      "visual": "Konferenztisch neben kleiner begrenzter New York-Karte, Weltkugel durchgestrichen",
+      "visual": "Die Kamera fährt vom runden Sitzungstisch hinaus auf New Yorker Straßenecken, statt über eine erfundene Weltregierung zu schweben.",
       "extra": false,
-      "imageNumber": 105
+      "imageNumber": 105,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Jede Familie behielt ihre eigene interne Hierarchie.",
-      "visual": "fünf getrennte Pyramiden um einen gemeinsamen Konferenztisch",
+      "visual": "Nach dem Gespräch gehen die Anführer wieder in ihre getrennten Häuser mit jeweils eigenen Leuten zurück.",
       "extra": false,
-      "imageNumber": 106
+      "imageNumber": 106,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Wer die Struktur nur als große Leiter zeichnet,",
-      "visual": "Organigramme mit wenigen seitlichen gestrichelten Linien",
+      "visual": "Ein Neuling versucht, mit einer langen Schnur alle Türen zu verbinden; die Schnur verheddert sich und er schaut verdutzt.",
       "extra": false,
-      "imageNumber": 107
+      "imageNumber": 107,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "übersieht also die Verbindungen zwischen den Familien.",
-      "visual": "Organigramme mit wenigen seitlichen gestrichelten Linien – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Zwei Anführer auf verschiedenen Balkonen reagieren auf eine Nachricht mit völlig unterschiedlichen Gesichtsausdrücken.",
       "extra": true,
-      "imageNumber": 108
+      "imageNumber": 108,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Die Führung bestand damit nicht immer nur aus Befehlen von oben nach unten.",
-      "visual": "verzweigte horizontale und vertikale Kommunikationslinien",
+      "visual": "Am runden Tisch beraten mehrere gleichrangige Cheffiguren, ohne dass jemand einen Thron über den anderen besitzt.",
       "extra": false,
-      "imageNumber": 109
+      "imageNumber": 109,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Auch Rivalitäten und wechselnde Bündnisse konnten das Machtgefüge prägen.",
-      "visual": "zwei Boss-Stickmen wenden sich voneinander ab, Verbindung bricht",
+      "visual": "Zwei einst verbundene Cheffiguren wenden sich voneinander ab; im Hintergrund sieht man getrennte Gruppen.",
       "extra": false,
-      "imageNumber": 110
+      "imageNumber": 110,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "09_kommission",
       "voice": "Es war also gleichzeitig ein hierarchisches und ein politisches Geflecht.",
-      "visual": "Organisationsdiagramm geht in Netzdiagramm über",
+      "visual": "Eine Kamerafahrt von einer kleinen Crew durch ein Haus auf einen runden Tisch mehrerer Vertreter bringt beide Machtformen zusammen.",
       "extra": false,
-      "imageNumber": 111
+      "imageNumber": 111,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Bis hier sieht die Mafia-Pyramide fast aus wie ein Unternehmen mit schlechten Manieren.",
-      "visual": "Unternehmensorganigramm und düsteres Mafiaorganigramm im Vergleich",
+      "visual": "Ein scheinbar seriöser Strichmann im Business-Stuhl hebt seinen Kaffeebecher; der Tisch kippt und zeigt einen düsteren Keller darunter.",
       "extra": false,
-      "imageNumber": 112
+      "imageNumber": 112,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Aber dieser Vergleich hat eine entscheidende Grenze: Dahinter stehen reale Straftaten und Opfer.",
-      "visual": "Organigramm weicht betroffenen Ladenbesitzern und Familien",
+      "visual": "Ein betroffenes Paar mit Kind blickt traurig auf sein beschädigtes kleines Ladenfenster; ihre Gefühle stehen im Vordergrund.",
       "extra": false,
-      "imageNumber": 113
+      "imageNumber": 113,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Bei Erpressung oder Gewalt verlieren Menschen Geld, Sicherheit und manchmal ihr Leben.",
-      "visual": "verschlossener Laden, weinende einfache Strichfigur, Gerichtsakte",
+      "visual": "Ein Ladenbesitzer hebt mit zitternden dünnen Armen die heruntergeklappte Rolllade und blickt besorgt zur Straße.",
       "extra": false,
-      "imageNumber": 114
+      "imageNumber": 114,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Und selbst die Mächtigen stehen nicht außerhalb des Gesetzes.",
-      "visual": "Boss-Silhouette unter großer ausgeglichener Justizwaage",
+      "visual": "Ein strenger Gerichtsraum mit Richter-Stickman, Anwältin und Angeklagtem; das rote Revers wirkt hier plötzlich klein.",
       "extra": false,
-      "imageNumber": 115
+      "imageNumber": 115,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Ermittler haben immer wieder Mitglieder und Führungspersonen solcher Familien angeklagt.",
-      "visual": "neutrale Ermittler-Stickmen vor Gericht, große Akten",
+      "visual": "Zwei sachliche Ermittler legen unbeschriftete Akten auf einen Tisch, während die beschuldigten Personen den Blick senken.",
       "extra": false,
-      "imageNumber": 116
+      "imageNumber": 116,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Das macht den angeblich glamourösen Aufstieg ziemlich schnell unattraktiv.",
-      "visual": "glänzende Stufen verwandeln sich in dunkle Gefängnisgitter",
+      "visual": "Eine glänzende Treppe aus dem Hinterzimmer endet abrupt vor dunklen Gefängnisgittern; ein neugieriger Stickman stoppt erschrocken.",
       "extra": false,
-      "imageNumber": 117
+      "imageNumber": 117,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Vor allem kann das eigene Netzwerk zum Problem werden, sobald Vertrauen zerbricht.",
-      "visual": "Kontaktlinien zwischen Stickmen reißen sichtbar",
+      "visual": "Mehrere Menschen wenden sich misstrauisch voneinander ab; zerrissene Verbindungsschnüre liegen auf dem Holzboden.",
       "extra": false,
-      "imageNumber": 118
+      "imageNumber": 118,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Ein Associate besitzt keinen offiziellen Rang, ein Soldier",
-      "visual": "drei Ebenen unten der Pyramide farbig markiert",
+      "visual": "Links ein grün bekappter Kontaktmann außerhalb eines offenen Raumes; ein Rotkrawattenträger tritt von innen hervor.",
       "extra": false,
-      "imageNumber": 119
+      "imageNumber": 119,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "gehört zur Familie, ein Capo führt eine Crew.",
-      "visual": "drei Ebenen unten der Pyramide farbig markiert – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Ein rotes Krawattenmännchen nimmt am Tisch Platz; der Rot-Schal-Capo steht dahinter und bündelt eine lebendige Gesprächsgruppe.",
       "extra": true,
-      "imageNumber": 120
+      "imageNumber": 120,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Underboss und Consigliere bilden unterschiedliche Teile der Führung; darüber steht der Boss.",
-      "visual": "obere Ebene mit parallelem Underboss und Consigliere unter Boss",
+      "visual": "Der blaue Stellvertreter und der Brillen-Berater sitzen gleich hoch neben dem großen Chef am Fenstertisch.",
       "extra": false,
-      "imageNumber": 121
+      "imageNumber": 121,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Und über mehrere Familien hinweg gab es historisch zusätzliche Formen der Abstimmung.",
-      "visual": "fünf Familienpyramiden um kleinen Kommissionskreis",
+      "visual": "Fünf Cheffiguren verlassen eine gemeinsame Besprechung und gehen durch unterschiedliche Türen in ihre eigenen Stadtviertel.",
       "extra": false,
-      "imageNumber": 122
+      "imageNumber": 122,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Die eigentliche Macht liegt damit nicht in einem Filmzitat, sondern in der Struktur.",
-      "visual": "abstrahierte Hierarchie mit klaren Verbindungen und dunklem Hintergrund",
+      "visual": "Ein stummer großer Chefsessel steht im dunklen Raum; Vordergrund zeigt interessierte Strichmännchen, die ein komplexes Netz von Personen beobachten.",
       "extra": false,
-      "imageNumber": 123
+      "imageNumber": 123,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "Wenn jemand von der Mafia spricht, lohnt sich",
-      "visual": "einzelne Frage VON WELCHER FAMILIE? über fünf kleinen Diagrammen",
+      "visual": "Ein neugieriger grün bekappter Stickman zeigt überrascht abwechselnd auf drei unterschiedliche Hinterzimmertüren in einer Straße.",
       "extra": false,
-      "imageNumber": 124
+      "imageNumber": 124,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     },
     {
       "part": "10_preis",
       "voice": "deshalb immer die Gegenfrage: Von welcher Familie eigentlich?",
-      "visual": "einzelne Frage VON WELCHER FAMILIE? über fünf kleinen Diagrammen – zusätzlicher eigenständiger visueller Detailausschnitt oder anderer Kamerawinkel; kein wiederholtes Motiv",
+      "visual": "Schlussbild: drei unterschiedlich gekleidete Strichmännchen-Chefs in drei beleuchteten Fenstern einer New Yorker Nachtstraße; ein neugieriger Beobachter hebt fragend beide Arme.",
       "extra": true,
-      "imageNumber": 125
+      "imageNumber": 125,
+      "visualType": "lebendige-szene",
+      "scriptUnchanged": true
     }
   ],
   "voiceWords": 1214,
