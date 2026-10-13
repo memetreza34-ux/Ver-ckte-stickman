@@ -31,12 +31,20 @@ export async function materializeScenePlan(projectDirectory){
   const duration=Number(meta.targetDurationSeconds);
   const coverHold=Number(scenePlan.coverHoldSeconds??2.0);
   const otherHold=scenes.length>1?(duration-coverHold)/(scenes.length-1):duration;
+  // Keep verified word alignment on repeated compilation while the scene anchors remain unchanged.
+  // Previously a recompile reset all timestamps to null and invalidated cached alignment.
+  const previousMapping=await readJson(p.mapping,{images:[]});
+  const previousByNumber=new Map((previousMapping.images??[]).map((item)=>[item.imageNumber,item]));
   const mapping={schemaVersion:2,images:[]};
   for(let i=0;i<scenes.length;i+=1){
     const n=i+1,scene=scenes[i],anchor=String(scene.anchor??'').trim();
     if(anchor.length<3)throw new Error(`SCENE_PLAN Szene ${n}: anchor fehlt.`);
     if(!script.includes(anchor))throw new Error(`SCENE_PLAN Szene ${n}: Anchor kommt nicht im Skript vor: ${anchor}`);
     const group=String(scene.group??'allgemein');
+    const previous=previousByNumber.get(n);
+    const keepAlignment=previous?.startAnchor===anchor&&Number.isFinite(previous.actualStartSeconds)
+      &&previous.actualStartSeconds>=0&&Number.isFinite(previous.actualEndSeconds)
+      &&previous.actualEndSeconds>previous.actualStartSeconds;
     mapping.images.push({
       imageNumber:n,
       imageFile:`Bild ${String(n).padStart(2,'0')}.png`,
@@ -46,9 +54,9 @@ export async function materializeScenePlan(projectDirectory){
       visualForm:String(scene.shot??shots[i%shots.length]),
       motionHint:String(scene.motion??motions[i%motions.length]),
       plannedHoldSeconds:Number((n===1?coverHold:otherHold).toFixed(3)),
-      actualStartSeconds:null,
-      actualEndSeconds:null,
-      alignmentConfidence:null
+      actualStartSeconds:keepAlignment?previous.actualStartSeconds:null,
+      actualEndSeconds:keepAlignment?previous.actualEndSeconds:null,
+      alignmentConfidence:keepAlignment?previous.alignmentConfidence:null
     });
   }
   await writeJson(p.mapping,mapping);
