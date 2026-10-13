@@ -5,6 +5,7 @@ import path from 'node:path';
 import test from 'node:test';
 import { editSimilarity, normalizeText, projectPaths, topicSimilarity } from '../src/lib/pipeline.js';
 import { evaluateChannelFit, evaluateTopicQuality } from '../src/cli/check-topic.js';
+import { validatePhase1V9 } from '../src/cli/validate-phase1-v9.js';
 import { compileFlowPrompt } from '../src/cli/compile-flow-prompt.js';
 import { assessVideo } from '../src/cli/review-video.js';
 import { validateYouTubeDescription } from '../src/lib/youtube-description.js';
@@ -159,4 +160,20 @@ test('Visual Policy erzwingt reine Strichmännchen bei allen neuen Projekten',as
   assert.match(flow,/auditStickmanPrompts/);
   const materialize=await readFile('src/lib/materialize-scene-plan.js','utf8');
   assert.match(materialize,/STICKMAN_ANATOMY_RULE/);
+});
+
+test('Mafia KW42: Phase 1 ist vollständig und 25 Flow-5er-Blöcke lassen sich automatisch erzeugen',async()=>{
+ const project='youtube/2026-KW42/mafia-hierarchie-erklaert';
+ const result=await validatePhase1V9(project);
+ assert.equal(result.passed,true,result.errors.join(' | '));
+ const manifest=JSON.parse(await readFile(path.join(project,'00-bildprompts/5er-batches/BATCH_MANIFEST.json'),'utf8'));
+ assert.equal(manifest.totalImages,125);
+ assert.equal(manifest.batches.length,25);
+ const images=manifest.batches.flatMap(b=>Array.from({length:b.count},(_,k)=>b.from+k));
+ assert.deepEqual(images,Array.from({length:125},(_,i)=>i+1));
+ for(const batch of manifest.batches){
+  const block=await readFile(path.join(project,'00-bildprompts/5er-batches',batch.file),'utf8');
+  assert.equal((block.match(/^## Bild \\d{2,3}\\b/gm)||[]).length,5);
+  assert.ok(block.includes('STICKMAN-ANATOMIE:'));
+ }
 });

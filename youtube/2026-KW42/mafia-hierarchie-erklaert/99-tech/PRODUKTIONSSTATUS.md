@@ -1,5 +1,13 @@
-# Mafia-Hierarchie – Produktionsstand
+# Produktionsstand: Mafia-Hierarchie
 
-Phase-1-Paket mit 125 individuellen Bildankern, 1214 Voice-over-Wörtern und dokumentierter Quellenlage vorbereitet. Die Laufzeit beträgt nur geschätzt 402 Sekunden. Noch NICHT erstellt: Google-Flow-Bilder, Sprecher-Audio, Render, Thumbnail-Datei, Untertitel mit echten Zeitcodes. Kein fertiges MP4 behaupten.
+VOLLSTÄNDIG im GitHub-Projekt: 1.214 gesprochene Wörter, geplante 6:42 Minuten (nur Schätzung), 125 nummerierte Einzelbild-Prompts im Master, 125 Audio-Bild-Anker, Quellenprüfung von 5 FBI/US-Justiz-Dokumenten mit 9 belegten Aussagen, vollständige YouTube-Caption mit exakt fünf Hashtags und Planungsdateien.
 
-Google Flow stets in 5er-Blöcken, echte Strichmännchen verpflichtend. Nach jedem Block alle Bilder prüfen und fehlende/falsche neu erzeugen. Nach vollständigem Bilderimport und echtem Voice-over `npm run validate:phase1 -- --dir "youtube/2026-KW42/mafia-hierarchie-erklaert"`, danach `npm run phase3 -- --dir ...`.
+Die 25 Google-Flow-5er-Dateien werden **automatisch** aus dem vorhandenen Master erstellt. Nach dem `git pull` im Repository ausführen:
+
+```bash
+npm run validate:phase1 -- --dir "youtube/2026-KW42/mafia-hierarchie-erklaert"
+```
+
+Das validiert das fertige Projekt und schreibt automatisch alle 25 Batches in `00-bildprompts/5er-batches/`, also Bild 01–125. Alternativ: `npm run compile:flow -- --dir "youtube/2026-KW42/mafia-hierarchie-erklaert"`.
+
+**Nicht fertig und nicht behauptet:** echte Flow-Bilder, Sprecher-Audio, Thumbnail-PNG, zeitgenaue Untertitel oder gerendertes MP4. Nach fertigem Audio tatsächliche Laufzeit und Timeline prüfen. Google Flow pro Block visuell prüfen: jede Figur muss Kreis-/Ovalkopf, Strichrumpf, Stricharme, Strichbeine besitzen; falsche oder fehlende Bilder erneut generieren, am Ende gesammelt importieren.
