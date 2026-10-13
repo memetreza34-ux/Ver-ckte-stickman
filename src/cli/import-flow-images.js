@@ -26,7 +26,7 @@ async function walkImages(root){
 function numericHint(name){
   // Only a final image/scene number is considered. Dates and unrelated digits in
   // the middle of filenames must not silently become scene indices.
-  const match=String(name).match(/(?:^|[_\\s-])(?:bild|image|img|scene|shot)?[_\\s-]*0*(\\d{1,3})(?=\\.(?:png|jpe?g|webp)$)/i);
+  const match=String(name).match(/(?:^|[_\s-])(?:bild|image|img|scene|shot)?[_\s-]*0*(\d{1,3})(?=\.(?:png|jpe?g|webp)$)/i);
   return match?Number(match[1]):null;
 }
 
