@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 2,
+  "topic": "Die Hierarchie der amerikanischen Mafia erklärt",
+  "scope": "US-amerikanische La Cosa Nostra, insbesondere New York; keine Behauptung weltweiter Einheitlichkeit",
+  "scenes": [
+    {
+      "part": "01_hook",
+      "voice": "Bei der Mafia steht oben ein Boss. Aber wer arbeitet eigentlich unter ihm?",
+      "visual": "große Strichmännchen-Machtpyramide mit roter Boss-Silhouette an Spitze",
+      "imageNumber": 1
+    },
+    {
+      "part": "01_hook",
+      "voice": "Und warum kann jemand ohne offiziellen Rang trotzdem gefährlich viel Einfluss haben?",
+      "visual": "zwei kontrastierende Stickmen, einer mit Rangabzeichen, einer mit Schatten",
+      "imageNumber": 2
+    },
+    {
+      "part": "01_hook",
+      "voice": "Stell dir eine New Yorker Mafia-Familie vor, nicht irgendeine weltweite Superorganisation.",
+      "visual": "vereinfachter gezeichneter Stadtplan New York mit einer markierten Familie",
+      "imageNumber": 3
+    },
+    {
+      "part": "01_hook",
+      "voice": "Ganz unten stehen Außenstehende, weiter oben folgen Mitglieder, Anführer und Berater.",
+      "visual": "Pyramide aus sichtbaren Stickmen an verschiedenen Ebenen",
+      "imageNumber": 4
+    },
+    {
+      "part": "01_hook",
+      "voice": "Jede Ebene hat andere Aufgaben, andere Kontakte und vor allem andere Risiken.",
+      "visual": "drei Symbole Aktenmappe, Telefon und Warnzeichen über Pyramide",
+      "imageNumber": 5
+    },
+    {
+      "part": "01_hook",
+      "voice": "Wir steigen diese Struktur von unten nach oben durch.",
+      "visual": "Kamera-Perspektive an unterster Stufe der Pyramide",
+      "imageNumber": 6
+    },
+    {
+      "part": "01_hook",
+      "voice": "Dabei geht es um die amerikanische Cosa Nostra, deren Hierarchie Behörden dokumentiert haben.",
+      "visual": "neutraler Aktenstapel mit FBI-ähnlichem unspezifischem Ermittlungsordner",
+      "imageNumber": 7
+    },
+    {
+      "part": "01_hook",
+      "voice": "Denn bei anderen Mafiaorganisationen kann der Aufbau ganz anders aussehen.",
+      "visual": "zwei unterschiedliche einfache Organisationsdiagramme nebeneinander",
+      "imageNumber": 8
+    },
+    {
+      "part": "02_familie",
+      "voice": "Als Erstes musst du verstehen, was das Wort Familie hier überhaupt bedeutet.",
+      "visual": "einzelnes Stickman fragt nach Wort Familie auf Aktenordner",
+      "imageNumber": 9
+    },
+    {
+      "part": "02_familie",
+      "voice": "Es geht nicht einfach um Eltern, Kinder und einen gemeinsamen Nachnamen.",
+      "visual": "durchgestrichener Stammbaum hinter Kriminalitätsdiagramm",
+      "imageNumber": 10
+    },
+    {
+      "part": "02_familie",
+      "voice": "Eine Mafia-Familie ist eine kriminelle Organisation mit Führung, Gruppen und verbundenen Personen.",
+      "visual": "verschachtelte Kästen mit Stickman-Gruppen und Anführer",
+      "imageNumber": 11
+    },
+    {
+      "part": "02_familie",
+      "voice": "In New York sind fünf solche Familien besonders bekannt geworden.",
+      "visual": "Stadtkarte zeigt fünf verschiedenfarbige markierte Gruppenkreise",
+      "imageNumber": 12
+    },
+    {
+      "part": "02_familie",
+      "voice": "Sie heißen Bonanno, Colombo, Gambino, Genovese und Lucchese.",
+      "visual": "fünf sauber getrennte Namensschilder um New Yorker Stadtplan",
+      "imageNumber": 13
+    },
+    {
+      "part": "02_familie",
+      "voice": "Das bedeutet aber nicht, dass alle gemeinsam auf einen einzigen Chef hören.",
+      "visual": "fünf Boss-Stickmen an fünf voneinander getrennten Tischen",
+      "imageNumber": 14
+    },
+    {
+      "part": "02_familie",
+      "voice": "Jede Familie besitzt ihre eigene Führung und ihre eigenen internen Gruppen.",
+      "visual": "fünf getrennte Organigramme ohne Verbindung an der Spitze",
+      "imageNumber": 15
+    },
+    {
+      "part": "02_familie",
+      "voice": "Und innerhalb dieser Gruppen beginnt die erste Stufe unserer Hierarchie.",
+      "visual": "Zoom auf untere Gruppe eines der fünf Organigramme",
+      "imageNumber": 16
+    },
+    {
+      "part": "02_familie",
+      "voice": "Hier begegnen wir jemandem, der dazugehört, ohne offiziell dazuzugehören.",
+      "visual": "einzelner Stickman vor halb geöffneter Tür",
+      "imageNumber": 17
+    },
+    {
+      "part": "03_associate",
+      "voice": "Ganz unten steht der sogenannte Associate, also eine verbundene Person.",
+      "visual": "Stickman außerhalb roten inneren Kreises mit Schild Associate",
+      "imageNumber": 18
+    },
+    {
+      "part": "03_associate",
+      "voice": "Er arbeitet mit Mitgliedern einer Mafia-Familie zusammen, gehört ihr aber nicht offiziell an.",
+      "visual": "Associate hinter Glaswand zu rotem Mitgliederkreis",
+      "imageNumber": 19
+    },
+    {
+      "part": "03_associate",
+      "voice": "Das kann für Außenstehende verwirrend sein, weil er trotzdem Einfluss besitzen kann.",
+      "visual": "unauffälliges Stickman neben großer schattenhafter Figur",
+      "imageNumber": 20
+    },
+    {
+      "part": "03_associate",
+      "voice": "Wer im Film sofort ein Abzeichen oder einen Rang erwartet, wird enttäuscht.",
+      "visual": "Strichmännchen sucht vergeblich nach glänzendem Rangabzeichen",
+      "imageNumber": 21
+    },
+    {
+      "part": "03_associate",
+      "voice": "Hier entscheidet häufig die Beziehung zu einem bestehenden Mitglied über die Nähe zur Gruppe.",
+      "visual": "zwei Stickmen durch einfache Kontaktlinie verbunden",
+      "imageNumber": 22
+    },
+    {
+      "part": "03_associate",
+      "voice": "Associates können an illegalen Geschäften beteiligt sein und für Mitglieder tätig werden.",
+      "visual": "symbolischer Ordner ILLEGAL und Stickman im Hintergrund",
+      "imageNumber": 23
+    },
+    {
+      "part": "03_associate",
+      "voice": "Manche liefern Geld ab, andere knüpfen Kontakte oder spielen nur eine Nebenrolle.",
+      "visual": "stilisierte Münze, Gespräch und Nebenrolle in drei Mini-Szenen",
+      "imageNumber": 24
+    },
+    {
+      "part": "03_associate",
+      "voice": "Eine feste Beförderung nach einer bestimmten Anzahl von Monaten gibt es nicht.",
+      "visual": "Kalender mit durchgestrichenem Beförderungspfeil",
+      "imageNumber": 25
+    },
+    {
+      "part": "03_associate",
+      "voice": "Auch ein Associate, der viel verdient, ist dadurch nicht automatisch ein vollwertiges Mitglied.",
+      "visual": "großer Geldstapel neben Person außerhalb Mitgliederkreis",
+      "imageNumber": 26
+    },
+    {
+      "part": "03_associate",
+      "voice": "Vor allem besitzt er nicht denselben formellen Status innerhalb der Organisation.",
+      "visual": "Statuskreis mit einem Stickman davor, nicht innerhalb",
+      "imageNumber": 27
+    },
+    {
+      "part": "03_associate",
+      "voice": "Das ist der erste wichtige Unterschied zwischen Nähe zur Macht und einem echten Rang.",
+      "visual": "zwei Balken Nähe und Rang zeigen unterschiedliche Werte",
+      "imageNumber": 28
+    },
+    {
+      "part": "03_associate",
+      "voice": "Und genau an dieser Grenze wird die nächste Stufe entscheidend.",
+      "visual": "rote Tür mit Schild Mitglied und wartendem einfachen Stickman",
+      "imageNumber": 29
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Die unterste formelle Mitgliedsstufe heißt Soldier, auf Deutsch oft Soldat.",
+      "visual": "Soldier-Stickman mit einfachem kleinem roten Abzeichen",
+      "imageNumber": 30
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Mit einem echten militärischen Soldaten hat diese Bezeichnung natürlich nichts zu tun.",
+      "visual": "Vergleich Strichmännchen mit Aktenordner und neutralem Militärhelm durch Trennlinie",
+      "imageNumber": 31
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Ein Soldier ist offiziell in eine Mafia-Familie aufgenommen worden.",
+      "visual": "schlichtes Mitgliedsdiagramm, Soldier tritt in inneren Kreis",
+      "imageNumber": 32
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Im amerikanischen Sprachgebrauch heißt so jemand auch Made Man.",
+      "visual": "schlichte Titelkarte MADE MAN neben Stickman ohne Glamour",
+      "imageNumber": 33
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Historisch spielte dabei ein Aufnahme-Ritual und ein Schweigeversprechen eine Rolle.",
+      "visual": "verschlossene Tür und symbolisches Schweigezeichen, keine Rituale",
+      "imageNumber": 34
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Dieses Schweigegebot kennt man unter dem Begriff Omertà.",
+      "visual": "einzelnes Wort OMERTÀ auf kleinem zerknittertem Aktenblatt",
+      "imageNumber": 35
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Nach außen wirkt das vielleicht wie eine besondere Auszeichnung.",
+      "visual": "scheinbar schimmerndes Abzeichen über ernster Strichfigur",
+      "imageNumber": 36
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Tatsächlich bindet es die Person enger an eine gewalttätige kriminelle Organisation.",
+      "visual": "Abzeichen wird zur engen schwarzen Kette als Symbol",
+      "imageNumber": 37
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Soldiers gehören zu einer Crew, einer kleineren Gruppe innerhalb der Familie.",
+      "visual": "kleiner Crew-Kreis um vier einfache Stickmen",
+      "imageNumber": 38
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Über ihnen steht ein Gruppenleiter, der ihre Aktivitäten beaufsichtigt.",
+      "visual": "Capo über Crew als klare Organisationslinien",
+      "imageNumber": 39
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Geld und Einfluss fließen dabei nicht einfach nur von oben nach unten.",
+      "visual": "einfache Geldpfeile von Crew nach oben",
+      "imageNumber": 40
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Auch ein Soldier kann Macht gegenüber Associates haben, bleibt aber einem Capo untergeordnet.",
+      "visual": "Soldier zwischen Associate unten und Capo oben",
+      "imageNumber": 41
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Ein interessanter Gedanke: Mitglied zu sein heißt noch lange nicht, selbst zu entscheiden.",
+      "visual": "Soldier vor verschlossener Entscheidungstür",
+      "imageNumber": 42
+    },
+    {
+      "part": "04_soldier",
+      "voice": "Damit kommen wir zu der Person, die mehrere dieser Mitglieder führt.",
+      "visual": "Kamera auf etwas höheren Bereich des Organigramms",
+      "imageNumber": 43
+    },
+    {
+      "part": "05_capo",
+      "voice": "Die nächste Stufe heißt Capo, manchmal auch Caporegime oder Captain.",
+      "visual": "Capo-Stickman mit kleinem rotem Schal und Namen CAPO",
+      "imageNumber": 44
+    },
+    {
+      "part": "05_capo",
+      "voice": "Ein Capo führt eine Crew aus offiziellen Mitgliedern und verbundenen Personen.",
+      "visual": "kleiner Capo über drei Soldiers und zwei Associates",
+      "imageNumber": 45
+    },
+    {
+      "part": "05_capo",
+      "voice": "Er ist so etwas wie ein Gruppenleiter, allerdings in einer kriminellen Organisation.",
+      "visual": "Organigramm-Crew und dunkles Warnsymbol",
+      "imageNumber": 46
+    },
+    {
+      "part": "05_capo",
+      "voice": "Die Leute seiner Crew stehen für verschiedene Geschäfte und Kontakte.",
+      "visual": "mehrere einfache Geschäfts- und Kontaktsymbole neben Crew",
+      "imageNumber": 47
+    },
+    {
+      "part": "05_capo",
+      "voice": "Laut Ermittlungsakten erhalten Vorgesetzte häufig einen Anteil an illegalen Einnahmen.",
+      "visual": "Pfeile von Geldsymbol unten zum Capo oben",
+      "imageNumber": 48
+    },
+    {
+      "part": "05_capo",
+      "voice": "Wichtig ist: Diese Geldströme stehen nicht für ein ordentliches Gehalt.",
+      "visual": "durchgestrichene Lohnabrechnung und dunkles Münzsymbol",
+      "imageNumber": 49
+    },
+    {
+      "part": "05_capo",
+      "voice": "Sie hängen mit Erpressung, illegalem Glücksspiel oder anderen Straftaten zusammen.",
+      "visual": "drei neutrale Symbole bedrohte Ladenfront, Würfel und Gerichtsakte",
+      "imageNumber": 50
+    },
+    {
+      "part": "05_capo",
+      "voice": "Für Betroffene kann das existenzbedrohende Folgen haben, auch wenn man es im Film selten sieht.",
+      "visual": "besorgtes Ladenbesitzer-Stickman vor leerem Geschäft",
+      "imageNumber": 51
+    },
+    {
+      "part": "05_capo",
+      "voice": "Ein Capo muss seine Gruppe zusammenhalten und berichtet an die Führung.",
+      "visual": "Capo verbindet Crew und oberes Führungstrio durch Linien",
+      "imageNumber": 52
+    },
+    {
+      "part": "05_capo",
+      "voice": "Dabei sammelt sich nicht nur Verantwortung, sondern auch Misstrauen.",
+      "visual": "Capo zwischen zwei argwöhnisch blickenden Stickmen",
+      "imageNumber": 53
+    },
+    {
+      "part": "05_capo",
+      "voice": "Wenn verschiedene Gruppen um Einfluss streiten, sitzt er plötzlich mitten im Konflikt.",
+      "visual": "zwei Crew-Kreise ziehen an gleichem Symbol",
+      "imageNumber": 54
+    },
+    {
+      "part": "05_capo",
+      "voice": "Die schöne Vorstellung vom entspannten Mafialeben bekommt spätestens hier deutliche Risse.",
+      "visual": "elegante Sonnenbrille bricht über dunklem Hintergrund",
+      "imageNumber": 55
+    },
+    {
+      "part": "05_capo",
+      "voice": "Denn oberhalb eines Capos wird Macht nicht mehr nur ausgeübt, sondern verteilt.",
+      "visual": "Organigramm springt von Capo zur Führungsebene",
+      "imageNumber": 56
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Direkt unter dem Boss kann ein Underboss stehen, also der Stellvertreter.",
+      "visual": "zwei Stickmen in klarer vertikaler Führung, Underboss unter Boss",
+      "imageNumber": 57
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Er gehört zur obersten Leitung einer Familie.",
+      "visual": "Führungsetage mit Boss, Underboss und Consigliere",
+      "imageNumber": 58
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Seine Rolle besteht unter anderem darin, die Führung bei ihren Aufgaben zu unterstützen.",
+      "visual": "Underboss mit Akten zwischen Capos und Boss",
+      "imageNumber": 59
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Er kann Kontakte zu Capos halten und Entscheidungen der Spitze weitergeben.",
+      "visual": "Informationspfeile von oberen Stickmen zu drei Capos",
+      "imageNumber": 60
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Aber das ist kein Bürojob mit geregeltem Feierabend und Kaffeepause.",
+      "visual": "ironisches Schreibtischsymbol mit durchgestrichener Feierabenduhr",
+      "imageNumber": 61
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Denn die Entscheidungen betreffen eine Organisation, die von illegalen Geschäften lebt.",
+      "visual": "dunkle Karte mit Kriminalitätswarnsymbol und Akten",
+      "imageNumber": 62
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Der Underboss ist mächtig, aber nicht automatisch der nächste dauerhafte Boss.",
+      "visual": "Thron und fragliches Nachfolgepfeil-Symbol",
+      "imageNumber": 63
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Führung kann sich durch Konflikte, Ermittlungen oder Festnahmen verändern.",
+      "visual": "Organigramm mit drei roten Verschiebungspfeilen und Handschellensymbol",
+      "imageNumber": 64
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Und jetzt wird es interessant, denn neben dem Stellvertreter sitzt noch eine andere wichtige Figur.",
+      "visual": "gleichhohe Plätze für Underboss und Consigliere, kein vertikaler Pfeil",
+      "imageNumber": 65
+    },
+    {
+      "part": "06_underboss",
+      "voice": "Die wird oft mit einer bloß höheren Rangstufe verwechselt.",
+      "visual": "zwei Stühle auf derselben Ebene des Organigramms",
+      "imageNumber": 66
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Der Consigliere ist ein Berater der Führung, nicht einfach der Chef des Underbosses.",
+      "visual": "Consigliere-Stickman mit Papierrolle neben Underboss auf gleicher Ebene",
+      "imageNumber": 67
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Er kann zwischen Mitgliedern vermitteln und dem Boss seine Einschätzung geben.",
+      "visual": "drei Stickmen an einfachem Verhandlungstisch, Consigliere vermittelt",
+      "imageNumber": 68
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Für solche Aufgaben zählt Vertrauen mehr als ein besonders auffälliges Auftreten.",
+      "visual": "einfache Strichfigur mit ruhigem Gesicht, großes Vertrauenssymbol",
+      "imageNumber": 69
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "In manchen Darstellungen sieht man ihn als geheimnisvollen Mann hinter einem Vorhang.",
+      "visual": "Cartoon-Vorhang mit großer Silhouette",
+      "imageNumber": 70
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Die tatsächliche Funktion ist viel nüchterner und hängt von der jeweiligen Familie ab.",
+      "visual": "Berater über Sachakten vor kleiner Führungsetage",
+      "imageNumber": 71
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Ein Consigliere kann erfahren sein, respektiert und trotzdem nicht der operative Stellvertreter.",
+      "visual": "nebeneinander: Berater-Sprechblase und Underboss-Akten",
+      "imageNumber": 72
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Gerade deshalb ist die Hierarchie keine perfekte Leiter mit nur einer Person pro Sprosse.",
+      "visual": "Organigramm verzweigt sich an Spitze in zwei Seitenäste",
+      "imageNumber": 73
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Underboss und Consigliere gehören beide zur Leitung, erfüllen aber unterschiedliche Aufgaben.",
+      "visual": "zwei unterschiedliche Symbole Koordination und Beratung",
+      "imageNumber": 74
+    },
+    {
+      "part": "07_consigliere",
+      "voice": "Und ganz oben steht schließlich die Figur, die Mafiafilme besonders lieben.",
+      "visual": "dunkler Raum mit einzelner Boss-Silhouette auf erhöhtem Feld",
+      "imageNumber": 75
+    },
+    {
+      "part": "08_boss",
+      "voice": "Der Boss führt die Mafia-Familie und steht an der Spitze ihrer internen Struktur.",
+      "visual": "Boss-Stickman ganz oben im Mitgliederdiagramm",
+      "imageNumber": 76
+    },
+    {
+      "part": "08_boss",
+      "voice": "Er kann über zentrale Fragen und die Richtung der Organisation bestimmen.",
+      "visual": "Boss blickt über mehrere grobe Richtungspfeile",
+      "imageNumber": 77
+    },
+    {
+      "part": "08_boss",
+      "voice": "Dabei geht es nicht um einen friedlichen Familienbetrieb mit schlecht gelauntem Geschäftsführer.",
+      "visual": "humorvoller Vergleich Firmenbüro versus Organigramm mit Warnsymbol",
+      "imageNumber": 78
+    },
+    {
+      "part": "08_boss",
+      "voice": "Die Ermittlungsakten beschreiben organisierte Kriminalität, Einschüchterung und Gewalt.",
+      "visual": "Aktenmappe im Vordergrund, betroffenes Opfer-Stickman dahinter",
+      "imageNumber": 79
+    },
+    {
+      "part": "08_boss",
+      "voice": "Ein Teil der illegalen Einnahmen kann über die Hierarchie nach oben gelangen.",
+      "visual": "einfache Pfeile von unterer Crew zum Boss",
+      "imageNumber": 80
+    },
+    {
+      "part": "08_boss",
+      "voice": "Von oben sieht dieses System nach Kontrolle und klaren Regeln aus.",
+      "visual": "saubere Pyramide von weitem mit Boss oben",
+      "imageNumber": 81
+    },
+    {
+      "part": "08_boss",
+      "voice": "In der Realität können Machtkämpfe und Ermittlungen die Spitze erschüttern.",
+      "visual": "Pyramide mit Rissen und gerichtlicher Waage daneben",
+      "imageNumber": 82
+    },
+    {
+      "part": "08_boss",
+      "voice": "Wird ein Boss inhaftiert, kann ein Acting Boss vorübergehend Aufgaben übernehmen.",
+      "visual": "Boss hinter Gitterfenster, anderer Stickman mit temporärem Schild",
+      "imageNumber": 83
+    },
+    {
+      "part": "08_boss",
+      "voice": "So eine Vertretung bedeutet allerdings nicht, dass die ganze Organisation verschwindet.",
+      "visual": "Diagramm bleibt, Besetzungsfeld oben wechselt",
+      "imageNumber": 84
+    },
+    {
+      "part": "08_boss",
+      "voice": "Und jetzt kommt die eigentliche Überraschung: Es gibt nicht nur eine einzige Mafia-Familie.",
+      "visual": "Diagramm zoomt heraus und zeigt mehrere separate Familientürme",
+      "imageNumber": 85
+    },
+    {
+      "part": "08_boss",
+      "voice": "Ein Boss ist also nicht automatisch der Herrscher über sämtliche Mafiosi.",
+      "visual": "Boss-Stickman versucht zu groß gewordene Weltkugel zu halten, rotes Nein-Symbol",
+      "imageNumber": 86
+    },
+    {
+      "part": "08_boss",
+      "voice": "Das erklärt, warum Geschichten über einen weltweiten Oberboss oft zu simpel sind.",
+      "visual": "stilisierte Weltkarte mit durchgestrichenem Einzelthron",
+      "imageNumber": 87
+    },
+    {
+      "part": "09_kommission",
+      "voice": "In New York spielten historisch mehrere eigenständige Familien eine wichtige Rolle.",
+      "visual": "New Yorker Stadtkarte mit fünf unterschiedlich markierten Bezirkskreisen",
+      "imageNumber": 88
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Nach den Machtkämpfen der frühen dreißiger Jahre entstand auch eine gemeinsame Kommission.",
+      "visual": "Kalender mit 1930er-Jahre-Markierung und mehrere Tische",
+      "imageNumber": 89
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Sie diente dazu, Angelegenheiten zwischen bedeutenden Mafia-Familien abzustimmen.",
+      "visual": "mehrere Boss-Stickmen an rundem Konferenztisch",
+      "imageNumber": 90
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Das war keine geheime Weltregierung über jede Mafia auf dem Planeten.",
+      "visual": "Konferenztisch neben kleiner begrenzter New York-Karte, Weltkugel durchgestrichen",
+      "imageNumber": 91
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Jede Familie behielt ihre eigene interne Hierarchie.",
+      "visual": "fünf getrennte Pyramiden um einen gemeinsamen Konferenztisch",
+      "imageNumber": 92
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Wer die Struktur nur als große Leiter zeichnet, übersieht also die Verbindungen zwischen den Familien.",
+      "visual": "Organigramme mit wenigen seitlichen gestrichelten Linien",
+      "imageNumber": 93
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Die Führung bestand damit nicht immer nur aus Befehlen von oben nach unten.",
+      "visual": "verzweigte horizontale und vertikale Kommunikationslinien",
+      "imageNumber": 94
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Auch Rivalitäten und wechselnde Bündnisse konnten das Machtgefüge prägen.",
+      "visual": "zwei Boss-Stickmen wenden sich voneinander ab, Verbindung bricht",
+      "imageNumber": 95
+    },
+    {
+      "part": "09_kommission",
+      "voice": "Es war also gleichzeitig ein hierarchisches und ein politisches Geflecht.",
+      "visual": "Organisationsdiagramm geht in Netzdiagramm über",
+      "imageNumber": 96
+    },
+    {
+      "part": "10_preis",
+      "voice": "Bis hier sieht die Mafia-Pyramide fast aus wie ein Unternehmen mit schlechten Manieren.",
+      "visual": "Unternehmensorganigramm und düsteres Mafiaorganigramm im Vergleich",
+      "imageNumber": 97
+    },
+    {
+      "part": "10_preis",
+      "voice": "Aber dieser Vergleich hat eine entscheidende Grenze: Dahinter stehen reale Straftaten und Opfer.",
+      "visual": "Organigramm weicht betroffenen Ladenbesitzern und Familien",
+      "imageNumber": 98
+    },
+    {
+      "part": "10_preis",
+      "voice": "Bei Erpressung oder Gewalt verlieren Menschen Geld, Sicherheit und manchmal ihr Leben.",
+      "visual": "verschlossener Laden, weinende einfache Strichfigur, Gerichtsakte",
+      "imageNumber": 99
+    },
+    {
+      "part": "10_preis",
+      "voice": "Und selbst die Mächtigen stehen nicht außerhalb des Gesetzes.",
+      "visual": "Boss-Silhouette unter großer ausgeglichener Justizwaage",
+      "imageNumber": 100
+    },
+    {
+      "part": "10_preis",
+      "voice": "Ermittler haben immer wieder Mitglieder und Führungspersonen solcher Familien angeklagt.",
+      "visual": "neutrale Ermittler-Stickmen vor Gericht, große Akten",
+      "imageNumber": 101
+    },
+    {
+      "part": "10_preis",
+      "voice": "Das macht den angeblich glamourösen Aufstieg ziemlich schnell unattraktiv.",
+      "visual": "glänzende Stufen verwandeln sich in dunkle Gefängnisgitter",
+      "imageNumber": 102
+    },
+    {
+      "part": "10_preis",
+      "voice": "Vor allem kann das eigene Netzwerk zum Problem werden, sobald Vertrauen zerbricht.",
+      "visual": "Kontaktlinien zwischen Stickmen reißen sichtbar",
+      "imageNumber": 103
+    },
+    {
+      "part": "10_preis",
+      "voice": "Ein Associate besitzt keinen offiziellen Rang, ein Soldier gehört zur Familie, ein Capo führt eine Crew.",
+      "visual": "drei Ebenen unten der Pyramide farbig markiert",
+      "imageNumber": 104
+    },
+    {
+      "part": "10_preis",
+      "voice": "Underboss und Consigliere bilden unterschiedliche Teile der Führung; darüber steht der Boss.",
+      "visual": "obere Ebene mit parallelem Underboss und Consigliere unter Boss",
+      "imageNumber": 105
+    },
+    {
+      "part": "10_preis",
+      "voice": "Und über mehrere Familien hinweg gab es historisch zusätzliche Formen der Abstimmung.",
+      "visual": "fünf Familienpyramiden um kleinen Kommissionskreis",
+      "imageNumber": 106
+    },
+    {
+      "part": "10_preis",
+      "voice": "Die eigentliche Macht liegt damit nicht in einem Filmzitat, sondern in der Struktur.",
+      "visual": "abstrahierte Hierarchie mit klaren Verbindungen und dunklem Hintergrund",
+      "imageNumber": 107
+    },
+    {
+      "part": "10_preis",
+      "voice": "Wenn jemand von der Mafia spricht, lohnt sich deshalb immer die Gegenfrage: Von welcher Familie eigentlich?",
+      "visual": "einzelne Frage VON WELCHER FAMILIE? über fünf kleinen Diagrammen",
+      "imageNumber": 108
+    }
+  ],
+  "voiceWords": 1214,
+  "plannedDurationSeconds": 402
+}
