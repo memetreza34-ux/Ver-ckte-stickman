@@ -82,20 +82,23 @@
       "notes": "Erstes FBI-Rollen-Longform: 1206 Wörter, ca. 6:40 Min., 120 individuelle Flow-Szenen, 24 5er-Batches; fiktiver Fall mit FBI-Quellen. Audio-Laufzeit nach Produktion nachmessen."
     },
     {
-      "id": "2026-KW42_unsichtbar-aber-kleidung-sichtbar",
-      "title": "Du bist unsichtbar – aber deine Kleidung nicht!",
+      "id": "2026-KW42_mafia-hierarchie-erklaert",
+      "title": "Die Hierarchie der Mafia erklärt – vom Außenstehenden bis zum Boss",
       "aliases": [
-        "24 Stunden unsichtbar",
-        "Unsichtbar aber Kleidung sichtbar"
+        "Die Hierarchie der amerikanischen Mafia erklärt",
+        "Mafia-Hierarchie vom Anwärter bis Boss"
       ],
-      "status": "out-of-direction-experiment",
-      "createdAt": "2026-10-12T19:45:00+02:00",
+      "status": "phase1-ready",
+      "channelFitAtCreation": {
+        "decision": "APPROVED_CHANNEL_FIT",
+        "score": 9
+      },
       "topicQualityAtCreation": {
         "decision": "APPROVED_TOPIC_QUALITY",
         "score": 9
       },
-      "notes": "1214 Wörter, 130 Szenen, 402 Sekunden Ziel, Flow-Assets noch zu erzeugen.",
-      "directionNote": "Bestehendes Video bleibt erhalten. Thema ist kein Leitbild für neue StrichModus-Produktionen. Strichmännchen-Stil bleibt Pflicht."
+      "createdAt": "2026-10-13T07:10:00+02:00",
+      "notes": "Reales Mafia-Strukturerklärvideo; Quellen FBI/DOJ. Keine Flow-Assets oder fertiges MP4."
     }
   ]
 }

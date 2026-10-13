@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "topic": "Die Hierarchie der amerikanischen Mafia erklärt",
+  "summary": "Geprüfte Primärquellen von FBI und US-Justiz beschreiben die Hierarchie der amerikanischen La Cosa Nostra, ihre fünf besonders bekannten New Yorker Familien, die Aufgaben von Associates, Soldiers, Capos, Underboss, Consigliere und Boss sowie die historische Commission. Übertragungen auf andere Mafiaorganisationen sind ausdrücklich ausgeschlossen.",
+  "sources": [
+    {
+      "id": "Q1",
+      "title": "New York's Five Families – The Mafia Org Chart",
+      "publisher": "Federal Bureau of Investigation (FBI)",
+      "url": "https://www.fbi.gov/file-repository/mafia-family-tree.pdf",
+      "accessedAt": "2026-10-13"
+    },
+    {
+      "id": "Q2",
+      "title": "91 Leaders, Members and Associates of La Cosa Nostra Families Charged",
+      "publisher": "US Department of Justice",
+      "url": "https://www.justice.gov/archives/opa/pr/91-leaders-members-and-associates-la-cosa-nostra-families-four-districts-charged-racketeering",
+      "accessedAt": "2026-10-13"
+    },
+    {
+      "id": "Q3",
+      "title": "Alleged Street Boss and Underboss of La Cosa Nostra Family Charged",
+      "publisher": "US Attorney, Southern District of New York",
+      "url": "https://www.justice.gov/usao-sdny/pr/alleged-street-boss-and-underboss-la-cosa-nostra-family-charged-murder-and-racketering",
+      "accessedAt": "2026-10-13"
+    },
+    {
+      "id": "Q4",
+      "title": "La Cosa Nostra – History",
+      "publisher": "Federal Bureau of Investigation (FBI)",
+      "url": "https://www.fbi.gov/history/cases-and-criminals/la-cosa-nostra",
+      "accessedAt": "2026-10-13"
+    },
+    {
+      "id": "Q5",
+      "title": "Philadelphia Mafia Racketeering Charges",
+      "publisher": "US Department of Justice",
+      "url": "https://www.justice.gov/usao-edpa/pr/fifteen-members-and-associates-philadelphia-mafia-indicted-federal-racketeering-and",
+      "accessedAt": "2026-10-13"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Das amerikanische La Cosa Nostra-System besteht aus eigenständigen Familien mit Boss, Underboss, Consigliere, Capos, Soldiers und Associates.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1",
+        "Q2"
+      ],
+      "notes": "Betrifft amerikanische La Cosa Nostra, nicht alle Mafiaorganisationen weltweit."
+    },
+    {
+      "id": "C2",
+      "statement": "Fünf große New Yorker Familien heißen Bonanno, Colombo, Gambino, Genovese und Lucchese.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1",
+        "Q2"
+      ],
+      "notes": "Keine Behauptung, dass es weltweit nur diese fünf Gruppen gibt."
+    },
+    {
+      "id": "C3",
+      "statement": "Associates sind mit Crews verbunden, aber nicht formell aufgenommene Mitglieder.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1",
+        "Q3"
+      ],
+      "notes": "Nicht pauschal jeder Associate ist potentieller Soldier."
+    },
+    {
+      "id": "C4",
+      "statement": "Ein Soldier ist formal aufgenommenes Mitglied; im amerikanischen System gelten 'Made Man' und Loyalitäts-/Schweigegebot als zentrale Begriffe.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1",
+        "Q5"
+      ],
+      "notes": "Historische Voraussetzungen schwanken nach Familie, Ort, Epoche."
+    },
+    {
+      "id": "C5",
+      "statement": "Capos führen Crews aus Soldiers und Associates; Teile illegaler Einnahmen können über die Hierarchie nach oben fließen.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q3",
+        "Q2"
+      ],
+      "notes": "Kein universeller Tarif, keine detaillierte kriminelle Handlungsanleitung."
+    },
+    {
+      "id": "C6",
+      "statement": "Underboss und Consigliere sind unterschiedliche Führungsfunktionen; der Consigliere ist ein Berater und kein pauschaler Chef des Underbosses.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1",
+        "Q2"
+      ],
+      "notes": "Sie sind keine zwingend nacheinander gereihten Karrierestufen."
+    },
+    {
+      "id": "C7",
+      "statement": "Es gab Acting Bosses, wenn formelle Führungspersonen inhaftiert waren.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q3"
+      ],
+      "notes": "Keine Behauptung über ein bestimmtes aktuelles Führungspersonal."
+    },
+    {
+      "id": "C8",
+      "statement": "Historisch entwickelte sich eine Commission zur Abstimmung zwischen führenden La-Cosa-Nostra-Familien.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q4"
+      ],
+      "notes": "Kein universeller globaler Oberboss."
+    },
+    {
+      "id": "C9",
+      "statement": "La Cosa Nostra wird von Ermittlungsbehörden mit Erpressung, Gewalt, illegalem Glücksspiel und weiteren Straftaten in Verbindung gebracht.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q2",
+        "Q5"
+      ],
+      "notes": "Sicht der Ermittlungs-/Justizbehörden; in gerichtlichen Einzelfällen Vorwürfe von erwiesenen Tatsachen trennen."
+    }
+  ],
+  "uncertainties": [
+    "Keine weltweit einheitliche Mafia-Hierarchie; Unterschiede zwischen Familien und Epochen.",
+    "Underboss und Consigliere sind parallele Leitungsfunktionen, keine linearen Aufstiegsstufen.",
+    "Aktuelle personelle Führungsbesetzung wird nicht behauptet.",
+    "Illustrative Stickman-Szenen sind keine behaupteten historischen Aufnahmen."
+  ],
+  "doNotClaim": [
+    "Jede Mafia weltweit habe dieselbe Ordnung.",
+    "Es gebe einen globalen Boss aller Mafiafamilien.",
+    "Jeder Associate werde nach festem Zeitraum Soldat.",
+    "Ein Consigliere sei pauschal dem Underboss übergeordnet.",
+    "Beschriebene Rekonstruktionen seien konkrete dokumentierte Einzelfälle."
+  ],
+  "verifiedDate": "2026-10-13",
+  "scope": "Amerikanische La Cosa Nostra: Dokumentierte Mitgliedschaft und Führung; Abweichungen zwischen Familien und Epochen möglich."
+}

@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 9,
+  "contentPolicyVersion": 9,
+  "language": "de",
+  "topic": "Die Hierarchie der amerikanischen Mafia erklärt",
+  "workingTitle": "Die Hierarchie der Mafia erklärt – vom Außenstehenden bis zum Boss",
+  "contentMode": "real",
+  "truthBoundary": {
+    "realElements": [
+      "Dokumentierte amerikanische La Cosa Nostra und typische Rang-/Führungsfunktionen",
+      "Die fünf bekannten New Yorker Familien und die historische Commission",
+      "Schwere Straftaten und die Strafverfolgung"
+    ],
+    "inventedElements": [
+      "Nur generische schematische Stickman-Darstellungen ohne Bezug zu konkreten Personen oder behaupteten Einzelereignissen"
+    ],
+    "notes": "Alle gesprochenen Tatsachen sind allgemein und im Quellensatz belegt; Visualisierungen sind schematisch, keine Berichte über erfundene konkrete Vorgänge."
+  },
+  "topicFit": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "pillars": [
+      "Reale Macht-/Kriminalitätsstrukturen",
+      "Tatsächliche Rang- und Organisationshierarchien",
+      "Unterhaltsam erklärtes Wissen"
+    ],
+    "reason": "Direkt zum Kanalprofil passende strukturierte Erklärung mit realen amerikanischen Primärquellen."
+  },
+  "topicQuality": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "curiosity": 9,
+    "weirdness": 8,
+    "visualPotential": 10,
+    "escalationPotential": 9,
+    "entertainmentPotential": 9,
+    "reason": "Klar unterscheidbare Hierarchiestufen und eine überraschende parallele Leitungsstruktur statt filmischer Klischees.",
+    "whyNotBoring": "Jede Ebene bringt eine nachvollziehbare neue Information, ein eigenes Bild, eine typische Konsequenz und einen Vergleich."
+  },
+  "viewerPromise": "Du verstehst nach wenigen Minuten die tatsächliche Hierarchie der amerikanischen La Cosa Nostra.",
+  "coreQuestion": "Wer gehört dazu, wer führt wen und wer entscheidet in einer Mafia-Familie?",
+  "angle": "Die amerikanische La Cosa Nostra als klarer visueller Organigramm-Aufstieg: Abstand zwischen Filmklischee und dokumentierter Realität.",
+  "individualityReason": "Konkrete Abgrenzung Associate/Made Man, echtes Crew-System, paralleler Underboss und Consigliere, getrennte Familien und historische Commission.",
+  "scriptFormat": {
+    "type": "progression",
+    "reason": "Die Ebenen werden von der niedrigsten formellen Nähe zur Macht bis zur Spitze erklärt, mit klarer Trennung paralleler Führungsrollen.",
+    "whyThisFormat": "Der Zuschauer versteht ein echtes Organigramm, keine erfundene lineare Karrieregeschichte."
+  },
+  "hook": {
+    "type": "bizarre-frage",
+    "text": "Bei der Mafia steht oben ein Boss. Aber",
+    "reason": "Erste Worte benennen sofort Boss und die unbekannten Ebenen darunter."
+  },
+  "introPlan": {
+    "openingMove": "Mafia-Pyramide mit Boss im ersten Bild, Zoom nach unten.",
+    "formatPromise": "Wir steigen die dokumentierte Mafia-Hierarchie nachvollziehbar von unten nach oben durch.",
+    "firstPayoff": "Schon nach wenigen Bildern: Eine verbundene Person hat nicht automatisch einen offiziellen Rang.",
+    "clarityLine": "Es geht um amerikanische La Cosa Nostra; andere Mafiaorganisationen unterscheiden sich.",
+    "first10SecondsVisualCount": 5
+  },
+  "formatPlan": {
+    "miniStories": {
+      "orderingLogic": "",
+      "sections": []
+    },
+    "progression": {
+      "axis": "Formeller Rang, Entscheidungsbefugnis und Verantwortung innerhalb EINER amerikanischen Cosa-Nostra-Familie.",
+      "startState": "Associate ohne formelle Mitgliedschaft",
+      "endState": "Boss einer Familie; Commission als Koordinationsorgan mehrerer Familien, kein zusätzlicher Rang",
+      "stages": [
+        {
+          "label": "Associate – verbunden, aber nicht aufgenommen",
+          "change": "Kontakt und Mitarbeit ohne formellen Mitgliedsstatus.",
+          "consequence": "Kann Einfluss durch persönliche Beziehungen erhalten, ist aber nicht Made Man.",
+          "visualIdea": "Stickman außerhalb des rot umrandeten inneren Kreises"
+        },
+        {
+          "label": "Soldier – formelles Mitglied",
+          "change": "Made Man gehört offiziell zur Familie und einer Crew.",
+          "consequence": "Gebunden an familienspezifische Loyalitätsregeln und dem Capo unterstellt.",
+          "visualIdea": "Soldier innerhalb Crew-Kreis unter Capo"
+        },
+        {
+          "label": "Capo – Crew-Leiter",
+          "change": "Führt mehrere Mitglieder und Associates.",
+          "consequence": "Mehr Verantwortung, illegaler Einfluss und Ermittlungsrisiken.",
+          "visualIdea": "Drei verbindende Linien vom Capo zu Soldiers"
+        },
+        {
+          "label": "Oberste Leitung – Underboss und Consigliere",
+          "change": "Underboss übernimmt Führungs-/Koordinationsaufgaben, Consigliere berät.",
+          "consequence": "Zwei verschiedene Funktionen derselben oberen Organisationsebene, keine Rangtreppe zwischen ihnen.",
+          "visualIdea": "Zwei gleich hohe Kästen unter Boss, Unterrollen farblich getrennt"
+        },
+        {
+          "label": "Boss – Spitze einer einzelnen Familie",
+          "change": "Leitet Familie und beeinflusst strategische Entscheidungen.",
+          "consequence": "Machtkampf und Strafverfolgung können Machtverhältnisse verändern.",
+          "visualIdea": "Boss sitzt auf einziger Spitze, darunter differenzierte Unterstrukturen"
+        }
+      ]
+    },
+    "story": {
+      "protagonistOrFocus": "",
+      "immediateGoal": "",
+      "centralProblem": "",
+      "worldRules": [],
+      "incitingIncident": "",
+      "causalTurns": [],
+      "midpointTurn": "",
+      "finalEscalation": "",
+      "setupPayoff": {
+        "setup": "",
+        "payoff": ""
+      },
+      "endingCallback": "",
+      "beats": []
+    }
+  },
+  "entertainmentBeats": [
+    "Filmklischee Boss gegen echtes Organigramm",
+    "Fünf getrennte New Yorker Familien statt Weltboss",
+    "Associate kann Einfluss haben, ohne Mitglied zu sein",
+    "Made Man ist keine Hollywood-Medaille",
+    "Capo übernimmt Crew statt alles selbst zu erledigen",
+    "Boss ist nicht unangreifbar",
+    "Underboss und Consigliere stehen nicht in einer simplen Rangreihe",
+    "Commission verbindet mehrere Familien ohne Weltregierung",
+    "Opferperspektive zerstört die angebliche Glamourfassade"
+  ],
+  "scriptQuality": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "introClarity": 9,
+    "formatFit": 10,
+    "clarity": 9,
+    "curiosity": 9,
+    "entertainment": 8,
+    "voiceNaturalness": 9,
+    "payoff": 9,
+    "reason": "Klare gesprochen-deutsche Abschnitte, aufeinander aufbauende Unterschiede, keine erdichteten Mafiaabenteuer."
+  },
+  "retention": {
+    "openLoops": [
+      "Warum haben Associates keinen offiziellen Rang?",
+      "Was unterscheidet Soldiers und Capos?",
+      "Was unterscheidet Underboss und Consigliere?",
+      "Gibt es einen Boss für alle Familien?"
+    ],
+    "escalationPoints": [
+      "Associate zu Made Man",
+      "Soldier zu Capo",
+      "Führungsetage wird horizontal erklärt",
+      "Boss und Acting Boss",
+      "Familienübergreifende Commission"
+    ],
+    "patternInterrupts": [
+      "Konzern-Organigramm zerbricht",
+      "Fünf separate Familien",
+      "Rangabzeichen verwandelt sich in Kette",
+      "Parallele Unterboss- und Berater-Rolle",
+      "Pyramide wird Netzwerk",
+      "Opferperspektive"
+    ]
+  },
+  "payoff": "Alle Stufen werden im Schlussbild korrekt zusammengeführt; Frage nach welcher Mafia-Familie verhindert den verbreiteten Irrtum eines Weltbosses.",
+  "titleCoverSystem": {
+    "finalTitle": "Die Hierarchie der Mafia erklärt – vom Außenstehenden bis zum Boss",
+    "titlePromise": "Eine nachvollziehbare echte Hierarchie von Associate über Capo bis Boss.",
+    "coverConcept": {
+      "visualConflict": "Winziger unterer Associate unter einer gewaltigen schwarzen Organisationspyramide, oben weißer Stickman-Boss mit rotem Akzentschatten.",
+      "mainSubjects": [
+        "Stickman-Boss oben",
+        "Associate unten",
+        "Organigramm-Pyramide"
+      ],
+      "visibleText": "WER HAT MACHT?",
+      "emotion": "Neugier und Respekt vor tatsächlichen Strukturen",
+      "whyClickable": "Der visuelle Machtunterschied und die Frage sind auf Mobilgröße sofort klar."
+    },
+    "complementarity": "Titel erklärt die Hierarchie, Cover stellt eine zugespitzte Machtfrage."
+  },
+  "youtubeUpload": {
+    "title": "Die Hierarchie der Mafia erklärt – vom Außenstehenden bis zum Boss",
+    "description": "Wer ist eigentlich mächtiger: ein Mafia-Soldat, ein Capo oder der geheimnisvolle Consigliere? Und warum ist jemand, der zur Mafia dazugehört, nicht automatisch ein offizielles Mitglied?\n\nIn diesem StrichModus-Video steigen wir Schritt für Schritt durch die dokumentierte Hierarchie der amerikanischen La Cosa Nostra. Wir beginnen bei den Associates, erklären die sogenannten Made Men und die Crews der Capos und landen schließlich bei Underboss, Consigliere und Boss. Auch die fünf bekannten New Yorker Familien und die historische Commission spielen eine Rolle.\n\nDabei geht es nicht um Filmklischees, sondern um den tatsächlichen Aufbau, die Machtverhältnisse und die Unterschiede zwischen den einzelnen Ebenen. Mit klaren Stickman-Animationen, verständlichen Beispielen und einem Blick auf die Folgen organisierter Kriminalität.\n\nDie Darstellung bezieht sich auf die amerikanische La Cosa Nostra. Andere Mafiaorganisationen besitzen teils andere Strukturen. Quellen sind unter anderem das FBI und das US-Justizministerium.\n\nQuellen: https://www.fbi.gov/file-repository/mafia-family-tree.pdf und https://www.justice.gov/archives/opa/pr/91-leaders-members-and-associates-la-cosa-nostra-families-four-districts-charged-racketeering\n\n#StrichModus #Mafia #CosaNostra #OrganisierteKriminalitaet #MafiaHierarchie"
+  },
+  "ending": {
+    "type": "Schlussüberblick und präziser Callback",
+    "finalLine": "deshalb immer die Gegenfrage: Von welcher Familie eigentlich?"
+  },
+  "notes": [
+    "Skript realitätsbasiert, nicht dramatisierter Mafia-Eintritt.",
+    "Unterboss und Consigliere sind parallele Funktionen unter dem Boss.",
+    "Die Videos müssen reine Strichmännchen zeigen, keine Comic-Menschen.",
+    "Geplante Laufzeit aus 181 Worten pro Minute; endgültig nach echter Stimme messen."
+  ],
+  "learningFromPreviousVideos": {
+    "policyVersion": 1,
+    "sourceVideos": [
+      "2026-KW41_ein-tag-als-fbi-agent"
+    ],
+    "plannedImprovements": [
+      {
+        "source": "Nutzerfeedback 2026-10-13: StrichModus = FBI-Tag, Mafia-Aufbau, antikes Rom, Parlament statt Unsichtbarkeits-Fantasie",
+        "action": "Neue Themen standardmäßig in echten ungewöhnlichen Berufs-, Geschichts-, Macht- und Organisationswelten wählen: Ein Tag als/im, Aufbau/Hierarchie/Ränge. Konkreten Tagesablauf oder Struktur erklären, unterhaltsam mit Strichmännchen und etwas Humor. Fantasy-Magie und beliebige absurde Geschichten nur nach expliziter Ausnahme; keine neue Themenrichtung daraus ableiten."
+      },
+      {
+        "source": "Nutzerfeedback 2026-10-13: Google Flow erzeugt ausgearbeitete Cartoon-Menschen statt Strichmännchen",
+        "action": "Jeden Google-Flow-Prompt mit Kreis-/Ovalkopf, einem dünnen Rumpfstrich, Stricharmen und Strichbeinen sowie Verbot menschlicher Körpervolumen formulieren. Jede generierte Figur visuell prüfen; falsche Bilder neu erzeugen, nicht in den Schnitt übernehmen."
+      },
+      {
+        "source": "Spiegel-Test, Nutzerfeedback",
+        "action": "Thema und Situation schon in den ersten Sekunden klar erklären statt eines verwirrenden Mystery-Einstiegs."
+      },
+      {
+        "source": "frühe CIA-/Dokuvideos, Nutzerfeedback",
+        "action": "Nicht wie ein Referat erzählen: echte Handlungen, Perspektiven, Humor und überraschende Szenen zeigen."
+      },
+      {
+        "source": "Schlaf-Stadt-Video, Nutzerfeedback",
+        "action": "Technisch gute Videos brauchen auch ein attraktives Thema; Kanal offen für absurde, lustige und kuriose Ideen, nicht nur Polizei."
+      },
+      {
+        "source": "Schlaf-Stadt-/FBI-Videodauer",
+        "action": "Skriptlänge anhand tatsächlicher Audio-Laufzeit kalibrieren; nicht künstlich mit langen Standbildern strecken."
+      },
+      {
+        "source": "Flow-Probleme, Nutzerfeedback",
+        "action": "Alle individuellen Bildprompts direkt anlegen; 5er-Blöcke prüfen, fehlende Bilder nacherzeugen, alles gesammelt importieren."
+      }
+    ],
+    "appliedDuringProduction": [
+      {
+        "id": "channel-grounded-worlds",
+        "action": "Statt Fantasy reale Mafia-Hierarchie auf offiziellen FBI-/DOJ-Quellen aufgebaut.",
+        "evidence": "Fünf belegbare Funktionsstufen und Commission außerhalb der Rangtreppe."
+      },
+      {
+        "id": "strict-stickman-anatomy",
+        "action": "Jeder Einzelprompt enthält exakten Strichmännchen-Anatomie-Vertrag.",
+        "evidence": "Visual Policy V7 wird in jedem Motiv verwendet."
+      },
+      {
+        "id": "content",
+        "action": "Keine Kriminalitätsverherrlichung, kurz die Folgen für Opfer und Strafverfolgung erklären.",
+        "evidence": "Kapitel 10."
+      }
+    ],
+    "notes": "Audio- und Video-QC erst nach echten Assets möglich."
+  },
+  "channelDirectionCheck": {
+    "realWorldAnchor": "Amerikanische La Cosa Nostra, US Department of Justice und FBI",
+    "viewerInsight": "Statusunterschiede und reale Entscheidungswege in dokumentierter amerikanischer Mafia-Hierarchie",
+    "formatReason": "Progression nach formeller Macht mit parallelen Leitungsfunktionen; Commission ausdrücklich außerhalb der Rangtreppe.",
+    "factVsDramatization": "Gesprochene Sachangaben aus Quellen, schematische Stickman-Szenen keine behaupteten Einzelfälle.",
+    "historicalTimeAndPlace": "US-amerikanische La Cosa Nostra; Schwerpunkte New York und historische Kommissionsentwicklung in den 1930ern.",
+    "exceptionApproved": false,
+    "notes": "Keine allgemeine Mafia weltweit."
+  }
+}
