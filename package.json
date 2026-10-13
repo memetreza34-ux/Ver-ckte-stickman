@@ -20,7 +20,8 @@
     "phase3": "node src/cli/phase3.js",
     "studio": "remotion studio src/youtube-renderer/index.jsx",
     "test": "node --test test/*.test.js",
-    "review:video": "node src/cli/review-video.js"
+    "review:video": "node src/cli/review-video.js",
+    "review:images": "node src/cli/review-images.js"
   },
   "dependencies": {
     "@remotion/cli": "4.0.506",
