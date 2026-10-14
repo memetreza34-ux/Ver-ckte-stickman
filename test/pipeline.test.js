@@ -150,18 +150,20 @@ test('Stickman V7: jeder Einzelprompt braucht klassische Linien-Anatomie',()=>{
   assert.equal(auditStickmanPrompts([ok[0]+' Zeichne die Nebenfiguren als realistische Menschen.']).passed,false);
 });
 
-test('Visual Policy erzwingt reine Strichmännchen bei allen neuen Projekten',async()=>{
+test('Visual Policy V9 wählt Bildtypen nach Aussage statt Stickman-Quote',async()=>{
   const vp=JSON.parse(await readFile('config/visual-policy.json','utf8'));
-  assert.equal(vp.visualPolicyVersion,8);
-  assert.equal(vp.strictStickmanPolicy.mandatoryForNewProjects,true);
+  assert.equal(vp.visualPolicyVersion,9);
+  assert.equal(vp.visualQualityV9.noFixedFigureRatio,true);
+  assert.equal(vp.visualQualityV9.sceneSpecificPlanningRequired,true);
+  assert.equal(vp.informationTextPolicy.allowedOutsideCover,true);
+  assert.equal(vp.characterDNA.figuresOptional,true);
   const create=await readFile('src/cli/create-project.js','utf8');
   assert.match(create,/visualPolicyVersion:visual.visualPolicyVersion/);
+  assert.match(create,/VISUAL_BRIEF\.md/);
   const flow=await readFile('src/cli/compile-flow-prompt.js','utf8');
-  assert.match(flow,/auditStickmanPrompts/);
-  const materialize=await readFile('src/lib/materialize-scene-plan.js','utf8');
-  assert.match(materialize,/STICKMAN_ANATOMY_RULE/);
+  assert.match(flow,/auditEditorialVisuals/);
+  assert.match(flow,/auditStickmanPrompts/); // Altprojekte mit V8 bleiben gültig.
 });
-
 test('Mafia KW42: Phase 1 ist vollständig und 25 Flow-5er-Blöcke lassen sich automatisch erzeugen',async()=>{
  const project='youtube/2026-KW42/mafia-hierarchie-erklaert';
  const result=await validatePhase1V9(project);
@@ -178,22 +180,18 @@ test('Mafia KW42: Phase 1 ist vollständig und 25 Flow-5er-Blöcke lassen sich a
  }
 });
 
-test('Visual Policy V8 verlangt lebendige textfreie Stickman-Szenen',async()=>{
- const policy=JSON.parse(await readFile('config/visual-policy.json','utf8'));
- assert.equal(policy.visualQualityV8.minimumCharacterSceneRatio,0.85);
- assert.equal(policy.informationTextPolicy.allowedOutsideCover,false);
+test('V8-Bildvalidator bleibt nur für alte Projekte nutzbar',async()=>{
  const valid=Array.from({length:10},(_,i)=>'## Bild '+String(i+1).padStart(2,'0')+(i===0?' — COVER\nÜBERSCHRIFT: "WER HAT MACHT?"':'')+'\nBILDPROMPT:\nLEBENDIGE SZENE: Eine Figur handelt. '+STICKMAN_ANATOMY_RULE+' KEINE BILDSCHRIFT.');
  assert.equal(auditLivelyGermanVisuals(valid).passed,true);
- assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i===2?x.replace('KEINE BILDSCHRIFT','') : x)).passed,false);
+ assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i===2?x.replace('KEINE BILDSCHRIFT',''):x)).passed,false);
  assert.equal(auditLivelyGermanVisuals(valid.map((x,i)=>i>1?x+' BILDTYP: AUSNAHME-DIAGRAMM':x)).passed,false);
 });
-
-test('Bildwelt V8 hat keine widersprüchlichen Text- und Fantasyregeln',async()=>{
+test('Bildwelt V9 hat konsistente Text-, Marken- und Erklärregeln',async()=>{
  const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));
- assert.equal(v.visualPolicyVersion,8);
- assert.equal(v.informationTextPolicy.allowedOutsideCover,false);
+ assert.equal(v.visualPolicyVersion,9);
+ assert.equal(v.informationTextPolicy.allowedOutsideCover,true);
  assert.equal(v.languagePolicy.allVisibleTextMustBeGerman,true);
- assert.ok(v.rules.every(x=>!x.includes('Normalbilder höchstens mit wenigen kurzen deutschen Textelementen')));
- assert.ok(v.rules.some(x=>x.includes('Bild 02 und alle weiteren')));
- assert.match(v.storyVisualPolicy.principle,/vier charakterzentrierte/);
+ assert.equal(v.sceneFirstVisualPolicy.priority,1);
+ assert.equal(v.sceneFirstVisualPolicy.supportedTypes.hierarchie.includes('Pyramide'),true);
+ assert.equal(v.visualQualityV9.noFixedChartRatio,true);
 });

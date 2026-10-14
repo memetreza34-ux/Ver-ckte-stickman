@@ -3,10 +3,10 @@
   "priority": 1,
   "lessons": [
     {
-      "id": "lively-textfree-german-stickman-v8",
+      "id": "scene-first-editorial-v9",
       "priority": "high",
-      "source": "Nutzerfeedback 2026-10-13: Mafia-Flow zeigte steife Diagramme, viel Text und fremdsprachige Beschriftungen",
-      "action": "StrichModus V8: mindestens 85% lebendige figurenzentrierte Szenen (mindestens 4/5 pro Flow-Batch), eigenständige farbige Stickman-Charaktere, dynamische Aktionen, abwechslungsreiche Filmkulissen. Nur auf dem Cover 1–4 deutsche Wörter; alle weiteren Bilder strikt ohne Texte, Zahlen, Zeichen und englische Beschriftungen. Diagramme selten und textfrei."
+      "source": "Nutzerfeedback 2026-10-14 nach Sichtung des Mafia-Hierarchie-Videos: viele austauschbare Figuren, Bilder zeigen die gesprochenen Fakten nicht genau genug",
+      "action": "Visual Policy V9 ist verbindlich für neue Videos: JEDE Szene benötigt eine konkrete Kernaussage, passenden Bildtyp, eigene Komposition und mindestens zwei spezifische Bildbestandteile. Erkläre Stufen als Pyramide, Beziehungen als Organigramm, Prozesse als Ablaufgrafik, Vergleiche als Gegenüberstellung, Orte auf Karten, nur echte Handlungen als Stickman-Szene. Beschriftungen auf allen Bildern erlaubt, wenn sie Wissen klarer vermitteln; kurze korrekte Begriffe, kein Pseudotext. Ein einheitlicher handgezeichneter Editorial-Comic-Look, nicht bloß einheitliche Figuren. Jedes generierte Bild auf Skriptpassung und Fakten prüfen; Fehler neu erzeugen."
     },
     {
       "id": "channel-grounded-worlds",
@@ -17,7 +17,7 @@
     {
       "id": "strict-stickman-anatomy",
       "source": "Nutzerfeedback 2026-10-13: Google Flow erzeugt ausgearbeitete Cartoon-Menschen statt Strichmännchen",
-      "action": "Jeden Google-Flow-Prompt mit Kreis-/Ovalkopf, einem dünnen Rumpfstrich, Stricharmen und Strichbeinen sowie Verbot menschlicher Körpervolumen formulieren. Jede generierte Figur visuell prüfen; falsche Bilder neu erzeugen, nicht in den Schnitt übernehmen.",
+      "action": "Nur WENN eine Bildidee Personen enthält, diese als wiedererkennbare klassische Strichfiguren mit Kreis-/Ovalkopf, Linienrumpf, Stricharmen und -beinen gestalten. Rein sachliche Hierarchie-, Karten-, Prozess-, Vergleichs- und andere Erklärgrafiken dürfen ganz ohne Figuren auskommen. Jede tatsächlich generierte Figur visuell prüfen.",
       "priority": "high"
     },
     {

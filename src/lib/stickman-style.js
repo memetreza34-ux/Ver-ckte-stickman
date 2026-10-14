@@ -38,3 +38,63 @@ export function auditLivelyGermanVisuals(blocks){
  }
  return {passed:errors.length===0,errors,characterScenes:scenes,total:blocks.length};
 }
+
+
+// V9: Der Kanal-Look bleibt kohärent, aber die passende Darstellungsform richtet
+// sich nach der Skriptaussage – kein erzwungener Stickman-Anteil.
+export const VISUAL_POLICY_V9=9;
+export const VISUAL_TYPES_V9=Object.freeze([
+  'szene','hierarchie','organigramm','vergleich','ablauf',
+  'zeitleiste','karte','infografik','symbolbild','detail'
+]);
+export const EDITORIAL_WORLD_V9='GEMEINSAME BILDWELT: Handgezeichnete deutsche 2D-Editorial-Comicillustration, charakteristische dunkle Tuschekonturen, reduzierte klare Formen, dezente Papiertextur; feste Grundpalette Creme, tiefes Petrol, Anthrazit, Ocker, gedämpftes Rot, gezieltes Cyan/Gelb. Eine starke visuelle Hauptidee statt Folientext; klare Bildhierarchie, filmisch gestaltetes Licht, 16:9, keine Stockfotos, kein Fotorealismus, kein 3D und keine Pseudoschrift.';
+export const V9_GRAPHIC_TYPES=new Set(['hierarchie','organigramm','vergleich','ablauf','zeitleiste','karte','infografik']);
+
+export function validateEditorialScenes(scenes,{maxLabels=7,maxWordsPerLabel=4}={}){
+  const errors=[];
+  const seen=new Map();
+  for(let i=0;i<scenes.length;i++){
+    const scene=scenes[i]??{},n=i+1,kind=String(scene.visualType??'').toLowerCase();
+    const elements=scene.elements,labels=scene.labels??[];
+    if(!VISUAL_TYPES_V9.includes(kind))errors.push('Bild '+n+': visualType muss bewusst aus den erlaubten Bildtypen gewählt werden.');
+    if(String(scene.message??'').trim().length<16)errors.push('Bild '+n+': konkrete Kernaussage (message) mit mindestens 16 Zeichen fehlt.');
+    if(String(scene.visual??'').trim().length<30)errors.push('Bild '+n+': konkrete szenengenaue Darstellung (visual) fehlt.');
+    if(!Array.isArray(elements)||elements.length<2||elements.some(x=>typeof x!=='string'||x.trim().length<4))
+      errors.push('Bild '+n+': mindestens zwei konkrete Bildbestandteile (elements) fehlen.');
+    if(!Array.isArray(labels))errors.push('Bild '+n+': labels muss ein Array sein.');
+    else{
+      if(labels.length>maxLabels)errors.push('Bild '+n+': zu viele Beschriftungen; maximal '+maxLabels+'.');
+      if(labels.some(x=>typeof x!=='string'||!x.trim()||x.trim().split(/\s+/).length>maxWordsPerLabel))
+        errors.push('Bild '+n+': ein sichtbares Label ist leer/zu lang oder nicht als Text angegeben.');
+      if(labels.some(x=>/[<>{}]/.test(x)))errors.push('Bild '+n+': Platzhalter in Bildbeschriftungen.');
+      if(i>0&&V9_GRAPHIC_TYPES.has(kind)&&labels.length<2)errors.push('Bild '+n+': erklärende '+kind+' braucht mindestens zwei überprüfte, kurze Labels.');
+      if(i===0&&labels.length)errors.push('Bild 1: Cover trägt nur die eine Headline aus dem Content-Plan, keine zusätzlichen Labels.');
+      if(kind==='szene'&&labels.length>2)errors.push('Bild '+n+': eine Spielszenen-Illustration darf maximal zwei Kurzlabels haben.');
+    }
+    if(i>0&&String(scene.visual??'').trim()===String(scenes[i-1]?.visual??'').trim())
+      errors.push('Bild '+n+': dieselbe Bildidee wie im vorherigen Bild. Für die neue Aussage neu gestalten.');
+    const key=kind+'|'+String(scene.visual??'').trim().toLowerCase();
+    if(key.length>30&&seen.has(key))errors.push('Bild '+n+': identische Bildidee wie Bild '+seen.get(key)+'.');
+    seen.set(key,n);
+  }
+  return {passed:errors.length===0,errors,total:scenes.length,types:scenes.map(s=>s.visualType)};
+}
+
+// Prüft nur die generierten Prompt-Texte. Echte Bild-/Schriftfehler müssen
+// nach Google Flow weiterhin im IMAGE_REVIEW visuell überprüft werden.
+export function auditEditorialVisuals(blocks){
+  const errors=[],types=[];
+  for(let i=0;i<blocks.length;i++){
+    const block=String(blocks[i]),n=i+1;
+    const body=block.split(/BILDPROMPT:\s*\n/i)[1]??'';
+    for(const marker of ['BILDTYP:','KERNAUSSAGE:','KONKRETE DARSTELLUNG:','GEMEINSAME BILDWELT:','BESCHRIFTUNGEN:'])
+      if(!body.includes(marker))errors.push('Bild '+n+': Pflichtangabe '+marker+' fehlt.');
+    const type=body.match(/(?:^|\n)BILDTYP:\s*([a-z-]+)/i)?.[1]?.toLowerCase();
+    if(!VISUAL_TYPES_V9.includes(type))errors.push('Bild '+n+': unbekannter oder fehlender Bildtyp.');
+    types.push(type);
+    if(n===1&&!/ÜBERSCHRIFT:\s*"[^"]+"/.test(block))
+      errors.push('Cover: kurze deutsche Überschrift fehlt.');
+    if(n>1&&body.includes('NUR AUF DEM COVER TEXT'))errors.push('Bild '+n+': pauschales Textverbot widerspricht V9.');
+  }
+  return{passed:errors.length===0,errors,total:blocks.length,types};
+}

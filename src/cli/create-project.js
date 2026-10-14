@@ -52,6 +52,17 @@ async function main(){
   await writeJson(contentPlanPath,contentPlan);
   const summary=['# Verbindlicher Lernbrief','','Oberste Priorität: Jede neue Produktion nutzt Erkenntnisse aus vorigen Videos.','',...selected.map((x,i)=>(i+1)+'. ['+x.source+'] '+x.action),'','Vor der Bildproduktion prüfen, welche Schritte tatsächlich umgesetzt wurden.'];
   await writeFile(path.join(techDir,'LEARNING_BRIEF.md'),summary.join('\n')+'\n','utf8');
+  if(Number(visual.visualPolicyVersion)>=9){
+    await writeFile(path.join(techDir,'VISUAL_BRIEF.md'),[
+      '# Szenenbasierte Bildplanung – StrichModus V9','',
+      'Lies youtube/_intern/SCENE_VISUAL_GUIDE_V9.md und die aktuelle config/visual-policy.json.',
+      'Niemals pauschal fünf Figurenbilder pro Batch generieren: Jede gesprochene Aussage bekommt ihren idealen Bildtyp.',
+      'Jede SCENE_PLAN.json-Szene braucht exakten Skriptanker, Kernaussage (message), visualType, konkrete Komposition (visual), mindestens zwei wichtige elements und bei Erklärgrafiken 2–7 exakte kurze labels.',
+      'Für Handlungen: szene oder detail. Für Rangstufen: hierarchie. Für Beziehungen: organigramm. Für Unterschiede: vergleich. Für Folge: ablauf. Für Geschichte: zeitleiste. Für Orte: karte. Für belegte Größen: infografik.',
+      'Keine Bild- oder Diagrammquoten. Ein durchgängiger handgezeichneter Editorial-Comic-Stil. Kurze deutsche Schrift nur bei tatsächlichem Informationsgewinn. Fakten prüfen.',
+      'Danach npm run compile:flow -- --dir "youtube/<week>/<slug>" ausführen, alle echten Bilder visuell prüfen und fehlerhafte Versionen neu generieren.'
+    ].join('\n')+'\n','utf8');
+  }
 
 
   const promptPath=path.join(destination,'00-bildprompts','99-alle-bildprompts.txt');

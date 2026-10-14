@@ -1,175 +1,140 @@
 {
-  "visualPolicyVersion": 8,
+  "visualPolicyVersion": 9,
   "status": "READY",
-  "styleId": "dark-grotesque-surreal-stickman-de-v1",
-  "description": "StrichModus V8: lebendige, charaktervolle Strichmännchen in bildhaft erzählten Szenen; statt textlastiger Charts. Alle Bilder in deutscher Bildwelt, sichtbare Schrift nur auf dem Cover.",
+  "styleId": "strichmodus-editorial-comic-de-v2",
+  "description": "StrichModus V9: Eine zusammenhängende, filmisch illustrierte 2D-Bildwelt. Bildtyp und Bildinhalt richten sich nach der konkreten Skriptaussage, nicht nach Stickman- oder Diagramm-Quoten. Neue Videoproduktionen nutzen verbindliche Szenen-Briefings mit Bildtyp, Kernaussage, Darstellung und konkreten Elementen.",
   "channelDNA": {
-    "coreStyle": "Ausdrucksstarke individuelle, leicht skurrile 2D-Stickman-Storyillustration mit farbigen filmischen Schauplätzen und deutlichem Storymoment.",
-    "tone": [
-      "lebendig",
-      "charakterstark",
-      "neugierig",
-      "unterhaltsam",
-      "situativ humorvoll",
-      "bei Kriminalität und Geschichte sachlich"
+    "coreStyle": "Redaktionelle 2D-Comicillustration: wiedererkennbarer handgezeichneter Ink-Look, kräftige klare Silhouetten, ausgewählte Akzentfarben, cineastische Lichtstimmung. Mischung aus erzählerischen Bildern und in dieselbe Welt integrierten intelligenten Infografiken.",
+    "subject": "Echte ungewöhnliche Lebenswelten, Berufe, Geschichte, Politik, Macht- und Organisationsstrukturen, historische Zusammenhänge; faktenbasiert, spannend und anschaulich.",
+    "identity": "Die wiedererkennbare Marke kommt von Konturen, Farbpalette, Typografie und Bildsprache – nicht davon, in jedem Bild Figuren zu erzwingen."
+  },
+  "styleDNA": {
+    "medium": "Handgezeichnete, professionell gestaltete 2D-Editorial-Comicillustration; keine Stockfotos, 3D-Renderings oder austauschbare Corporate-Slides.",
+    "linework": "Charakteristische dunkle Tuschekonturen, reduzierte flächige Formen, lesbare Schwerpunktsetzung, dezente Papier-/Drucktextur.",
+    "palette": [
+      "Creme/Papierweiß",
+      "Tiefes Petrol/Nachtblau",
+      "Anthrazit/Schwarz",
+      "warmes Ocker",
+      "gedämpftes Rot",
+      "gezielt Cyan oder Gelb"
     ],
-    "topicRange": [
-      "ein Tag in echten Berufen",
-      "historische Alltagswelten",
-      "Macht und Gesellschaftsstrukturen",
-      "Politik und Institutionen",
-      "organisierte Kriminalität ohne Verherrlichung",
-      "spannende reale Abläufe und Rollen"
-    ]
+    "colorRule": "Gleichbleibende Grundpalette; 1–2 funktionale Akzentfarben pro Bild. Farbwechsel nur mit dramaturgischer Absicht. Struktur-/Rangfarben behalten innerhalb eines Videos dieselbe Bedeutung.",
+    "typography": "Kurze, große, klare deutsche Sans-Serif-Beschriftungen mit hohem Kontrast und ausreichend Sicherheitsabstand; echte Eigennamen und Fachbegriffe korrekt übernehmen.",
+    "composition": "Eine unmissverständliche visuelle Hauptidee, 16:9, in 1–2 Sekunden erkennbar, freie Bewegungsreserve für Zoom/Pan, saubere Hierarchien ohne kleingedruckte Folien.",
+    "characters": "Wenn Menschen zur Aussage beitragen: individuelle klassische Strichmännchen mit Rundkopf, schmalem Strichkörper, ausdrucksstarker Pose und unverwechselbaren, sparsamen Accessoires. Figuren sind optional.",
+    "historicalFidelity": "Schauplatz, Epoche, Ämter, Aufgaben, Hierarchien und Symbole müssen zum recherchierten Fall passen; keine erfundenen Rollen oder falsche Verbindungen als Fakten zeigen."
+  },
+  "sceneFirstVisualPolicy": {
+    "priority": 1,
+    "rule": "Erst die genaue Aussage im gesprochenen Abschnitt verstehen. Dann das Bild wählen, das diese Aussage am klarsten und interessantesten vermittelt. Keine Figurenbild-Quote, keine Infografik-Quote und keine willkürlichen Wechsel.",
+    "sceneContract": [
+      "anchor: exakter Ausschnitt aus dem Skript",
+      "message: eine konkrete Kernaussage, die dieses Bild verständlich machen soll",
+      "visualType: bewusst begründeter Bildtyp",
+      "visual: konkrete Bildkomposition passend zur Aussage",
+      "elements: mindestens zwei genau benannte, zur Aussage gehörende visuelle Elemente",
+      "labels: nur wenn Beschriftung für das Verständnis nötig und faktengeprüft"
+    ],
+    "supportedTypes": {
+      "szene": "Ereignis, Konflikt, Entscheidung, Tätigkeit, typische Alltagssituation. Nur hier und bei relevanter Perspektive echte Stickman-Figuren zeigen.",
+      "hierarchie": "Mehrere Rangstufen, Machtgefälle oder Aufbau; als elegante beschriftete Pyramide oder Ebenenmodell mit korrekter Reihenfolge.",
+      "organigramm": "Wer wem unterstellt ist, wer berichtet, beratende Querverbindungen; Rollen mit eindeutig beschrifteten Verbindungslinien.",
+      "vergleich": "Zwei oder mehr Rollen, Zeitstände, Systeme oder Zustände; kontrastreiches Split-Screen oder Vergleichsdiagramm.",
+      "ablauf": "Aufgabenfolge, Entscheidungskette, behördlicher Prozess; klare beschriftete Stationen und gerichtete Pfeile.",
+      "zeitleiste": "Daten, Entwicklungsphasen, historische Wendepunkte; lesbare Abfolge mit klarer Zeitachse.",
+      "karte": "Reale Orte, Regionen, Zuständigkeiten oder Bewegungen; stilisierte Karte mit korrekt recherchierten Bezeichnungen.",
+      "infografik": "Zahlen, Anteile, Ursachen/Wirkungen oder begrenzte Kennzahlen; konkret und korrekt, kein erfundener Datenwert.",
+      "symbolbild": "Abstrakter Begriff oder Atmosphäre mit einem starken spezifischen Symbol, keine zufälligen Dekorationen.",
+      "detail": "Ein wichtiges Beweisstück, Dokument, Werkzeug oder relevante Handlung im Close-up."
+    },
+    "preferredChoice": "Bei erklärenden Skriptsätzen zuerst Hierarchie/Organigramm/Vergleich/Ablauf/Zeitleiste/Karte/Infografik erwägen. Bei tatsächlichen Ereignissen und konkreten Tätigkeiten bevorzugt Szenen oder Details. Kein Bildtyp wird nur gewählt, um eine Quote zu erfüllen.",
+    "avoid": [
+      "Wiederholt anonyme Figuren in immer gleichen Räumen",
+      "Illustration einer Aussage, die eigentlich eine Beziehung, Reihenfolge oder Abstufung erklärt",
+      "Macht als fünf zufällige Menschen am Tisch statt klarer Struktur darstellen",
+      "Generische Figurenbilder ohne erkennbare Verbindung zum Skriptsatz",
+      "Scheinbar schöne, aber falsch beschriftete Diagramme",
+      "Dauerhaft sterile Präsentationsfolien"
+    ],
+    "review": "Jedes Bild visuell und anhand von Skriptanker + Kernaussage prüfen. Falsche Rangfolge, falsch geschriebene Wörter, fehlende Bilder, unpassende Figuren oder unleserliche Labels neu erzeugen. Statische Prompt-Prüfung allein ist kein Bildverständnis."
   },
   "languagePolicy": {
     "channelLanguage": "de",
     "promptLanguage": "de",
-    "visibleTextLanguage": "de",
     "allVisibleTextMustBeGerman": true,
-    "englishVisibleTextForbidden": true,
+    "exceptions": "Echte Eigennamen, Titel, historische Originalbezeichnungen und international etablierte Rollentitel wie Boss, Capo, Underboss, Consigliere oder FBI dürfen korrekt wiedergegeben werden.",
     "pseudoTextForbidden": true,
-    "rule": "Alle eigentlichen Bildprompts auf Deutsch verfassen. Außer dem kurzen deutschen Covertext auf Bild 01 überhaupt keine Buchstaben, Zahlen, Logos, Schilder, Untertitel, Sprechblasen, typografischen Diagramme oder Fantasieschrift zeigen. Eigennamen im Prompt sind nur Kontext, keine Aufforderung sie ins Bild zu schreiben."
+    "rule": "Die Prompts bleiben deutsch. Sichtbare Schrift ist auch außerhalb des Covers erlaubt, wenn sie erklärt. Text wird bewusst als exaktes Label vorgegeben, nicht beiläufig von der Bild-KI halluziniert. Kein Pseudotext oder zufällige Wörter."
   },
   "informationTextPolicy": {
-    "allowedOutsideCover": false,
-    "maxWordsPerTextElement": 0,
-    "maxTextElementsPerNormalImage": 0,
-    "preferredUses": [
-      "Keine: Informationen werden durch Figurenhandlung, Requisiten und Voice-over verständlich"
-    ],
-    "rules": [
-      "Bild 01: ein kurzer deutscher Cover-Titel.",
-      "Bild 02 und alle späteren Bilder: absolut keine lesbaren Wörter, Zahlen, Namen oder Pseudoschrift; auch nicht auf Papier, Schildern, Kleidung und Plakaten.",
-      "Kein Titelplakat, kein Organigramm mit Beschriftungen, kein wiederholter Diagramm-Hintergrund.",
-      "Vergleich, Macht oder Rang durch Figurenposition, Handlungen, Reaktionen, Gegenstände und räumliche Inszenierung erzählen."
-    ]
+    "allowedOutsideCover": true,
+    "maxLabelsPerImage": 7,
+    "maxWordsPerLabel": 4,
+    "rule": "Nur Informationswert beschriften: Pyramidenstufen, Prozesse, Kartenpunkte, Vergleichsachsen, Datenpunkte. Keine Fließtexttafeln oder endlosen Sätze. Vor allem korrekte deutsche Schreibweise und faktische Richtigkeit visuell prüfen.",
+    "storySceneDefault": "Ohne Text, außer maximal zwei gezielt begründeten Kurzlabels.",
+    "structuredGraphicDefault": "Zwei bis sieben kurze verifizierte Labels sind erlaubt, soweit für die Aussage notwendig.",
+    "cover": "Bild 01 enthält exakt einmal eine große deutsche Headline aus 1–4 Wörtern. Kein zusätzlicher Titeltext."
   },
   "characterDNA": {
-    "base": "Echte Strichmännchen-Anatomie beibehalten: runder/ovaler klarer Kopf, 1 dünner Linienrumpf, 2 Stricharme und 2 Strichbeine. Hauptpersonen erhalten unverwechselbare kleine farbige Accessoires, Haltung, Mimik und charakteristische Bewegung; keine anonymen identischen Mini-Stickmen.",
-    "faces": "Große lebendige Oval-/Rundköpfe mit zwei Punktaugen, markanten einfachen Brauen und variablen Strichmündern. Emotionen über Kopfneigung, Augen, Brauen, Armgestik und Körperhaltung; keine modellierten menschlichen Gesichtsteile.",
-    "consistency": "Wiederkehrende Rollen behalten exakt dieselben Farbakzente und kleinen Accessoires. Stickman-Figuren sind 20–50 % Bildhöhe in der Regel; ausdrucksstarke große Charaktere vor echten Schauplätzen statt Hunderte winziger Symbole.",
-    "invisibleCharacters": "Wenn eine Hauptfigur unsichtbar ist, darf sie sichtbar nur durch FLACHE stark reduzierte Kleidungs-Symbole repräsentiert werden, die einer Strichmännchen-Kontur folgen. Keine körpergefüllten Hoodies/Hosen als menschliche Körpermasse, kein Kopf, Gesicht, Geisterumriss oder sichtbare Haut. Alle sichtbaren Nebenfiguren bleiben klassische Strichmännchen."
+    "figuresOptional": true,
+    "rule": "Bei erzählenden Szenen einfache Strichmännchen statt voluminöser anatomischer Cartoon-Menschen. Keine Figur in ein Pyramiden-, Karten-, Ablauf- oder Datenbild zwingen, wenn sie keinen Erkenntnisgewinn bietet.",
+    "continuity": "Wiederkehrende Personen behalten ihren Farbakzent und ihr Accessoire; lebendige Körpersprache und lesbare Emotion, wenn eine Person vorkommt."
   },
-  "renderDNA": {
-    "medium": "vollständig illustrierte 2D-Comiczeichnung",
-    "linework": "deutliche schwarze Konturen, leicht handgezeichnet, kontrolliert rau",
-    "shapes": "einfache große Formen mit guter Lesbarkeit",
-    "shading": "sparsame grafische Schatten und kontrollierte Textur",
-    "depth": "klare Vordergrund-Mittelgrund-Hintergrund-Staffelung, wenn sinnvoll",
-    "rule": "Handgezeichneter 2D-Comic mit echter Strichmännchenanatomie. Lebendige Kulissen mit Tiefenstaffelung, filmischen Blickwinkeln, Warm/Kalt-Licht, Requisiten und sichtbaren Aktionen. Kein Fotorealismus, 3D, animeartiger menschlicher Körper oder statische Firmeninfografik."
-  },
-  "colorDNA": {
-    "base": [
-      "Schwarz",
-      "Weiß",
-      "Grau"
-    ],
-    "accents": [
-      "Rot",
-      "Giftgrün",
-      "Violett",
-      "Gelb",
-      "Cyan",
-      "dunkles Blau",
-      "Braun",
-      "Ocker"
-    ],
-    "rule": "Erzählendes Farbsystem: warmes Honiggelb, Petrol, dunkles Rot, Ocker, Creme und nächtliches Blau; pro Szene 2–3 harmonische Akzente. Abwechslungsreiches Licht statt weißer Diagrammfläche; Umgebung macht Szene lebendig, ohne Figur zu überladen."
-  },
-  "storyVisualPolicy": {
-    "principle": "Pro 5er-Block mindestens vier charakterzentrierte lebendige Spielszenen; maximal eine textfreie Strukturmetapher. Keine PowerPoint-Optik. Sprecher erklärt Fachbegriffe.",
-    "rules": [
-      "Figuren haben Handlung und Emotion im Vordergrund: Blick, Konflikt, Entscheidung oder Reaktion.",
-      "Abwechslungsreiche Orte und Kamera: Straßenecke, Hinterzimmer, Café, Regen, Gericht, Treppe, Tür, Begegnungen.",
-      "Hauptfiguren und Requisiten wiedererkennbar gestalten; echtes Ensemble statt anonymer Punkte-Reihen.",
-      "Alle 5er-Blöcke sollen mindestens 4 figurenzentrierte Szenen enthalten.",
-      "Diagramme/Hierarchien ausnahmsweise als textfreie Metaphern, nie als Tafeln mit Beschriftungen.",
-      "Bilder 02 ff. absolut textfrei; Voice-over liefert alle Begriffe und Fakten.",
-      "Ein Satz im Skript bekommt eine konkrete sinnvolle Bildhandlung, keine abgebildete Textwiederholung."
-    ]
-  },
-  "rules": [
-    "Jede Szene hat genau eine klare visuelle Hauptidee.",
-    "Jeder Einzelprompt nennt Motiv, Handlung, Komposition, Ausdruck, Umgebung, Licht/Farbe und Stil.",
-    "Stickman-Figuren bleiben einfach und sofort lesbar, dürfen aber extrem ausdrucksstark sein.",
-    "Dicke bis mitteldicke schwarze Konturen und einfache 2D-Formen prägen jedes Bild.",
-    "Humor entsteht durch Übertreibung, absurde Konsequenzen, Größenunterschiede und Reaktionen.",
-    "Reale Fakten werden nicht erfunden, wenn das Video sie ausdrücklich als real behauptet.",
-    "Düstere Elemente nur so stark einsetzen, wie die Story es verlangt.",
-    "Hintergründe unterstützen die Handlung und bleiben visuell reduziert.",
-    "Keine zufälligen Dekorationen oder fremden Symbole ohne Storybezug.",
-    "Bild 01 enthält immer eine kurze deutsche Cover-Überschrift mit 1 bis 4 Wörtern, genau einmal und mit starkem Kontrast.",
-    "Alle Bilder sind 16:9 und lassen Motivreserve für dezente Kamera-Bewegungen.",
-    "Keine Pseudo-Schrift, Wasserzeichen, Logos fremder Anbieter oder zufällige Beschriftungen.",
-    "Nur Bild 01 darf eine kurze, ausschließlich deutsche Titelüberschrift enthalten; Bild 02 und alle weiteren Einzelbilder haben keinerlei sichtbare Schrift oder Zahlen.",
-    "Mindestens vier der fünf Bilder je Flow-Block stellen Figuren in Handlung dar, keine beschrifteten Diagramme oder Folien.",
-    "Jede wiederkehrende Person trägt ein klares flaches Erkennungsmerkmal und zeigt eine lesbare Emotion oder aktive Geste; Umgebung und Kamera wechseln sinnvoll."
-  ],
   "thumbnailDNA": {
     "headlineRequired": true,
     "headlineWords": [
       1,
       4
     ],
-    "mainSubjects": "Meist 1 bis 3 große Hauptfiguren oder Objekte.",
-    "expression": "Ein klarer extremer Gesichtsausdruck oder eine sofort verständliche Reaktion.",
-    "background": "Einfach, kontrastreich und nicht überladen.",
-    "text": "Immer eine kurze deutsche Überschrift mit 1 bis 4 Wörtern; groß, kontrastreich, mit sicherem Rand und genau einmal.",
-    "goal": "Lebendiger klickstarker Charakterkonflikt mit zwei GROSSEN ausdrucksstarken Stickmen, klarer filmischer Tiefe und einem einzigen kurzen deutschen Titel. Nicht winzige Strichfiguren auf einer textlastigen Pyramide."
+    "goal": "Klares, faszinierendes visuelles Versprechen passend zum Thema; ein starkes Motiv oder ein klares Spannungsverhältnis, keine überladene Grafik und keine Pflicht zu einer Figur.",
+    "safeArea": "Kurze große Headline und Hauptmotiv mit YouTube-tauglichem Abstand zu den Außenrändern."
   },
-  "forbidden": [
-    "englische Bildprompts",
-    "englische sichtbare Wörter außer unvermeidbaren Eigennamen",
-    "Pseudo-Schrift oder Fantasiebuchstaben",
-    "fotorealistische Menschen oder Umgebungen als Grundstil",
-    "3D-, Pixar- oder Hochglanz-Render",
-    "Mixed Media oder Foto-plus-Cartoon",
-    "süße Kinder-Clipart",
-    "sterile Corporate-Illustration",
-    "ständig identische Frontansicht und Pose",
-    "überladene Hintergründe",
-    "zu viele Informationen oder zu viel Text in einem Bild",
-    "unnötige grafische Gewalt",
-    "permanent dunkle Horrorbeleuchtung ohne Storygrund",
-    "voluminöse Cartoon-Menschen mit modellierten Körpern und realistischen Gliedmaßen",
-    "Comic-Porträts mit ausgearbeiteten Nasen, Gesichtsvolumen oder Manga-Proportionen",
-    "fotonahe, anatomisch korrekte Figuren statt klarer Strichmännchen",
-    "englische oder fremdsprachige Bildbeschriftungen",
-    "jeglicher sichtbarer Text außerhalb Cover Bild 01",
-    "durchgehende Organigramme, Diagramm- und Präsentationsfolien",
-    "pseudofaktische Beschriftungssysteme und Mikro-Text auf Bildwänden",
-    "kleine identische Strichfiguren ohne Gestik/Charakter",
-    "starre weiße Flächen mit PowerPoint-Anmutung",
-    "Rangnamen wie BOSS, SOLDIER, ASSOCIATE oder CAPO als sichtbare Bildtexte",
-    "mehrere gleichartige Tabellen, Diagramme oder Texttafeln hintereinander",
-    "englische Sprechblasen oder lateinische Ranglisten auf Zeichnungen"
-  ],
-  "strictStickmanPolicy": {
-    "version": 7,
+  "visualQualityV9": {
     "mandatoryForNewProjects": true,
+    "sceneSpecificPlanningRequired": true,
+    "minimumConcreteElementsPerScene": 2,
+    "imageTypes": [
+      "szene",
+      "hierarchie",
+      "organigramm",
+      "vergleich",
+      "ablauf",
+      "zeitleiste",
+      "karte",
+      "infografik",
+      "symbolbild",
+      "detail"
+    ],
+    "noFixedFigureRatio": true,
+    "noFixedChartRatio": true,
+    "textAllowedWhenHelpful": true,
+    "requireSkriptAnchor": true,
+    "requireSceneClaim": true,
     "checkEveryIndividualPrompt": true,
     "checkBeforeFlowBatchCreation": true,
-    "anatomyMarker": "STICKMAN-ANATOMIE:",
-    "rule": "STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Einfacher Kreis- oder Ovalkopf, Gesicht nur mit Punktaugen und Strichmund. Der Rumpf ist ein einzelner dünner schwarzer Strich. Stricharme und Strichbeine sind jeweils dünne einzelne schwarze Linien, keine anatomisch modellierten Schultern, Arme, Hände, Oberschenkel oder Körper. Kleidung nur flache kleine Farbsymbole an Strichkörpern, NIEMALS als Körpervolumen. KEINE NORMALEN COMIC-MENSCHEN, KEINE VOLUMINÖSEN MENSCHENKÖRPER, kein Anime, keine realistischen Gesichter, keine halb-realistischen Cartoonfiguren. Auch in einem detailreichen Raum müssen Stricharme und Strichbeine eindeutig als Linien erkennbar bleiben.",
-    "reviewRule": "Jedes tatsächlich in Flow erzeugte Bild visuell prüfen. Kopf-Kreis/Strichrumpf/Stricharme/Strichbeine an allen sichtbaren Figuren kontrollieren. Bei realistischer menschlicher Figur, voluminösem Comic-Menschen oder falschem Hauptfiguren-Look Bild neu generieren. Ein bestandener Text-Check ist KEIN Nachweis für korrekte Bildpixel.",
-    "doNotAlterOldExportedVideos": true
+    "checkRealImagesManually": true,
+    "requiredPromptMarkers": [
+      "BILDTYP:",
+      "KERNAUSSAGE:",
+      "KONKRETE DARSTELLUNG:",
+      "GEMEINSAME BILDWELT:"
+    ]
   },
-  "visualQualityV8": {
-    "version": 8,
-    "requiredForNewProjects": true,
-    "characterFirst": true,
-    "minimumCharacterSceneRatio": 0.85,
-    "maxDiagramRatio": 0.15,
-    "minCharacterScenesPerBatchOfFive": 4,
-    "normalImageText": "none",
-    "coverText": "1–4 deutsche Wörter, einmal",
-    "forbidEnglishAndPseudotext": true,
-    "mandatoryMarkers": [
-      "LEBENDIGE SZENE:",
-      "STICKMAN-ANATOMIE:",
-      "KEINE BILDSCHRIFT"
-    ],
-    "humanReview": "Nach jedem 5er-Block sichtbare Figuren, einheitliche Personen-Accessoires, abwechslungsreiche Szenen, Schriftfreiheit und Stil durch Sichtprüfung kontrollieren. Bei Verstößen einzelne Bilder erneut erzeugen."
-  }
+  "legacyCompatibility": {
+    "version8AndEarlier": "Bereits geplante Videos behalten ihre gespeicherte visualPolicyVersion und dürfen unverändert validiert und exportiert werden.",
+    "doNotAutomaticallyRewriteOldProjects": true,
+    "noNewContentWithVersion8": true
+  },
+  "forbidden": [
+    "beliebige Figuren ohne Szenenbezug",
+    "falsche Reihenfolgen oder Beziehungen in Infografiken",
+    "erfundene Zahlen als Fakten",
+    "zufällige Zeichen, Wasserzeichen, Pseudo-Schrift",
+    "permanent gleiche Kameraperspektiven und Motive",
+    "fotorealistischer oder 3D-Grundstil",
+    "überladene unlesbare Organigramme",
+    "mehrere volltextige Präsentationsfolien hintereinander",
+    "anatomisch modellierte menschliche Comicfiguren statt einfacher Strichfiguren, wenn Figuren verwendet werden"
+  ]
 }
