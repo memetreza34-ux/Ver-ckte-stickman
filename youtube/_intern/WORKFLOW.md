@@ -1,28 +1,14 @@
-## Keine Texttafeln oder englischen Flow-Bildbeschriftungen
+# Bildwelt V9 – verbindlich für neue StrichModus-Videos
 
-- Das **Bild** erzählt mit Mimik, Gestik, Rollenaccessoires und Handlung; das Voice-over nennt Rangnamen und Fakten.
-- Bild 01: genau eine kurze gut lesbare deutsche Überschrift, wie im CONTENT_PLAN vorgegeben.
-- Ab Bild 02: absolut keine sichtbaren Buchstaben, Zahlen, Zeichen, Rangetiketten, Bildschirmtexte, Sprechblasen oder Pseudo-Schrift. Auch kein englischer oder italienischer Rangname.
-- Alle bildgenerierenden Anweisungen sind auf Deutsch; Fachwörter im Prompt dienen nur zur Einordnung, nicht als Bildtext.
-- Figuren groß und wiedererkennbar; Blickkontakt, Entscheidungen, unterschiedliche Handlungen und wechselnde Kamera statt identischen kleinen Stickmen auf weißen Charts.
-- In jedem 5er-Block mindestens vier lebendige Szenen mit Figuren, höchstens ein textfreies abstrahiertes Schaubild.
-- Generierte Bilder visuell prüfen; falsch beschriftete, textlastige, steife oder nicht-stiltreue Bilder neu erzeugen. Das kann nicht allein durch einen Prompt-Texttest garantiert werden.
+**Immer zuerst das Skript und die konkrete Aussage verstehen.** Passender Bildtyp statt erzwungener Figuren: szenische Illustration, Hierarchiepyramide, Organigramm, Vergleich, Ablaufgrafik, Zeitleiste, Karte, Infografik, Symbolbild oder Detailaufnahme. Es gibt keine Figuren- oder Diagrammquoten.
 
-## Bildwelt V8 – verbindlich
+Jede V9-Szene in `99-tech/SCENE_PLAN.json` enthält `anchor` (echter Skriptwortlaut), `message` (genaue Kernaussage), `visualType`, `visual` (konkrete kreative Darstellung), mindestens zwei `elements` und ggf. `labels` (max. sieben kurze überprüfte Begriffe). Die Beschriftung ist auch ab Bild 02 **erlaubt**, wenn sie Fakten, Beziehungen oder Reihenfolgen erklärt. Das Cover trägt weiterhin eine 1–4-Wort-Headline.
 
-StrichModus bedeutet charaktervolle, lebendige Strichmännchen in echten Szenen – keine Präsentation aus Schaubildern. Jeder Haupt-Stickman muss über kleinen Farbakzent, Gesicht, Pose und wiederkehrende Requisite sofort wiedererkennbar sein. Pro 5er-Block mindestens 4 dramatisierte, figurengetragene Alltagsszenen. Weniger als 15 % textfreie Schema-Metaphern über das Gesamtvideo.
+Die gemeinsame Bildwelt besteht aus handgezeichneten dunklen Tuschekonturen, klarem Comic-Editorial-Design und wiederkehrenden Petrol-, Creme-, Ocker- und Rotakzenten. Wiederkehrende Strichfiguren bleiben konsistent, **müssen jedoch nicht in jedem Bild vorkommen**. Rangfolge, Orte, Karten, Rollen und konkrete Bildaussage vor Freigabe prüfen. Bilder mit falschem Text, falscher Struktur oder bloßer Dekoration neu generieren. Google-Flow-Ausgaben weiterhin als vollständige Fünferblöcke prüfen und sicher importieren.
 
-Bild 01: nur 1–4 GROSS lesbare deutsche Wörter. Ab Bild 02: KEINE BILDSCHRIFT, keine englischen Begriffe, keine Zahlen, keine Schildertexte, keine Infografik-Beschriftungen, keine Pseudo-Schrift. Rang/Struktur in Szenen durch Größenunterschied, Haltung, Beziehungen und Requisiten vermitteln. Sprecher erläutert die Inhalte.
+**Entscheidungsregeln, Beispiele und Qualitätschecks:** `youtube/_intern/SCENE_VISUAL_GUIDE_V9.md`. Neue Projektordner erhalten automatisch `99-tech/VISUAL_BRIEF.md`. Frühere V8-Projekte werden nicht automatisch verändert.
 
-Es gilt weiter echte Stickman-Anatomie V7. Google Flow muss nach jedem Fünferblock auf Bilderzahl, Fehler, Figuren, Ausdruck, lebendige Situation und Schriftfreiheit visuell geprüft werden. Fehlerhafte/fehlende Bilder neu erzeugen. Nicht einzeln herunterladen, sondern am Ende gesammelt importieren.
-
-## Bildwelt ab Visual-Policy V7 – verpflichtend
-
-- **StrichModus zeigt nur klassische Strichmännchen.** Ein einfacher Kreis-/Ovalkopf, ein Rumpfstrich, Stricharme, Strichbeine. Kleidung und Requisiten flach, kein voll gezeichneter menschlicher Cartoonkörper.
-- In **jedem** Einzelprompt steht die vollständige STICKMAN-ANATOMIE-Anweisung, nicht nur einmal oben in der Masterdatei.
-- Der Flow-Compiler lehnt bei neu erstellten V7-Projekten fehlende Strichmännchen-Prompts ab.
-- Bei Google Flow nach jedem 5er-Block **jedes tatsächliche Bild anschauen**: erkennbare Strichfigur? keine breiten menschlichen Arme/Beine, kein modelliertes Gesicht? Wenn nicht, falsch und erneut erzeugen. Textprüfung allein kann die Bildqualität nicht sicherstellen.
-- Bei der Unsichtbar-Komödie: Hauptfigur bis Mitternacht ohne Kopf/Haut, vereinfachte flache Kleidung statt voluminöser menschlicher Körper; alle sichtbaren Nebenfiguren reine Strichmännchen.
+---
 
 # Workflow V9
 
