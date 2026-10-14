@@ -1,20 +1,11 @@
 # ALLE BILDPROMPTS — {{VIDEO_TITLE}}
 
-Google-Flow-Regel: 5er-Blöcke bilden; nach jedem Block alle fünf Bilder auf vollständige Anzahl, einheitliche unverwechselbare Stickman-Figuren, lebendige Handlung und Schriftfreiheit prüfen. Fehlende oder falsche Bilder erneut erzeugen; erst am Ende gesammelt herunterladen und automatisch importieren.
+Google Flow: exakt 5 Bilder pro Produktionsbatch erzeugen und jedes auf Motiv, Aussage, sichtbare Worte, Reihenfolge und Vollständigkeit prüfen. Bei falschen/fehlenden Bildern gezielt neu erzeugen. Nach Abschluss alles gesammelt herunterladen und korrekt zuordnen.
 
 ## VERBINDLICHE BILDWELT
 
-Jeder Bildprompt ist eigenständig auf Deutsch. Klassische Strichmännchen mit rundem Kopf, dünnem Rumpf und Stricharmen/-beinen. Deutlich erkennbare Hauptfiguren: eigene kleine Farbsymbole, markante Mimik, einzigartige Körpersprache. Abwechslungsreiche filmische Schauplätze, kräftige harmonische Farben, Vordergrund/Mittelgrund/Hintergrund. Mindestens 85 % figurengetragene Erzählbilder, höchstens 15 % textfreie Übersicht. Kein unlesbares Infografik-Chaos und keine langweiliger Folien. Das vorhandene Skript wird durch Bilder erlebt, nicht als Text wiedergegeben.
+StrichModus V9 – dieselbe handgezeichnete 2D-Editorial-Comicwelt mit dunkel getuschten Konturen, Cremetönen, Nachtpetrol, Ocker, gedämpftem Rot und einzelnen starken Akzenten. Kein Fotorealismus, kein 3D, keine Pseudo-Schrift.
 
-Bild 01: 1–4 große deutsche Cover-Wörter. ALLE ANDEREN BILDER 100 % TEXTFREI: weder englische noch deutsche Begriffe, Zahlen, Logos, Sprechblasen oder pseudo-lesbare Schrift. Deutsche Produktionsanweisungen bedeuten niemals sichtbaren Text.
+**Es gibt KEINE feste Stickman-Quote:** Bei Handlungen dürfen lebendige klassische Strichfiguren auftreten. Bei Erklärungen sind beschriftete Hierarchiepyramiden, Organigramme, Vergleiche, Ablaufdiagramme, Karten, Zeitleisten und Informationsgrafiken ausdrücklich erwünscht. Text auch auf Bild 02 ff. erlaubt, wenn er zur Erklärung beiträgt – kurze, überprüfte Begriffe statt Textwänden. Das Cover hat 1–4 deutsche Wörter, genau einmal.
 
-Jeder Einzelprompt enthält den vollständigen V7-Anatomietext sowie die Marker „LEBENDIGE SZENE:“ und ab Bild 02 „KEINE BILDSCHRIFT“. Ein Bildmoment zeigt klar die konkrete Handlung statt eine Rollen-Pyramide zu beschriften.
-
-## Bild 01 — COVER
-ÜBERSCHRIFT: "[KURZE DEUTSCHE ÜBERSCHRIFT]"
-BILDPROMPT:
-[VOLLSTÄNDIGE EIGENSTÄNDIGE DEUTSCHE BESCHREIBUNG DER LEBENDIGEN SZENE INKLUSIVE STICKMAN-ANATOMIE; NUR OBIGE ÜBERSCHRIFT EINMAL ALS TEXT IM BILD]
-
-## Bild 02
-BILDPROMPT:
-[LEBENDIGE SZENE, STICKMAN-ANATOMIE, SCHRIFTFREIHEIT, EINZIGARTIGE STICKMAN-PERSONEN, INTERAKTION, FARBIGE ORTE, KEINE BILDSCHRIFT]
+**WICHTIG:** Diese Datei wird erst durch `npm run compile:flow -- --dir "youtube/..."` aus dem inhaltlich konkreten `99-tech/SCENE_PLAN.json` für jedes Bild erzeugt. Ein bloßer generischer Stickman-Prompt ersetzt keinen Bildplan. Pro Szene `anchor`, `message`, `visualType`, `visual`, `elements` und bei Erklärgrafiken `labels` angeben. Vorlage und Entscheidungsregeln in `youtube/_intern/SCENE_VISUAL_GUIDE_V9.md`.
