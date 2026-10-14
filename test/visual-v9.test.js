@@ -56,7 +56,7 @@ test('Redaktionelle V9-Szenen sind valide und brauchen keine Figurenquote',()=>{
   assert.equal(validateEditorialScenes(scenes.map((s,i)=>i===1?{...s,visualType:'unbekannt'}:s)).passed,false);
   assert.equal(validateEditorialScenes(scenes.map((s,i)=>i===2?{...s,labels:[]}:s)).passed,false);
   assert.equal(validateEditorialScenes(scenes.map((s,i)=>i===3?{...s,message:'vage'}:s)).passed,false);
-  assert.equal(validateEditorialScenes(scenes.map((s,i)=>i===4?{...s,visual:scenes[3].visual}:s)).passed,true); // Eine gleiche Bildwelt allein kein Dopplungsfehler, anderer Bildtyp.
+  assert.equal(validateEditorialScenes(scenes.map((s,i)=>i===4?{...s,visual:scenes[3].visual}:s)).passed,false); // Ein kopierter konkreter Bildinhalt wird auch bei anderem Bildtyp abgelehnt.
 });
 
 test('Google Flow V9 erzeugt spezifische Hierarchie-, Vergleichs- und Kartenbilder mit deutschen Labels',async()=>{
