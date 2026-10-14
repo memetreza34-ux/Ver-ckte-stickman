@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { arg, fileSize, isMain, listFinalImages, projectPaths, readJson, sha256, writeJson } from '../lib/pipeline.js';
+import { arg, fileSize, isMain, listFinalImages, projectPaths, readJson, sha256, sha256Text, writeJson } from '../lib/pipeline.js';
 
 const validStatuses=new Set(['pending','approved','rejected']);
 const escapeHtml=(s)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -20,6 +20,7 @@ export function validateImageReview(saved,images){
   for(const image of images){
     const entry=byNumber.get(image.imageNumber);
     if(!entry||entry.sha256!==image.sha256)errors.push('Review fehlt oder Bild wurde seit der Freigabe ersetzt: Bild '+image.imageNumber);
+    else if(image.briefSha256&&entry.briefSha256!==image.briefSha256)errors.push('Bildbriefing hat sich seit der Freigabe geändert: Bild '+image.imageNumber);
     else if(!validStatuses.has(entry.status))errors.push('Ungültiger Review-Status bei Bild '+image.imageNumber);
     else if(entry.status==='approved')approved.push(image.imageNumber);
   }
@@ -32,17 +33,19 @@ function htmlDocument(videoId,items){
     return '<article class="card"><div class="photo"><img src="'+file+'" loading="lazy" alt="Bild '+x.imageNumber+'"></div>'
       +'<div class="body"><h2>Bild '+String(x.imageNumber).padStart(2,'0')+'</h2>'
       +'<p class="anchor">'+escapeHtml(x.startAnchor)+'</p>'
-      +'<p>'+escapeHtml(x.visualPurpose)+'</p>'
-      +'<label>Bildprüfung <select data-review data-number="'+x.imageNumber+'" data-sha="'+x.sha256+'">'
+      +'<p><b>Bildtyp: '+escapeHtml(x.visualType||'Szenenbild')+'</b></p>'
+      +'<p><b>Das Bild muss erklären:</b> '+escapeHtml(x.visualPurpose)+'</p>'
+      +(x.visibleLabels?.length?'<p><b>Zu kontrollierende Beschriftungen:</b> '+escapeHtml(x.visibleLabels.join(' · '))+'</p>':'')
+      +'<label>Bildprüfung <select data-review data-number="'+x.imageNumber+'" data-sha="'+x.sha256+'" data-brief="'+x.briefSha256+'">'
       +['pending','approved','rejected'].map(v=>'<option value="'+v+'"'+(v===x.status?' selected':'')+'>'+({pending:'Noch prüfen',approved:'Freigeben',rejected:'Neu erzeugen'}[v])+'</option>').join('')
       +'</select></label><label>Notiz <input data-note="'+x.imageNumber+'" value="'+escapeHtml(x.comment??'')+'" placeholder="Optionaler Fehlerhinweis"></label></div></article>';
   }).join('\n');
   return '<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
     +'<title>Bildkontrolle – '+escapeHtml(videoId)+'</title>'
     +'<style>body{font:16px system-ui,sans-serif;background:#12151b;color:#e5e7eb;margin:0}header{position:sticky;top:0;background:#161b23;padding:14px 24px;z-index:2;display:flex;gap:18px;flex-wrap:wrap;align-items:center;border-bottom:1px solid #36404b}button{background:#70ded0;border:0;border-radius:6px;padding:10px 14px;cursor:pointer;font-weight:700}main{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;padding:20px}.card{background:#202630;border:1px solid #374151;border-radius:12px;overflow:hidden}.photo{aspect-ratio:16/9;background:#07090c}.photo img{width:100%;height:100%;object-fit:contain}.body{padding:14px}.body h2{margin:0 0 8px;font-size:18px}.body p{font-size:13px;line-height:1.5;color:#cbd5e1}.body .anchor{font-weight:700;color:#fff}label{display:block;margin:12px 0 0;font-size:13px}select,input{box-sizing:border-box;margin-top:5px;background:#0d1118;color:#fff;border:1px solid #4b5563;border-radius:6px;padding:8px;width:100%}small{color:#9ca3af}</style></head><body>'
-    +'<header><strong>Bildkontrolle: '+escapeHtml(videoId)+'</strong><small>Jede Szene auf echte Stickman-Anatomie, Textfreiheit, Stil, Figuren und Reihenfolge prüfen.</small><button id="download">Prüfbericht als JSON speichern</button></header>'
+    +'<header><strong>Bildkontrolle: '+escapeHtml(videoId)+'</strong><small>Jede Szene gegen Skriptanker und Kernaussage prüfen: Bildtyp, Aussage, korrekte Struktur, lesbare Labels und einheitlichen Illustrationsstil. Bei Figuren zusätzlich Stickman-Anatomie prüfen.</small><button id="download">Prüfbericht als JSON speichern</button></header>'
     +'<main>'+cards+'</main>'
-    +'<script>document.getElementById("download").addEventListener("click",function(){const images=Array.from(document.querySelectorAll("select[data-review]")).map(el=>({imageNumber:Number(el.dataset.number),sha256:el.dataset.sha,status:el.value,comment:document.querySelector("input[data-note=\\""+el.dataset.number+"\\"]").value}));const data={schemaVersion:1,videoId:'+JSON.stringify(videoId)+',images};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="IMAGE_REVIEW_APPROVED.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);});</script>'
+    +'<script>document.getElementById("download").addEventListener("click",function(){const images=Array.from(document.querySelectorAll("select[data-review]")).map(el=>({imageNumber:Number(el.dataset.number),sha256:el.dataset.sha,briefSha256:el.dataset.brief,status:el.value,comment:document.querySelector("input[data-note=\\""+el.dataset.number+"\\"]").value}));const data={schemaVersion:1,videoId:'+JSON.stringify(videoId)+',images};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="IMAGE_REVIEW_APPROVED.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);});</script>'
     +'</body></html>';
 }
 
@@ -60,9 +63,12 @@ export async function createImageReview(projectDirectory){
     if(!image||!scene)throw new Error('Bild oder Szenen-Mapping fehlt: '+number);
     if((await fileSize(image.path))===0)throw new Error('Leere Bilddatei: '+image.name);
     const hash=await sha256(image.path),previous=prior.get(number);
-    const keep=previous?.sha256===hash&&validStatuses.has(previous.status);
-    items.push({imageNumber:number,sha256:hash,startAnchor:String(scene.startAnchor??''),
-      visualPurpose:String(scene.visualPurpose??''),status:keep?previous.status:'pending',comment:keep?String(previous.comment??''):''});
+    const brief={startAnchor:String(scene.startAnchor??''),visualPurpose:String(scene.visualPurpose??''),
+      visualType:String(scene.visualType??''),visibleLabels:scene.visibleLabels??[]};
+    const briefSha256=sha256Text(JSON.stringify(brief));
+    const keep=previous?.sha256===hash&&previous?.briefSha256===briefSha256&&validStatuses.has(previous.status);
+    items.push({imageNumber:number,sha256:hash,...brief,briefSha256,
+      status:keep?previous.status:'pending',comment:keep?String(previous.comment??''):''});
   }
   const review={schemaVersion:1,videoId:meta.videoId,images:items};
   await writeJson(reviewFile(p),review);
