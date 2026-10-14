@@ -142,22 +142,20 @@ Will ich wissen, **was als Nächstes passiert**?
 
 Wenn die Antwort nicht klar Ja ist, wird das Skript überarbeitet.
 
-## 8. Bilder
+## 8. Bilder: redaktionelle Bildgestaltung V9
 
-Richtwert weiter ca. 30–42 Bildmomente pro 100 Sekunden, aber adaptiv.
+Jede Szene visualisiert eine **bestimmte gesprochene Kernaussage**. Bildtyp auf Erkenntnisziel abstimmen, nicht auf Figurenzahl:
 
-Ein neues Bild ist sinnvoll bei:
-- neuer Information
-- neuem Fall
-- neuer Stufe
-- Handlung
-- Konsequenz
-- Ortswechsel
-- visueller Pointe
-- Regelwechsel
-- Transformation
+- Handlung / Entscheidung / Erlebnis → lebendige Comic-Szene, bei Bedarf mit klaren Strichfiguren.
+- Ränge / Macht → beschriftete Pyramide; Weisungswege → Organigramm.
+- Unterschiede → Split-Screen; Vorgehen → Ablauf; Zeiten → Zeitleiste.
+- Orte → Karte; belegte Werte → Infografik; Einzelbeweis → Detailaufnahme.
 
-Kein ein-Satz-ein-Bild-Zwang und keine künstlich langen Holds nur für Zoom/Pan.
+Keine Mindestquote für Figuren oder Diagramme. Kurze, faktisch korrekte Bildbeschriftungen sind willkommen, wenn sie mehr erklären als reine Figuren. Die wiedererkennbare Marke entsteht durch gemeinsame Tusche-Konturen, Creme/Petrol/Ocker/Rot, typografische Klarheit und einen handgezeichneten Comic-Look. Keine austauschbaren Figuren, Textwände oder falsche Rangfolgen.
+
+`SCENE_PLAN.json` verlangt `anchor`, `message`, `visualType`, `visual`, `elements`, gegebenenfalls `labels`. Konkrete Regeln/Beispiele: `youtube/_intern/SCENE_VISUAL_GUIDE_V9.md`.
+
+Bilddichte weiterhin adaptiv (ca. 30–42 Bildmomente/100 Sekunden). Neue Bilder bei neuer Information, Fall, Stufe, Handlung, Konsequenz, Ortswechsel, Pointe oder Wechsel der erklärten Beziehung; keine künstlichen Schnitte ohne Erkenntnisgewinn.
 
 ## 9. Cover + Export
 
