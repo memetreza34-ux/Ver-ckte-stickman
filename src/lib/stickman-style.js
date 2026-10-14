@@ -67,7 +67,8 @@ export function validateEditorialScenes(scenes,{maxLabels=7,maxWordsPerLabel=4}=
       if(labels.some(x=>typeof x!=='string'||!x.trim()||x.trim().split(/\s+/).length>maxWordsPerLabel))
         errors.push('Bild '+n+': ein sichtbares Label ist leer/zu lang oder nicht als Text angegeben.');
       if(labels.some(x=>/[<>{}]/.test(x)))errors.push('Bild '+n+': Platzhalter in Bildbeschriftungen.');
-      if(V9_GRAPHIC_TYPES.has(kind)&&labels.length<2)errors.push('Bild '+n+': erklärende '+kind+' braucht mindestens zwei überprüfte, kurze Labels.');
+      if(i>0&&V9_GRAPHIC_TYPES.has(kind)&&labels.length<2)errors.push('Bild '+n+': erklärende '+kind+' braucht mindestens zwei überprüfte, kurze Labels.');
+      if(i===0&&labels.length)errors.push('Bild 1: Cover trägt nur die eine Headline aus dem Content-Plan, keine zusätzlichen Labels.');
       if(kind==='szene'&&labels.length>2)errors.push('Bild '+n+': eine Spielszenen-Illustration darf maximal zwei Kurzlabels haben.');
     }
     if(i>0&&String(scene.visual??'').trim()===String(scenes[i-1]?.visual??'').trim())
