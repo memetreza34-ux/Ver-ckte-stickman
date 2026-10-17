@@ -22,8 +22,8 @@
   "introVisualPolicy": {
     "windowSeconds": 10,
     "minimumImageStartsInWindow": 4,
-    "maximumCoverHoldSeconds": 2.2,
-    "maximumAnyHoldSecondsInWindow": 3.2,
+    "maximumCoverHoldSeconds": 3.0,
+    "maximumAnyHoldSecondsInWindow": 4.5,
     "phase1ScriptCharacterWindow": 520
   },
   "flowProductionPolicy": {

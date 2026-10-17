@@ -10,10 +10,13 @@ STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Ein
 
 Google Flow: Pro Batch fünf Bilder erzeugen; jeden Stil, Anzahl, Schriftfreiheit prüfen, Fehler neu erzeugen; nie einzeln herunterladen/umbenennen; am Ende gesammelt importieren.
 
-
-## VERBINDLICHER 5ER-BLOCK
-Bilder 96 bis 100 separat erzeugen. Filmische Handlungen, große unverwechselbare Strichmännchen, keine Bildschrift, keine textlastigen Diagramme. Alle Bilder prüfen, falsche/fehlende neu generieren. Erst am Ende gesammelt importieren.
-
+## VERBINDLICHER 5ER-PRODUKTIONSBLOCK
+Erzeuge in diesem Durchgang ausschließlich Bild 96 bis Bild 100.
+Dieser Block enthält exakt fünf Bilder. Alle fünf Bilder vollständig erzeugen, bevor der nächste Block begonnen wird.
+STILKONTROLLE: Figuren mit rundem Kopf, Stricharmen/-beinen, großem Ausdruck, dynamischer Pose und einheitlichen Accessoires. Ab Bild 02 keinerlei Schrift im Bild; nur Cover hat deutsche Überschrift. Keine Organigramm-Folien. Falsche Bilder erneut erzeugen.
+Die Ergebnisse während der Produktion NICHT einzeln herunterladen und NICHT manuell umbenennen.
+Erst wenn alle Blöcke des Videos fertig sind, alle erzeugten Bilder einmal gesammelt herunterladen.
+Danach die Bilder mit `npm run import:flow-images -- --dir "youtube/..." --source "DOWNLOAD-ORDNER"` automatisch nach `Bild NN.png` importieren.
 ## Bild 96
 BILDPROMPT:
 16:9. LEBENDIGE SZENE: Zwei Führungspersonen werfen sich misstrauische Blicke zu; unten nähern sich neutrale Ermittler durch eine beleuchtete Gasse. Tiefenstaffelung durch eine Tür, klarer Hell-Dunkel-Kontrast mit warmen Gesichtern. Schauplatz: dunkelgrünes Hinterzimmer und belebte Straße. STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Einfacher Kreis- oder Ovalkopf, Gesicht nur mit Punktaugen und Strichmund. Der Rumpf ist ein einzelner dünner schwarzer Strich. Stricharme und Strichbeine sind jeweils dünne einzelne schwarze Linien, keine anatomisch modellierten Schultern, Arme, Hände, Oberschenkel oder Körper. Kleidung nur flache kleine Farbsymbole an Strichkörpern, NIEMALS als Körpervolumen. KEINE NORMALEN COMIC-MENSCHEN, KEINE VOLUMINÖSEN MENSCHENKÖRPER, kein Anime, keine realistischen Gesichter, keine halb-realistischen Cartoonfiguren. Auch in einem detailreichen Raum müssen Stricharme und Strichbeine eindeutig als Linien erkennbar bleiben. Wiederkehrende Stickman-Rollen: Außenseiter trägt eine grüne Kappe, Mitglied eine feine rote Krawatte, Gruppenleiter einen kurzen weinroten Schal, Stellvertreter einen blauen Kragen, Berater eine eckige Brille und ein kleines gelbes Notizbuch, Chef hat markante Augenbrauen und ein winziges weinrotes Revers. Nur flache Accessoires auf Linienkörpern; Gesichter und Posen lebendig, keine massigen Comic-Menschen. KEINE BILDSCHRIFT: absolut KEINE lesbaren Wörter, Buchstaben, Zahlen, Titel, Schildertexte, Sprechblasen, Beschriftungen oder Pseudo-Schrift. Alle Papier-, Bildschirm- und Wandflächen ohne Zeichen. Auch keine englischen oder italienischen Wörter. Filmische 2D-Stickmanzeichnung mit lebendigen Gesten, klarer Handlung, Vordergrund, Mittelgrund und atmosphärischer Kulisse. Kein 3D, kein Foto, kein Anime und kein Wasserzeichen.

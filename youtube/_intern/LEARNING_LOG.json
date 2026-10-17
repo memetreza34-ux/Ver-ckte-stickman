@@ -2,5 +2,55 @@
   "schemaVersion": 1,
   "priority": 1,
   "description": "Wird vom Post-Video-Review nach jedem erfolgreichen Export aktualisiert. Qualitatives Feedback muss belegt oder ausdrücklich eingegeben sein.",
-  "entries": []
+  "entries": [
+    {
+      "videoId": "2026-KW42_mafia-hierarchie-erklaert",
+      "title": "Die Hierarchie der Mafia erklärt – vom Außenstehenden bis zum Boss",
+      "reviewPath": "youtube/2026-KW42/mafia-hierarchie-erklaert/99-tech/POST_VIDEO_REVIEW.json",
+      "updatedAt": "2026-10-14T04:47:47.892Z",
+      "metrics": {
+        "durationSeconds": 446.7,
+        "targetDurationSeconds": 402,
+        "deltaSeconds": 44.7,
+        "audioDurationSeconds": 445.39,
+        "scriptWords": 1214,
+        "wordsPerMinute": 163.54,
+        "imageCount": 125,
+        "imagesPer100Seconds": 27.98,
+        "averageImageSeconds": 3.57,
+        "introImageStarts": 5,
+        "coverSeconds": 2.63,
+        "longHoldImageNumbers": [
+          15
+        ]
+      },
+      "improvements": [
+        {
+          "id": "duration-calibration",
+          "area": "Sprechdauer",
+          "evidence": "Plan 402s; tatsächlich 446.7s; 163.54 Wörter/Minute.",
+          "action": "Wortzahl des nächsten Skripts anhand des realen Voice-over-Tempos kalibrieren.",
+          "priority": "high",
+          "status": "evidence-based"
+        },
+        {
+          "id": "visual-density-low",
+          "area": "Bildplanung",
+          "evidence": "27.98 Bilder pro 100s, Ziel mindestens 30.",
+          "action": "Mehr eigenständige, sinnvolle Bildmomente bei Szenen- und Informationswechseln planen.",
+          "priority": "high",
+          "status": "evidence-based"
+        },
+        {
+          "id": "long-image-holds",
+          "area": "Schnitt",
+          "evidence": "1 Bildpassagen länger als 5.8s.",
+          "action": "Lange Einstellungen gezielt durch bessere Szenenbilder ersetzen statt den Zoom zu strecken.",
+          "priority": "high",
+          "status": "evidence-based"
+        }
+      ],
+      "humanReviewStatus": "pending"
+    }
+  ]
 }

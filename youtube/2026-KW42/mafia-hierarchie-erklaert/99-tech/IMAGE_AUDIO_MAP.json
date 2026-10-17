@@ -10,9 +10,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 1.9,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 0,
+      "actualEndSeconds": 2.62,
+      "alignmentConfidence": 0.972
     },
     {
       "imageNumber": 2,
@@ -23,9 +23,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 2.62,
+      "actualEndSeconds": 4.64,
+      "alignmentConfidence": 0.994
     },
     {
       "imageNumber": 3,
@@ -36,9 +36,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 4.64,
+      "actualEndSeconds": 7.12,
+      "alignmentConfidence": 0.983
     },
     {
       "imageNumber": 4,
@@ -49,9 +49,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 7.12,
+      "actualEndSeconds": 8.68,
+      "alignmentConfidence": 0.99
     },
     {
       "imageNumber": 5,
@@ -62,9 +62,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 8.68,
+      "actualEndSeconds": 11.36,
+      "alignmentConfidence": 0.983
     },
     {
       "imageNumber": 6,
@@ -75,9 +75,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 11.36,
+      "actualEndSeconds": 12.96,
+      "alignmentConfidence": 0.761
     },
     {
       "imageNumber": 7,
@@ -88,9 +88,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 12.96,
+      "actualEndSeconds": 18.3,
+      "alignmentConfidence": 0.986
     },
     {
       "imageNumber": 8,
@@ -101,9 +101,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 18.3,
+      "actualEndSeconds": 22.7,
+      "alignmentConfidence": 0.987
     },
     {
       "imageNumber": 9,
@@ -114,9 +114,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 22.7,
+      "actualEndSeconds": 25.5,
+      "alignmentConfidence": 0.995
     },
     {
       "imageNumber": 10,
@@ -127,9 +127,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 25.5,
+      "actualEndSeconds": 27.4,
+      "alignmentConfidence": 0.902
     },
     {
       "imageNumber": 11,
@@ -140,9 +140,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 27.4,
+      "actualEndSeconds": 30.66,
+      "alignmentConfidence": 0.803
     },
     {
       "imageNumber": 12,
@@ -153,9 +153,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 30.66,
+      "actualEndSeconds": 34.46,
+      "alignmentConfidence": 0.88
     },
     {
       "imageNumber": 13,
@@ -166,9 +166,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 34.46,
+      "actualEndSeconds": 38,
+      "alignmentConfidence": 0.987
     },
     {
       "imageNumber": 14,
@@ -179,9 +179,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 38,
+      "actualEndSeconds": 41.7,
+      "alignmentConfidence": 0.973
     },
     {
       "imageNumber": 15,
@@ -192,9 +192,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 41.7,
+      "actualEndSeconds": 47.88,
+      "alignmentConfidence": 0.984
     },
     {
       "imageNumber": 16,
@@ -205,9 +205,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 47.88,
+      "actualEndSeconds": 50.96,
+      "alignmentConfidence": 0.98
     },
     {
       "imageNumber": 17,
@@ -218,9 +218,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 50.96,
+      "actualEndSeconds": 55.68,
+      "alignmentConfidence": 0.87
     },
     {
       "imageNumber": 18,
@@ -231,9 +231,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 55.68,
+      "actualEndSeconds": 59.08,
+      "alignmentConfidence": 0.979
     },
     {
       "imageNumber": 19,
@@ -244,9 +244,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 59.08,
+      "actualEndSeconds": 63.08,
+      "alignmentConfidence": 0.968
     },
     {
       "imageNumber": 20,
@@ -257,9 +257,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 63.08,
+      "actualEndSeconds": 66.14,
+      "alignmentConfidence": 0.977
     },
     {
       "imageNumber": 21,
@@ -270,9 +270,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 66.14,
+      "actualEndSeconds": 70.52,
+      "alignmentConfidence": 0.891
     },
     {
       "imageNumber": 22,
@@ -283,9 +283,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 70.52,
+      "actualEndSeconds": 74.86,
+      "alignmentConfidence": 0.861
     },
     {
       "imageNumber": 23,
@@ -296,9 +296,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 74.86,
+      "actualEndSeconds": 77.94,
+      "alignmentConfidence": 0.987
     },
     {
       "imageNumber": 24,
@@ -309,9 +309,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 77.94,
+      "actualEndSeconds": 79.76,
+      "alignmentConfidence": 0.981
     },
     {
       "imageNumber": 25,
@@ -322,9 +322,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 79.76,
+      "actualEndSeconds": 83,
+      "alignmentConfidence": 0.988
     },
     {
       "imageNumber": 26,
@@ -335,9 +335,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 83,
+      "actualEndSeconds": 87.38,
+      "alignmentConfidence": 0.974
     },
     {
       "imageNumber": 27,
@@ -348,9 +348,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 87.38,
+      "actualEndSeconds": 89.28,
+      "alignmentConfidence": 0.996
     },
     {
       "imageNumber": 28,
@@ -361,9 +361,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 89.28,
+      "actualEndSeconds": 92.18,
+      "alignmentConfidence": 0.988
     },
     {
       "imageNumber": 29,
@@ -374,9 +374,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 92.18,
+      "actualEndSeconds": 95.7,
+      "alignmentConfidence": 0.853
     },
     {
       "imageNumber": 30,
@@ -387,9 +387,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 95.7,
+      "actualEndSeconds": 99.4,
+      "alignmentConfidence": 0.984
     },
     {
       "imageNumber": 31,
@@ -400,9 +400,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 99.4,
+      "actualEndSeconds": 103.16,
+      "alignmentConfidence": 0.989
     },
     {
       "imageNumber": 32,
@@ -413,9 +413,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 103.16,
+      "actualEndSeconds": 105.38,
+      "alignmentConfidence": 0.865
     },
     {
       "imageNumber": 33,
@@ -426,9 +426,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 105.38,
+      "actualEndSeconds": 108.1,
+      "alignmentConfidence": 0.998
     },
     {
       "imageNumber": 34,
@@ -439,9 +439,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 108.1,
+      "actualEndSeconds": 111.26,
+      "alignmentConfidence": 0.862
     },
     {
       "imageNumber": 35,
@@ -452,9 +452,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 111.26,
+      "actualEndSeconds": 113.7,
+      "alignmentConfidence": 0.971
     },
     {
       "imageNumber": 36,
@@ -465,9 +465,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 113.7,
+      "actualEndSeconds": 116.44,
+      "alignmentConfidence": 0.874
     },
     {
       "imageNumber": 37,
@@ -478,9 +478,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 116.44,
+      "actualEndSeconds": 119.78,
+      "alignmentConfidence": 0.992
     },
     {
       "imageNumber": 38,
@@ -491,9 +491,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 119.78,
+      "actualEndSeconds": 124.08,
+      "alignmentConfidence": 0.938
     },
     {
       "imageNumber": 39,
@@ -504,9 +504,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 124.08,
+      "actualEndSeconds": 128.04,
+      "alignmentConfidence": 0.995
     },
     {
       "imageNumber": 40,
@@ -517,9 +517,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 128.04,
+      "actualEndSeconds": 131.56,
+      "alignmentConfidence": 0.975
     },
     {
       "imageNumber": 41,
@@ -530,9 +530,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 131.56,
+      "actualEndSeconds": 134.9,
+      "alignmentConfidence": 0.864
     },
     {
       "imageNumber": 42,
@@ -543,9 +543,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 134.9,
+      "actualEndSeconds": 138.8,
+      "alignmentConfidence": 0.874
     },
     {
       "imageNumber": 43,
@@ -556,9 +556,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 138.8,
+      "actualEndSeconds": 141.96,
+      "alignmentConfidence": 0.854
     },
     {
       "imageNumber": 44,
@@ -569,9 +569,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 141.96,
+      "actualEndSeconds": 145.34,
+      "alignmentConfidence": 0.96
     },
     {
       "imageNumber": 45,
@@ -582,9 +582,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 145.34,
+      "actualEndSeconds": 150,
+      "alignmentConfidence": 0.974
     },
     {
       "imageNumber": 46,
@@ -595,9 +595,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 150,
+      "actualEndSeconds": 153.96,
+      "alignmentConfidence": 0.977
     },
     {
       "imageNumber": 47,
@@ -608,9 +608,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 153.96,
+      "actualEndSeconds": 157.46,
+      "alignmentConfidence": 0.895
     },
     {
       "imageNumber": 48,
@@ -621,9 +621,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 157.46,
+      "actualEndSeconds": 160.78,
+      "alignmentConfidence": 0.932
     },
     {
       "imageNumber": 49,
@@ -634,9 +634,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 160.78,
+      "actualEndSeconds": 162.96,
+      "alignmentConfidence": 0.837
     },
     {
       "imageNumber": 50,
@@ -647,9 +647,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 162.96,
+      "actualEndSeconds": 165.32,
+      "alignmentConfidence": 0.832
     },
     {
       "imageNumber": 51,
@@ -660,9 +660,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 165.32,
+      "actualEndSeconds": 168.26,
+      "alignmentConfidence": 0.95
     },
     {
       "imageNumber": 52,
@@ -673,9 +673,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 168.26,
+      "actualEndSeconds": 170.4,
+      "alignmentConfidence": 0.959
     },
     {
       "imageNumber": 53,
@@ -686,9 +686,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 170.4,
+      "actualEndSeconds": 173.94,
+      "alignmentConfidence": 0.964
     },
     {
       "imageNumber": 54,
@@ -699,9 +699,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 173.94,
+      "actualEndSeconds": 177.8,
+      "alignmentConfidence": 0.754
     },
     {
       "imageNumber": 55,
@@ -712,9 +712,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 177.8,
+      "actualEndSeconds": 181.88,
+      "alignmentConfidence": 0.881
     },
     {
       "imageNumber": 56,
@@ -725,9 +725,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 181.88,
+      "actualEndSeconds": 186.28,
+      "alignmentConfidence": 0.993
     },
     {
       "imageNumber": 57,
@@ -738,9 +738,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 186.28,
+      "actualEndSeconds": 189.24,
+      "alignmentConfidence": 0.994
     },
     {
       "imageNumber": 58,
@@ -751,9 +751,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 189.24,
+      "actualEndSeconds": 193.3,
+      "alignmentConfidence": 0.97
     },
     {
       "imageNumber": 59,
@@ -764,9 +764,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 193.3,
+      "actualEndSeconds": 197.42,
+      "alignmentConfidence": 0.98
     },
     {
       "imageNumber": 60,
@@ -777,9 +777,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 197.42,
+      "actualEndSeconds": 201.34,
+      "alignmentConfidence": 0.896
     },
     {
       "imageNumber": 61,
@@ -790,9 +790,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 201.34,
+      "actualEndSeconds": 204.28,
+      "alignmentConfidence": 0.897
     },
     {
       "imageNumber": 62,
@@ -803,9 +803,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 204.28,
+      "actualEndSeconds": 205.76,
+      "alignmentConfidence": 0.966
     },
     {
       "imageNumber": 63,
@@ -816,9 +816,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 205.76,
+      "actualEndSeconds": 209.3,
+      "alignmentConfidence": 0.804
     },
     {
       "imageNumber": 64,
@@ -829,9 +829,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 209.3,
+      "actualEndSeconds": 212.74,
+      "alignmentConfidence": 0.986
     },
     {
       "imageNumber": 65,
@@ -842,9 +842,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 212.74,
+      "actualEndSeconds": 216.12,
+      "alignmentConfidence": 0.982
     },
     {
       "imageNumber": 66,
@@ -855,9 +855,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 216.12,
+      "actualEndSeconds": 219.7,
+      "alignmentConfidence": 0.885
     },
     {
       "imageNumber": 67,
@@ -868,9 +868,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 219.7,
+      "actualEndSeconds": 224.5,
+      "alignmentConfidence": 0.82
     },
     {
       "imageNumber": 68,
@@ -881,9 +881,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 224.5,
+      "actualEndSeconds": 228.34,
+      "alignmentConfidence": 0.887
     },
     {
       "imageNumber": 69,
@@ -894,9 +894,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 228.34,
+      "actualEndSeconds": 230.42,
+      "alignmentConfidence": 0.872
     },
     {
       "imageNumber": 70,
@@ -907,9 +907,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 230.42,
+      "actualEndSeconds": 232.3,
+      "alignmentConfidence": 0.894
     },
     {
       "imageNumber": 71,
@@ -920,9 +920,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 232.3,
+      "actualEndSeconds": 234.54,
+      "alignmentConfidence": 0.996
     },
     {
       "imageNumber": 72,
@@ -933,9 +933,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 234.54,
+      "actualEndSeconds": 238.14,
+      "alignmentConfidence": 0.886
     },
     {
       "imageNumber": 73,
@@ -946,9 +946,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 238.14,
+      "actualEndSeconds": 242.82,
+      "alignmentConfidence": 0.887
     },
     {
       "imageNumber": 74,
@@ -959,9 +959,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 242.82,
+      "actualEndSeconds": 246.4,
+      "alignmentConfidence": 0.982
     },
     {
       "imageNumber": 75,
@@ -972,9 +972,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 246.4,
+      "actualEndSeconds": 251.42,
+      "alignmentConfidence": 0.839
     },
     {
       "imageNumber": 76,
@@ -985,9 +985,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 251.42,
+      "actualEndSeconds": 255.2,
+      "alignmentConfidence": 0.91
     },
     {
       "imageNumber": 77,
@@ -998,9 +998,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 255.2,
+      "actualEndSeconds": 257.16,
+      "alignmentConfidence": 0.896
     },
     {
       "imageNumber": 78,
@@ -1011,9 +1011,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 257.16,
+      "actualEndSeconds": 259.96,
+      "alignmentConfidence": 0.992
     },
     {
       "imageNumber": 79,
@@ -1024,9 +1024,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 259.96,
+      "actualEndSeconds": 262.76,
+      "alignmentConfidence": 0.984
     },
     {
       "imageNumber": 80,
@@ -1037,9 +1037,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 262.76,
+      "actualEndSeconds": 267.42,
+      "alignmentConfidence": 0.88
     },
     {
       "imageNumber": 81,
@@ -1050,9 +1050,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 267.42,
+      "actualEndSeconds": 270.82,
+      "alignmentConfidence": 0.986
     },
     {
       "imageNumber": 82,
@@ -1063,9 +1063,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 270.82,
+      "actualEndSeconds": 274.32,
+      "alignmentConfidence": 0.906
     },
     {
       "imageNumber": 83,
@@ -1076,9 +1076,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 274.32,
+      "actualEndSeconds": 278.54,
+      "alignmentConfidence": 0.964
     },
     {
       "imageNumber": 84,
@@ -1089,9 +1089,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 278.54,
+      "actualEndSeconds": 282.54,
+      "alignmentConfidence": 0.983
     },
     {
       "imageNumber": 85,
@@ -1102,9 +1102,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 282.54,
+      "actualEndSeconds": 287.88,
+      "alignmentConfidence": 0.885
     },
     {
       "imageNumber": 86,
@@ -1115,9 +1115,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 287.88,
+      "actualEndSeconds": 290.14,
+      "alignmentConfidence": 0.996
     },
     {
       "imageNumber": 87,
@@ -1128,9 +1128,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 290.14,
+      "actualEndSeconds": 292.8,
+      "alignmentConfidence": 0.96
     },
     {
       "imageNumber": 88,
@@ -1141,9 +1141,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 292.8,
+      "actualEndSeconds": 297.16,
+      "alignmentConfidence": 0.801
     },
     {
       "imageNumber": 89,
@@ -1154,9 +1154,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 297.16,
+      "actualEndSeconds": 301.02,
+      "alignmentConfidence": 0.953
     },
     {
       "imageNumber": 90,
@@ -1167,9 +1167,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 301.02,
+      "actualEndSeconds": 306.22,
+      "alignmentConfidence": 0.989
     },
     {
       "imageNumber": 91,
@@ -1180,9 +1180,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 306.22,
+      "actualEndSeconds": 310.46,
+      "alignmentConfidence": 0.994
     },
     {
       "imageNumber": 92,
@@ -1193,9 +1193,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 310.46,
+      "actualEndSeconds": 315.38,
+      "alignmentConfidence": 0.996
     },
     {
       "imageNumber": 93,
@@ -1206,9 +1206,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 315.38,
+      "actualEndSeconds": 320.3,
+      "alignmentConfidence": 0.985
     },
     {
       "imageNumber": 94,
@@ -1219,9 +1219,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 320.3,
+      "actualEndSeconds": 324.04,
+      "alignmentConfidence": 0.993
     },
     {
       "imageNumber": 95,
@@ -1232,9 +1232,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 324.04,
+      "actualEndSeconds": 327.26,
+      "alignmentConfidence": 0.988
     },
     {
       "imageNumber": 96,
@@ -1245,9 +1245,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 327.26,
+      "actualEndSeconds": 331.6,
+      "alignmentConfidence": 0.969
     },
     {
       "imageNumber": 97,
@@ -1258,9 +1258,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 331.6,
+      "actualEndSeconds": 336.4,
+      "alignmentConfidence": 0.946
     },
     {
       "imageNumber": 98,
@@ -1271,9 +1271,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 336.4,
+      "actualEndSeconds": 340.26,
+      "alignmentConfidence": 0.991
     },
     {
       "imageNumber": 99,
@@ -1284,9 +1284,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 340.26,
+      "actualEndSeconds": 344.1,
+      "alignmentConfidence": 0.98
     },
     {
       "imageNumber": 100,
@@ -1297,9 +1297,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 344.1,
+      "actualEndSeconds": 347.68,
+      "alignmentConfidence": 0.994
     },
     {
       "imageNumber": 101,
@@ -1310,9 +1310,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 347.68,
+      "actualEndSeconds": 352.12,
+      "alignmentConfidence": 0.992
     },
     {
       "imageNumber": 102,
@@ -1323,9 +1323,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 352.12,
+      "actualEndSeconds": 356.18,
+      "alignmentConfidence": 0.981
     },
     {
       "imageNumber": 103,
@@ -1336,9 +1336,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 356.18,
+      "actualEndSeconds": 361.14,
+      "alignmentConfidence": 0.839
     },
     {
       "imageNumber": 104,
@@ -1349,9 +1349,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 361.14,
+      "actualEndSeconds": 365.66,
+      "alignmentConfidence": 0.986
     },
     {
       "imageNumber": 105,
@@ -1362,9 +1362,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 365.66,
+      "actualEndSeconds": 369.54,
+      "alignmentConfidence": 0.972
     },
     {
       "imageNumber": 106,
@@ -1375,9 +1375,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 369.54,
+      "actualEndSeconds": 372.56,
+      "alignmentConfidence": 0.964
     },
     {
       "imageNumber": 107,
@@ -1388,9 +1388,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 372.56,
+      "actualEndSeconds": 375.68,
+      "alignmentConfidence": 0.987
     },
     {
       "imageNumber": 108,
@@ -1401,9 +1401,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 375.68,
+      "actualEndSeconds": 377.9,
+      "alignmentConfidence": 0.865
     },
     {
       "imageNumber": 109,
@@ -1414,9 +1414,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 377.9,
+      "actualEndSeconds": 381.3,
+      "alignmentConfidence": 0.982
     },
     {
       "imageNumber": 110,
@@ -1427,9 +1427,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 381.3,
+      "actualEndSeconds": 384.76,
+      "alignmentConfidence": 0.987
     },
     {
       "imageNumber": 111,
@@ -1440,9 +1440,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 384.76,
+      "actualEndSeconds": 389.8,
+      "alignmentConfidence": 0.961
     },
     {
       "imageNumber": 112,
@@ -1453,9 +1453,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 389.8,
+      "actualEndSeconds": 393.62,
+      "alignmentConfidence": 0.974
     },
     {
       "imageNumber": 113,
@@ -1466,9 +1466,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 393.62,
+      "actualEndSeconds": 399.22,
+      "alignmentConfidence": 0.992
     },
     {
       "imageNumber": 114,
@@ -1479,9 +1479,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 399.22,
+      "actualEndSeconds": 404.22,
+      "alignmentConfidence": 0.985
     },
     {
       "imageNumber": 115,
@@ -1492,9 +1492,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 404.22,
+      "actualEndSeconds": 407.04,
+      "alignmentConfidence": 0.958
     },
     {
       "imageNumber": 116,
@@ -1505,9 +1505,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 407.04,
+      "actualEndSeconds": 410.62,
+      "alignmentConfidence": 0.971
     },
     {
       "imageNumber": 117,
@@ -1518,9 +1518,9 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 410.62,
+      "actualEndSeconds": 415.34,
+      "alignmentConfidence": 0.907
     },
     {
       "imageNumber": 118,
@@ -1531,9 +1531,9 @@
       "visualForm": "seitliche Bewegungsszene mit ausdrucksstarker Silhouette",
       "motionHint": "drift-up",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 415.34,
+      "actualEndSeconds": 419.16,
+      "alignmentConfidence": 0.97
     },
     {
       "imageNumber": 119,
@@ -1544,9 +1544,9 @@
       "visualForm": "Vogelperspektive eines echten Raumes mit handelnden Personen",
       "motionHint": "pan-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 419.16,
+      "actualEndSeconds": 422.6,
+      "alignmentConfidence": 0.954
     },
     {
       "imageNumber": 120,
@@ -1557,9 +1557,9 @@
       "visualForm": "räumlich tiefe Totale durch eine halb offene Tür",
       "motionHint": "drift-down",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 422.6,
+      "actualEndSeconds": 426.16,
+      "alignmentConfidence": 0.866
     },
     {
       "imageNumber": 121,
@@ -1570,9 +1570,9 @@
       "visualForm": "bewegte Halbtotalen-Perspektive auf Augenhöhe",
       "motionHint": "push-in",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 426.16,
+      "actualEndSeconds": 430.88,
+      "alignmentConfidence": 0.813
     },
     {
       "imageNumber": 122,
@@ -1583,9 +1583,9 @@
       "visualForm": "Nahaufnahme mit starkem emotionalem Blick",
       "motionHint": "focus-left",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 430.88,
+      "actualEndSeconds": 435.02,
+      "alignmentConfidence": 0.988
     },
     {
       "imageNumber": 123,
@@ -1596,9 +1596,9 @@
       "visualForm": "leichte Untersicht mit großer Figur im Vordergrund",
       "motionHint": "pan-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 435.02,
+      "actualEndSeconds": 439.38,
+      "alignmentConfidence": 0.995
     },
     {
       "imageNumber": 124,
@@ -1609,9 +1609,9 @@
       "visualForm": "weite filmische Szene mit Menschen im Mittelgrund",
       "motionHint": "pull-out",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 439.38,
+      "actualEndSeconds": 442.3,
+      "alignmentConfidence": 0.984
     },
     {
       "imageNumber": 125,
@@ -1622,9 +1622,11 @@
       "visualForm": "Über-Schulter-Blick auf andere Figuren",
       "motionHint": "focus-right",
       "plannedHoldSeconds": 3.227,
-      "actualStartSeconds": null,
-      "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "actualStartSeconds": 442.3,
+      "actualEndSeconds": 445.395,
+      "alignmentConfidence": 0.978
     }
-  ]
+  ],
+  "audioMasterFile": "99-tech/YOUTUBE_AUDIO_OPTIMIZED.wav",
+  "alignmentEvidenceFile": "99-tech/ALIGNMENT_REPORT.json"
 }

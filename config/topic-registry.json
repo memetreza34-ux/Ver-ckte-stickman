@@ -88,7 +88,7 @@
         "Die Hierarchie der amerikanischen Mafia erklärt",
         "Mafia-Hierarchie vom Anwärter bis Boss"
       ],
-      "status": "phase1-ready",
+      "status": "completed",
       "channelFitAtCreation": {
         "decision": "APPROVED_CHANNEL_FIT",
         "score": 9
@@ -98,7 +98,8 @@
         "score": 9
       },
       "createdAt": "2026-10-13T07:10:00+02:00",
-      "notes": "Reales Mafia-Strukturerklärvideo; Quellen FBI/DOJ. Keine Flow-Assets oder fertiges MP4."
+      "notes": "Reales Mafia-Strukturerklärvideo; Quellen FBI/DOJ. Keine Flow-Assets oder fertiges MP4.",
+      "completedAt": "2026-10-14T04:47:47.885Z"
     }
   ]
 }

@@ -10,10 +10,13 @@ STICKMAN-ANATOMIE: ALLE SICHTBAREN PERSONEN SIND KLASSISCHE STRICHMÄNNCHEN. Ein
 
 Google Flow: Pro Batch fünf Bilder erzeugen; jeden Stil, Anzahl, Schriftfreiheit prüfen, Fehler neu erzeugen; nie einzeln herunterladen/umbenennen; am Ende gesammelt importieren.
 
-
-## VERBINDLICHER 5ER-BLOCK
-Nur Bilder 1 bis 5 separat erzeugen. Korrekte eigene Strichmännchen, lebendige Szenen und ab Bild 02 absolut kein Bildtext. Jedes Bild prüfen, falsche/fehlende neu erzeugen. Nichts einzeln herunterladen oder umbenennen; gesammelt importieren.
-
+## VERBINDLICHER 5ER-PRODUKTIONSBLOCK
+Erzeuge in diesem Durchgang ausschließlich Bild 01 bis Bild 05.
+Dieser Block enthält exakt fünf Bilder. Alle fünf Bilder vollständig erzeugen, bevor der nächste Block begonnen wird.
+STILKONTROLLE: Figuren mit rundem Kopf, Stricharmen/-beinen, großem Ausdruck, dynamischer Pose und einheitlichen Accessoires. Ab Bild 02 keinerlei Schrift im Bild; nur Cover hat deutsche Überschrift. Keine Organigramm-Folien. Falsche Bilder erneut erzeugen.
+Die Ergebnisse während der Produktion NICHT einzeln herunterladen und NICHT manuell umbenennen.
+Erst wenn alle Blöcke des Videos fertig sind, alle erzeugten Bilder einmal gesammelt herunterladen.
+Danach die Bilder mit `npm run import:flow-images -- --dir "youtube/..." --source "DOWNLOAD-ORDNER"` automatisch nach `Bild NN.png` importieren.
 ## Bild 01 — COVER
 ÜBERSCHRIFT: "WER HAT MACHT?"
 BILDPROMPT:
