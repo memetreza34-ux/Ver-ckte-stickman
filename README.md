@@ -14,7 +14,7 @@ Verbindliche Regeln: `config/content-policy.json → localizationPolicy`.
 
 ## Aufgeräumte Videoablage
 
-Im Ordner `youtube/` liegen nur Kalenderwochen mit Videoprojekten sowie `_intern/` für systeminterne Vorlagen, Anleitungen und das Lernprotokoll. Ein Videoprojekt enthält weiterhin `00-bildprompts`, `01-script`, `02-audio`, `03-bilder`, `04-export` und `99-tech`. Technische Projektdateien nicht löschen: die Pipeline benötigt sie.
+Im Ordner `youtube/` liegen nur Kalenderwochen mit aktiven Videoprojekten, `_intern/` für systeminterne Vorlagen, Anleitungen und das Lernprotokoll sowie `_archiv/` für frühere Test- und Lernvideos, die nicht mehr der Kanalrichtung entsprechen. Archivierte Projekte bleiben unter `youtube/`, damit `topic:video` sie weiterhin als bekannte Themen erkennt; ihr Archivpfad steht in `config/topic-registry.json` (`archivedPath`). Ein Videoprojekt enthält weiterhin `00-bildprompts`, `01-script`, `02-audio`, `03-bilder`, `04-export` und `99-tech`. Technische Projektdateien nicht löschen: die Pipeline benötigt sie.
 
 ## Oberste Regel: Nach jedem Video besser werden
 
