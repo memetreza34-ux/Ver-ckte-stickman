@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 10,
+  "visualWorld": {
+    "name": "",
+    "look": "",
+    "palette": [],
+    "lighting": "",
+    "locations": {},
+    "cast": {},
+    "motif": {
+      "object": "",
+      "meaning": ""
+    }
+  },
+  "coverVisual": "",
+  "coverHoldSeconds": 2,
+  "world": "",
+  "scenes": []
+}

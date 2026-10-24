@@ -10,7 +10,9 @@ Die gemeinsame Bildwelt besteht aus handgezeichneten dunklen Tuschekonturen, kla
 
 ---
 
-# Workflow V9
+# Workflow V9 (+ V10)
+
+> **V10 für neue Projekte:** Vor dem Skript `CONTENT_PLAN.storyEngine` ausfüllen (siehe `STORY_GUIDE_V10.md`), im `SCENE_PLAN.json` die `visualWorld` und `chapter` anlegen, Titel nach Formel und `youtubeUpload.tags` setzen. `validate:phase1` prüft das automatisch.
 
 ## Priorität 1 — Lernen vor Geschwindigkeit
 

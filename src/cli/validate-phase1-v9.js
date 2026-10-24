@@ -4,6 +4,7 @@ import path from 'node:path';
 import { arg, isMain, normalizeText, projectPaths, readJson } from '../lib/pipeline.js';
 import { materializeScenePlan } from '../lib/materialize-scene-plan.js';
 import { validateYouTubeDescription } from '../lib/youtube-description.js';
+import { CONTENT_POLICY_V10, auditChapters, auditStoryCraft, auditTitle } from '../lib/story-craft.js';
 import { validatePhase1 as validateBasePhase1 } from './validate-phase1.js';
 
 function filled(value,min=3){return typeof value==='string'&&value.trim().length>=min&&!value.trim().startsWith('[');}
@@ -54,8 +55,21 @@ export async function validatePhase1V9(projectDirectory){
   const requiredEarly=Number(pipeline.introVisualPolicy?.minimumImageStartsInWindow??4);
   if(earlyAnchors<requiredEarly)errors.push(`Intro-Bildplanung zu dünn: nur ${earlyAnchors} frühe Bildanker. Mindestens ${requiredEarly} planen.`);
 
-  return{passed:errors.length===0,errors};
+  const warnings=[];
+  if(Number(meta.contentPolicyVersion)>=CONTENT_POLICY_V10){
+    const story=auditStoryCraft(script,plan,policy);
+    errors.push(...story.errors);warnings.push(...story.warnings);
+    for(const problem of auditTitle(upload.title,policy).errors)errors.push(`Titel V10: ${problem}`);
+    const cover=String(plan.titleCoverSystem?.coverConcept?.visibleText??'').trim().split(/\s+/).filter(Boolean);
+    if(cover.length>3)errors.push('Cover V10: Headline maximal 3 Wörter.');
+    const tags=upload.tags,[minTags,maxTags]=policy.youtubeUploadPolicy?.tagsRange??[8,20];
+    if(!Array.isArray(tags)||tags.length<minTags||tags.length>maxTags)errors.push(`CONTENT_PLAN.youtubeUpload.tags: ${minTags}–${maxTags} Suchbegriffe planen.`);
+    const scenePlan=await readJson(path.join(p.techDir,'SCENE_PLAN.json'),{scenes:[]});
+    for(const problem of auditChapters(scenePlan.scenes,{minimum:Number(policy.youtubeUploadPolicy?.minimumChapters??3)}).errors)errors.push(problem);
+  }
+
+  return{passed:errors.length===0,errors,warnings};
 }
 
-async function main(){const dir=arg('--dir');if(!dir)throw new Error('Nutzung: npm run validate:phase1 -- --dir "youtube/..."');const r=await validatePhase1V9(dir);if(!r.passed){r.errors.forEach((e)=>console.error(`- ${e}`));throw new Error(`${r.errors.length} Phase-1-V9-Regel(n) verletzt.`);}console.log('Phase 1 V9: BESTANDEN — Formatwahl, Skriptqualität, Intro, Upload-Metadaten und Bilddichte sind produktionsbereit.');}
+async function main(){const dir=arg('--dir');if(!dir)throw new Error('Nutzung: npm run validate:phase1 -- --dir "youtube/..."');const r=await validatePhase1V9(dir);(r.warnings??[]).forEach((w)=>console.warn(`WARNUNG: ${w}`));if(!r.passed){r.errors.forEach((e)=>console.error(`- ${e}`));throw new Error(`${r.errors.length} Phase-1-V9-Regel(n) verletzt.`);}console.log('Phase 1 V9: BESTANDEN — Formatwahl, Skriptqualität, Intro, Upload-Metadaten und Bilddichte sind produktionsbereit.');}
 if(isMain(import.meta.url))main().catch((e)=>{console.error(`Phase 1 V9: FEHLER — ${e.message}`);process.exitCode=1;});

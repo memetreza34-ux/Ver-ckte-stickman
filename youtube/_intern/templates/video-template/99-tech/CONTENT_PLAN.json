@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 9,
-  "contentPolicyVersion": 9,
+  "schemaVersion": 10,
+  "contentPolicyVersion": 10,
   "language": "de",
   "topic": "",
   "workingTitle": "",
@@ -35,6 +35,39 @@
     "type": "",
     "reason": "",
     "whyThisFormat": ""
+  },
+  "storyEngine": {
+    "perspective": "du",
+    "protagonist": {
+      "start": "",
+      "want": "",
+      "belief": ""
+    },
+    "stakes": "",
+    "clock": "",
+    "innerVoice": [
+      {
+        "stage": "",
+        "line": ""
+      },
+      {
+        "stage": "",
+        "line": ""
+      },
+      {
+        "stage": "",
+        "line": ""
+      }
+    ],
+    "turns": [
+      {
+        "label": "",
+        "whatChanges": "",
+        "concreteDetail": ""
+      }
+    ],
+    "callbackMotif": "",
+    "notes": "Siehe youtube/_intern/STORY_GUIDE_V10.md. innerVoice.line und callbackMotif müssen wörtlich im Skript stehen."
   },
   "hook": {
     "type": "",
@@ -109,7 +142,8 @@
   },
   "youtubeUpload": {
     "title": "",
-    "description": ""
+    "description": "",
+    "tags": []
   },
   "ending": {
     "type": "",
