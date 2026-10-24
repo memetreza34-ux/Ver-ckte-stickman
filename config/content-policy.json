@@ -1,5 +1,5 @@
 {
-  "contentPolicyVersion": 9,
+  "contentPolicyVersion": 10,
   "status": "READY",
   "highestPriority": "KONTINUIERLICHE VERBESSERUNG: Nach jedem fertigen Video eigene messbare Ergebnisse und ehrliches Nutzer-/Sichtungsfeedback auswerten. Stärken beibehalten, konkrete Schwächen abstellen, Erkenntnisse für das nächste Video verbindlich übernehmen. Qualität schlägt Videoanzahl und Geschwindigkeit.",
   "priorityOrder": [
@@ -271,6 +271,10 @@
           "Das Ende greift Anfang oder frühes Detail wieder auf."
         ]
       }
+    },
+    "recommendedV10": {
+      "pov": "„Du“-Perspektive mit Entwicklungsbogen. progression = Stufen eines Aufstiegs/Abstiegs („Dein Leben auf jeder Stufe …“), story = ein Tag/ein Fall unter Zeitdruck.",
+      "durationNote": "Die analysierten Vorbilder laufen 13–21 Minuten; StrichModus bleibt vorerst bei 6–8 Minuten und verlängert erst, wenn die Bildproduktion mithält."
     }
   },
   "nicheFitPolicy": {
@@ -567,7 +571,60 @@
     "principle": "Titel und Cover verkaufen die konkrete Rolle, Gefahr oder Progression.",
     "coverHeadlineRequired": true,
     "coverHeadlineMinWords": 1,
-    "coverHeadlineMaxWords": 4
+    "coverHeadlineMaxWords": 4,
+    "version": 10,
+    "titleLength": [
+      25,
+      70
+    ],
+    "titleFormulas": [
+      {
+        "id": "pov",
+        "pattern": "^POV: Du\\b",
+        "example": "POV: Du bist ein internationaler Waffenhändler"
+      },
+      {
+        "id": "dein-leben",
+        "pattern": "^Dein Leben (als|auf|in|nach|durch)\\b",
+        "example": "Dein Leben auf jeder Stufe beim SEK"
+      },
+      {
+        "id": "jede-stufe",
+        "pattern": "\\bjede[rnms]? (Stufe|Ebene|Rang|Level|Dienstgrad|Karrierestufe)\\b",
+        "example": "So fühlt sich jede Stufe als Auftragskiller an"
+      },
+      {
+        "id": "alle-raenge",
+        "pattern": "^Alle (Ränge|Stufen|Level|Dienstgrade|Ebenen)\\b",
+        "example": "Alle Ränge der Mafia erklärt"
+      },
+      {
+        "id": "so-x",
+        "pattern": "^So (jagt|fühlt|funktioniert|lebt|arbeitet|sieht|überlebt|erwischt)\\b",
+        "example": "So jagt dich das FBI bei jedem Verbrechen"
+      },
+      {
+        "id": "ein-tag",
+        "pattern": "^Ein Tag (als|beim|bei der|bei den|im|in der)\\b",
+        "example": "Ein Tag als FBI-Agent"
+      },
+      {
+        "id": "person",
+        "pattern": "^(Der|Die) (Mann|Frau|Agent|Agentin|Soldat|Spion|Spionin)\\b.*\\b(der|die)\\b",
+        "example": "Der Mann, der 77 Menschen in 3 Stunden tötete"
+      }
+    ],
+    "forbiddenTitlePatterns": [
+      "^In diesem Video",
+      "\\?\\?",
+      "!!"
+    ],
+    "rulesV10": [
+      "Der Titel verspricht ein Erlebnis (Du/Dein Leben/POV) oder eine vollständige Struktur (jede Stufe/alle Ränge), nicht einen Themenbereich.",
+      "Ein konkretes Spannungselement (Gold, Doppelgänger, Verrat, Uhrzeit, Betrag) schlägt eine Ablaufbeschreibung („vom ersten Hinweis bis zum Einsatz“).",
+      "Höchstens ein Wort in GROSSBUCHSTABEN als Verstärker.",
+      "Cover-Headline 1–3 Wörter, ergänzt den Titel statt ihn zu wiederholen."
+    ]
   },
   "youtubeUploadPolicy": {
     "required": true,
@@ -587,7 +644,20 @@
     "descriptionMinimumBodyCharacters": 450,
     "descriptionMinimumParagraphs": 2,
     "hashtagCount": 5,
-    "hashtagPlacement": "last-line"
+    "hashtagPlacement": "last-line",
+    "version": 10,
+    "chaptersRequiredFromV10": true,
+    "minimumChapters": 3,
+    "tagsRange": [
+      8,
+      20
+    ],
+    "descriptionStructureV10": [
+      "Absatz 1: Teaser mit zwei bis drei konkreten Momenten aus dem Video (keine Zusammenfassung, keine Auflösung).",
+      "Absatz 2: Was ist echt, was ist dramatisiert, worauf stützen sich die Fakten.",
+      "KAPITEL: automatisch aus SCENE_PLAN-Kapiteln und den gemessenen Whisper-Zeiten (0:00 zuerst).",
+      "Letzte Zeile: genau fünf Hashtags."
+    ]
   },
   "endingPolicy": {
     "required": true,
@@ -623,6 +693,59 @@
       "Behörde, Dienstbezeichnung, Rechtsgrundlage passend wählen",
       "Alltagsdetails und Humor wählen",
       "faktische und erfundene Elemente trennen"
+    ]
+  },
+  "storyCraftPolicy": {
+    "version": 10,
+    "source": "youtube/_intern/KONKURRENZ_ANALYSE_2026-10.md, youtube/_intern/STORY_GUIDE_V10.md",
+    "principle": "Fakten werden erlebt, nicht vorgetragen. Der Zuschauer ist die Hauptfigur, die sich von Szene zu Szene verändert; jede Information kommt als konkreter Moment mit Folge.",
+    "requiredPlanBlock": "CONTENT_PLAN.storyEngine",
+    "rules": [
+      "Erster Satz ist ein konkretes Bild oder eine Lage (Gegenstand, Ort, Uhrzeit), kein Überblick und keine Frage an das Publikum.",
+      "Spätestens im zweiten Absatz eine Vorahnung: Was wird diese Figur verlieren oder werden? („Noch nicht.“)",
+      "Eine innere Stimme/Ausrede/Regel der Hauptfigur kehrt mindestens dreimal wieder und verändert sich mit der Lage.",
+      "Jede Stufe oder Station hat genau einen erinnerbaren Moment mit Detail (Betrag, Uhrzeit, Gegenstand, Geruch, Satz einer Nebenfigur).",
+      "Wendepunkte statt Aufzählung: Jede Stufe verändert Status, Risiko oder Selbstbild.",
+      "Absicherungen und Quellenhinweise höchstens einmal kurz im Skript; die Einordnung steht in der Beschreibung.",
+      "Rhythmus: normale Sätze mit harten Kurzsätzen brechen. Kein Satzbaukasten mit immer gleicher Länge.",
+      "Ende = Anfang verwandelt: Das Eröffnungsbild kehrt mit neuer Bedeutung zurück, danach höchstens ein kurzer Schlusssatz."
+    ],
+    "maxFirstSentenceWords": 18,
+    "minimumDuPer100Words": 3,
+    "minimumConcreteNumbersPer1000Words": 8,
+    "minimumShortSentenceShare": 0.12,
+    "minimumInnerVoiceLines": 3,
+    "minimumTurns": 4,
+    "callbackWindow": 0.15,
+    "maxDisclaimersPer1000Words": 3,
+    "disclaimerPatterns": [
+      "beweis(?:t)?\\s+(?:aber\\s+|natürlich\\s+|noch\\s+)*(?:nicht|kein)",
+      "natürlich\\s+(?:kein|nicht)",
+      "das\\s+(?:bedeutet|heißt)\\s+(?:aber\\s+)?(?:noch\\s+)?nicht",
+      "nicht\\s+automatisch",
+      "laut\\s+(?:unterlagen|ermittlungsakten|behörden|quellen)",
+      "ohne\\s+gewähr",
+      "keine\\s+(?:erfundene\\s+)?(?:erfolgsgarantie|garantie)"
+    ],
+    "forbiddenPhrases": [
+      "in diesem video",
+      "heute (?:schauen|reden|sprechen|klären) wir",
+      "wir steigen",
+      "als erstes musst du verstehen",
+      "damit kommen wir zu",
+      "und jetzt wird es interessant",
+      "ein interessanter gedanke",
+      "wichtig ist:",
+      "kurz gesagt",
+      "wusstest du",
+      "willkommen (?:zu|bei|in)"
+    ],
+    "discouragedPhrases": [
+      "stell dir vor",
+      "eigentlich",
+      "übrigens",
+      "spannend",
+      "wie wir gleich sehen"
     ]
   }
 }

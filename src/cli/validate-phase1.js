@@ -91,10 +91,12 @@ export async function validatePhase1(projectDirectory){
   ]);
 
   if(visual.status!=='READY'||!visual.styleId)errors.push('Visual Policy ist nicht READY.');
-  if(policy.status!=='READY'||Number(policy.contentPolicyVersion)!==9)errors.push('Content Policy V9 ist nicht READY.');
+  if(policy.status!=='READY'||!(Number(policy.contentPolicyVersion)>=9))errors.push('Content Policy (mindestens V9) ist nicht READY.');
   // Neue V9-Projekte nutzen den aktiven Style. Altprojekte behalten absichtlich ihre archivierte V8-Bildwelt.
   if(Number(meta.visualPolicyVersion)>=9&&meta.visualStyleId!==visual.styleId)errors.push('video.json nutzt nicht die aktive styleId.');
-  if(Number(meta.contentPolicyVersion)!==9||Number(plan.contentPolicyVersion)!==9||Number(plan.schemaVersion)!==9)errors.push('Projekt nutzt nicht Content-/Schema-Version 9.');
+  // V9-Projekte bleiben gültig; neue Projekte nutzen die aktive Version (V10 mit Story-Prüfung).
+  const projectVersion=Number(meta.contentPolicyVersion);
+  if(!(projectVersion>=9&&projectVersion<=Number(policy.contentPolicyVersion))||Number(plan.contentPolicyVersion)!==projectVersion||Number(plan.schemaVersion)!==projectVersion)errors.push('Projekt nutzt keine gültige, einheitliche Content-/Schema-Version (9 oder aktiv).');
   if(!meta.title||!meta.topic||!meta.topicSlug)errors.push('Titel, Thema oder Slug fehlen.');
   if(!Number.isInteger(meta.plannedImageCount)||meta.plannedImageCount<1)errors.push('plannedImageCount muss gesetzt sein.');
   if(!Number.isFinite(Number(meta.targetDurationSeconds))||Number(meta.targetDurationSeconds)<=0)errors.push('targetDurationSeconds muss gesetzt sein.');

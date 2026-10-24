@@ -17,14 +17,14 @@ export async function collectKnownTopics(root=process.cwd()){
 const contains=(text,signal)=>text.includes(normalizeText(signal));
 const findSignals=(text,signals)=>(signals??[]).filter(s=>contains(text,s));
 const WORLD_GROUPS={
-  crime:["mafia","kartell","organisierte kriminalität","organisierte kriminalitaet","unterwelt","gangster","clan"],
+  crime:["mafia","kartell","organisierte kriminalität","organisierte kriminalitaet","unterwelt","gangster","clan","geldwäsche","geldwaesche","geldwäscher","finanzagent","betrug","betrüger","schmuggel","schmuggler","drogenhandel","waffenhandel","auftragskiller"],
   authority:["fbi","cia","bka","lka","sek","swat","kripo","kriminalpolizei","polizei","zoll","bundespolizei","geheimdienst","spezialeinheit","undercover","ermittler","gefängnis","gefangnis"],
   government:["parlament","bundestag","abgeordnet","regierung","kanzler","minister","senat","politiker","politikbetrieb"],
   history:["rom","römisch","roemisch","gladiator","legion","antike","mittelalter","ritter","wikinger","kaiser","römische","roemische"],
   institutions:["militär","militaer","armee","soldat","geheimorganisation","organisationsstruktur","hierarchie einer","gefängnis","gefangnis"]
 };
 const FRAMING={
-  day:["ein tag als","ein tag beim","ein tag bei der","ein tag im","ein tag in der","ein tag eines","ein tag einer","dein erster tag","dein leben als","dein leben im","dein leben in"],
+  day:["pov du bist","pov du wirst","du bist ein","du bist eine","du wirst ","so jagt dich","so fühlt sich","so lebst du","ein tag als","ein tag beim","ein tag bei der","ein tag im","ein tag in der","ein tag eines","ein tag einer","dein erster tag","dein leben als","dein leben im","dein leben in"],
   structure:["hierarchie","struktur","aufbau","aufgebaut","organisiert","rang","ränge","range","stufen","stufe","vom ","bis zum","wer entscheidet","machtverhältnisse","machtverteilung","jeder rang","jede stufe","funktioniert die mafia","funktioniert ein kartell","ablauf"],
   history:["im antiken","im mittelalter","römischen","römischer","roemischen","roemischer","zur zeit","im alten rom"],
   explanatory:["wie ","warum ","wer ","was macht ","einblick","erklärt","erklaert"],

@@ -1,4 +1,4 @@
-# StrichModus — Video-Pipeline V2.8
+# StrichModus — Video-Pipeline V2.9
 
 Pipeline für einen deutschsprachigen Faceless-YouTube-Kanal mit klassischen Strichmännchen. Themen: echte spannende Berufe, Kriminalitätsstrukturen, Politik, Geschichte und besondere Lebenswelten – verständlich, unterhaltsam und faktenbewusst erzählt.
 
@@ -14,7 +14,7 @@ Verbindliche Regeln: `config/content-policy.json → localizationPolicy`.
 
 ## Aufgeräumte Videoablage
 
-Im Ordner `youtube/` liegen nur Kalenderwochen mit Videoprojekten sowie `_intern/` für systeminterne Vorlagen, Anleitungen und das Lernprotokoll. Ein Videoprojekt enthält weiterhin `00-bildprompts`, `01-script`, `02-audio`, `03-bilder`, `04-export` und `99-tech`. Technische Projektdateien nicht löschen: die Pipeline benötigt sie.
+Im Ordner `youtube/` liegen nur Kalenderwochen mit aktiven Videoprojekten, `_intern/` für systeminterne Vorlagen, Anleitungen und das Lernprotokoll sowie `_archiv/` für frühere Test- und Lernvideos, die nicht mehr der Kanalrichtung entsprechen. Archivierte Projekte bleiben unter `youtube/`, damit `topic:video` sie weiterhin als bekannte Themen erkennt; ihr Archivpfad steht in `config/topic-registry.json` (`archivedPath`). Ein Videoprojekt enthält weiterhin `00-bildprompts`, `01-script`, `02-audio`, `03-bilder`, `04-export` und `99-tech`. Technische Projektdateien nicht löschen: die Pipeline benötigt sie.
 
 ## Oberste Regel: Nach jedem Video besser werden
 
@@ -160,3 +160,13 @@ Bei **neu erstellten Videoprojekten** gilt `config/visual-policy.json` V9. Der K
 `99-tech/SCENE_PLAN.json` muss zu **jedem** Bild den echten Skriptanker, eine präzise Kernaussage (`message`), den geeigneten `visualType`, die eigene konkrete Darstellung (`visual`), mindestens zwei spezielle `elements` und bei Erklärbildern 2–7 kurze `labels` enthalten. Der Flow-Compiler erzeugt daraus vollständige deutsche Bildanweisungen und prüft diesen Vertrag. Die visuelle Qualität, korrekte Schreibweise und Szenenpassung müssen zusätzlich an echten Flow-Bildern kontrolliert werden. Für V9 ist die Freigabe aller Bilder verbindlich vor `validate:assets` und `phase3`: `npm run review:images -- --dir "youtube/<week>/<slug>"` ausführen, `99-tech/IMAGE_REVIEW.html` öffnen, Szene für Szene die tatsächlichen Bildpixel prüfen, JSON der Freigaben herunterladen und mit `npm run review:images -- --dir "youtube/<week>/<slug>" --apply "/PFAD/IMAGE_REVIEW_APPROVED.json"` übernehmen. Ein nicht passendes, geändertes oder nicht freigegebenes Bild verhindert den Renderstart; wenn sich das Briefing ändert, verfällt die alte Freigabe.
 
 Details mit Beispielen: `youtube/_intern/SCENE_VISUAL_GUIDE_V9.md`. Der neue `VISUAL_BRIEF.md` im Projekt erinnert an das Nutzerfeedback. Vorhandene Projekte mit V8 behalten ihre Regeln und Dateien – **kein erzwungener rückwirkender Neurender**.
+
+## V10: Story, eigene Bildwelt, Titel und Kapitel
+
+Neue Projekte nutzen Content- und Visual-Policy **V10**. Grundlage ist die Konkurrenzanalyse `youtube/_intern/KONKURRENZ_ANALYSE_2026-10.md`, die Schreibregeln stehen in `youtube/_intern/STORY_GUIDE_V10.md`.
+
+- **Story:** `CONTENT_PLAN.storyEngine` plant die Hauptfigur (meist „Du“), ihren Einsatz, eine innere Stimme in mindestens drei Stufen, mindestens vier Wendepunkte und ein Callback-Motiv. `validate:phase1` misst das Skript (`src/lib/story-craft.js`): Erklärfloskeln, zu viele Absicherungen, schwache Du-Perspektive, zu wenig konkrete Zahlen, monotone Satzlängen und ein fehlender Callback blockieren die Produktion.
+- **Bildwelt pro Video:** `SCENE_PLAN.visualWorld` legt Look, Palette, Licht, wiederkehrende Orte, Figuren mit Statusstufen und ein Leitmotiv fest. Jede Szene nennt `location`, `cast`, `stage` und optional `motif` und `chapter`. Der Flow-Compiler schreibt daraus pro Bild die Zeilen ORT, FIGUREN, LEITMOTIV und MIMIK. Die feste V9-Kanalpalette entfällt.
+- **Titel und Upload:** Titel folgen einer bewährten Formel (POV, Dein Leben auf jeder Stufe, Alle Ränge, So jagt …, Ein Tag als …). `youtubeUpload.tags` enthält 8–20 Suchbegriffe. Beim Export setzt `finalize` YouTube-Kapitel aus den Szenen-Kapiteln mit den echten Bildzeiten in `YOUTUBE_CAPTION.txt` ein.
+
+Bestehende V8/V9-Projekte bleiben unverändert gültig.

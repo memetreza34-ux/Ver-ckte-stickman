@@ -91,6 +91,24 @@ export function buildSrtTranscript(words,audioDuration){
   return cues.join('\n\n')+'\n';
 }
 
+// V10: YouTube-Kapitel aus SCENE_PLAN-Kapiteln und den tatsächlich gerenderten Bildstarts.
+export function buildChapters(mappingImages,timelineImages,fps,{minimumSeconds=10,minimumChapters=3}={}){
+  const starts=new Map((timelineImages??[]).map((x)=>[Number(x.imageNumber),Number(x.startFrame)/Number(fps)]));
+  const end=Math.max(0,...(timelineImages??[]).map((x)=>Number(x.endFrame)/Number(fps)));
+  const raw=(mappingImages??[]).filter((x)=>String(x.chapter??'').trim()).map((x)=>({title:String(x.chapter).trim(),start:starts.get(Number(x.imageNumber))}));
+  if(raw.some((x)=>!Number.isFinite(x.start)))throw new Error('Kapitel verweist auf ein Bild ohne Timeline-Start.');
+  if(!raw.length||raw[0].start>0.5)throw new Error('Das erste Kapitel muss bei 0:00 beginnen (Kapitel an Bild 01 setzen).');
+  const chapters=[];
+  for(const item of raw){
+    const previous=chapters.at(-1);
+    if(previous&&item.start-previous.start<minimumSeconds)continue;
+    chapters.push({...item,start:chapters.length?item.start:0});
+  }
+  if(chapters.length&&end-chapters.at(-1).start<minimumSeconds)chapters.pop();
+  if(chapters.length<minimumChapters)throw new Error(`Nur ${chapters.length} gültige Kapitel (je mindestens ${minimumSeconds}s); YouTube braucht mindestens ${minimumChapters}.`);
+  return chapters.map((x)=>`${formatTime(x.start)} ${x.title}`);
+}
+
 export async function finalize(projectDirectory){
   const p=projectPaths(projectDirectory);
   const [meta,timeline,pipeline,contentPlan,contentPolicy]=await Promise.all([
@@ -124,7 +142,14 @@ export async function finalize(projectDirectory){
   const descPolicy=contentPolicy.youtubeUploadPolicy??{};
   const descCheck=validateYouTubeDescription(description,{minimumBodyCharacters:Number(descPolicy.descriptionMinimumBodyCharacters??450),minimumParagraphs:Number(descPolicy.descriptionMinimumParagraphs??2),requiredHashtags:Number(descPolicy.hashtagCount??5)});
   if(!descCheck.passed)throw new Error(descCheck.errors.join(' | '));
-  await writeFile(captionFile,`YOUTUBE-TITEL:\n${finalTitle}\n\nYOUTUBE-BESCHREIBUNG:\n${description}\n`,'utf8');
+  let captionDescription=description,captionTags='';
+  if(Number(meta.contentPolicyVersion)>=10){
+    const mapping=await readJson(p.mapping);
+    const chapters=buildChapters(mapping.images,timeline.images,Number(pipeline.fps),{minimumChapters:Number(descPolicy.minimumChapters??3)});
+    captionDescription=`${descCheck.body}\n\nKAPITEL:\n${chapters.join('\n')}\n\n${descCheck.hashtags.join(' ')}`;
+    if(Array.isArray(upload.tags)&&upload.tags.length)captionTags=`\nYOUTUBE-TAGS:\n${upload.tags.join(', ')}\n`;
+  }
+  await writeFile(captionFile,`YOUTUBE-TITEL:\n${finalTitle}\n\nYOUTUBE-BESCHREIBUNG:\n${captionDescription}\n${captionTags}`,'utf8');
   await rm(legacyUploadFile,{force:true});
 
   const whisper=await readJson(whisperFile);

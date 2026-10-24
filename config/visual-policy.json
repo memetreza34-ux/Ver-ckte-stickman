@@ -1,5 +1,5 @@
 {
-  "visualPolicyVersion": 9,
+  "visualPolicyVersion": 10,
   "status": "READY",
   "styleId": "strichmodus-editorial-comic-de-v2",
   "description": "StrichModus V9: Eine zusammenhängende, filmisch illustrierte 2D-Bildwelt. Bildtyp und Bildinhalt richten sich nach der konkreten Skriptaussage, nicht nach Stickman- oder Diagramm-Quoten. Neue Videoproduktionen nutzen verbindliche Szenen-Briefings mit Bildtyp, Kernaussage, Darstellung und konkreten Elementen.",
@@ -88,7 +88,15 @@
       4
     ],
     "goal": "Klares, faszinierendes visuelles Versprechen passend zum Thema; ein starkes Motiv oder ein klares Spannungsverhältnis, keine überladene Grafik und keine Pflicht zu einer Figur.",
-    "safeArea": "Kurze große Headline und Hauptmotiv mit YouTube-tauglichem Abstand zu den Außenrändern."
+    "safeArea": "Kurze große Headline und Hauptmotiv mit YouTube-tauglichem Abstand zu den Außenrändern.",
+    "version": 10,
+    "learnedFromCompetitors": [
+      "1–3 Wörter in sehr großer, dicker Schrift oder ganz ohne Text mit starkem Kontrast.",
+      "Eine bis zwei große Figuren mit extremer, eindeutiger Emotion (Panik, überhebliches Grinsen, Erschöpfung).",
+      "Vorher/Nachher oder Statuskontrast im selben Bild (arm/reich, Anfänger/Legende).",
+      "Ein Symbolobjekt füllt das Bild (Waffen auf einem Tisch, Goldbarren, Abzeichen) statt vieler kleiner Elemente.",
+      "Gleicher Zeichenstil wie im Video, aber detailreicher und kontrastreicher."
+    ]
   },
   "visualQualityV9": {
     "mandatoryForNewProjects": true,
@@ -136,5 +144,26 @@
     "überladene unlesbare Organigramme",
     "mehrere volltextige Präsentationsfolien hintereinander",
     "anatomisch modellierte menschliche Comicfiguren statt einfacher Strichfiguren, wenn Figuren verwendet werden"
-  ]
+  ],
+  "visualWorldPolicy": {
+    "version": 10,
+    "principle": "Gleicher Kanalstrich, aber jedes Video bekommt eine eigene Welt: Farbklima, wiederkehrende Schauplätze, Figuren, deren Aussehen den Status zeigt, und ein Leitmotiv, das Anfang und Ende verbindet.",
+    "requiredIn": "99-tech/SCENE_PLAN.json → visualWorld",
+    "minimumLocations": 3,
+    "minimumCast": 1,
+    "paletteSize": [
+      3,
+      6
+    ],
+    "rules": [
+      "look beschreibt Stimmung und Material dieses Videos (z. B. Neonnacht, staubiges Archiv) – nicht den allgemeinen Kanalstil.",
+      "locations sind wiederkehrende Kulissen mit festen Details, damit Flow denselben Ort wiedererkennbar zeichnet.",
+      "cast.<figur>.stages zeigt Statuswechsel über Kleidung, Haltung und Requisiten (wie Hut, Uhr, Krawatte, Narbe).",
+      "Jede szene/detail nennt location; Figuren über cast, Statusstufe über stage.",
+      "motif erscheint im ersten und im letzten Zehntel der Szenen (Callback).",
+      "Pro Bild ein Blickfang, große ausdrucksstarke Gesichter, sichtbare Requisiten, die Status und Lage erzählen.",
+      "Einzelprompts nennen nur die Figuren, die im Bild vorkommen; die feste Kanalpalette aus V9 gilt nicht mehr, Farben kommen aus palette.",
+      "Gesichter dürfen ausdrucksstark sein (Augenbrauen, große Augen, Schweißtropfen); Körper bleiben Strichlinien."
+    ]
+  }
 }
