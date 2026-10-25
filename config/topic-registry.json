@@ -108,6 +108,52 @@
       "createdAt": "2026-10-13T07:10:00+02:00",
       "notes": "Reales Mafia-Strukturerklärvideo; Quellen FBI/DOJ. Keine Flow-Assets oder fertiges MP4.",
       "completedAt": "2026-10-14T04:47:47.885Z"
+    },
+    {
+      "id": "2026-KW43_pov-zollfahnder-hamburger-hafen",
+      "title": "POV: Du bist Zollfahnder im Hamburger Hafen",
+      "aliases": [
+        "POV: Du bist Zollfahnder im Hamburger Hafen"
+      ],
+      "status": "reserved",
+      "channelFitAtCreation": {
+        "decision": "APPROVED_CHANNEL_FIT",
+        "score": 9,
+        "positiveSignals": [
+          "zoll"
+        ],
+        "outOfScopeSignals": [],
+        "reason": "Konkreter realer Beruf, historischer Alltag, politische Rolle oder nachvollziehbare Macht-/Organisationsstruktur."
+      },
+      "topicQualityAtCreation": {
+        "decision": "APPROVED_TOPIC_QUALITY",
+        "score": 8.7,
+        "roleSignals": [
+          "pov du bist"
+        ],
+        "listSignals": [],
+        "progressionSignals": [],
+        "storySignals": [],
+        "worldSignals": [
+          "zoll"
+        ],
+        "funnySignals": [],
+        "genericSignals": [],
+        "fantasySignals": [],
+        "suggestedFormats": [
+          "mini-stories"
+        ],
+        "reason": "Reale Welt mit klar erlebbaren Aufgaben, Macht-/Organisationsstruktur oder historischen Stationen.",
+        "reframePatterns": [
+          "Ein Tag als FBI-Agent",
+          "Ein Tag im Bundestag",
+          "Ein Tag im antiken Rom",
+          "Die Hierarchie einer Mafia erklärt",
+          "Wie ein Kartell aufgebaut ist",
+          "Ein Tag als Legionär im Römischen Reich"
+        ]
+      },
+      "createdAt": "2026-10-25T11:29:30.204Z"
     }
   ]
 }

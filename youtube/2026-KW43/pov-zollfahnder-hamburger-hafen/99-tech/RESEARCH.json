@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "topic": "POV: Du bist Zollfahnder im Hamburger Hafen",
+  "summary": "Reale Grundlage: Kokainschmuggel per Container über den Hamburger Hafen, Risikoanalyse des Zolls, Röntgen-Containerprüfanlage mit Abgleich gegen die Packliste, Rip-on/Rip-off-Methode mit Siegelduplikaten und Innentätern, Anwerbung von Hafenarbeitern über harmlose Aufträge, Umschlag- und Sicherstellungszahlen. Figuren, Firma, Container, Mengen dieser Nacht und der Zugriff sind dramatisiert.",
+  "sources": [
+    {
+      "id": "Q1",
+      "title": "Hafenbilanz 2024: Mindestens fünf Tonnen Kokain entdeckt",
+      "publisher": "ZDFheute / dpa",
+      "url": "https://www.zdfheute.de/panorama/kriminalitaet/kokain-drogenschmuggel-hafen-hamburg-bilanz-100.html",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q2",
+      "title": "Combating the infiltration of criminals in the maritime supply chain: Operation TIN CAN",
+      "publisher": "Weltzollorganisation (WCO)",
+      "url": "https://mag.wcoomd.org/?p=13631",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q3",
+      "title": "Häufigste Schmuggelmethoden von Kokain bei Sicherstellungen in EU-Häfen",
+      "publisher": "Statista",
+      "url": "https://de.statista.com/statistik/daten/studie/1317097/umfrage/haeufigste-schmuggelmethoden-von-kokain-bei-sicherstellungen-in-eu-haefen",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q4",
+      "title": "Zoll: Präventionskampagne gegen Drogenschmuggel im Hafen gestartet",
+      "publisher": "Logistik Heute",
+      "url": "https://logistik-heute.de/news/zoll-praeventionskampagne-gegen-drogenschmuggel-im-hafen-gestartet-107817.html",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q5",
+      "title": "Erfahrungen des Hamburger Zolls bei der Überprüfung von Importcontainern",
+      "publisher": "Bundesinstitut für Risikobewertung",
+      "url": "https://www.BFR.bund.de/cm/343/erfahrungen_des_hamburger_zolls_bei_der_ueberpruefung_von_importcontainern_praesentation.pdf",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q6",
+      "title": "Containerumschlag im Hamburger Hafen stagniert",
+      "publisher": "VerkehrsRundschau",
+      "url": "https://www.verkehrsrundschau.de/nachrichten/transport-logistik/containerumschlag-im-hamburger-hafen-stagniert-3545391",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q7",
+      "title": "Zoll-Jahresbilanz 2024",
+      "publisher": "Bundesministerium der Finanzen",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2025/06/2025-06-03-zoll-jahresbilanz-2024.html",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "Q8",
+      "title": "Neue Containerprüfanlage am Hauptzollamt Hamburg",
+      "publisher": "Dorsch Gruppe",
+      "url": "https://engineers.dorsch.com/projects/detail/new-container-inspection-facility-at-main-customs-house",
+      "accessedAt": "2026-10-25"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "2023 wurden im Hamburger Hafen rund 34 Tonnen Kokain sichergestellt.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1"
+      ],
+      "notes": "Andere Quellen nennen „mehr als 30 Tonnen“; im Skript „rund 34 Tonnen“."
+    },
+    {
+      "id": "C2",
+      "statement": "Bei der Rip-on/Rip-off-Methode liegt das Kokain meist in Taschen direkt hinter der Containertür und der Container wird danach oft mit einem Siegelduplikat verschlossen.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q2",
+        "Q3"
+      ],
+      "notes": "WCO: bevorzugte Methode, braucht Innentäter mit autorisiertem Zugang."
+    },
+    {
+      "id": "C3",
+      "statement": "Kriminelle werben Hafenarbeiter an, indem sie zunächst Geld für scheinbar harmlose Aufgaben wie das Fotografieren eines Containers zahlen.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q4"
+      ],
+      "notes": "Aussage LKA-Chef Jan Hieber. Der Betrag 5.000 Euro ist im Skript dramatisiert."
+    },
+    {
+      "id": "C4",
+      "statement": "In der Hamburger Containerprüfanlage wird das Röntgenbild mit der Packliste verglichen; bei Abweichungen wird der Container geöffnet.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q5",
+        "Q8"
+      ],
+      "notes": "Betontunnel, Container fährt mit Zugmaschine hindurch."
+    },
+    {
+      "id": "C5",
+      "statement": "Der Hamburger Hafen schlug 2024 rund 7,8 Millionen Standardcontainer (TEU) um.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q6"
+      ],
+      "notes": "TEU = Standardcontainer."
+    },
+    {
+      "id": "C6",
+      "statement": "Der Zoll filtert verdächtige Container per Risikoanalyse aus der Masse heraus; nur ein Bruchteil wird geöffnet.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1",
+        "Q7"
+      ],
+      "notes": "Seeweg ist die Hauptschmuggelroute für Kokain."
+    },
+    {
+      "id": "C7",
+      "statement": "Kokain wird häufig in Bananencontainern aus Ecuador nach Europa geschmuggelt.",
+      "confidence": "gesichert",
+      "sourceIds": [
+        "Q1"
+      ],
+      "notes": "Größter Hamburger Fund 2024: rund 2,1 Tonnen in einem Container mit Bananenkisten."
+    }
+  ],
+  "uncertainties": [
+    "Keine offizielle Tagesprüfmenge der Röntgenanlage gefunden; im Skript nicht genannt.",
+    "Ablauf von verdeckten Maßnahmen (Austausch gegen Attrappen, Observation) ist plausibel dramatisiert, nicht als konkreter Fall belegt."
+  ],
+  "doNotClaim": [
+    "Keine echte Person, Firma oder Containernummer als Täter darstellen.",
+    "Nicht behaupten, dass Bananenfirmen in den Schmuggel eingeweiht sind.",
+    "Keine Prüfquote pro Tag als Fakt nennen."
+  ]
+}
