@@ -9,7 +9,9 @@
       ],
       "status": "baseline-test",
       "createdAt": "2026-09-29T12:40:00+02:00",
-      "notes": "V2.x Lernvideo: zu dokumentarisch und zu geringe Bilddichte; nicht als aktueller Kanalstandard verwenden."
+      "notes": "V2.x Lernvideo: zu dokumentarisch und zu geringe Bilddichte; nicht als aktueller Kanalstandard verwenden.",
+      "archivedPath": "youtube/_archiv/2026-KW40/londoner-bierflut-1814",
+      "archivedAt": "2026-10-23"
     },
     {
       "id": "2026-KW40_ein-tag-als-cia-spion-berlin-1955",
@@ -29,7 +31,9 @@
         "decision": "APPROVED_TOPIC_QUALITY",
         "score": 9
       },
-      "notes": "V5 Lernvideo: Thema/Rollenrichtung ist weiterhin passend; Umsetzung war zu dokumentarisch. Neue Rollen-/Ein-Tag-Videos dürfen dieses Themenprinzip wieder nutzen, aber mit natürlicherem Skript."
+      "notes": "V5 Lernvideo: Thema/Rollenrichtung ist weiterhin passend; Umsetzung war zu dokumentarisch. Neue Rollen-/Ein-Tag-Videos dürfen dieses Themenprinzip wieder nutzen, aber mit natürlicherem Skript.",
+      "archivedPath": "youtube/_archiv/2026-KW40/ein-tag-als-cia-spion-berlin-1955",
+      "archivedAt": "2026-10-23"
     },
     {
       "id": "2026-KW40_spiegel-zeigt-10-minuten-zukunft",
@@ -49,7 +53,9 @@
         "decision": "APPROVED_TOPIC_QUALITY",
         "score": 9.6
       },
-      "notes": "V7 Lernvideo: Bildwelt und Bildmenge gut, aber Einstieg zu unklar. Surreale Mystery bleibt optional, ist nicht mehr bevorzugte Standardrichtung."
+      "notes": "V7 Lernvideo: Bildwelt und Bildmenge gut, aber Einstieg zu unklar. Surreale Mystery bleibt optional, ist nicht mehr bevorzugte Standardrichtung.",
+      "archivedPath": "youtube/_archiv/2026-KW40/spiegel-zeigt-10-minuten-zukunft",
+      "archivedAt": "2026-10-23"
     },
     {
       "id": "2026-KW41_stadt-in-der-schlaf-verboten-ist",
@@ -69,7 +75,9 @@
         "decision": "APPROVED_TOPIC_QUALITY",
         "score": 9.6
       },
-      "notes": "Finaler Render vom Nutzer als technisch gut bewertet: Bildwelt, Bildmenge, Schnitt/Produktion und Gesamteindruck funktionieren als Longform-Baseline. Das Thema selbst war nicht die gewünschte Kanalrichtung. Dieses Video daher nur als technische/visuelle Referenz verwenden, niemals als Themen- oder Content-Vorbild. Bevorzugte Richtung bleiben konkrete Rollen-/Lebenswelt-Themen wie Ein Tag als CIA-Agent, FBI-Agent, SWAT, Geheimdienst oder Progressionen/Hierarchien."
+      "notes": "Finaler Render vom Nutzer als technisch gut bewertet: Bildwelt, Bildmenge, Schnitt/Produktion und Gesamteindruck funktionieren als Longform-Baseline. Das Thema selbst war nicht die gewünschte Kanalrichtung. Dieses Video daher nur als technische/visuelle Referenz verwenden, niemals als Themen- oder Content-Vorbild. Bevorzugte Richtung bleiben konkrete Rollen-/Lebenswelt-Themen wie Ein Tag als CIA-Agent, FBI-Agent, SWAT, Geheimdienst oder Progressionen/Hierarchien.",
+      "archivedPath": "youtube/_archiv/2026-KW41/stadt-in-der-schlaf-verboten-ist",
+      "archivedAt": "2026-10-23"
     },
     {
       "id": "2026-KW41_ein-tag-als-fbi-agent",
@@ -100,6 +108,52 @@
       "createdAt": "2026-10-13T07:10:00+02:00",
       "notes": "Reales Mafia-Strukturerklärvideo; Quellen FBI/DOJ. Keine Flow-Assets oder fertiges MP4.",
       "completedAt": "2026-10-14T04:47:47.885Z"
+    },
+    {
+      "id": "2026-KW43_pov-zollfahnder-hamburger-hafen",
+      "title": "POV: Du bist Zollfahnder im Hamburger Hafen",
+      "aliases": [
+        "POV: Du bist Zollfahnder im Hamburger Hafen"
+      ],
+      "status": "reserved",
+      "channelFitAtCreation": {
+        "decision": "APPROVED_CHANNEL_FIT",
+        "score": 9,
+        "positiveSignals": [
+          "zoll"
+        ],
+        "outOfScopeSignals": [],
+        "reason": "Konkreter realer Beruf, historischer Alltag, politische Rolle oder nachvollziehbare Macht-/Organisationsstruktur."
+      },
+      "topicQualityAtCreation": {
+        "decision": "APPROVED_TOPIC_QUALITY",
+        "score": 8.7,
+        "roleSignals": [
+          "pov du bist"
+        ],
+        "listSignals": [],
+        "progressionSignals": [],
+        "storySignals": [],
+        "worldSignals": [
+          "zoll"
+        ],
+        "funnySignals": [],
+        "genericSignals": [],
+        "fantasySignals": [],
+        "suggestedFormats": [
+          "mini-stories"
+        ],
+        "reason": "Reale Welt mit klar erlebbaren Aufgaben, Macht-/Organisationsstruktur oder historischen Stationen.",
+        "reframePatterns": [
+          "Ein Tag als FBI-Agent",
+          "Ein Tag im Bundestag",
+          "Ein Tag im antiken Rom",
+          "Die Hierarchie einer Mafia erklärt",
+          "Wie ein Kartell aufgebaut ist",
+          "Ein Tag als Legionär im Römischen Reich"
+        ]
+      },
+      "createdAt": "2026-10-25T11:29:30.204Z"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "pipelineVersion": 3,
+  "contentPolicyVersion": 10,
+  "videoId": "2026-KW43_pov-zollfahnder-hamburger-hafen",
+  "weekFolder": "2026-KW43",
+  "topicSlug": "pov-zollfahnder-hamburger-hafen",
+  "title": "POV: Du bist Zollfahnder im Hamburger Hafen",
+  "topic": "POV: Du bist Zollfahnder im Hamburger Hafen",
+  "language": "de",
+  "visualStyleId": "strichmodus-editorial-comic-de-v2",
+  "targetDurationSeconds": 360,
+  "plannedImageCount": 128,
+  "endHoldSeconds": 1.3,
+  "createdAt": "2026-10-25T11:29:30.204Z",
+  "updatedAt": "2026-10-25T11:42:13.209Z",
+  "visualPolicyVersion": 10,
+  "learningPolicyVersion": 1
+}

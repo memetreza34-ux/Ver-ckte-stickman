@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 10,
+  "contentPolicyVersion": 10,
+  "language": "de",
+  "topic": "POV: Du bist Zollfahnder im Hamburger Hafen",
+  "workingTitle": "POV: Du bist Zollfahnder im Hamburger Hafen",
+  "contentMode": "hybrid",
+  "truthBoundary": {
+    "realElements": [
+      "Zollfahndungsamt Hamburg und Zollamt als Institutionen",
+      "Risikoanalyse zur Auswahl verdächtiger Container",
+      "Containerprüfanlage mit Röntgen und Abgleich der Packliste",
+      "Rip-on/Rip-off-Methode mit Taschen hinter der Tür und Siegelduplikat",
+      "Anwerbung von Hafenarbeitern über bezahlte Fotos",
+      "rund 34 Tonnen Kokain 2023 in Hamburg",
+      "7,8 Millionen TEU Umschlag pro Jahr"
+    ],
+    "inventedElements": [
+      "Hanne, Jens, Timo und die Hauptfigur",
+      "die Fruchtfirma aus Harburg",
+      "Container, Siegelnummer, 400 Kilo und der Ablauf dieser Nacht",
+      "Betrag von 5.000 Euro",
+      "Drohfoto der Haustür"
+    ],
+    "notes": "Die Nacht ist eine veranschaulichende Rekonstruktion typischer Abläufe, kein dokumentierter Einzelfall. Einordnung steht in der Beschreibung, nicht im Voice-over."
+  },
+  "topicFit": {
+    "score": 9,
+    "verdict": "APPROVED",
+    "pillars": [
+      "Berufsalltag, verdeckte Einblicke und außergewöhnliche Rollen",
+      "Mafia, organisierte Kriminalität und reale Macht- und Rangstrukturen"
+    ],
+    "reason": "Deutsche Behörde (Zoll) an einem echten Brennpunkt (Hamburger Hafen), echte Schmuggelmethoden, erlebt aus der Du-Perspektive."
+  },
+  "topicQuality": {
+    "score": 8.6,
+    "verdict": "APPROVED",
+    "curiosity": 9,
+    "weirdness": 8,
+    "visualPotential": 9,
+    "escalationPotential": 9,
+    "entertainmentPotential": 8,
+    "reason": "Kokain zwischen Bananen, Röntgenbilder, gefälschte Siegel und ein Hinterhalt im Nebel: konkret, deutsch verortet und bildstark.",
+    "whyNotBoring": "Jede Station ändert die Lage: rote Markierung, Röntgenblock, leerer Karton, falsches Siegel, Falle, Innentäter, Zugriff, Preis für den Fahrer."
+  },
+  "viewerPromise": "Du erlebst eine echte Zollnacht im Hamburger Hafen und lernst dabei, wie Kokain im Container wirklich geschmuggelt wird.",
+  "coreQuestion": "Was verbirgt sich in einem Container, dessen Papiere perfekt sind?",
+  "angle": "Ein Papiergläubiger Neuling lernt in einer Nacht, dass perfekte Papiere das beste Versteck sind.",
+  "individualityReason": "Statt Statistik-Referat eine einzige Nacht mit einer Figur, die sich verändert, einem Leitmotiv (Kreidekreuz) und einem echten Mechanismus (Rip-off).",
+  "scriptFormat": {
+    "type": "story",
+    "reason": "Eine Nacht unter Zeitdruck mit kausalen Wendungen: Markierung, Röntgen, Fund, Falle, Zugriff.",
+    "whyThisFormat": "Die Rip-off-Methode erschließt sich am besten, wenn man sie Schritt für Schritt als Fall erlebt; V10 empfiehlt story für einen Fall unter Zeitdruck."
+  },
+  "storyEngine": {
+    "perspective": "du",
+    "protagonist": {
+      "start": "Neuer Zollfahnder, seit drei Monaten im Dienst, glaubt an Frachtbrief, Packliste und Siegel.",
+      "want": "Den verdächtigen Container prüfen und herausfinden, wer die Ladung holen will, bevor sie um 6:00 Uhr den Hafen verlässt.",
+      "belief": "Wer die Papiere kennt, kennt die Ladung."
+    },
+    "stakes": "Über 400 Kilo Kokain verschwinden sonst unbemerkt in der Stadt, und die Hintermänner bleiben unbekannt.",
+    "clock": "Um 6:00 Uhr holt ein Lkw den Container zur Reiferei ab.",
+    "innerVoice": [
+      {
+        "stage": "Regel",
+        "line": "Wer die Papiere kennt, kennt die Ladung."
+      },
+      {
+        "stage": "Zweifel",
+        "line": "Die Papiere stimmen. Genau das stört dich."
+      },
+      {
+        "stage": "Einsicht",
+        "line": "Papiere kennen nur die Wahrheit, die jemand hineinschreibt."
+      },
+      {
+        "stage": "Wandel",
+        "line": "Wer nur die Papiere kennt, kennt nur die Papiere."
+      }
+    ],
+    "turns": [
+      {
+        "label": "Rote Markierung",
+        "whatChanges": "Ein Routinecontainer wird zum Verdachtsfall.",
+        "concreteDetail": "Empfänger gegründet vor sieben Wochen, erste Lieferung gleich 21 Tonnen."
+      },
+      {
+        "label": "Röntgenblock",
+        "whatChanges": "Die Papiere passen, das Röntgenbild nicht.",
+        "concreteDetail": "Ein dunkler Block direkt hinter der Tür, zu dicht für Bananen."
+      },
+      {
+        "label": "Fund und Duplikat",
+        "whatChanges": "Aus dem Verdacht wird ein Fund, und das Siegel ist gefälscht.",
+        "concreteDetail": "Vierzehn Sporttaschen, je rund 30 Kilo, Siegel ohne Kratzer nach 19 Tagen auf See."
+      },
+      {
+        "label": "Die Falle",
+        "whatChanges": "Statt zu beschlagnahmen, baut ihr eine Falle und du fälschst selbst ein Siegel.",
+        "concreteDetail": "Attrappen mit gleichem Gewicht, neues Siegel mit Nummer 4471882."
+      },
+      {
+        "label": "Innentäter",
+        "whatChanges": "Der Gegner hat ein Gesicht: ein Hafenarbeiter.",
+        "concreteDetail": "Van Carrier stellt den Container um 2:47 Uhr in eine Ecke ohne Kamera, Foto für 5.000 Euro."
+      },
+      {
+        "label": "Der Preis",
+        "whatChanges": "Der Erfolg hat ein Opfer, und die Hauptfigur denkt um.",
+        "concreteDetail": "Drohfoto der eigenen Haustür mit dem Wort „Morgen“."
+      }
+    ],
+    "callbackMotif": "Bananenkarton mit Kreidekreuz",
+    "notes": "Kreidekreuz eröffnet als Vorahnung, kehrt im Fund, bei den Abholern und am Spind zurück."
+  },
+  "hook": {
+    "type": "mini-szene",
+    "text": "Hamburg, Waltershof, 22:40 Uhr.",
+    "reason": "Ort und Uhrzeit setzen den Zuschauer sofort in die Nacht im Hafen."
+  },
+  "introPlan": {
+    "openingMove": "Ort, Uhrzeit, Nebel und ein summender Kühlcontainer in vier schnellen Bildern.",
+    "formatPromise": "Eine Nacht als Zollfahnder, in der deine Papiere nicht reichen.",
+    "firstPayoff": "Vorahnung: In sieben Stunden kniest du vor einem Bananenkarton mit Kreidekreuz.",
+    "clarityLine": "Du bist seit drei Monaten Zollfahnder.",
+    "first10SecondsVisualCount": 5
+  },
+  "formatPlan": {
+    "miniStories": {
+      "orderingLogic": "",
+      "sections": []
+    },
+    "progression": {
+      "axis": "",
+      "startState": "",
+      "endState": "",
+      "stages": []
+    },
+    "story": {
+      "protagonistOrFocus": "Du als neuer Zollfahnder mit Kollegin Hanne",
+      "immediateGoal": "Den rot markierten Bananencontainer prüfen, bevor er um 6:00 Uhr den Hafen verlässt.",
+      "centralProblem": "Die Papiere sind perfekt, aber der Container ist zu schwer.",
+      "worldRules": [
+        "Nur ein Bruchteil der Container wird geöffnet",
+        "Röntgenbild wird mit der Packliste verglichen",
+        "Rip-off: Taschen hinter der Tür, Siegelduplikat, Abholer im Zielhafen"
+      ],
+      "incitingIncident": "Die Risikoanalyse markiert den Container rot: neue Firma, erste Lieferung, 21 Tonnen.",
+      "causalTurns": [
+        "Röntgenbild zeigt Block hinter der Tür, also wird geöffnet.",
+        "Leerer Karton mit Kreidekreuz führt zu vierzehn Taschen.",
+        "Glattes Siegel verrät das Duplikat, also steckt ein Rip-off dahinter.",
+        "Weil die Hintermänner unbekannt sind, werden Attrappen eingesetzt und es wird gewartet.",
+        "Der Van-Carrier-Fahrer verrät sich durch die Fahrt ohne Auftrag und das Foto."
+      ],
+      "midpointTurn": "Statt die Drogen zu beschlagnahmen, macht die Hauptfigur selbst ein Siegel nach und stellt eine Falle.",
+      "finalEscalation": "3:40 Uhr: Die Abholer greifen zum Kreidekreuz-Karton, die Spezialeinheit des Zolls greift zu.",
+      "setupPayoff": {
+        "setup": "Unten links steht ein leerer Karton mit Kreidekreuz.",
+        "payoff": "Die Abholer greifen genau dorthin und werfen ihn zur Seite."
+      },
+      "endingCallback": "Die Hauptfigur malt ein Kreidekreuz auf den Spind, und jeder Bananenkarton mit Kreidekreuz ist ab jetzt eine Frage.",
+      "beats": [
+        {
+          "purpose": "Einstieg",
+          "content": "Nebel, Kühlcontainer, Papiere, Vorahnung mit dem Kreidekreuz."
+        },
+        {
+          "purpose": "Auslöser",
+          "content": "Hanne zeigt die rote Markierung der Risikoanalyse."
+        },
+        {
+          "purpose": "Eskalation",
+          "content": "Röntgenbild zeigt einen zu schweren Block hinter der Tür."
+        },
+        {
+          "purpose": "Enthüllung",
+          "content": "Leerer Karton, vierzehn Taschen, über 400 Kilo, Siegelduplikat, Rip-off erklärt."
+        },
+        {
+          "purpose": "Midpoint",
+          "content": "Attrappen statt Beschlagnahme, neues Siegel, Warten bis 6:00 Uhr."
+        },
+        {
+          "purpose": "Spannung",
+          "content": "Warten im Transporter, Hannes Geschichte von 2001."
+        },
+        {
+          "purpose": "Gegner",
+          "content": "Van Carrier, Ecke ohne Kamera, Foto für 5.000 Euro."
+        },
+        {
+          "purpose": "Finale",
+          "content": "Zugriff um 3:40 Uhr am Kreidekreuz-Karton."
+        },
+        {
+          "purpose": "Preis",
+          "content": "Timo, Drohfoto, „Ich sollte nur ein Foto machen“."
+        },
+        {
+          "purpose": "Ende",
+          "content": "Morgen am Kai, Kreide, Spind, neuer Leitsatz, nächste Schicht um 22:40 Uhr."
+        }
+      ]
+    }
+  },
+  "entertainmentBeats": [
+    {
+      "type": "neue Information",
+      "moment": "Firma gegründet vor sieben Wochen, gleich 21 Tonnen."
+    },
+    {
+      "type": "visueller Gag",
+      "moment": "Hanne: „Sauber ist mir zu sauber.“ mit Lakritz."
+    },
+    {
+      "type": "Enthüllung",
+      "moment": "Röntgenblock hinter der Tür: zu schwer."
+    },
+    {
+      "type": "Enthüllung",
+      "moment": "Leerer Karton mit Kreidekreuz, dahinter vierzehn Taschen."
+    },
+    {
+      "type": "Statuswechsel",
+      "moment": "Du machst selbst ein Siegel nach."
+    },
+    {
+      "type": "visueller Gag",
+      "moment": "Fischbrötchen von gestern und Hanne schläft im Sitzen."
+    },
+    {
+      "type": "Risiko",
+      "moment": "Van Carrier stellt den Container in die tote Ecke."
+    },
+    {
+      "type": "Konsequenz",
+      "moment": "Zugriff in fünf Sekunden."
+    },
+    {
+      "type": "Callback",
+      "moment": "Kreidekreuz auf dem Spind."
+    }
+  ],
+  "scriptQuality": {
+    "score": 8.6,
+    "verdict": "APPROVED",
+    "introClarity": 9,
+    "formatFit": 9,
+    "clarity": 9,
+    "curiosity": 9,
+    "entertainment": 8,
+    "voiceNaturalness": 8,
+    "payoff": 8,
+    "reason": "Du-Perspektive, harte Kurzsätze an Wendepunkten, Fakten als erlebte Momente, innere Stimme in vier Stufen und Callback am Ende. Vor der Aufnahme einmal laut lesen."
+  },
+  "retention": {
+    "openLoops": [
+      "Vorahnung: Bananenkarton mit Kreidekreuz in sieben Stunden",
+      "Wer holt die Taschen ab?"
+    ],
+    "escalationPoints": [
+      "Röntgenblock hinter der Tür",
+      "Siegelduplikat",
+      "Van Carrier ohne Auftrag",
+      "Zugriff um 3:40 Uhr"
+    ],
+    "patternInterrupts": [
+      "Hannes Geschichte von 2001",
+      "Drohfoto mit dem Wort „Morgen“"
+    ]
+  },
+  "payoff": "Der Kreidekreuz-Karton verrät die Abholer, und der Leitsatz der Hauptfigur dreht sich um.",
+  "titleCoverSystem": {
+    "finalTitle": "POV: Du bist Zollfahnder im Hamburger Hafen",
+    "titlePromise": "Du erlebst selbst eine Nacht als Zollfahnder und jagst Kokain im Container.",
+    "coverConcept": {
+      "visualConflict": "Perfekte Bananenkartons gegen einen dunklen, schweren Block im Röntgenbild, davor der schockierte Fahnder.",
+      "mainSubjects": [
+        "Röntgenblick in den Container",
+        "schockierter junger Zollfahnder"
+      ],
+      "visibleText": "ZU SCHWER",
+      "emotion": "Schock",
+      "whyClickable": "Man will wissen, was hinter der Tür so schwer ist."
+    },
+    "complementarity": "Der Titel liefert Rolle und Ort, das Cover das Rätsel: Was ist zu schwer für Bananen?"
+  },
+  "youtubeUpload": {
+    "title": "POV: Du bist Zollfahnder im Hamburger Hafen",
+    "description": "Hamburg, Waltershof, 22:40 Uhr: Nebel über den Kränen und ein Kühlcontainer voller Bananen, den die Risikoanalyse rot markiert hat. Du bist seit drei Monaten Zollfahnder und vertraust deinen Papieren. Dann zeigt das Röntgenbild direkt hinter der Tür einen Block, der zu schwer für Bananen ist. Und unten links wartet ein Karton mit einem Kreidekreuz.\n\nDie Figuren, die Firma und diese Nacht sind erfunden und dramatisiert. Echt sind die Methoden: Risikoanalyse, Röntgenkontrolle mit Abgleich der Packliste, die Rip-off-Masche mit nachgemachten Siegeln und Hafenarbeiter, die mit Geld für harmlose Fotos angeworben werden. 2023 stellten Zoll und Polizei im Hamburger Hafen rund 34 Tonnen Kokain sicher. Grundlage: Zoll-Jahresbilanz, Weltzollorganisation (WCO) und Berichte von dpa und ZDFheute.\n\n#Zoll #HamburgerHafen #Zollfahndung #Kokainschmuggel #StrichModus",
+    "tags": [
+      "Zollfahnder",
+      "Zoll",
+      "Hamburger Hafen",
+      "Zollfahndung",
+      "Kokainschmuggel",
+      "Rip-off Methode",
+      "Container Röntgen",
+      "Drogenschmuggel Hafen",
+      "Bananen Kokain",
+      "POV",
+      "Strichmännchen",
+      "StrichModus"
+    ]
+  },
+  "ending": {
+    "type": "callback",
+    "finalLine": "Und um 22:40 Uhr beginnt deine nächste Schicht."
+  },
+  "notes": [
+    "Voice-over ruhig und nah sprechen, Kurzsätze mit Pause. Zitate von Hanne und Jens leicht abgesetzt."
+  ],
+  "learningFromPreviousVideos": {
+    "policyVersion": 1,
+    "sourceVideos": [
+      "2026-KW42_mafia-hierarchie-erklaert"
+    ],
+    "plannedImprovements": [
+      {
+        "source": "2026-KW42_mafia-hierarchie-erklaert",
+        "action": "Wortzahl des nächsten Skripts anhand des realen Voice-over-Tempos kalibrieren."
+      },
+      {
+        "source": "2026-KW42_mafia-hierarchie-erklaert",
+        "action": "Mehr eigenständige, sinnvolle Bildmomente bei Szenen- und Informationswechseln planen."
+      },
+      {
+        "source": "2026-KW42_mafia-hierarchie-erklaert",
+        "action": "Lange Einstellungen gezielt durch bessere Szenenbilder ersetzen statt den Zoom zu strecken."
+      },
+      {
+        "source": "Nutzerfeedback 2026-10-14 nach Sichtung des Mafia-Hierarchie-Videos: viele austauschbare Figuren, Bilder zeigen die gesprochenen Fakten nicht genau genug",
+        "action": "Visual Policy V9 ist verbindlich für neue Videos: JEDE Szene benötigt eine konkrete Kernaussage, passenden Bildtyp, eigene Komposition und mindestens zwei spezifische Bildbestandteile. Erkläre Stufen als Pyramide, Beziehungen als Organigramm, Prozesse als Ablaufgrafik, Vergleiche als Gegenüberstellung, Orte auf Karten, nur echte Handlungen als Stickman-Szene. Beschriftungen auf allen Bildern erlaubt, wenn sie Wissen klarer vermitteln; kurze korrekte Begriffe, kein Pseudotext. Ein einheitlicher handgezeichneter Editorial-Comic-Look, nicht bloß einheitliche Figuren. Jedes generierte Bild auf Skriptpassung und Fakten prüfen; Fehler neu erzeugen."
+      },
+      {
+        "source": "Nutzerfeedback 2026-10-13: StrichModus = FBI-Tag, Mafia-Aufbau, antikes Rom, Parlament statt Unsichtbarkeits-Fantasie",
+        "action": "Neue Themen standardmäßig in echten ungewöhnlichen Berufs-, Geschichts-, Macht- und Organisationswelten wählen: Ein Tag als/im, Aufbau/Hierarchie/Ränge. Konkreten Tagesablauf oder Struktur erklären, unterhaltsam mit Strichmännchen und etwas Humor. Fantasy-Magie und beliebige absurde Geschichten nur nach expliziter Ausnahme; keine neue Themenrichtung daraus ableiten."
+      },
+      {
+        "source": "Nutzerfeedback 2026-10-13: Google Flow erzeugt ausgearbeitete Cartoon-Menschen statt Strichmännchen",
+        "action": "Nur WENN eine Bildidee Personen enthält, diese als wiedererkennbare klassische Strichfiguren mit Kreis-/Ovalkopf, Linienrumpf, Stricharmen und -beinen gestalten. Rein sachliche Hierarchie-, Karten-, Prozess-, Vergleichs- und andere Erklärgrafiken dürfen ganz ohne Figuren auskommen. Jede tatsächlich generierte Figur visuell prüfen."
+      },
+      {
+        "source": "Spiegel-Test, Nutzerfeedback",
+        "action": "Thema und Situation schon in den ersten Sekunden klar erklären statt eines verwirrenden Mystery-Einstiegs."
+      },
+      {
+        "source": "frühe CIA-/Dokuvideos, Nutzerfeedback",
+        "action": "Nicht wie ein Referat erzählen: echte Handlungen, Perspektiven, Humor und überraschende Szenen zeigen."
+      }
+    ],
+    "appliedDuringProduction": [
+      "Wortzahl auf 977 Wörter kalibriert (Mafia-Tempo 163,5 Wörter/Minute → ca. 6:00).",
+      "128 Bilder für ca. 360 s geplant (≈ 35,6 pro 100 s statt 28).",
+      "Kein Segment länger als ein bis zwei Sätze, damit keine Standbilder über 5,8 s entstehen.",
+      "Jede Szene mit eigener Kernaussage, Bildtyp, Ort und Figuren aus der V10-Bildwelt."
+    ],
+    "notes": "Verbesserungen beim Schreiben, Bildplanen und Rendern tatsächlich beachten; nicht nur abhaken."
+  },
+  "channelDirectionCheck": {
+    "realWorldAnchor": "Zoll und Zollfahndung im Hamburger Hafen, reale Schmuggelmethoden.",
+    "viewerInsight": "Wie Kokain im Container geschmuggelt wird und wie der Zoll es findet.",
+    "formatReason": "story: eine Nacht als zusammenhängender Fall unter Zeitdruck.",
+    "factVsDramatization": "Methoden und Zahlen belegt, Figuren und Nacht dramatisiert.",
+    "historicalTimeAndPlace": "Gegenwart, Hamburg-Waltershof.",
+    "exceptionApproved": false,
+    "notes": "Deutsche Behörde, deutscher Schauplatz gemäß localizationPolicy."
+  }
+}

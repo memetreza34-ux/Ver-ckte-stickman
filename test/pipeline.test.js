@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
@@ -13,11 +13,11 @@ import { STICKMAN_ANATOMY_RULE, auditStickmanPrompts, auditLivelyGermanVisuals }
 
 test('Visual Policy bleibt produktionsbereit',async()=>{const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));assert.equal(v.status,'READY');assert.equal(v.languagePolicy?.promptLanguage,'de');assert.equal(v.thumbnailDNA?.headlineRequired,true);});
 
-test('Content Policy V9 priorisiert Rollen und drei Skriptformate',async()=>{const c=JSON.parse(await readFile('config/content-policy.json','utf8'));assert.equal(c.contentPolicyVersion,9);assert.deepEqual(c.scriptFormatPolicy.allowedFormats,['mini-stories','progression','story']);assert.ok(c.channelDirection.preferredTopicArchetypes.includes('Ein Tag als FBI-Agent'));assert.equal(c.contentModePolicy.realInstitutionDefault,'hybrid');assert.equal(c.youtubeUploadPolicy.exportFile,'04-export/YOUTUBE_CAPTION.txt');assert.equal(c.youtubeUploadPolicy.timedTranscriptFile,'04-export/UNTERTITEL_SCRIPT.txt');});
+test('Content Policy V10 priorisiert Rollen und drei Skriptformate',async()=>{const c=JSON.parse(await readFile('config/content-policy.json','utf8'));assert.equal(c.contentPolicyVersion,10);assert.deepEqual(c.scriptFormatPolicy.allowedFormats,['mini-stories','progression','story']);assert.ok(c.channelDirection.preferredTopicArchetypes.includes('Ein Tag als FBI-Agent'));assert.equal(c.contentModePolicy.realInstitutionDefault,'hybrid');assert.equal(c.youtubeUploadPolicy.exportFile,'04-export/YOUTUBE_CAPTION.txt');assert.equal(c.youtubeUploadPolicy.timedTranscriptFile,'04-export/UNTERTITEL_SCRIPT.txt');});
 
-test('Template V9 trennt die drei Formatpläne',async()=>{const c=JSON.parse(await readFile('youtube/_intern/templates/video-template/99-tech/CONTENT_PLAN.json','utf8'));assert.equal(c.schemaVersion,9);assert.equal(c.contentPolicyVersion,9);assert.ok(Object.hasOwn(c,'scriptFormat'));assert.ok(Object.hasOwn(c.formatPlan,'miniStories'));assert.ok(Object.hasOwn(c.formatPlan,'progression'));assert.ok(Object.hasOwn(c.formatPlan,'story'));assert.ok(Object.hasOwn(c.scriptQuality,'formatFit'));});
+test('Template V10 trennt die drei Formatpläne',async()=>{const c=JSON.parse(await readFile('youtube/_intern/templates/video-template/99-tech/CONTENT_PLAN.json','utf8'));assert.equal(c.schemaVersion,10);assert.equal(c.contentPolicyVersion,10);assert.ok(Object.hasOwn(c,'storyEngine'));assert.ok(Object.hasOwn(c,'scriptFormat'));assert.ok(Object.hasOwn(c.formatPlan,'miniStories'));assert.ok(Object.hasOwn(c.formatPlan,'progression'));assert.ok(Object.hasOwn(c.formatPlan,'story'));assert.ok(Object.hasOwn(c.scriptQuality,'formatFit'));});
 
-test('Package und Phase 3 nutzen V9',async()=>{const p=JSON.parse(await readFile('package.json','utf8'));assert.equal(p.version,'2.8.0');assert.match(p.scripts['validate:phase1'],/validate-phase1-v9\.js$/);const phase3=await readFile('src/cli/phase3.js','utf8');assert.match(phase3,/validate-phase1-v9\.js/);assert.doesNotMatch(phase3,/validate-phase1-v4\.js/);});
+test('Package und Phase 3 nutzen V9',async()=>{const p=JSON.parse(await readFile('package.json','utf8'));assert.equal(p.version,'2.9.0');assert.match(p.scripts['validate:phase1'],/validate-phase1-v9\.js$/);const phase3=await readFile('src/cli/phase3.js','utf8');assert.match(phase3,/validate-phase1-v9\.js/);assert.doesNotMatch(phase3,/validate-phase1-v4\.js/);});
 
 test('Finalizer exportiert Caption und zeitcodiertes Vollskript',async()=>{const f=await readFile('src/cli/finalize.js','utf8');assert.match(f,/YOUTUBE_CAPTION\.txt/);assert.match(f,/UNTERTITEL_SCRIPT\.txt/);assert.match(f,/YOUTUBE_AUDIO_OPTIMIZED\.json/);assert.match(f,/blockSeconds=10/);assert.match(f,/Whisper-Zeitdaten fehlen/);});
 
@@ -152,7 +152,7 @@ test('Stickman V7: jeder Einzelprompt braucht klassische Linien-Anatomie',()=>{
 
 test('Visual Policy V9 wählt Bildtypen nach Aussage statt Stickman-Quote',async()=>{
   const vp=JSON.parse(await readFile('config/visual-policy.json','utf8'));
-  assert.equal(vp.visualPolicyVersion,9);
+  assert.equal(vp.visualPolicyVersion,10);
   assert.equal(vp.visualQualityV9.noFixedFigureRatio,true);
   assert.equal(vp.visualQualityV9.sceneSpecificPlanningRequired,true);
   assert.equal(vp.informationTextPolicy.allowedOutsideCover,true);
@@ -168,16 +168,23 @@ test('Mafia KW42: Phase 1 ist vollständig und 25 Flow-5er-Blöcke lassen sich a
  const project='youtube/2026-KW42/mafia-hierarchie-erklaert';
  const result=await validatePhase1V9(project);
  assert.equal(result.passed,true,result.errors.join(' | '));
- const manifest=JSON.parse(await readFile(path.join(project,'00-bildprompts/5er-batches/BATCH_MANIFEST.json'),'utf8'));
- assert.equal(manifest.totalImages,125);
- assert.equal(manifest.batches.length,25);
- const images=manifest.batches.flatMap(b=>Array.from({length:b.count},(_,k)=>b.from+k));
- assert.deepEqual(images,Array.from({length:125},(_,i)=>i+1));
- for(const batch of manifest.batches){
-  const block=await readFile(path.join(project,'00-bildprompts/5er-batches',batch.file),'utf8');
-  assert.equal((block.match(/^## Bild [0-9]{2,3}/gm)||[]).length,5);
-  assert.ok(block.includes('STICKMAN-ANATOMIE:'));
- }
+ // 5er-Batches sind gitignored: in einer Projektkopie frisch erzeugen statt eingecheckte Dateien zu lesen.
+ const tmp=await mkdtemp(path.join(os.tmpdir(),'stickman-mafia-'));
+ try{
+  await cp(project,tmp,{recursive:true,filter:(src)=>!src.includes(`${path.sep}5er-batches`)});
+  await compileFlowPrompt(tmp);
+  const batchDir=path.join(tmp,'00-bildprompts/5er-batches');
+  const manifest=JSON.parse(await readFile(path.join(batchDir,'BATCH_MANIFEST.json'),'utf8'));
+  assert.equal(manifest.totalImages,125);
+  assert.equal(manifest.batches.length,25);
+  const images=manifest.batches.flatMap(b=>Array.from({length:b.count},(_,k)=>b.from+k));
+  assert.deepEqual(images,Array.from({length:125},(_,i)=>i+1));
+  for(const batch of manifest.batches){
+   const block=await readFile(path.join(batchDir,batch.file),'utf8');
+   assert.equal((block.match(/^## Bild [0-9]{2,3}/gm)||[]).length,5);
+   assert.ok(block.includes('STICKMAN-ANATOMIE:'));
+  }
+ }finally{await rm(tmp,{recursive:true,force:true});}
 });
 
 test('V8-Bildvalidator bleibt nur für alte Projekte nutzbar',async()=>{
@@ -188,7 +195,7 @@ test('V8-Bildvalidator bleibt nur für alte Projekte nutzbar',async()=>{
 });
 test('Bildwelt V9 hat konsistente Text-, Marken- und Erklärregeln',async()=>{
  const v=JSON.parse(await readFile('config/visual-policy.json','utf8'));
- assert.equal(v.visualPolicyVersion,9);
+ assert.equal(v.visualPolicyVersion,10);
  assert.equal(v.informationTextPolicy.allowedOutsideCover,true);
  assert.equal(v.languagePolicy.allVisibleTextMustBeGerman,true);
  assert.equal(v.sceneFirstVisualPolicy.priority,1);

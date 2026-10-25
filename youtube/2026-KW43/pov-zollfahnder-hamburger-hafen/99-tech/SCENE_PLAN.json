@@ -1,0 +1,2144 @@
+{
+  "schemaVersion": 10,
+  "visualWorld": {
+    "name": "Nebelnacht Waltershof",
+    "look": "Nebelnacht im Hamburger Containerhafen: nasser Asphalt mit Spiegelungen, rostige Containerwände, Natriumdampflicht mit Lichthöfen, Kondensnebel aus Kühlaggregaten, braune Bananenkartons aus Wellpappe und weiße Kreidestriche; gegen Morgen kühles klares Elblicht",
+    "palette": [
+      "Natriumorange",
+      "Nachtblau",
+      "Rostrot",
+      "Bananengelb",
+      "Nebelgrau",
+      "Zollgrün"
+    ],
+    "lighting": "Nachts orange Natriumdampflampen mit Nebelhalos und harte Taschenlampenkegel; in der Prüfanlage kaltes Monitorblau; beim Zugriff grelle weiße Scheinwerfer und Blaulicht; am Ende weiches Morgenlicht über der Elbe",
+    "locations": {
+      "stellplatz": "Containerstellplatz Waltershof: Reihen gestapelter Container, ein weißer Kühlcontainer mit summendem Aggregat und grüner Statuslampe, rote Containerbrücken im Nebel, nasse Pfützen",
+      "pruefanlage": "Containerprüfanlage: langer grauer Betontunnel mit gelb-schwarzen Warnstreifen, Lkw mit Container fährt hindurch, angrenzender Kontrollraum mit drei Monitoren und einer großen Kaffeetasse",
+      "containerinneres": "Geöffneter Kühlcontainer: Flügeltüren mit Verschlussstangen, kalter Dunst, Reihen brauner Bananenkartons, Taschenlampenkegel, ganz unten links ein Karton mit weißem Kreidekreuz",
+      "transporter": "Dunkler ziviler Transporter zwischen zwei Containerreihen: beschlagene Frontscheibe, Thermoskanne und Wärmebildkamera auf dem Armaturenbrett, Fischbrötchen in Papier",
+      "ecke": "Tote Ecke am Terminalrand: Container im Schatten, abgewandte Überwachungskamera auf Mast, ein Van Carrier als hohe Stahlspinne auf Rädern, nasser Asphalt",
+      "buero": "Büro des Zollfahndungsamts: Aktenstapel, Whiteboard mit Fotos und Fäden, Fenster mit Blick auf die Kräne, graue Spinde an der Wand",
+      "kai": "Kaikante an der Elbe: Poller, ein großes Containerschiff, Kräne, Möwen und sich auflösender Morgennebel"
+    },
+    "cast": {
+      "fahnder": {
+        "look": "Junger Zollfahnder als Strichmännchen: kurze dunkle Haare, dunkelblaue Zivil-Jacke, Dienstausweis an einer Kordel, Klemmbrett mit Papieren",
+        "stages": {
+          "neu": "ordentlich, Klemmbrett fest im Arm, selbstsicheres Lächeln",
+          "zweifel": "Klemmbrett gesenkt, Stirnfalten, Schweißtropfen",
+          "einsatz": "grüne Einsatzweste über der Jacke, Taschenlampe in der Hand",
+          "morgen": "müde, offene Jacke, Kreidestück in der Hand"
+        }
+      },
+      "hanne": {
+        "look": "Erfahrene Zollfahnderin Hanne als Strichmännchen: graue kurze Haare, Lesebrille auf der Stirn, olivgrüner Parka, Lakritzschnecke in der Hand"
+      },
+      "jens": {
+        "look": "Zollbeamter Jens im Kontrollraum als Strichmännchen: Glatze, Headset, grauer Strickpulli, große Kaffeetasse"
+      },
+      "timo": {
+        "look": "Van-Carrier-Fahrer Timo als Strichmännchen: orange Warnweste, weißer Schutzhelm, Smartphone in der Hand",
+        "stages": {
+          "fahrer": "hastig, nervöser Blick über die Schulter",
+          "gestellt": "Helm abgesetzt, leerer Blick, Hände zitternd"
+        }
+      },
+      "abholer": {
+        "look": "Zwei Abholer als Strichmännchen: gelbe Warnwesten, Mützen tief im Gesicht, einer trägt einen Bolzenschneider"
+      },
+      "zuz": {
+        "look": "Spezialeinheit des Zolls als Strichmännchen: schwarze Einsatzkleidung, Helme, Taschenlampen, ruhige präzise Bewegung"
+      }
+    },
+    "motif": {
+      "object": "Bananenkarton mit weißem Kreidekreuz",
+      "meaning": "Das geheime Zeichen der Schmuggler: Was die Papiere verschweigen"
+    }
+  },
+  "coverVisual": "Bildfüllender Röntgenblick in den weißen Kühlcontainer: zwischen gleichmäßigen Bananenkartons glüht hinter der Tür ein dunkler schwerer Block; im Vordergrund der junge Zollfahnder mit weit aufgerissenen Augen und Schweißtropfen, Natriumlicht und Nebel",
+  "coverHoldSeconds": 2,
+  "world": "Alle Bilder spielen in derselben Nacht im Hamburger Hafen. Wiederkehrend sind der weiße Kühlcontainer, die roten Containerbrücken, der Nebel und der Bananenkarton mit Kreidekreuz. Strichmännchen bleiben konsistent in Kleidung und Accessoires.",
+  "scenes": [
+    {
+      "anchor": "Hamburg, Waltershof, 22:40 Uhr.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Nachtschicht im Hamburger Hafen: ein verdächtiger Kühlcontainer wartet",
+      "visual": "Hinter dem Röntgenblick steht der weiße Kühlcontainer im Natriumlicht, Nebel kriecht über den nassen Asphalt; im Röntgenbild ganz unten links ein Bananenkarton mit Kreidekreuz",
+      "elements": [
+        "weißer Kühlcontainer mit grüner Statuslampe",
+        "Röntgenansicht mit dunklem Block hinter der Tür",
+        "Bananenkarton mit Kreidekreuz unten links"
+      ],
+      "labels": [],
+      "motif": true,
+      "chapter": "Der rote Container"
+    },
+    {
+      "anchor": "Nebel hängt zwischen den Kränen.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "message": "Dichter Nebel liegt zwischen den riesigen Containerkränen",
+      "visual": "Weite Totale: rote Containerbrücken ragen wie Riesen aus dem Nebel, Lichter der Laufkatzen verschwimmen zu orangen Halos",
+      "elements": [
+        "drei rote Containerbrücken",
+        "orange Lichthöfe im Nebel",
+        "Containerstapel als Silhouetten"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Vor dir summt ein weißer Kühlcontainer.",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "message": "Das Kühlaggregat des Containers summt in der Stille",
+      "visual": "Nahaufnahme des Kühlaggregats an der Stirnseite: Lüftergitter, Kondenswasser tropft, grüne Lampe leuchtet, kleine Dampfwolke",
+      "elements": [
+        "Lüftergitter des Kühlaggregats",
+        "tropfendes Kondenswasser",
+        "grüne Statuslampe"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Darin: 1.152 Kartons Bananen aus Ecuador.",
+      "visualType": "symbolbild",
+      "message": "Laut Papieren liegen 1.152 Bananenkartons aus Ecuador im Container",
+      "visual": "Aufgeschnittene Ansicht des Containers wie ein Puppenhaus: endlose Reihen brauner Bananenkartons, darüber schwebt ein Frachtbrief mit Ecuador-Flaggenstempel",
+      "elements": [
+        "aufgeschnittener Container voller Kartons",
+        "schwebender Frachtbrief",
+        "kleine Ecuador-Flagge als Stempel"
+      ],
+      "labels": [
+        "1.152 Kartons",
+        "Ecuador"
+      ]
+    },
+    {
+      "anchor": "Sagen jedenfalls die Papiere.",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Alles, was du über die Ladung weißt, steht nur auf Papier",
+      "visual": "Strichmännchen-Hand hält ein Klemmbrett mit Frachtbrief ins Lampenlicht, hinter dem Papier ist der Container nur ein dunkler Schatten",
+      "elements": [
+        "Klemmbrett mit Frachtbrief",
+        "Taschenlampenkegel",
+        "Container als dunkler Schatten"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du bist seit drei Monaten Zollfahnder.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Du bist ein neuer Zollfahnder, erst drei Monate im Dienst",
+      "visual": "Der junge Zollfahnder steht stolz vor der Containerwand, Ausweis an der Kordel, glänzende neue Jacke, Kalenderblatt mit drei abgehakten Monaten schwebt daneben",
+      "elements": [
+        "Dienstausweis an Kordel",
+        "neue dunkelblaue Jacke",
+        "Kalender mit drei abgehakten Monaten"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Und du liebst Papiere. Frachtbrief, Packliste,",
+      "visualType": "symbolbild",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Frachtbrief, Packliste und Siegelnummer sind dein Werkzeug",
+      "visual": "Der Zollfahnder umarmt verliebt einen Stapel Dokumente, kleine Herzen steigen auf: Frachtbrief, Packliste und ein Zettel mit Siegelnummer",
+      "elements": [
+        "Stapel aus drei Dokumenten",
+        "kleine Herzen",
+        "verliebter Gesichtsausdruck"
+      ],
+      "labels": [
+        "Frachtbrief",
+        "Packliste"
+      ]
+    },
+    {
+      "anchor": "Wenn alles zusammenpasst, schläfst du gut.",
+      "visualType": "szene",
+      "location": "buero",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Stimmen die Papiere, fühlst du dich sicher",
+      "visual": "Der Zollfahnder schläft zufrieden mit dem Kopf auf ordentlich gestapelten, abgehakten Akten, grüne Haken schweben über ihm",
+      "elements": [
+        "ordentlicher Aktenstapel als Kopfkissen",
+        "grüne Haken",
+        "Schreibtischlampe"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dein Satz für jede Schicht: Wer",
+      "visualType": "symbolbild",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Dein Leitsatz: Wer die Papiere kennt, kennt die Ladung",
+      "visual": "Der Zollfahnder hält einen Frachtbrief wie einen Schlüssel, der genau in das Schloss der Containertür passt",
+      "elements": [
+        "Frachtbrief als Schlüssel",
+        "Containertürschloss",
+        "selbstsicheres Lächeln"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "In sieben Stunden kniest du vor",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Vorahnung: In sieben Stunden kniest du vor dem markierten Karton",
+      "visual": "Vorausblick in blauem Dunst: der Zollfahnder kniet erschrocken vor einem Bananenkarton mit weißem Kreidekreuz, Taschenlampe zittert",
+      "elements": [
+        "Bananenkarton mit weißem Kreidekreuz",
+        "zitternder Taschenlampenkegel",
+        "kniende Figur mit Schweißtropfen"
+      ],
+      "labels": [],
+      "motif": true
+    },
+    {
+      "anchor": "Und dein Satz ist kaputt. Noch",
+      "visualType": "symbolbild",
+      "message": "Dein Leitsatz wird diese Nacht zerbrechen",
+      "visual": "Ein Frachtbrief reißt in der Mitte durch, die Hälften fliegen im Nebel davon, darunter ein kleines Uhrsymbol",
+      "elements": [
+        "zerreißender Frachtbrief",
+        "kleines Uhrsymbol",
+        "Nebelschwaden"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Neben dir steht Hanne Petersen.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne",
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Hanne Petersen, deine erfahrene Kollegin, steht neben dir",
+      "visual": "Hanne lehnt lässig am Container, Lesebrille auf der Stirn, olivgrüner Parka, der junge Fahnder daneben steht stramm",
+      "elements": [
+        "Hanne lehnt am Container",
+        "Lesebrille auf der Stirn",
+        "stramm stehender junger Kollege"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "24 Jahre Zollfahndung, Lakritz in der",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Hanne hat 24 Jahre Erfahrung und immer Lakritz dabei",
+      "visual": "Nahaufnahme von Hannes Parkatasche: eine Lakritzschnecke schaut heraus, daneben ein abgegriffener Dienstausweis voller Kratzer",
+      "elements": [
+        "Lakritzschnecke in der Tasche",
+        "abgegriffener Dienstausweis",
+        "olivgrüner Parkastoff"
+      ],
+      "labels": [
+        "24 Jahre"
+      ]
+    },
+    {
+      "anchor": "Sie hält dir das Tablet hin.",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Die Risikoanalyse hat genau diesen Container rot markiert",
+      "visual": "Tablet in Hannes Hand: eine Liste von Containern, eine Zeile leuchtet knallrot, das Licht spiegelt sich auf dem nassen Display",
+      "elements": [
+        "Tablet mit Containerliste",
+        "rot leuchtende Zeile",
+        "Nebeltropfen auf dem Display"
+      ],
+      "labels": [
+        "Risikoanalyse",
+        "ROT"
+      ]
+    },
+    {
+      "anchor": "Der Empfänger ist eine Fruchtfirma aus",
+      "visualType": "symbolbild",
+      "message": "Empfänger ist eine unbekannte Fruchtfirma aus Harburg",
+      "visual": "Ein kleines unscheinbares Firmenschild an einem grauen Hinterhofgebäude, davor eine einzelne Banane auf dem Boden",
+      "elements": [
+        "unscheinbares Bürogebäude",
+        "einzelne Banane auf dem Boden"
+      ],
+      "labels": [
+        "Fruchtfirma",
+        "Harburg"
+      ]
+    },
+    {
+      "anchor": "Gegründet vor sieben Wochen. Erste Lieferung",
+      "visualType": "infografik",
+      "message": "Die Firma gibt es erst seit sieben Wochen und dies ist ihre erste Lieferung",
+      "visual": "Ein kurzer Zeitstrahl: winziger Balken für sieben Wochen, ganz rechts ein Container mit der Markierung erste Lieferung",
+      "elements": [
+        "kurzer Zeitstrahl",
+        "Container-Symbol am Ende"
+      ],
+      "labels": [
+        "7 Wochen",
+        "erste Lieferung"
+      ]
+    },
+    {
+      "anchor": "Und gleich 21 Tonnen.",
+      "visualType": "infografik",
+      "message": "Ausgerechnet die erste Lieferung wiegt gleich 21 Tonnen",
+      "visual": "Riesige Waage: auf einer Seite ein kleines neues Firmenschild, auf der anderen ein schwerer Container, der die Waage nach unten drückt",
+      "elements": [
+        "schiefe Waage",
+        "winziges Firmenschild",
+        "schwerer Container"
+      ],
+      "labels": [
+        "21 Tonnen",
+        "neue Firma"
+      ]
+    },
+    {
+      "anchor": "„Wer fängt mit 21 Tonnen an?“,",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne",
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Hanne zweifelt: Niemand fängt mit 21 Tonnen an",
+      "visual": "Hanne zieht eine Augenbraue hoch und zeigt mit der Lakritzschnecke auf den Container, der junge Fahnder blickt unsicher",
+      "elements": [
+        "hochgezogene Augenbraue",
+        "Lakritzschnecke als Zeigestock",
+        "unsicherer Blick des Kollegen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du zuckst mit den Schultern. Siegelnummer",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Die Siegelnummer am Container stimmt exakt mit dem Frachtbrief überein",
+      "visual": "Nahaufnahme: gelbes Bolzensiegel am Türverschluss neben dem Frachtbrief, beide Nummern sind mit grünen Haken verbunden",
+      "elements": [
+        "gelbes Bolzensiegel am Türgriff",
+        "Frachtbrief daneben",
+        "grüner Verbindungshaken"
+      ],
+      "labels": [
+        "4471882"
+      ]
+    },
+    {
+      "anchor": "Für dich ist der Fall sauber.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Für dich ist der Fall erledigt",
+      "visual": "Der junge Fahnder klappt zufrieden das Klemmbrett zu und macht einen großen grünen Haken in die Luft",
+      "elements": [
+        "zugeklapptes Klemmbrett",
+        "großer grüner Haken",
+        "zufriedenes Grinsen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Hanne schiebt sich ein Lakritz in",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Hanne misstraut gerade dem, was zu sauber aussieht",
+      "visual": "Hanne kaut Lakritz und blickt mit schmalen Augen auf den blitzblanken Container, ein kleiner Glanzstern funkelt verdächtig",
+      "elements": [
+        "kauende Hanne mit schmalen Augen",
+        "blitzblanker Container",
+        "verdächtiger Glanzstern"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Um euch herum stapeln sich Container",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Um euch herum türmen sich unzählige Container",
+      "visual": "Froschperspektive: die zwei winzigen Figuren zwischen Containertürmen, die oben im Nebel verschwinden",
+      "elements": [
+        "zwei winzige Figuren",
+        "hohe Containertürme",
+        "Nebel verschluckt die Spitzen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Rund 7,8 Millionen Standardcontainer laufen hier",
+      "visualType": "infografik",
+      "message": "Rund 7,8 Millionen Standardcontainer laufen jedes Jahr durch den Hamburger Hafen",
+      "visual": "Ein Strom aus tausenden kleinen Containern fließt wie ein Fluss durch den Hafen, eine große Zahl schwebt darüber",
+      "elements": [
+        "Containerfluss",
+        "Hafenbecken",
+        "große Zahlentafel"
+      ],
+      "labels": [
+        "7,8 Millionen",
+        "Standardcontainer pro Jahr"
+      ]
+    },
+    {
+      "anchor": "Öffnen kann der Zoll davon nur",
+      "visualType": "infografik",
+      "message": "Nur ein winziger Bruchteil der Container wird tatsächlich geöffnet",
+      "visual": "Ein riesiges Raster aus grauen Containersymbolen, nur ein einziges Symbol ist offen und leuchtet",
+      "elements": [
+        "Raster grauer Containersymbole",
+        "ein einzelner geöffneter Container"
+      ],
+      "labels": [
+        "geöffnet",
+        "nicht geöffnet"
+      ]
+    },
+    {
+      "anchor": "Deshalb sortiert eine Risikoanalyse vor, welche",
+      "visualType": "ablauf",
+      "message": "Die Risikoanalyse filtert verdächtige Container heraus, bevor Menschen genauer hinsehen",
+      "visual": "Ein großer Trichter: oben fallen viele Container hinein, Filter mit Lupen sortieren, unten kommt ein einziger roter Container heraus",
+      "elements": [
+        "großer Trichter",
+        "Lupen als Filter",
+        "roter Container am Ausgang"
+      ],
+      "labels": [
+        "Risikoanalyse",
+        "Kontrolle"
+      ]
+    },
+    {
+      "anchor": "Und heute Nacht steht dieser Container",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "message": "Euer Container steht heute ganz oben auf der Kontrollliste",
+      "visual": "Ein Klemmbrett mit Liste, die oberste Zeile ist dick rot umkringelt, dahinter der weiße Kühlcontainer im Nebel",
+      "elements": [
+        "Kontrollliste auf Klemmbrett",
+        "roter Kringel um oberste Zeile",
+        "Kühlcontainer im Hintergrund"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "23:31 Uhr. Ein Lkw zieht den",
+      "visualType": "szene",
+      "location": "pruefanlage",
+      "message": "Um 23:31 Uhr bringt ein Lkw den Container zur Röntgenanlage",
+      "visual": "Ein Lkw mit dem weißen Kühlcontainer rollt auf die Einfahrt der Prüfanlage zu, große Uhr in der Ecke zeigt 23:31",
+      "elements": [
+        "Lkw mit Kühlcontainer",
+        "Einfahrt mit Warnstreifen",
+        "große Uhr"
+      ],
+      "labels": [
+        "23:31"
+      ],
+      "chapter": "Die Röntgenanlage"
+    },
+    {
+      "anchor": "Ein Tunnel aus Beton, Röntgenstrahlen, ein",
+      "visualType": "szene",
+      "location": "pruefanlage",
+      "message": "Die Prüfanlage ist ein Betontunnel mit Röntgenstrahlen",
+      "visual": "Seitenschnitt durch den Betontunnel: fächerförmige blaue Röntgenstrahlen durchleuchten den Container im Lkw",
+      "elements": [
+        "Betontunnel im Querschnitt",
+        "blauer Strahlenfächer",
+        "Lkw im Tunnel"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Davor sitzt Jens vom Zollamt, drei",
+      "visualType": "szene",
+      "location": "pruefanlage",
+      "cast": [
+        "jens"
+      ],
+      "message": "Jens vom Zollamt wertet die Bilder an drei Monitoren aus",
+      "visual": "Jens mit Headset vor drei Monitoren, eine riesige Kaffeetasse mit kaltem Kaffee und Haut obendrauf steht daneben",
+      "elements": [
+        "drei leuchtende Monitore",
+        "große Kaffeetasse mit Haut",
+        "Headset"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Die Anlage schlägt nicht von selbst",
+      "visualType": "symbolbild",
+      "message": "Die Röntgenanlage erkennt Schmuggel nicht von allein",
+      "visual": "Eine Alarmsirene mit durchgestrichenem Ausrufezeichen, sie bleibt dunkel und still",
+      "elements": [
+        "dunkle Alarmsirene",
+        "durchgestrichenes Ausrufezeichen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Ein Mensch legt das Röntgenbild neben",
+      "visualType": "vergleich",
+      "cast": [
+        "jens"
+      ],
+      "message": "Ein Mensch vergleicht das Röntgenbild mit der Packliste",
+      "visual": "Split-Screen: links das blaue Röntgenbild des Containers, rechts die Packliste, Jens fährt mit dem Finger zwischen beiden hin und her",
+      "elements": [
+        "blaues Röntgenbild",
+        "Packliste",
+        "Zeigefinger zwischen beiden"
+      ],
+      "labels": [
+        "Röntgenbild",
+        "Packliste"
+      ]
+    },
+    {
+      "anchor": "Das Bild baut sich auf. Reihe",
+      "visualType": "detail",
+      "location": "pruefanlage",
+      "message": "Auf dem Röntgenbild stehen die Kartons gleichmäßig wie Zähne",
+      "visual": "Monitor-Nahaufnahme: Röntgenbild baut sich Streifen für Streifen auf, regelmäßige Kartonreihen wie ein Gebiss",
+      "elements": [
+        "Monitor mit Röntgenbild",
+        "regelmäßige Kartonreihen",
+        "Ladebalken"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dann, direkt hinter der Tür: ein",
+      "visualType": "detail",
+      "location": "pruefanlage",
+      "message": "Direkt hinter der Tür zeigt das Röntgenbild einen dunklen Block",
+      "visual": "Monitor-Nahaufnahme: am Türende des Containers ein tiefschwarzer, scharf abgegrenzter Block zwischen hellgrauen Kartons",
+      "elements": [
+        "schwarzer Block am Türende",
+        "hellgraue Kartonreihen",
+        "Monitorrahmen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Zu dicht für Bananen.",
+      "visualType": "vergleich",
+      "message": "Der Block ist viel dichter als Bananen",
+      "visual": "Gegenüberstellung: links ein luftiger Karton mit Bananen im Röntgenblick, rechts der kompakte dunkle Block",
+      "elements": [
+        "Bananenkarton im Röntgenblick",
+        "kompakter dunkler Block"
+      ],
+      "labels": [
+        "Bananen",
+        "zu dicht"
+      ]
+    },
+    {
+      "anchor": "Zu schwer.",
+      "visualType": "symbolbild",
+      "message": "Der Block ist zu schwer",
+      "visual": "Ein dunkler Block drückt eine Waagschale krachend auf den Boden, Risse im Beton",
+      "elements": [
+        "abgestürzte Waagschale",
+        "dunkler Block",
+        "Risse im Beton"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Jens tippt auf die Packliste. „Steht",
+      "visualType": "szene",
+      "location": "pruefanlage",
+      "cast": [
+        "jens",
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Auf der Packliste stehen keine Sporttaschen",
+      "visual": "Jens tippt mit dem Finger auf die Packliste und schaut fragend zum jungen Fahnder, der blass wird",
+      "elements": [
+        "Finger auf der Packliste",
+        "fragender Blick",
+        "blasser Kollege"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Steht da nicht.",
+      "visualType": "detail",
+      "location": "pruefanlage",
+      "message": "Auf der Packliste steht nur Bananen, nichts anderes",
+      "visual": "Nahaufnahme der Packliste: eine einzige Warenzeile Bananen, darunter leere Zeilen, eine Lupe darüber",
+      "elements": [
+        "Packliste mit einer Zeile",
+        "leere Zeilen",
+        "Lupe"
+      ],
+      "labels": [
+        "Bananen"
+      ]
+    },
+    {
+      "anchor": "Du starrst auf den Frachtbrief.",
+      "visualType": "szene",
+      "location": "pruefanlage",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Du starrst ungläubig auf den Frachtbrief",
+      "visual": "Der junge Fahnder hält den Frachtbrief ganz nah vor die Augen, blaues Monitorlicht im Gesicht",
+      "elements": [
+        "Frachtbrief vor dem Gesicht",
+        "blaues Monitorlicht",
+        "aufgerissene Augen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Gewicht passt. Siegel passt. Alles passt.",
+      "visualType": "infografik",
+      "message": "Auf dem Papier passt alles",
+      "visual": "Drei große grüne Haken nebeneinander wie auf einer Checkliste, jeder mit kleinem Symbol: Waage, Siegel, Dokument",
+      "elements": [
+        "drei grüne Haken",
+        "Waage-, Siegel- und Dokumentsymbol"
+      ],
+      "labels": [
+        "Gewicht",
+        "Siegel",
+        "Papiere"
+      ]
+    },
+    {
+      "anchor": "Zum ersten Mal fühlt sich das",
+      "visualType": "szene",
+      "location": "pruefanlage",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Zum ersten Mal kommt dir der Zweifel",
+      "visual": "Der Fahnder steht allein im Monitorlicht, über seinem Kopf zerfällt ein grüner Haken zu einem Fragezeichen",
+      "elements": [
+        "grüner Haken zerfällt",
+        "Fragezeichen",
+        "einsame Figur im Monitorlicht"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "0:12 Uhr. Hanne knipst das Siegel",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Um 0:12 Uhr schneidet Hanne das Siegel ab und sichert es",
+      "visual": "Hanne knipst mit einem Bolzenschneider das gelbe Siegel ab und lässt es in eine durchsichtige Beweistüte fallen",
+      "elements": [
+        "Bolzenschneider",
+        "gelbes Siegel fällt",
+        "Beweistüte"
+      ],
+      "labels": [
+        "0:12"
+      ],
+      "chapter": "Was hinter der Tür liegt"
+    },
+    {
+      "anchor": "Die Türen quietschen auf.",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Die schweren Containertüren öffnen sich",
+      "visual": "Die beiden ziehen die schweren Flügeltüren auf, Verschlussstangen schwingen, kalter Dunst quillt heraus",
+      "elements": [
+        "schwere Flügeltüren",
+        "schwingende Verschlussstangen",
+        "herausquellender Dunst"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Kalte Luft, 13 Grad, süßer Geruch",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "message": "Im Container ist es 13 Grad kalt und es riecht nach Bananen",
+      "visual": "Thermometer an der Innenwand zeigt 13 Grad, Duftlinien von grünen Bananen schlängeln sich durch den Dunst",
+      "elements": [
+        "Thermometer",
+        "Duftlinien",
+        "grüne Bananen"
+      ],
+      "labels": [
+        "13 °C"
+      ]
+    },
+    {
+      "anchor": "Die erste Reihe: Kartons, ordentlich gestapelt.",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Die erste Kartonreihe sieht völlig normal aus",
+      "visual": "Taschenlampenkegel gleitet über eine perfekte Wand aus braunen Bananenkartons",
+      "elements": [
+        "perfekte Kartonwand",
+        "Taschenlampenkegel",
+        "Kartonlöcher für Belüftung"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Ganz unten links ist ein Karton",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "message": "Unten links ist ein Karton mit einem Kreidekreuz markiert",
+      "visual": "Taschenlampe trifft unten links einen einzelnen Bananenkarton mit weißem Kreidekreuz",
+      "elements": [
+        "weißes Kreidekreuz",
+        "unterster Karton links",
+        "Lichtkegel"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du ziehst ihn heraus. Er ist",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Der markierte Karton ist leer",
+      "visual": "Der Fahnder hebt den Karton mit dem Kreidekreuz an und schaut hinein: gähnende Leere",
+      "elements": [
+        "angehobener Karton",
+        "leeres Innere",
+        "überraschtes Gesicht"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dahinter: Sporttaschen. Schwarz, billig, vierzehn Stück.",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "message": "Hinter dem Karton liegen vierzehn schwarze Sporttaschen",
+      "visual": "In der Lücke stapeln sich schwarze billige Sporttaschen, Reißverschlüsse glänzen im Licht",
+      "elements": [
+        "Stapel schwarzer Sporttaschen",
+        "glänzende Reißverschlüsse",
+        "Lücke in der Kartonwand"
+      ],
+      "labels": [
+        "14 Taschen"
+      ]
+    },
+    {
+      "anchor": "Jede wiegt rund 30 Kilo.",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Jede Tasche wiegt rund 30 Kilo",
+      "visual": "Hanne hebt eine Tasche an eine Hängewaage, der Zeiger schlägt auf 30 aus, ihre Arme zittern",
+      "elements": [
+        "Hängewaage",
+        "schwere Sporttasche",
+        "zitternde Strich-Arme"
+      ],
+      "labels": [
+        "30 kg"
+      ]
+    },
+    {
+      "anchor": "In jeder liegen Päckchen, in Folie",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "message": "In den Taschen liegen eingeschweißte Päckchen mit Delfin-Stempel",
+      "visual": "Geöffnete Tasche: in Folie geschweißte Päckchen, jedes trägt einen kleinen Delfin-Stempel",
+      "elements": [
+        "eingeschweißte Päckchen",
+        "kleiner Delfin-Stempel",
+        "geöffneter Reißverschluss"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Über 400 Kilo Kokain.",
+      "visualType": "infografik",
+      "message": "Insgesamt sind es über 400 Kilo Kokain",
+      "visual": "Vierzehn Taschen nebeneinander aufgereiht, darüber eine große Summenklammer",
+      "elements": [
+        "vierzehn Taschen in einer Reihe",
+        "große Summenklammer"
+      ],
+      "labels": [
+        "14 × 30 kg",
+        "über 400 kg"
+      ]
+    },
+    {
+      "anchor": "Direkt hinter der Tür, in zwei",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "message": "Die Taschen liegen so, dass man sie in zwei Minuten herausholen kann",
+      "visual": "Containertür offen, Taschen direkt dahinter, eine Stoppuhr zeigt zwei Minuten, gestrichelter Weg von der Tür hinaus",
+      "elements": [
+        "Stoppuhr",
+        "gestrichelter Fluchtweg",
+        "Taschen direkt hinter der Tür"
+      ],
+      "labels": [
+        "2 Minuten"
+      ]
+    },
+    {
+      "anchor": "Dir wird heiß, obwohl der Container",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Dir wird trotz Kühlung heiß",
+      "visual": "Der Fahnder schwitzt in der kalten Luft, Dampf steigt von seinem Kopf, Reif an den Wänden",
+      "elements": [
+        "Schweißtropfen und Dampf",
+        "Reif an den Containerwänden",
+        "weit aufgerissene Augen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Hanne hält das Siegel unter die",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Hanne untersucht das Siegel unter der Lampe",
+      "visual": "Hanne hält die Beweistüte mit dem Siegel gegen eine Lampe, Lesebrille auf der Nase",
+      "elements": [
+        "Beweistüte mit Siegel",
+        "Lesebrille",
+        "helle Lampe"
+      ],
+      "labels": [],
+      "chapter": "Die Rip-off-Masche"
+    },
+    {
+      "anchor": "„Zu glatt. Kein einziger Kratzer nach",
+      "visualType": "vergleich",
+      "message": "Nach 19 Tagen auf See müsste das Siegel zerkratzt sein",
+      "visual": "Gegenüberstellung: links ein zerkratztes, verrostetes Siegel nach Seereise, rechts das glatte glänzende Siegel",
+      "elements": [
+        "zerkratztes Siegel",
+        "glänzendes glattes Siegel"
+      ],
+      "labels": [
+        "19 Tage See",
+        "zu glatt"
+      ]
+    },
+    {
+      "anchor": "Ein Duplikat.",
+      "visualType": "symbolbild",
+      "message": "Das Siegel ist eine Kopie",
+      "visual": "Zwei identische Siegel nebeneinander, eines wirft einen Schatten in Form einer Maske",
+      "elements": [
+        "zwei identische Siegel",
+        "Schatten als Maske"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dann erklärt sie dir, was hier",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne",
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Hanne erklärt dir die Schmuggelmasche",
+      "visual": "Hanne zeichnet mit Kreide auf die Containerwand einen Pfeil über das Meer, der junge Fahnder hört gebannt zu",
+      "elements": [
+        "Kreidezeichnung auf Containerwand",
+        "gebannter Zuhörer",
+        "Lakritz im Mundwinkel"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "In Südamerika bricht jemand den Container",
+      "visualType": "karte",
+      "message": "In Südamerika wird der Container heimlich aufgebrochen",
+      "visual": "Illustrierte Karte mit Ecuador hervorgehoben, am Hafen ein winziger Container mit aufgebrochener Tür",
+      "elements": [
+        "Karte Südamerika",
+        "aufgebrochener Container am Hafen"
+      ],
+      "labels": [
+        "Ecuador",
+        "Abfahrt"
+      ]
+    },
+    {
+      "anchor": "Er legt die Taschen hinter die",
+      "visualType": "ablauf",
+      "message": "Die Taschen kommen hinter die Tür, dann ein nachgemachtes Siegel",
+      "visual": "Drei Schritte mit Pfeilen: Tür auf, Taschen hinein, falsches Siegel dran",
+      "elements": [
+        "drei Schrittbilder",
+        "Pfeile"
+      ],
+      "labels": [
+        "Tür auf",
+        "Taschen rein",
+        "falsches Siegel"
+      ]
+    },
+    {
+      "anchor": "Mit derselben Nummer.",
+      "visualType": "detail",
+      "message": "Das falsche Siegel trägt dieselbe Nummer wie das echte",
+      "visual": "Zwei Siegel nebeneinander mit derselben Nummer, Gleichheitszeichen dazwischen",
+      "elements": [
+        "zwei Siegel",
+        "Gleichheitszeichen"
+      ],
+      "labels": [
+        "4471882",
+        "4471882"
+      ],
+      "location": "stellplatz"
+    },
+    {
+      "anchor": "Die Bananenfirma ahnt nichts.",
+      "visualType": "symbolbild",
+      "message": "Die echte Bananenfirma weiß nichts von den Drogen",
+      "visual": "Ein Bananenpacker in Ecuador winkt fröhlich einem Containerschiff hinterher, ahnungslos",
+      "elements": [
+        "winkender Packer",
+        "Containerschiff am Horizont",
+        "Bananenstaude"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "In Hamburg holt dann jemand die",
+      "visualType": "karte",
+      "message": "In Hamburg holen Komplizen die Taschen heraus, bevor der Zoll kontrolliert",
+      "visual": "Karte mit Route über den Atlantik nach Hamburg, am Ziel greift eine Hand in den Container",
+      "elements": [
+        "Route über den Atlantik",
+        "Hand greift in Container"
+      ],
+      "labels": [
+        "Ecuador",
+        "Hamburg"
+      ]
+    },
+    {
+      "anchor": "Danach ist der Container wieder perfekt.",
+      "visualType": "symbolbild",
+      "message": "Danach sieht der Container wieder unberührt aus",
+      "visual": "Ein Container mit Glitzersternen und neuem Siegel, wie frisch poliert, nichts deutet auf etwas hin",
+      "elements": [
+        "polierter Container",
+        "neues Siegel",
+        "Glitzersterne"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Rip-off nennen Fahnder das.",
+      "visualType": "ablauf",
+      "message": "Fahnder nennen die Methode Rip-off",
+      "visual": "Kreislauf in vier Stationen: Abfahrthafen, Seereise, Zielhafen, Container weiter wie neu",
+      "elements": [
+        "vier Stationen",
+        "Kreispfeil"
+      ],
+      "labels": [
+        "Rip-off",
+        "Abfahrt",
+        "Zielhafen"
+      ]
+    },
+    {
+      "anchor": "Du schaust auf deine Papiere.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Du schaust auf deine Papiere, die nichts verraten haben",
+      "visual": "Der Fahnder blickt auf das Klemmbrett, die Buchstaben verschwimmen im Nebel",
+      "elements": [
+        "Klemmbrett",
+        "verschwimmende Zeilen",
+        "Nebel"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Die Papiere stimmen. Genau das stört",
+      "visualType": "symbolbild",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "zweifel"
+      },
+      "message": "Gerade weil die Papiere stimmen, wirst du misstrauisch",
+      "visual": "Der Frachtbrief trägt eine lächelnde Maske, dahinter lugt ein dunkles Gesicht hervor",
+      "elements": [
+        "Frachtbrief mit Maske",
+        "dunkles Gesicht dahinter"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Jetzt könntet ihr die Taschen einfach",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Ihr könntet die Taschen jetzt einfach beschlagnahmen",
+      "visual": "Die beiden stehen vor den Taschen, der junge Fahnder greift schon zu, Hanne hält ihn am Ärmel zurück",
+      "elements": [
+        "Taschenstapel",
+        "greifende Hand",
+        "Hanne hält am Ärmel"
+      ],
+      "labels": [],
+      "chapter": "Die Falle"
+    },
+    {
+      "anchor": "Pressefoto, Erfolg, Feierabend.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Die schnelle Lösung wäre ein Pressefoto und Feierabend",
+      "visual": "Tagtraum-Blase: der Fahnder posiert stolz vor Taschen, Blitzlichter, Pokal, Feierabendbier",
+      "elements": [
+        "Blitzlichter",
+        "Pokal",
+        "Tagtraumblase"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Aber dann erfahrt ihr nie, wer",
+      "visualType": "organigramm",
+      "message": "Dann bliebe unbekannt, wer die Taschen holen wollte",
+      "visual": "Ein Netzwerk aus Linien: oben ein Fragezeichen-Schatten, darunter Abholer und Fahrer als leere Silhouetten",
+      "elements": [
+        "Netz aus Linien",
+        "leere Silhouetten"
+      ],
+      "labels": [
+        "Abholer?",
+        "Auftraggeber?"
+      ]
+    },
+    {
+      "anchor": "Hanne ruft die Staatsanwaltschaft an.",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Hanne ruft nachts die Staatsanwaltschaft an",
+      "visual": "Hanne telefoniert im Nebel, Handy am Ohr, Atemwolke, im Hintergrund der offene Container",
+      "elements": [
+        "Handy am Ohr",
+        "Atemwolke",
+        "offener Container"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "0:58 Uhr: grünes Licht.",
+      "visualType": "symbolbild",
+      "message": "Um 0:58 Uhr gibt die Staatsanwaltschaft grünes Licht",
+      "visual": "Eine Hafenampel springt auf Grün, daneben eine Uhr mit 0:58",
+      "elements": [
+        "grüne Hafenampel",
+        "Uhr mit 0:58"
+      ],
+      "labels": [
+        "0:58"
+      ]
+    },
+    {
+      "anchor": "Die echten Päckchen kommen raus.",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Die echten Päckchen werden herausgeholt",
+      "visual": "Die beiden reichen die Päckchen in einer Kette in Beweiskisten, Handschuhe an",
+      "elements": [
+        "Menschenkette",
+        "Beweiskisten",
+        "Einweghandschuhe"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Attrappen kommen rein, gleiche Folie, gleiches",
+      "visualType": "vergleich",
+      "message": "Attrappen ersetzen die Drogen, gleiche Folie, gleiches Gewicht",
+      "visual": "Links echtes Päckchen, rechts Attrappe, beide auf einer Waage im Gleichgewicht",
+      "elements": [
+        "zwei Päckchen",
+        "Waage im Gleichgewicht"
+      ],
+      "labels": [
+        "echt",
+        "Attrappe"
+      ]
+    },
+    {
+      "anchor": "Den Karton mit dem Kreuz stellst",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Der Kreidekreuz-Karton kommt exakt an seinen Platz zurück",
+      "visual": "Hand schiebt den Karton mit Kreidekreuz millimetergenau zurück in die Lücke",
+      "elements": [
+        "Karton mit Kreidekreuz",
+        "millimetergenaue Lücke",
+        "Strich-Hand"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dann ein neues Siegel mit derselben",
+      "visualType": "detail",
+      "location": "stellplatz",
+      "message": "Ein neues Siegel mit derselben Nummer verschließt den Container",
+      "visual": "Ein neues gelbes Siegel rastet am Türgriff ein, Klick-Linien",
+      "elements": [
+        "neues Siegel",
+        "Türgriff",
+        "Klick-Linien"
+      ],
+      "labels": [
+        "4471882"
+      ]
+    },
+    {
+      "anchor": "Heute Nacht bist du der, der",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Diesmal fälschst du selbst ein Siegel",
+      "visual": "Der Fahnder schaut ironisch auf seine Hand mit dem Siegel, Spiegelbild in einer Pfütze zeigt ihn als Schmuggler",
+      "elements": [
+        "Siegel in der Hand",
+        "Spiegelbild in Pfütze",
+        "schiefes Grinsen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Der Container fährt zurück auf seinen",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "message": "Der Container steht wieder an seinem Platz, ihr wartet",
+      "visual": "Ein Lkw setzt den Container zurück in die Reihe, Rücklichter verschwinden im Nebel",
+      "elements": [
+        "Lkw setzt ab",
+        "Rücklichter im Nebel",
+        "Containerreihe"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Um 6:00 Uhr soll ein Lkw",
+      "visualType": "zeitleiste",
+      "message": "Um 6:00 Uhr fährt der Container zur Reiferei, bis dahin müssen die Abholer kommen",
+      "visual": "Zeitleiste von 1 bis 6 Uhr, am Ende ein Lkw-Symbol mit Reiferei",
+      "elements": [
+        "Zeitleiste",
+        "Lkw-Symbol"
+      ],
+      "labels": [
+        "jetzt",
+        "6:00 Reiferei"
+      ],
+      "chapter": "Warten im Dunkeln"
+    },
+    {
+      "anchor": "Wer die Taschen will, muss vorher",
+      "visualType": "symbolbild",
+      "message": "Wer die Taschen will, muss vor sechs Uhr kommen",
+      "visual": "Eine Sanduhr rieselt neben dem Container, Schatten von Gestalten nähern sich",
+      "elements": [
+        "Sanduhr",
+        "nahende Schatten"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du sitzt in einem dunklen Transporter",
+      "visualType": "szene",
+      "location": "transporter",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Ihr wartet versteckt in einem dunklen Transporter",
+      "visual": "Blick von außen: dunkler Transporter zwischen zwei Containerreihen, zwei Köpfe hinter beschlagener Scheibe",
+      "elements": [
+        "dunkler Transporter",
+        "beschlagene Scheibe",
+        "Containerreihen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Fischbrötchen von gestern, Thermoskanne, Wärmebildkamera.",
+      "visualType": "detail",
+      "location": "transporter",
+      "message": "Fischbrötchen, Thermoskanne und Wärmebildkamera sind eure Ausrüstung",
+      "visual": "Armaturenbrett: zerdrücktes Fischbrötchen in Papier, Thermoskanne, Wärmebildkamera mit buntem Display",
+      "elements": [
+        "Fischbrötchen",
+        "Thermoskanne",
+        "Wärmebildkamera"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "1:30 Uhr. Nichts.",
+      "visualType": "szene",
+      "location": "transporter",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Um 1:30 Uhr passiert nichts",
+      "visual": "Der Fahnder starrt durch die Scheibe, Uhr zeigt 1:30, draußen nur Nebel",
+      "elements": [
+        "Uhr 1:30",
+        "leerer Nebel",
+        "gelangweiltes Gesicht"
+      ],
+      "labels": [
+        "1:30"
+      ]
+    },
+    {
+      "anchor": "Hanne erzählt mit geschlossenen Augen von",
+      "visualType": "szene",
+      "location": "transporter",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Hanne erzählt von ihrer ersten Nacht im Hafen 2001",
+      "visual": "Hanne lehnt mit geschlossenen Augen im Sitz, eine Erinnerungsblase zeigt sie jung im Hafen 2001",
+      "elements": [
+        "geschlossene Augen",
+        "Erinnerungsblase",
+        "junge Hanne"
+      ],
+      "labels": [
+        "2001"
+      ]
+    },
+    {
+      "anchor": "Damals fand sie einen Container voller",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Damals fand sie einen Container voller Zigaretten",
+      "visual": "Junge Hanne steht stolz vor einem offenen Container voller Zigarettenstangen, Brust raus",
+      "elements": [
+        "Container voller Zigarettenstangen",
+        "stolze Pose",
+        "Retro-Taschenlampe"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Drei Wochen später kam derselbe Absender",
+      "visualType": "vergleich",
+      "message": "Drei Wochen später kam derselbe Absender mit neuem Namen zurück",
+      "visual": "Split: links Absender mit Hut, rechts derselbe mit Schnurrbart-Verkleidung und neuem Frachtbrief",
+      "elements": [
+        "gleicher Absender verkleidet",
+        "neuer Frachtbrief"
+      ],
+      "labels": [
+        "vorher",
+        "3 Wochen später"
+      ]
+    },
+    {
+      "anchor": "2:15 Uhr. Nichts.",
+      "visualType": "szene",
+      "location": "transporter",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Um 2:15 Uhr ist immer noch nichts los",
+      "visual": "Uhr zeigt 2:15, der Fahnder gähnt nicht, sondern umklammert die Thermoskanne",
+      "elements": [
+        "Uhr 2:15",
+        "umklammerte Thermoskanne"
+      ],
+      "labels": [
+        "2:15"
+      ]
+    },
+    {
+      "anchor": "Hanne schläft im Sitzen. Du nicht.",
+      "visualType": "szene",
+      "location": "transporter",
+      "cast": [
+        "hanne",
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Hanne schläft, du bleibst wach",
+      "visual": "Hanne schnarcht mit offenem Mund, der junge Fahnder sitzt hellwach mit großen Augen daneben",
+      "elements": [
+        "schnarchende Hanne",
+        "hellwacher Kollege",
+        "Z-Zeichen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "2:47 Uhr. Ein Van Carrier rollt",
+      "visualType": "szene",
+      "location": "ecke",
+      "message": "Um 2:47 Uhr rollt ein Van Carrier heran",
+      "visual": "Ein Van Carrier wie eine riesige Stahlspinne auf Rädern taucht aus dem Nebel auf, Scheinwerfer wie Augen",
+      "elements": [
+        "Van Carrier als Stahlspinne",
+        "Scheinwerfer",
+        "Nebel"
+      ],
+      "labels": [
+        "2:47"
+      ],
+      "chapter": "Der Fahrer"
+    },
+    {
+      "anchor": "Er hebt den Container an und",
+      "visualType": "szene",
+      "location": "ecke",
+      "message": "Der Van Carrier stellt den Container in eine Ecke ohne Kamera",
+      "visual": "Der Van Carrier setzt den Container in eine dunkle Ecke, eine Überwachungskamera zeigt in die andere Richtung",
+      "elements": [
+        "Container im Schatten",
+        "abgewandte Kamera",
+        "Van Carrier"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dafür gibt es keinen Auftrag im",
+      "visualType": "detail",
+      "location": "transporter",
+      "message": "Für diese Fahrt gibt es keinen Auftrag im System",
+      "visual": "Tablet zeigt eine Auftragsliste, die Zeile für diesen Container ist leer und blinkt",
+      "elements": [
+        "Tablet",
+        "leere blinkende Zeile"
+      ],
+      "labels": [
+        "kein Auftrag"
+      ]
+    },
+    {
+      "anchor": "Hanne ist sofort wach.",
+      "visualType": "szene",
+      "location": "transporter",
+      "cast": [
+        "hanne"
+      ],
+      "message": "Hanne ist schlagartig hellwach",
+      "visual": "Hanne reißt die Augen auf, Lakritz fällt ihr aus dem Mund",
+      "elements": [
+        "aufgerissene Augen",
+        "fallende Lakritzschnecke",
+        "Ruck-Linien"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Der Fahrer steigt aus und fotografiert",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "timo"
+      ],
+      "stage": {
+        "timo": "fahrer"
+      },
+      "message": "Der Fahrer fotografiert heimlich die Containernummer",
+      "visual": "Timo steht vor dem Container und fotografiert mit dem Handy die Nummer, Handylicht im Gesicht",
+      "elements": [
+        "Handy mit Blitz",
+        "Containernummer",
+        "nervöser Blick"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Dann schickt er das Foto ab.",
+      "visualType": "detail",
+      "location": "ecke",
+      "cast": [
+        "timo"
+      ],
+      "stage": {
+        "timo": "fahrer"
+      },
+      "message": "Er schickt das Foto an jemanden ab",
+      "visual": "Handydisplay: Foto des Containers fliegt als Papierflieger davon, Häkchen erscheinen",
+      "elements": [
+        "Handydisplay",
+        "Papierflieger",
+        "zwei Häkchen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du kennst diese Masche aus der",
+      "visualType": "szene",
+      "location": "buero",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Du kennst die Masche aus der Schulung",
+      "visual": "Rückblende: der Fahnder sitzt im Schulungsraum, an der Wand ein Plakat mit Warnung vor Anwerbung im Hafen",
+      "elements": [
+        "Schulungsraum",
+        "Warnplakat",
+        "Notizblock"
+      ],
+      "labels": [
+        "Vorsicht Anwerbung"
+      ]
+    },
+    {
+      "anchor": "Erst gibt es Geld für etwas",
+      "visualType": "ablauf",
+      "message": "Erst bekommt jemand viel Geld für etwas Harmloses wie ein Foto",
+      "visual": "Pfeil von einem Handyfoto zu einem Geldbündel, das Geldbündel ist größer als das Handy",
+      "elements": [
+        "Handyfoto",
+        "großes Geldbündel"
+      ],
+      "labels": [
+        "1 Foto",
+        "5.000 Euro"
+      ]
+    },
+    {
+      "anchor": "Beim zweiten Mal kann keiner mehr",
+      "visualType": "symbolbild",
+      "message": "Danach kommt man aus der Abhängigkeit nicht mehr heraus",
+      "visual": "Das Geldbündel wird zu einer Kette, die sich um ein Handgelenk legt",
+      "elements": [
+        "Geld wird zur Kette",
+        "Handgelenk"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "3:40 Uhr. Zwei Männer in Warnwesten.",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "abholer"
+      ],
+      "message": "Um 3:40 Uhr kommen zwei Männer in Warnwesten",
+      "visual": "Zwei Gestalten in gelben Warnwesten schleichen aus dem Nebel zum Container",
+      "elements": [
+        "zwei Warnwesten",
+        "Nebel",
+        "schleichende Haltung"
+      ],
+      "labels": [
+        "3:40"
+      ],
+      "chapter": "Zugriff"
+    },
+    {
+      "anchor": "Ein Bolzenschneider und ein neues Siegel",
+      "visualType": "detail",
+      "location": "ecke",
+      "cast": [
+        "abholer"
+      ],
+      "message": "Sie haben einen Bolzenschneider und ein neues Siegel dabei",
+      "visual": "Nahaufnahme: Bolzenschneider in der Hand, aus der Jackentasche ragt ein neues gelbes Siegel",
+      "elements": [
+        "Bolzenschneider",
+        "Siegel in der Jackentasche"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Sie wissen genau, wohin sie greifen.",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "abholer"
+      ],
+      "message": "Sie greifen zielsicher nach unten links",
+      "visual": "Container offen, einer der Männer zeigt sofort auf den unteren linken Karton",
+      "elements": [
+        "zeigender Finger",
+        "unterer linker Karton",
+        "offene Containertür"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Der Karton mit dem Kreuz fliegt",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "abholer"
+      ],
+      "message": "Sie werfen den Kreidekreuz-Karton zur Seite",
+      "visual": "Der Karton mit Kreidekreuz fliegt durch die Luft, Bewegungslinien",
+      "elements": [
+        "fliegender Karton",
+        "Bewegungslinien",
+        "Kreidekreuz"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Einer zieht die erste Tasche heraus,",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "abholer"
+      ],
+      "message": "Ein Abholer zieht die erste Tasche heraus und grinst",
+      "visual": "Ein Abholer zieht triumphierend die Tasche heraus, breites Grinsen",
+      "elements": [
+        "Tasche in der Hand",
+        "breites Grinsen"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "und erstarrt.",
+      "visualType": "szene",
+      "location": "containerinneres",
+      "cast": [
+        "abholer"
+      ],
+      "message": "Plötzlich erstarrt er",
+      "visual": "Das Grinsen gefriert, Eiskristalle um den Kopf, Augen weit",
+      "elements": [
+        "gefrorenes Grinsen",
+        "Eiskristalle"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Scheinwerfer. „Zoll! Keine Bewegung!“",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "abholer",
+        "zuz"
+      ],
+      "message": "Grelle Scheinwerfer, der Zoll greift zu",
+      "visual": "Grelle weiße Scheinwerfer von allen Seiten, die Abholer heben die Arme",
+      "elements": [
+        "grelle Scheinwerfer",
+        "erhobene Arme"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Die Spezialeinheit des Zolls kommt aus",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "zuz",
+        "abholer"
+      ],
+      "message": "Die Spezialeinheit des Zolls kommt aus drei Richtungen",
+      "visual": "Draufsicht: drei Gruppen schwarzer Einsatzkräfte laufen aus drei Richtungen auf den Container zu",
+      "elements": [
+        "drei Einsatzgruppen",
+        "Pfeile aus drei Richtungen",
+        "Container in der Mitte"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Der Bolzenschneider fällt auf den nassen",
+      "visualType": "detail",
+      "location": "ecke",
+      "message": "Der Bolzenschneider fällt auf den nassen Boden",
+      "visual": "Nahaufnahme: Bolzenschneider klatscht in eine Pfütze, Spritzer, Spiegelung der Scheinwerfer",
+      "elements": [
+        "Bolzenschneider in Pfütze",
+        "Spritzer"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Fünf Sekunden. Vorbei.",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "zuz",
+        "abholer"
+      ],
+      "message": "In fünf Sekunden ist alles vorbei",
+      "visual": "Die Abholer liegen gesichert am Boden, eine Stoppuhr zeigt fünf Sekunden",
+      "elements": [
+        "gesicherte Abholer",
+        "Stoppuhr"
+      ],
+      "labels": [
+        "5 Sekunden"
+      ]
+    },
+    {
+      "anchor": "Der Fahrer sitzt noch oben in",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "timo"
+      ],
+      "stage": {
+        "timo": "gestellt"
+      },
+      "message": "Der Fahrer sitzt noch oben in seiner Kabine",
+      "visual": "Timo sitzt hoch oben in der Kabine des Van Carriers, klein und allein, Blaulicht unten",
+      "elements": [
+        "hohe Kabine",
+        "Blaulicht",
+        "einsame Figur"
+      ],
+      "labels": [],
+      "chapter": "Der Preis"
+    },
+    {
+      "anchor": "Er weint nicht. Er starrt.",
+      "visualType": "detail",
+      "location": "ecke",
+      "cast": [
+        "timo"
+      ],
+      "stage": {
+        "timo": "gestellt"
+      },
+      "message": "Er weint nicht, er starrt ins Leere",
+      "visual": "Nahaufnahme Timos Gesicht: leerer Blick, Blaulicht spiegelt sich in den Augen",
+      "elements": [
+        "leerer Blick",
+        "Blaulicht-Spiegelung"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Timo, 34 Jahre, zwei Kinder, Kredit",
+      "visualType": "symbolbild",
+      "cast": [
+        "timo"
+      ],
+      "stage": {
+        "timo": "gestellt"
+      },
+      "message": "Timo ist 34, hat zwei Kinder und einen Kredit fürs Haus",
+      "visual": "Timo neben einem kleinen Reihenhaus und zwei Kinder-Strichfiguren, über dem Haus ein schwerer Kredit-Stein",
+      "elements": [
+        "Reihenhaus",
+        "zwei Kinder",
+        "schwerer Stein über dem Haus"
+      ],
+      "labels": [
+        "34 Jahre",
+        "Kredit"
+      ]
+    },
+    {
+      "anchor": "Auf seinem Handy: ein Foto seiner",
+      "visualType": "detail",
+      "location": "ecke",
+      "message": "Auf seinem Handy ist ein Foto seiner eigenen Haustür",
+      "visual": "Handydisplay: Foto einer Haustür mit Kinderfahrrad, Absender unbekannte Nummer",
+      "elements": [
+        "Handydisplay",
+        "Haustür mit Kinderfahrrad"
+      ],
+      "labels": [
+        "Unbekannt"
+      ]
+    },
+    {
+      "anchor": "Darunter nur ein Wort: Morgen.",
+      "visualType": "detail",
+      "location": "ecke",
+      "message": "Darunter steht nur das Wort Morgen",
+      "visual": "Das Handy zeigt eine einzelne bedrohliche Nachricht unter dem Foto",
+      "elements": [
+        "einzelne Nachricht",
+        "dunkles Display"
+      ],
+      "labels": [
+        "Morgen"
+      ]
+    },
+    {
+      "anchor": "„Ich sollte nur ein Foto machen“,",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "timo",
+        "fahnder"
+      ],
+      "stage": {
+        "timo": "gestellt",
+        "fahnder": "einsatz"
+      },
+      "message": "Timo sagt, er sollte nur ein Foto machen",
+      "visual": "Timo sitzt auf der Stufe des Van Carriers, Hände vor dem Gesicht, der junge Fahnder steht vor ihm",
+      "elements": [
+        "Hände vor dem Gesicht",
+        "Stufe des Van Carriers",
+        "stehender Fahnder"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du glaubst ihm.",
+      "visualType": "szene",
+      "location": "ecke",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "Du glaubst Timo, dass er nur ein Foto machen sollte",
+      "visual": "Nahaufnahme des jungen Fahnders, ernster mitfühlender Blick",
+      "elements": [
+        "ernster Blick",
+        "Blaulicht im Gesicht"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Genau das ist das Schlimmste.",
+      "visualType": "symbolbild",
+      "message": "Gerade dass er die Wahrheit sagt, macht es so schlimm",
+      "visual": "Ein harmloser Handy-Auslöser wird zu einer Falle, die zuschnappt",
+      "elements": [
+        "Handy-Auslöser",
+        "zuschnappende Falle"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "In den nächsten Tagen findet ihr",
+      "visualType": "szene",
+      "location": "buero",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "einsatz"
+      },
+      "message": "In den nächsten Tagen ermittelt ihr weiter",
+      "visual": "Büro: Whiteboard mit Fotos, Fäden, Kaffeebecher, beide arbeiten im Tageslicht",
+      "elements": [
+        "Whiteboard mit Fäden",
+        "Kaffeebecher",
+        "Tageslicht"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Die Fruchtfirma aus Harburg ist nur",
+      "visualType": "szene",
+      "location": "buero",
+      "message": "Die Fruchtfirma ist nur ein Briefkasten",
+      "visual": "Ein einsamer Briefkasten an einer leeren Wand, Spinnweben, kein Büro dahinter",
+      "elements": [
+        "einsamer Briefkasten",
+        "Spinnweben",
+        "leere Wand"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Die Miete wurde bar bezahlt, für",
+      "visualType": "infografik",
+      "message": "Die Miete wurde bar für genau drei Monate bezahlt",
+      "visual": "Drei Kalenderblätter mit Geldscheinen darauf, danach leere Blätter",
+      "elements": [
+        "drei Kalenderblätter mit Geld",
+        "leere Folgeblätter"
+      ],
+      "labels": [
+        "bar bezahlt",
+        "3 Monate"
+      ]
+    },
+    {
+      "anchor": "2023 fanden Zoll und Polizei in",
+      "visualType": "infografik",
+      "message": "2023 stellten Zoll und Polizei in Hamburg rund 34 Tonnen Kokain sicher",
+      "visual": "Ein großer Berg aus Päckchen neben dem Hamburger Hafenkran, Maßstab mit Tonnenangabe",
+      "elements": [
+        "Päckchenberg",
+        "Hafenkran als Maßstab"
+      ],
+      "labels": [
+        "2023",
+        "34 Tonnen"
+      ]
+    },
+    {
+      "anchor": "Wie viel durchgerutscht ist, weiß niemand.",
+      "visualType": "symbolbild",
+      "message": "Wie viel unentdeckt durchkommt, weiß niemand",
+      "visual": "Eisberg: über Wasser ein kleiner Päckchenberg, unter Wasser ein riesiger dunkler Teil mit Fragezeichen",
+      "elements": [
+        "Eisberg",
+        "Fragezeichen unter Wasser"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Heute Nacht sind es 400 Kilo",
+      "visualType": "infografik",
+      "message": "Diese Nacht fehlen den Schmugglern 400 Kilo",
+      "visual": "Ein Päckchenberg, aus dem ein Stück mit 400 kg herausgeschnitten wird",
+      "elements": [
+        "Päckchenberg",
+        "herausgeschnittenes Stück"
+      ],
+      "labels": [
+        "minus 400 kg",
+        "heute Nacht"
+      ]
+    },
+    {
+      "anchor": "6:10 Uhr. Die Sonne frisst den",
+      "visualType": "szene",
+      "location": "kai",
+      "message": "Um 6:10 Uhr vertreibt die Sonne den Nebel",
+      "visual": "Morgensonne über der Elbe, Nebel löst sich auf, Kräne werfen lange Schatten",
+      "elements": [
+        "Morgensonne",
+        "sich lösender Nebel",
+        "lange Kranschatten"
+      ],
+      "labels": [
+        "6:10"
+      ],
+      "chapter": "Der Morgen danach"
+    },
+    {
+      "anchor": "Der Container rollt zur Reiferei, mit",
+      "visualType": "szene",
+      "location": "kai",
+      "message": "Der Container fährt jetzt nur noch mit echten Bananen zur Reiferei",
+      "visual": "Ein Lkw mit dem weißen Kühlcontainer fährt in die Morgensonne, eine Banane winkt aus dem Lüftungsgitter",
+      "elements": [
+        "Lkw im Morgenlicht",
+        "Banane im Lüftungsgitter"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Du stehst am Kai und denkst",
+      "visualType": "szene",
+      "location": "kai",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "morgen"
+      },
+      "message": "Du stehst am Kai und denkst über deinen Satz nach",
+      "visual": "Der Fahnder steht müde am Poller, Möwen kreisen, Blick über die Elbe",
+      "elements": [
+        "Poller",
+        "Möwen",
+        "Blick über die Elbe"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Papiere kennen nur die Wahrheit, die",
+      "visualType": "symbolbild",
+      "message": "Papiere enthalten nur, was jemand hineinschreibt",
+      "visual": "Eine Hand mit Füller schreibt auf einen Frachtbrief, aus dem Füller fließt Nebel statt Tinte",
+      "elements": [
+        "Füller",
+        "Frachtbrief",
+        "Nebel als Tinte"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Hanne drückt dir ein Stück Kreide",
+      "visualType": "szene",
+      "location": "kai",
+      "cast": [
+        "hanne",
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "morgen"
+      },
+      "message": "Hanne gibt dir ein Stück Kreide als Erinnerung",
+      "visual": "Hanne drückt dem Fahnder ein weißes Kreidestück in die Hand, beide lächeln müde",
+      "elements": [
+        "Kreidestück",
+        "müdes Lächeln",
+        "Morgenlicht"
+      ],
+      "labels": [],
+      "motif": true
+    },
+    {
+      "anchor": "Am Abend malst du ein Kreuz",
+      "visualType": "szene",
+      "location": "buero",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "morgen"
+      },
+      "message": "Am Abend malst du ein Kreidekreuz auf deinen Spind",
+      "visual": "Umkleide: der Fahnder malt ein weißes Kreuz auf seinen Spind",
+      "elements": [
+        "Spind",
+        "weißes Kreuz",
+        "Kreide in der Hand"
+      ],
+      "labels": [],
+      "motif": true
+    },
+    {
+      "anchor": "Wer nur die Papiere kennt, kennt",
+      "visualType": "symbolbild",
+      "cast": [
+        "fahnder"
+      ],
+      "stage": {
+        "fahnder": "morgen"
+      },
+      "message": "Wer nur die Papiere kennt, kennt nicht die Wahrheit",
+      "visual": "Der Fahnder hält einen Frachtbrief hoch, dahinter durchleuchtet er wie mit Röntgenblick den Container",
+      "elements": [
+        "Frachtbrief",
+        "Röntgenblick auf den Container"
+      ],
+      "labels": []
+    },
+    {
+      "anchor": "Ab jetzt ist jeder Bananenkarton mit",
+      "visualType": "detail",
+      "location": "containerinneres",
+      "message": "Jeder Bananenkarton mit Kreidekreuz ist ab jetzt eine Frage",
+      "visual": "Ein Bananenkarton mit Kreidekreuz, aus dem Kreuz wächst ein Fragezeichen",
+      "elements": [
+        "Bananenkarton mit Kreidekreuz",
+        "Fragezeichen"
+      ],
+      "labels": [],
+      "motif": true
+    },
+    {
+      "anchor": "Und um 22:40 Uhr beginnt deine",
+      "visualType": "szene",
+      "location": "stellplatz",
+      "cast": [
+        "fahnder",
+        "hanne"
+      ],
+      "stage": {
+        "fahnder": "neu"
+      },
+      "message": "Um 22:40 Uhr beginnt die nächste Schicht",
+      "visual": "Wieder Nebel und Natriumlicht, die beiden gehen auf einen neuen Container zu, der Fahnder trägt Kreide hinter dem Ohr",
+      "elements": [
+        "neuer Container",
+        "Kreide hinter dem Ohr",
+        "Natriumlicht"
+      ],
+      "labels": [
+        "22:40"
+      ],
+      "motif": true
+    }
+  ]
+}

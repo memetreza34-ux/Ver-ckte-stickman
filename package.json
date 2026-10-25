@@ -1,6 +1,6 @@
 {
   "name": "verueckte-stickman-video-pipeline",
-  "version": "2.8.0",
+  "version": "2.9.0",
   "private": true,
   "type": "module",
   "description": "German role-based Stickman entertainment pipeline with format-aware scripting, adaptive visuals, Flow batches, audio alignment, render QC, YouTube caption export and timed transcript export.",
